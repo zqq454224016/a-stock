@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-06-24 每日行情 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../../index.html">首页</a> /
+        <a href="../index.html">报表列表</a> /
+        每日行情
+      </nav>
+      <h1 class="site-title">2026-06-24 每日行情</h1>
+      <p class="site-subtitle">交易日：2026-06-24 · 更新于 2026-06-24 18:00:00</p>
+    </div>
+  </header>
+
+  <main class="container report-body">
+    <section class="stats-row" id="index-stats"></section>
+    <section class="chart-section">
+      <h2>主要指数</h2>
+      <div id="index-chart" class="chart-box"></div>
+    </section>
+    <section class="chart-section">
+      <h2>涨跌分布</h2>
+      <div id="distribution-chart" class="chart-box chart-box-sm"></div>
+    </section>
+    <section class="table-section">
+      <h2>涨幅榜 TOP 10</h2>
+      <div class="table-wrap">
+        <table class="data-table" id="top-gainers">
+          <thead><tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>收盘价</th><th>成交额(亿)</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="table-section">
+      <h2>跌幅榜 TOP 10</h2>
+      <div class="table-wrap">
+        <table class="data-table" id="top-losers">
+          <thead><tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>收盘价</th><th>成交额(亿)</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p><a href="../index.html">返回报表列表</a></p></div>
+  </footer>
+
+  <script src="../../js/chart.js"></script>
+  <script>
+    const data = {"trade_date": "2026-06-24", "updated_at": "2026-06-24 18:00:00", "indices": [{"name": "上证指数", "code": "000001", "close": 3456.78, "change": 28.45, "change_pct": 0.83}, {"name": "深证成指", "code": "399001", "close": 11234.56, "change": -45.23, "change_pct": -0.4}, {"name": "创业板指", "code": "399006", "close": 2345.67, "change": 12.34, "change_pct": 0.53}, {"name": "科创50", "code": "000688", "close": 987.65, "change": -5.67, "change_pct": -0.57}, {"name": "北证50", "code": "899050", "close": 1234.56, "change": 8.9, "change_pct": 0.73}], "market_distribution": [{"label": "涨停", "count": 45, "color": "#dc2626"}, {"label": "涨幅>5%", "count": 128, "color": "#ef4444"}, {"label": "涨幅0~5%", "count": 1856, "color": "#f87171"}, {"label": "平盘", "count": 312, "color": "#6b7280"}, {"label": "跌幅0~5%", "count": 1923, "color": "#4ade80"}, {"label": "跌幅>5%", "count": 98, "color": "#22c55e"}, {"label": "跌停", "count": 32, "color": "#16a34a"}], "top_gainers": [{"code": "300001", "name": "示例科技", "close": 25.68, "change_pct": 10.02, "amount": 12.35}, {"code": "688001", "name": "创新药业", "close": 88.9, "change_pct": 9.98, "amount": 8.76}, {"code": "002001", "name": "新能源A", "close": 15.23, "change_pct": 9.95, "amount": 5.43}, {"code": "600001", "name": "智能制造", "close": 32.1, "change_pct": 9.87, "amount": 15.67}, {"code": "301001", "name": "芯片设计", "close": 56.78, "change_pct": 9.76, "amount": 9.21}, {"code": "000001", "name": "平安银行", "close": 12.45, "change_pct": 8.65, "amount": 22.1}, {"code": "603001", "name": "消费电子", "close": 45.6, "change_pct": 8.32, "amount": 6.78}, {"code": "300002", "name": "生物医药", "close": 78.9, "change_pct": 7.89, "amount": 11.23}, {"code": "002002", "name": "光伏龙头", "close": 23.45, "change_pct": 7.56, "amount": 18.9}, {"code": "688002", "name": "半导体B", "close": 67.8, "change_pct": 7.23, "amount": 7.45}], "top_losers": [{"code": "300099", "name": "退市预警", "close": 1.23, "change_pct": -10.0, "amount": 0.56}, {"code": "002099", "name": "地产下行", "close": 3.45, "change_pct": -9.87, "amount": 2.34}, {"code": "600099", "name": "传统制造", "close": 8.9, "change_pct": -8.76, "amount": 4.56}, {"code": "301099", "name": "周期回落", "close": 12.34, "change_pct": -7.65, "amount": 3.21}, {"code": "688099", "name": "医药回调", "close": 45.67, "change_pct": -6.54, "amount": 8.9}, {"code": "000099", "name": "金融调整", "close": 6.78, "change_pct": -5.43, "amount": 12.34}, {"code": "603099", "name": "消费疲软", "close": 18.9, "change_pct": -4.32, "amount": 5.67}, {"code": "300098", "name": "软件服务", "close": 34.56, "change_pct": -3.21, "amount": 6.78}, {"code": "002098", "name": "化工板块", "close": 9.87, "change_pct": -2.98, "amount": 4.32}, {"code": "600098", "name": "钢铁冶炼", "close": 5.43, "change_pct": -2.45, "amount": 3.45}], "industries": [{"name": "半导体", "change_pct": 2.35}, {"name": "新能源", "change_pct": 1.87}, {"name": "医药生物", "change_pct": 0.92}, {"name": "银行", "change_pct": -0.45}, {"name": "房地产", "change_pct": -1.23}, {"name": "钢铁", "change_pct": -1.56}], "fund_flow": {"north_net": 45.67, "main_net": -23.45, "retail_net": 12.34}};
+    renderIndexStats(data.indices, 'index-stats');
+    renderIndexChart('index-chart', data.indices);
+    renderDistributionChart('distribution-chart', data.market_distribution);
+    renderStockTable('top-gainers', data.top_gainers, true);
+    renderStockTable('top-losers', data.top_losers, false);
+  </script>
+</body>
+</html>

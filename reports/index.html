@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>报表列表 · A股全景</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/report.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../index.html">首页</a> / 报表列表
+      </nav>
+      <h1 class="site-title">报表列表</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="filter-bar">
+      <input type="search" id="search-input" placeholder="搜索报表名称或日期…" class="search-input">
+      <select id="category-filter" class="select-input">
+        <option value="all">全部分类</option>
+        <option value="daily">每日行情</option>
+        <option value="industry">板块行业</option>
+        <option value="fund_flow">资金流向</option>
+        <option value="stock_rank">个股排行</option>
+      </select>
+    </div>
+
+    <section id="daily" class="report-section">
+      <h2>每日行情</h2>
+      <ul class="report-list" data-category="daily">
+        <li class="report-item" data-name="20260624 每日行情">
+          <a href="daily/20260624.html">
+            <span class="report-date">2026-06-24</span>
+            <span class="report-title">A股每日行情概览</span>
+            <span class="report-tag">daily</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="industry" class="report-section">
+      <h2>板块行业</h2>
+      <ul class="report-list" data-category="industry">
+        <li class="report-item" data-name="20260624 2026-06-24 板块行业分析">
+          <a href="industry/20260624.html">
+            <span class="report-date">2026-06-24</span>
+            <span class="report-title">2026-06-24 板块行业分析</span>
+            <span class="report-tag">industry</span>
+          </a>
+        </li>
+        </ul>
+    </section>
+
+    <section id="fund-flow" class="report-section">
+      <h2>资金流向</h2>
+      <ul class="report-list" data-category="fund_flow">
+        <li class="report-item" data-name="20260624 2026-06-24 资金流向">
+          <a href="fund_flow/20260624.html">
+            <span class="report-date">2026-06-24</span>
+            <span class="report-title">2026-06-24 资金流向</span>
+            <span class="report-tag">fund_flow</span>
+          </a>
+        </li>
+        </ul>
+    </section>
+
+    <section id="stock-rank" class="report-section">
+      <h2>个股排行</h2>
+      <ul class="report-list" data-category="stock_rank">
+        <li class="report-item" data-name="20260624 2026-06-24 个股涨跌排行">
+          <a href="stock_rank/20260624.html">
+            <span class="report-date">2026-06-24</span>
+            <span class="report-title">2026-06-24 个股涨跌排行</span>
+            <span class="report-tag">stock_rank</span>
+          </a>
+        </li>
+        </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><a href="../index.html">返回首页</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

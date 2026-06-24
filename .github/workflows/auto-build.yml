@@ -1,0 +1,61 @@
+name: Auto Build Reports
+
+on:
+  schedule:
+    # 工作日 18:30（UTC+8 对应 UTC 10:30）自动构建
+    - cron: "30 10 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: a-stock-panorama
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: a-stock-panorama/script/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r script/requirements.txt
+
+      - name: Fetch market data
+        run: python script/fetch_data.py
+        continue-on-error: true
+
+      - name: Generate HTML reports
+        run: python script/gen_report.py
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: a-stock-panorama
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

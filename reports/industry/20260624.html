@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-06-24 板块行业 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../../index.html">首页</a> /
+        <a href="../index.html">报表列表</a> /
+        板块行业
+      </nav>
+      <h1 class="site-title">2026-06-24 板块行业分析</h1>
+      <p class="site-subtitle">更新于 2026-06-24 18:00:00</p>
+    </div>
+  </header>
+
+  <main class="container report-body">
+    <section class="chart-section">
+      <h2>行业涨跌幅</h2>
+      <div id="industry-chart" class="chart-box"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p><a href="../index.html">返回报表列表</a></p></div>
+  </footer>
+
+  <script src="../../js/chart.js"></script>
+  <script>
+    renderIndustryChart('industry-chart', [{"name": "半导体", "change_pct": 2.35}, {"name": "新能源", "change_pct": 1.87}, {"name": "医药生物", "change_pct": 0.92}, {"name": "银行", "change_pct": -0.45}, {"name": "房地产", "change_pct": -1.23}, {"name": "钢铁", "change_pct": -1.56}]);
+  </script>
+</body>
+</html>
