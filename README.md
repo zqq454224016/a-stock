@@ -5,7 +5,7 @@
 ## 目录结构
 
 ```
-a-stock-panorama/
+a-stock/
 ├── index.html              # 站点首页
 ├── css/                    # 全局样式
 ├── js/                     # 前端脚本（ECharts 图表、导航筛选）
@@ -24,7 +24,7 @@ a-stock-panorama/
 ### 1. 安装依赖
 
 ```bash
-cd a-stock-panorama/script
+cd a-stock/script
 pip install -r requirements.txt
 ```
 
@@ -49,7 +49,7 @@ python gen_report.py
 用任意静态服务器打开项目根目录，例如：
 
 ```bash
-cd a-stock-panorama
+cd a-stock
 python -m http.server 8080
 ```
 
