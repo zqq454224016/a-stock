@@ -19,41 +19,62 @@ a-stock/
 └── script/                 # 数据抓取与报表生成脚本
 ```
 
-## 本地运行
+## 本地运行（macOS）
 
-### 1. 安装依赖
+使用 **Homebrew Python + 虚拟环境（venv）**，全程用 `python` / `pip`，避免 `externally-managed-environment` 报错。
 
-```bash
-cd a-stock/script
-pip install -r requirements.txt
-```
+### 0. 配置 PATH（只需一次）
 
-### 2. 抓取数据
+Homebrew 安装的 `python` 在 libexec 目录，加入 `~/.zshrc`：
 
 ```bash
-# 在线模式（需要 akshare）
-python fetch_data.py
-
-# 离线演示模式
-python fetch_data.py --mock
+echo 'export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
-### 3. 生成报表
+验证：`python --version` 应显示 Python 3.12.x
 
-```bash
-python gen_report.py
-```
-
-### 4. 预览
-
-用任意静态服务器打开项目根目录，例如：
+### 一键初始化
 
 ```bash
 cd a-stock
+chmod +x setup.sh
+./setup.sh
+```
+
+### 手动步骤
+
+```bash
+cd a-stock
+
+# 1. 创建并激活虚拟环境
+python -m venv .venv
+source .venv/bin/activate    # 激活后终端提示符前会出现 (.venv)
+
+# 2. 安装依赖（必须在 venv 内，不要全局 pip install）
+python -m pip install --upgrade pip
+pip install -r script/requirements.txt
+
+# 3. 抓取数据
+python script/fetch_data.py --mock   # 演示模式
+# python script/fetch_data.py        # 在线模式（需要 akshare + 网络）
+
+# 4. 生成报表
+python script/gen_report.py
+
+# 5. 预览
 python -m http.server 8080
 ```
 
 浏览器访问 `http://localhost:8080`
+
+> 每次新开终端都需要先 `source .venv/bin/activate` 再运行脚本。退出虚拟环境：`deactivate`
+
+### 未安装 Python？
+
+```bash
+brew install python@3.12
+```
 
 ## GitHub Pages 部署
 
