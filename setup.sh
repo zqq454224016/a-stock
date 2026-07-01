@@ -28,13 +28,14 @@ echo "→ 激活虚拟环境并安装依赖"
 # shellcheck disable=SC1091
 source .venv/bin/activate
 python -m pip install --upgrade pip
-pip install -r script/requirements.txt
+pip install -r quant_system/requirements.txt
 
 echo ""
 echo "✓ 环境就绪。后续请在项目根目录执行："
 echo ""
 echo "  source .venv/bin/activate"
-echo "  python script/fetch_data.py --mock"
-echo "  python script/gen_report.py"
+echo "  python quant_system/main.py all       # 一键采集+报表"
+echo "  python quant_system/main.py market    # 仅大盘"
+echo "  python quant_system/main.py stock     # 仅自选股"
 echo "  python -m http.server 8080"
 echo ""

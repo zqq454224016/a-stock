@@ -157,6 +157,62 @@
   height: 280px;
 }
 
+.chart-box-lg {
+  height: 480px;
+}
+
+/* 盘中实时 */
+.live-panel {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.live-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.live-status {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.live-status.live-ok {
+  color: #22c55e;
+}
+
+.live-status.live-wait {
+  color: #fbbf24;
+}
+
+.live-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.live-pulse {
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.stock-code {
+  font-size: 0.85em;
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
 /* 数据表格 */
 .table-section {
   margin-bottom: 2rem;

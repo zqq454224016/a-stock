@@ -6,17 +6,21 @@
 
 ```
 a-stock/
+├── quant_system/           # 量化数据采集核心（重构后）
+│   ├── config/             # 配置中心
+│   ├── data_source/        # 数据源层（爬虫/API）
+│   ├── pipeline/           # 清洗/校验/标准化/复权
+│   ├── storage/            # MySQL/Redis/JSON 存储
+│   ├── models/             # 数据模型
+│   ├── tasks/              # 任务层
+│   ├── scheduler/          # 调度器
+│   ├── utils/
+│   ├── tests/
+│   └── main.py             # 启动入口
 ├── index.html              # 站点首页
-├── css/                    # 全局样式
-├── js/                     # 前端脚本（ECharts 图表、导航筛选）
-├── reports/                # 生成的 HTML 报表
-│   ├── index.html          # 报表列表
-│   ├── daily/              # 每日行情
-│   ├── industry/           # 板块行业
-│   ├── fund_flow/          # 资金流向
-│   └── stock_rank/         # 个股排行
-├── assets/data/            # JSON 原始数据
-└── script/                 # 数据抓取与报表生成脚本
+├── reports/                # HTML 报表输出
+├── assets/data/            # JSON 数据
+└── script/                 # 兼容入口 + 报表生成
 ```
 
 ## 本地运行（macOS）
@@ -55,18 +59,36 @@ source .venv/bin/activate    # 激活后终端提示符前会出现 (.venv)
 python -m pip install --upgrade pip
 pip install -r script/requirements.txt
 
-# 3. 抓取数据
-python script/fetch_data.py --mock   # 演示模式
-# python script/fetch_data.py        # 在线模式（需要 akshare + 网络）
+# 3. 采集数据（推荐 quant_system 入口）
+python quant_system/main.py market          # 大盘行情
+python quant_system/main.py stock           # 自选股分析
+python quant_system/main.py all             # 大盘 + 自选股 + 生成报表
+
+# 或使用兼容脚本
+python script/fetch_data.py
+python script/fetch_stock.py
 
 # 4. 生成报表
 python script/gen_report.py
 
-# 5. 预览
+# 5. 个股分析
+python quant_system/main.py stock 600519 300308
+
+# 6. 盘中实时（交易时段轮询分钟线 + 前端自动刷新）
+python quant_system/main.py live              # 单次采集
+python quant_system/main.py live --loop       # 循环采集（默认 60s）
+python quant_system/main.py live --loop --interval 30
+
+# 7. 定时调度（可选）
+python quant_system/main.py scheduler
+
+# 8. 预览
 python -m http.server 8080
 ```
 
 浏览器访问 `http://localhost:8080`
+
+盘中实时数据写入 `assets/data/stocks/live/{code}.json`，个股页 `reports/stock/{code}.html` 每 30 秒自动拉取更新（需同时运行 `live --loop` 与静态服务）。
 
 > 每次新开终端都需要先 `source .venv/bin/activate` 再运行脚本。退出虚拟环境：`deactivate`
 

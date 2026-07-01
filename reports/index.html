@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>报表列表 · A股全景</title>
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/report.css">
@@ -26,12 +29,20 @@
         <option value="industry">板块行业</option>
         <option value="fund_flow">资金流向</option>
         <option value="stock_rank">个股排行</option>
+        <option value="stock">个股分析</option>
       </select>
     </div>
 
     <section id="daily" class="report-section">
       <h2>每日行情</h2>
       <ul class="report-list" data-category="daily">
+        <li class="report-item" data-name="20260626 2026-06-26 每日行情概览">
+          <a href="daily/20260626.html">
+            <span class="report-date">2026-06-26</span>
+            <span class="report-title">2026-06-26 每日行情概览</span>
+            <span class="report-tag">daily</span>
+          </a>
+        </li>
         <li class="report-item" data-name="20260625 2026-06-25 每日行情概览">
           <a href="daily/20260625.html">
             <span class="report-date">2026-06-25</span>
@@ -52,6 +63,13 @@
     <section id="industry" class="report-section">
       <h2>板块行业</h2>
       <ul class="report-list" data-category="industry">
+        <li class="report-item" data-name="20260626 2026-06-26 板块行业分析">
+          <a href="industry/20260626.html">
+            <span class="report-date">2026-06-26</span>
+            <span class="report-title">2026-06-26 板块行业分析</span>
+            <span class="report-tag">industry</span>
+          </a>
+        </li>
         <li class="report-item" data-name="20260625 2026-06-25 板块行业分析">
           <a href="industry/20260625.html">
             <span class="report-date">2026-06-25</span>
@@ -72,6 +90,13 @@
     <section id="fund-flow" class="report-section">
       <h2>资金流向</h2>
       <ul class="report-list" data-category="fund_flow">
+        <li class="report-item" data-name="20260626 2026-06-26 资金流向">
+          <a href="fund_flow/20260626.html">
+            <span class="report-date">2026-06-26</span>
+            <span class="report-title">2026-06-26 资金流向</span>
+            <span class="report-tag">fund_flow</span>
+          </a>
+        </li>
         <li class="report-item" data-name="20260625 2026-06-25 资金流向">
           <a href="fund_flow/20260625.html">
             <span class="report-date">2026-06-25</span>
@@ -92,6 +117,13 @@
     <section id="stock-rank" class="report-section">
       <h2>个股排行</h2>
       <ul class="report-list" data-category="stock_rank">
+        <li class="report-item" data-name="20260626 2026-06-26 个股涨跌排行">
+          <a href="stock_rank/20260626.html">
+            <span class="report-date">2026-06-26</span>
+            <span class="report-title">2026-06-26 个股涨跌排行</span>
+            <span class="report-tag">stock_rank</span>
+          </a>
+        </li>
         <li class="report-item" data-name="20260625 2026-06-25 个股涨跌排行">
           <a href="stock_rank/20260625.html">
             <span class="report-date">2026-06-25</span>
@@ -107,6 +139,18 @@
           </a>
         </li>
         </ul>
+    </section>
+
+    <section id="stock" class="report-section">
+      <h2>个股分析</h2>
+      <ul class="report-list" data-category="stock">
+        <li class="report-item" data-name="600378 昊华科技 个股分析">
+          <a href="stock/600378.html">
+            <span class="report-date">2026-06-26</span>
+            <span class="report-title">昊华科技 (600378) · 震荡</span>
+            <span class="report-tag">stock</span>
+          </a>
+        </li></ul>
     </section>
   </main>
 
