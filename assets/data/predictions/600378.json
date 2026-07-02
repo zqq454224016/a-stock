@@ -1,0 +1,38 @@
+{
+  "code": "600378",
+  "trade_date": "2026-07-01",
+  "horizon": "5d",
+  "direction": "down",
+  "probability": 0.3797,
+  "confidence": "high",
+  "expected_return": 0.0094,
+  "max_expected_drawdown": 0.1969,
+  "prediction_version": "1.0.0",
+  "strategy": "ma_cross",
+  "strategy_version": "1.0.0",
+  "data_version": "daily_kline_600378_20260701",
+  "factor_versions": {
+    "technical": "1.0.0"
+  },
+  "evidence": {
+    "sample_count": 291,
+    "state_label": "bullish",
+    "historical_positive_rate": 0.488,
+    "backtest_win_rate": 0.2174,
+    "backtest_profit_loss_ratio": 1.48,
+    "backtest_annual_return_pct": 11.9,
+    "backtest_max_drawdown_pct": -51.66,
+    "backtest_closed_trades": 23
+  },
+  "drivers": [
+    "站上MA20",
+    "MACD柱为正"
+  ],
+  "risk_flags": [
+    "rsi_overbought",
+    "high_volatility",
+    "high_historical_drawdown"
+  ],
+  "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
+  "updated_at": "2026-07-01 21:48:28"
+}

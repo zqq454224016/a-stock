@@ -36,13 +36,18 @@ def detect_market(code: str) -> str:
 
 def normalize_kline_df(df: pd.DataFrame, code: str, days: int = 120) -> pd.DataFrame:
     """统一 K 线列名与类型。"""
-    col_map = {"日期": "date", "date": "date"}
+    col_map = {
+        "日期": "date", "date": "date",
+        "开盘": "open", "收盘": "close", "最高": "high", "最低": "low",
+        "成交量": "volume", "成交额": "amount", "换手率": "turnover",
+    }
     df = df.rename(columns={k: v for k, v in col_map.items() if k in df.columns})
     if "turnover" not in df.columns:
         df["turnover"] = 0.0
 
     df["date"] = pd.to_datetime(df["date"])
-    df = df.sort_values("date").tail(days).reset_index(drop=True)
+    df = df.sort_values("date").drop_duplicates(subset=["date"], keep="last")
+    df = df.tail(days).reset_index(drop=True)
     for col in ["open", "high", "low", "close", "volume", "amount", "turnover"]:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")

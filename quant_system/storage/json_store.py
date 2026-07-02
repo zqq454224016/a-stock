@@ -52,6 +52,64 @@ class JsonStore:
         self.write(path, {"updated_at": updated_at, "stocks": stocks})
         return path
 
+    def factors_dir(self) -> Path:
+        return self.config.json_data_dir / "factors"
+
+    def save_factors(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.factors_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_factor_index(self, stocks: list[dict], updated_at: str) -> Path:
+        path = self.factors_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "stocks": stocks})
+        return path
+
+    def signals_dir(self) -> Path:
+        return self.config.json_data_dir / "signals"
+
+    def save_signal(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.signals_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def quality_dir(self) -> Path:
+        return self.config.json_data_dir / "quality"
+
+    def save_quality_report(self, data: dict[str, Any]) -> Path:
+        from quant_system.utils.time_utils import today_str
+        path = self.quality_dir() / f"inspect_{today_str().replace('-', '')}.json"
+        self.write(path, data)
+        latest = self.quality_dir() / "latest.json"
+        self.write(latest, data)
+        return path
+
+    def backtest_dir(self) -> Path:
+        return self.config.json_data_dir / "backtest"
+
+    def save_backtest(self, code: str, strategy: str, data: dict[str, Any]) -> Path:
+        path = self.backtest_dir() / f"{code}_{strategy}.json"
+        self.write(path, data)
+        return path
+
+    def save_backtest_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.backtest_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "results": items})
+        return path
+
+    def predictions_dir(self) -> Path:
+        return self.config.json_data_dir / "predictions"
+
+    def save_prediction(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.predictions_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_prediction_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.predictions_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "predictions": items})
+        return path
+
     def load_mock_market(self) -> dict[str, Any]:
         path = self.config.json_data_dir / "latest.json"
         if path.exists():

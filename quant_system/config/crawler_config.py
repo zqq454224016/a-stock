@@ -18,11 +18,13 @@ class CrawlerConfig:
     eastmoney_probe_retries: int = 1  # 探测东财时的重试次数（auto 模式）
     request_timeout: int = 30
     stock_hist_days: int = 120
+    cross_source_check: bool = os.getenv("CRAWLER_CROSS_SOURCE", "1") != "0"
+    cross_source_lookback: int = 20
     industry_top_n: int = 20
     rank_top_n: int = 10
     minute_bars_1m: int = 120
     live_redis_ttl: int = 300
-    live_refresh_sec: int = 30
+    live_refresh_sec: int = 15
 
     data_dir: Path = PROJECT_ROOT / "assets" / "data"
     stock_data_dir: Path = PROJECT_ROOT / "assets" / "data" / "stocks"

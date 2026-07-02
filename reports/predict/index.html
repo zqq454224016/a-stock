@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>走势预测 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">可验证走势预测</h1>
+      <p class="site-subtitle">L2 预测 · 含回测证据 · 非确定性结论</p>
+    </div>
+  </header>
+  <main class="container report-body">
+    <section class="table-section">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>代码</th><th>周期</th><th>方向</th><th>概率</th>
+            <th>置信度</th><th>预期收益</th><th>风险标记</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><a href="../stock/600378.html">600378</a></td>
+          <td>5d</td>
+          <td class="text-down">偏空 ↓</td>
+          <td>38.0%</td>
+          <td>高</td>
+          <td>0.94%</td>
+          <td>rsi_overbought, high_volatility, high_historical_drawdown</td>
+        </tr>
+        <tr>
+          <td><a href="../stock/603629.html">603629</a></td>
+          <td>5d</td>
+          <td class="">震荡 →</td>
+          <td>48.7%</td>
+          <td>高</td>
+          <td>2.16%</td>
+          <td>high_volatility, high_historical_drawdown</td>
+        </tr></tbody>
+      </table>
+    </section>
+    <p style="color:var(--color-muted);font-size:0.9rem">统计倾向仅供参考，不构成投资建议。</p>
+  </main>
+</body>
+</html>

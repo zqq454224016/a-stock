@@ -14,7 +14,7 @@ from quant_system.pipeline.normalizer import load_watchlist, normalize_code, to_
 from quant_system.storage.json_store import JsonStore
 from quant_system.storage.redis_client import RedisClient
 from quant_system.utils.logger import get_logger
-from quant_system.utils.time_utils import now_str
+from quant_system.utils.time_utils import now_str, today_str
 
 logger = get_logger(__name__)
 
@@ -47,14 +47,27 @@ def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
         symbol = to_symbol(code)
         try:
             logger.info("盘中采集 %s (%s)", code, name or symbol)
-            minute_1m = minute_api.fetch_minute(symbol, period="1")
+            minute_1m_raw = minute_api.fetch_minute(symbol, period="1")
+            minute_1m, minute_date, minute_is_today = minute_api.filter_latest_session(minute_1m_raw)
+            if not minute_is_today:
+                logger.warning(
+                    "分钟线非当日 %s: 分钟=%s 今日=%s，现价将使用 spot",
+                    code, minute_date, today_str(),
+                )
             try:
-                minute_5m = minute_api.fetch_minute(symbol, period="5")
+                minute_5m_raw = minute_api.fetch_minute(symbol, period="5")
+                minute_5m, _, m5_today = minute_api.filter_latest_session(minute_5m_raw)
+                if not m5_today:
+                    minute_5m = None
             except Exception as e:
                 logger.warning("5分钟线不可用 %s: %s", code, e)
                 minute_5m = None
 
-            live = build_intraday_analysis(code, name, spot_map.get(code), minute_1m, minute_5m)
+            live = build_intraday_analysis(
+                code, name, spot_map.get(code), minute_1m, minute_5m,
+                minute_trade_date=minute_date,
+                minute_is_today=minute_is_today,
+            )
             store.save_live_stock(code, live)
             redis.set_json(f"live:stock:{code}", live, ttl=cfg.live_redis_ttl)
             results.append({

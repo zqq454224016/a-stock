@@ -1,0 +1,19 @@
+{
+  "code": "603629",
+  "trade_date": "2026-07-01",
+  "factor_version": "1.0.0",
+  "data_version": "daily_kline_603629_20260701",
+  "factors": {
+    "ma20_bias": 8.07,
+    "rsi14": 66.01,
+    "macd": 5.8523,
+    "macd_signal": 6.2438,
+    "macd_hist": -0.3914,
+    "atr14": 17.79,
+    "momentum_20": -1.03,
+    "volume_ratio_20": 16.66,
+    "above_ma20": true,
+    "ma_cross": "none"
+  },
+  "updated_at": "2026-07-01 22:05:22"
+}

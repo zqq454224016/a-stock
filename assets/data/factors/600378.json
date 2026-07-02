@@ -1,0 +1,19 @@
+{
+  "code": "600378",
+  "trade_date": "2026-07-01",
+  "factor_version": "1.0.0",
+  "data_version": "daily_kline_600378_20260701",
+  "factors": {
+    "ma20_bias": 33.41,
+    "rsi14": 70.17,
+    "macd": 8.5048,
+    "macd_signal": 7.3962,
+    "macd_hist": 1.1086,
+    "atr14": 6.59,
+    "momentum_20": 87.76,
+    "volume_ratio_20": 1.47,
+    "above_ma20": true,
+    "ma_cross": "none"
+  },
+  "updated_at": "2026-07-01 22:05:21"
+}

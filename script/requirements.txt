@@ -1,3 +1,2 @@
-akshare>=1.14.0
-pandas>=2.0.0
-apscheduler>=3.10.0
+# 兼容入口，与 quant_system/requirements.txt 保持一致
+-r ../quant_system/requirements.txt

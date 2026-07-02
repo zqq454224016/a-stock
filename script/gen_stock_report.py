@@ -15,6 +15,7 @@ REPORTS_DIR = ROOT / "reports" / "stock"
 import sys
 sys.path.insert(0, str(ROOT))
 from quant_system.config.crawler_config import CrawlerConfig
+from quant_system.utils.watchlist_utils import ensure_watchlist_stocks, get_watchlist_codes
 
 CACHE_META = """  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
@@ -24,7 +25,7 @@ CACHE_META = """  <meta http-equiv="Cache-Control" content="no-cache, no-store, 
 def load_stock(code: str) -> dict:
     path = STOCK_DATA_DIR / f"{code}.json"
     if not path.exists():
-        raise FileNotFoundError(f"个股数据不存在: {path}，请先运行 fetch_stock.py")
+        raise FileNotFoundError(f"个股数据不存在: {path}，请先运行 python quant_system/main.py stock")
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -37,6 +38,26 @@ def render_stock_report(data: dict) -> str:
     ret = a["returns"]
     ma = a["ma"]
     rng = a["range_60d"]
+    factors = data.get("factors") or {}
+    quality = data.get("quality") or {}
+    predict_path = ROOT / "assets" / "data" / "predictions" / f"{code}.json"
+    prediction = {}
+    if predict_path.exists():
+        prediction = json.loads(predict_path.read_text(encoding="utf-8"))
+    if not factors:
+        factor_path = ROOT / "assets" / "data" / "factors" / f"{code}.json"
+        if factor_path.exists():
+            factors = json.loads(factor_path.read_text(encoding="utf-8")).get("factors", {})
+
+    def fac(key, fmt=".2f", suffix=""):
+        v = factors.get(key)
+        if v is None:
+            return "--"
+        if isinstance(v, bool):
+            return "是" if v else "否"
+        if isinstance(v, str):
+            return v
+        return f"{v:{fmt}}{suffix}"
 
     def pct(v, signed=True):
         if v is None:
@@ -49,6 +70,84 @@ def render_stock_report(data: dict) -> str:
         cls = "text-up" if ok else "text-down"
         label = "站上" if ok else "跌破"
         return f'<span class="{cls}">{label} MA{w}</span>'
+
+    def pred_dir(d):
+        return {"up": "偏多 ↑", "down": "偏空 ↓", "neutral": "震荡 →"}.get(d, d or "--")
+
+    def pred_conf(c):
+        return {"low": "低", "medium": "中", "high": "高"}.get(c, c or "--")
+
+    risk_flags = ", ".join(prediction.get("risk_flags") or []) or "无"
+
+    primary_signal = data.get("primary_signal") or {}
+    if not primary_signal:
+        sig_path = ROOT / "assets" / "data" / "signals" / f"{code}.json"
+        if sig_path.exists():
+            primary_signal = json.loads(sig_path.read_text(encoding="utf-8"))
+
+    def sig_label(s):
+        return {"bullish": "偏多 ↑", "bearish": "偏空 ↓", "neutral": "震荡 →"}.get(s, s or "--")
+
+    signal_block = ""
+    if primary_signal:
+        sig_drivers = "、".join(primary_signal.get("drivers") or []) or "—"
+        sig_limits = "、".join(primary_signal.get("limitations") or []) or "—"
+        signal_block = f"""
+    <section class="live-panel" style="border-color:#0ea5e9;background:rgba(14,165,233,0.08)">
+      <div class="live-panel-header">
+        <h2 style="margin:0;font-size:1.1rem">初级走势信号 <span class="live-badge">{primary_signal.get('horizon', '5d')}</span></h2>
+        <span class="live-status">技术因子倾向 · 未经回测验证</span>
+      </div>
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="name">信号方向</div>
+          <div class="value">{sig_label(primary_signal.get('signal'))}</div>
+          <div class="change">强度 {primary_signal.get('signal_score', '--')}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">驱动因子</div>
+          <div class="value" style="font-size:0.95rem">{sig_drivers}</div>
+          <div class="change">限制: {sig_limits}</div>
+        </div>
+      </section>
+    </section>"""
+
+    pred_block = ""
+    if prediction:
+        prob = prediction.get("probability")
+        prob_s = f"{prob * 100:.1f}%" if prob is not None else "--"
+        exp = prediction.get("expected_return")
+        exp_s = f"{exp * 100:.2f}%" if exp is not None else "--"
+        drivers = "、".join(prediction.get("drivers") or []) or "—"
+        pred_block = f"""
+    <section class="live-panel" style="border-color:#8b5cf6;background:rgba(139,92,246,0.08)">
+      <div class="live-panel-header">
+        <h2 style="margin:0;font-size:1.1rem">走势预测 <span class="live-badge">{prediction.get('horizon', '5d')}</span></h2>
+        <span class="live-status">{prediction.get('disclaimer', '')}</span>
+      </div>
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="name">{prediction.get('horizon', '5d')} 方向</div>
+          <div class="value">{pred_dir(prediction.get('direction'))}</div>
+          <div class="change">概率 {prob_s}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">置信度</div>
+          <div class="value">{pred_conf(prediction.get('confidence'))}</div>
+          <div class="change">预期收益 {exp_s}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">回测胜率</div>
+          <div class="value">{(prediction.get('evidence') or {}).get('backtest_win_rate', 0) * 100:.1f}%</div>
+          <div class="change">样本 {(prediction.get('evidence') or {}).get('sample_count', '--')}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">驱动 / 风险</div>
+          <div class="value" style="font-size:0.95rem">{drivers}</div>
+          <div class="change">{risk_flags}</div>
+        </div>
+      </section>
+    </section>"""
 
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -74,12 +173,20 @@ def render_stock_report(data: dict) -> str:
       <p class="site-subtitle">
         交易日 {data['trade_date']} · 更新于 {data['updated_at']} ·
         趋势 <strong>{a['trend']}</strong>
-        {f" · 日K截至 {data['kline_date']}" if data.get('kline_date') and data.get('kline_date') != data['trade_date'] else ""}
+        {(
+            f" · 日K滞后至 {data['kline_date']}" if data.get('kline_stale')
+            else " · 日K已用实时价补全" if data.get('kline_merged')
+            else f" · 日K截至 {data['kline_date']}" if data.get('kline_date') and data.get('kline_date') != data['trade_date']
+            else ""
+        )}
+        {f" · 质量分 {quality['quality_score']} ({quality['status']})" if quality.get('quality_score') is not None else ""}
       </p>
     </div>
   </header>
 
   <main class="container report-body">
+{signal_block}
+{pred_block}
     <section class="live-panel" id="live-panel">
       <div class="live-panel-header">
         <h2 style="margin:0;font-size:1.1rem">盘中实时 <span class="live-badge" id="live-badge">LIVE</span></h2>
@@ -154,6 +261,29 @@ def render_stock_report(data: dict) -> str:
       <div class="stat-card">
         <div class="name">今开 / 最高 / 最低</div>
         <div class="value" style="font-size:1rem">{q['open']:.2f} / {q['high']:.2f} / {q['low']:.2f}</div>
+      </div>
+    </section>
+
+    <section class="stats-row">
+      <div class="stat-card">
+        <div class="name">RSI(14)</div>
+        <div class="value">{fac('rsi14')}</div>
+        <div class="change">MA20 乖离 {fac('ma20_bias', suffix='%')}</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">MACD</div>
+        <div class="value" style="font-size:1rem">{fac('macd', '.4f')} / {fac('macd_signal', '.4f')}</div>
+        <div class="change">柱 {fac('macd_hist', '.4f')}</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">20日动量</div>
+        <div class="value">{fac('momentum_20', suffix='%')}</div>
+        <div class="change">量比(20) {fac('volume_ratio_20')}</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">ATR(14) / 均线</div>
+        <div class="value" style="font-size:1rem">{fac('atr14', '.4f')}</div>
+        <div class="change">MA交叉 {fac('ma_cross')} · 站上MA20 {fac('above_ma20')}</div>
       </div>
     </section>
 
@@ -276,7 +406,8 @@ def cleanup_stale_stock_files(active_codes: list[str]) -> None:
 
 
 def main() -> None:
-    codes = load_watchlist_codes()
+    ensure_watchlist_stocks()
+    codes = get_watchlist_codes()
     if not codes:
         index_file = STOCK_DATA_DIR / "index.json"
         if index_file.exists():
@@ -294,7 +425,11 @@ def main() -> None:
     generated = []
 
     for code in codes:
-        data = load_stock(code)
+        try:
+            data = load_stock(code)
+        except FileNotFoundError as e:
+            print(f"[gen_stock_report] 跳过 {code}: {e}")
+            continue
         out = REPORTS_DIR / f"{code}.html"
         out.write_text(render_stock_report(data), encoding="utf-8")
         print(f"[gen_stock_report] 已生成 {out}")

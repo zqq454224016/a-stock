@@ -8,6 +8,7 @@ from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.data_source.akshare_api import AkShareAPI
 from quant_system.utils.logger import get_logger
 from quant_system.utils.retry import call_with_retry
+from quant_system.utils.time_utils import today_str
 
 logger = get_logger(__name__)
 
@@ -27,6 +28,21 @@ class MinuteAPI:
             delay=self.config.retry_delay,
         )
         return self._normalize(df, period)
+
+    @staticmethod
+    def filter_latest_session(df: pd.DataFrame) -> tuple[pd.DataFrame, str, bool]:
+        """
+        仅保留分钟线中最近一个交易日的数据。
+        返回 (df, session_date, is_today)。
+        """
+        if df is None or df.empty:
+            return df, "", False
+        work = df.copy()
+        work["session_date"] = work["datetime"].dt.strftime("%Y-%m-%d")
+        latest = work["session_date"].max()
+        filtered = work[work["session_date"] == latest].reset_index(drop=True)
+        is_today = latest == today_str()
+        return filtered, latest, is_today
 
     def _normalize(self, df: pd.DataFrame, period: str) -> pd.DataFrame:
         col_map = {"day": "datetime", "date": "datetime"}

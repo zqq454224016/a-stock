@@ -30,11 +30,13 @@ jobs:
           cache-dependency-path: quant_system/requirements.txt
 
       - name: Install dependencies
-        run: pip install -r quant_system/requirements.txt
+        run: pip install -r quant_system/requirements.txt pytest
+
+      - name: Unit tests
+        run: python -m pytest quant_system/tests/ -q
 
       - name: Fetch data & generate reports
-        run: python quant_system/main.py all
-        continue-on-error: true
+        run: python quant_system/main.py all --skip-inspect
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
