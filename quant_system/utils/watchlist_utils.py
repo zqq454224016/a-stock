@@ -33,6 +33,52 @@ def missing_stock_data(codes: list[str] | None = None) -> list[str]:
     return missing
 
 
+def insufficient_history_codes(
+    codes: list[str] | None = None,
+    min_days: int | None = None,
+) -> list[str]:
+    """K 线根数不足 MVP 回测窗口的代码（检查 backfill 归档或 stocks kline）。"""
+    cfg = CrawlerConfig()
+    min_days = min_days or cfg.mvp_hist_days
+    threshold = int(min_days * 0.85)
+    target = [normalize_code(c) for c in codes] if codes else get_watchlist_codes()
+    store = JsonStore(DBConfig())
+    insufficient: list[str] = []
+
+    for code in target:
+        rows = 0
+        backfill_path = store.config.json_data_dir / "backfill" / f"{code}.json"
+        if backfill_path.exists():
+            data = store.read(backfill_path)
+            rows = len(data.get("klines", []))
+        else:
+            stock_path = store.config.json_data_dir / "stocks" / f"{code}.json"
+            if stock_path.exists():
+                data = store.read(stock_path)
+                rows = len(data.get("kline", []))
+        if rows < threshold:
+            insufficient.append(code)
+    return insufficient
+
+
+def ensure_watchlist_history(
+    codes: list[str] | None = None,
+    min_days: int | None = None,
+) -> list[str]:
+    """补录不足 MVP 历史窗口的自选股，返回本次 backfill 的代码。"""
+    cfg = CrawlerConfig()
+    min_days = min_days or cfg.mvp_hist_days
+    need = insufficient_history_codes(codes, min_days)
+    if not need:
+        return []
+
+    from quant_system.tasks.backfill_job import run_backfill
+
+    logger.info("MVP 历史补录 %s 只（目标 %s 日）: %s", len(need), min_days, ", ".join(need))
+    run_backfill(need, days=min_days, refresh_stocks=True)
+    return need
+
+
 def ensure_watchlist_stocks(codes: list[str] | None = None) -> list[str]:
     """
     确保 watchlist 条目均有 stocks JSON；缺失则自动采集。

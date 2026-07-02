@@ -58,7 +58,8 @@ chmod +x setup.sh
 ```bash
 cd a-stock
 chmod +x run.sh setup.sh
-./run.sh all              # 等价于 .venv/bin/python quant_system/main.py all
+./run.sh mvp              # MVP 闭环（推荐）：750日补录→行情→因子→回测→预测→看板
+./run.sh all              # 同上，可 --skip-backtest / --skip-predict
 ./run.sh stock
 ./run.sh predict
 ```
@@ -93,7 +94,9 @@ pip install -r quant_system/requirements.txt
 # 3. 采集数据（推荐 quant_system 入口）
 python quant_system/main.py market          # 大盘行情
 python quant_system/main.py stock           # 自选股分析
-python quant_system/main.py all             # watchlist 全量：巡检→行情→个股→回测→预测→报表
+python quant_system/main.py all             # watchlist 全量：巡检→行情→个股→回测→预测→看板→报表
+
+> **MVP 闭环**：`./run.sh mvp` 或 `./run.sh all` 按 Quantification.md §1.3 执行完整链路（含 750 日历史补录、跨源校验、因子、回测、可验证预测、盘中看板）。
 
 > **watchlist 约定**：`assets/data/watchlist.json` 中的股票为默认执行范围。新增代码后运行 `stock` / `all` / `gen_stock_report` 会自动补采集缺失数据，无需手动传代码参数。
 
@@ -111,6 +114,7 @@ python quant_system/main.py stock 600519 300308
 python quant_system/main.py live              # 单次采集
 python quant_system/main.py live --loop       # 循环采集（默认 60s）
 python quant_system/main.py live --loop --interval 30
+# 盘中看板：reports/live/index.html（mvp/all/stock 后自动生成）
 
 # 7. 技术因子 & 数据巡检（Phase 0 下一阶段）
 python quant_system/main.py factor            # 计算 RSI/MACD/ATR 等因子 + 初级走势信号

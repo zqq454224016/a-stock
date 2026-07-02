@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-07-02 每日行情 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../../index.html">首页</a> /
+        <a href="../index.html">报表列表</a> /
+        每日行情
+      </nav>
+      <h1 class="site-title">2026-07-02 每日行情</h1>
+      <p class="site-subtitle">交易日：2026-07-02 · 更新于 2026-07-02 23:50:38</p>
+    </div>
+  </header>
+
+  <main class="container report-body">
+    <section class="stats-row" id="index-stats"></section>
+    <section class="chart-section">
+      <h2>主要指数</h2>
+      <div id="index-chart" class="chart-box"></div>
+    </section>
+    <section class="chart-section">
+      <h2>涨跌分布</h2>
+      <div id="distribution-chart" class="chart-box chart-box-sm"></div>
+    </section>
+    <section class="table-section">
+      <h2>涨幅榜 TOP 10</h2>
+      <div class="table-wrap">
+        <table class="data-table" id="top-gainers">
+          <thead><tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>收盘价</th><th>成交额(亿)</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="table-section">
+      <h2>跌幅榜 TOP 10</h2>
+      <div class="table-wrap">
+        <table class="data-table" id="top-losers">
+          <thead><tr><th>代码</th><th>名称</th><th>涨跌幅</th><th>收盘价</th><th>成交额(亿)</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p><a href="../index.html">返回报表列表</a></p></div>
+  </footer>
+
+  <script src="../../js/chart.js"></script>
+  <script>
+    const data = {"trade_date": "2026-07-02", "updated_at": "2026-07-02 23:50:38", "indices": [{"name": "上证指数", "code": "000001", "close": 4028.9038, "change": -83.542, "change_pct": -2.031}, {"name": "深证成指", "code": "399001", "close": 15498.811, "change": -620.357, "change_pct": -3.849}, {"name": "创业板指", "code": "399006", "close": 4017.273, "change": -243.448, "change_pct": -5.714}, {"name": "科创50", "code": "000688", "close": 1987.291, "change": -165.752, "change_pct": -7.699}], "market_distribution": [{"label": "涨停", "count": 110, "color": "#dc2626"}, {"label": "涨幅>5%", "count": 161, "color": "#ef4444"}, {"label": "涨幅0~5%", "count": 1948, "color": "#f87171"}, {"label": "平盘", "count": 143, "color": "#6b7280"}, {"label": "跌幅0~5%", "count": 2613, "color": "#4ade80"}, {"label": "跌幅>5%", "count": 431, "color": "#22c55e"}, {"label": "跌停", "count": 117, "color": "#16a34a"}], "top_gainers": [{"code": "920193", "name": "N吉和昌", "close": 61.05, "change_pct": 616.549, "amount": 14.78}, {"code": "001248", "name": "N华润", "close": 23.95, "change_pct": 136.894, "amount": 176.92}, {"code": "920221", "name": "易实精密", "close": 16.62, "change_pct": 29.945, "amount": 1.67}, {"code": "300163", "name": "先锋新材", "close": 6.47, "change_pct": 20.037, "amount": 2.13}, {"code": "301019", "name": "宁波色母", "close": 21.53, "change_pct": 20.011, "amount": 1.05}, {"code": "301092", "name": "争光股份", "close": 58.91, "change_pct": 20.004, "amount": 5.4}, {"code": "688216", "name": "气派科技", "close": 51.3, "change_pct": 20.0, "amount": 10.24}, {"code": "300695", "name": "兆丰股份", "close": 60.37, "change_pct": 19.996, "amount": 2.1}, {"code": "301008", "name": "宏昌科技", "close": 31.93, "change_pct": 19.992, "amount": 5.28}, {"code": "300740", "name": "水羊股份", "close": 22.27, "change_pct": 19.989, "amount": 7.44}], "top_losers": [{"code": "301611", "name": "珂玛科技", "close": 154.06, "change_pct": -16.49, "amount": 40.91}, {"code": "688056", "name": "莱伯泰科", "close": 57.0, "change_pct": -16.176, "amount": 2.89}, {"code": "688409", "name": "富创精密", "close": 248.07, "change_pct": -16.005, "amount": 48.92}, {"code": "688361", "name": "中科飞测", "close": 356.0, "change_pct": -15.64, "amount": 74.46}, {"code": "688260", "name": "昀冢科技", "close": 110.89, "change_pct": -15.157, "amount": 5.27}, {"code": "688020", "name": "方邦股份", "close": 229.26, "change_pct": -15.114, "amount": 13.72}, {"code": "688200", "name": "华峰测控", "close": 450.0, "change_pct": -15.07, "amount": 42.12}, {"code": "688120", "name": "华海清科", "close": 281.0, "change_pct": -14.848, "amount": 71.35}, {"code": "688008", "name": "澜起科技", "close": 269.15, "change_pct": -14.796, "amount": 256.43}, {"code": "688233", "name": "神工股份", "close": 203.97, "change_pct": -14.499, "amount": 51.21}], "top_volume": [{"code": "000725", "name": "京东方Ａ", "close": 9.1, "change_pct": 3.763, "amount": 493.42}, {"code": "300308", "name": "中际旭创", "close": 1143.0, "change_pct": -6.554, "amount": 367.21}, {"code": "300502", "name": "新易盛", "close": 509.0, "change_pct": -11.564, "amount": 365.74}, {"code": "603986", "name": "兆易创新", "close": 694.81, "change_pct": -10.0, "amount": 321.21}, {"code": "688008", "name": "澜起科技", "close": 269.15, "change_pct": -14.796, "amount": 256.43}, {"code": "002407", "name": "多氟多", "close": 54.82, "change_pct": -0.778, "amount": 206.8}, {"code": "688256", "name": "寒武纪", "close": 1372.0, "change_pct": -7.63, "amount": 196.15}, {"code": "002384", "name": "东山精密", "close": 221.68, "change_pct": -10.0, "amount": 188.5}, {"code": "600584", "name": "长电科技", "close": 95.98, "change_pct": -9.996, "amount": 186.87}, {"code": "688012", "name": "中微公司", "close": 408.9, "change_pct": -11.494, "amount": 184.86}], "industries": [{"name": "贵金属", "change_pct": 3.91}, {"name": "纺织制造", "change_pct": 2.56}, {"name": "工程机械", "change_pct": 1.54}, {"name": "中药", "change_pct": 1.31}, {"name": "美容护理", "change_pct": 1.3}, {"name": "造纸", "change_pct": 1.27}, {"name": "服装家纺", "change_pct": 1.25}, {"name": "银行", "change_pct": 1.2}, {"name": "化学纤维", "change_pct": 1.15}, {"name": "养殖业", "change_pct": 1.13}, {"name": "化学制药", "change_pct": 1.1}, {"name": "物流", "change_pct": 1.09}, {"name": "家居用品", "change_pct": 1.02}, {"name": "医药商业", "change_pct": 0.98}, {"name": "港口航运", "change_pct": 0.97}, {"name": "文化传媒", "change_pct": 0.96}, {"name": "影视院线", "change_pct": 0.9}, {"name": "小家电", "change_pct": 0.86}, {"name": "公路铁路运输", "change_pct": 0.86}, {"name": "电机", "change_pct": 0.82}], "fund_flow": {"north_net": 0.0, "main_net": -741.1, "retail_net": 0.0}};
+    renderIndexStats(data.indices, 'index-stats');
+    renderIndexChart('index-chart', data.indices);
+    renderDistributionChart('distribution-chart', data.market_distribution);
+    renderStockTable('top-gainers', data.top_gainers, true);
+    renderStockTable('top-losers', data.top_losers, false);
+  </script>
+</body>
+</html>

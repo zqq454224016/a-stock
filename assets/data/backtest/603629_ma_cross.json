@@ -2,8 +2,8 @@
   "code": "603629",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_603629_20260701",
-  "quality_score": 100.0,
+  "data_version": "daily_kline_603629_20260702",
+  "quality_score": 95.0,
   "config": {
     "initial_cash": 100000.0,
     "commission_rate": 0.0003,
@@ -12,24 +12,17 @@
     "limit_pct": 0.099
   },
   "metrics": {
-    "total_return_pct": 217.21,
-    "annual_return_pct": 47.46,
+    "total_return_pct": 186.27,
+    "annual_return_pct": 42.46,
     "max_drawdown_pct": -56.34,
-    "sharpe_ratio": 0.95,
+    "sharpe_ratio": 0.89,
     "win_rate_pct": 42.11,
     "profit_loss_ratio": 5.08,
     "trade_count": 40,
     "closed_trades": 19,
-    "final_equity": 317211.2
+    "final_equity": 286267.2
   },
   "equity_curve": [
-    {
-      "date": "2023-05-26",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 13.78
-    },
     {
       "date": "2023-05-29",
       "equity": 100000.0,
@@ -5272,13 +5265,20 @@
       "cash": 7771.2,
       "shares": 1600,
       "close": 193.4
+    },
+    {
+      "date": "2026-07-02",
+      "equity": 286267.2,
+      "cash": 7771.2,
+      "shares": 1600,
+      "close": 174.06
     }
   ],
   "trades": [
     {
-      "date": "2023-06-05",
+      "date": "2023-06-06",
       "action": "buy",
-      "price": 20.88,
+      "price": 22.96,
       "shares": 0,
       "reason": "MA金叉",
       "status": "cancelled",
@@ -5694,5 +5694,5 @@
       "status": "filled"
     }
   ],
-  "updated_at": "2026-07-01 21:48:27"
+  "updated_at": "2026-07-02 23:51:55"
 }

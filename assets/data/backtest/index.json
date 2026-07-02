@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-07-01 21:48:27",
+  "updated_at": "2026-07-02 23:51:55",
   "results": [
     {
       "code": "600378",
       "strategy": "ma_cross",
-      "annual_return_pct": 11.9,
+      "annual_return_pct": 12.44,
       "max_drawdown_pct": -51.66,
-      "sharpe_ratio": 0.45,
+      "sharpe_ratio": 0.46,
       "win_rate_pct": 21.74
     },
     {
       "code": "603629",
       "strategy": "ma_cross",
-      "annual_return_pct": 47.46,
+      "annual_return_pct": 42.46,
       "max_drawdown_pct": -56.34,
-      "sharpe_ratio": 0.95,
+      "sharpe_ratio": 0.89,
       "win_rate_pct": 42.11
     }
   ]

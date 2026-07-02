@@ -2,8 +2,8 @@
   "code": "600378",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_600378_20260701",
-  "quality_score": 100.0,
+  "data_version": "daily_kline_600378_20260702",
+  "quality_score": 95.0,
   "config": {
     "initial_cash": 100000.0,
     "commission_rate": 0.0003,
@@ -12,24 +12,17 @@
     "limit_pct": 0.099
   },
   "metrics": {
-    "total_return_pct": 39.7,
-    "annual_return_pct": 11.9,
+    "total_return_pct": 41.69,
+    "annual_return_pct": 12.44,
     "max_drawdown_pct": -51.66,
-    "sharpe_ratio": 0.45,
+    "sharpe_ratio": 0.46,
     "win_rate_pct": 21.74,
     "profit_loss_ratio": 1.48,
     "trade_count": 47,
     "closed_trades": 23,
-    "final_equity": 139698.41
+    "final_equity": 141687.41
   },
   "equity_curve": [
-    {
-      "date": "2023-05-26",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 36.48
-    },
     {
       "date": "2023-05-29",
       "equity": 100000.0,
@@ -5272,6 +5265,13 @@
       "cash": 1998.41,
       "shares": 1700,
       "close": 81.0
+    },
+    {
+      "date": "2026-07-02",
+      "equity": 141687.41,
+      "cash": 1998.41,
+      "shares": 1700,
+      "close": 82.17
     }
   ],
   "trades": [
@@ -5769,5 +5769,5 @@
       "status": "filled"
     }
   ],
-  "updated_at": "2026-07-01 21:48:27"
+  "updated_at": "2026-07-02 23:51:54"
 }

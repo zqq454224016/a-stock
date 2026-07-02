@@ -83,7 +83,8 @@ def run_data_inspect(
 
     if auto_fix and fix_codes:
         logger.info("自动修复: %s", ", ".join(fix_codes))
-        run_backfill(fix_codes, days=cfg.stock_hist_days, refresh_stocks=True)
+        backfill_days = max(cfg.stock_hist_days, cfg.mvp_hist_days)
+        run_backfill(fix_codes, days=backfill_days, refresh_stocks=True)
         results = _inspect_codes(stocks, api, cfg, store, lookback_days)
 
     payload = build_inspect_report(results, now_str())

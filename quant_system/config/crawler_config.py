@@ -6,6 +6,8 @@ import os
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from quant_system.config.mvp_config import MVP_DISPLAY_DAYS, MVP_HIST_DAYS
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
@@ -17,7 +19,8 @@ class CrawlerConfig:
     retry_delay: float = 2.0
     eastmoney_probe_retries: int = 1  # 探测东财时的重试次数（auto 模式）
     request_timeout: int = 30
-    stock_hist_days: int = 120
+    stock_hist_days: int = MVP_DISPLAY_DAYS
+    mvp_hist_days: int = MVP_HIST_DAYS
     cross_source_check: bool = os.getenv("CRAWLER_CROSS_SOURCE", "1") != "0"
     cross_source_lookback: int = 20
     industry_top_n: int = 20

@@ -22,7 +22,7 @@ from quant_system.tasks.inspect_job import run_data_inspect
 from quant_system.tasks.predict_job import run_predict_job
 from quant_system.tasks.stock_job import run_daily_stock
 from quant_system.utils.logger import get_logger
-from quant_system.utils.watchlist_utils import ensure_watchlist_stocks, resolve_codes
+from quant_system.utils.watchlist_utils import ensure_watchlist_history, ensure_watchlist_stocks, resolve_codes
 
 logger = get_logger("main")
 
@@ -69,6 +69,8 @@ def build_parser() -> argparse.ArgumentParser:
     all_cmd.add_argument("--skip-backtest", action="store_true", help="跳过回测")
     all_cmd.add_argument("--skip-predict", action="store_true", help="跳过走势预测")
 
+    sub.add_parser("mvp", help="MVP 闭环（同 all，含 750 日补录 + 盘中看板）")
+
     bt = sub.add_parser("backtest", help="单策略日线回测（MA金叉）")
     bt.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
     bt.add_argument("--strategy", default="ma_cross", choices=["ma_cross"], help="策略名称")
@@ -103,6 +105,36 @@ def generate_backtest_reports() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_live_dashboard() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_live_dashboard.py"
+    if path.exists():
+        logger.info("生成盘中看板: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def run_mvp_pipeline(*, skip_inspect: bool = False) -> None:
+    """MVP 闭环：数据 → 因子 → 回测 → 预测 → 报表（Quantification.md §1.3）。"""
+    from quant_system.config.crawler_config import CrawlerConfig
+
+    cfg = CrawlerConfig()
+    logger.info("=== MVP 闭环开始（历史窗口 %s 日）===", cfg.mvp_hist_days)
+
+    if not skip_inspect:
+        run_data_inspect(auto_fix=True)
+    ensure_watchlist_history(min_days=cfg.mvp_hist_days)
+    run_daily_market(mock=False)
+    run_daily_stock()
+    run_intraday_live()
+    run_backtest_job(days=cfg.mvp_hist_days, allow_warn_quality=True)
+    generate_backtest_reports()
+    run_predict_job(allow_warn_quality=True, auto_backtest=True)
+    generate_predict_reports()
+    generate_reports()
+    generate_live_dashboard()
+    logger.info("=== MVP 闭环完成 ===")
+
+
 def generate_reports(stock_only: bool = False) -> None:
     """调用现有 HTML 报表生成脚本；生成前补齐 watchlist 缺失个股。"""
     ensure_watchlist_stocks()
@@ -127,12 +159,16 @@ def main() -> None:
     elif args.command == "stock":
         run_daily_stock(codes=resolve_codes(args.codes))
         run_intraday_live(codes=resolve_codes(args.codes))
+        generate_live_dashboard()
         generate_reports(stock_only=True)
     elif args.command == "live":
         if args.loop:
             run_intraday_loop(interval_sec=args.interval, codes=resolve_codes(args.codes))
         else:
             run_intraday_live(codes=resolve_codes(args.codes))
+            generate_live_dashboard()
+    elif args.command == "mvp":
+        run_mvp_pipeline(skip_inspect=False)
     elif args.command == "factor":
         run_factor_compute(codes=resolve_codes(args.codes), ignore_quality=args.force)
     elif args.command == "inspect":
@@ -171,9 +207,11 @@ def main() -> None:
     elif args.command == "all":
         if not args.skip_inspect:
             run_data_inspect(auto_fix=True)
+        from quant_system.config.crawler_config import CrawlerConfig
+        ensure_watchlist_history(min_days=CrawlerConfig().mvp_hist_days)
         run_daily_market(mock=False)
-        run_daily_stock()  # 完整 watchlist
-        run_intraday_live()  # 刷新盘中 live JSON（现价 + 分钟线）
+        run_daily_stock()
+        run_intraday_live()
         if not args.skip_backtest:
             run_backtest_job(allow_warn_quality=True)
             generate_backtest_reports()
@@ -181,6 +219,7 @@ def main() -> None:
             run_predict_job(allow_warn_quality=True, auto_backtest=not args.skip_backtest)
             generate_predict_reports()
         generate_reports()
+        generate_live_dashboard()
     else:
         build_parser().print_help()
 

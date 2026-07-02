@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>盘中看板 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <style>
+    .live-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .live-card {
+      background: var(--color-surface, #1a2332);
+      border: 1px solid var(--color-border, #2d3a4f);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+    .live-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+    .live-card-title {
+      font-weight: 600;
+      color: var(--color-text, #e8edf4);
+      text-decoration: none;
+    }
+    .live-card-price {
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    .live-card-change { font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .live-card-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.35rem 0.75rem;
+      font-size: 0.85rem;
+      margin: 0 0 0.5rem;
+    }
+    .live-card-meta dt { color: var(--color-muted, #8b9cb3); }
+    .live-card-meta dd { margin: 0; text-align: right; }
+    .live-card-chart { height: 72px; margin-top: 0.25rem; }
+    .live-card-foot {
+      font-size: 0.75rem;
+      color: var(--color-muted, #8b9cb3);
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../../index.html">首页</a> /
+        <a href="../index.html">报表列表</a> /
+        盘中看板
+      </nav>
+      <h1 class="site-title">盘中看板</h1>
+      <p class="site-subtitle">
+        自选股实时汇总 · 每 15s 自动刷新
+        <span class="live-status" id="dash-status">连接中…</span>
+      </p>
+      <p style="font-size:0.85rem;color:var(--color-muted)">
+        交易时段连续更新请另开终端：<code>./run.sh live --loop --interval 15</code>
+      </p>
+    </div>
+  </header>
+  <main class="container report-body">
+    <div id="live-grid" class="live-grid"></div>
+    <p style="margin-top:1.5rem"><a href="../index.html">返回报表列表</a></p>
+  </main>
+  <script src="../../js/live_dashboard.js"></script>
+  <script>startLiveDashboard(15000);</script>
+</body>
+</html>

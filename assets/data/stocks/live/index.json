@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-07-01 22:05:40",
+  "updated_at": "2026-07-02 23:51:53",
   "stocks": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-01",
-      "close": 81.0,
-      "change_pct": 7.456,
+      "trade_date": "2026-07-02",
+      "close": 82.17,
+      "change_pct": 1.444,
       "signal": "震荡"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-01",
-      "close": 193.4,
-      "change_pct": 8.159,
-      "signal": "强势"
+      "trade_date": "2026-07-02",
+      "close": 174.06,
+      "change_pct": -10.0,
+      "signal": "震荡"
     }
   ]
 }

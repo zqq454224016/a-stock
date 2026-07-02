@@ -1,20 +1,18 @@
 {
   "code": "603629",
-  "trade_date": "2026-07-01",
+  "trade_date": "2026-07-02",
   "horizon": "5d",
-  "signal": "bullish",
-  "signal_score": 72.0,
+  "signal": "neutral",
+  "signal_score": 44.0,
   "drivers": [
-    "above_ma20",
     "rsi14_strong",
     "macd_hist_negative",
-    "volume_expansion",
-    "ma20_breakout"
+    "momentum_20_down"
   ],
   "limitations": [
     "not_backtested",
     "technical_only"
   ],
   "signal_version": "1.0.0",
-  "updated_at": "2026-07-01 22:05:22"
+  "updated_at": "2026-07-02 23:51:24"
 }
