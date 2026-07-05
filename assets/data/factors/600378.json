@@ -1,19 +1,25 @@
 {
   "code": "600378",
-  "trade_date": "2026-07-02",
-  "factor_version": "1.0.0",
-  "data_version": "daily_kline_600378_20260702",
+  "trade_date": "2026-07-03",
+  "factor_version": "1.1.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": "1.0.0",
+  "data_version": "daily_kline_600378_20260703",
   "factors": {
-    "ma20_bias": 30.94,
-    "rsi14": 67.58,
-    "macd": 9.0689,
-    "macd_signal": 7.7309,
-    "macd_hist": 1.3381,
-    "atr14": 7.1971,
-    "momentum_20": 98.53,
-    "volume_ratio_20": 1.22,
+    "ma20_bias": 27.01,
+    "rsi14": 76.77,
+    "macd": 9.4075,
+    "macd_signal": 8.0662,
+    "macd_hist": 1.3413,
+    "atr14": 7.7636,
+    "momentum_20": 89.81,
+    "volume_ratio_20": 1.19,
     "above_ma20": true,
-    "ma_cross": "none"
+    "ma_cross": "none",
+    "technical_score": 87.0,
+    "sentiment_score": 63.8,
+    "multi_factor_score": 78.9,
+    "has_sentiment": true
   },
-  "updated_at": "2026-07-02 23:51:18"
+  "updated_at": "2026-07-05 22:57:35"
 }

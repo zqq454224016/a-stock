@@ -2,10 +2,10 @@
   "code": "600378",
   "name": "昊华科技",
   "symbol": "sh600378",
-  "trade_date": "2026-07-02",
-  "kline_date": "2026-07-02",
+  "trade_date": "2026-07-03",
+  "kline_date": "2026-07-03",
   "quote_source": "spot",
-  "updated_at": "2026-07-02 23:51:18",
+  "updated_at": "2026-07-03 00:28:18",
   "quote": {
     "close": 82.17,
     "change": 1.17,
@@ -20,15 +20,15 @@
   "analysis": {
     "trend": "偏多",
     "returns": {
-      "d5": 20.13,
-      "d20": 98.53,
-      "d60": 170.83
+      "d5": 31.89,
+      "d20": 89.81,
+      "d60": 159.05
     },
     "ma": {
-      "ma5": 73.88,
-      "ma10": 70.66,
-      "ma20": 62.75,
-      "ma60": 44.53
+      "ma5": 77.85,
+      "ma10": 72.37,
+      "ma20": 64.7,
+      "ma60": 45.37
     },
     "ma_signal": {
       "above_ma5": true,
@@ -3043,14 +3043,26 @@
       "ma10": 70.66,
       "ma20": 62.75,
       "ma60": 44.53
+    },
+    {
+      "date": "2026-07-03",
+      "open": 76.81,
+      "high": 88.1,
+      "low": 73.82,
+      "close": 82.17,
+      "volume": 116119346.0,
+      "ma5": 77.85,
+      "ma10": 72.37,
+      "ma20": 64.7,
+      "ma60": 45.37
     }
   ],
   "daily_kline_source": "sina",
   "kline_source": "sina+spot",
   "kline_merged": true,
-  "kline_merge_action": "update",
+  "kline_merge_action": "append",
   "kline_stale": false,
-  "kline_target_date": "2026-07-02",
+  "kline_target_date": "2026-07-03",
   "quality": {
     "status": "ok",
     "quality_score": 100.0,
@@ -3059,34 +3071,33 @@
     "cross_source_diff": null,
     "factor_eligible": true,
     "issues": [],
-    "checked_at": "2026-07-02 23:51:18"
+    "checked_at": "2026-07-03 00:28:18"
   },
-  "data_version": "daily_kline_600378_20260702",
+  "data_version": "daily_kline_600378_20260703",
   "source": "akshare",
   "factors": {
-    "ma20_bias": 30.94,
-    "rsi14": 67.58,
-    "macd": 9.0689,
-    "macd_signal": 7.7309,
-    "macd_hist": 1.3381,
-    "atr14": 7.1971,
-    "momentum_20": 98.53,
-    "volume_ratio_20": 1.22,
+    "ma20_bias": 27.01,
+    "rsi14": 76.77,
+    "macd": 9.4075,
+    "macd_signal": 8.0662,
+    "macd_hist": 1.3413,
+    "atr14": 7.7636,
+    "momentum_20": 89.81,
+    "volume_ratio_20": 1.19,
     "above_ma20": true,
     "ma_cross": "none"
   },
   "primary_signal": {
     "code": "600378",
-    "trade_date": "2026-07-02",
+    "trade_date": "2026-07-03",
     "horizon": "5d",
     "signal": "bullish",
-    "signal_score": 92.0,
+    "signal_score": 87.0,
     "drivers": [
       "above_ma20",
       "rsi14_strong",
       "macd_hist_positive",
       "momentum_20_up",
-      "volume_expansion",
       "ma20_breakout"
     ],
     "limitations": [
@@ -3094,6 +3105,6 @@
       "technical_only"
     ],
     "signal_version": "1.0.0",
-    "updated_at": "2026-07-02 23:51:18"
+    "updated_at": "2026-07-03 00:28:18"
   }
 }

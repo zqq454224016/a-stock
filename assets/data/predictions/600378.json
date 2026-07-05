@@ -1,6 +1,6 @@
 {
   "code": "600378",
-  "trade_date": "2026-07-02",
+  "trade_date": "2026-07-03",
   "horizon": "5d",
   "direction": "down",
   "probability": 0.3808,
@@ -10,7 +10,7 @@
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_600378_20260702",
+  "data_version": "daily_kline_600378_20260703",
   "factor_versions": {
     "technical": "1.0.0"
   },
@@ -29,9 +29,10 @@
     "MACD柱为正"
   ],
   "risk_flags": [
+    "rsi_overbought",
     "high_volatility",
     "high_historical_drawdown"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-02 23:51:56"
+  "updated_at": "2026-07-03 00:31:15"
 }

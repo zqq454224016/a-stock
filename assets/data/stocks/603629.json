@@ -2,10 +2,10 @@
   "code": "603629",
   "name": "利通电子",
   "symbol": "sh603629",
-  "trade_date": "2026-07-02",
-  "kline_date": "2026-07-02",
+  "trade_date": "2026-07-03",
+  "kline_date": "2026-07-03",
   "quote_source": "spot",
-  "updated_at": "2026-07-02 23:51:24",
+  "updated_at": "2026-07-03 00:28:24",
   "quote": {
     "close": 174.06,
     "change": -19.34,
@@ -20,15 +20,15 @@
   "analysis": {
     "trend": "震荡",
     "returns": {
-      "d5": -16.27,
-      "d20": -16.27,
-      "d60": 188.85
+      "d5": -6.96,
+      "d20": -13.15,
+      "d60": 192.93
     },
     "ma": {
-      "ma5": 182.04,
-      "ma10": 190.99,
-      "ma20": 177.26,
-      "ma60": 155.11
+      "ma5": 179.44,
+      "ma10": 190.73,
+      "ma20": 175.95,
+      "ma60": 157.02
     },
     "ma_signal": {
       "above_ma5": false,
@@ -3043,14 +3043,26 @@
       "ma10": 190.99,
       "ma20": 177.26,
       "ma60": 155.11
+    },
+    {
+      "date": "2026-07-03",
+      "open": 184.0,
+      "high": 185.99,
+      "low": 174.06,
+      "close": 174.06,
+      "volume": 20258760.0,
+      "ma5": 179.44,
+      "ma10": 190.73,
+      "ma20": 175.95,
+      "ma60": 157.02
     }
   ],
   "daily_kline_source": "sina",
   "kline_source": "sina+spot",
   "kline_merged": true,
-  "kline_merge_action": "update",
+  "kline_merge_action": "append",
   "kline_stale": false,
-  "kline_target_date": "2026-07-02",
+  "kline_target_date": "2026-07-03",
   "quality": {
     "status": "ok",
     "quality_score": 100.0,
@@ -3059,30 +3071,30 @@
     "cross_source_diff": null,
     "factor_eligible": true,
     "issues": [],
-    "checked_at": "2026-07-02 23:51:24"
+    "checked_at": "2026-07-03 00:28:24"
   },
-  "data_version": "daily_kline_603629_20260702",
+  "data_version": "daily_kline_603629_20260703",
   "source": "akshare",
   "factors": {
-    "ma20_bias": -1.81,
-    "rsi14": 60.45,
-    "macd": 4.442,
-    "macd_signal": 5.8834,
-    "macd_hist": -1.4414,
-    "atr14": 18.5086,
-    "momentum_20": -16.27,
+    "ma20_bias": -1.07,
+    "rsi14": 57.14,
+    "macd": 3.2864,
+    "macd_signal": 5.364,
+    "macd_hist": -2.0776,
+    "atr14": 18.3657,
+    "momentum_20": -13.15,
     "volume_ratio_20": 0.65,
     "above_ma20": false,
     "ma_cross": "none"
   },
   "primary_signal": {
     "code": "603629",
-    "trade_date": "2026-07-02",
+    "trade_date": "2026-07-03",
     "horizon": "5d",
-    "signal": "neutral",
-    "signal_score": 44.0,
+    "signal": "bearish",
+    "signal_score": 40.0,
     "drivers": [
-      "rsi14_strong",
+      "rsi14_neutral_up",
       "macd_hist_negative",
       "momentum_20_down"
     ],
@@ -3091,6 +3103,6 @@
       "technical_only"
     ],
     "signal_version": "1.0.0",
-    "updated_at": "2026-07-02 23:51:24"
+    "updated_at": "2026-07-03 00:28:24"
   }
 }

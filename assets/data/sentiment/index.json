@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-07-03 00:30:40",
+  "stocks": [
+    {
+      "code": "600378",
+      "trade_date": "2026-07-02",
+      "label": "中性",
+      "heat_index": 94.8,
+      "long_short_ratio": 1.0404,
+      "sentiment_accel": 0.4
+    },
+    {
+      "code": "603629",
+      "trade_date": "2026-07-02",
+      "label": "中性",
+      "heat_index": 87.2,
+      "long_short_ratio": 0.9658,
+      "sentiment_accel": 0.8
+    },
+    {
+      "code": "000636",
+      "trade_date": "2026-07-02",
+      "label": "看空",
+      "heat_index": 95.2,
+      "long_short_ratio": 0.9073,
+      "sentiment_accel": 2.8
+    }
+  ]
+}

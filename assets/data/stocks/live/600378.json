@@ -2,12 +2,12 @@
   "code": "600378",
   "name": "昊华科技",
   "symbol": "sh600378",
-  "trade_date": "2026-07-02",
-  "updated_at": "2026-07-02 23:51:49",
+  "trade_date": "2026-07-03",
+  "updated_at": "2026-07-03 00:31:02",
   "quote_source": "spot",
   "minute_trade_date": "2026-07-02",
-  "minute_stale": false,
-  "market_session": "after_hours",
+  "minute_stale": true,
+  "market_session": "pre_market",
   "quote": {
     "close": 82.17,
     "change": 1.17,
@@ -20,15 +20,15 @@
     "name": "昊华科技"
   },
   "intraday": {
-    "signal": "震荡",
+    "signal": "强势",
     "ma5_1m": 82.59,
     "ma20_1m": 82.43,
     "ma60_1m": 82.9,
     "above_ma5": false,
     "above_ma20": false,
     "volume_ratio": 3.04,
-    "change_5m": -0.96,
-    "change_15m": -0.11,
+    "change_5m": null,
+    "change_15m": null,
     "bars_1m": 238
   },
   "minute_bars": [
@@ -1113,246 +1113,5 @@
       "volume": 1430800.0
     }
   ],
-  "minute_5_bars": [
-    {
-      "time": "09:35",
-      "close": 75.99,
-      "volume": 15963835.0
-    },
-    {
-      "time": "09:40",
-      "close": 81.87,
-      "volume": 7513450.0
-    },
-    {
-      "time": "09:45",
-      "close": 83.9,
-      "volume": 12865578.0
-    },
-    {
-      "time": "09:50",
-      "close": 83.1,
-      "volume": 7146637.0
-    },
-    {
-      "time": "09:55",
-      "close": 84.75,
-      "volume": 5292749.0
-    },
-    {
-      "time": "10:00",
-      "close": 84.12,
-      "volume": 3462622.0
-    },
-    {
-      "time": "10:05",
-      "close": 85.4,
-      "volume": 3802837.0
-    },
-    {
-      "time": "10:10",
-      "close": 85.64,
-      "volume": 3535402.0
-    },
-    {
-      "time": "10:15",
-      "close": 84.37,
-      "volume": 2183743.0
-    },
-    {
-      "time": "10:20",
-      "close": 84.99,
-      "volume": 1668671.0
-    },
-    {
-      "time": "10:25",
-      "close": 85.46,
-      "volume": 1314800.0
-    },
-    {
-      "time": "10:30",
-      "close": 84.65,
-      "volume": 1829593.0
-    },
-    {
-      "time": "10:35",
-      "close": 85.36,
-      "volume": 1154200.0
-    },
-    {
-      "time": "10:40",
-      "close": 85.45,
-      "volume": 1366313.0
-    },
-    {
-      "time": "10:45",
-      "close": 87.95,
-      "volume": 2879400.0
-    },
-    {
-      "time": "10:50",
-      "close": 87.12,
-      "volume": 1599800.0
-    },
-    {
-      "time": "10:55",
-      "close": 86.17,
-      "volume": 990240.0
-    },
-    {
-      "time": "11:00",
-      "close": 86.5,
-      "volume": 1258414.0
-    },
-    {
-      "time": "11:05",
-      "close": 87.4,
-      "volume": 991700.0
-    },
-    {
-      "time": "11:10",
-      "close": 86.68,
-      "volume": 815500.0
-    },
-    {
-      "time": "11:15",
-      "close": 86.96,
-      "volume": 607626.0
-    },
-    {
-      "time": "11:20",
-      "close": 87.34,
-      "volume": 1118200.0
-    },
-    {
-      "time": "11:25",
-      "close": 86.1,
-      "volume": 748494.0
-    },
-    {
-      "time": "11:30",
-      "close": 86.31,
-      "volume": 870429.0
-    },
-    {
-      "time": "13:05",
-      "close": 85.07,
-      "volume": 1606952.0
-    },
-    {
-      "time": "13:10",
-      "close": 86.05,
-      "volume": 889600.0
-    },
-    {
-      "time": "13:15",
-      "close": 86.5,
-      "volume": 620380.0
-    },
-    {
-      "time": "13:20",
-      "close": 86.0,
-      "volume": 404800.0
-    },
-    {
-      "time": "13:25",
-      "close": 86.32,
-      "volume": 571703.0
-    },
-    {
-      "time": "13:30",
-      "close": 85.95,
-      "volume": 769104.0
-    },
-    {
-      "time": "13:35",
-      "close": 85.05,
-      "volume": 589300.0
-    },
-    {
-      "time": "13:40",
-      "close": 84.8,
-      "volume": 1784480.0
-    },
-    {
-      "time": "13:45",
-      "close": 83.8,
-      "volume": 2444727.0
-    },
-    {
-      "time": "13:50",
-      "close": 84.25,
-      "volume": 3205784.0
-    },
-    {
-      "time": "13:55",
-      "close": 83.95,
-      "volume": 1215300.0
-    },
-    {
-      "time": "14:00",
-      "close": 83.98,
-      "volume": 864000.0
-    },
-    {
-      "time": "14:05",
-      "close": 83.4,
-      "volume": 1101510.0
-    },
-    {
-      "time": "14:10",
-      "close": 83.72,
-      "volume": 1071983.0
-    },
-    {
-      "time": "14:15",
-      "close": 83.0,
-      "volume": 1509900.0
-    },
-    {
-      "time": "14:20",
-      "close": 82.85,
-      "volume": 1407700.0
-    },
-    {
-      "time": "14:25",
-      "close": 82.72,
-      "volume": 1642636.0
-    },
-    {
-      "time": "14:30",
-      "close": 82.81,
-      "volume": 1545937.0
-    },
-    {
-      "time": "14:35",
-      "close": 82.55,
-      "volume": 1630800.0
-    },
-    {
-      "time": "14:40",
-      "close": 82.5,
-      "volume": 1482900.0
-    },
-    {
-      "time": "14:45",
-      "close": 82.31,
-      "volume": 2225824.0
-    },
-    {
-      "time": "14:50",
-      "close": 81.99,
-      "volume": 1868721.0
-    },
-    {
-      "time": "14:55",
-      "close": 82.69,
-      "volume": 2117672.0
-    },
-    {
-      "time": "15:00",
-      "close": 82.17,
-      "volume": 2567400.0
-    }
-  ]
+  "minute_5_bars": []
 }

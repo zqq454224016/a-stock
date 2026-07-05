@@ -5,6 +5,7 @@ from __future__ import annotations
 # 技术因子库版本（公式/参数变更时递增）
 TECHNICAL_FACTOR_VERSION = "1.0.0"
 PRIMARY_SIGNAL_VERSION = "1.0.0"
+COMPOSITE_FACTOR_VERSION = "1.1.0"
 
 # 跨源收盘价偏差告警（百分比）
 CROSS_SOURCE_WARN_PCT = 0.5

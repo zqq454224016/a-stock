@@ -15,6 +15,7 @@ from quant_system.pipeline.quality_gate import is_backtest_eligible, load_qualit
 from quant_system.pipeline.quality_inspector import inspect_kline_df
 from quant_system.storage.json_store import JsonStore
 from quant_system.strategy.ma_cross import MACrossStrategy
+from quant_system.strategy.multi_factor import MultiFactorStrategy
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str
 from quant_system.utils.trade_calendar import get_calendar
@@ -23,6 +24,7 @@ logger = get_logger(__name__)
 
 STRATEGIES = {
     "ma_cross": MACrossStrategy,
+    "multi_factor": MultiFactorStrategy,
 }
 
 

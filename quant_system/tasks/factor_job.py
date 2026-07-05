@@ -14,6 +14,7 @@ from quant_system.pipeline.normalizer import load_watchlist, normalize_code
 from quant_system.pipeline.quality_gate import factor_block_reason, load_quality_map
 from quant_system.pipeline.quality_inspector import inspect_kline_df
 from quant_system.storage.json_store import JsonStore
+from quant_system.tasks.factor_utils import save_composite_factors
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str
 from quant_system.utils.trade_calendar import get_calendar
@@ -68,21 +69,26 @@ def run_factor_compute(
                 close_override=ctx.get("close_override"),
                 data_version=meta.get("data_version"),
             )
-            store.save_factors(code, result)
-            f = result["factors"]
-            signal_payload = compute_primary_signal(f, code, result["trade_date"])
+            composite = save_composite_factors(code, result["trade_date"], result, store)
+            f = composite["factors"]
+            signal_payload = compute_primary_signal(f, code, composite["trade_date"])
             store.save_signal(code, signal_payload)
             index.append({
                 "code": code,
-                "trade_date": result["trade_date"],
-                "factor_version": result.get("factor_version"),
+                "trade_date": composite["trade_date"],
+                "factor_version": composite.get("factor_version"),
                 "ma20_bias": f.get("ma20_bias"),
                 "rsi14": f.get("rsi14"),
                 "momentum_20": f.get("momentum_20"),
                 "ma_cross": f.get("ma_cross"),
+                "multi_factor_score": f.get("multi_factor_score"),
+                "sentiment_score": f.get("sentiment_score"),
                 "primary_signal": signal_payload.get("signal"),
             })
-            logger.info("因子 %s: rsi=%s ma20_bias=%s", code, f.get("rsi14"), f.get("ma20_bias"))
+            logger.info(
+                "因子 %s: multi=%s tech=%s sent=%s",
+                code, f.get("multi_factor_score"), f.get("technical_score"), f.get("sentiment_score"),
+            )
         except Exception as e:
             logger.error("因子计算 %s 失败: %s", code, e)
 

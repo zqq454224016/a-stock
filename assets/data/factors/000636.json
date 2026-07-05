@@ -1,0 +1,25 @@
+{
+  "code": "000636",
+  "trade_date": "2026-07-03",
+  "factor_version": "1.1.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": "1.0.0",
+  "data_version": "daily_kline_000636_20260703",
+  "factors": {
+    "ma20_bias": -2.84,
+    "rsi14": 57.87,
+    "macd": 6.5882,
+    "macd_signal": 8.4188,
+    "macd_hist": -1.8306,
+    "atr14": 6.0321,
+    "momentum_20": 5.45,
+    "volume_ratio_20": 0.6,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 52.0,
+    "sentiment_score": 64.0,
+    "multi_factor_score": 56.2,
+    "has_sentiment": true
+  },
+  "updated_at": "2026-07-05 22:57:35"
+}

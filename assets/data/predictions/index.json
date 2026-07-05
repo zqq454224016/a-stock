@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02 23:51:57",
+  "updated_at": "2026-07-03 00:31:18",
   "predictions": [
     {
       "code": "600378",
@@ -16,6 +16,14 @@
       "probability": 0.436,
       "confidence": "high",
       "expected_return": -0.0156
+    },
+    {
+      "code": "000636",
+      "horizon": "5d",
+      "direction": "down",
+      "probability": 0.391,
+      "confidence": "high",
+      "expected_return": -0.0076
     }
   ]
 }

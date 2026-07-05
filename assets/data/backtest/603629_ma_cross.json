@@ -3,7 +3,7 @@
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
   "data_version": "daily_kline_603629_20260702",
-  "quality_score": 95.0,
+  "quality_score": 100.0,
   "config": {
     "initial_cash": 100000.0,
     "commission_rate": 0.0003,
@@ -5694,5 +5694,5 @@
       "status": "filled"
     }
   ],
-  "updated_at": "2026-07-02 23:51:55"
+  "updated_at": "2026-07-03 00:31:13"
 }

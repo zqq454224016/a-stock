@@ -73,6 +73,46 @@ class JsonStore:
         self.write(path, data)
         return path
 
+    def sentiment_dir(self) -> Path:
+        return self.config.json_data_dir / "sentiment"
+
+    def save_sentiment(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.sentiment_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_sentiment_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.sentiment_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "stocks": items})
+        return path
+
+    def enhance_dir(self) -> Path:
+        return self.config.json_data_dir / "enhance"
+
+    def save_enhance(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.enhance_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_enhance_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.enhance_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "stocks": items})
+        return path
+
+    def indices_dir(self) -> Path:
+        return self.config.json_data_dir / "indices"
+
+    def save_index_benchmarks(self, market: dict[str, Any], updated_at: str) -> Path:
+        path = self.indices_dir() / "benchmarks.json"
+        payload = {
+            "updated_at": updated_at,
+            "trade_date": market.get("trade_date"),
+            "indices": market.get("indices") or [],
+            "fund_flow": market.get("fund_flow") or {},
+        }
+        self.write(path, payload)
+        return path
+
     def quality_dir(self) -> Path:
         return self.config.json_data_dir / "quality"
 

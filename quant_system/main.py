@@ -16,10 +16,12 @@ from quant_system.scheduler.cron_runner import run_job, start_scheduler
 from quant_system.tasks.backfill_job import run_backfill
 from quant_system.tasks.backtest_job import run_backtest_job
 from quant_system.tasks.daily_job import run_daily_market
+from quant_system.tasks.enhance_job import run_enhance_job
 from quant_system.tasks.factor_job import run_factor_compute
 from quant_system.tasks.intraday_job import run_intraday_live, run_intraday_loop
 from quant_system.tasks.inspect_job import run_data_inspect
 from quant_system.tasks.predict_job import run_predict_job
+from quant_system.tasks.sentiment_job import run_sentiment_job
 from quant_system.tasks.stock_job import run_daily_stock
 from quant_system.utils.logger import get_logger
 from quant_system.utils.watchlist_utils import ensure_watchlist_history, ensure_watchlist_stocks, resolve_codes
@@ -68,19 +70,26 @@ def build_parser() -> argparse.ArgumentParser:
     all_cmd.add_argument("--skip-inspect", action="store_true", help="跳过质量巡检")
     all_cmd.add_argument("--skip-backtest", action="store_true", help="跳过回测")
     all_cmd.add_argument("--skip-predict", action="store_true", help="跳过走势预测")
+    all_cmd.add_argument("--skip-sentiment", action="store_true", help="跳过舆情采集")
+    all_cmd.add_argument("--skip-enhance", action="store_true", help="跳过数据增强")
+    sub.add_parser("mvp", help="MVP 闭环（同 all，含 750 日补录 + 盘中看板 + 舆情）")
 
-    sub.add_parser("mvp", help="MVP 闭环（同 all，含 750 日补录 + 盘中看板）")
+    sent = sub.add_parser("sentiment", help="舆情采集（东财评论 + 雪球热榜）")
+    sent.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+
+    enhance = sub.add_parser("enhance", help="数据增强（估值/公司行为/资金/指数）")
+    enhance.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
 
     bt = sub.add_parser("backtest", help="单策略日线回测（MA金叉）")
     bt.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
-    bt.add_argument("--strategy", default="ma_cross", choices=["ma_cross"], help="策略名称")
+    bt.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"], help="策略名称")
     bt.add_argument("--days", type=int, default=750, help="回测 K 线天数（约3年=750）")
     bt.add_argument("--cash", type=float, default=100_000, help="初始资金")
     bt.add_argument("--allow-warn", action="store_true", help="允许质量分 70-89 进入回测")
 
     pred = sub.add_parser("predict", help="可验证走势预测（5d 方向/概率/置信度）")
     pred.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
-    pred.add_argument("--strategy", default="ma_cross", choices=["ma_cross"])
+    pred.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
     pred.add_argument("--horizon", default="5d", choices=["1d", "5d", "20d"])
     pred.add_argument("--days", type=int, default=750)
     pred.add_argument("--no-backtest", action="store_true", help="不自动补跑回测")
@@ -105,6 +114,14 @@ def generate_backtest_reports() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_factor_reports() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_factor_report.py"
+    if path.exists():
+        logger.info("生成因子排名: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
 def generate_live_dashboard() -> None:
     import subprocess
     path = ROOT / "script" / "gen_live_dashboard.py"
@@ -113,7 +130,15 @@ def generate_live_dashboard() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
-def run_mvp_pipeline(*, skip_inspect: bool = False) -> None:
+def generate_enhance_reports() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_enhance_report.py"
+    if path.exists():
+        logger.info("生成数据增强报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False) -> None:
     """MVP 闭环：数据 → 因子 → 回测 → 预测 → 报表（Quantification.md §1.3）。"""
     from quant_system.config.crawler_config import CrawlerConfig
 
@@ -125,12 +150,17 @@ def run_mvp_pipeline(*, skip_inspect: bool = False) -> None:
     ensure_watchlist_history(min_days=cfg.mvp_hist_days)
     run_daily_market(mock=False)
     run_daily_stock()
+    if not skip_sentiment:
+        run_sentiment_job()
+    run_enhance_job()
     run_intraday_live()
     run_backtest_job(days=cfg.mvp_hist_days, allow_warn_quality=True)
     generate_backtest_reports()
     run_predict_job(allow_warn_quality=True, auto_backtest=True)
     generate_predict_reports()
     generate_reports()
+    generate_factor_reports()
+    generate_enhance_reports()
     generate_live_dashboard()
     logger.info("=== MVP 闭环完成 ===")
 
@@ -169,6 +199,12 @@ def main() -> None:
             generate_live_dashboard()
     elif args.command == "mvp":
         run_mvp_pipeline(skip_inspect=False)
+    elif args.command == "sentiment":
+        run_sentiment_job(codes=resolve_codes(args.codes))
+    elif args.command == "enhance":
+        run_enhance_job(codes=resolve_codes(args.codes))
+        generate_enhance_reports()
+        generate_reports(stock_only=True)
     elif args.command == "factor":
         run_factor_compute(codes=resolve_codes(args.codes), ignore_quality=args.force)
     elif args.command == "inspect":
@@ -211,6 +247,10 @@ def main() -> None:
         ensure_watchlist_history(min_days=CrawlerConfig().mvp_hist_days)
         run_daily_market(mock=False)
         run_daily_stock()
+        if not args.skip_sentiment:
+            run_sentiment_job()
+        if not args.skip_enhance:
+            run_enhance_job()
         run_intraday_live()
         if not args.skip_backtest:
             run_backtest_job(allow_warn_quality=True)
@@ -219,6 +259,8 @@ def main() -> None:
             run_predict_job(allow_warn_quality=True, auto_backtest=not args.skip_backtest)
             generate_predict_reports()
         generate_reports()
+        generate_factor_reports()
+        generate_enhance_reports()
         generate_live_dashboard()
     else:
         build_parser().print_help()

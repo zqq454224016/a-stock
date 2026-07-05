@@ -112,6 +112,106 @@ def render_stock_report(data: dict) -> str:
       </section>
     </section>"""
 
+    sentiment_data = {}
+    sent_path = ROOT / "assets" / "data" / "sentiment" / f"{code}.json"
+    if sent_path.exists():
+        sentiment_data = json.loads(sent_path.read_text(encoding="utf-8"))
+    sent_factors = sentiment_data.get("factors") or {}
+
+    sentiment_block = ""
+    if sent_factors:
+        xq = sent_factors.get("xueqiu_hot") or {}
+        hot_tags = []
+        if xq.get("in_hot_tweet"):
+            hot_tags.append(f"热议#{xq.get('tweet_rank')}")
+        if xq.get("in_hot_follow"):
+            hot_tags.append(f"关注#{xq.get('follow_rank')}")
+        if xq.get("in_hot_deal"):
+            hot_tags.append(f"成交#{xq.get('deal_rank')}")
+        hot_s = " · ".join(hot_tags) if hot_tags else "未上雪球热榜"
+        limits = "、".join(sent_factors.get("limitations") or []) or "—"
+        sentiment_block = f"""
+    <section class="live-panel" style="border-color:#f59e0b;background:rgba(245,158,11,0.08)">
+      <div class="live-panel-header">
+        <h2 style="margin:0;font-size:1.1rem">舆情情绪 <span class="live-badge">{sent_factors.get('label', '中性')}</span></h2>
+        <span class="live-status">东财评论 + 雪球热榜 · 非交易信号</span>
+      </div>
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="name">多空比</div>
+          <div class="value">{sent_factors.get('long_short_ratio', '--')}</div>
+          <div class="change">参与意愿 {sent_factors.get('desire_score', '--')}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">热度指数</div>
+          <div class="value">{sent_factors.get('heat_index', '--')}</div>
+          <div class="change">情绪加速 {sent_factors.get('sentiment_accel', '--')}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">雪球热榜</div>
+          <div class="value" style="font-size:0.95rem">{hot_s}</div>
+          <div class="change">限制: {limits}</div>
+        </div>
+      </section>
+    </section>"""
+
+    enhance_data = {}
+    enhance_path = ROOT / "assets" / "data" / "enhance" / f"{code}.json"
+    if enhance_path.exists():
+        enhance_data = json.loads(enhance_path.read_text(encoding="utf-8"))
+
+    enhance_block = ""
+    if enhance_data:
+        val = enhance_data.get("fundamentals") or {}
+        corp = enhance_data.get("corporate") or {}
+        ff = enhance_data.get("fund_flow") or {}
+        nb = ff.get("northbound") or {}
+        margin = ff.get("margin") or {}
+        idx_ctx = enhance_data.get("index_context") or {}
+        cs = enhance_data.get("cross_source") or {}
+        divs = corp.get("dividends") or []
+        lockups = corp.get("lockups") or []
+        forecast = corp.get("earnings_forecast")
+        latest_div = divs[0] if divs else {}
+        next_lock = lockups[0] if lockups else {}
+        bench = idx_ctx.get("benchmarks") or []
+        sh = next((b for b in bench if b.get("code") == "000001"), bench[0] if bench else {})
+        cs_s = cs.get("status") or "—"
+        if cs.get("close_diff_pct") is not None:
+            cs_s = f"{cs_s} · 价差 {cs.get('close_diff_pct'):.3f}%"
+        forecast_s = "—"
+        if forecast:
+            forecast_s = f"{forecast.get('forecast_type','')} {forecast.get('change_pct','')}%"
+        enhance_block = f"""
+    <section class="live-panel" style="border-color:#10b981;background:rgba(16,185,129,0.08)">
+      <div class="live-panel-header">
+        <h2 style="margin:0;font-size:1.1rem">数据增强 <span class="live-badge">P1-3</span></h2>
+        <span class="live-status">估值 · 公司行为 · 资金 · 跨源 diff</span>
+      </div>
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="name">估值 PE / PB</div>
+          <div class="value">{val.get('pe_ttm', '--')} / {val.get('pb', '--')}</div>
+          <div class="change">市值 {val.get('market_cap_yi', '--')} 亿 · 来源 {val.get('source', '--')}</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">北向资金</div>
+          <div class="value">{nb.get('hold_pct', '--')}%</div>
+          <div class="change">净买 {nb.get('net_buy_amount_yi', '--')} 亿 · 持股市值 {nb.get('hold_value_yi', '--')} 亿</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">两融 / 大盘</div>
+          <div class="value">{(margin or {}).get('margin_balance_yi', '--')} 亿</div>
+          <div class="change">上证 {sh.get('change_pct', '--')}% · 个股20日 {idx_ctx.get('stock_return_20d', '--')}%</div>
+        </div>
+        <div class="stat-card">
+          <div class="name">公司行为</div>
+          <div class="value" style="font-size:0.95rem">分红 {latest_div.get('cash_div', '—')} · 解禁 {next_lock.get('unlock_date', '—')}</div>
+          <div class="change">预告 {forecast_s} · 跨源 {cs_s}</div>
+        </div>
+      </section>
+    </section>"""
+
     pred_block = ""
     if prediction:
         prob = prediction.get("probability")
@@ -186,6 +286,8 @@ def render_stock_report(data: dict) -> str:
 
   <main class="container report-body">
 {signal_block}
+{sentiment_block}
+{enhance_block}
 {pred_block}
     <section class="live-panel" id="live-panel">
       <div class="live-panel-header">
@@ -284,6 +386,11 @@ def render_stock_report(data: dict) -> str:
         <div class="name">ATR(14) / 均线</div>
         <div class="value" style="font-size:1rem">{fac('atr14', '.4f')}</div>
         <div class="change">MA交叉 {fac('ma_cross')} · 站上MA20 {fac('above_ma20')}</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">多因子得分</div>
+        <div class="value">{fac('multi_factor_score', '.1f')}</div>
+        <div class="change">技术 {fac('technical_score', '.1f')} · 情绪 {fac('sentiment_score', '.1f')}</div>
       </div>
     </section>
 

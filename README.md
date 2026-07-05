@@ -58,9 +58,10 @@ chmod +x setup.sh
 ```bash
 cd a-stock
 chmod +x run.sh setup.sh
-./run.sh mvp              # MVP 闭环（推荐）：750日补录→行情→因子→回测→预测→看板
-./run.sh all              # 同上，可 --skip-backtest / --skip-predict
+./run.sh mvp              # MVP 闭环（推荐）：750日补录→行情→因子→增强→回测→预测→看板
+./run.sh all              # 同上，可 --skip-backtest / --skip-predict / --skip-enhance
 ./run.sh stock
+./run.sh enhance          # 数据增强（P1-3）
 ./run.sh predict
 ```
 
@@ -121,20 +122,31 @@ python quant_system/main.py factor            # 计算 RSI/MACD/ATR 等因子 + 
 python quant_system/main.py inspect           # K 线质量巡检（含东财/新浪跨源 diff）
 python quant_system/main.py inspect --fix     # 巡检 + 自动 backfill
 
-# 8. 回测（MA 金叉策略 MVP）
+# 8. 回测（MA 金叉 / 多因子策略）
 python quant_system/main.py backtest              # 自选股回测 ~3 年
-python quant_system/main.py backtest 600378 --allow-warn
+python quant_system/main.py backtest --strategy multi_factor --allow-warn
 # 报告：reports/backtest/{code}_ma_cross.html
+
+# 9. 多因子排名
+python script/gen_factor_report.py
+# 页面：reports/factors/index.html
 
 # 9. 走势预测（5d 可验证预测，需回测证据）
 python quant_system/main.py predict
 python quant_system/main.py predict 600378 --horizon 5d
 # 汇总页：reports/predict/index.html
 
-# 10. 定时调度（可选）
+# 10. 舆情采集（东财评论 + 雪球热榜，P1-2）
+python quant_system/main.py sentiment
+
+# 11. 数据增强（估值/分红解禁/北向两融/指数，P1-3）
+python quant_system/main.py enhance
+# 汇总页：reports/enhance/index.html · 数据：assets/data/enhance/{code}.json
+
+# 12. 定时调度（可选）
 python quant_system/main.py scheduler
 
-# 11. 预览
+# 13. 预览
 python -m http.server 8080
 ```
 

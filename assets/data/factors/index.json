@@ -1,13 +1,41 @@
 {
-  "updated_at": "2026-07-01 21:18:00",
+  "updated_at": "2026-07-05 22:57:35",
   "stocks": [
     {
       "code": "600378",
-      "trade_date": "2026-06-26",
-      "ma20_bias": 14.37,
-      "rsi14": 68.66,
-      "momentum_20": 56.73,
-      "ma_cross": "none"
+      "trade_date": "2026-07-03",
+      "factor_version": "1.1.0",
+      "ma20_bias": 27.01,
+      "rsi14": 76.77,
+      "momentum_20": 89.81,
+      "ma_cross": "none",
+      "multi_factor_score": 78.9,
+      "sentiment_score": 63.8,
+      "primary_signal": "bullish"
+    },
+    {
+      "code": "603629",
+      "trade_date": "2026-07-03",
+      "factor_version": "1.1.0",
+      "ma20_bias": -1.07,
+      "rsi14": 57.14,
+      "momentum_20": -13.15,
+      "ma_cross": "none",
+      "multi_factor_score": 45.2,
+      "sentiment_score": 62.3,
+      "primary_signal": "bearish"
+    },
+    {
+      "code": "000636",
+      "trade_date": "2026-07-03",
+      "factor_version": "1.1.0",
+      "ma20_bias": -2.84,
+      "rsi14": 57.87,
+      "momentum_20": 5.45,
+      "ma_cross": "none",
+      "multi_factor_score": 56.2,
+      "sentiment_score": 64.0,
+      "primary_signal": "neutral"
     }
   ]
 }
