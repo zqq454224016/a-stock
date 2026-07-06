@@ -94,6 +94,18 @@ def build_predict_items() -> str:
     return _hub_item("汇总", "走势预测汇总", "predict/index.html", "predict", "走势预测汇总")
 
 
+def build_decision_items() -> str:
+    if not (ROOT / "reports" / "decision" / "index.html").exists():
+        return ""
+    return _hub_item("汇总", "单股操作建议", "decision/index.html", "decision", "单股操作建议")
+
+
+def build_trading_items() -> str:
+    if not (ROOT / "reports" / "trading" / "index.html").exists():
+        return ""
+    return _hub_item("汇总", "模拟交易看板", "trading/index.html", "trading", "模拟交易看板")
+
+
 def build_enhance_items() -> str:
     if not (ROOT / "reports" / "enhance" / "index.html").exists():
         return ""
@@ -150,6 +162,8 @@ def sync_report_index_hubs() -> bool:
         ("agent", "agent", "Agent 分析", build_agent_items()),
         ("factors", "factors", "多因子排名", build_factor_items()),
         ("predict", "predict", "走势预测", build_predict_items()),
+        ("decision", "decision", "操作建议", build_decision_items()),
+        ("trading", "trading", "模拟交易", build_trading_items()),
         ("enhance", "enhance", "数据增强", build_enhance_items()),
         ("backtest", "backtest", "策略回测", build_backtest_items()),
     ]

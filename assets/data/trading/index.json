@@ -1,0 +1,54 @@
+{
+  "updated_at": "2026-07-06 16:11:35",
+  "summary": {
+    "updated_at": "2026-07-06 16:11:35",
+    "initial_cash": 100000.0,
+    "cash": 100000.0,
+    "market_value": 0.0,
+    "total_equity": 100000.0,
+    "total_return_pct": 0.0,
+    "position_count": 0,
+    "order_count": 0,
+    "trade_count": 0,
+    "realized_pnl": 0.0
+  },
+  "decisions": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 76.01,
+      "direction": "down",
+      "probability": 0.3912,
+      "confidence": "low"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 173.19,
+      "direction": "down",
+      "probability": 0.4276,
+      "confidence": "low"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 63.23,
+      "direction": "down",
+      "probability": 0.395,
+      "confidence": "low"
+    }
+  ],
+  "positions": []
+}

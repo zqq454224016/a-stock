@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-07-06 16:11:35",
+  "initial_cash": 100000.0,
+  "cash": 100000.0,
+  "market_value": 0.0,
+  "total_equity": 100000.0,
+  "positions": {},
+  "orders": [],
+  "trades": [],
+  "realized_pnl": 0.0
+}

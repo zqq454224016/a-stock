@@ -14,7 +14,9 @@ a-stock/
 │   ├── strategy/           # 策略（MA 金叉等）
 │   ├── backtest/           # 回测引擎与绩效
 │   ├── prediction/         # 可验证走势预测
+│   ├── decision/           # 单股操作建议
 │   ├── risk/               # 风控规则
+│   ├── trading/            # 模拟交易
 │   ├── storage/            # MySQL/Redis/JSON 存储
 │   ├── models/             # 数据模型
 │   ├── tasks/              # 任务层
@@ -63,6 +65,8 @@ chmod +x run.sh setup.sh
 ./run.sh stock
 ./run.sh enhance          # 数据增强（P1-3）
 ./run.sh agent            # Agent 看板（P4-1）
+./run.sh decision         # 单股操作建议（指导性优先）
+./run.sh simtrade         # 模拟交易（P3-1）
 ./run.sh predict
 ```
 
@@ -149,13 +153,23 @@ python quant_system/main.py enhance
 python quant_system/main.py agent
 # 看板：reports/agent/index.html · 报表列表自动收录 Agent 入口
 
-# 13. 报表列表同步（Agent / 因子 / 预测 / 增强 / 回测）
+# 13. 单股操作建议（Decision Engine，指导性优先）
+python quant_system/main.py decision
+python quant_system/main.py decision 600378 --strategy ma_cross
+# 看板：reports/decision/index.html · 数据：assets/data/decisions/{code}.json
+
+# 14. 模拟交易（P3-1，基于决策/预测虚拟调仓）
+python quant_system/main.py simtrade
+python quant_system/main.py simtrade --reset --cash 100000
+# 看板：reports/trading/index.html · 数据：assets/data/trading/account.json
+
+# 15. 报表列表同步（Agent / 因子 / 预测 / 决策 / 增强 / 回测 / 模拟交易）
 python script/report_index_utils.py
 
-# 14. 定时调度（可选）
+# 16. 定时调度（可选）
 python quant_system/main.py scheduler
 
-# 14. 预览
+# 17. 预览
 python -m http.server 8080
 ```
 

@@ -38,6 +38,24 @@ def test_stock_explainer_positive(tmp_path: Path):
     assert out["composite_score"] == 72
 
 
+def test_stock_explainer_tolerates_string_scores(tmp_path: Path):
+    store = JsonStore(DBConfig())
+    store.config.json_data_dir = tmp_path
+    code = "600378"
+    _write(store, f"stocks/{code}.json", {"code": code, "name": "昊华科技"})
+    _write(store, f"factors/{code}.json", {
+        "factors": {
+            "multi_factor_score": "72",
+            "technical_score": "87",
+            "fundamental_detail": {"pe_ttm": "n/a"},
+        },
+    })
+    ctx = StockContext(code, store)
+    out = explain_stock_selection(ctx)
+    assert out["verdict"] == "positive"
+    assert out["composite_score"] == 72.0
+
+
 def test_strategy_diagnosis_weak(tmp_path: Path):
     store = JsonStore(DBConfig())
     store.config.json_data_dir = tmp_path

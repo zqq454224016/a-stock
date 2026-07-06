@@ -8,6 +8,15 @@ from quant_system.agent.context import StockContext
 from quant_system.config.agent_config import SCORE_BEARISH, SCORE_BULLISH
 
 
+def _to_float(value: Any, default: float | None = None) -> float | None:
+    if value is None:
+        return default
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return default
+
+
 def explain_stock_selection(ctx: StockContext) -> dict[str, Any]:
     factors = (ctx.factors or {}).get("factors") or {}
     signal = ctx.signal or {}
@@ -15,9 +24,9 @@ def explain_stock_selection(ctx: StockContext) -> dict[str, Any]:
     stock = ctx.stock or {}
     analysis = stock.get("analysis") or {}
 
-    score = factors.get("multi_factor_score")
+    score = _to_float(factors.get("multi_factor_score"))
     if score is None:
-        score = signal.get("signal_score", 50)
+        score = _to_float(signal.get("signal_score"), 50.0)
 
     evidence: list[str] = []
     drivers: list[str] = []
@@ -40,8 +49,8 @@ def explain_stock_selection(ctx: StockContext) -> dict[str, Any]:
     if sentiment.get("label"):
         evidence.append(f"舆情 {sentiment['label']}")
 
-    pe = (factors.get("fundamental_detail") or {}).get("pe_ttm")
-    if pe is not None and float(pe) > 60:
+    pe = _to_float((factors.get("fundamental_detail") or {}).get("pe_ttm"))
+    if pe is not None and pe > 60:
         risks.append("估值偏高")
 
     if score >= SCORE_BULLISH:

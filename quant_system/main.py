@@ -17,12 +17,14 @@ from quant_system.tasks.agent_job import run_agent_job
 from quant_system.tasks.backfill_job import run_backfill
 from quant_system.tasks.backtest_job import run_backtest_job
 from quant_system.tasks.daily_job import run_daily_market
+from quant_system.tasks.decision_job import run_decision_job
 from quant_system.tasks.enhance_job import run_enhance_job
 from quant_system.tasks.factor_job import run_factor_compute
 from quant_system.tasks.intraday_job import run_intraday_live, run_intraday_loop
 from quant_system.tasks.inspect_job import run_data_inspect
 from quant_system.tasks.predict_job import run_predict_job
 from quant_system.tasks.sentiment_job import run_sentiment_job
+from quant_system.tasks.sim_trade_job import run_sim_trade_job
 from quant_system.tasks.stock_job import run_daily_stock
 from quant_system.utils.logger import get_logger
 from quant_system.utils.watchlist_utils import ensure_watchlist_history, ensure_watchlist_stocks, resolve_codes
@@ -84,6 +86,19 @@ def build_parser() -> argparse.ArgumentParser:
     agent = sub.add_parser("agent", help="Agent 分析（选股解释/策略诊断/预测复盘）")
     agent.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
     agent.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
+
+    decision = sub.add_parser("decision", help="单股指导性操作建议（高指导性、低实时性）")
+    decision.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+    decision.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
+    decision.add_argument("--no-predict", action="store_true", help="缺少预测时不自动补跑 predict")
+    decision.add_argument("--no-agent", action="store_true", help="缺少 Agent 报告时不自动生成")
+
+    sim = sub.add_parser("simtrade", help="模拟交易（P3-1，基于决策/预测虚拟调仓）")
+    sim.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+    sim.add_argument("--reset", action="store_true", help="重置虚拟账户")
+    sim.add_argument("--cash", type=float, default=None, help="重置时使用的初始资金")
+    sim.add_argument("--no-predict", action="store_true", help="缺少预测时不自动补跑 predict")
+    sim.add_argument("--no-decision", action="store_true", help="缺少决策时不自动生成")
 
     bt = sub.add_parser("backtest", help="单策略日线回测（MA金叉）")
     bt.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
@@ -152,6 +167,22 @@ def generate_agent_dashboard() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_trading_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_trading_report.py"
+    if path.exists():
+        logger.info("生成模拟交易报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_decision_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_decision_report.py"
+    if path.exists():
+        logger.info("生成决策报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
 def sync_report_index_hubs() -> None:
     import subprocess
     path = ROOT / "script" / "report_index_utils.py"
@@ -180,6 +211,10 @@ def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False
     generate_backtest_reports()
     run_predict_job(allow_warn_quality=True, auto_backtest=True)
     generate_predict_reports()
+    run_decision_job(auto_predict=False)
+    generate_decision_report()
+    run_sim_trade_job(auto_predict=False)
+    generate_trading_report()
     generate_reports()
     generate_factor_reports()
     generate_enhance_reports()
@@ -235,6 +270,25 @@ def main() -> None:
     elif args.command == "agent":
         run_agent_job(codes=resolve_codes(args.codes), strategy=args.strategy)
         generate_agent_dashboard()
+    elif args.command == "decision":
+        run_decision_job(
+            codes=resolve_codes(args.codes),
+            strategy=args.strategy,
+            auto_predict=not args.no_predict,
+            auto_agent=not args.no_agent,
+        )
+        generate_decision_report()
+        sync_report_index_hubs()
+    elif args.command == "simtrade":
+        run_sim_trade_job(
+            codes=resolve_codes(args.codes),
+            reset=args.reset,
+            auto_predict=not args.no_predict,
+            auto_decision=not args.no_decision,
+            initial_cash=args.cash,
+        )
+        generate_trading_report()
+        sync_report_index_hubs()
     elif args.command == "factor":
         run_factor_compute(codes=resolve_codes(args.codes), ignore_quality=args.force)
     elif args.command == "inspect":
@@ -290,6 +344,10 @@ def main() -> None:
         if not args.skip_predict:
             run_predict_job(allow_warn_quality=True, auto_backtest=not args.skip_backtest)
             generate_predict_reports()
+            run_decision_job(auto_predict=False)
+            generate_decision_report()
+            run_sim_trade_job(auto_predict=False)
+            generate_trading_report()
         generate_reports()
         generate_factor_reports()
         generate_enhance_reports()

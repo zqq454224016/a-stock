@@ -126,6 +126,19 @@ class JsonStore:
         self.write(path, {"updated_at": updated_at, "reports": items})
         return path
 
+    def decisions_dir(self) -> Path:
+        return self.config.json_data_dir / "decisions"
+
+    def save_decision(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.decisions_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_decision_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.decisions_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "decisions": items})
+        return path
+
     def quality_dir(self) -> Path:
         return self.config.json_data_dir / "quality"
 
@@ -161,6 +174,19 @@ class JsonStore:
     def save_prediction_index(self, items: list[dict], updated_at: str) -> Path:
         path = self.predictions_dir() / "index.json"
         self.write(path, {"updated_at": updated_at, "predictions": items})
+        return path
+
+    def trading_dir(self) -> Path:
+        return self.config.json_data_dir / "trading"
+
+    def save_trading_account(self, data: dict[str, Any]) -> Path:
+        path = self.trading_dir() / "account.json"
+        self.write(path, data)
+        return path
+
+    def save_trading_index(self, data: dict[str, Any]) -> Path:
+        path = self.trading_dir() / "index.json"
+        self.write(path, data)
         return path
 
     def load_mock_market(self) -> dict[str, Any]:

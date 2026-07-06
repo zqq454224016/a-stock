@@ -47,6 +47,10 @@ class StockContext:
     def prediction(self) -> dict[str, Any] | None:
         return self._read(f"predictions/{self.code}.json")
 
+    @property
+    def decision(self) -> dict[str, Any] | None:
+        return self._read(f"decisions/{self.code}.json")
+
     def backtest(self, strategy: str = "ma_cross") -> dict[str, Any] | None:
         data = self._read(f"backtest/{self.code}_{strategy}.json")
         if data:
