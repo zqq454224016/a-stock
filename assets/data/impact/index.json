@@ -1,0 +1,39 @@
+{
+  "updated_at": "2026-07-06 23:29:33",
+  "items": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "impact_score": -20,
+      "impact_direction": "negative",
+      "event_count": 1,
+      "limitations": []
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "impact_score": -33,
+      "impact_direction": "negative",
+      "event_count": 2,
+      "limitations": [
+        "requires_q2_official_report_or_forecast"
+      ]
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "impact_score": -26,
+      "impact_direction": "negative",
+      "event_count": 1,
+      "limitations": []
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "impact_score": -33,
+      "impact_direction": "negative",
+      "event_count": 1,
+      "limitations": []
+    }
+  ]
+}

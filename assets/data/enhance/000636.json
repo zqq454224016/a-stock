@@ -1,20 +1,20 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-03",
-  "updated_at": "2026-07-06 14:11:34",
+  "trade_date": "2026-07-06",
+  "updated_at": "2026-07-06 23:29:03",
   "version": "1.0.0",
   "fundamentals": {
     "source": "eastmoney_value",
-    "trade_date": "2026-07-03",
-    "close": 63.23,
-    "market_cap_yi": 731.58,
-    "float_cap_yi": 731.58,
-    "pe_ttm": 238.06573848,
-    "pe_static": 258.21965642,
-    "pb": 5.86062344,
-    "ps": 12.19873482,
-    "peg": -15.752076387142
+    "trade_date": "2026-07-06",
+    "close": 58.5,
+    "market_cap_yi": 676.85,
+    "float_cap_yi": 676.85,
+    "pe_ttm": 220.25693027,
+    "pe_static": 238.90320893,
+    "pb": 5.4222121,
+    "ps": 11.28619306,
+    "peg": -14.573722420381
   },
   "corporate": {
     "dividends": [],
@@ -68,15 +68,15 @@
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -723.08,
+      "main_net": -861.15,
       "retail_net": 0.0
     },
-    "stock_return_20d": -0.43
+    "stock_return_20d": -1.93
   },
   "cross_source": null,
   "quality_ref": {
     "status": "ok",
-    "quality_score": 95.0
+    "quality_score": 100.0
   },
   "limitations": [
     "partial_source_failure",
@@ -86,7 +86,7 @@
   "sources_failed": [
     "dividend",
     "earnings_forecast_20260930",
-    "margin",
+    "margin_szse",
     "northbound"
   ]
 }

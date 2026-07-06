@@ -11,6 +11,7 @@ from quant_system.config.db_config import DBConfig
 from quant_system.decision.engine import build_stock_decision
 from quant_system.pipeline.normalizer import load_watchlist, normalize_code
 from quant_system.storage.json_store import JsonStore
+from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.predict_job import run_predict_job
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str
@@ -38,6 +39,7 @@ def run_decision_job(
     strategy: str = "ma_cross",
     auto_predict: bool = True,
     auto_agent: bool = True,
+    auto_impact: bool = True,
 ) -> list[dict[str, Any]]:
     """生成单股操作建议。"""
     cfg = CrawlerConfig()
@@ -71,6 +73,11 @@ def run_decision_job(
                 agent_report = build_agent_report(ctx, strategy=strategy)
                 store.save_agent_report(code, agent_report)
 
+            impact = ctx.impact
+            if not impact and auto_impact:
+                run_impact_job(codes=[code])
+                impact = ctx.impact
+
             decision = build_stock_decision(
                 code=code,
                 name=stock.get("name") or item.get("name") or code,
@@ -81,6 +88,7 @@ def run_decision_job(
                 backtest=ctx.backtest(strategy),
                 quality=ctx.quality,
                 agent_report=agent_report,
+                impact=impact,
                 account=account,
             )
             store.save_decision(code, decision)

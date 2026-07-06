@@ -20,9 +20,11 @@ from quant_system.tasks.daily_job import run_daily_market
 from quant_system.tasks.decision_job import run_decision_job
 from quant_system.tasks.enhance_job import run_enhance_job
 from quant_system.tasks.factor_job import run_factor_compute
+from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.intraday_job import run_intraday_live, run_intraday_loop
 from quant_system.tasks.inspect_job import run_data_inspect
 from quant_system.tasks.predict_job import run_predict_job
+from quant_system.tasks.selector_job import run_selector_job
 from quant_system.tasks.sentiment_job import run_sentiment_job
 from quant_system.tasks.sim_trade_job import run_sim_trade_job
 from quant_system.tasks.stock_job import run_daily_stock
@@ -83,6 +85,9 @@ def build_parser() -> argparse.ArgumentParser:
     enhance = sub.add_parser("enhance", help="数据增强（估值/公司行为/资金/指数）")
     enhance.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
 
+    impact = sub.add_parser("impact", help="实际影响数据提取（业绩/估值/解禁/材料价格）")
+    impact.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+
     agent = sub.add_parser("agent", help="Agent 分析（选股解释/策略诊断/预测复盘）")
     agent.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
     agent.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
@@ -92,6 +97,13 @@ def build_parser() -> argparse.ArgumentParser:
     decision.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
     decision.add_argument("--no-predict", action="store_true", help="缺少预测时不自动补跑 predict")
     decision.add_argument("--no-agent", action="store_true", help="缺少 Agent 报告时不自动生成")
+    decision.add_argument("--no-impact", action="store_true", help="缺少实际影响数据时不自动生成")
+
+    selector = sub.add_parser("selector", help="上涨候选池筛选与排名")
+    selector.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+    selector.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
+    selector.add_argument("--no-predict", action="store_true", help="缺少预测时不自动补跑 predict")
+    selector.add_argument("--no-impact", action="store_true", help="缺少实际影响数据时不自动生成")
 
     sim = sub.add_parser("simtrade", help="模拟交易（P3-1，基于决策/预测虚拟调仓）")
     sim.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
@@ -183,6 +195,22 @@ def generate_decision_report() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_impact_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_impact_report.py"
+    if path.exists():
+        logger.info("生成实际影响数据报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_selector_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_selector_report.py"
+    if path.exists():
+        logger.info("生成上涨候选池报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
 def sync_report_index_hubs() -> None:
     import subprocess
     path = ROOT / "script" / "report_index_utils.py"
@@ -211,6 +239,10 @@ def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False
     generate_backtest_reports()
     run_predict_job(allow_warn_quality=True, auto_backtest=True)
     generate_predict_reports()
+    run_impact_job()
+    generate_impact_report()
+    run_selector_job(auto_predict=False)
+    generate_selector_report()
     run_decision_job(auto_predict=False)
     generate_decision_report()
     run_sim_trade_job(auto_predict=False)
@@ -267,6 +299,10 @@ def main() -> None:
         generate_enhance_reports()
         generate_factor_reports()
         generate_reports(stock_only=True)
+    elif args.command == "impact":
+        run_impact_job(codes=resolve_codes(args.codes))
+        generate_impact_report()
+        sync_report_index_hubs()
     elif args.command == "agent":
         run_agent_job(codes=resolve_codes(args.codes), strategy=args.strategy)
         generate_agent_dashboard()
@@ -276,8 +312,18 @@ def main() -> None:
             strategy=args.strategy,
             auto_predict=not args.no_predict,
             auto_agent=not args.no_agent,
+            auto_impact=not args.no_impact,
         )
         generate_decision_report()
+        sync_report_index_hubs()
+    elif args.command == "selector":
+        run_selector_job(
+            codes=resolve_codes(args.codes),
+            strategy=args.strategy,
+            auto_predict=not args.no_predict,
+            auto_impact=not args.no_impact,
+        )
+        generate_selector_report()
         sync_report_index_hubs()
     elif args.command == "simtrade":
         run_sim_trade_job(
@@ -344,6 +390,10 @@ def main() -> None:
         if not args.skip_predict:
             run_predict_job(allow_warn_quality=True, auto_backtest=not args.skip_backtest)
             generate_predict_reports()
+            run_impact_job()
+            generate_impact_report()
+            run_selector_job(auto_predict=False)
+            generate_selector_report()
             run_decision_job(auto_predict=False)
             generate_decision_report()
             run_sim_trade_job(auto_predict=False)

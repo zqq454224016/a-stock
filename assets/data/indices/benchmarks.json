@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 14:11:34",
+  "updated_at": "2026-07-06 23:29:03",
   "trade_date": "2026-07-06",
   "indices": [
     {
@@ -19,7 +19,7 @@
   ],
   "fund_flow": {
     "north_net": 0.0,
-    "main_net": -723.08,
+    "main_net": -861.15,
     "retail_net": 0.0
   }
 }

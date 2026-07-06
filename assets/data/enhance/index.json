@@ -1,13 +1,30 @@
 {
-  "updated_at": "2026-07-06 14:11:34",
+  "updated_at": "2026-07-06 23:29:03",
   "stocks": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "trade_date": "2026-07-06",
+      "pe_ttm": 56.29,
+      "pb": 4.75,
+      "market_cap_yi": 882.49,
+      "north_hold_pct": null,
+      "north_net_buy_yi": null,
+      "dividend_count": 0,
+      "next_lockup": "2028-01-10",
+      "limitations": [
+        "partial_source_failure",
+        "northbound_missing",
+        "dividend_missing"
+      ]
+    },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-03",
-      "pe_ttm": 81.78,
-      "pb": 19.47,
-      "market_cap_yi": 437.05,
+      "trade_date": "2026-07-06",
+      "pe_ttm": 84.87,
+      "pb": 20.2,
+      "market_cap_yi": 453.55,
       "north_hold_pct": null,
       "north_net_buy_yi": null,
       "dividend_count": 0,
@@ -21,14 +38,31 @@
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-03",
-      "pe_ttm": 238.07,
-      "pb": 5.86,
-      "market_cap_yi": 731.58,
+      "trade_date": "2026-07-06",
+      "pe_ttm": 220.26,
+      "pb": 5.42,
+      "market_cap_yi": 676.85,
       "north_hold_pct": null,
       "north_net_buy_yi": null,
       "dividend_count": 0,
       "next_lockup": "2023-12-08",
+      "limitations": [
+        "partial_source_failure",
+        "northbound_missing",
+        "dividend_missing"
+      ]
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "trade_date": "2026-07-06",
+      "pe_ttm": 88.58,
+      "pb": 12.88,
+      "market_cap_yi": 1505.24,
+      "north_hold_pct": null,
+      "north_net_buy_yi": null,
+      "dividend_count": 0,
+      "next_lockup": "2018-12-10",
       "limitations": [
         "partial_source_failure",
         "northbound_missing",

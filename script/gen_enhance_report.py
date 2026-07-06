@@ -13,6 +13,12 @@ INDICES_DIR = ROOT / "assets" / "data" / "indices"
 REPORTS_DIR = ROOT / "reports" / "enhance"
 
 
+def _translate_limits(items: list[str] | None) -> str:
+    sys.path.insert(0, str(ROOT))
+    from quant_system.utils.i18n_labels import translate_limitations
+    return translate_limitations(items)
+
+
 def load_rows() -> tuple[list[dict], dict]:
     index_path = ENHANCE_DIR / "index.json"
     rows: list[dict] = []
@@ -48,7 +54,7 @@ def render(rows: list[dict], meta: dict) -> str:
     flow = bench.get("fund_flow") or {}
     body = []
     for r in rows:
-        limits = "、".join(r.get("limitations") or []) or "—"
+        limits = _translate_limits(r.get("limitations"))
         body.append(f"""
         <tr>
           <td><a href="../stock/{r['code']}.html">{r['code']}</a></td>

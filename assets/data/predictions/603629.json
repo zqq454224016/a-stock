@@ -3,9 +3,9 @@
   "trade_date": "2026-07-06",
   "horizon": "5d",
   "direction": "down",
-  "probability": 0.4276,
+  "probability": 0.2368,
   "confidence": "high",
-  "expected_return": -0.0156,
+  "expected_return": -0.0615,
   "max_expected_drawdown": 0.3427,
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
@@ -15,14 +15,14 @@
     "technical": "1.0.0"
   },
   "evidence": {
-    "sample_count": 296,
+    "sample_count": 58,
     "state_label": "bearish",
-    "historical_positive_rate": 0.4459,
-    "backtest_win_rate": 0.4,
-    "backtest_profit_loss_ratio": 4.99,
-    "backtest_annual_return_pct": 38.0,
-    "backtest_max_drawdown_pct": -56.43,
-    "backtest_closed_trades": 20
+    "historical_positive_rate": 0.1724,
+    "backtest_win_rate": 0.3333,
+    "backtest_profit_loss_ratio": 26.21,
+    "backtest_annual_return_pct": 269.72,
+    "backtest_max_drawdown_pct": -48.06,
+    "backtest_closed_trades": 6
   },
   "drivers": [],
   "risk_flags": [
@@ -30,5 +30,5 @@
     "high_historical_drawdown"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-06 14:12:36"
+  "updated_at": "2026-07-06 23:29:33"
 }

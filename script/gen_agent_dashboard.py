@@ -29,14 +29,30 @@ def load_reports() -> list[dict]:
     return reports
 
 
+def _strategy_label(name: str) -> str:
+    sys.path.insert(0, str(ROOT))
+    from quant_system.utils.i18n_labels import STRATEGY_LABELS, translate_label
+    return translate_label(name, STRATEGY_LABELS)
+
+
 def _verdict_badge(v: str) -> str:
+    sys.path.insert(0, str(ROOT))
+    from quant_system.utils.i18n_labels import translate_direction, translate_status, translate_verdict
+
     colors = {
         "positive": "#10b981", "negative": "#ef4444", "neutral": "#6b7280",
         "ok": "#10b981", "weak": "#ef4444", "mixed": "#f59e0b",
         "aligned": "#10b981", "divergent": "#ef4444", "partial": "#f59e0b",
+        "up": "#10b981", "down": "#ef4444",
+        "pass": "#10b981", "warn": "#f59e0b", "fail": "#ef4444",
     }
+    label = translate_verdict(v)
+    if label == v:
+        label = translate_direction(v)
+    if label == v:
+        label = translate_status(v)
     c = colors.get(v, "#6b7280")
-    return f'<span style="color:{c};font-weight:600">{v}</span>'
+    return f'<span style="color:{c};font-weight:600">{label}</span>'
 
 
 def render_stock_page(data: dict) -> str:
@@ -73,9 +89,9 @@ def render_stock_page(data: dict) -> str:
   <main class="container report-body">
     <section class="stats-row">
       <div class="stat-card"><div class="name">选股结论</div><div class="value">{_verdict_badge(sel.get('verdict',''))}</div><div class="change">综合分 {sel.get('composite_score','—')}</div></div>
-      <div class="stat-card"><div class="name">策略诊断</div><div class="value">{_verdict_badge(diag.get('verdict',''))}</div><div class="change">{diag.get('strategy','—')}</div></div>
+      <div class="stat-card"><div class="name">策略诊断</div><div class="value">{_verdict_badge(diag.get('verdict',''))}</div><div class="change">{_strategy_label(diag.get('strategy',''))}</div></div>
       <div class="stat-card"><div class="name">预测复盘</div><div class="value">{_verdict_badge(rev.get('alignment',''))}</div><div class="change">{rev.get('horizon','—')} {_verdict_badge(rev.get('direction',''))}</div></div>
-      <div class="stat-card"><div class="name">数据质量</div><div class="value">{health.get('quality_score','—')}</div><div class="change">{health.get('status','—')}</div></div>
+      <div class="stat-card"><div class="name">数据质量</div><div class="value">{health.get('quality_score','—')}</div><div class="change">{_verdict_badge(health.get('status',''))}</div></div>
     </section>
 
     <section class="panel"><h2>选股解释</h2><p>{sel.get('headline','')}</p>

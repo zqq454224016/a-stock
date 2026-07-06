@@ -10,33 +10,56 @@
     "预测、因子或回测条件不足，暂不买入"
   ],
   "risks": [
+    "实际影响数据偏负面，impact_score=-33.0",
     "high_volatility",
     "high_historical_drawdown",
-    "历史最大回撤较大 -56.43%"
+    "回测胜率偏低 33.33%",
+    "历史最大回撤较大 -48.06%"
   ],
   "invalid_conditions": [],
   "evidence": {
     "prediction": {
       "direction": "down",
-      "probability": 0.4276,
+      "probability": 0.2368,
       "confidence": "high",
-      "expected_return": -0.0156,
+      "expected_return": -0.0615,
       "risk_flags": [
         "high_volatility",
         "high_historical_drawdown"
       ]
     },
-    "factor_score": 45.9,
+    "factor_score": 48.7,
     "quality_score": 100.0,
-    "backtest_health": "mixed",
+    "backtest_health": "weak",
     "position": {
       "shares": 0,
       "unrealized_pnl_pct": 0.0,
       "market_value": null
     },
-    "agent_summary": "综合因子中性，等待更清晰信号"
+    "agent_summary": "综合因子中性，等待更清晰信号",
+    "impact": {
+      "impact_score": -33.0,
+      "impact_direction": "negative",
+      "events": [
+        {
+          "event_type": "valuation_pressure",
+          "title": "估值压力",
+          "impact_score": -33,
+          "impact_direction": "negative"
+        },
+        {
+          "event_type": "q2_profit_growth_gap",
+          "title": "二季度利润增长数据待补充",
+          "impact_score": 0,
+          "impact_direction": "neutral"
+        }
+      ],
+      "limitations": [
+        "requires_q2_official_report_or_forecast"
+      ]
+    }
   },
   "requires_human_review": false,
   "disclaimer": "指导性意见，仅供研究和模拟交易，不构成投资建议",
-  "updated_at": "2026-07-06 16:11:35"
+  "updated_at": "2026-07-06 23:29:33"
 }

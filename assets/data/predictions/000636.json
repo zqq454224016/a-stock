@@ -3,31 +3,33 @@
   "trade_date": "2026-07-06",
   "horizon": "5d",
   "direction": "down",
-  "probability": 0.395,
-  "confidence": "high",
-  "expected_return": -0.0077,
-  "max_expected_drawdown": 0.2767,
+  "probability": 0.4327,
+  "confidence": "medium",
+  "expected_return": -0.0176,
+  "max_expected_drawdown": 0.17,
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_000636_20260703",
+  "data_version": "daily_kline_000636_20260706",
   "factor_versions": {
     "technical": "1.0.0"
   },
   "evidence": {
-    "sample_count": 281,
+    "sample_count": 49,
     "state_label": "bearish",
-    "historical_positive_rate": 0.4555,
-    "backtest_win_rate": 0.3043,
-    "backtest_profit_loss_ratio": 1.52,
-    "backtest_annual_return_pct": 32.14,
-    "backtest_max_drawdown_pct": -39.51,
-    "backtest_closed_trades": 23
+    "historical_positive_rate": 0.3878,
+    "backtest_win_rate": 0.5,
+    "backtest_profit_loss_ratio": 2.59,
+    "backtest_annual_return_pct": 238.88,
+    "backtest_max_drawdown_pct": -27.09,
+    "backtest_closed_trades": 6
   },
-  "drivers": [],
+  "drivers": [
+    "均线死叉"
+  ],
   "risk_flags": [
     "high_volatility"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-06 14:12:37"
+  "updated_at": "2026-07-06 23:29:33"
 }

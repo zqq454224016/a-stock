@@ -1,6 +1,6 @@
 {
   "code": "600378",
-  "trade_date": "2026-07-03",
+  "trade_date": "2026-07-06",
   "horizon": "5d",
   "signal": "bullish",
   "signal_score": 87.0,
@@ -16,5 +16,5 @@
     "technical_only"
   ],
   "signal_version": "1.0.0",
-  "updated_at": "2026-07-06 14:11:34"
+  "updated_at": "2026-07-06 23:29:03"
 }

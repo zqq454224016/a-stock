@@ -1,25 +1,25 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-03",
+  "trade_date": "2026-07-06",
   "version": "1.0.0",
-  "updated_at": "2026-07-06 15:24:38",
-  "summary": "综合因子中性，等待更清晰信号",
-  "confidence": "medium",
+  "updated_at": "2026-07-06 23:29:33",
+  "summary": "谨慎",
+  "confidence": "low",
   "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
   "stock_selection": {
-    "verdict": "neutral",
-    "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 42.4,
+    "verdict": "negative",
+    "headline": "综合因子偏空，谨慎对待",
+    "composite_score": 36.2,
     "evidence": [
-      "技术分 39.0",
-      "情绪分 49.3",
+      "技术分 24.0",
+      "情绪分 57.0",
       "基本面分 42.0",
-      "趋势 震荡",
+      "趋势 偏空",
       "舆情 中性"
     ],
     "drivers": [
-      "rsi14_neutral_up",
+      "ma_death_cross",
       "macd_hist_negative",
       "ma20_breakdown"
     ],
@@ -28,42 +28,52 @@
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "neutral",
-    "trend": "震荡"
+    "primary_signal": "bearish",
+    "trend": "偏空"
   },
   "strategy_diagnosis": {
     "available": true,
     "strategy": "ma_cross",
-    "verdict": "mixed",
+    "verdict": "ok",
     "findings": [
-      "胜率偏低（30.43%）"
+      "单笔最大亏损 -7433.46（MA20死叉）"
     ],
     "suggestions": [
-      "考虑提高买入阈值或叠加趋势过滤"
+      "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 32.14,
-      "max_drawdown_pct": -39.51,
-      "sharpe_ratio": 0.9,
-      "win_rate_pct": 30.43,
-      "closed_trades": 23
+      "annual_return_pct": 238.88,
+      "max_drawdown_pct": -27.09,
+      "sharpe_ratio": 2.46,
+      "win_rate_pct": 50.0,
+      "closed_trades": 6
     },
-    "attribution_top": [],
+    "attribution_top": [
+      {
+        "reason": "MA20死叉",
+        "count": 6,
+        "total_pnl": 22736.09,
+        "avg_pnl": 3789.35,
+        "win_rate_pct": 50.0
+      }
+    ],
     "rolling_summary": null
   },
   "prediction_review": {
     "available": true,
     "horizon": "5d",
     "direction": "down",
-    "probability": 0.395,
-    "confidence": "high",
-    "expected_return": -0.0077,
-    "alignment": "partial",
-    "drivers": [],
+    "probability": 0.4327,
+    "confidence": "medium",
+    "expected_return": -0.0176,
+    "alignment": "aligned",
+    "drivers": [
+      "均线死叉"
+    ],
     "notes": [
-      "5d 预测 偏空，概率 39.5%，置信度 high",
-      "历史样本 281，回测胜率 30.4%",
-      "信号与预测部分一致，存在中性分歧",
+      "5d 预测 偏空，概率 43.3%，置信度 medium",
+      "历史样本 49，回测胜率 50.0%",
+      "初级技术信号与预测方向一致",
       "风险标记: high_volatility"
     ],
     "failure_conditions": [
@@ -75,10 +85,7 @@
     "status": "ok",
     "quality_score": 100.0,
     "factor_eligible": true,
-    "issues": [
-      "K 线末日期 2026-07-03 落后于最近交易日 2026-07-06",
-      "跨源校验 vs eastmoney: 近 20 日 均偏 0.000%"
-    ]
+    "issues": []
   },
   "limitations": [
     "rule_based_only",

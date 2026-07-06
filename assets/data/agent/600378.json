@@ -1,23 +1,22 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-03",
+  "trade_date": "2026-07-06",
   "version": "1.0.0",
-  "updated_at": "2026-07-06 15:24:38",
-  "summary": "谨慎",
-  "confidence": "low",
+  "updated_at": "2026-07-06 23:29:33",
+  "summary": "综合因子偏多，可纳入观察池",
+  "confidence": "medium",
   "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
   "stock_selection": {
     "verdict": "positive",
     "headline": "综合因子偏多，可纳入观察池",
-    "composite_score": 70.4,
+    "composite_score": 73.6,
     "evidence": [
       "技术分 87.0",
-      "情绪分 55.7",
+      "情绪分 61.0",
       "基本面分 50.0",
-      "资金分 55.0",
       "趋势 震荡",
-      "舆情 看空"
+      "舆情 中性"
     ],
     "drivers": [
       "above_ma20",
@@ -28,8 +27,7 @@
     ],
     "risks": [
       "not_backtested",
-      "technical_only",
-      "估值偏高"
+      "technical_only"
     ],
     "primary_signal": "bullish",
     "trend": "震荡"
@@ -37,51 +35,52 @@
   "strategy_diagnosis": {
     "available": true,
     "strategy": "ma_cross",
-    "verdict": "weak",
+    "verdict": "mixed",
     "findings": [
-      "胜率偏低（23.81%）",
-      "历史最大回撤较大（-44.31%）"
+      "胜率偏低（33.33%）",
+      "单笔最大亏损 -7775.39（MA20死叉）"
     ],
     "suggestions": [
-      "考虑提高买入阈值或叠加趋势过滤",
-      "设置账户级回撤熔断，避免单边行情重仓"
+      "考虑提高买入阈值或叠加趋势过滤"
     ],
     "metrics": {
-      "annual_return_pct": 12.47,
-      "max_drawdown_pct": -44.31,
-      "sharpe_ratio": 0.46,
-      "win_rate_pct": 23.81,
-      "closed_trades": 21
+      "annual_return_pct": 110.22,
+      "max_drawdown_pct": -20.86,
+      "sharpe_ratio": 1.79,
+      "win_rate_pct": 33.33,
+      "closed_trades": 6
     },
-    "attribution_top": [],
+    "attribution_top": [
+      {
+        "reason": "MA20死叉",
+        "count": 6,
+        "total_pnl": 3736.84,
+        "avg_pnl": 622.81,
+        "win_rate_pct": 33.33
+      }
+    ],
     "rolling_summary": null
   },
   "prediction_review": {
     "available": true,
     "horizon": "5d",
-    "direction": "down",
-    "probability": 0.3912,
+    "direction": "neutral",
+    "probability": 0.5042,
     "confidence": "high",
-    "expected_return": 0.0108,
-    "alignment": "divergent",
+    "expected_return": 0.0345,
+    "alignment": "partial",
     "drivers": [
       "站上MA20",
       "MACD柱为正"
     ],
     "notes": [
-      "5d 预测 偏空，概率 39.1%，置信度 high",
-      "历史样本 294，回测胜率 23.8%",
-      "初级技术信号与预测方向分歧，需人工复核",
-      "多因子分 70.4 与看空预测不完全匹配",
-      "风险标记: high_volatility",
-      "风险标记: high_historical_drawdown",
-      "策略历史回撤 -44.31% 偏高"
+      "5d 预测 震荡，概率 50.4%，置信度 high",
+      "历史样本 144，回测胜率 33.3%",
+      "信号与预测部分一致，存在中性分歧",
+      "风险标记: high_volatility"
     ],
     "failure_conditions": [
-      "signal_prediction_divergence",
-      "high_factor_score_vs_bearish_pred",
-      "high_volatility",
-      "high_historical_drawdown"
+      "high_volatility"
     ],
     "disclaimer": "统计倾向，非确定性预测，不构成投资建议"
   },
@@ -89,10 +88,7 @@
     "status": "ok",
     "quality_score": 100.0,
     "factor_eligible": true,
-    "issues": [
-      "K 线末日期 2026-07-03 落后于最近交易日 2026-07-06",
-      "跨源校验 vs eastmoney: 近 20 日 均偏 0.028%"
-    ]
+    "issues": []
   },
   "limitations": [
     "rule_based_only",

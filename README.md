@@ -14,7 +14,9 @@ a-stock/
 │   ├── strategy/           # 策略（MA 金叉等）
 │   ├── backtest/           # 回测引擎与绩效
 │   ├── prediction/         # 可验证走势预测
+│   ├── selector/           # 上涨候选池筛选与排名
 │   ├── decision/           # 单股操作建议
+│   ├── impact/             # 实际影响数据提取（业绩/估值/解禁/材料价格）
 │   ├── risk/               # 风控规则
 │   ├── trading/            # 模拟交易
 │   ├── storage/            # MySQL/Redis/JSON 存储
@@ -65,6 +67,8 @@ chmod +x run.sh setup.sh
 ./run.sh stock
 ./run.sh enhance          # 数据增强（P1-3）
 ./run.sh agent            # Agent 看板（P4-1）
+./run.sh impact           # 实际影响数据（业绩/估值/解禁/材料价格）
+./run.sh selector         # 上涨候选池排名
 ./run.sh decision         # 单股操作建议（指导性优先）
 ./run.sh simtrade         # 模拟交易（P3-1）
 ./run.sh predict
@@ -158,18 +162,30 @@ python quant_system/main.py decision
 python quant_system/main.py decision 600378 --strategy ma_cross
 # 看板：reports/decision/index.html · 数据：assets/data/decisions/{code}.json
 
-# 14. 模拟交易（P3-1，基于决策/预测虚拟调仓）
+# 14. 上涨候选池筛选（预测 + 因子 + 趋势 + 回测 + 实际影响）
+python quant_system/main.py selector
+python quant_system/main.py selector 600378 000988
+# 看板：reports/selector/index.html · 数据：assets/data/selector/{code}.json
+
+# 15. 实际影响数据（业绩预告/估值/解禁/生产材料或产品价格）
+python quant_system/main.py impact
+python quant_system/main.py impact 603629 600378
+python script/gen_impact_report.py
+# 看板：reports/impact/index.html · 数据：assets/data/impact/{code}.json
+# decision 默认自动补齐 impact，可用 --no-impact 关闭。
+
+# 16. 模拟交易（P3-1，基于决策/预测虚拟调仓）
 python quant_system/main.py simtrade
 python quant_system/main.py simtrade --reset --cash 100000
 # 看板：reports/trading/index.html · 数据：assets/data/trading/account.json
 
-# 15. 报表列表同步（Agent / 因子 / 预测 / 决策 / 增强 / 回测 / 模拟交易）
+# 17. 报表列表同步（Agent / 因子 / 预测 / 候选 / 决策 / 影响 / 增强 / 回测 / 模拟交易）
 python script/report_index_utils.py
 
-# 16. 定时调度（可选）
+# 18. 定时调度（可选）
 python quant_system/main.py scheduler
 
-# 17. 预览
+# 19. 预览
 python -m http.server 8080
 ```
 

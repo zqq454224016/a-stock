@@ -2,36 +2,35 @@
   "code": "600378",
   "trade_date": "2026-07-06",
   "horizon": "5d",
-  "direction": "down",
-  "probability": 0.3912,
+  "direction": "neutral",
+  "probability": 0.5042,
   "confidence": "high",
-  "expected_return": 0.0108,
-  "max_expected_drawdown": 0.202,
+  "expected_return": 0.0345,
+  "max_expected_drawdown": 0.1139,
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_600378_20260703",
+  "data_version": "daily_kline_600378_20260706",
   "factor_versions": {
     "technical": "1.0.0"
   },
   "evidence": {
-    "sample_count": 294,
+    "sample_count": 144,
     "state_label": "bullish",
-    "historical_positive_rate": 0.4932,
-    "backtest_win_rate": 0.2381,
-    "backtest_profit_loss_ratio": 1.71,
-    "backtest_annual_return_pct": 12.47,
-    "backtest_max_drawdown_pct": -44.31,
-    "backtest_closed_trades": 21
+    "historical_positive_rate": 0.6181,
+    "backtest_win_rate": 0.3333,
+    "backtest_profit_loss_ratio": 2.31,
+    "backtest_annual_return_pct": 110.22,
+    "backtest_max_drawdown_pct": -20.86,
+    "backtest_closed_trades": 6
   },
   "drivers": [
     "站上MA20",
     "MACD柱为正"
   ],
   "risk_flags": [
-    "high_volatility",
-    "high_historical_drawdown"
+    "high_volatility"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-06 14:12:36"
+  "updated_at": "2026-07-06 23:29:33"
 }

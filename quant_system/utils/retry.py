@@ -27,7 +27,7 @@ def retry(
                 except exceptions as e:
                     last_err = e
                     if i < retries - 1:
-                        logger.warning("retry %s/%s %s: %s", i + 1, retries - 1, fn.__name__, e)
+                        logger.warning("第 %s/%s 次重试 %s: %s", i + 1, retries - 1, fn.__name__, e)
                         time.sleep(delay)
             raise last_err  # type: ignore[misc]
         return wrapper
@@ -48,6 +48,6 @@ def call_with_retry(
         except Exception as e:
             last_err = e
             if i < retries - 1:
-                logger.warning("retry %s/%s: %s", i + 1, retries - 1, e)
+                logger.warning("第 %s/%s 次重试: %s", i + 1, retries - 1, e)
                 time.sleep(delay)
     raise last_err  # type: ignore[misc]

@@ -44,6 +44,10 @@ class StockContext:
         return self._read(f"enhance/{self.code}.json")
 
     @property
+    def impact(self) -> dict[str, Any] | None:
+        return self._read(f"impact/{self.code}.json")
+
+    @property
     def prediction(self) -> dict[str, Any] | None:
         return self._read(f"predictions/{self.code}.json")
 

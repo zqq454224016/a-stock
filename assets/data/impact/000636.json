@@ -1,0 +1,31 @@
+{
+  "code": "000636",
+  "name": "风华高科",
+  "trade_date": "2026-07-06",
+  "version": "1.0.0",
+  "impact_score": -26,
+  "impact_direction": "negative",
+  "events": [
+    {
+      "event_type": "valuation_pressure",
+      "title": "估值压力",
+      "period": "2026-07-06",
+      "announce_date": "2026-07-06",
+      "impact_score": -26,
+      "impact_direction": "negative",
+      "confidence": "medium",
+      "metrics": {
+        "pe_ttm": 220.25693027,
+        "pb": 5.4222121
+      },
+      "evidence": [
+        "PE(TTM)=220.26",
+        "PB=5.42"
+      ],
+      "source": "eastmoney_value",
+      "limitations": []
+    }
+  ],
+  "limitations": [],
+  "updated_at": "2026-07-06 23:29:33"
+}

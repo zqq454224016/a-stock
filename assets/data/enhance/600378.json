@@ -1,74 +1,28 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-03",
-  "updated_at": "2026-07-06 00:35:21",
+  "trade_date": "2026-07-06",
+  "updated_at": "2026-07-06 23:29:03",
   "version": "1.0.0",
   "fundamentals": {
     "source": "eastmoney_value",
-    "trade_date": "2026-07-03",
-    "close": 76.01,
-    "market_cap_yi": 980.53,
-    "float_cap_yi": 815.26,
-    "pe_ttm": 62.54389712,
-    "pe_static": 67.88169503,
-    "pb": 5.27694368,
-    "ps": 5.52003839,
-    "peg": 1.674242544631
+    "trade_date": "2026-07-06",
+    "close": 68.41,
+    "market_cap_yi": 882.49,
+    "float_cap_yi": 733.74,
+    "pe_ttm": 56.29033025,
+    "pe_static": 61.09441859,
+    "pb": 4.74931873,
+    "ps": 4.96810717,
+    "peg": 1.506840316891
   },
   "corporate": {
-    "dividends": [
-      {
-        "announce_date": "2026-06-05",
-        "ex_date": "2026-06-12",
-        "record_date": "2026-06-11",
-        "cash_div": 3.92,
-        "bonus_ratio": 0.0,
-        "transfer_ratio": 0.0,
-        "status": "实施"
-      },
-      {
-        "announce_date": "2025-06-21",
-        "ex_date": "2025-06-30",
-        "record_date": "2025-06-27",
-        "cash_div": 2.8601,
-        "bonus_ratio": 0.0,
-        "transfer_ratio": 0.0,
-        "status": "实施"
-      },
-      {
-        "announce_date": "2024-06-06",
-        "ex_date": "2024-06-14",
-        "record_date": "2024-06-13",
-        "cash_div": 3.46,
-        "bonus_ratio": 0.0,
-        "transfer_ratio": 0.0,
-        "status": "实施"
-      },
-      {
-        "announce_date": "2023-07-06",
-        "ex_date": "2023-07-13",
-        "record_date": "2023-07-12",
-        "cash_div": 6.4,
-        "bonus_ratio": 0.0,
-        "transfer_ratio": 0.0,
-        "status": "实施"
-      },
-      {
-        "announce_date": "2022-07-06",
-        "ex_date": "2022-07-13",
-        "record_date": "2022-07-12",
-        "cash_div": 2.911,
-        "bonus_ratio": 0.0,
-        "transfer_ratio": 0.0,
-        "status": "实施"
-      }
-    ],
+    "dividends": [],
     "lockups": [
       {
         "unlock_date": "2028-01-10",
         "unlock_shares": 20161290.0,
-        "unlock_value_yi": 15.32,
+        "unlock_value_yi": 13.79,
         "pct_total": 0.015628911581,
         "pct_float": 0.018797260004,
         "holder_type": "定向增发机构配售股份"
@@ -76,7 +30,7 @@
       {
         "unlock_date": "2027-07-26",
         "unlock_shares": 197272967.0,
-        "unlock_value_yi": 149.95,
+        "unlock_value_yi": 134.95,
         "pct_total": 0.152924825668,
         "pct_float": 0.183926289069,
         "holder_type": "定向增发机构配售股份"
@@ -90,60 +44,34 @@
         "holder_type": "定向增发机构配售股份"
       }
     ],
-    "earnings_forecast": {
-      "indicator": "归属于上市公司股东的净利润",
-      "forecast_type": "预增",
-      "change_pct": 67.805,
-      "forecast_value": "310000000.0",
-      "reason": "(一)主营业务影响报告期内,公司氟化工业务一体化管理效能显著,在制冷剂产品市场价格维持高位运行,锂电业务市场复苏以及公司卓越运营、提质增效行动的综合作用下,公司收入和利润较上年同期有较大幅度提升。",
-      "announce_date": "2026-04-24",
-      "report_period": "20260331"
-    }
+    "earnings_forecast": null
   },
   "fund_flow": {
     "northbound": {},
-    "margin": {
-      "trade_date": "20260703",
-      "margin_balance_yi": 19.58,
-      "margin_buy_yi": 8.34,
-      "short_balance": 211300.0,
-      "source": "sse"
-    }
+    "margin": null
   },
   "index_context": {
-    "trade_date": "2026-07-02",
+    "trade_date": "2026-07-06",
     "benchmarks": [
       {
         "name": "上证指数",
         "code": "000001",
-        "close": 4028.9038,
-        "change_pct": -2.031
-      },
-      {
-        "name": "深证成指",
-        "code": "399001",
-        "close": 15498.811,
-        "change_pct": -3.849
-      },
-      {
-        "name": "创业板指",
-        "code": "399006",
-        "close": 4017.273,
-        "change_pct": -5.714
+        "close": 4050.44,
+        "change_pct": 0.17
       },
       {
         "name": "科创50",
         "code": "000688",
-        "close": 1987.291,
-        "change_pct": -7.699
+        "close": 2011.17,
+        "change_pct": 1.8
       }
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -741.1,
+      "main_net": -861.15,
       "retail_net": 0.0
     },
-    "stock_return_20d": 89.81
+    "stock_return_20d": 47.72
   },
   "cross_source": null,
   "quality_ref": {
@@ -152,10 +80,13 @@
   },
   "limitations": [
     "partial_source_failure",
-    "northbound_missing"
+    "northbound_missing",
+    "dividend_missing"
   ],
   "sources_failed": [
+    "dividend",
     "earnings_forecast_20260930",
+    "margin_sse",
     "northbound"
   ]
 }

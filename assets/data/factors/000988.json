@@ -1,0 +1,44 @@
+{
+  "code": "000988",
+  "trade_date": "2026-07-06",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": "1.0.0",
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_000988_20260706",
+  "factors": {
+    "ma20_bias": -8.24,
+    "rsi14": 44.95,
+    "macd": 2.852,
+    "macd_signal": 5.7157,
+    "macd_hist": -2.8637,
+    "atr14": 12.1693,
+    "momentum_20": -4.61,
+    "volume_ratio_20": 0.67,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 39.0,
+    "sentiment_score": 63.8,
+    "fundamental_score": 36.0,
+    "fund_flow_score": null,
+    "multi_factor_score": 45.4,
+    "has_sentiment": true,
+    "has_fundamental": true,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 0.556,
+      "sentiment": 0.278,
+      "fundamental": 0.167
+    },
+    "fundamental_detail": {
+      "pe_ttm": 88.57714214,
+      "pb": 12.87905486,
+      "market_cap_yi": 1505.24,
+      "valuation_source": "eastmoney_value",
+      "next_lockup": "2018-12-10",
+      "forecast_type": null
+    },
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-06 23:29:03"
+}

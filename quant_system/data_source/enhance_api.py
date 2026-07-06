@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import threading
 from typing import Any, Callable
 
 import pandas as pd
@@ -9,7 +10,9 @@ import pandas as pd
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.data_source.base_crawler import BaseCrawler
 from quant_system.pipeline.normalizer import normalize_code, to_symbol
+from quant_system.utils.i18n_labels import humanize_fetch_error, translate_source_fail
 from quant_system.utils.logger import get_logger
+from quant_system.utils.retry import call_with_retry
 from quant_system.utils.time_utils import today_str
 
 logger = get_logger(__name__)
@@ -33,11 +36,15 @@ def _latest_row(df: pd.DataFrame) -> pd.Series | None:
 class EnhanceAPI(BaseCrawler):
     """个股增强数据：估值、公司行为、北向/两融、指数对照。"""
 
-    source_name = "enhance"
+    source_name = "数据增强"
 
     def __init__(self, config: CrawlerConfig | None = None):
         super().__init__(config)
         self._ak = None
+        self._lock = threading.Lock()
+        self._disabled: set[str] = set()
+        self._disabled_prefixes: set[str] = set()
+        self._logged_failures: set[str] = set()
 
     @property
     def ak(self):
@@ -46,18 +53,49 @@ class EnhanceAPI(BaseCrawler):
             self._ak = ak
         return self._ak
 
+    def _retry(self, fn, *args, **kwargs):
+        return call_with_retry(
+            fn,
+            retries=self.config.enhance_probe_retries,
+            delay=min(self.config.retry_delay, 1.0),
+            *args,
+            **kwargs,
+        )
+
     def fetch_spot_all(self) -> pd.DataFrame:
         raise NotImplementedError
 
     def fetch_daily_hist(self, symbol: str, adjust: str = "qfq") -> pd.DataFrame:
         raise NotImplementedError
 
+    def _is_disabled(self, label: str) -> bool:
+        if label in self._disabled:
+            return True
+        return any(label.startswith(p) for p in self._disabled_prefixes)
+
+    def _disable(self, label: str) -> None:
+        with self._lock:
+            if label.startswith("earnings_forecast"):
+                self._disabled_prefixes.add("earnings_forecast")
+            elif label.startswith("margin_"):
+                self._disabled_prefixes.add("margin_")
+            else:
+                self._disabled.add(label)
+
     def _call(self, label: str, fn: Callable, *args, **kwargs) -> tuple[Any | None, str | None]:
+        if self._is_disabled(label):
+            return None, label
         try:
             return self._retry(fn, *args, **kwargs), None
         except Exception as e:
-            msg = f"{label}: {e}"
-            self.log_fail(msg)
+            self._disable(label)
+            human = humanize_fetch_error(e)
+            with self._lock:
+                first = label not in self._logged_failures
+                if first:
+                    self._logged_failures.add(label)
+            if first:
+                self.log_fail(f"{translate_source_fail(label)}: {human}")
             return None, label
 
     def fetch_valuation(self, code: str) -> tuple[dict[str, Any], list[str]]:
@@ -169,12 +207,11 @@ class EnhanceAPI(BaseCrawler):
         return rows, []
 
     def fetch_earnings_forecast(self, code: str) -> tuple[dict[str, Any] | None, list[str]]:
+        if self._is_disabled("earnings_forecast_probe"):
+            return None, ["earnings_forecast"]
         code = normalize_code(code)
         year = int(today_str()[:4])
-        dates = []
-        for y in (year, year - 1):
-            for md in ("1231", "0930", "0630", "0331"):
-                dates.append(f"{y}{md}")
+        dates = [f"{year}{md}" for md in ("1231", "0930", "0630", "0331")]
         failed: list[str] = []
         for d in dates:
             df, err = self._call(f"earnings_forecast_{d}", lambda date=d: self.ak.stock_yjyg_em(date=date))
@@ -196,6 +233,8 @@ class EnhanceAPI(BaseCrawler):
                 "announce_date": str(r.get("公告日期", ""))[:10],
                 "report_period": d,
             }, failed[:1]
+        if failed:
+            self._disable("earnings_forecast_probe")
         return None, failed[:1] if failed else ["earnings_forecast"]
 
     def fetch_northbound(self, code: str, days: int = 5) -> tuple[dict[str, Any], list[str]]:
@@ -231,28 +270,43 @@ class EnhanceAPI(BaseCrawler):
             "source": "hsgt_individual",
         }, []
 
+    @staticmethod
+    def _margin_markets(code: str) -> list[str]:
+        if code.startswith(("6", "5", "9")):
+            return ["sse"]
+        return ["szse"]
+
     def fetch_margin(self, code: str) -> tuple[dict[str, Any] | None, list[str]]:
+        if self._is_disabled("margin_probe"):
+            return None, ["margin"]
         code = normalize_code(code)
         from quant_system.utils.trade_calendar import get_calendar
 
         cal = get_calendar()
-        probe_dates = []
+        probe_dates: list[str] = []
         d = today_str()
-        for _ in range(8):
+        for _ in range(3):
             probe_dates.append(d.replace("-", ""))
             prev = cal.prev_trade_day(d)
             if not prev:
                 break
             d = prev
 
+        failed: list[str] = []
         for date in probe_dates:
             fetchers = [
-                ("sse", lambda dt=date: self.ak.stock_margin_detail_sse(date=dt)),
-                ("szse", lambda dt=date: self.ak.stock_margin_detail_szse(date=dt)),
+                (market, lambda dt=date, m=market: (
+                    self.ak.stock_margin_detail_sse(date=dt)
+                    if m == "sse" else self.ak.stock_margin_detail_szse(date=dt)
+                ))
+                for market in self._margin_markets(code)
             ]
             for market, fn in fetchers:
                 df, err = self._call(f"margin_{market}", fn)
-                if err or not isinstance(df, pd.DataFrame) or df.empty:
+                if err:
+                    failed.append(err)
+                    continue
+                if not isinstance(df, pd.DataFrame) or df.empty:
                     continue
                 col = "标的证券代码" if "标的证券代码" in df.columns else None
                 if not col:
@@ -270,9 +324,54 @@ class EnhanceAPI(BaseCrawler):
                     "short_balance": _safe_float(r.get("融券余量")),
                     "source": market,
                 }, []
-        return None, ["margin"]
+        if failed:
+            self._disable("margin_probe")
+        return None, failed[:1] if failed else ["margin"]
 
     def fetch_market_fund_flow(self) -> dict[str, Any]:
         from quant_system.data_source.eastmoney import EastMoneyCrawler
         flow, trade_date = EastMoneyCrawler(self.config).fetch_fund_flow()
         return {"trade_date": trade_date, **flow}
+
+    def fetch_stock_bundle(self, code: str) -> dict[str, Any]:
+        """单只股票增强数据（内部字段并发拉取）。"""
+        from quant_system.config.enhance_config import DIVIDEND_LIMIT, LOCKUP_LIMIT, NORTHBOUND_DAYS
+        from quant_system.utils.concurrent_fetch import run_parallel_tasks
+
+        code = normalize_code(code)
+        raw = run_parallel_tasks({
+            "valuation": lambda: self.fetch_valuation(code),
+            "dividends": lambda: self.fetch_dividends(code, limit=DIVIDEND_LIMIT),
+            "lockups": lambda: self.fetch_lockup(code, limit=LOCKUP_LIMIT),
+            "forecast": lambda: self.fetch_earnings_forecast(code),
+            "northbound": lambda: self.fetch_northbound(code, days=NORTHBOUND_DAYS),
+            "margin": lambda: self.fetch_margin(code),
+        }, max_workers=6)
+
+        failed: list[str] = []
+
+        def _take(name: str, default: tuple):
+            val = raw.get(name)
+            if isinstance(val, Exception):
+                failed.append(name)
+                return default
+            return val
+
+        valuation, f1 = _take("valuation", ({}, []))
+        dividends, f2 = _take("dividends", ([], []))
+        lockups, f3 = _take("lockups", ([], []))
+        forecast, f4 = _take("forecast", (None, []))
+        northbound, f5 = _take("northbound", ({}, []))
+        margin, f6 = _take("margin", (None, []))
+        for part in (f1, f2, f3, f4, f5, f6):
+            failed.extend(part)
+
+        return {
+            "valuation": valuation,
+            "dividends": dividends,
+            "lockups": lockups,
+            "forecast": forecast,
+            "northbound": northbound,
+            "margin": margin,
+            "failed": failed,
+        }

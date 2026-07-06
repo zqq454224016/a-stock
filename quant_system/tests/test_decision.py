@@ -54,3 +54,42 @@ def test_decision_stop_loss_overrides_hold():
     )
     assert d["action"] == "sell"
     assert "stop_loss_triggered" in d["invalid_conditions"]
+
+
+def test_decision_negative_impact_overrides_buy():
+    d = build_stock_decision(
+        code="600378",
+        prediction={"direction": "up", "probability": 0.66, "confidence": "high"},
+        factors={"factors": {"multi_factor_score": 75}},
+        backtest={"metrics": {"win_rate_pct": 55, "sharpe_ratio": 1.0, "max_drawdown_pct": -15}},
+        quality={"quality_score": 98},
+        impact={
+            "impact_score": -25,
+            "impact_direction": "negative",
+            "events": [{"event_type": "valuation_pressure", "title": "估值压力", "impact_score": -25}],
+        },
+        account={"positions": {}},
+    )
+
+    assert d["action"] == "watch"
+    assert "negative_impact_overrides_buy" in d["invalid_conditions"]
+    assert d["evidence"]["impact"]["impact_score"] == -25
+
+
+def test_decision_positive_impact_is_included_in_evidence():
+    d = build_stock_decision(
+        code="600378",
+        prediction={"direction": "neutral", "probability": 0.5, "confidence": "low"},
+        factors={"factors": {"multi_factor_score": 50}},
+        backtest={"metrics": {"win_rate_pct": 55, "sharpe_ratio": 1.0, "max_drawdown_pct": -15}},
+        quality={"quality_score": 98},
+        impact={
+            "impact_score": 30,
+            "impact_direction": "positive",
+            "events": [{"event_type": "material_or_product_price", "title": "生产相关产品/材料价格影响", "impact_score": 30}],
+        },
+    )
+
+    assert d["action"] == "watch"
+    assert any("实际影响数据" in reason for reason in d["reasons"])
+    assert d["evidence"]["impact"]["events"][0]["event_type"] == "material_or_product_price"

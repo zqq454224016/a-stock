@@ -47,31 +47,55 @@ class AkShareAPI(BaseCrawler):
             self.log_fail(f"东财{label}不可用，已切换备用源: {e}")
             return None
 
+    def _is_proxy_error(self, err: Exception) -> bool:
+        msg = str(err).lower()
+        return "proxy" in msg or "remote end closed" in msg
+
+    def _disable_eastmoney(self, err: Exception | None = None) -> None:
+        if not self._eastmoney_disabled:
+            self._eastmoney_disabled = True
+            reason = f": {err}" if err else ""
+            self.log_fail(f"东财本会话内禁用{reason}")
+
     def _spot_source_order(self) -> list[str]:
         prefer = self.config.prefer_source
         if prefer == "eastmoney":
-            return ["eastmoney", "sina", "eastmoney_direct"]
-        if prefer == "sina":
-            return ["sina", "eastmoney", "eastmoney_direct"]
-        return ["eastmoney", "sina", "eastmoney_direct"]
+            order = ["eastmoney", "sina", "eastmoney_direct"]
+        elif prefer == "sina":
+            order = ["sina", "eastmoney", "eastmoney_direct"]
+        else:
+            order = ["eastmoney", "sina", "eastmoney_direct"]
+        if self._eastmoney_disabled:
+            order = [s for s in order if not s.startswith("eastmoney")]
+        return order
+
+    def _should_skip_bulk_spot(self, codes_set: set[str] | None) -> bool:
+        if self.config.skip_bulk_spot:
+            return True
+        if codes_set is not None and len(codes_set) <= self.config.watchlist_spot_threshold:
+            return True
+        wl = load_watchlist(self.config)
+        return len(wl) <= self.config.watchlist_spot_threshold
 
     def _fetch_spot_source(self, source: str) -> pd.DataFrame:
+        if source.startswith("eastmoney") and self._eastmoney_disabled:
+            raise RuntimeError("eastmoney disabled")
         if source == "eastmoney":
             return call_with_retry(
                 self._em.fetch_spot_all,
-                retries=self.config.eastmoney_probe_retries,
+                retries=1,
                 delay=self.config.retry_delay,
             )
         if source == "sina":
             return call_with_retry(
                 self.ak.stock_zh_a_spot,
-                retries=2,
+                retries=1,
                 delay=self.config.retry_delay,
             )
         if source == "eastmoney_direct":
             return call_with_retry(
                 self.ak.stock_zh_a_spot_em,
-                retries=self.config.eastmoney_probe_retries,
+                retries=1,
                 delay=self.config.retry_delay,
             )
         raise ValueError(f"未知行情源: {source}")
@@ -88,6 +112,8 @@ class AkShareAPI(BaseCrawler):
             except Exception as e:
                 errors.append(f"{source}: {e}")
                 self.log_fail(f"个股快照 {source} 失败: {e}")
+                if source.startswith("eastmoney") or self._is_proxy_error(e):
+                    self._disable_eastmoney(e)
         raise RuntimeError(f"全市场行情不可用: {'; '.join(errors)}")
 
     def _quotes_to_spot_df(self, spot_map: dict[str, dict[str, Any]]) -> pd.DataFrame:
@@ -123,8 +149,27 @@ class AkShareAPI(BaseCrawler):
             spot_map[code] = {**quote, "name": data.get("name", quote.get("name", ""))}
         return self._quotes_to_spot_df(spot_map)
 
+    def _fetch_spot_map_per_code(self, codes: list[str]) -> dict[str, dict]:
+        spot_map: dict[str, dict] = {}
+        for code in sorted({normalize_code(c) for c in codes}):
+            quote = self.fetch_spot_quote(code)
+            if quote:
+                spot_map[code] = quote
+        return spot_map
+
     def _resolve_market_spot_df(self, store: Any, limitations: list[str]) -> tuple[pd.DataFrame, str]:
         from quant_system.pipeline.cleaner import clean_spot_df
+
+        codes = [normalize_code(x["code"]) for x in load_watchlist(self.config)]
+        if codes and self._should_skip_bulk_spot(set(codes)):
+            logger.info("自选股 %s 只，跳过全市场行情，逐只拉取", len(codes))
+            limitations.append("bulk_spot_skipped")
+            spot_map = self._fetch_spot_map_per_code(codes)
+            if spot_map:
+                df = clean_spot_df(self._quotes_to_spot_df(spot_map))
+                if not df.empty:
+                    limitations.append("spot_watchlist_only")
+                    return df, "watchlist"
 
         try:
             df = clean_spot_df(self.fetch_spot_all())
@@ -134,10 +179,9 @@ class AkShareAPI(BaseCrawler):
             limitations.append("bulk_spot_failed")
             logger.warning("全市场行情失败，降级自选股: %s", e)
 
-        codes = [normalize_code(x["code"]) for x in load_watchlist(self.config)]
         if codes:
-            spot_map = self.fetch_spot_map(codes=codes)
-            df = self._quotes_to_spot_df(spot_map)
+            spot_map = self._fetch_spot_map_per_code(codes)
+            df = clean_spot_df(self._quotes_to_spot_df(spot_map))
             if not df.empty:
                 limitations.append("spot_watchlist_only")
                 return df, "watchlist"
@@ -260,14 +304,22 @@ class AkShareAPI(BaseCrawler):
         }
 
     def fetch_spot_map(self, codes: list[str] | None = None) -> dict[str, dict]:
-        """全市场或指定代码的实时快照；失败时对小范围自选股逐只降级。"""
+        """全市场或指定代码的实时快照；小范围自选股默认跳过全市场。"""
         codes_set = {normalize_code(c) for c in codes} if codes else None
-        use_watchlist_fallback = codes_set is not None and len(codes_set) <= self.config.watchlist_spot_threshold
 
         if codes_set and len(codes_set) <= 10:
             logger.info("自选股 %s 只，拉取实时行情…", len(codes_set))
-        else:
+        elif not self._should_skip_bulk_spot(codes_set):
             logger.info("拉取全市场实时行情…")
+
+        if self._should_skip_bulk_spot(codes_set):
+            target = sorted(codes_set) if codes_set else [
+                normalize_code(x["code"]) for x in load_watchlist(self.config)
+            ]
+            spot_map = self._fetch_spot_map_per_code(target)
+            if spot_map:
+                logger.info("自选股行情已通过逐只拉取获取 %s 只", len(spot_map))
+            return spot_map
 
         spot_map: dict[str, dict] = {}
         bulk_ok = False
@@ -281,7 +333,7 @@ class AkShareAPI(BaseCrawler):
                 spot_map[code] = self._spot_row_to_quote(r)
         except Exception as e:
             logger.warning("全市场行情失败: %s", e)
-            if not use_watchlist_fallback:
+            if codes_set is None:
                 raise
 
         if codes_set:

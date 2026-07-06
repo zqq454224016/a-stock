@@ -1,40 +1,54 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-03",
+  "trade_date": "2026-07-06",
   "decision_version": "1.0.0",
   "action": "watch",
   "position_suggestion": 0.0,
   "confidence": "low",
   "reasons": [
-    "预测、因子或回测条件不足，暂不买入"
+    "预测、因子或回测条件不足，暂不买入",
+    "回测指标处于可接受区间"
   ],
   "risks": [
-    "high_volatility",
-    "回测胜率偏低 30.43%"
+    "实际影响数据偏负面，impact_score=-26.0",
+    "high_volatility"
   ],
   "invalid_conditions": [],
   "evidence": {
     "prediction": {
       "direction": "down",
-      "probability": 0.395,
-      "confidence": "high",
-      "expected_return": -0.0077,
+      "probability": 0.4327,
+      "confidence": "medium",
+      "expected_return": -0.0176,
       "risk_flags": [
         "high_volatility"
       ]
     },
-    "factor_score": 42.4,
+    "factor_score": 36.2,
     "quality_score": 100.0,
-    "backtest_health": "mixed",
+    "backtest_health": "ok",
     "position": {
       "shares": 0,
       "unrealized_pnl_pct": 0.0,
       "market_value": null
     },
-    "agent_summary": "综合因子中性，等待更清晰信号"
+    "agent_summary": "谨慎",
+    "impact": {
+      "impact_score": -26.0,
+      "impact_direction": "negative",
+      "events": [
+        {
+          "event_type": "valuation_pressure",
+          "title": "估值压力",
+          "impact_score": -26,
+          "impact_direction": "negative"
+        }
+      ],
+      "limitations": []
+    }
   },
   "requires_human_review": false,
   "disclaimer": "指导性意见，仅供研究和模拟交易，不构成投资建议",
-  "updated_at": "2026-07-06 16:11:35"
+  "updated_at": "2026-07-06 23:29:33"
 }

@@ -78,7 +78,7 @@ def run_predict_job(
                 logger.warning("预测跳过 %s: 缺少回测证据", code)
                 continue
 
-            df, meta = load_kline_df(code, api, cfg, store, prefer_api=True, days=days)
+            df, meta = load_kline_df(code, api, cfg, store, prefer_api=False, days=days)
             ctx = load_stock_context(code, store)
             factor_payload = _load_factors(store, code)
             if factor_payload:

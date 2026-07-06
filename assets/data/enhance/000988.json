@@ -1,0 +1,84 @@
+{
+  "code": "000988",
+  "name": "华工科技",
+  "trade_date": "2026-07-06",
+  "updated_at": "2026-07-06 23:29:03",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-07-06",
+    "close": 149.7,
+    "market_cap_yi": 1505.24,
+    "float_cap_yi": 1504.46,
+    "pe_ttm": 88.57714214,
+    "pe_static": 102.3417849,
+    "pb": 12.87905486,
+    "ps": 9.86061769,
+    "peg": 4.717443057546
+  },
+  "corporate": {
+    "dividends": [],
+    "lockups": [
+      {
+        "unlock_date": "2018-12-10",
+        "unlock_shares": 114386075.0,
+        "unlock_value_yi": 13.54,
+        "pct_total": 0.113760086575,
+        "pct_float": 0.113788095007,
+        "holder_type": "定向增发机构配售股份"
+      },
+      {
+        "unlock_date": "2012-06-08",
+        "unlock_shares": 37950500.0,
+        "unlock_value_yi": 5.5,
+        "pct_total": 0.085175158082,
+        "pct_float": 0.085175158082,
+        "holder_type": "定向增发机构配售股份"
+      }
+    ],
+    "earnings_forecast": null
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-06",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 4050.44,
+        "change_pct": 0.17
+      },
+      {
+        "name": "科创50",
+        "code": "000688",
+        "close": 2011.17,
+        "change_pct": 1.8
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -861.15,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": -4.61
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 100.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing",
+    "dividend_missing"
+  ],
+  "sources_failed": [
+    "dividend",
+    "earnings_forecast_20260930",
+    "margin_szse",
+    "northbound"
+  ]
+}

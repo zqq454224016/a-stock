@@ -73,6 +73,7 @@ def build_stock_decision(
     backtest: dict[str, Any] | None = None,
     quality: dict[str, Any] | None = None,
     agent_report: dict[str, Any] | None = None,
+    impact: dict[str, Any] | None = None,
     account: dict[str, Any] | None = None,
     cfg: DecisionConfig | None = None,
 ) -> dict[str, Any]:
@@ -82,6 +83,7 @@ def build_stock_decision(
     quality = quality or {}
     stock = stock or {}
     agent_report = agent_report or {}
+    impact = impact or {}
 
     qscore = _to_float(quality.get("quality_score") or (stock.get("quality") or {}).get("quality_score"), 100.0)
     factor_score = _factor_score(factors)
@@ -89,6 +91,8 @@ def build_stock_decision(
     probability = _to_float(prediction.get("probability"), 0.5)
     confidence = prediction.get("confidence", "low")
     risk_flags = list(prediction.get("risk_flags") or [])
+    impact_score = _to_float(impact.get("impact_score"), 0.0)
+    impact_direction = impact.get("impact_direction", "neutral")
     bt_health, bt_notes = _backtest_health(backtest)
     position = _position_for(code, account)
     shares, pnl_pct = _position_status(position)
@@ -113,6 +117,9 @@ def build_stock_decision(
     else:
         if direction == "up" and probability >= cfg.buy_probability and factor_score >= cfg.min_factor_score and bt_health != "weak":
             target_pct = _target_for_bullish(probability, confidence, factor_score, cfg)
+            if impact_direction == "positive" and impact_score >= 20:
+                target_pct = min(cfg.max_position_pct, target_pct + 0.03)
+                reasons.append(f"实际影响数据偏正面，impact_score={impact_score}")
             if has_position:
                 action = "hold"
                 reasons.append("预测偏多且已有持仓，维持或调至目标仓位")
@@ -134,6 +141,19 @@ def build_stock_decision(
             action = "watch"
             reasons.append("预测、因子或回测条件不足，暂不买入")
             confidence_out = "medium" if direction == "neutral" else "low"
+
+    if impact_direction == "negative" and impact_score <= -20:
+        risks.append(f"实际影响数据偏负面，impact_score={impact_score}")
+        if action == "buy":
+            action = "watch"
+            target_pct = 0.0
+            invalid_conditions.append("negative_impact_overrides_buy")
+        elif action == "hold":
+            action = "reduce"
+            target_pct = min(target_pct, cfg.starter_position_pct)
+
+    if impact_direction == "positive" and impact_score >= 20 and action == "watch":
+        reasons.append(f"存在正面实际影响数据，impact_score={impact_score}，但预测/回测条件未满足")
 
     if has_position and pnl_pct <= cfg.stop_loss_pct:
         action = "sell"
@@ -176,6 +196,20 @@ def build_stock_decision(
             "market_value": position.get("market_value"),
         },
         "agent_summary": agent_report.get("summary"),
+        "impact": {
+            "impact_score": impact_score,
+            "impact_direction": impact_direction,
+            "events": [
+                {
+                    "event_type": e.get("event_type"),
+                    "title": e.get("title"),
+                    "impact_score": e.get("impact_score"),
+                    "impact_direction": e.get("impact_direction"),
+                }
+                for e in (impact.get("events") or [])[:5]
+            ],
+            "limitations": impact.get("limitations") or [],
+        },
     }
 
     return {

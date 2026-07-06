@@ -15,6 +15,7 @@ REPORTS_DIR = ROOT / "reports" / "stock"
 import sys
 sys.path.insert(0, str(ROOT))
 from quant_system.config.crawler_config import CrawlerConfig
+from quant_system.utils.i18n_labels import translate_limitations, translate_status
 from quant_system.utils.watchlist_utils import ensure_watchlist_stocks, get_watchlist_codes
 
 CACHE_META = """  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -91,7 +92,7 @@ def render_stock_report(data: dict) -> str:
     signal_block = ""
     if primary_signal:
         sig_drivers = "、".join(primary_signal.get("drivers") or []) or "—"
-        sig_limits = "、".join(primary_signal.get("limitations") or []) or "—"
+        sig_limits = translate_limitations(primary_signal.get("limitations"))
         signal_block = f"""
     <section class="live-panel" style="border-color:#0ea5e9;background:rgba(14,165,233,0.08)">
       <div class="live-panel-header">
@@ -129,7 +130,7 @@ def render_stock_report(data: dict) -> str:
         if xq.get("in_hot_deal"):
             hot_tags.append(f"成交#{xq.get('deal_rank')}")
         hot_s = " · ".join(hot_tags) if hot_tags else "未上雪球热榜"
-        limits = "、".join(sent_factors.get("limitations") or []) or "—"
+        limits = translate_limitations(sent_factors.get("limitations"))
         sentiment_block = f"""
     <section class="live-panel" style="border-color:#f59e0b;background:rgba(245,158,11,0.08)">
       <div class="live-panel-header">
@@ -279,7 +280,7 @@ def render_stock_report(data: dict) -> str:
             else f" · 日K截至 {data['kline_date']}" if data.get('kline_date') and data.get('kline_date') != data['trade_date']
             else ""
         )}
-        {f" · 质量分 {quality['quality_score']} ({quality['status']})" if quality.get('quality_score') is not None else ""}
+        {f" · 质量分 {quality['quality_score']} ({translate_status(quality['status'])})" if quality.get('quality_score') is not None else ""}
       </p>
     </div>
   </header>

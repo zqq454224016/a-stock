@@ -139,6 +139,32 @@ class JsonStore:
         self.write(path, {"updated_at": updated_at, "decisions": items})
         return path
 
+    def selector_dir(self) -> Path:
+        return self.config.json_data_dir / "selector"
+
+    def save_selector(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.selector_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_selector_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.selector_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "items": items})
+        return path
+
+    def impact_dir(self) -> Path:
+        return self.config.json_data_dir / "impact"
+
+    def save_impact(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.impact_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_impact_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.impact_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "items": items})
+        return path
+
     def quality_dir(self) -> Path:
         return self.config.json_data_dir / "quality"
 

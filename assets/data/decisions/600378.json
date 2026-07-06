@@ -1,43 +1,54 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-03",
+  "trade_date": "2026-07-06",
   "decision_version": "1.0.0",
   "action": "watch",
   "position_suggestion": 0.0,
-  "confidence": "low",
+  "confidence": "medium",
   "reasons": [
     "预测、因子或回测条件不足，暂不买入"
   ],
   "risks": [
+    "实际影响数据偏负面，impact_score=-20.0",
     "high_volatility",
-    "high_historical_drawdown",
-    "回测胜率偏低 23.81%",
-    "历史最大回撤较大 -44.31%"
+    "回测胜率偏低 33.33%"
   ],
   "invalid_conditions": [],
   "evidence": {
     "prediction": {
-      "direction": "down",
-      "probability": 0.3912,
+      "direction": "neutral",
+      "probability": 0.5042,
       "confidence": "high",
-      "expected_return": 0.0108,
+      "expected_return": 0.0345,
       "risk_flags": [
-        "high_volatility",
-        "high_historical_drawdown"
+        "high_volatility"
       ]
     },
-    "factor_score": 70.4,
+    "factor_score": 73.6,
     "quality_score": 100.0,
-    "backtest_health": "weak",
+    "backtest_health": "mixed",
     "position": {
       "shares": 0,
       "unrealized_pnl_pct": 0.0,
       "market_value": null
     },
-    "agent_summary": "谨慎"
+    "agent_summary": "谨慎",
+    "impact": {
+      "impact_score": -20.0,
+      "impact_direction": "negative",
+      "events": [
+        {
+          "event_type": "lockup_pressure",
+          "title": "解禁压力",
+          "impact_score": -20,
+          "impact_direction": "negative"
+        }
+      ],
+      "limitations": []
+    }
   },
   "requires_human_review": false,
   "disclaimer": "指导性意见，仅供研究和模拟交易，不构成投资建议",
-  "updated_at": "2026-07-06 16:11:35"
+  "updated_at": "2026-07-06 23:29:33"
 }

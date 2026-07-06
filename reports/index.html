@@ -25,6 +25,8 @@
       <input type="search" id="search-input" placeholder="搜索报表名称或日期…" class="search-input">
       <select id="category-filter" class="select-input">
         <option value="all">全部分类</option>
+        <option value="selector">上涨候选</option>
+        <option value="impact">实际影响</option>
         <option value="decision">操作建议</option>
         <option value="trading">模拟交易</option>
         <option value="backtest">策略回测</option>
@@ -238,7 +240,7 @@
       <ul class="report-list" data-category="stock">
         <li class="report-item" data-name="600378 昊华科技 个股分析">
           <a href="stock/600378.html">
-            <span class="report-date">2026-07-03</span>
+            <span class="report-date">2026-07-06</span>
             <span class="report-title">昊华科技 (600378) · 震荡</span>
             <span class="report-tag">stock</span>
           </a>
@@ -252,8 +254,15 @@
         </li>
         <li class="report-item" data-name="000636 风华高科 个股分析">
           <a href="stock/000636.html">
-            <span class="report-date">2026-07-03</span>
-            <span class="report-title">风华高科 (000636) · 震荡</span>
+            <span class="report-date">2026-07-06</span>
+            <span class="report-title">风华高科 (000636) · 偏空</span>
+            <span class="report-tag">stock</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="000988 华工科技 个股分析">
+          <a href="stock/000988.html">
+            <span class="report-date">2026-07-06</span>
+            <span class="report-title">华工科技 (000988) · 震荡</span>
             <span class="report-tag">stock</span>
           </a>
         </li></ul>
@@ -285,22 +294,29 @@
         </li>
         <li class="report-item" data-name="600378 昊华科技 Agent">
           <a href="agent/600378.html">
-            <span class="report-date">2026-07-03</span>
-            <span class="report-title">昊华科技 (600378) · 谨慎</span>
+            <span class="report-date">2026-07-06</span>
+            <span class="report-title">昊华科技 (600378) · 综合因子偏多，可纳入观察池</span>
             <span class="report-tag">agent</span>
           </a>
         </li>
         <li class="report-item" data-name="603629 利通电子 Agent">
           <a href="agent/603629.html">
             <span class="report-date">2026-07-06</span>
-            <span class="report-title">利通电子 (603629) · 综合因子中性，等待更清晰信号</span>
+            <span class="report-title">利通电子 (603629) · 谨慎</span>
             <span class="report-tag">agent</span>
           </a>
         </li>
         <li class="report-item" data-name="000636 风华高科 Agent">
           <a href="agent/000636.html">
-            <span class="report-date">2026-07-03</span>
-            <span class="report-title">风华高科 (000636) · 综合因子中性，等待更清晰信号</span>
+            <span class="report-date">2026-07-06</span>
+            <span class="report-title">风华高科 (000636) · 谨慎</span>
+            <span class="report-tag">agent</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="000988 华工科技 Agent">
+          <a href="agent/000988.html">
+            <span class="report-date">2026-07-06</span>
+            <span class="report-title">华工科技 (000988) · 综合因子中性，等待更清晰信号</span>
             <span class="report-tag">agent</span>
           </a>
         </li>
@@ -370,6 +386,13 @@
             <span class="report-tag">backtest</span>
           </a>
         </li>
+        <li class="report-item" data-name="000988 ma_cross 回测">
+          <a href="backtest/000988_ma_cross.html">
+            <span class="report-date">ma_cross</span>
+            <span class="report-title">000988 · ma_cross</span>
+            <span class="report-tag">backtest</span>
+          </a>
+        </li>
       </ul>
     </section>
   
@@ -394,6 +417,32 @@
             <span class="report-date">汇总</span>
             <span class="report-title">单股操作建议</span>
             <span class="report-tag">decision</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="impact" class="report-section">
+      <h2>实际影响</h2>
+      <ul class="report-list" data-category="impact">
+<li class="report-item" data-name="实际影响数据">
+          <a href="impact/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">实际影响数据</span>
+            <span class="report-tag">impact</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="selector" class="report-section">
+      <h2>上涨候选</h2>
+      <ul class="report-list" data-category="selector">
+<li class="report-item" data-name="上涨候选池">
+          <a href="selector/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">上涨候选池</span>
+            <span class="report-tag">selector</span>
           </a>
         </li>
       </ul>

@@ -88,7 +88,7 @@ def run_backtest_job(
                 continue
 
             df, meta = load_kline_df(
-                code, api, cfg, store, prefer_api=True, days=days,
+                code, api, cfg, store, prefer_api=False, days=days,
             )
             if len(df) < 60:
                 logger.warning("回测跳过 %s: K 线不足 %s 根", code, len(df))

@@ -1,29 +1,37 @@
 {
-  "updated_at": "2026-07-06 14:09:34",
+  "updated_at": "2026-07-06 23:29:01",
   "stocks": [
     {
       "code": "600378",
-      "trade_date": "2026-07-03",
-      "label": "看空",
-      "heat_index": 94.8,
-      "long_short_ratio": 0.9205,
-      "sentiment_accel": 0.0
+      "trade_date": "2026-07-06",
+      "label": "中性",
+      "heat_index": 94.4,
+      "long_short_ratio": 1.0235,
+      "sentiment_accel": -0.4
     },
     {
       "code": "603629",
-      "trade_date": "2026-07-03",
+      "trade_date": "2026-07-06",
       "label": "中性",
-      "heat_index": 84.0,
-      "long_short_ratio": 1.0425,
-      "sentiment_accel": -3.2
+      "heat_index": 86.0,
+      "long_short_ratio": 0.9589,
+      "sentiment_accel": 2.0
     },
     {
       "code": "000636",
-      "trade_date": "2026-07-03",
+      "trade_date": "2026-07-06",
       "label": "中性",
-      "heat_index": 91.2,
-      "long_short_ratio": 1.0044,
-      "sentiment_accel": -4.0
+      "heat_index": 89.6,
+      "long_short_ratio": 1.0619,
+      "sentiment_accel": -1.6
+    },
+    {
+      "code": "000988",
+      "trade_date": "2026-07-06",
+      "label": "看空",
+      "heat_index": 94.0,
+      "long_short_ratio": 0.9109,
+      "sentiment_accel": 2.8
     }
   ]
 }

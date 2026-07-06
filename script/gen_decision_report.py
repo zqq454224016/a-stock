@@ -43,6 +43,13 @@ def _action_label(action: str) -> str:
     }.get(action, action)
 
 
+def _pred_dir(direction: str) -> str:
+    import sys
+    sys.path.insert(0, str(ROOT))
+    from quant_system.utils.i18n_labels import translate_direction
+    return translate_direction(direction)
+
+
 def _action_class(action: str) -> str:
     if action == "buy":
         return "text-up"
@@ -126,7 +133,7 @@ def render_detail(d: dict) -> str:
       <div class="summary-card"><span>动作</span><strong>{_action_label(d.get('action',''))}</strong></div>
       <div class="summary-card"><span>建议仓位</span><strong>{_pct(d.get('position_suggestion'))}</strong></div>
       <div class="summary-card"><span>置信度</span><strong>{d.get('confidence')}</strong></div>
-      <div class="summary-card"><span>预测方向</span><strong>{pred.get('direction','—')}</strong></div>
+      <div class="summary-card"><span>预测方向</span><strong>{_pred_dir(pred.get('direction',''))}</strong></div>
       <div class="summary-card"><span>预测概率</span><strong>{_pct(pred.get('probability'))}</strong></div>
       <div class="summary-card"><span>因子分</span><strong>{ev.get('factor_score','—')}</strong></div>
     </section>

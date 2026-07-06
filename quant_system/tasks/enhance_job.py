@@ -6,11 +6,11 @@ from typing import Any
 
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
-from quant_system.config.enhance_config import DIVIDEND_LIMIT, LOCKUP_LIMIT, NORTHBOUND_DAYS
 from quant_system.data_source.enhance_api import EnhanceAPI
 from quant_system.pipeline.enhance_builder import build_enhance_payload, summarize_enhance
 from quant_system.pipeline.normalizer import load_watchlist, normalize_code
 from quant_system.storage.json_store import JsonStore
+from quant_system.utils.concurrent_fetch import run_parallel_map
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str
 
@@ -32,6 +32,52 @@ def _load_market(store: JsonStore) -> dict[str, Any] | None:
     return store.read(path)
 
 
+def _process_one_stock(
+    item: dict[str, Any],
+    api: EnhanceAPI,
+    store: JsonStore,
+    market: dict[str, Any] | None,
+) -> dict[str, Any] | None:
+    code = normalize_code(item["code"])
+    name = item.get("name", "")
+    try:
+        stock_data, quality = _load_stock_context(store, code)
+        if stock_data and not name:
+            name = stock_data.get("name", "")
+
+        bundle = api.fetch_stock_bundle(code)
+        failed: list[str] = list(bundle.get("failed") or [])
+
+        payload = build_enhance_payload(
+            code,
+            name,
+            valuation=bundle.get("valuation") or {},
+            dividends=bundle.get("dividends") or [],
+            lockups=bundle.get("lockups") or [],
+            forecast=bundle.get("forecast"),
+            northbound=bundle.get("northbound") or {},
+            margin=bundle.get("margin"),
+            market=market,
+            stock_analysis=stock_data,
+            quality=quality,
+            sources_failed=failed,
+        )
+        store.save_enhance(code, payload)
+        summary = summarize_enhance(payload)
+        logger.info(
+            "增强 %s: PE=%s PB=%s 北向持股=%s%% 分红=%s条",
+            code,
+            summary.get("pe_ttm"),
+            summary.get("pb"),
+            summary.get("north_hold_pct"),
+            summary.get("dividend_count"),
+        )
+        return summary
+    except Exception as e:
+        logger.error("增强 %s 失败: %s", code, e)
+        return None
+
+
 def run_enhance_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
     cfg = CrawlerConfig()
     api = EnhanceAPI(cfg)
@@ -47,62 +93,17 @@ def run_enhance_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
         return []
 
     market = _load_market(store)
-    index: list[dict[str, Any]] = []
-    sources_failed: list[str] = []
-
-    for item in stocks:
-        code = normalize_code(item["code"])
-        name = item.get("name", "")
-        failed: list[str] = []
-        try:
-            stock_data, quality = _load_stock_context(store, code)
-            if stock_data and not name:
-                name = stock_data.get("name", "")
-
-            valuation, f1 = api.fetch_valuation(code)
-            failed.extend(f1)
-            dividends, f2 = api.fetch_dividends(code, limit=DIVIDEND_LIMIT)
-            failed.extend(f2)
-            lockups, f3 = api.fetch_lockup(code, limit=LOCKUP_LIMIT)
-            failed.extend(f3)
-            forecast, f4 = api.fetch_earnings_forecast(code)
-            failed.extend(f4)
-            northbound, f5 = api.fetch_northbound(code, days=NORTHBOUND_DAYS)
-            failed.extend(f5)
-            margin, f6 = api.fetch_margin(code)
-            failed.extend(f6)
-
-            payload = build_enhance_payload(
-                code,
-                name,
-                valuation=valuation,
-                dividends=dividends,
-                lockups=lockups,
-                forecast=forecast,
-                northbound=northbound,
-                margin=margin,
-                market=market,
-                stock_analysis=stock_data,
-                quality=quality,
-                sources_failed=failed,
-            )
-            store.save_enhance(code, payload)
-            summary = summarize_enhance(payload)
-            index.append(summary)
-            sources_failed.extend(failed)
-            logger.info(
-                "增强 %s: PE=%s PB=%s 北向持股=%s%% 分红=%s条",
-                code,
-                summary.get("pe_ttm"),
-                summary.get("pb"),
-                summary.get("north_hold_pct"),
-                summary.get("dividend_count"),
-            )
-        except Exception as e:
-            logger.error("增强 %s 失败: %s", code, e)
+    worker = lambda item: _process_one_stock(item, api, store, market)
+    results = run_parallel_map(
+        stocks,
+        worker,
+        max_workers=cfg.fetch_workers,
+        label="数据增强",
+    )
+    index = [r for r in results if r is not None]
 
     if index:
         store.save_enhance_index(index, now_str())
         store.save_index_benchmarks(market or {}, now_str())
-    logger.info("enhance 完成，共 %s 只", len(index))
+    logger.info("数据增强完成，共 %s 只", len(index))
     return index

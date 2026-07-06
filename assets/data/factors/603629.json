@@ -7,21 +7,21 @@
   "enhance_version": "1.0.0",
   "data_version": "daily_kline_603629_20260706",
   "factors": {
-    "ma20_bias": -1.16,
-    "rsi14": 51.91,
-    "macd": 1.8153,
-    "macd_signal": 4.5592,
-    "macd_hist": -2.7439,
+    "ma20_bias": -1.31,
+    "rsi14": 51.82,
+    "macd": 1.7922,
+    "macd_signal": 4.5546,
+    "macd_hist": -2.7624,
     "atr14": 18.03,
-    "momentum_20": -3.99,
-    "volume_ratio_20": 0.55,
+    "momentum_20": -4.15,
+    "volume_ratio_20": 0.65,
     "above_ma20": false,
     "ma_cross": "none",
     "technical_score": 44.0,
-    "sentiment_score": 50.8,
-    "fundamental_score": 44.0,
+    "sentiment_score": 65.6,
+    "fundamental_score": 36.0,
     "fund_flow_score": null,
-    "multi_factor_score": 45.9,
+    "multi_factor_score": 48.7,
     "has_sentiment": true,
     "has_fundamental": true,
     "has_fund_flow": false,
@@ -31,14 +31,14 @@
       "fundamental": 0.167
     },
     "fundamental_detail": {
-      "pe_ttm": 81.78194827,
-      "pb": 19.4698671,
-      "market_cap_yi": 437.05,
+      "pe_ttm": 84.86944875,
+      "pb": 20.2049098,
+      "market_cap_yi": 453.55,
       "valuation_source": "eastmoney_value",
       "next_lockup": "2028-12-08",
-      "forecast_type": "预增"
+      "forecast_type": null
     },
     "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-06 14:11:34"
+  "updated_at": "2026-07-06 23:29:03"
 }

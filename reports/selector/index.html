@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>上涨候选池 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">上涨候选池</h1>
+      <p class="site-subtitle">综合预测、因子、趋势、回测、实际影响和风险过滤的排序</p>
+    </div>
+  </header>
+  <main class="container report-body">
+    <section class="table-section">
+      <table class="data-table">
+        <thead><tr><th>排名</th><th>代码</th><th>名称</th><th>上涨分</th><th>分层</th><th>正面依据</th><th>风险</th><th>排除原因</th></tr></thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>600378</td>
+          <td>昊华科技</td>
+          <td>75.7</td>
+          <td class="text-down">排除</td>
+          <td>因子分 73.6 达到观察线<br>预测中性，概率 0.50<br>收盘价站上 MA20</td>
+          <td>预测标记高波动<br>回测胜率偏低 33.33%<br>实际影响偏负面，impact_score=-20</td>
+          <td>实际影响数据显著偏负面</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>000988</td>
+          <td>华工科技</td>
+          <td>42.75</td>
+          <td class="text-down">排除</td>
+          <td>预测中性，概率 0.54<br>收盘价站上 MA60<br>回测夏普 1.88</td>
+          <td>因子分偏低 45.4<br>预测标记高波动<br>未站上 MA20</td>
+          <td>实际影响数据显著偏负面</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>000636</td>
+          <td>风华高科</td>
+          <td>6.31</td>
+          <td class="text-down">排除</td>
+          <td>收盘价站上 MA60<br>回测夏普 2.46<br>回测胜率 50.00%</td>
+          <td>因子分偏低 36.2<br>预测方向向下，概率 0.43<br>预测标记高波动</td>
+          <td>预测方向为 down<br>因子分过低 36.2<br>实际影响数据显著偏负面</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>603629</td>
+          <td>利通电子</td>
+          <td>0.0</td>
+          <td class="text-down">排除</td>
+          <td>收盘价站上 MA60<br>回测夏普 2.27</td>
+          <td>因子分偏低 48.7<br>预测方向向下，概率 0.24<br>预测标记高波动</td>
+          <td>预测方向为 down<br>实际影响数据显著偏负面</td>
+        </tr></tbody>
+      </table>
+    </section>
+    <p style="color:var(--color-muted);font-size:0.9rem">候选池用于研究和复盘，不构成投资建议。candidate 表示进入上涨候选，watch 表示观察候选。</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "code": "603629",
+  "name": "利通电子",
+  "trade_date": "2026-07-06",
+  "version": "1.0.0",
+  "impact_score": -33,
+  "impact_direction": "negative",
+  "events": [
+    {
+      "event_type": "valuation_pressure",
+      "title": "估值压力",
+      "period": "2026-07-06",
+      "announce_date": "2026-07-06",
+      "impact_score": -33,
+      "impact_direction": "negative",
+      "confidence": "medium",
+      "metrics": {
+        "pe_ttm": 84.86944875,
+        "pb": 20.2049098
+      },
+      "evidence": [
+        "PE(TTM)=84.87",
+        "PB=20.20"
+      ],
+      "source": "eastmoney_value",
+      "limitations": []
+    },
+    {
+      "event_type": "q2_profit_growth_gap",
+      "title": "二季度利润增长数据待补充",
+      "period": "20260630",
+      "announce_date": null,
+      "impact_score": 0,
+      "impact_direction": "neutral",
+      "confidence": "low",
+      "metrics": {},
+      "evidence": [
+        "当前增强数据未采集到 2026Q2 正式利润增长或半年度业绩预告。"
+      ],
+      "source": "system_gap",
+      "limitations": [
+        "requires_q2_official_report_or_forecast"
+      ]
+    }
+  ],
+  "limitations": [
+    "requires_q2_official_report_or_forecast"
+  ],
+  "updated_at": "2026-07-06 23:29:33"
+}

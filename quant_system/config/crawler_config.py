@@ -29,6 +29,9 @@ class CrawlerConfig:
     live_redis_ttl: int = 300
     live_refresh_sec: int = 15
     watchlist_spot_threshold: int = 20  # 自选股数量少于此值时可逐只拉行情
+    skip_bulk_spot: bool = os.getenv("CRAWLER_SKIP_BULK_SPOT", "0") == "1"  # 强制跳过全市场行情
+    fetch_workers: int = int(os.getenv("CRAWLER_FETCH_WORKERS", "4"))  # 并发拉取线程数
+    enhance_probe_retries: int = 1  # 增强数据探测重试次数
 
     data_dir: Path = PROJECT_ROOT / "assets" / "data"
     stock_data_dir: Path = PROJECT_ROOT / "assets" / "data" / "stocks"
