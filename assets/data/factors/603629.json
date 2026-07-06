@@ -1,25 +1,44 @@
 {
   "code": "603629",
-  "trade_date": "2026-07-03",
-  "factor_version": "1.1.0",
+  "trade_date": "2026-07-06",
+  "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": "1.0.0",
-  "data_version": "daily_kline_603629_20260703",
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_603629_20260706",
   "factors": {
-    "ma20_bias": -1.07,
-    "rsi14": 57.14,
-    "macd": 3.2864,
-    "macd_signal": 5.364,
-    "macd_hist": -2.0776,
-    "atr14": 18.3657,
-    "momentum_20": -13.15,
-    "volume_ratio_20": 0.65,
+    "ma20_bias": -1.16,
+    "rsi14": 51.91,
+    "macd": 1.8153,
+    "macd_signal": 4.5592,
+    "macd_hist": -2.7439,
+    "atr14": 18.03,
+    "momentum_20": -3.99,
+    "volume_ratio_20": 0.55,
     "above_ma20": false,
     "ma_cross": "none",
-    "technical_score": 36.0,
-    "sentiment_score": 62.3,
-    "multi_factor_score": 45.2,
-    "has_sentiment": true
+    "technical_score": 44.0,
+    "sentiment_score": 50.8,
+    "fundamental_score": 44.0,
+    "fund_flow_score": null,
+    "multi_factor_score": 45.9,
+    "has_sentiment": true,
+    "has_fundamental": true,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 0.556,
+      "sentiment": 0.278,
+      "fundamental": 0.167
+    },
+    "fundamental_detail": {
+      "pe_ttm": 81.78194827,
+      "pb": 19.4698671,
+      "market_cap_yi": 437.05,
+      "valuation_source": "eastmoney_value",
+      "next_lockup": "2028-12-08",
+      "forecast_type": "预增"
+    },
+    "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-05 22:57:35"
+  "updated_at": "2026-07-06 14:11:34"
 }

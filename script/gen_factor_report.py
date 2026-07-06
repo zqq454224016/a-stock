@@ -45,7 +45,11 @@ def render(rows: list[dict]) -> str:
     body = []
     for i, r in enumerate(sorted_rows, 1):
         sent = r.get("sentiment_score")
+        fund = r.get("fundamental_score")
+        flow = r.get("fund_flow_score")
         sent_s = f"{sent:.1f}" if sent is not None else "--"
+        fund_s = f"{fund:.1f}" if fund is not None else "--"
+        flow_s = f"{flow:.1f}" if flow is not None else "--"
         body.append(f"""
         <tr>
           <td>{i}</td>
@@ -54,12 +58,14 @@ def render(rows: list[dict]) -> str:
           <td><strong>{r.get('multi_factor_score', '--')}</strong></td>
           <td>{r.get('technical_score', '--')}</td>
           <td>{sent_s}</td>
+          <td>{fund_s}</td>
+          <td>{flow_s}</td>
           <td>{r.get('rsi14', '--')}</td>
           <td>{r.get('momentum_20', '--')}</td>
           <td>{r.get('ma_cross', '--')}</td>
         </tr>""")
 
-    tbody = "".join(body) or '<tr><td colspan="9">运行 ./run.sh factor</td></tr>'
+    tbody = "".join(body) or '<tr><td colspan="11">运行 ./run.sh factor</td></tr>'
 
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -78,7 +84,7 @@ def render(rows: list[dict]) -> str:
         多因子排名
       </nav>
       <h1 class="site-title">多因子排名</h1>
-      <p class="site-subtitle">技术 65% + 情绪 35% · 自选股 watchlist</p>
+      <p class="site-subtitle">技术 50% + 情绪 25% + 基本面 15% + 资金 10%（缺失项自动重分配）</p>
     </div>
   </header>
   <main class="container report-body">
@@ -87,7 +93,8 @@ def render(rows: list[dict]) -> str:
         <thead>
           <tr>
             <th>#</th><th>代码</th><th>交易日</th><th>综合分</th>
-            <th>技术分</th><th>情绪分</th><th>RSI</th><th>20日动量</th><th>MA交叉</th>
+            <th>技术分</th><th>情绪分</th><th>基本面</th><th>资金</th>
+            <th>RSI</th><th>20日动量</th><th>MA交叉</th>
           </tr>
         </thead>
         <tbody>{tbody}</tbody>

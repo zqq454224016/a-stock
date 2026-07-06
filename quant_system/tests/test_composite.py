@@ -35,3 +35,26 @@ def test_composite_technical_only():
     assert f["has_sentiment"] is False
     assert f["sentiment_score"] is None
     assert f["multi_factor_score"] == f["technical_score"]
+
+
+def test_composite_with_enhance():
+    technical = {"above_ma20": True, "ma_cross": "golden", "rsi14": 60, "macd_hist": 0.5}
+    enhance = {
+        "version": "1.0.0",
+        "trade_date": "2026-07-03",
+        "fundamentals": {"source": "eastmoney_value", "pe_ttm": 20, "pb": 2.0},
+        "corporate": {"lockups": [], "earnings_forecast": None},
+        "fund_flow": {
+            "northbound": {"hold_pct": 3.0, "net_buy_amount_yi": 0.1},
+            "margin": {"margin_balance_yi": 5.0, "margin_buy_yi": 1.0},
+        },
+    }
+    out = build_composite_factors("600378", "2026-07-03", technical, enhance=enhance)
+    f = out["factors"]
+    assert f["has_fundamental"] is True
+    assert f["has_fund_flow"] is True
+    assert f["fundamental_score"] is not None
+    assert f["fund_flow_score"] is not None
+    assert f["multi_factor_score"] != f["technical_score"]
+    assert "fundamental" in f["factor_weights"]
+

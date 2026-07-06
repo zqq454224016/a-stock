@@ -153,6 +153,7 @@ def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False
     if not skip_sentiment:
         run_sentiment_job()
     run_enhance_job()
+    run_factor_compute()
     run_intraday_live()
     run_backtest_job(days=cfg.mvp_hist_days, allow_warn_quality=True)
     generate_backtest_reports()
@@ -203,7 +204,9 @@ def main() -> None:
         run_sentiment_job(codes=resolve_codes(args.codes))
     elif args.command == "enhance":
         run_enhance_job(codes=resolve_codes(args.codes))
+        run_factor_compute(codes=resolve_codes(args.codes))
         generate_enhance_reports()
+        generate_factor_reports()
         generate_reports(stock_only=True)
     elif args.command == "factor":
         run_factor_compute(codes=resolve_codes(args.codes), ignore_quality=args.force)
@@ -251,6 +254,7 @@ def main() -> None:
             run_sentiment_job()
         if not args.skip_enhance:
             run_enhance_job()
+        run_factor_compute()
         run_intraday_live()
         if not args.skip_backtest:
             run_backtest_job(allow_warn_quality=True)

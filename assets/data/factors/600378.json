@@ -1,25 +1,51 @@
 {
   "code": "600378",
   "trade_date": "2026-07-03",
-  "factor_version": "1.1.0",
+  "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": "1.0.0",
+  "enhance_version": "1.0.0",
   "data_version": "daily_kline_600378_20260703",
   "factors": {
-    "ma20_bias": 27.01,
-    "rsi14": 76.77,
-    "macd": 9.4075,
-    "macd_signal": 8.0662,
-    "macd_hist": 1.3413,
-    "atr14": 7.7636,
-    "momentum_20": 89.81,
-    "volume_ratio_20": 1.19,
+    "ma20_bias": 18.05,
+    "rsi14": 67.83,
+    "macd": 8.9161,
+    "macd_signal": 7.9679,
+    "macd_hist": 0.9482,
+    "atr14": 7.59,
+    "momentum_20": 75.58,
+    "volume_ratio_20": 1.1,
     "above_ma20": true,
     "ma_cross": "none",
     "technical_score": 87.0,
-    "sentiment_score": 63.8,
-    "multi_factor_score": 78.9,
-    "has_sentiment": true
+    "sentiment_score": 55.7,
+    "fundamental_score": 50.0,
+    "fund_flow_score": 55.0,
+    "multi_factor_score": 70.4,
+    "has_sentiment": true,
+    "has_fundamental": true,
+    "has_fund_flow": true,
+    "factor_weights": {
+      "technical": 0.5,
+      "sentiment": 0.25,
+      "fundamental": 0.15,
+      "fund_flow": 0.1
+    },
+    "fundamental_detail": {
+      "pe_ttm": 62.54389712,
+      "pb": 5.27694368,
+      "market_cap_yi": 980.53,
+      "valuation_source": "eastmoney_value",
+      "next_lockup": "2028-01-10",
+      "forecast_type": "预增"
+    },
+    "fund_flow_detail": {
+      "north_hold_pct": null,
+      "north_net_buy_yi": null,
+      "margin_balance_yi": 19.58,
+      "has_northbound": false,
+      "has_margin": true
+    }
   },
-  "updated_at": "2026-07-05 22:57:35"
+  "updated_at": "2026-07-06 14:11:34"
 }

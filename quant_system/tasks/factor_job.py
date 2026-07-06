@@ -82,12 +82,20 @@ def run_factor_compute(
                 "momentum_20": f.get("momentum_20"),
                 "ma_cross": f.get("ma_cross"),
                 "multi_factor_score": f.get("multi_factor_score"),
+                "technical_score": f.get("technical_score"),
                 "sentiment_score": f.get("sentiment_score"),
+                "fundamental_score": f.get("fundamental_score"),
+                "fund_flow_score": f.get("fund_flow_score"),
                 "primary_signal": signal_payload.get("signal"),
             })
             logger.info(
-                "因子 %s: multi=%s tech=%s sent=%s",
-                code, f.get("multi_factor_score"), f.get("technical_score"), f.get("sentiment_score"),
+                "因子 %s: multi=%s tech=%s sent=%s fund=%s flow=%s",
+                code,
+                f.get("multi_factor_score"),
+                f.get("technical_score"),
+                f.get("sentiment_score"),
+                f.get("fundamental_score"),
+                f.get("fund_flow_score"),
             )
         except Exception as e:
             logger.error("因子计算 %s 失败: %s", code, e)

@@ -1,0 +1,100 @@
+{
+  "code": "603629",
+  "name": "利通电子",
+  "trade_date": "2026-07-03",
+  "updated_at": "2026-07-06 14:10:34",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-07-03",
+    "close": 166.61,
+    "market_cap_yi": 437.05,
+    "float_cap_yi": 429.91,
+    "pe_ttm": 81.78194827,
+    "pe_static": 149.37376614,
+    "pb": 19.4698671,
+    "ps": 12.1386427,
+    "peg": 0.048236517754
+  },
+  "corporate": {
+    "dividends": [],
+    "lockups": [
+      {
+        "unlock_date": "2028-12-08",
+        "unlock_shares": 90000.0,
+        "unlock_value_yi": 0.15,
+        "pct_total": 0.000343092406,
+        "pct_float": 0.0003487953,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2028-11-06",
+        "unlock_shares": 645000.0,
+        "unlock_value_yi": 1.07,
+        "pct_total": 0.002458828911,
+        "pct_float": 0.002499699648,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2028-01-18",
+        "unlock_shares": 330000.0,
+        "unlock_value_yi": 0.55,
+        "pct_total": 0.001258005489,
+        "pct_float": 0.001278916099,
+        "holder_type": "股权激励限售股份"
+      }
+    ],
+    "earnings_forecast": {
+      "indicator": "归属于上市公司股东的净利润",
+      "forecast_type": "预增",
+      "change_pct": 1118.7,
+      "forecast_value": "300000000.0",
+      "reason": "业绩预增的原因主要是算力业务端盈利增加、制造端业务亏损收窄、对外投资公允价值正向变动确认所致。",
+      "announce_date": "2026-01-27",
+      "report_period": "20251231"
+    }
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-06",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 4050.44,
+        "change_pct": 0.17
+      },
+      {
+        "name": "科创50",
+        "code": "000688",
+        "close": 2011.17,
+        "change_pct": 1.8
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -723.08,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": -3.99
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 100.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing",
+    "dividend_missing"
+  ],
+  "sources_failed": [
+    "dividend",
+    "earnings_forecast_20260930",
+    "margin",
+    "northbound"
+  ]
+}

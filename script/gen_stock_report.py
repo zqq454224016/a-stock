@@ -390,7 +390,7 @@ def render_stock_report(data: dict) -> str:
       <div class="stat-card">
         <div class="name">多因子得分</div>
         <div class="value">{fac('multi_factor_score', '.1f')}</div>
-        <div class="change">技术 {fac('technical_score', '.1f')} · 情绪 {fac('sentiment_score', '.1f')}</div>
+        <div class="change">技术 {fac('technical_score', '.1f')} · 情绪 {fac('sentiment_score', '.1f')} · 基本面 {fac('fundamental_score', '.1f')} · 资金 {fac('fund_flow_score', '.1f')}</div>
       </div>
     </section>
 

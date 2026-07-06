@@ -13,8 +13,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 @dataclass
 class CrawlerConfig:
-    # 数据源优先级：sina（推荐，东财易断连）| eastmoney | auto（先东财后降级）
-    prefer_source: str = os.getenv("CRAWLER_PREFER_SOURCE", "sina")
+    # 数据源优先级：auto（先东财后新浪，失败互备）| eastmoney | sina
+    prefer_source: str = os.getenv("CRAWLER_PREFER_SOURCE", "auto")
     retry_times: int = 3
     retry_delay: float = 2.0
     eastmoney_probe_retries: int = 1  # 探测东财时的重试次数（auto 模式）
@@ -28,6 +28,7 @@ class CrawlerConfig:
     minute_bars_1m: int = 120
     live_redis_ttl: int = 300
     live_refresh_sec: int = 15
+    watchlist_spot_threshold: int = 20  # 自选股数量少于此值时可逐只拉行情
 
     data_dir: Path = PROJECT_ROOT / "assets" / "data"
     stock_data_dir: Path = PROJECT_ROOT / "assets" / "data" / "stocks"

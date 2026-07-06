@@ -1,12 +1,12 @@
 {
   "code": "600378",
-  "trade_date": "2026-07-03",
+  "trade_date": "2026-07-06",
   "horizon": "5d",
   "direction": "down",
-  "probability": 0.3808,
+  "probability": 0.3912,
   "confidence": "high",
-  "expected_return": 0.01,
-  "max_expected_drawdown": 0.1969,
+  "expected_return": 0.0108,
+  "max_expected_drawdown": 0.202,
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
@@ -15,24 +15,23 @@
     "technical": "1.0.0"
   },
   "evidence": {
-    "sample_count": 292,
+    "sample_count": 294,
     "state_label": "bullish",
-    "historical_positive_rate": 0.4897,
-    "backtest_win_rate": 0.2174,
-    "backtest_profit_loss_ratio": 1.48,
-    "backtest_annual_return_pct": 12.44,
-    "backtest_max_drawdown_pct": -51.66,
-    "backtest_closed_trades": 23
+    "historical_positive_rate": 0.4932,
+    "backtest_win_rate": 0.2381,
+    "backtest_profit_loss_ratio": 1.71,
+    "backtest_annual_return_pct": 12.47,
+    "backtest_max_drawdown_pct": -44.31,
+    "backtest_closed_trades": 21
   },
   "drivers": [
     "站上MA20",
     "MACD柱为正"
   ],
   "risk_flags": [
-    "rsi_overbought",
     "high_volatility",
     "high_historical_drawdown"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-03 00:31:15"
+  "updated_at": "2026-07-06 14:12:36"
 }

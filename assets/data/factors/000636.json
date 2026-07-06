@@ -1,25 +1,44 @@
 {
   "code": "000636",
   "trade_date": "2026-07-03",
-  "factor_version": "1.1.0",
+  "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": "1.0.0",
+  "enhance_version": "1.0.0",
   "data_version": "daily_kline_000636_20260703",
   "factors": {
-    "ma20_bias": -2.84,
-    "rsi14": 57.87,
-    "macd": 6.5882,
-    "macd_signal": 8.4188,
-    "macd_hist": -1.8306,
-    "atr14": 6.0321,
-    "momentum_20": 5.45,
-    "volume_ratio_20": 0.6,
+    "ma20_bias": -8.0,
+    "rsi14": 53.84,
+    "macd": 6.2907,
+    "macd_signal": 8.3593,
+    "macd_hist": -2.0686,
+    "atr14": 6.2607,
+    "momentum_20": -0.43,
+    "volume_ratio_20": 0.63,
     "above_ma20": false,
     "ma_cross": "none",
-    "technical_score": 52.0,
-    "sentiment_score": 64.0,
-    "multi_factor_score": 56.2,
-    "has_sentiment": true
+    "technical_score": 39.0,
+    "sentiment_score": 49.3,
+    "fundamental_score": 42.0,
+    "fund_flow_score": null,
+    "multi_factor_score": 42.4,
+    "has_sentiment": true,
+    "has_fundamental": true,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 0.556,
+      "sentiment": 0.278,
+      "fundamental": 0.167
+    },
+    "fundamental_detail": {
+      "pe_ttm": 238.06573848,
+      "pb": 5.86062344,
+      "market_cap_yi": 731.58,
+      "valuation_source": "eastmoney_value",
+      "next_lockup": "2023-12-08",
+      "forecast_type": null
+    },
+    "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-05 22:57:35"
+  "updated_at": "2026-07-06 14:11:34"
 }

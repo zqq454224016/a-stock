@@ -1,10 +1,17 @@
-"""多因子合成（技术 + 情绪）。"""
+"""多因子合成（技术 + 情绪 + 基本面 + 资金）。"""
 
 from __future__ import annotations
 
 from typing import Any
 
-from quant_system.config.factor_config import COMPOSITE_FACTOR_VERSION
+from quant_system.config.factor_config import (
+    COMPOSITE_FACTOR_VERSION,
+    WEIGHT_FUNDAMENTAL,
+    WEIGHT_FUND_FLOW,
+    WEIGHT_SENTIMENT,
+    WEIGHT_TECHNICAL,
+)
+from quant_system.factors.fundamental import compute_enhance_factors
 from quant_system.utils.time_utils import now_str
 
 
@@ -73,33 +80,60 @@ def _sentiment_score(sentiment: dict[str, Any] | None) -> float | None:
     return max(0.0, min(100.0, round(score, 1)))
 
 
+def _blend_multi_factor(
+    tech_score: float,
+    sent_score: float | None,
+    fund_score: float | None,
+    flow_score: float | None,
+) -> tuple[float, dict[str, float]]:
+    parts: list[tuple[str, float, float]] = [("technical", tech_score, WEIGHT_TECHNICAL)]
+    if sent_score is not None:
+        parts.append(("sentiment", sent_score, WEIGHT_SENTIMENT))
+    if fund_score is not None:
+        parts.append(("fundamental", fund_score, WEIGHT_FUNDAMENTAL))
+    if flow_score is not None:
+        parts.append(("fund_flow", flow_score, WEIGHT_FUND_FLOW))
+
+    total_w = sum(w for _, _, w in parts)
+    multi = sum(s * w / total_w for _, s, w in parts)
+    weights_used = {name: round(w / total_w, 3) for name, _, w in parts}
+    return round(multi, 1), weights_used
+
+
 def build_composite_factors(
     code: str,
     trade_date: str,
     technical: dict[str, Any],
     *,
     sentiment: dict[str, Any] | None = None,
+    enhance: dict[str, Any] | None = None,
     data_version: str | None = None,
     technical_version: str = "1.0.0",
     sentiment_version: str | None = None,
+    enhance_version: str | None = None,
 ) -> dict[str, Any]:
-    """合并技术因子与情绪因子，输出 Quantification.md §4.5 结构。"""
+    """合并技术/情绪/基本面/资金因子。"""
     tech_score = round(_technical_score(technical), 1)
     sent_score = _sentiment_score(sentiment)
+    enhance_factors = compute_enhance_factors(enhance)
+    fund_score = enhance_factors.get("fundamental_score")
+    flow_score = enhance_factors.get("fund_flow_score")
 
-    if sent_score is not None:
-        multi = round(tech_score * 0.65 + sent_score * 0.35, 1)
-        has_sentiment = True
-    else:
-        multi = tech_score
-        has_sentiment = False
+    multi, weights_used = _blend_multi_factor(tech_score, sent_score, fund_score, flow_score)
 
     merged = {
         **technical,
         "technical_score": tech_score,
         "sentiment_score": sent_score,
+        "fundamental_score": fund_score,
+        "fund_flow_score": flow_score,
         "multi_factor_score": multi,
-        "has_sentiment": has_sentiment,
+        "has_sentiment": sent_score is not None,
+        "has_fundamental": fund_score is not None,
+        "has_fund_flow": flow_score is not None,
+        "factor_weights": weights_used,
+        "fundamental_detail": enhance_factors.get("fundamental_detail"),
+        "fund_flow_detail": enhance_factors.get("fund_flow_detail"),
     }
 
     return {
@@ -108,6 +142,7 @@ def build_composite_factors(
         "factor_version": COMPOSITE_FACTOR_VERSION,
         "technical_version": technical_version,
         "sentiment_version": sentiment_version,
+        "enhance_version": enhance_version or enhance_factors.get("enhance_version"),
         "data_version": data_version,
         "factors": merged,
         "updated_at": now_str(),

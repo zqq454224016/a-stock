@@ -19,6 +19,21 @@ from quant_system.utils.time_utils import now_str, today_str
 logger = get_logger(__name__)
 
 
+def _cached_spot_from_stock(store: JsonStore, code: str) -> dict[str, Any] | None:
+    path = store.config.json_data_dir / "stocks" / f"{code}.json"
+    if not path.exists():
+        return None
+    data = store.read(path)
+    quote = data.get("quote") or {}
+    if quote.get("close") is None:
+        return None
+    return {
+        **quote,
+        "name": data.get("name", quote.get("name", "")),
+        "quote_source": "stock_cache",
+    }
+
+
 def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
     """拉取自选股实时价 + 1/5 分钟 K，写入 assets/data/stocks/live/。"""
     cfg = CrawlerConfig()
@@ -38,7 +53,19 @@ def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
         return []
 
     codes_list = [normalize_code(s["code"]) for s in stocks]
-    spot_map = api.fetch_spot_map(codes=codes_list)
+    try:
+        spot_map = api.fetch_spot_map(codes=codes_list)
+    except Exception as e:
+        logger.error("实时行情不可用: %s", e)
+        spot_map = {}
+
+    for code in codes_list:
+        if code not in spot_map:
+            cached = _cached_spot_from_stock(store, code)
+            if cached:
+                spot_map[code] = cached
+                logger.warning("使用日线缓存行情 %s", code)
+
     results: list[dict[str, Any]] = []
 
     for item in stocks:

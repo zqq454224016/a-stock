@@ -127,7 +127,7 @@ python quant_system/main.py backtest              # 自选股回测 ~3 年
 python quant_system/main.py backtest --strategy multi_factor --allow-warn
 # 报告：reports/backtest/{code}_ma_cross.html
 
-# 9. 多因子排名
+# 9. 多因子排名（技术 + 情绪 + 基本面 + 资金）
 python script/gen_factor_report.py
 # 页面：reports/factors/index.html
 
