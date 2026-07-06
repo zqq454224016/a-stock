@@ -113,6 +113,19 @@ class JsonStore:
         self.write(path, payload)
         return path
 
+    def agent_dir(self) -> Path:
+        return self.config.json_data_dir / "agent"
+
+    def save_agent_report(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.agent_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_agent_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.agent_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "reports": items})
+        return path
+
     def quality_dir(self) -> Path:
         return self.config.json_data_dir / "quality"
 

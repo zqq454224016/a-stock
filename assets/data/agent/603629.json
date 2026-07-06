@@ -1,0 +1,100 @@
+{
+  "code": "603629",
+  "name": "利通电子",
+  "trade_date": "2026-07-06",
+  "version": "1.0.0",
+  "updated_at": "2026-07-06 15:24:38",
+  "summary": "综合因子中性，等待更清晰信号",
+  "confidence": "medium",
+  "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
+  "stock_selection": {
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 45.9,
+    "evidence": [
+      "技术分 44.0",
+      "情绪分 50.8",
+      "基本面分 44.0",
+      "趋势 震荡",
+      "舆情 中性"
+    ],
+    "drivers": [
+      "rsi14_neutral_up",
+      "macd_hist_negative"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高"
+    ],
+    "primary_signal": "neutral",
+    "trend": "震荡"
+  },
+  "strategy_diagnosis": {
+    "available": true,
+    "strategy": "ma_cross",
+    "verdict": "mixed",
+    "findings": [
+      "历史最大回撤较大（-56.43%）"
+    ],
+    "suggestions": [
+      "设置账户级回撤熔断，避免单边行情重仓"
+    ],
+    "metrics": {
+      "annual_return_pct": 38.0,
+      "max_drawdown_pct": -56.43,
+      "sharpe_ratio": 0.82,
+      "win_rate_pct": 40.0,
+      "closed_trades": 20
+    },
+    "attribution_top": [],
+    "rolling_summary": null
+  },
+  "prediction_review": {
+    "available": true,
+    "horizon": "5d",
+    "direction": "down",
+    "probability": 0.4276,
+    "confidence": "high",
+    "expected_return": -0.0156,
+    "alignment": "partial",
+    "drivers": [],
+    "notes": [
+      "5d 预测 偏空，概率 42.8%，置信度 high",
+      "历史样本 296，回测胜率 40.0%",
+      "信号与预测部分一致，存在中性分歧",
+      "风险标记: high_volatility",
+      "风险标记: high_historical_drawdown",
+      "策略历史回撤 -56.43% 偏高"
+    ],
+    "failure_conditions": [
+      "high_volatility",
+      "high_historical_drawdown"
+    ],
+    "disclaimer": "统计倾向，非确定性预测，不构成投资建议"
+  },
+  "data_health": {
+    "status": "ok",
+    "quality_score": 100.0,
+    "factor_eligible": true,
+    "issues": [
+      "跨源校验 vs sina: 近 20 日 均偏 0.000%"
+    ]
+  },
+  "limitations": [
+    "rule_based_only",
+    "no_auto_trade"
+  ],
+  "audit": {
+    "inputs_used": [
+      "backtest/603629_ma_cross.json",
+      "factors/603629.json",
+      "predictions/603629.json",
+      "quality/latest.json",
+      "sentiment/603629.json",
+      "signals/603629.json",
+      "stocks/603629.json"
+    ],
+    "strategy_ref": "ma_cross"
+  }
+}

@@ -25,6 +25,11 @@
       <input type="search" id="search-input" placeholder="搜索报表名称或日期…" class="search-input">
       <select id="category-filter" class="select-input">
         <option value="all">全部分类</option>
+        <option value="backtest">策略回测</option>
+        <option value="enhance">数据增强</option>
+        <option value="predict">走势预测</option>
+        <option value="factors">多因子排名</option>
+        <option value="agent">Agent 分析</option>
         <option value="daily">每日行情</option>
         <option value="industry">板块行业</option>
         <option value="fund_flow">资金流向</option>
@@ -265,6 +270,106 @@
       </ul>
     </section>
 
+  
+    <section id="agent" class="report-section">
+      <h2>Agent 分析</h2>
+      <ul class="report-list" data-category="agent">
+<li class="report-item" data-name="Agent 统一看板">
+          <a href="agent/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">Agent 统一看板</span>
+            <span class="report-tag">agent</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="600378 昊华科技 Agent">
+          <a href="agent/600378.html">
+            <span class="report-date">2026-07-03</span>
+            <span class="report-title">昊华科技 (600378) · 谨慎</span>
+            <span class="report-tag">agent</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="603629 利通电子 Agent">
+          <a href="agent/603629.html">
+            <span class="report-date">2026-07-06</span>
+            <span class="report-title">利通电子 (603629) · 综合因子中性，等待更清晰信号</span>
+            <span class="report-tag">agent</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="000636 风华高科 Agent">
+          <a href="agent/000636.html">
+            <span class="report-date">2026-07-03</span>
+            <span class="report-title">风华高科 (000636) · 综合因子中性，等待更清晰信号</span>
+            <span class="report-tag">agent</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="factors" class="report-section">
+      <h2>多因子排名</h2>
+      <ul class="report-list" data-category="factors">
+<li class="report-item" data-name="多因子排名">
+          <a href="factors/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">多因子排名</span>
+            <span class="report-tag">factors</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="predict" class="report-section">
+      <h2>走势预测</h2>
+      <ul class="report-list" data-category="predict">
+<li class="report-item" data-name="走势预测汇总">
+          <a href="predict/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">走势预测汇总</span>
+            <span class="report-tag">predict</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="enhance" class="report-section">
+      <h2>数据增强</h2>
+      <ul class="report-list" data-category="enhance">
+<li class="report-item" data-name="数据增强摘要">
+          <a href="enhance/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">数据增强摘要</span>
+            <span class="report-tag">enhance</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="backtest" class="report-section">
+      <h2>策略回测</h2>
+      <ul class="report-list" data-category="backtest">
+<li class="report-item" data-name="600378 ma_cross 回测">
+          <a href="backtest/600378_ma_cross.html">
+            <span class="report-date">ma_cross</span>
+            <span class="report-title">600378 · ma_cross</span>
+            <span class="report-tag">backtest</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="603629 ma_cross 回测">
+          <a href="backtest/603629_ma_cross.html">
+            <span class="report-date">ma_cross</span>
+            <span class="report-title">603629 · ma_cross</span>
+            <span class="report-tag">backtest</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="000636 ma_cross 回测">
+          <a href="backtest/000636_ma_cross.html">
+            <span class="report-date">ma_cross</span>
+            <span class="report-title">000636 · ma_cross</span>
+            <span class="report-tag">backtest</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer">

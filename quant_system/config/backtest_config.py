@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+BACKTEST_ENGINE_VERSION = "1.1.0"
+
 
 @dataclass
 class BacktestConfig:
@@ -19,3 +21,11 @@ class BacktestConfig:
     trading_days_per_year: int = 252
     strategy_version: str = "1.0.0"
     strategy_name: str = "ma_cross"
+    # P2-4 可信度增强
+    volume_participation_rate: float = 0.05   # 单日最大参与成交量比例
+    min_daily_amount_yi: float = 0.05         # 日成交额下限（亿），低于则不可交易
+    exclude_st: bool = True
+    rolling_enabled: bool = True
+    rolling_train_days: int = 504           # 约 2 年 warm-up
+    rolling_test_days: int = 126            # 约 6 个月 OOS
+    rolling_step_days: int = 126

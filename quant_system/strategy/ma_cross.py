@@ -33,5 +33,8 @@ class MACrossStrategy(BaseStrategy):
     signal[death] = -1
 
     work["signal"] = signal
+    work["signal_reason"] = ""
+    work.loc[golden, "signal_reason"] = f"MA{self.fast}金叉"
+    work.loc[death, "signal_reason"] = f"MA{self.slow}死叉"
     work["strategy"] = self.name
     return work

@@ -40,5 +40,8 @@ class MultiFactorStrategy(BaseStrategy):
         signal[sell] = -1
 
         work["signal"] = signal
+        work["signal_reason"] = ""
+        work.loc[buy, "signal_reason"] = f"因子分突破{self.buy_threshold}"
+        work.loc[sell, "signal_reason"] = f"因子分跌破{self.sell_threshold}"
         work["strategy"] = self.name
         return work

@@ -1,4 +1,4 @@
-"""日线回测引擎（T+1 + 成本 + 涨跌停）。"""
+"""日线回测引擎（T+1 + 成本 + 涨跌停 + 容量）。"""
 
 from __future__ import annotations
 
@@ -6,10 +6,13 @@ from typing import Any
 
 import pandas as pd
 
+from quant_system.backtest.attribution import calc_attribution
+from quant_system.backtest.capacity import cap_shares_by_volume
 from quant_system.backtest.costs import apply_slippage, calc_trade_fees
 from quant_system.backtest.metrics import calc_metrics
+from quant_system.backtest.pool import prepare_backtest_df
 from quant_system.backtest.rules import is_limit_down, is_limit_up, is_suspended, round_lot
-from quant_system.config.backtest_config import BacktestConfig
+from quant_system.config.backtest_config import BACKTEST_ENGINE_VERSION, BacktestConfig
 from quant_system.strategy.base import BaseStrategy
 from quant_system.utils.time_utils import now_str
 
@@ -22,6 +25,7 @@ def run_backtest(
     code: str = "",
     data_version: str | None = None,
     quality_score: float | None = None,
+    skip_attribution: bool = False,
 ) -> dict[str, Any]:
     """
     回测流程：
@@ -30,7 +34,8 @@ def run_backtest(
     3. T+1 规则：当日买入不可当日卖出
     """
     cfg = cfg or BacktestConfig()
-    work = strategy.generate_signals(df.copy())
+    work = prepare_backtest_df(df, cfg)
+    work = strategy.generate_signals(work)
     work["date"] = pd.to_datetime(work["date"])
     work = work.sort_values("date").reset_index(drop=True)
 
@@ -38,7 +43,7 @@ def run_backtest(
     shares = 0
     buy_date: pd.Timestamp | None = None
     buy_cost_basis = 0.0
-    pending: str | None = None  # 'buy' | 'sell'
+    pending: str | None = None
     pending_reason = ""
 
     trades: list[dict[str, Any]] = []
@@ -50,14 +55,16 @@ def run_backtest(
         open_price = float(row["open"])
         close_price = float(row["close"])
         suspended = is_suspended(row)
+        tradable = bool(row.get("tradable", True))
 
-        # 执行昨日信号（今日开盘）
-        if pending and not suspended:
+        if pending and not suspended and tradable:
             if pending == "buy" and shares == 0:
                 if not is_limit_up(open_price, prev_close, cfg):
                     px = apply_slippage(open_price, "buy", cfg)
                     budget = cash * cfg.max_position_pct
                     lot_shares = round_lot(budget / px, cfg.lot_size)
+                    vol = float(row.get("volume", 0) or 0)
+                    lot_shares = cap_shares_by_volume(lot_shares, vol, px, cfg)
                     if lot_shares >= cfg.lot_size:
                         amount = lot_shares * px
                         fee = calc_trade_fees(amount, "buy", cfg)
@@ -87,6 +94,16 @@ def run_backtest(
                                 "status": "rejected",
                                 "reject_reason": "资金不足",
                             })
+                    elif lot_shares == 0:
+                        trades.append({
+                            "date": date.strftime("%Y-%m-%d"),
+                            "action": "buy",
+                            "price": round(px, 2),
+                            "shares": 0,
+                            "reason": pending_reason,
+                            "status": "cancelled",
+                            "reject_reason": "成交量容量不足",
+                        })
                 else:
                     trades.append({
                         "date": date.strftime("%Y-%m-%d"),
@@ -103,25 +120,44 @@ def run_backtest(
                 if can_sell:
                     if not is_limit_down(open_price, prev_close, cfg):
                         px = apply_slippage(open_price, "sell", cfg)
-                        amount = shares * px
-                        fee = calc_trade_fees(amount, "sell", cfg)
-                        proceeds = amount - fee
-                        pnl = proceeds - buy_cost_basis
-                        trades.append({
-                            "date": date.strftime("%Y-%m-%d"),
-                            "action": "sell",
-                            "price": round(px, 2),
-                            "shares": shares,
-                            "amount": round(amount, 2),
-                            "fee": fee,
-                            "pnl": round(pnl, 2),
-                            "reason": pending_reason,
-                            "status": "filled",
-                        })
-                        cash += proceeds
-                        shares = 0
-                        buy_date = None
-                        buy_cost_basis = 0.0
+                        sell_shares = shares
+                        vol = float(row.get("volume", 0) or 0)
+                        sell_shares = cap_shares_by_volume(sell_shares, vol, px, cfg)
+                        if sell_shares < cfg.lot_size:
+                            trades.append({
+                                "date": date.strftime("%Y-%m-%d"),
+                                "action": "sell",
+                                "price": round(px, 2),
+                                "shares": shares,
+                                "reason": pending_reason,
+                                "status": "cancelled",
+                                "reject_reason": "成交量容量不足",
+                            })
+                        else:
+                            amount = sell_shares * px
+                            fee = calc_trade_fees(amount, "sell", cfg)
+                            proceeds = amount - fee
+                            sold_ratio = sell_shares / shares
+                            pnl = proceeds - buy_cost_basis * sold_ratio
+                            trades.append({
+                                "date": date.strftime("%Y-%m-%d"),
+                                "action": "sell",
+                                "price": round(px, 2),
+                                "shares": sell_shares,
+                                "amount": round(amount, 2),
+                                "fee": fee,
+                                "pnl": round(pnl, 2),
+                                "reason": pending_reason,
+                                "status": "filled",
+                            })
+                            cash += proceeds
+                            if sell_shares >= shares:
+                                shares = 0
+                                buy_date = None
+                                buy_cost_basis = 0.0
+                            else:
+                                shares -= sell_shares
+                                buy_cost_basis *= (1 - sold_ratio)
                     else:
                         trades.append({
                             "date": date.strftime("%Y-%m-%d"),
@@ -142,18 +178,27 @@ def run_backtest(
                         "status": "cancelled",
                         "reject_reason": "T+1 当日不可卖",
                     })
+        elif pending and not tradable:
+            trades.append({
+                "date": date.strftime("%Y-%m-%d"),
+                "action": pending,
+                "price": round(open_price, 2),
+                "shares": 0,
+                "reason": pending_reason,
+                "status": "cancelled",
+                "reject_reason": "流动性不足",
+            })
 
         pending = None
         pending_reason = ""
 
-        # 收盘后产生新信号，下一日执行
         sig = int(row.get("signal", 0) or 0)
         if sig == 1 and shares == 0:
             pending = "buy"
-            pending_reason = "MA金叉"
+            pending_reason = str(row.get("signal_reason") or "买入信号")
         elif sig == -1 and shares > 0:
             pending = "sell"
-            pending_reason = "MA死叉"
+            pending_reason = str(row.get("signal_reason") or "卖出信号")
 
         equity = cash + shares * close_price
         equity_curve.append({
@@ -166,11 +211,13 @@ def run_backtest(
 
     metrics = calc_metrics(equity_curve, trades, cfg)
     strat = strategy.meta()
+    attribution = {} if skip_attribution else calc_attribution(trades, equity_curve)
 
     return {
         "code": code,
         "strategy": strat["name"],
         "strategy_version": strat["version"],
+        "engine_version": BACKTEST_ENGINE_VERSION,
         "data_version": data_version,
         "quality_score": quality_score,
         "config": {
@@ -179,8 +226,11 @@ def run_backtest(
             "stamp_tax_rate": cfg.stamp_tax_rate,
             "slippage_bps": cfg.slippage_bps,
             "limit_pct": cfg.limit_pct,
+            "volume_participation_rate": cfg.volume_participation_rate,
+            "min_daily_amount_yi": cfg.min_daily_amount_yi,
         },
         "metrics": metrics,
+        "attribution": attribution,
         "equity_curve": equity_curve,
         "trades": trades,
         "updated_at": now_str(),

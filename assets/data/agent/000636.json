@@ -1,0 +1,99 @@
+{
+  "code": "000636",
+  "name": "风华高科",
+  "trade_date": "2026-07-03",
+  "version": "1.0.0",
+  "updated_at": "2026-07-06 15:24:38",
+  "summary": "综合因子中性，等待更清晰信号",
+  "confidence": "medium",
+  "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
+  "stock_selection": {
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 42.4,
+    "evidence": [
+      "技术分 39.0",
+      "情绪分 49.3",
+      "基本面分 42.0",
+      "趋势 震荡",
+      "舆情 中性"
+    ],
+    "drivers": [
+      "rsi14_neutral_up",
+      "macd_hist_negative",
+      "ma20_breakdown"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高"
+    ],
+    "primary_signal": "neutral",
+    "trend": "震荡"
+  },
+  "strategy_diagnosis": {
+    "available": true,
+    "strategy": "ma_cross",
+    "verdict": "mixed",
+    "findings": [
+      "胜率偏低（30.43%）"
+    ],
+    "suggestions": [
+      "考虑提高买入阈值或叠加趋势过滤"
+    ],
+    "metrics": {
+      "annual_return_pct": 32.14,
+      "max_drawdown_pct": -39.51,
+      "sharpe_ratio": 0.9,
+      "win_rate_pct": 30.43,
+      "closed_trades": 23
+    },
+    "attribution_top": [],
+    "rolling_summary": null
+  },
+  "prediction_review": {
+    "available": true,
+    "horizon": "5d",
+    "direction": "down",
+    "probability": 0.395,
+    "confidence": "high",
+    "expected_return": -0.0077,
+    "alignment": "partial",
+    "drivers": [],
+    "notes": [
+      "5d 预测 偏空，概率 39.5%，置信度 high",
+      "历史样本 281，回测胜率 30.4%",
+      "信号与预测部分一致，存在中性分歧",
+      "风险标记: high_volatility"
+    ],
+    "failure_conditions": [
+      "high_volatility"
+    ],
+    "disclaimer": "统计倾向，非确定性预测，不构成投资建议"
+  },
+  "data_health": {
+    "status": "ok",
+    "quality_score": 100.0,
+    "factor_eligible": true,
+    "issues": [
+      "K 线末日期 2026-07-03 落后于最近交易日 2026-07-06",
+      "跨源校验 vs eastmoney: 近 20 日 均偏 0.000%"
+    ]
+  },
+  "limitations": [
+    "rule_based_only",
+    "no_auto_trade"
+  ],
+  "audit": {
+    "inputs_used": [
+      "backtest/000636_ma_cross.json",
+      "factors/000636.json",
+      "predictions/000636.json",
+      "quality/latest.json",
+      "sentiment/000636.json",
+      "signals/000636.json",
+      "stocks/000636.json"
+    ],
+    "strategy_ref": "ma_cross"
+  }
+}

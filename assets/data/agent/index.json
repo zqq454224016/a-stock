@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-07-06 15:24:38",
+  "reports": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "trade_date": "2026-07-03",
+      "summary": "谨慎",
+      "confidence": "low",
+      "selection_verdict": "positive",
+      "strategy_verdict": "weak",
+      "prediction_alignment": "divergent"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "trade_date": "2026-07-06",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "selection_verdict": "neutral",
+      "strategy_verdict": "mixed",
+      "prediction_alignment": "partial"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "trade_date": "2026-07-03",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "selection_verdict": "neutral",
+      "strategy_verdict": "mixed",
+      "prediction_alignment": "partial"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from quant_system.scheduler.cron_runner import run_job, start_scheduler
+from quant_system.tasks.agent_job import run_agent_job
 from quant_system.tasks.backfill_job import run_backfill
 from quant_system.tasks.backtest_job import run_backtest_job
 from quant_system.tasks.daily_job import run_daily_market
@@ -80,12 +81,17 @@ def build_parser() -> argparse.ArgumentParser:
     enhance = sub.add_parser("enhance", help="数据增强（估值/公司行为/资金/指数）")
     enhance.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
 
+    agent = sub.add_parser("agent", help="Agent 分析（选股解释/策略诊断/预测复盘）")
+    agent.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+    agent.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
+
     bt = sub.add_parser("backtest", help="单策略日线回测（MA金叉）")
     bt.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
     bt.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"], help="策略名称")
     bt.add_argument("--days", type=int, default=750, help="回测 K 线天数（约3年=750）")
     bt.add_argument("--cash", type=float, default=100_000, help="初始资金")
     bt.add_argument("--allow-warn", action="store_true", help="允许质量分 70-89 进入回测")
+    bt.add_argument("--no-rolling", action="store_true", help="跳过滚动样本外验证")
 
     pred = sub.add_parser("predict", help="可验证走势预测（5d 方向/概率/置信度）")
     pred.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
@@ -138,6 +144,21 @@ def generate_enhance_reports() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_agent_dashboard() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_agent_dashboard.py"
+    if path.exists():
+        logger.info("生成 Agent 看板: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def sync_report_index_hubs() -> None:
+    import subprocess
+    path = ROOT / "script" / "report_index_utils.py"
+    if path.exists():
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
 def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False) -> None:
     """MVP 闭环：数据 → 因子 → 回测 → 预测 → 报表（Quantification.md §1.3）。"""
     from quant_system.config.crawler_config import CrawlerConfig
@@ -163,6 +184,9 @@ def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False
     generate_factor_reports()
     generate_enhance_reports()
     generate_live_dashboard()
+    run_agent_job()
+    generate_agent_dashboard()
+    sync_report_index_hubs()
     logger.info("=== MVP 闭环完成 ===")
 
 
@@ -208,6 +232,9 @@ def main() -> None:
         generate_enhance_reports()
         generate_factor_reports()
         generate_reports(stock_only=True)
+    elif args.command == "agent":
+        run_agent_job(codes=resolve_codes(args.codes), strategy=args.strategy)
+        generate_agent_dashboard()
     elif args.command == "factor":
         run_factor_compute(codes=resolve_codes(args.codes), ignore_quality=args.force)
     elif args.command == "inspect":
@@ -229,6 +256,7 @@ def main() -> None:
             days=args.days,
             allow_warn_quality=args.allow_warn,
             initial_cash=args.cash,
+            rolling=not args.no_rolling,
         )
         generate_backtest_reports()
     elif args.command == "predict":
@@ -266,6 +294,9 @@ def main() -> None:
         generate_factor_reports()
         generate_enhance_reports()
         generate_live_dashboard()
+        run_agent_job()
+        generate_agent_dashboard()
+        sync_report_index_hubs()
     else:
         build_parser().print_help()
 

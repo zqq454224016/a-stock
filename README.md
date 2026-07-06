@@ -62,6 +62,7 @@ chmod +x run.sh setup.sh
 ./run.sh all              # 同上，可 --skip-backtest / --skip-predict / --skip-enhance
 ./run.sh stock
 ./run.sh enhance          # 数据增强（P1-3）
+./run.sh agent            # Agent 看板（P4-1）
 ./run.sh predict
 ```
 
@@ -122,9 +123,10 @@ python quant_system/main.py factor            # 计算 RSI/MACD/ATR 等因子 + 
 python quant_system/main.py inspect           # K 线质量巡检（含东财/新浪跨源 diff）
 python quant_system/main.py inspect --fix     # 巡检 + 自动 backfill
 
-# 8. 回测（MA 金叉 / 多因子策略）
+# 8. 回测（MA 金叉 / 多因子策略，含 P2-4 容量约束 + 收益归因 + 滚动验证）
 python quant_system/main.py backtest              # 自选股回测 ~3 年
 python quant_system/main.py backtest --strategy multi_factor --allow-warn
+python quant_system/main.py backtest --no-rolling # 跳过滚动 OOS 验证
 # 报告：reports/backtest/{code}_ma_cross.html
 
 # 9. 多因子排名（技术 + 情绪 + 基本面 + 资金）
@@ -143,10 +145,17 @@ python quant_system/main.py sentiment
 python quant_system/main.py enhance
 # 汇总页：reports/enhance/index.html · 数据：assets/data/enhance/{code}.json
 
-# 12. 定时调度（可选）
+# 12. Agent 分析与统一看板（P4-1）
+python quant_system/main.py agent
+# 看板：reports/agent/index.html · 报表列表自动收录 Agent 入口
+
+# 13. 报表列表同步（Agent / 因子 / 预测 / 增强 / 回测）
+python script/report_index_utils.py
+
+# 14. 定时调度（可选）
 python quant_system/main.py scheduler
 
-# 13. 预览
+# 14. 预览
 python -m http.server 8080
 ```
 

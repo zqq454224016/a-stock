@@ -30,6 +30,7 @@ def test_run_backtest_produces_metrics():
     )
     assert result["code"] == "600378"
     assert "metrics" in result
+    assert "attribution" in result
     assert "equity_curve" in result
     assert len(result["equity_curve"]) == len(df)
     m = result["metrics"]

@@ -23,6 +23,50 @@ def render_report(data: dict) -> str:
     strategy = data["strategy"]
     m = data["metrics"]
     cfg = data.get("config", {})
+    attr = data.get("attribution") or {}
+    rolling = data.get("rolling") or {}
+
+    attr_rows = "".join(
+        f"""<tr>
+          <td>{r.get('reason','')}</td><td>{r.get('count','')}</td>
+          <td>{r.get('total_pnl','')}</td><td>{r.get('avg_pnl','')}</td>
+          <td>{r.get('win_rate_pct','')}%</td>
+        </tr>"""
+        for r in attr.get("by_reason") or []
+    ) or '<tr><td colspan="5">无已平仓交易</td></tr>'
+
+    roll_rows = "".join(
+        f"""<tr>
+          <td>{w.get('test_start','')} ~ {w.get('test_end','')}</td>
+          <td>{w.get('total_return_pct','')}%</td>
+          <td>{w.get('max_drawdown_pct','')}%</td>
+          <td>{w.get('sharpe_ratio','')}</td>
+          <td>{w.get('win_rate_pct','')}%</td>
+        </tr>"""
+        for w in rolling.get("windows") or []
+    ) or '<tr><td colspan="5">未启用滚动验证</td></tr>'
+
+    rolling_summary = ""
+    if rolling.get("window_count"):
+        rolling_summary = f"""
+    <section class="stats-row">
+      <div class="stat-card">
+        <div class="name">OOS 窗口数</div>
+        <div class="value">{rolling.get('window_count')}</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">OOS 均收益</div>
+        <div class="value">{rolling.get('oos_avg_return_pct', '--')}%</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">OOS 正收益占比</div>
+        <div class="value">{rolling.get('oos_positive_ratio', '--')}</div>
+      </div>
+      <div class="stat-card">
+        <div class="name">平均持仓天数</div>
+        <div class="value">{attr.get('avg_hold_days', '--')}</div>
+      </div>
+    </section>"""
 
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -43,7 +87,8 @@ def render_report(data: dict) -> str:
       </nav>
       <h1 class="site-title">{code} <span class="stock-code">{strategy}</span></h1>
       <p class="site-subtitle">
-        策略 v{data.get('strategy_version', '')} · 数据 {data.get('data_version', '')} ·
+        策略 v{data.get('strategy_version', '')} · 引擎 v{data.get('engine_version', '')} ·
+        数据 {data.get('data_version', '')} ·
         质量分 {data.get('quality_score', '--')} · 更新 {data.get('updated_at', '')}
       </p>
     </div>
@@ -68,7 +113,7 @@ def render_report(data: dict) -> str:
         <div class="value" style="font-size:1rem">{m.get('sharpe_ratio', '--')} / {m.get('win_rate_pct', '--')}%</div>
       </div>
     </section>
-
+{rolling_summary}
     <section class="chart-section">
       <h2>净值曲线</h2>
       <div id="equity-chart" class="chart-box chart-box-lg"></div>
@@ -92,9 +137,34 @@ def render_report(data: dict) -> str:
     </section>
 
     <section class="table-section">
+      <h2>收益归因</h2>
+      <p>已实现盈亏 {attr.get('realized_pnl', '--')} · 最佳 {((attr.get('best_trade') or {}).get('pnl', '--'))} ·
+         最差 {((attr.get('worst_trade') or {}).get('pnl', '--'))}</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>信号原因</th><th>次数</th><th>总盈亏</th><th>均盈亏</th><th>胜率</th></tr></thead>
+          <tbody>{attr_rows}</tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <h2>滚动样本外验证</h2>
+      <p>训练窗 {rolling.get('train_days', '--')} 日 · 测试窗 {rolling.get('test_days', '--')} 日 ·
+         步长 {rolling.get('step_days', '--')} 日</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>测试区间</th><th>收益</th><th>回撤</th><th>夏普</th><th>胜率</th></tr></thead>
+          <tbody>{roll_rows}</tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-section">
       <h2>回测参数</h2>
       <p>初始资金 {cfg.get('initial_cash')} · 佣金 {cfg.get('commission_rate')} ·
-         印花税 {cfg.get('stamp_tax_rate')} · 滑点 {cfg.get('slippage_bps')}bp</p>
+         印花税 {cfg.get('stamp_tax_rate')} · 滑点 {cfg.get('slippage_bps')}bp ·
+         容量参与率 {cfg.get('volume_participation_rate', '--')} · 最低日成交额 {cfg.get('min_daily_amount_yi', '--')}亿</p>
     </section>
   </main>
 
