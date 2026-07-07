@@ -136,6 +136,64 @@ def _classify(score: float, reject_reasons: list[str], cfg: SelectorConfig) -> s
     return "weak"
 
 
+def _candidate_blockers(
+    *,
+    stock: dict[str, Any],
+    prediction: dict[str, Any],
+    factor_score: float,
+    impact: dict[str, Any] | None,
+    cfg: SelectorConfig,
+) -> list[str]:
+    analysis = stock.get("analysis") or {}
+    ma_signal = analysis.get("ma_signal") or {}
+    probability = _to_float(prediction.get("probability"), 0.5)
+    impact_score = _to_float((impact or {}).get("impact_score"))
+    blockers: list[str] = []
+    if prediction.get("direction") != "up" and probability < 0.55:
+        blockers.append("预测尚未形成向上确认")
+    if factor_score < cfg.watch_factor_score:
+        blockers.append("因子分未达到观察线")
+    if not ma_signal.get("above_ma20"):
+        blockers.append("趋势未站上 MA20")
+    if impact_score < 0:
+        blockers.append("实际影响分为负")
+    return blockers
+
+
+def _next_triggers(
+    *,
+    stock: dict[str, Any],
+    prediction: dict[str, Any],
+    factor_score: float,
+    impact: dict[str, Any] | None,
+    backtest: dict[str, Any] | None,
+    cfg: SelectorConfig,
+) -> list[str]:
+    analysis = stock.get("analysis") or {}
+    ma_signal = analysis.get("ma_signal") or {}
+    triggers: list[str] = []
+    probability = _to_float(prediction.get("probability"), 0.5)
+    impact_score = _to_float((impact or {}).get("impact_score"))
+    metrics = (backtest or {}).get("metrics") or {}
+    max_dd = _to_float(metrics.get("max_drawdown_pct"))
+
+    if prediction.get("direction") == "down":
+        triggers.append("预测方向从 down 修复为 neutral/up")
+    if probability < 0.55:
+        triggers.append("预测概率提升到 0.55 以上")
+    if factor_score < cfg.watch_factor_score:
+        triggers.append(f"因子分提升到 {cfg.watch_factor_score:.0f} 以上")
+    if not ma_signal.get("above_ma20"):
+        triggers.append("收盘价重新站上 MA20")
+    if impact_score < 0:
+        triggers.append("实际影响分修复到非负")
+    if backtest and max_dd < cfg.max_acceptable_drawdown_pct:
+        triggers.append(f"回测最大回撤收敛到 {abs(cfg.max_acceptable_drawdown_pct):.0f}% 内")
+    if not backtest:
+        triggers.append("补齐回测证据")
+    return list(dict.fromkeys(triggers))
+
+
 def build_upside_candidate(
     *,
     code: str,
@@ -166,7 +224,7 @@ def build_upside_candidate(
         reject_reasons.append("预测方向为 down")
     if factor_score < cfg.reject_factor_score:
         reject_reasons.append(f"因子分过低 {factor_score:.1f}")
-    if _to_float((impact or {}).get("impact_score")) <= cfg.negative_impact_score:
+    if _to_float((impact or {}).get("impact_score")) < cfg.negative_impact_score:
         reject_reasons.append("实际影响数据显著偏负面")
 
     score = base_score
@@ -189,6 +247,23 @@ def build_upside_candidate(
 
     score = round(max(min(score, 100.0), 0.0), 2)
     status = _classify(score, reject_reasons, cfg)
+    candidate_blockers = _candidate_blockers(
+        stock=stock,
+        prediction=prediction,
+        factor_score=factor_score,
+        impact=impact,
+        cfg=cfg,
+    )
+    if status == "candidate" and candidate_blockers:
+        status = "watch"
+    next_triggers = _next_triggers(
+        stock=stock,
+        prediction=prediction,
+        factor_score=factor_score,
+        impact=impact,
+        backtest=backtest,
+        cfg=cfg,
+    )
     return {
         "code": code,
         "name": name or stock.get("name") or code,
@@ -205,6 +280,8 @@ def build_upside_candidate(
         "reasons": list(dict.fromkeys(reasons)) or ["暂无正面确认"],
         "risks": list(dict.fromkeys(risks)) or ["无额外风险标记"],
         "reject_reasons": list(dict.fromkeys(reject_reasons)),
+        "candidate_blockers": candidate_blockers,
+        "next_triggers": next_triggers,
         "metrics": {
             "quality_score": qscore,
             "factor_score": factor_score,

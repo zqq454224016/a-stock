@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06 23:29:33",
+  "updated_at": "2026-07-07 21:02:10",
   "items": [
     {
       "code": "600378",
@@ -12,7 +12,7 @@
     {
       "code": "603629",
       "name": "利通电子",
-      "impact_score": -33,
+      "impact_score": -27,
       "impact_direction": "negative",
       "event_count": 2,
       "limitations": [

@@ -1,24 +1,25 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "version": "1.0.0",
-  "updated_at": "2026-07-06 23:29:33",
-  "summary": "综合因子中性，等待更清晰信号",
-  "confidence": "medium",
+  "updated_at": "2026-07-07 21:02:11",
+  "summary": "谨慎",
+  "confidence": "low",
   "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
   "stock_selection": {
-    "verdict": "neutral",
-    "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 45.4,
+    "verdict": "negative",
+    "headline": "综合因子偏空，谨慎对待",
+    "composite_score": 31.3,
     "evidence": [
-      "技术分 39.0",
-      "情绪分 63.8",
+      "技术分 24.0",
+      "情绪分 43.0",
       "基本面分 36.0",
-      "趋势 震荡",
-      "舆情 看空"
+      "趋势 偏空",
+      "舆情 看多"
     ],
     "drivers": [
+      "ma_death_cross",
       "macd_hist_negative",
       "ma20_breakdown"
     ],
@@ -28,7 +29,7 @@
       "估值偏高"
     ],
     "primary_signal": "bearish",
-    "trend": "震荡"
+    "trend": "偏空"
   },
   "strategy_diagnosis": {
     "available": true,
@@ -41,9 +42,9 @@
       "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 146.25,
+      "annual_return_pct": 152.61,
       "max_drawdown_pct": -28.25,
-      "sharpe_ratio": 1.88,
+      "sharpe_ratio": 1.93,
       "win_rate_pct": 66.67,
       "closed_trades": 6
     },
@@ -62,14 +63,16 @@
     "available": true,
     "horizon": "5d",
     "direction": "neutral",
-    "probability": 0.5386,
+    "probability": 0.5429,
     "confidence": "high",
-    "expected_return": -0.0293,
+    "expected_return": -0.0291,
     "alignment": "partial",
-    "drivers": [],
+    "drivers": [
+      "均线死叉"
+    ],
     "notes": [
-      "5d 预测 震荡，概率 53.9%，置信度 high",
-      "历史样本 64，回测胜率 66.7%",
+      "5d 预测 震荡，概率 54.3%，置信度 high",
+      "历史样本 63，回测胜率 66.7%",
       "信号与预测部分一致，存在中性分歧",
       "风险标记: high_volatility"
     ],

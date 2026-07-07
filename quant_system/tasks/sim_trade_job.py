@@ -19,6 +19,7 @@ from quant_system.trading.simulator import (
     new_account,
 )
 from quant_system.utils.logger import get_logger
+from quant_system.utils.market_scope import filter_research_stocks
 from quant_system.utils.time_utils import now_str
 
 logger = get_logger(__name__)
@@ -69,7 +70,7 @@ def _latest_price(stock: dict[str, Any]) -> float:
 def _resolve_items(codes: list[str] | None, cfg: CrawlerConfig) -> list[dict[str, str]]:
     if codes:
         return [{"code": normalize_code(c), "name": ""} for c in codes]
-    return load_watchlist(cfg)
+    return filter_research_stocks(load_watchlist(cfg), cfg, reason="模拟交易")
 
 
 def run_sim_trade_job(

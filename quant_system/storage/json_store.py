@@ -152,6 +152,32 @@ class JsonStore:
         self.write(path, {"updated_at": updated_at, "items": items})
         return path
 
+    def replay_dir(self) -> Path:
+        return self.config.json_data_dir / "replay"
+
+    def save_replay(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.replay_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_replay_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.replay_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "items": items})
+        return path
+
+    def review_dir(self) -> Path:
+        return self.config.json_data_dir / "review"
+
+    def save_review(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.review_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_review_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.review_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "items": items})
+        return path
+
     def impact_dir(self) -> Path:
         return self.config.json_data_dir / "impact"
 

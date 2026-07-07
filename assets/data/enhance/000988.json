@@ -1,20 +1,20 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-06",
-  "updated_at": "2026-07-06 23:29:03",
+  "trade_date": "2026-07-07",
+  "updated_at": "2026-07-07 21:01:29",
   "version": "1.0.0",
   "fundamentals": {
     "source": "eastmoney_value",
-    "trade_date": "2026-07-06",
-    "close": 149.7,
-    "market_cap_yi": 1505.24,
-    "float_cap_yi": 1504.46,
-    "pe_ttm": 88.57714214,
-    "pe_static": 102.3417849,
-    "pb": 12.87905486,
-    "ps": 9.86061769,
-    "peg": 4.717443057546
+    "trade_date": "2026-07-07",
+    "close": 153.59,
+    "market_cap_yi": 1544.35,
+    "float_cap_yi": 1543.56,
+    "pe_ttm": 90.8788461,
+    "pe_static": 105.00116728,
+    "pb": 13.21372101,
+    "ps": 10.11684884,
+    "peg": 4.840027249182
   },
   "corporate": {
     "dividends": [],
@@ -43,7 +43,7 @@
     "margin": null
   },
   "index_context": {
-    "trade_date": "2026-07-06",
+    "trade_date": "2026-07-07",
     "benchmarks": [
       {
         "name": "上证指数",
@@ -60,10 +60,10 @@
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -861.15,
+      "main_net": -758.28,
       "retail_net": 0.0
     },
-    "stock_return_20d": -4.61
+    "stock_return_20d": 3.35
   },
   "cross_source": null,
   "quality_ref": {

@@ -1,6 +1,6 @@
 {
   "code": "603629",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "horizon": "5d",
   "direction": "down",
   "probability": 0.2368,
@@ -10,7 +10,7 @@
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_603629_20260706",
+  "data_version": "daily_kline_603629_20260707",
   "factor_versions": {
     "technical": "1.0.0"
   },
@@ -19,16 +19,18 @@
     "state_label": "bearish",
     "historical_positive_rate": 0.1724,
     "backtest_win_rate": 0.3333,
-    "backtest_profit_loss_ratio": 26.21,
-    "backtest_annual_return_pct": 269.72,
-    "backtest_max_drawdown_pct": -48.06,
+    "backtest_profit_loss_ratio": 26.29,
+    "backtest_annual_return_pct": 218.11,
+    "backtest_max_drawdown_pct": -52.0,
     "backtest_closed_trades": 6
   },
-  "drivers": [],
+  "drivers": [
+    "均线死叉"
+  ],
   "risk_flags": [
     "high_volatility",
     "high_historical_drawdown"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

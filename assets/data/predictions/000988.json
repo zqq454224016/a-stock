@@ -1,33 +1,35 @@
 {
   "code": "000988",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "horizon": "5d",
   "direction": "neutral",
-  "probability": 0.5386,
+  "probability": 0.5429,
   "confidence": "high",
-  "expected_return": -0.0293,
+  "expected_return": -0.0291,
   "max_expected_drawdown": 0.2673,
   "prediction_version": "1.0.0",
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
-  "data_version": "daily_kline_000988_20260706",
+  "data_version": "daily_kline_000988_20260707",
   "factor_versions": {
     "technical": "1.0.0"
   },
   "evidence": {
-    "sample_count": 64,
+    "sample_count": 63,
     "state_label": "bearish",
-    "historical_positive_rate": 0.4531,
+    "historical_positive_rate": 0.4603,
     "backtest_win_rate": 0.6667,
     "backtest_profit_loss_ratio": 8.46,
-    "backtest_annual_return_pct": 146.25,
+    "backtest_annual_return_pct": 152.61,
     "backtest_max_drawdown_pct": -28.25,
     "backtest_closed_trades": 6
   },
-  "drivers": [],
+  "drivers": [
+    "均线死叉"
+  ],
   "risk_flags": [
     "high_volatility"
   ],
   "disclaimer": "统计倾向，非确定性预测，不构成投资建议",
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

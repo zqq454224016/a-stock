@@ -16,6 +16,7 @@ from quant_system.prediction.verified import build_verified_prediction
 from quant_system.storage.json_store import JsonStore
 from quant_system.tasks.backtest_job import run_backtest_job
 from quant_system.utils.logger import get_logger
+from quant_system.utils.market_scope import filter_research_stocks
 from quant_system.utils.time_utils import now_str
 
 logger = get_logger(__name__)
@@ -53,7 +54,7 @@ def run_predict_job(
     if codes:
         stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
     else:
-        stocks = load_watchlist(cfg)
+        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="走势预测")
 
     if not stocks:
         logger.error("未配置自选股")

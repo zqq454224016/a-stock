@@ -1,35 +1,48 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "selector_version": "1.0.0",
-  "upside_score": 75.7,
+  "upside_score": 0.0,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
-    "因子分 73.6 达到观察线",
-    "预测中性，概率 0.50",
-    "收盘价站上 MA20",
     "收盘价站上 MA60",
     "20日动量为正",
-    "MACD 柱线为正",
-    "回测夏普 1.79"
+    "回测夏普 1.74"
   ],
   "risks": [
+    "因子分偏低 50.1",
+    "预测方向向下，概率 0.28",
     "预测标记高波动",
+    "未站上 MA20",
+    "5日跌幅较大",
     "回测胜率偏低 33.33%",
     "实际影响偏负面，impact_score=-20"
   ],
   "reject_reasons": [
-    "实际影响数据显著偏负面"
+    "预测方向为 down"
+  ],
+  "candidate_blockers": [
+    "预测尚未形成向上确认",
+    "因子分未达到观察线",
+    "趋势未站上 MA20",
+    "实际影响分为负"
+  ],
+  "next_triggers": [
+    "预测方向从 down 修复为 neutral/up",
+    "预测概率提升到 0.55 以上",
+    "因子分提升到 55 以上",
+    "收盘价重新站上 MA20",
+    "实际影响分修复到非负"
   ],
   "metrics": {
     "quality_score": 100.0,
-    "factor_score": 73.6,
-    "prediction_direction": "neutral",
-    "prediction_probability": 0.5042,
+    "factor_score": 50.1,
+    "prediction_direction": "down",
+    "prediction_probability": 0.281,
     "impact_score": -20.0,
     "impact_direction": "negative"
   },
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

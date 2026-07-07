@@ -14,6 +14,7 @@ a-stock/
 │   ├── strategy/           # 策略（MA 金叉等）
 │   ├── backtest/           # 回测引擎与绩效
 │   ├── prediction/         # 可验证走势预测
+│   ├── replay/             # 历史视角滚动推演
 │   ├── selector/           # 上涨候选池筛选与排名
 │   ├── decision/           # 单股操作建议
 │   ├── impact/             # 实际影响数据提取（业绩/估值/解禁/材料价格）
@@ -72,6 +73,7 @@ chmod +x run.sh setup.sh
 ./run.sh decision         # 单股操作建议（指导性优先）
 ./run.sh simtrade         # 模拟交易（P3-1）
 ./run.sh predict
+./run.sh replay           # 十日前视角滚动推演
 ```
 
 或显式使用 venv 解释器：
@@ -110,6 +112,8 @@ python quant_system/main.py all             # watchlist 全量：巡检→行情
 
 > **watchlist 约定**：`assets/data/watchlist.json` 中的股票为默认执行范围。新增代码后运行 `stock` / `all` / `gen_stock_report` 会自动补采集缺失数据，无需手动传代码参数。
 
+> **科创板参考模式**：`688xxx` / `689xxx` 个股默认只作为参考，不进入补录、增强、因子、回测、预测、selector、decision、模拟交易、Agent 等重型链路；显式传入代码可手动分析。关闭该策略：`STAR_BOARD_REFERENCE_ONLY=0 ./run.sh all`。
+
 # 或使用兼容脚本
 python script/fetch_data.py
 python script/fetch_stock.py
@@ -146,46 +150,52 @@ python quant_system/main.py predict
 python quant_system/main.py predict 600378 --horizon 5d
 # 汇总页：reports/predict/index.html
 
-# 10. 舆情采集（东财评论 + 雪球热榜，P1-2）
+# 10. 历史视角滚动推演（默认最近 10 个交易日）
+python quant_system/main.py replay
+python quant_system/main.py replay --days 10
+python quant_system/main.py replay 600378 --days 10
+# 汇总页：reports/replay/index.html · 数据：assets/data/replay/{code}.json
+
+# 11. 舆情采集（东财评论 + 雪球热榜，P1-2）
 python quant_system/main.py sentiment
 
-# 11. 数据增强（估值/分红解禁/北向两融/指数，P1-3）
+# 12. 数据增强（估值/分红解禁/北向两融/指数，P1-3）
 python quant_system/main.py enhance
 # 汇总页：reports/enhance/index.html · 数据：assets/data/enhance/{code}.json
 
-# 12. Agent 分析与统一看板（P4-1）
+# 13. Agent 分析与统一看板（P4-1）
 python quant_system/main.py agent
 # 看板：reports/agent/index.html · 报表列表自动收录 Agent 入口
 
-# 13. 单股操作建议（Decision Engine，指导性优先）
+# 14. 单股操作建议（Decision Engine，指导性优先）
 python quant_system/main.py decision
 python quant_system/main.py decision 600378 --strategy ma_cross
 # 看板：reports/decision/index.html · 数据：assets/data/decisions/{code}.json
 
-# 14. 上涨候选池筛选（预测 + 因子 + 趋势 + 回测 + 实际影响）
+# 15. 上涨候选池筛选（预测 + 因子 + 趋势 + 回测 + 实际影响）
 python quant_system/main.py selector
 python quant_system/main.py selector 600378 000988
 # 看板：reports/selector/index.html · 数据：assets/data/selector/{code}.json
 
-# 15. 实际影响数据（业绩预告/估值/解禁/生产材料或产品价格）
+# 16. 实际影响数据（业绩预告/估值/解禁/生产材料或产品价格）
 python quant_system/main.py impact
 python quant_system/main.py impact 603629 600378
 python script/gen_impact_report.py
 # 看板：reports/impact/index.html · 数据：assets/data/impact/{code}.json
 # decision 默认自动补齐 impact，可用 --no-impact 关闭。
 
-# 16. 模拟交易（P3-1，基于决策/预测虚拟调仓）
+# 17. 模拟交易（P3-1，基于决策/预测虚拟调仓）
 python quant_system/main.py simtrade
 python quant_system/main.py simtrade --reset --cash 100000
 # 看板：reports/trading/index.html · 数据：assets/data/trading/account.json
 
-# 17. 报表列表同步（Agent / 因子 / 预测 / 候选 / 决策 / 影响 / 增强 / 回测 / 模拟交易）
+# 18. 报表列表同步（Agent / 因子 / 预测 / 推演 / 候选 / 决策 / 影响 / 增强 / 回测 / 模拟交易）
 python script/report_index_utils.py
 
-# 18. 定时调度（可选）
+# 19. 定时调度（可选）
 python quant_system/main.py scheduler
 
-# 19. 预览
+# 20. 预览
 python -m http.server 8080
 ```
 

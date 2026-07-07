@@ -16,6 +16,7 @@ from quant_system.pipeline.quality_inspector import inspect_kline_df
 from quant_system.storage.json_store import JsonStore
 from quant_system.tasks.factor_utils import save_composite_factors
 from quant_system.utils.logger import get_logger
+from quant_system.utils.market_scope import filter_research_stocks
 from quant_system.utils.time_utils import now_str
 from quant_system.utils.trade_calendar import get_calendar
 
@@ -36,7 +37,7 @@ def run_factor_compute(
     if codes:
         stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
     else:
-        stocks = load_watchlist(cfg)
+        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="因子计算")
 
     if not stocks:
         logger.error("未配置自选股")

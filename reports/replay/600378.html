@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>600378 推演 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">昊华科技 (600378)</h1>
+      <p class="site-subtitle">滚动推演 2026-06-22 → 2026-07-06 · 命中率 0.0%</p>
+    </div>
+  </header>
+  <main class="container report-body">
+    <section class="table-section">
+      <h2>命中率迭代思考</h2>
+      <p>未命中 10 次，看多后下跌 0 次，看空后上涨 0 次。</p>
+      <h3>优化方向</h3>
+      <ul><li>十日命中率低于 50%，后续应提高信号阈值，并把边界概率样本降级为观察</li></ul>
+      <h3>下一轮迭代重点</h3>
+      <ul><li>将 root_cause 与 hit/miss 绑定，形成特征有效性复盘样本</li><li>把低概率、弱技术信号、根因不足的样本归入 no-trade 区间</li><li>后续在 decision 中引入 buy_trigger_price、sell_guard_price、take_profit_watch_price</li></ul>
+    </section>
+    <section class="table-section">
+      <table class="data-table">
+        <thead><tr><th>认知截止</th><th>目标日</th><th>当时收盘</th><th>目标收盘</th><th>预测方向</th><th>概率</th><th>技术信号</th><th>真实收益</th><th>真实方向</th><th>复盘</th><th>涨跌根因</th><th>失效原因</th><th>价位雏形</th></tr></thead>
+        <tbody>
+        <tr>
+          <td>2026-06-22</td>
+          <td>2026-06-23</td>
+          <td>70.22</td>
+          <td>66.34</td>
+          <td>neutral</td>
+          <td>53.6%</td>
+          <td>bullish / 92.0</td>
+          <td>-5.53%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>RSI 超买，存在回落压力<br><small>RSI14 81.11</small><br><small>technical · known_at_cutoff</small></li><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 72.1085<br>
+            守 66.0068<br>
+            止盈观察 71.4
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-23</td>
+          <td>2026-06-24</td>
+          <td>66.34</td>
+          <td>67.15</td>
+          <td>neutral</td>
+          <td>53.2%</td>
+          <td>bullish / 87.0</td>
+          <td>1.22%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 28.48%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为正<br><small>MACD hist 1.5383</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏强<br><small>momentum_20 87.08%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 68.3133<br>
+            守 62.3596<br>
+            止盈观察 72.974
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-24</td>
+          <td>2026-06-25</td>
+          <td>67.15</td>
+          <td>68.4</td>
+          <td>neutral</td>
+          <td>53.6%</td>
+          <td>bullish / 87.0</td>
+          <td>1.86%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 26.60%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为正<br><small>MACD hist 1.2872</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏强<br><small>momentum_20 72.14%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 69.1498<br>
+            守 63.121<br>
+            止盈观察 73.03
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-25</td>
+          <td>2026-06-26</td>
+          <td>68.4</td>
+          <td>62.3</td>
+          <td>neutral</td>
+          <td>53.9%</td>
+          <td>bullish / 87.0</td>
+          <td>-8.92%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>RSI 超买，存在回落压力<br><small>RSI14 76.53</small><br><small>technical · known_at_cutoff</small></li><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 70.4145<br>
+            守 64.296<br>
+            止盈观察 73.03
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-26</td>
+          <td>2026-06-29</td>
+          <td>62.3</td>
+          <td>68.53</td>
+          <td>neutral</td>
+          <td>53.5%</td>
+          <td>bullish / 87.0</td>
+          <td>10.00%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 12.09%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为正<br><small>MACD hist 0.4475</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏强<br><small>momentum_20 55.25%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 64.169<br>
+            守 58.562<br>
+            止盈观察 68.53
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-29</td>
+          <td>2026-06-30</td>
+          <td>68.53</td>
+          <td>75.38</td>
+          <td>neutral</td>
+          <td>53.8%</td>
+          <td>bullish / 87.0</td>
+          <td>10.00%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 20.05%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为正<br><small>MACD hist 0.3607</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏强<br><small>momentum_20 78.19%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 70.5859<br>
+            守 64.4182<br>
+            止盈观察 73.03
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-30</td>
+          <td>2026-07-01</td>
+          <td>75.38</td>
+          <td>81.0</td>
+          <td>neutral</td>
+          <td>54.2%</td>
+          <td>bullish / 87.0</td>
+          <td>7.46%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 28.15%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为正<br><small>MACD hist 0.6611</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏强<br><small>momentum_20 85.53%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 77.629<br>
+            守 70.8572<br>
+            止盈观察 75.38
+          </td>
+        </tr>
+        <tr>
+          <td>2026-07-01</td>
+          <td>2026-07-02</td>
+          <td>81.0</td>
+          <td>82.17</td>
+          <td>neutral</td>
+          <td>54.5%</td>
+          <td>bullish / 92.0</td>
+          <td>1.44%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 33.41%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为正<br><small>MACD hist 1.1085</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏强<br><small>momentum_20 87.76%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 83.3065<br>
+            守 76.14<br>
+            止盈观察 82.92
+          </td>
+        </tr>
+        <tr>
+          <td>2026-07-02</td>
+          <td>2026-07-03</td>
+          <td>82.17</td>
+          <td>76.01</td>
+          <td>neutral</td>
+          <td>54.8%</td>
+          <td>bullish / 92.0</td>
+          <td>-7.50%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li><li>解禁压力<br><small>最近解禁 2027-07-26，规模 134.95 亿元</small><br><small>impact.lockup_pressure · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 84.6351<br>
+            守 77.2398<br>
+            止盈观察 88.1
+          </td>
+        </tr>
+        <tr>
+          <td>2026-07-03</td>
+          <td>2026-07-06</td>
+          <td>76.01</td>
+          <td>68.41</td>
+          <td>neutral</td>
+          <td>54.4%</td>
+          <td>bullish / 87.0</td>
+          <td>-10.00%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li><li>解禁压力<br><small>最近解禁 2027-07-26，规模 134.95 亿元</small><br><small>impact.lockup_pressure · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 78.2903<br>
+            守 71.4494<br>
+            止盈观察 83.611
+          </td>
+        </tr></tbody>
+      </table>
+    </section>
+    <p style="color:var(--color-muted);font-size:0.9rem">限制：只使用技术 K 线；真实收益仅用于事后复盘，不参与当时预测。价位雏形只用于后续单日操作建议设计，不构成交易指令。</p>
+  </main>
+</body>
+</html>

@@ -57,9 +57,11 @@ def render(rows: list[dict]) -> str:
           <td>{_list((r.get('reasons') or [])[:3])}</td>
           <td>{_list((r.get('risks') or [])[:3])}</td>
           <td>{_list(r.get('reject_reasons') or [])}</td>
+          <td>{_list(r.get('candidate_blockers') or [])}</td>
+          <td>{_list((r.get('next_triggers') or [])[:3])}</td>
         </tr>"""
         for idx, r in enumerate(rows, 1)
-    ) or '<tr><td colspan="8">运行 python quant_system/main.py selector</td></tr>'
+    ) or '<tr><td colspan="10">运行 python quant_system/main.py selector</td></tr>'
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -78,7 +80,7 @@ def render(rows: list[dict]) -> str:
   <main class="container report-body">
     <section class="table-section">
       <table class="data-table">
-        <thead><tr><th>排名</th><th>代码</th><th>名称</th><th>上涨分</th><th>分层</th><th>正面依据</th><th>风险</th><th>排除原因</th></tr></thead>
+        <thead><tr><th>排名</th><th>代码</th><th>名称</th><th>上涨分</th><th>分层</th><th>正面依据</th><th>风险</th><th>排除原因</th><th>候选阻断</th><th>进入候选触发</th></tr></thead>
         <tbody>{body}</tbody>
       </table>
     </section>

@@ -1,34 +1,48 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "selector_version": "1.0.0",
-  "upside_score": 42.75,
+  "upside_score": 43.05,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
     "预测中性，概率 0.54",
     "收盘价站上 MA60",
-    "回测夏普 1.88",
+    "20日动量为正",
+    "回测夏普 1.93",
     "回测胜率 66.67%"
   ],
   "risks": [
-    "因子分偏低 45.4",
+    "因子分偏低 31.3",
     "预测标记高波动",
     "未站上 MA20",
     "5日跌幅较大",
     "实际影响偏负面，impact_score=-33"
   ],
   "reject_reasons": [
+    "因子分过低 31.3",
     "实际影响数据显著偏负面"
+  ],
+  "candidate_blockers": [
+    "预测尚未形成向上确认",
+    "因子分未达到观察线",
+    "趋势未站上 MA20",
+    "实际影响分为负"
+  ],
+  "next_triggers": [
+    "预测概率提升到 0.55 以上",
+    "因子分提升到 55 以上",
+    "收盘价重新站上 MA20",
+    "实际影响分修复到非负"
   ],
   "metrics": {
     "quality_score": 100.0,
-    "factor_score": 45.4,
+    "factor_score": 31.3,
     "prediction_direction": "neutral",
-    "prediction_probability": 0.5386,
+    "prediction_probability": 0.5429,
     "impact_score": -33.0,
     "impact_direction": "negative"
   },
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

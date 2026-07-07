@@ -24,6 +24,8 @@ from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.intraday_job import run_intraday_live, run_intraday_loop
 from quant_system.tasks.inspect_job import run_data_inspect
 from quant_system.tasks.predict_job import run_predict_job
+from quant_system.tasks.replay_job import run_replay_job
+from quant_system.tasks.review_job import run_review_job
 from quant_system.tasks.selector_job import run_selector_job
 from quant_system.tasks.sentiment_job import run_sentiment_job
 from quant_system.tasks.sim_trade_job import run_sim_trade_job
@@ -128,6 +130,13 @@ def build_parser() -> argparse.ArgumentParser:
     pred.add_argument("--no-backtest", action="store_true", help="不自动补跑回测")
     pred.add_argument("--allow-warn", action="store_true")
 
+    replay = sub.add_parser("replay", help="十日前视角滚动推演（无未来函数复盘）")
+    replay.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+    replay.add_argument("--days", type=int, default=10, help="向前回放的交易日数量")
+
+    review = sub.add_parser("review", help="后验复盘（预测/候选/决策 1/5/20 日收益）")
+    review.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+
     return p
 
 
@@ -211,6 +220,22 @@ def generate_selector_report() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_replay_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_replay_report.py"
+    if path.exists():
+        logger.info("生成历史推演报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_review_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_review_report.py"
+    if path.exists():
+        logger.info("生成后验复盘报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
 def sync_report_index_hubs() -> None:
     import subprocess
     path = ROOT / "script" / "report_index_utils.py"
@@ -247,6 +272,8 @@ def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False
     generate_decision_report()
     run_sim_trade_job(auto_predict=False)
     generate_trading_report()
+    run_review_job()
+    generate_review_report()
     generate_reports()
     generate_factor_reports()
     generate_enhance_reports()
@@ -292,23 +319,23 @@ def main() -> None:
     elif args.command == "mvp":
         run_mvp_pipeline(skip_inspect=False)
     elif args.command == "sentiment":
-        run_sentiment_job(codes=resolve_codes(args.codes))
+        run_sentiment_job(codes=resolve_codes(args.codes) if args.codes else None)
     elif args.command == "enhance":
-        run_enhance_job(codes=resolve_codes(args.codes))
-        run_factor_compute(codes=resolve_codes(args.codes))
+        run_enhance_job(codes=resolve_codes(args.codes) if args.codes else None)
+        run_factor_compute(codes=resolve_codes(args.codes) if args.codes else None)
         generate_enhance_reports()
         generate_factor_reports()
         generate_reports(stock_only=True)
     elif args.command == "impact":
-        run_impact_job(codes=resolve_codes(args.codes))
+        run_impact_job(codes=resolve_codes(args.codes) if args.codes else None)
         generate_impact_report()
         sync_report_index_hubs()
     elif args.command == "agent":
-        run_agent_job(codes=resolve_codes(args.codes), strategy=args.strategy)
+        run_agent_job(codes=resolve_codes(args.codes) if args.codes else None, strategy=args.strategy)
         generate_agent_dashboard()
     elif args.command == "decision":
         run_decision_job(
-            codes=resolve_codes(args.codes),
+            codes=resolve_codes(args.codes) if args.codes else None,
             strategy=args.strategy,
             auto_predict=not args.no_predict,
             auto_agent=not args.no_agent,
@@ -318,7 +345,7 @@ def main() -> None:
         sync_report_index_hubs()
     elif args.command == "selector":
         run_selector_job(
-            codes=resolve_codes(args.codes),
+            codes=resolve_codes(args.codes) if args.codes else None,
             strategy=args.strategy,
             auto_predict=not args.no_predict,
             auto_impact=not args.no_impact,
@@ -327,7 +354,7 @@ def main() -> None:
         sync_report_index_hubs()
     elif args.command == "simtrade":
         run_sim_trade_job(
-            codes=resolve_codes(args.codes),
+            codes=resolve_codes(args.codes) if args.codes else None,
             reset=args.reset,
             auto_predict=not args.no_predict,
             auto_decision=not args.no_decision,
@@ -336,10 +363,10 @@ def main() -> None:
         generate_trading_report()
         sync_report_index_hubs()
     elif args.command == "factor":
-        run_factor_compute(codes=resolve_codes(args.codes), ignore_quality=args.force)
+        run_factor_compute(codes=resolve_codes(args.codes) if args.codes else None, ignore_quality=args.force)
     elif args.command == "inspect":
         run_data_inspect(
-            codes=resolve_codes(args.codes),
+            codes=resolve_codes(args.codes) if args.codes else None,
             auto_fix=args.fix,
             lookback_days=args.lookback,
         )
@@ -351,7 +378,7 @@ def main() -> None:
         run_backfill(codes, days=args.days, refresh_stocks=not args.no_refresh)
     elif args.command == "backtest":
         run_backtest_job(
-            codes=resolve_codes(args.codes),
+            codes=resolve_codes(args.codes) if args.codes else None,
             strategy_name=args.strategy,
             days=args.days,
             allow_warn_quality=args.allow_warn,
@@ -361,7 +388,7 @@ def main() -> None:
         generate_backtest_reports()
     elif args.command == "predict":
         run_predict_job(
-            codes=resolve_codes(args.codes),
+            codes=resolve_codes(args.codes) if args.codes else None,
             strategy_name=args.strategy,
             horizon=args.horizon,
             days=args.days,
@@ -369,6 +396,14 @@ def main() -> None:
             allow_warn_quality=args.allow_warn,
         )
         generate_predict_reports()
+    elif args.command == "replay":
+        run_replay_job(codes=resolve_codes(args.codes) if args.codes else None, days=args.days)
+        generate_replay_report()
+        sync_report_index_hubs()
+    elif args.command == "review":
+        run_review_job(codes=resolve_codes(args.codes) if args.codes else None)
+        generate_review_report()
+        sync_report_index_hubs()
     elif args.command == "run":
         run_job(args.job)
     elif args.command == "all":
@@ -398,6 +433,8 @@ def main() -> None:
             generate_decision_report()
             run_sim_trade_job(auto_predict=False)
             generate_trading_report()
+            run_review_job()
+            generate_review_report()
         generate_reports()
         generate_factor_reports()
         generate_enhance_reports()

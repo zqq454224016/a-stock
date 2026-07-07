@@ -3,7 +3,7 @@
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
   "engine_version": "1.1.0",
-  "data_version": "daily_kline_000988_20260706",
+  "data_version": "daily_kline_000988_20260707",
   "quality_score": 100.0,
   "config": {
     "initial_cash": 100000.0,
@@ -15,19 +15,19 @@
     "min_daily_amount_yi": 0.05
   },
   "metrics": {
-    "total_return_pct": 143.62,
-    "annual_return_pct": 146.25,
+    "total_return_pct": 149.84,
+    "annual_return_pct": 152.61,
     "max_drawdown_pct": -28.25,
-    "sharpe_ratio": 1.88,
+    "sharpe_ratio": 1.93,
     "win_rate_pct": 66.67,
     "profit_loss_ratio": 8.46,
     "trade_count": 13,
     "closed_trades": 6,
-    "final_equity": 243618.61
+    "final_equity": 249842.61
   },
   "attribution": {
     "realized_pnl": 175026.47,
-    "unrealized_hint": -31407.86,
+    "unrealized_hint": -25183.86,
     "closed_trades": 6,
     "avg_hold_days": 37.8,
     "by_reason": [
@@ -51,13 +51,6 @@
     }
   },
   "equity_curve": [
-    {
-      "date": "2025-06-25",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 46.52
-    },
     {
       "date": "2025-06-26",
       "equity": 100000.0,
@@ -1800,6 +1793,13 @@
       "cash": 4098.61,
       "shares": 1600,
       "close": 149.7
+    },
+    {
+      "date": "2026-07-07",
+      "equity": 249842.61,
+      "cash": 4098.61,
+      "shares": 1600,
+      "close": 153.59
     }
   ],
   "trades": [
@@ -1940,5 +1940,5 @@
       "status": "filled"
     }
   ],
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

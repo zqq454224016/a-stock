@@ -1,0 +1,1892 @@
+{
+  "code": "600378",
+  "name": "昊华科技",
+  "replay_version": "1.1.0",
+  "status": "ok",
+  "mode": "walk_forward_no_future_data",
+  "window_days": 10,
+  "start_knowledge_cutoff": "2026-06-22",
+  "end_target_date": "2026-07-06",
+  "steps": [
+    {
+      "knowledge_cutoff": "2026-06-22",
+      "target_date": "2026-06-23",
+      "as_of_close": 70.22,
+      "target_close": 66.34,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5362,
+        "confidence": "low",
+        "expected_return": 0.0052,
+        "risk_flags": [
+          "rsi_overbought",
+          "high_volatility"
+        ],
+        "sample_count": 138,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 92.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "volume_expansion",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 40.19,
+        "rsi14": 81.11,
+        "macd_hist": 1.803,
+        "momentum_20": 93.71,
+        "volume_ratio_20": 1.28,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 81.11",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 40.19%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.8030",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 93.71%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 81.11",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 70.22,
+        "support_price": 34.89,
+        "resistance_price": 71.4,
+        "buy_trigger_price": 72.1085,
+        "sell_guard_price": 66.0068,
+        "take_profit_watch_price": 71.4,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": -5.53,
+        "direction": "down",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-06-23",
+      "target_date": "2026-06-24",
+      "as_of_close": 66.34,
+      "target_close": 67.15,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5324,
+        "confidence": "low",
+        "expected_return": 0.0047,
+        "risk_flags": [
+          "rsi_overbought",
+          "high_volatility"
+        ],
+        "sample_count": 139,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 28.48,
+        "rsi14": 73.71,
+        "macd_hist": 1.5383,
+        "momentum_20": 87.08,
+        "volume_ratio_20": 1.1,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 28.48%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.5383",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 87.08%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 28.48%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.5383",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 87.08%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 73.71",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 66.34,
+        "support_price": 34.94,
+        "resistance_price": 73.03,
+        "buy_trigger_price": 68.3133,
+        "sell_guard_price": 62.3596,
+        "take_profit_watch_price": 72.974,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": 1.22,
+        "direction": "up",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-06-24",
+      "target_date": "2026-06-25",
+      "as_of_close": 67.15,
+      "target_close": 68.4,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5357,
+        "confidence": "low",
+        "expected_return": 0.0048,
+        "risk_flags": [
+          "rsi_overbought",
+          "high_volatility"
+        ],
+        "sample_count": 140,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 26.6,
+        "rsi14": 76.84,
+        "macd_hist": 1.2872,
+        "momentum_20": 72.14,
+        "volume_ratio_20": 0.95,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 26.60%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.2872",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 72.14%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 26.60%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.2872",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 72.14%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 76.84",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 67.15,
+        "support_price": 38.2,
+        "resistance_price": 73.03,
+        "buy_trigger_price": 69.1498,
+        "sell_guard_price": 63.121,
+        "take_profit_watch_price": 73.03,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": 1.86,
+        "direction": "up",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-06-25",
+      "target_date": "2026-06-26",
+      "as_of_close": 68.4,
+      "target_close": 62.3,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.539,
+        "confidence": "low",
+        "expected_return": 0.0049,
+        "risk_flags": [
+          "rsi_overbought",
+          "high_volatility"
+        ],
+        "sample_count": 141,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 25.57,
+        "rsi14": 76.53,
+        "macd_hist": 1.0831,
+        "momentum_20": 72.08,
+        "volume_ratio_20": 0.98,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 76.53",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 25.57%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.0831",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 72.08%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 76.53",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 68.4,
+        "support_price": 38.2,
+        "resistance_price": 73.03,
+        "buy_trigger_price": 70.4145,
+        "sell_guard_price": 64.296,
+        "take_profit_watch_price": 73.03,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": -8.92,
+        "direction": "down",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-06-26",
+      "target_date": "2026-06-29",
+      "as_of_close": 62.3,
+      "target_close": 68.53,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5352,
+        "confidence": "low",
+        "expected_return": 0.0042,
+        "risk_flags": [
+          "high_volatility"
+        ],
+        "sample_count": 142,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 12.09,
+        "rsi14": 65.86,
+        "macd_hist": 0.4475,
+        "momentum_20": 55.25,
+        "volume_ratio_20": 0.93,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 12.09%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.4475",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 55.25%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 12.09%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.4475",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 55.25%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 62.3,
+        "support_price": 38.2,
+        "resistance_price": 73.03,
+        "buy_trigger_price": 64.169,
+        "sell_guard_price": 58.562,
+        "take_profit_watch_price": 68.53,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": 10.0,
+        "direction": "up",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-06-29",
+      "target_date": "2026-06-30",
+      "as_of_close": 68.53,
+      "target_close": 75.38,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5385,
+        "confidence": "low",
+        "expected_return": 0.0049,
+        "risk_flags": [
+          "high_volatility"
+        ],
+        "sample_count": 143,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 20.05,
+        "rsi14": 67.55,
+        "macd_hist": 0.3607,
+        "momentum_20": 78.19,
+        "volume_ratio_20": 1.05,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 20.05%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.3607",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 78.19%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 20.05%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.3607",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 78.19%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 68.53,
+        "support_price": 39.23,
+        "resistance_price": 73.03,
+        "buy_trigger_price": 70.5859,
+        "sell_guard_price": 64.4182,
+        "take_profit_watch_price": 73.03,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": 10.0,
+        "direction": "up",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-06-30",
+      "target_date": "2026-07-01",
+      "as_of_close": 75.38,
+      "target_close": 81.0,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5417,
+        "confidence": "low",
+        "expected_return": 0.0056,
+        "risk_flags": [
+          "high_volatility"
+        ],
+        "sample_count": 144,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 28.15,
+        "rsi14": 69.98,
+        "macd_hist": 0.6611,
+        "momentum_20": 85.53,
+        "volume_ratio_20": 1.14,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 28.15%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.6611",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 85.53%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 28.15%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.6611",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 85.53%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 75.38,
+        "support_price": 40.26,
+        "resistance_price": 75.38,
+        "buy_trigger_price": 77.629,
+        "sell_guard_price": 70.8572,
+        "take_profit_watch_price": 75.38,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": 7.46,
+        "direction": "up",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-07-01",
+      "target_date": "2026-07-02",
+      "as_of_close": 81.0,
+      "target_close": 82.17,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5448,
+        "confidence": "low",
+        "expected_return": 0.006,
+        "risk_flags": [
+          "rsi_overbought",
+          "high_volatility"
+        ],
+        "sample_count": 145,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 92.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "volume_expansion",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 33.41,
+        "rsi14": 70.17,
+        "macd_hist": 1.1085,
+        "momentum_20": 87.76,
+        "volume_ratio_20": 1.47,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 33.41%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.1085",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 87.76%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 33.41%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.1085",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 87.76%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "risk",
+            "label": "RSI 超买，存在回落压力",
+            "effect": "bearish",
+            "evidence": "RSI14 70.17",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 81.0,
+        "support_price": 40.26,
+        "resistance_price": 82.92,
+        "buy_trigger_price": 83.3065,
+        "sell_guard_price": 76.14,
+        "take_profit_watch_price": 82.92,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": 1.44,
+        "direction": "up",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-07-02",
+      "target_date": "2026-07-03",
+      "as_of_close": 82.17,
+      "target_close": 76.01,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5479,
+        "confidence": "low",
+        "expected_return": 0.0061,
+        "risk_flags": [
+          "high_volatility"
+        ],
+        "sample_count": 146,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 92.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "volume_expansion",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 30.94,
+        "rsi14": 67.58,
+        "macd_hist": 1.3381,
+        "momentum_20": 98.53,
+        "volume_ratio_20": 1.22,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 30.94%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 1.3381",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 98.53%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 82.17,
+        "support_price": 40.26,
+        "resistance_price": 88.1,
+        "buy_trigger_price": 84.6351,
+        "sell_guard_price": 77.2398,
+        "take_profit_watch_price": 88.1,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": -7.5,
+        "direction": "down",
+        "hit": false
+      }
+    },
+    {
+      "knowledge_cutoff": "2026-07-03",
+      "target_date": "2026-07-06",
+      "as_of_close": 76.01,
+      "target_close": 68.41,
+      "prediction": {
+        "direction": "neutral",
+        "probability": 0.5442,
+        "confidence": "low",
+        "expected_return": 0.0055,
+        "risk_flags": [
+          "high_volatility"
+        ],
+        "sample_count": 147,
+        "state_label": "bullish"
+      },
+      "technical_signal": {
+        "signal": "bullish",
+        "signal_score": 87.0,
+        "drivers": [
+          "above_ma20",
+          "rsi14_strong",
+          "macd_hist_positive",
+          "momentum_20_up",
+          "ma20_breakout"
+        ]
+      },
+      "factor_snapshot": {
+        "ma20_bias": 18.05,
+        "rsi14": 67.83,
+        "macd_hist": 0.9482,
+        "momentum_20": 75.58,
+        "volume_ratio_20": 1.1,
+        "above_ma20": true,
+        "ma_cross": "none"
+      },
+      "root_cause": {
+        "actual_root_causes": [
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "all_observed_causes": [
+          {
+            "category": "trend",
+            "label": "站上 MA20 且存在正乖离",
+            "effect": "bullish",
+            "evidence": "MA20乖离 18.05%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "MACD 柱为正",
+            "effect": "bullish",
+            "evidence": "MACD hist 0.9482",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "momentum",
+            "label": "20 日动量偏强",
+            "effect": "bullish",
+            "evidence": "momentum_20 75.58%",
+            "source": "technical",
+            "source_timing": "known_at_cutoff"
+          },
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "external_context_causes": [
+          {
+            "category": "market",
+            "label": "科创50 走强",
+            "effect": "bullish",
+            "evidence": "指数涨跌幅 1.80%",
+            "source": "market.indices",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_fund",
+            "label": "市场主力资金净流出",
+            "effect": "bearish",
+            "evidence": "主力净流出 -861.15 亿",
+            "source": "market.fund_flow",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "market_breadth",
+            "label": "市场宽度偏弱",
+            "effect": "bearish",
+            "evidence": "上涨 1876 家，下跌 3540 家",
+            "source": "market.distribution",
+            "source_timing": "latest_context_review"
+          },
+          {
+            "category": "event",
+            "label": "解禁压力",
+            "effect": "bearish",
+            "evidence": "最近解禁 2027-07-26，规模 134.95 亿元",
+            "source": "impact.lockup_pressure",
+            "source_timing": "latest_context_review"
+          }
+        ],
+        "miss_reasons": [
+          "预测概率处于边界区，后续应降低仓位或只观察"
+        ],
+        "model_iteration_notes": [
+          "纳入错误样本，后续用于调高/调低方向阈值",
+          "概率低于强信号区，后续不应生成积极买卖动作",
+          "方向偏差样本应进入复盘池，检查大盘、资金和事件数据缺口"
+        ]
+      },
+      "operation_levels": {
+        "reference_close": 76.01,
+        "support_price": 42.99,
+        "resistance_price": 88.1,
+        "buy_trigger_price": 78.2903,
+        "sell_guard_price": 71.4494,
+        "take_profit_watch_price": 83.611,
+        "note": "价位为历史推演中的操作细化雏形，需结合当日盘口和风控后才能使用"
+      },
+      "actual": {
+        "return_pct": -10.0,
+        "direction": "down",
+        "hit": false
+      }
+    }
+  ],
+  "summary": {
+    "step_count": 10,
+    "evaluated_count": 10,
+    "hit_count": 0,
+    "hit_rate": 0.0,
+    "up_prediction_count": 0,
+    "down_prediction_count": 0,
+    "total_return_pct": -2.58
+  },
+  "learning": {
+    "miss_count": 10,
+    "false_up_count": 0,
+    "false_down_count": 0,
+    "root_cause_distribution": {
+      "站上 MA20 且存在正乖离": 6,
+      "MACD 柱为正": 6,
+      "20 日动量偏强": 6,
+      "市场主力资金净流出": 4,
+      "市场宽度偏弱": 4,
+      "RSI 超买，存在回落压力": 2,
+      "解禁压力": 2
+    },
+    "miss_reason_distribution": {
+      "预测概率处于边界区，后续应降低仓位或只观察": 10
+    },
+    "hit_rate_improvement_thoughts": [
+      "十日命中率低于 50%，后续应提高信号阈值，并把边界概率样本降级为观察"
+    ],
+    "next_iteration_focus": [
+      "将 root_cause 与 hit/miss 绑定，形成特征有效性复盘样本",
+      "把低概率、弱技术信号、根因不足的样本归入 no-trade 区间",
+      "后续在 decision 中引入 buy_trigger_price、sell_guard_price、take_profit_watch_price"
+    ]
+  },
+  "limitations": [
+    "prediction_is_technical_only",
+    "uses_historical_data_available_at_each_cutoff",
+    "actual_return_used_only_for_review",
+    "external_context_used_for_root_cause_review_not_for_prediction",
+    "external_context_may_be_latest_snapshot_when_source_date_after_cutoff"
+  ],
+  "updated_at": "2026-07-07 11:50:05"
+}

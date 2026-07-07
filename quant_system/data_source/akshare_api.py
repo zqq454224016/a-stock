@@ -9,9 +9,18 @@ import pandas as pd
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.data_source.base_crawler import BaseCrawler
 from quant_system.data_source.eastmoney import EastMoneyCrawler
+from quant_system.data_source.tonghuashun import TonghuashunCrawler
+from quant_system.data_source.xueqiu import XueqiuCrawler
 from quant_system.pipeline.normalizer import load_watchlist, normalize_code, to_symbol
 from quant_system.utils.logger import get_logger
 from quant_system.utils.retry import call_with_retry
+from quant_system.utils.source_guard import (
+    disable_eastmoney,
+    ensure_eastmoney_policy,
+    is_eastmoney_disabled,
+    is_ths_disabled,
+    note_eastmoney_failure,
+)
 
 logger = get_logger(__name__)
 
@@ -23,7 +32,12 @@ class AkShareAPI(BaseCrawler):
         super().__init__(config)
         self._ak = None
         self._em = EastMoneyCrawler(config)
-        self._eastmoney_disabled = False
+        self._ths = TonghuashunCrawler(config)
+        self._xq = XueqiuCrawler(config)
+        ensure_eastmoney_policy(self.config.disable_eastmoney)
+        if self.config.disable_ths:
+            from quant_system.utils.source_guard import disable_ths
+            disable_ths(reason="已配置跳过同花顺")
 
     @property
     def ak(self):
@@ -34,7 +48,7 @@ class AkShareAPI(BaseCrawler):
 
     def _try_eastmoney(self, fn, label: str):
         """尝试东财接口；失败一次后本会话内不再重试东财（仅用于非行情类探测）。"""
-        if self._eastmoney_disabled:
+        if is_eastmoney_disabled():
             return None
         try:
             return call_with_retry(
@@ -43,19 +57,12 @@ class AkShareAPI(BaseCrawler):
                 delay=self.config.retry_delay,
             )
         except Exception as e:
-            self._eastmoney_disabled = True
+            note_eastmoney_failure(e)
             self.log_fail(f"东财{label}不可用，已切换备用源: {e}")
             return None
 
-    def _is_proxy_error(self, err: Exception) -> bool:
-        msg = str(err).lower()
-        return "proxy" in msg or "remote end closed" in msg
-
     def _disable_eastmoney(self, err: Exception | None = None) -> None:
-        if not self._eastmoney_disabled:
-            self._eastmoney_disabled = True
-            reason = f": {err}" if err else ""
-            self.log_fail(f"东财本会话内禁用{reason}")
+        disable_eastmoney(err)
 
     def _spot_source_order(self) -> list[str]:
         prefer = self.config.prefer_source
@@ -65,7 +72,7 @@ class AkShareAPI(BaseCrawler):
             order = ["sina", "eastmoney", "eastmoney_direct"]
         else:
             order = ["eastmoney", "sina", "eastmoney_direct"]
-        if self._eastmoney_disabled:
+        if is_eastmoney_disabled():
             order = [s for s in order if not s.startswith("eastmoney")]
         return order
 
@@ -78,7 +85,7 @@ class AkShareAPI(BaseCrawler):
         return len(wl) <= self.config.watchlist_spot_threshold
 
     def _fetch_spot_source(self, source: str) -> pd.DataFrame:
-        if source.startswith("eastmoney") and self._eastmoney_disabled:
+        if source.startswith("eastmoney") and is_eastmoney_disabled():
             raise RuntimeError("eastmoney disabled")
         if source == "eastmoney":
             return call_with_retry(
@@ -112,8 +119,8 @@ class AkShareAPI(BaseCrawler):
             except Exception as e:
                 errors.append(f"{source}: {e}")
                 self.log_fail(f"个股快照 {source} 失败: {e}")
-                if source.startswith("eastmoney") or self._is_proxy_error(e):
-                    self._disable_eastmoney(e)
+                if source.startswith("eastmoney"):
+                    note_eastmoney_failure(e)
         raise RuntimeError(f"全市场行情不可用: {'; '.join(errors)}")
 
     def _quotes_to_spot_df(self, spot_map: dict[str, dict[str, Any]]) -> pd.DataFrame:
@@ -237,6 +244,15 @@ class AkShareAPI(BaseCrawler):
             "quote_source": "bid_ask",
         }
 
+    @staticmethod
+    def _row_float(row: pd.Series, *keys: str, default: float = 0.0) -> float:
+        for key in keys:
+            if key in row.index:
+                val = row.get(key)
+                if val is not None and not pd.isna(val):
+                    return float(val)
+        return default
+
     def _spot_from_daily(self, code: str) -> dict[str, Any] | None:
         symbol = to_symbol(code)
         try:
@@ -244,15 +260,15 @@ class AkShareAPI(BaseCrawler):
             if df is None or df.empty:
                 return None
             r = df.iloc[-1]
-            close = float(r.get("收盘", r.get("close", 0)) or 0)
+            close = self._row_float(r, "收盘", "close")
             if close <= 0:
                 return None
-            open_ = float(r.get("开盘", r.get("open", close)) or close)
-            high = float(r.get("最高", r.get("high", close)) or close)
-            low = float(r.get("最低", r.get("low", close)) or close)
-            volume = float(r.get("成交量", r.get("volume", 0)) or 0)
-            amount = float(r.get("成交额", 0) or 0)
-            prev = float(df.iloc[-2]["收盘"]) if len(df) >= 2 else open_
+            open_ = self._row_float(r, "开盘", "open", default=close)
+            high = self._row_float(r, "最高", "high", default=close)
+            low = self._row_float(r, "最低", "low", default=close)
+            volume = self._row_float(r, "成交量", "volume")
+            amount = self._row_float(r, "成交额", "amount")
+            prev = self._row_float(df.iloc[-2], "收盘", "close", default=open_) if len(df) >= 2 else open_
             change = close - prev
             change_pct = (change / prev * 100) if prev else 0.0
             return {
@@ -271,22 +287,94 @@ class AkShareAPI(BaseCrawler):
             self.log_fail(f"日K降级行情 {code}: {e}")
             return None
 
-    def fetch_spot_quote(self, code: str) -> dict[str, Any] | None:
-        """单只股票实时行情（盘口 → 日 K 降级）。"""
-        code = normalize_code(code)
+    def _spot_fallback_sources(self) -> list[str]:
+        """逐只行情降级顺序（东财盘口 → 雪球 → 腾讯/新浪日K）。"""
+        order: list[str] = []
+        if not self.config.disable_eastmoney and not is_eastmoney_disabled():
+            order.append("eastmoney")
+        for src in [x.strip().lower() for x in self.config.extra_sources.split(",") if x.strip()]:
+            if src in ("xueqiu", "tencent") and src not in order:
+                order.append(src)
+        if "sina" not in order:
+            order.append("sina")
+        return order
+
+    def _spot_from_xueqiu(self, code: str) -> dict[str, Any] | None:
+        try:
+            quote = self._xq.fetch_spot_quote(code)
+            if quote:
+                self.log_ok(f"个股现价 {code}：雪球")
+            return quote
+        except Exception as e:
+            self.log_fail(f"雪球现价 {code}: {e}")
+            return None
+
+    def _spot_from_tencent_daily(self, code: str) -> dict[str, Any] | None:
+        symbol = to_symbol(code)
         try:
             df = call_with_retry(
-                lambda: self.ak.stock_bid_ask_em(symbol=code),
-                retries=2,
-                delay=self.config.retry_delay,
+                lambda: self.ak.stock_zh_a_hist_tx(symbol=symbol, adjust="qfq"),
+                retries=1,
+                delay=1.0,
             )
-            if df is not None and not df.empty:
-                quote = self._parse_bid_ask(code, df)
-                self.log_ok(f"个股盘口 {code}")
-                return quote
+            if df is None or df.empty:
+                return None
+            r = df.iloc[-1]
+            close = self._row_float(r, "close", "收盘")
+            if close <= 0:
+                return None
+            open_ = self._row_float(r, "open", "开盘", default=close)
+            high = self._row_float(r, "high", "最高", default=close)
+            low = self._row_float(r, "low", "最低", default=close)
+            volume = self._row_float(r, "volume", "成交量")
+            prev = self._row_float(df.iloc[-2], "close", "收盘", default=open_) if len(df) >= 2 else open_
+            change = close - prev
+            return {
+                "close": close,
+                "change": round(change, 3),
+                "change_pct": round((change / prev * 100) if prev else 0.0, 3),
+                "open": open_,
+                "high": high,
+                "low": low,
+                "volume": volume,
+                "amount_yi": 0.0,
+                "name": "",
+                "quote_source": "tencent_daily",
+            }
         except Exception as e:
-            self.log_fail(f"盘口 {code}: {e}")
-        return self._spot_from_daily(code)
+            self.log_fail(f"腾讯日K现价 {code}: {e}")
+            return None
+
+    def fetch_spot_quote(self, code: str) -> dict[str, Any] | None:
+        """单只股票实时行情（多源降级：东财盘口 → 雪球 → 新浪/腾讯日K）。"""
+        code = normalize_code(code)
+        for source in self._spot_fallback_sources():
+            if source == "eastmoney":
+                try:
+                    df = call_with_retry(
+                        lambda: self.ak.stock_bid_ask_em(symbol=code),
+                        retries=1,
+                        delay=1.0,
+                    )
+                    if df is not None and not df.empty:
+                        quote = self._parse_bid_ask(code, df)
+                        self.log_ok(f"个股盘口 {code}")
+                        return quote
+                except Exception as e:
+                    note_eastmoney_failure(e)
+            elif source == "xueqiu":
+                quote = self._spot_from_xueqiu(code)
+                if quote:
+                    return quote
+            elif source == "tencent":
+                quote = self._spot_from_tencent_daily(code)
+                if quote:
+                    return quote
+            elif source == "sina":
+                quote = self._spot_from_daily(code)
+                if quote:
+                    return quote
+        return None
 
     def _spot_row_to_quote(self, r: pd.Series) -> dict[str, Any]:
         amount = float(r.get("成交额", 0) or 0)
@@ -354,26 +442,35 @@ class AkShareAPI(BaseCrawler):
     def fetch_daily_hist(self, symbol: str, adjust: str = "qfq") -> tuple[pd.DataFrame, str]:
         """拉取日 K，返回 (DataFrame, source)。日 K 优先东财（通常含当日）。"""
         code = symbol.replace("sh", "").replace("sz", "").replace("bj", "")
-        try:
-            df = call_with_retry(
-                lambda: self.ak.stock_zh_a_hist(symbol=code, period="daily", adjust=adjust),
-                retries=self.config.eastmoney_probe_retries,
-                delay=self.config.retry_delay,
-            )
-            if df is not None and not df.empty:
-                self.log_ok(f"日K {symbol}：东财 {len(df)} 条")
-                return df, "eastmoney"
-        except Exception as e:
-            self.log_fail(f"东财日K不可用: {e}")
+        if not is_eastmoney_disabled():
+            try:
+                df = call_with_retry(
+                    lambda: self.ak.stock_zh_a_hist(symbol=code, period="daily", adjust=adjust),
+                    retries=1,
+                    delay=1.0,
+                )
+                if df is not None and not df.empty:
+                    self.log_ok(f"日K {symbol}：东财 {len(df)} 条")
+                    return df, "eastmoney"
+            except Exception as e:
+                note_eastmoney_failure(e)
 
         try:
-            df = self._retry(lambda: self.ak.stock_zh_a_daily(symbol=symbol, adjust=adjust))
+            df = call_with_retry(
+                lambda: self.ak.stock_zh_a_daily(symbol=symbol, adjust=adjust),
+                retries=1,
+                delay=1.0,
+            )
             self.log_ok(f"日K {symbol}：新浪 {len(df)} 条")
             return df, "sina"
         except Exception as e:
             self.log_fail(f"新浪日K不可用: {e}")
 
-        df = self._retry(lambda: self.ak.stock_zh_a_hist_tx(symbol=symbol, adjust=adjust))
+        df = call_with_retry(
+            lambda: self.ak.stock_zh_a_hist_tx(symbol=symbol, adjust=adjust),
+            retries=1,
+            delay=1.0,
+        )
         self.log_ok(f"日K {symbol}：腾讯 {len(df)} 条")
         return df, "tencent"
 
@@ -381,8 +478,12 @@ class AkShareAPI(BaseCrawler):
         """按指定来源拉取日 K（用于跨源校验）。"""
         code = symbol.replace("sh", "").replace("sz", "").replace("bj", "")
         if source == "eastmoney":
-            return self._retry(
-                lambda: self.ak.stock_zh_a_hist(symbol=code, period="daily", adjust=adjust)
+            if is_eastmoney_disabled():
+                raise RuntimeError("eastmoney disabled")
+            return call_with_retry(
+                lambda: self.ak.stock_zh_a_hist(symbol=code, period="daily", adjust=adjust),
+                retries=1,
+                delay=1.0,
             )
         if source == "sina":
             return self._retry(lambda: self.ak.stock_zh_a_daily(symbol=symbol, adjust=adjust))
@@ -391,12 +492,13 @@ class AkShareAPI(BaseCrawler):
         raise ValueError(f"未知日K来源: {source}")
 
     def fetch_indices(self) -> list[dict[str, Any]]:
-        if self.config.prefer_source != "sina":
+        if self.config.prefer_source != "sina" and not is_eastmoney_disabled():
             try:
                 indices = self._em.fetch_indices()
                 if indices:
                     return indices
             except Exception as e:
+                note_eastmoney_failure(e)
                 self.log_fail(f"东财指数不可用: {e}")
 
         index_df = self._retry(self.ak.stock_zh_index_spot_sina)
@@ -416,11 +518,24 @@ class AkShareAPI(BaseCrawler):
         return indices
 
     def fetch_industries(self) -> list[dict[str, Any]]:
-        if self.config.prefer_source != "sina":
+        if self.config.prefer_source == "ths" and not is_ths_disabled():
+            try:
+                return self._ths.fetch_industries()
+            except Exception as e:
+                self.log_fail(f"同花顺行业不可用: {e}")
+
+        if self.config.prefer_source != "sina" and not is_eastmoney_disabled():
             try:
                 return self._em.fetch_industries()
             except Exception as e:
+                note_eastmoney_failure(e)
                 self.log_fail(f"东财行业不可用: {e}")
+
+        if not is_ths_disabled():
+            try:
+                return self._ths.fetch_industries()
+            except Exception as e:
+                self.log_fail(f"同花顺行业不可用: {e}")
 
         industry_df = self._retry(lambda: self.ak.stock_fund_flow_industry(symbol="即时"))
         industries = [

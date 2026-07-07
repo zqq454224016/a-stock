@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>603629 推演 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">利通电子 (603629)</h1>
+      <p class="site-subtitle">滚动推演 2026-06-22 → 2026-07-06 · 命中率 10.0%</p>
+    </div>
+  </header>
+  <main class="container report-body">
+    <section class="table-section">
+      <h2>命中率迭代思考</h2>
+      <p>未命中 9 次，看多后下跌 0 次，看空后上涨 3 次。</p>
+      <h3>优化方向</h3>
+      <ul><li>十日命中率低于 50%，后续应提高信号阈值，并把边界概率样本降级为观察</li><li>存在看空后上涨样本：卖出/减仓前需检查超跌反弹、MACD 修复和支撑位</li></ul>
+      <h3>下一轮迭代重点</h3>
+      <ul><li>将 root_cause 与 hit/miss 绑定，形成特征有效性复盘样本</li><li>把低概率、弱技术信号、根因不足的样本归入 no-trade 区间</li><li>后续在 decision 中引入 buy_trigger_price、sell_guard_price、take_profit_watch_price</li></ul>
+    </section>
+    <section class="table-section">
+      <table class="data-table">
+        <thead><tr><th>认知截止</th><th>目标日</th><th>当时收盘</th><th>目标收盘</th><th>预测方向</th><th>概率</th><th>技术信号</th><th>真实收益</th><th>真实方向</th><th>复盘</th><th>涨跌根因</th><th>失效原因</th><th>价位雏形</th></tr></thead>
+        <tbody>
+        <tr>
+          <td>2026-06-22</td>
+          <td>2026-06-23</td>
+          <td>194.24</td>
+          <td>201.93</td>
+          <td>neutral</td>
+          <td>51.0%</td>
+          <td>neutral / 59.0</td>
+          <td>3.96%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 4.57%</small><br><small>technical · known_at_cutoff</small></li><li>科创50 走强<br><small>指数涨跌幅 1.80%</small><br><small>market.indices · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li><li>技术信号中性时方向判断不稳定，应进入 no-trade 区间</li></ul></td>
+          <td>
+            买 199.9275<br>
+            守 182.5856<br>
+            止盈观察 213.664
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-23</td>
+          <td>2026-06-24</td>
+          <td>201.93</td>
+          <td>219.0</td>
+          <td>neutral</td>
+          <td>51.0%</td>
+          <td>bullish / 68.0</td>
+          <td>8.45%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>站上 MA20 且存在正乖离<br><small>MA20乖离 8.71%</small><br><small>technical · known_at_cutoff</small></li><li>科创50 走强<br><small>指数涨跌幅 1.80%</small><br><small>market.indices · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 207.71<br>
+            守 189.8142<br>
+            止盈观察 222.123
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-24</td>
+          <td>2026-06-25</td>
+          <td>219.0</td>
+          <td>207.88</td>
+          <td>neutral</td>
+          <td>51.0%</td>
+          <td>bullish / 95.0</td>
+          <td>-5.08%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li><li>估值压力偏高<br><small>PE(TTM) 84.87，PB 20.20</small><br><small>enhance.fundamentals · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 225.03<br>
+            守 205.86<br>
+            止盈观察 240.88
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-25</td>
+          <td>2026-06-26</td>
+          <td>207.88</td>
+          <td>187.09</td>
+          <td>neutral</td>
+          <td>50.6%</td>
+          <td>bullish / 75.0</td>
+          <td>-10.00%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li><li>估值压力偏高<br><small>PE(TTM) 84.87，PB 20.20</small><br><small>enhance.fundamentals · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 214.1164<br>
+            守 195.4072<br>
+            止盈观察 228.668
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-26</td>
+          <td>2026-06-29</td>
+          <td>187.09</td>
+          <td>176.86</td>
+          <td>neutral</td>
+          <td>50.3%</td>
+          <td>bullish / 62.0</td>
+          <td>-5.47%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>20 日动量偏弱<br><small>momentum_20 -14.97%</small><br><small>technical · known_at_cutoff</small></li><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 192.7027<br>
+            守 175.8646<br>
+            止盈观察 205.799
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-29</td>
+          <td>2026-06-30</td>
+          <td>176.86</td>
+          <td>178.81</td>
+          <td>down</td>
+          <td>36.2%</td>
+          <td>neutral / 52.0</td>
+          <td>1.10%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>MACD 柱为正<br><small>MACD hist 0.1503</small><br><small>technical · known_at_cutoff</small></li><li>科创50 走强<br><small>指数涨跌幅 1.80%</small><br><small>market.indices · latest_context_review</small></li></ul></td>
+          <td><ul><li>看空未命中：可能忽略超跌反弹或趋势修复，需要加入反转过滤</li><li>预测概率处于边界区，后续应降低仓位或只观察</li><li>技术信号中性时方向判断不稳定，应进入 no-trade 区间</li></ul></td>
+          <td>
+            买 182.1658<br>
+            守 166.2484<br>
+            止盈观察 194.546
+          </td>
+        </tr>
+        <tr>
+          <td>2026-06-30</td>
+          <td>2026-07-01</td>
+          <td>178.81</td>
+          <td>193.4</td>
+          <td>down</td>
+          <td>36.2%</td>
+          <td>bearish / 40.0</td>
+          <td>8.16%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>科创50 走强<br><small>指数涨跌幅 1.80%</small><br><small>market.indices · latest_context_review</small></li></ul></td>
+          <td><ul><li>看空未命中：可能忽略超跌反弹或趋势修复，需要加入反转过滤</li><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 184.1743<br>
+            守 168.0814<br>
+            止盈观察 196.691
+          </td>
+        </tr>
+        <tr>
+          <td>2026-07-01</td>
+          <td>2026-07-02</td>
+          <td>193.4</td>
+          <td>174.06</td>
+          <td>neutral</td>
+          <td>50.0%</td>
+          <td>bullish / 67.0</td>
+          <td>-10.00%</td>
+          <td>down</td>
+          <td>未命中</td>
+          <td><ul><li>MACD 柱为负<br><small>MACD hist -0.3914</small><br><small>technical · known_at_cutoff</small></li><li>市场主力资金净流出<br><small>主力净流出 -861.15 亿</small><br><small>market.fund_flow · latest_context_review</small></li><li>市场宽度偏弱<br><small>上涨 1876 家，下跌 3540 家</small><br><small>market.distribution · latest_context_review</small></li></ul></td>
+          <td><ul><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 199.202<br>
+            守 181.796<br>
+            止盈观察 212.74
+          </td>
+        </tr>
+        <tr>
+          <td>2026-07-02</td>
+          <td>2026-07-03</td>
+          <td>174.06</td>
+          <td>166.61</td>
+          <td>down</td>
+          <td>36.2%</td>
+          <td>neutral / 44.0</td>
+          <td>-4.28%</td>
+          <td>down</td>
+          <td>命中</td>
+          <td><ul><li>跌破 MA20 且负乖离扩大<br><small>MA20乖离 -1.81%</small><br><small>technical · known_at_cutoff</small></li><li>MACD 柱为负<br><small>MACD hist -1.4414</small><br><small>technical · known_at_cutoff</small></li><li>20 日动量偏弱<br><small>momentum_20 -16.27%</small><br><small>technical · known_at_cutoff</small></li></ul></td>
+          <td>—</td>
+          <td>
+            买 179.2818<br>
+            守 163.6164<br>
+            止盈观察 191.466
+          </td>
+        </tr>
+        <tr>
+          <td>2026-07-03</td>
+          <td>2026-07-06</td>
+          <td>166.61</td>
+          <td>172.9</td>
+          <td>down</td>
+          <td>36.2%</td>
+          <td>bearish / 35.0</td>
+          <td>3.78%</td>
+          <td>up</td>
+          <td>未命中</td>
+          <td><ul><li>科创50 走强<br><small>指数涨跌幅 1.80%</small><br><small>market.indices · latest_context_review</small></li></ul></td>
+          <td><ul><li>看空未命中：可能忽略超跌反弹或趋势修复，需要加入反转过滤</li><li>预测概率处于边界区，后续应降低仓位或只观察</li></ul></td>
+          <td>
+            买 171.6083<br>
+            守 156.6134<br>
+            止盈观察 183.271
+          </td>
+        </tr></tbody>
+      </table>
+    </section>
+    <p style="color:var(--color-muted);font-size:0.9rem">限制：只使用技术 K 线；真实收益仅用于事后复盘，不参与当时预测。价位雏形只用于后续单日操作建议设计，不构成交易指令。</p>
+  </main>
+</body>
+</html>

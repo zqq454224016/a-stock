@@ -1,43 +1,43 @@
 {
-  "updated_at": "2026-07-06 23:29:33",
+  "updated_at": "2026-07-07 21:02:11",
   "reports": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-06",
-      "summary": "综合因子偏多，可纳入观察池",
+      "trade_date": "2026-07-07",
+      "summary": "综合因子中性，等待更清晰信号",
       "confidence": "medium",
-      "selection_verdict": "positive",
+      "selection_verdict": "neutral",
       "strategy_verdict": "mixed",
       "prediction_alignment": "partial"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-06",
+      "trade_date": "2026-07-07",
       "summary": "谨慎",
       "confidence": "low",
-      "selection_verdict": "neutral",
+      "selection_verdict": "negative",
       "strategy_verdict": "weak",
-      "prediction_alignment": "partial"
+      "prediction_alignment": "aligned"
     },
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-06",
-      "summary": "谨慎",
-      "confidence": "low",
-      "selection_verdict": "negative",
+      "trade_date": "2026-07-07",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "selection_verdict": "neutral",
       "strategy_verdict": "ok",
       "prediction_alignment": "aligned"
     },
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-06",
-      "summary": "综合因子中性，等待更清晰信号",
-      "confidence": "medium",
-      "selection_verdict": "neutral",
+      "trade_date": "2026-07-07",
+      "summary": "谨慎",
+      "confidence": "low",
+      "selection_verdict": "negative",
       "strategy_verdict": "ok",
       "prediction_alignment": "partial"
     }

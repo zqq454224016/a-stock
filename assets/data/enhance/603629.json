@@ -1,46 +1,46 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-06",
-  "updated_at": "2026-07-06 23:29:03",
+  "trade_date": "2026-07-07",
+  "updated_at": "2026-07-07 21:01:28",
   "version": "1.0.0",
   "fundamentals": {
     "source": "eastmoney_value",
-    "trade_date": "2026-07-06",
-    "close": 172.9,
-    "market_cap_yi": 453.55,
-    "float_cap_yi": 446.14,
-    "pe_ttm": 84.86944875,
-    "pe_static": 155.01304943,
-    "pb": 20.2049098,
-    "ps": 12.59691088,
-    "peg": 0.050057583098
+    "trade_date": "2026-07-07",
+    "close": 111.07,
+    "market_cap_yi": 407.32,
+    "float_cap_yi": 400.66,
+    "pe_ttm": 76.21945275,
+    "pe_static": 139.21393353,
+    "pb": 18.14560116,
+    "ps": 11.31301862,
+    "peg": 0.044955654195
   },
   "corporate": {
     "dividends": [],
     "lockups": [
       {
         "unlock_date": "2028-12-08",
-        "unlock_shares": 90000.0,
-        "unlock_value_yi": 0.16,
-        "pct_total": 0.000343092406,
-        "pct_float": 0.0003487953,
+        "unlock_shares": 126000.0,
+        "unlock_value_yi": 0.14,
+        "pct_total": 0.000343578892,
+        "pct_float": 0.000349298105,
         "holder_type": "股权激励限售股份"
       },
       {
         "unlock_date": "2028-11-06",
-        "unlock_shares": 645000.0,
-        "unlock_value_yi": 1.12,
-        "pct_total": 0.002458828911,
-        "pct_float": 0.002499699648,
+        "unlock_shares": 903000.0,
+        "unlock_value_yi": 1.0,
+        "pct_total": 0.002462315395,
+        "pct_float": 0.002503303085,
         "holder_type": "股权激励限售股份"
       },
       {
         "unlock_date": "2028-01-18",
-        "unlock_shares": 330000.0,
-        "unlock_value_yi": 0.57,
-        "pct_total": 0.001258005489,
-        "pct_float": 0.001278916099,
+        "unlock_shares": 462000.0,
+        "unlock_value_yi": 0.51,
+        "pct_total": 0.001259789272,
+        "pct_float": 0.001280759718,
         "holder_type": "股权激励限售股份"
       }
     ],
@@ -51,7 +51,7 @@
     "margin": null
   },
   "index_context": {
-    "trade_date": "2026-07-06",
+    "trade_date": "2026-07-07",
     "benchmarks": [
       {
         "name": "上证指数",
@@ -68,7 +68,7 @@
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -861.15,
+      "main_net": -758.28,
       "retail_net": 0.0
     },
     "stock_return_20d": -4.15

@@ -1,26 +1,26 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "version": "1.0.0",
-  "updated_at": "2026-07-06 23:29:33",
-  "summary": "谨慎",
-  "confidence": "low",
+  "updated_at": "2026-07-07 21:02:11",
+  "summary": "综合因子中性，等待更清晰信号",
+  "confidence": "medium",
   "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
   "stock_selection": {
-    "verdict": "negative",
-    "headline": "综合因子偏空，谨慎对待",
-    "composite_score": 36.2,
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 49.4,
     "evidence": [
-      "技术分 24.0",
-      "情绪分 57.0",
+      "技术分 47.0",
+      "情绪分 58.5",
       "基本面分 42.0",
       "趋势 偏空",
-      "舆情 中性"
+      "舆情 看多"
     ],
     "drivers": [
-      "ma_death_cross",
       "macd_hist_negative",
+      "momentum_20_up",
       "ma20_breakdown"
     ],
     "risks": [
@@ -28,7 +28,7 @@
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "bearish",
+    "primary_signal": "neutral",
     "trend": "偏空"
   },
   "strategy_diagnosis": {
@@ -36,25 +36,25 @@
     "strategy": "ma_cross",
     "verdict": "ok",
     "findings": [
-      "单笔最大亏损 -7433.46（MA20死叉）"
+      "单笔最大亏损 -7307.47（MA20死叉）"
     ],
     "suggestions": [
       "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 238.88,
-      "max_drawdown_pct": -27.09,
-      "sharpe_ratio": 2.46,
-      "win_rate_pct": 50.0,
-      "closed_trades": 6
+      "annual_return_pct": 228.45,
+      "max_drawdown_pct": -28.11,
+      "sharpe_ratio": 2.41,
+      "win_rate_pct": 57.14,
+      "closed_trades": 7
     },
     "attribution_top": [
       {
         "reason": "MA20死叉",
-        "count": 6,
-        "total_pnl": 22736.09,
-        "avg_pnl": 3789.35,
-        "win_rate_pct": 50.0
+        "count": 7,
+        "total_pnl": 223835.93,
+        "avg_pnl": 31976.56,
+        "win_rate_pct": 57.14
       }
     ],
     "rolling_summary": null
@@ -62,17 +62,15 @@
   "prediction_review": {
     "available": true,
     "horizon": "5d",
-    "direction": "down",
-    "probability": 0.4327,
+    "direction": "neutral",
+    "probability": 0.4612,
     "confidence": "medium",
     "expected_return": -0.0176,
     "alignment": "aligned",
-    "drivers": [
-      "均线死叉"
-    ],
+    "drivers": [],
     "notes": [
-      "5d 预测 偏空，概率 43.3%，置信度 medium",
-      "历史样本 49，回测胜率 50.0%",
+      "5d 预测 震荡，概率 46.1%，置信度 medium",
+      "历史样本 49，回测胜率 57.1%",
       "初级技术信号与预测方向一致",
       "风险标记: high_volatility"
     ],

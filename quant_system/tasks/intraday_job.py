@@ -5,6 +5,8 @@ from __future__ import annotations
 import time
 from typing import Any
 
+import pandas as pd
+
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
 from quant_system.data_source.akshare_api import AkShareAPI
@@ -13,6 +15,7 @@ from quant_system.pipeline.intraday_analyzer import build_intraday_analysis
 from quant_system.pipeline.normalizer import load_watchlist, normalize_code, to_symbol
 from quant_system.storage.json_store import JsonStore
 from quant_system.storage.redis_client import RedisClient
+from quant_system.utils.concurrent_fetch import run_parallel_map
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str, today_str
 
@@ -32,6 +35,104 @@ def _cached_spot_from_stock(store: JsonStore, code: str) -> dict[str, Any] | Non
         "name": data.get("name", quote.get("name", "")),
         "quote_source": "stock_cache",
     }
+
+
+def _cached_live_from_disk(store: JsonStore, code: str) -> dict[str, Any] | None:
+    path = store.config.json_data_dir / "stocks" / "live" / f"{code}.json"
+    if not path.exists():
+        return None
+    return store.read(path)
+
+
+def _fetch_minutes_safe(
+    minute_api: MinuteAPI,
+    symbol: str,
+    code: str,
+) -> tuple[pd.DataFrame, str, bool, pd.DataFrame | None]:
+    minute_1m = pd.DataFrame()
+    minute_date = ""
+    minute_is_today = False
+    minute_5m: pd.DataFrame | None = None
+
+    try:
+        minute_1m_raw = minute_api.fetch_minute(symbol, period="1")
+        minute_1m, minute_date, minute_is_today = minute_api.filter_latest_session(minute_1m_raw)
+        if not minute_is_today:
+            logger.warning(
+                "分钟线非当日 %s: 分钟=%s 今日=%s，现价将使用 spot",
+                code, minute_date, today_str(),
+            )
+    except Exception as e:
+        logger.warning("1分钟线不可用 %s: %s", code, e)
+
+    if not minute_api._sina_disabled:
+        try:
+            minute_5m_raw = minute_api.fetch_minute(symbol, period="5")
+            minute_5m, _, m5_today = minute_api.filter_latest_session(minute_5m_raw)
+            if not m5_today:
+                minute_5m = None
+        except Exception as e:
+            logger.warning("5分钟线不可用 %s: %s", code, e)
+
+    return minute_1m, minute_date, minute_is_today, minute_5m
+
+
+def _process_intraday_stock(
+    item: dict[str, Any],
+    api: AkShareAPI,
+    minute_api: MinuteAPI,
+    store: JsonStore,
+    redis: RedisClient,
+    cfg: CrawlerConfig,
+    spot_map: dict[str, dict],
+) -> dict[str, Any] | None:
+    code = normalize_code(item["code"])
+    name = item.get("name", "")
+    symbol = to_symbol(code)
+    try:
+        logger.info("盘中采集 %s (%s)", code, name or symbol)
+        spot = spot_map.get(code)
+        if not spot:
+            logger.warning("无实时行情 %s，尝试缓存", code)
+
+        minute_1m, minute_date, minute_is_today, minute_5m = _fetch_minutes_safe(
+            minute_api, symbol, code,
+        )
+
+        if minute_1m.empty and not spot:
+            cached_live = _cached_live_from_disk(store, code)
+            if cached_live:
+                cached_live["updated_at"] = now_str()
+                store.save_live_stock(code, cached_live)
+                redis.set_json(f"live:stock:{code}", cached_live, ttl=cfg.live_redis_ttl)
+                logger.warning("使用盘中缓存 %s", code)
+                return {
+                    "code": code,
+                    "name": cached_live.get("name", name),
+                    "trade_date": cached_live.get("trade_date"),
+                    "close": (cached_live.get("quote") or {}).get("close"),
+                    "change_pct": (cached_live.get("quote") or {}).get("change_pct"),
+                    "signal": (cached_live.get("intraday") or {}).get("signal"),
+                }
+
+        live = build_intraday_analysis(
+            code, name, spot, minute_1m, minute_5m,
+            minute_trade_date=minute_date,
+            minute_is_today=minute_is_today,
+        )
+        store.save_live_stock(code, live)
+        redis.set_json(f"live:stock:{code}", live, ttl=cfg.live_redis_ttl)
+        return {
+            "code": code,
+            "name": live["name"],
+            "trade_date": live["trade_date"],
+            "close": live["quote"]["close"],
+            "change_pct": live["quote"]["change_pct"],
+            "signal": live["intraday"]["signal"],
+        }
+    except Exception as e:
+        logger.error("盘中采集 %s 失败: %s", code, e)
+        return None
 
 
 def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
@@ -66,57 +167,26 @@ def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
                 spot_map[code] = cached
                 logger.warning("使用日线缓存行情 %s", code)
 
-    results: list[dict[str, Any]] = []
+    worker = lambda item: _process_intraday_stock(
+        item, api, minute_api, store, redis, cfg, spot_map,
+    )
+    results = run_parallel_map(
+        stocks,
+        worker,
+        max_workers=cfg.fetch_workers,
+        label="盘中采集",
+    )
+    index = [r for r in results if r is not None]
 
-    for item in stocks:
-        code = normalize_code(item["code"])
-        name = item.get("name", "")
-        symbol = to_symbol(code)
-        try:
-            logger.info("盘中采集 %s (%s)", code, name or symbol)
-            minute_1m_raw = minute_api.fetch_minute(symbol, period="1")
-            minute_1m, minute_date, minute_is_today = minute_api.filter_latest_session(minute_1m_raw)
-            if not minute_is_today:
-                logger.warning(
-                    "分钟线非当日 %s: 分钟=%s 今日=%s，现价将使用 spot",
-                    code, minute_date, today_str(),
-                )
-            try:
-                minute_5m_raw = minute_api.fetch_minute(symbol, period="5")
-                minute_5m, _, m5_today = minute_api.filter_latest_session(minute_5m_raw)
-                if not m5_today:
-                    minute_5m = None
-            except Exception as e:
-                logger.warning("5分钟线不可用 %s: %s", code, e)
-                minute_5m = None
-
-            live = build_intraday_analysis(
-                code, name, spot_map.get(code), minute_1m, minute_5m,
-                minute_trade_date=minute_date,
-                minute_is_today=minute_is_today,
-            )
-            store.save_live_stock(code, live)
-            redis.set_json(f"live:stock:{code}", live, ttl=cfg.live_redis_ttl)
-            results.append({
-                "code": code,
-                "name": live["name"],
-                "trade_date": live["trade_date"],
-                "close": live["quote"]["close"],
-                "change_pct": live["quote"]["change_pct"],
-                "signal": live["intraday"]["signal"],
-            })
-        except Exception as e:
-            logger.error("盘中采集 %s 失败: %s", code, e)
-
-    if results:
-        store.save_live_index(results, now_str())
-    logger.info("intraday_live 完成，共 %s 只", len(results))
-    return results
+    if index:
+        store.save_live_index(index, now_str())
+    logger.info("盘中采集完成，共 %s 只", len(index))
+    return index
 
 
 def run_intraday_snapshot() -> list[dict]:
     """调度器入口：盘中自选股实时快照。"""
-    logger.info("intraday_snapshot 启动")
+    logger.info("盘中快照启动")
     return run_intraday_live()
 
 

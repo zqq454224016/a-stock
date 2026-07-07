@@ -1,42 +1,42 @@
 {
-  "updated_at": "2026-07-06 23:29:33",
+  "updated_at": "2026-07-07 21:02:10",
   "results": [
     {
       "code": "600378",
       "strategy": "ma_cross",
-      "annual_return_pct": 110.22,
-      "max_drawdown_pct": -20.86,
-      "sharpe_ratio": 1.79,
+      "annual_return_pct": 106.36,
+      "max_drawdown_pct": -20.83,
+      "sharpe_ratio": 1.74,
       "win_rate_pct": 33.33,
       "oos_avg_return_pct": null,
-      "realized_pnl": 3736.84
+      "realized_pnl": 5278.46
     },
     {
       "code": "603629",
       "strategy": "ma_cross",
-      "annual_return_pct": 269.72,
-      "max_drawdown_pct": -48.06,
-      "sharpe_ratio": 2.27,
+      "annual_return_pct": 218.11,
+      "max_drawdown_pct": -52.0,
+      "sharpe_ratio": 2.02,
       "win_rate_pct": 33.33,
       "oos_avg_return_pct": null,
-      "realized_pnl": 349387.25
+      "realized_pnl": 333621.39
     },
     {
       "code": "000636",
       "strategy": "ma_cross",
-      "annual_return_pct": 238.88,
-      "max_drawdown_pct": -27.09,
-      "sharpe_ratio": 2.46,
-      "win_rate_pct": 50.0,
+      "annual_return_pct": 228.45,
+      "max_drawdown_pct": -28.11,
+      "sharpe_ratio": 2.41,
+      "win_rate_pct": 57.14,
       "oos_avg_return_pct": null,
-      "realized_pnl": 22736.09
+      "realized_pnl": 223835.93
     },
     {
       "code": "000988",
       "strategy": "ma_cross",
-      "annual_return_pct": 146.25,
+      "annual_return_pct": 152.61,
       "max_drawdown_pct": -28.25,
-      "sharpe_ratio": 1.88,
+      "sharpe_ratio": 1.93,
       "win_rate_pct": 66.67,
       "oos_avg_return_pct": null,
       "realized_pnl": 175026.47

@@ -1,0 +1,57 @@
+{
+  "updated_at": "2026-07-07 11:50:05",
+  "items": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "status": "ok",
+      "window_days": 10,
+      "start_knowledge_cutoff": "2026-06-22",
+      "end_target_date": "2026-07-06",
+      "step_count": 10,
+      "hit_rate": 0.0,
+      "total_return_pct": -2.58,
+      "up_prediction_count": 0,
+      "down_prediction_count": 0
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "status": "ok",
+      "window_days": 10,
+      "start_knowledge_cutoff": "2026-06-22",
+      "end_target_date": "2026-07-06",
+      "step_count": 10,
+      "hit_rate": 0.1,
+      "total_return_pct": -10.99,
+      "up_prediction_count": 0,
+      "down_prediction_count": 4
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "status": "ok",
+      "window_days": 10,
+      "start_knowledge_cutoff": "2026-06-22",
+      "end_target_date": "2026-07-06",
+      "step_count": 10,
+      "hit_rate": 0.6,
+      "total_return_pct": -19.84,
+      "up_prediction_count": 8,
+      "down_prediction_count": 2
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "status": "ok",
+      "window_days": 10,
+      "start_knowledge_cutoff": "2026-06-22",
+      "end_target_date": "2026-07-06",
+      "step_count": 10,
+      "hit_rate": 0.1,
+      "total_return_pct": -14.3,
+      "up_prediction_count": 3,
+      "down_prediction_count": 0
+    }
+  ]
+}

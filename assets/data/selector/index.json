@@ -1,59 +1,110 @@
 {
-  "updated_at": "2026-07-06 23:29:33",
+  "updated_at": "2026-07-07 21:02:10",
   "items": [
     {
-      "code": "600378",
-      "name": "昊华科技",
-      "trade_date": "2026-07-06",
-      "upside_score": 75.7,
+      "code": "000636",
+      "name": "风华高科",
+      "trade_date": "2026-07-07",
+      "upside_score": 45.53,
       "status": "rejected",
       "rank_bucket": "排除",
-      "top_reason": "因子分 73.6 达到观察线",
-      "top_risk": "预测标记高波动",
+      "top_reason": "预测中性，概率 0.46",
+      "top_risk": "因子分偏低 49.4",
       "reject_reasons": [
         "实际影响数据显著偏负面"
+      ],
+      "candidate_blockers": [
+        "预测尚未形成向上确认",
+        "因子分未达到观察线",
+        "趋势未站上 MA20",
+        "实际影响分为负"
+      ],
+      "next_triggers": [
+        "预测概率提升到 0.55 以上",
+        "因子分提升到 55 以上",
+        "收盘价重新站上 MA20",
+        "实际影响分修复到非负"
       ]
     },
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-06",
-      "upside_score": 42.75,
+      "trade_date": "2026-07-07",
+      "upside_score": 43.05,
       "status": "rejected",
       "rank_bucket": "排除",
       "top_reason": "预测中性，概率 0.54",
-      "top_risk": "因子分偏低 45.4",
+      "top_risk": "因子分偏低 31.3",
       "reject_reasons": [
+        "因子分过低 31.3",
         "实际影响数据显著偏负面"
+      ],
+      "candidate_blockers": [
+        "预测尚未形成向上确认",
+        "因子分未达到观察线",
+        "趋势未站上 MA20",
+        "实际影响分为负"
+      ],
+      "next_triggers": [
+        "预测概率提升到 0.55 以上",
+        "因子分提升到 55 以上",
+        "收盘价重新站上 MA20",
+        "实际影响分修复到非负"
       ]
     },
     {
-      "code": "000636",
-      "name": "风华高科",
-      "trade_date": "2026-07-06",
-      "upside_score": 6.31,
+      "code": "600378",
+      "name": "昊华科技",
+      "trade_date": "2026-07-07",
+      "upside_score": 0.0,
       "status": "rejected",
       "rank_bucket": "排除",
       "top_reason": "收盘价站上 MA60",
-      "top_risk": "因子分偏低 36.2",
+      "top_risk": "因子分偏低 50.1",
       "reject_reasons": [
-        "预测方向为 down",
-        "因子分过低 36.2",
-        "实际影响数据显著偏负面"
+        "预测方向为 down"
+      ],
+      "candidate_blockers": [
+        "预测尚未形成向上确认",
+        "因子分未达到观察线",
+        "趋势未站上 MA20",
+        "实际影响分为负"
+      ],
+      "next_triggers": [
+        "预测方向从 down 修复为 neutral/up",
+        "预测概率提升到 0.55 以上",
+        "因子分提升到 55 以上",
+        "收盘价重新站上 MA20",
+        "实际影响分修复到非负"
       ]
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-06",
+      "trade_date": "2026-07-07",
       "upside_score": 0.0,
       "status": "rejected",
       "rank_bucket": "排除",
-      "top_reason": "收盘价站上 MA60",
-      "top_risk": "因子分偏低 48.7",
+      "top_reason": "回测夏普 2.02",
+      "top_risk": "因子分偏低 39.4",
       "reject_reasons": [
         "预测方向为 down",
+        "因子分过低 39.4",
         "实际影响数据显著偏负面"
+      ],
+      "candidate_blockers": [
+        "预测尚未形成向上确认",
+        "因子分未达到观察线",
+        "趋势未站上 MA20",
+        "实际影响分为负"
+      ],
+      "next_triggers": [
+        "预测方向从 down 修复为 neutral/up",
+        "预测概率提升到 0.55 以上",
+        "因子分提升到 55 以上",
+        "收盘价重新站上 MA20",
+        "实际影响分修复到非负",
+        "回测最大回撤收敛到 35% 内"
       ]
     }
   ]

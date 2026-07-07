@@ -1,20 +1,20 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-06",
-  "updated_at": "2026-07-06 23:29:03",
+  "trade_date": "2026-07-07",
+  "updated_at": "2026-07-07 21:01:28",
   "version": "1.0.0",
   "fundamentals": {
     "source": "eastmoney_value",
-    "trade_date": "2026-07-06",
-    "close": 58.5,
-    "market_cap_yi": 676.85,
-    "float_cap_yi": 676.85,
-    "pe_ttm": 220.25693027,
-    "pe_static": 238.90320893,
-    "pb": 5.4222121,
-    "ps": 11.28619306,
-    "peg": -14.573722420381
+    "trade_date": "2026-07-07",
+    "close": 61.26,
+    "market_cap_yi": 708.79,
+    "float_cap_yi": 708.79,
+    "pe_ttm": 230.64853929,
+    "pe_static": 250.17453981,
+    "pb": 5.67802928,
+    "ps": 11.81866986,
+    "peg": -15.261303170612
   },
   "corporate": {
     "dividends": [],
@@ -51,7 +51,7 @@
     "margin": null
   },
   "index_context": {
-    "trade_date": "2026-07-06",
+    "trade_date": "2026-07-07",
     "benchmarks": [
       {
         "name": "上证指数",
@@ -68,10 +68,10 @@
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -861.15,
+      "main_net": -758.28,
       "retail_net": 0.0
     },
-    "stock_return_20d": -1.93
+    "stock_return_20d": 10.32
   },
   "cross_source": null,
   "quality_ref": {

@@ -7,6 +7,7 @@ from quant_system.config.db_config import DBConfig
 from quant_system.pipeline.normalizer import load_watchlist, normalize_code
 from quant_system.storage.json_store import JsonStore
 from quant_system.utils.logger import get_logger
+from quant_system.utils.market_scope import filter_research_stocks
 
 logger = get_logger(__name__)
 
@@ -68,7 +69,10 @@ def ensure_watchlist_history(
     """补录不足 MVP 历史窗口的自选股，返回本次 backfill 的代码。"""
     cfg = CrawlerConfig()
     min_days = min_days or cfg.mvp_hist_days
-    need = insufficient_history_codes(codes, min_days)
+    target_codes = [normalize_code(c) for c in codes] if codes else [
+        normalize_code(s["code"]) for s in filter_research_stocks(load_watchlist(cfg), cfg, reason="历史补录")
+    ]
+    need = insufficient_history_codes(target_codes, min_days)
     if not need:
         return []
 

@@ -1,35 +1,33 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "version": "1.0.0",
-  "updated_at": "2026-07-06 23:29:33",
-  "summary": "综合因子偏多，可纳入观察池",
+  "updated_at": "2026-07-07 21:02:11",
+  "summary": "综合因子中性，等待更清晰信号",
   "confidence": "medium",
   "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
   "stock_selection": {
-    "verdict": "positive",
-    "headline": "综合因子偏多，可纳入观察池",
-    "composite_score": 73.6,
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 50.1,
     "evidence": [
-      "技术分 87.0",
-      "情绪分 61.0",
+      "技术分 52.0",
+      "情绪分 46.5",
       "基本面分 50.0",
       "趋势 震荡",
-      "舆情 中性"
+      "舆情 看空"
     ],
     "drivers": [
-      "above_ma20",
-      "rsi14_strong",
-      "macd_hist_positive",
-      "momentum_20_up",
-      "ma20_breakout"
+      "rsi14_neutral_up",
+      "macd_hist_negative",
+      "momentum_20_up"
     ],
     "risks": [
       "not_backtested",
       "technical_only"
     ],
-    "primary_signal": "bullish",
+    "primary_signal": "neutral",
     "trend": "震荡"
   },
   "strategy_diagnosis": {
@@ -44,9 +42,9 @@
       "考虑提高买入阈值或叠加趋势过滤"
     ],
     "metrics": {
-      "annual_return_pct": 110.22,
-      "max_drawdown_pct": -20.86,
-      "sharpe_ratio": 1.79,
+      "annual_return_pct": 106.36,
+      "max_drawdown_pct": -20.83,
+      "sharpe_ratio": 1.74,
       "win_rate_pct": 33.33,
       "closed_trades": 6
     },
@@ -54,8 +52,8 @@
       {
         "reason": "MA20死叉",
         "count": 6,
-        "total_pnl": 3736.84,
-        "avg_pnl": 622.81,
+        "total_pnl": 5278.46,
+        "avg_pnl": 879.74,
         "win_rate_pct": 33.33
       }
     ],
@@ -64,18 +62,15 @@
   "prediction_review": {
     "available": true,
     "horizon": "5d",
-    "direction": "neutral",
-    "probability": 0.5042,
+    "direction": "down",
+    "probability": 0.281,
     "confidence": "high",
-    "expected_return": 0.0345,
+    "expected_return": -0.0167,
     "alignment": "partial",
-    "drivers": [
-      "站上MA20",
-      "MACD柱为正"
-    ],
+    "drivers": [],
     "notes": [
-      "5d 预测 震荡，概率 50.4%，置信度 high",
-      "历史样本 144，回测胜率 33.3%",
+      "5d 预测 偏空，概率 28.1%，置信度 high",
+      "历史样本 65，回测胜率 33.3%",
       "信号与预测部分一致，存在中性分歧",
       "风险标记: high_volatility"
     ],

@@ -9,10 +9,12 @@ import pandas as pd
 
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.data_source.base_crawler import BaseCrawler
+from quant_system.data_source.tonghuashun import TonghuashunCrawler
 from quant_system.pipeline.normalizer import normalize_code, to_symbol
 from quant_system.utils.i18n_labels import humanize_fetch_error, translate_source_fail
 from quant_system.utils.logger import get_logger
 from quant_system.utils.retry import call_with_retry
+from quant_system.utils.source_guard import is_eastmoney_disabled, is_ths_disabled, note_eastmoney_failure
 from quant_system.utils.time_utils import today_str
 
 logger = get_logger(__name__)
@@ -41,6 +43,7 @@ class EnhanceAPI(BaseCrawler):
     def __init__(self, config: CrawlerConfig | None = None):
         super().__init__(config)
         self._ak = None
+        self._ths = TonghuashunCrawler(config)
         self._lock = threading.Lock()
         self._disabled: set[str] = set()
         self._disabled_prefixes: set[str] = set()
@@ -82,12 +85,19 @@ class EnhanceAPI(BaseCrawler):
             else:
                 self._disabled.add(label)
 
+    def _is_eastmoney_label(self, label: str) -> bool:
+        return not label.startswith("valuation_baidu")
+
     def _call(self, label: str, fn: Callable, *args, **kwargs) -> tuple[Any | None, str | None]:
+        if self._is_eastmoney_label(label) and is_eastmoney_disabled():
+            return None, label
         if self._is_disabled(label):
             return None, label
         try:
             return self._retry(fn, *args, **kwargs), None
         except Exception as e:
+            if self._is_eastmoney_label(label):
+                note_eastmoney_failure(e)
             self._disable(label)
             human = humanize_fetch_error(e)
             with self._lock:
@@ -162,6 +172,17 @@ class EnhanceAPI(BaseCrawler):
             if not out.get("source"):
                 out["source"] = "eastmoney_info"
 
+        if not out.get("source") and not is_ths_disabled():
+            try:
+                ths_val = self._ths.fetch_valuation(code)
+                for k, v in ths_val.items():
+                    if v is not None and out.get(k) is None:
+                        out[k] = v
+                if ths_val.get("source"):
+                    out["source"] = ths_val["source"]
+            except Exception:
+                pass
+
         return out, failed
 
     def fetch_dividends(self, code: str, limit: int = 5) -> tuple[list[dict[str, Any]], list[str]]:
@@ -235,6 +256,13 @@ class EnhanceAPI(BaseCrawler):
             }, failed[:1]
         if failed:
             self._disable("earnings_forecast_probe")
+        if not is_ths_disabled():
+            try:
+                ths_fc = self._ths.fetch_earnings_forecast(code)
+                if ths_fc:
+                    return ths_fc, failed[:1]
+            except Exception:
+                pass
         return None, failed[:1] if failed else ["earnings_forecast"]
 
     def fetch_northbound(self, code: str, days: int = 5) -> tuple[dict[str, Any], list[str]]:
@@ -330,6 +358,8 @@ class EnhanceAPI(BaseCrawler):
 
     def fetch_market_fund_flow(self) -> dict[str, Any]:
         from quant_system.data_source.eastmoney import EastMoneyCrawler
+        if is_eastmoney_disabled():
+            return {"trade_date": None, "north_net": 0.0, "main_net": 0.0, "retail_net": 0.0}
         flow, trade_date = EastMoneyCrawler(self.config).fetch_fund_flow()
         return {"trade_date": trade_date, **flow}
 

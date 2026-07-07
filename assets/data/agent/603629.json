@@ -1,34 +1,35 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "version": "1.0.0",
-  "updated_at": "2026-07-06 23:29:33",
+  "updated_at": "2026-07-07 21:02:11",
   "summary": "谨慎",
   "confidence": "low",
   "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
   "stock_selection": {
-    "verdict": "neutral",
-    "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 48.7,
+    "verdict": "negative",
+    "headline": "综合因子偏空，谨慎对待",
+    "composite_score": 39.4,
     "evidence": [
-      "技术分 44.0",
-      "情绪分 65.6",
+      "技术分 24.0",
+      "情绪分 72.2",
       "基本面分 36.0",
-      "趋势 震荡",
-      "舆情 中性"
+      "趋势 偏空",
+      "舆情 看多"
     ],
     "drivers": [
-      "rsi14_neutral_up",
-      "macd_hist_negative"
+      "ma_death_cross",
+      "macd_hist_negative",
+      "ma20_breakdown"
     ],
     "risks": [
       "not_backtested",
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "neutral",
-    "trend": "震荡"
+    "primary_signal": "bearish",
+    "trend": "偏空"
   },
   "strategy_diagnosis": {
     "available": true,
@@ -36,17 +37,17 @@
     "verdict": "weak",
     "findings": [
       "胜率偏低（33.33%）",
-      "历史最大回撤较大（-48.06%）",
-      "单笔最大亏损 -11801.6（MA20死叉）"
+      "历史最大回撤较大（-52.0%）",
+      "单笔最大亏损 -11214.27（MA20死叉）"
     ],
     "suggestions": [
       "考虑提高买入阈值或叠加趋势过滤",
       "设置账户级回撤熔断，避免单边行情重仓"
     ],
     "metrics": {
-      "annual_return_pct": 269.72,
-      "max_drawdown_pct": -48.06,
-      "sharpe_ratio": 2.27,
+      "annual_return_pct": 218.11,
+      "max_drawdown_pct": -52.0,
+      "sharpe_ratio": 2.02,
       "win_rate_pct": 33.33,
       "closed_trades": 6
     },
@@ -54,8 +55,8 @@
       {
         "reason": "MA20死叉",
         "count": 6,
-        "total_pnl": 349387.25,
-        "avg_pnl": 58231.21,
+        "total_pnl": 333621.39,
+        "avg_pnl": 55603.57,
         "win_rate_pct": 33.33
       }
     ],
@@ -68,15 +69,17 @@
     "probability": 0.2368,
     "confidence": "high",
     "expected_return": -0.0615,
-    "alignment": "partial",
-    "drivers": [],
+    "alignment": "aligned",
+    "drivers": [
+      "均线死叉"
+    ],
     "notes": [
       "5d 预测 偏空，概率 23.7%，置信度 high",
       "历史样本 58，回测胜率 33.3%",
-      "信号与预测部分一致，存在中性分歧",
+      "初级技术信号与预测方向一致",
       "风险标记: high_volatility",
       "风险标记: high_historical_drawdown",
-      "策略历史回撤 -48.06% 偏高"
+      "策略历史回撤 -52.0% 偏高"
     ],
     "failure_conditions": [
       "high_volatility",

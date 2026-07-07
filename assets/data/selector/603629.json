@@ -1,36 +1,51 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "selector_version": "1.0.0",
   "upside_score": 0.0,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
-    "收盘价站上 MA60",
-    "回测夏普 2.27"
+    "回测夏普 2.02"
   ],
   "risks": [
-    "因子分偏低 48.7",
+    "因子分偏低 39.4",
     "预测方向向下，概率 0.24",
     "预测标记高波动",
     "未站上 MA20",
-    "历史最大回撤较大 -48.06%",
+    "5日跌幅较大",
+    "历史最大回撤较大 -52.00%",
     "回测胜率偏低 33.33%",
-    "实际影响偏负面，impact_score=-33",
+    "实际影响偏负面，impact_score=-27",
     "影响数据限制：requires_q2_official_report_or_forecast"
   ],
   "reject_reasons": [
     "预测方向为 down",
+    "因子分过低 39.4",
     "实际影响数据显著偏负面"
+  ],
+  "candidate_blockers": [
+    "预测尚未形成向上确认",
+    "因子分未达到观察线",
+    "趋势未站上 MA20",
+    "实际影响分为负"
+  ],
+  "next_triggers": [
+    "预测方向从 down 修复为 neutral/up",
+    "预测概率提升到 0.55 以上",
+    "因子分提升到 55 以上",
+    "收盘价重新站上 MA20",
+    "实际影响分修复到非负",
+    "回测最大回撤收敛到 35% 内"
   ],
   "metrics": {
     "quality_score": 100.0,
-    "factor_score": 48.7,
+    "factor_score": 39.4,
     "prediction_direction": "down",
     "prediction_probability": 0.2368,
-    "impact_score": -33.0,
+    "impact_score": -27.0,
     "impact_direction": "negative"
   },
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

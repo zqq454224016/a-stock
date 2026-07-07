@@ -13,6 +13,7 @@ from quant_system.storage.json_store import JsonStore
 from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.predict_job import run_predict_job
 from quant_system.utils.logger import get_logger
+from quant_system.utils.market_scope import filter_research_stocks
 from quant_system.utils.time_utils import now_str
 
 logger = get_logger(__name__)
@@ -28,7 +29,10 @@ def run_selector_job(
     """生成上涨候选池排名。"""
     cfg = CrawlerConfig()
     store = JsonStore(DBConfig())
-    stocks = [{"code": normalize_code(c), "name": ""} for c in codes] if codes else load_watchlist(cfg)
+    stocks = (
+        [{"code": normalize_code(c), "name": ""} for c in codes]
+        if codes else filter_research_stocks(load_watchlist(cfg), cfg, reason="上涨候选")
+    )
     if not stocks:
         logger.error("未配置自选股")
         return []
@@ -75,6 +79,8 @@ def run_selector_job(
             "top_reason": (r.get("reasons") or [""])[0],
             "top_risk": (r.get("risks") or [""])[0],
             "reject_reasons": r.get("reject_reasons") or [],
+            "candidate_blockers": r.get("candidate_blockers") or [],
+            "next_triggers": r.get("next_triggers") or [],
         }
         for r in rows
     ], now_str())

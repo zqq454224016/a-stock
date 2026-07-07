@@ -1,7 +1,7 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "version": "1.0.0",
   "impact_score": -20,
   "impact_direction": "negative",
@@ -15,17 +15,17 @@
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "unlock_value_yi": 134.95,
+        "unlock_value_yi": 129.35,
         "pct_float": 0.183926289069,
         "holder_type": "定向增发机构配售股份"
       },
       "evidence": [
-        "最近解禁 2027-07-26，规模 134.95 亿元"
+        "最近解禁 2027-07-26，规模 129.35 亿元"
       ],
       "source": "enhance.lockups",
       "limitations": []
     }
   ],
   "limitations": [],
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

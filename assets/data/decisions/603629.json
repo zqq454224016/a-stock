@@ -1,7 +1,7 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "decision_version": "1.0.0",
   "action": "watch",
   "position_suggestion": 0.0,
@@ -10,11 +10,11 @@
     "预测、因子或回测条件不足，暂不买入"
   ],
   "risks": [
-    "实际影响数据偏负面，impact_score=-33.0",
+    "实际影响数据偏负面，impact_score=-27.0",
     "high_volatility",
     "high_historical_drawdown",
     "回测胜率偏低 33.33%",
-    "历史最大回撤较大 -48.06%"
+    "历史最大回撤较大 -52.0%"
   ],
   "invalid_conditions": [],
   "evidence": {
@@ -28,7 +28,7 @@
         "high_historical_drawdown"
       ]
     },
-    "factor_score": 48.7,
+    "factor_score": 39.4,
     "quality_score": 100.0,
     "backtest_health": "weak",
     "position": {
@@ -36,15 +36,15 @@
       "unrealized_pnl_pct": 0.0,
       "market_value": null
     },
-    "agent_summary": "综合因子中性，等待更清晰信号",
+    "agent_summary": "谨慎",
     "impact": {
-      "impact_score": -33.0,
+      "impact_score": -27.0,
       "impact_direction": "negative",
       "events": [
         {
           "event_type": "valuation_pressure",
           "title": "估值压力",
-          "impact_score": -33,
+          "impact_score": -27,
           "impact_direction": "negative"
         },
         {
@@ -61,5 +61,5 @@
   },
   "requires_human_review": false,
   "disclaimer": "指导性意见，仅供研究和模拟交易，不构成投资建议",
-  "updated_at": "2026-07-06 23:29:33"
+  "updated_at": "2026-07-07 21:02:10"
 }

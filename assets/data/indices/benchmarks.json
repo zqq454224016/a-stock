@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-07-06 23:29:03",
-  "trade_date": "2026-07-06",
+  "updated_at": "2026-07-07 21:01:29",
+  "trade_date": "2026-07-07",
   "indices": [
     {
       "name": "上证指数",
@@ -19,7 +19,7 @@
   ],
   "fund_flow": {
     "north_net": 0.0,
-    "main_net": -861.15,
+    "main_net": -758.28,
     "retail_net": 0.0
   }
 }

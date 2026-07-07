@@ -1,36 +1,36 @@
 {
-  "updated_at": "2026-07-06 23:29:33",
+  "updated_at": "2026-07-07 21:02:10",
   "stocks": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-06",
-      "close": 68.41,
-      "change_pct": -10.0,
-      "signal": "弱势"
+      "trade_date": "2026-07-07",
+      "close": 65.57,
+      "change_pct": -4.15,
+      "signal": "震荡"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-06",
-      "close": 172.9,
-      "change_pct": 3.78,
-      "signal": "强势"
+      "trade_date": "2026-07-07",
+      "close": 111.07,
+      "change_pct": -10.0,
+      "signal": "震荡"
     },
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-06",
-      "close": 58.5,
-      "change_pct": -7.48,
-      "signal": "弱势"
+      "trade_date": "2026-07-07",
+      "close": 61.26,
+      "change_pct": 4.72,
+      "signal": "强势"
     },
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-06",
-      "close": 149.7,
-      "change_pct": -2.76,
+      "trade_date": "2026-07-07",
+      "close": 153.59,
+      "change_pct": 2.6,
       "signal": "弱势"
     }
   ]

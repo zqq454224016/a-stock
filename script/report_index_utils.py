@@ -94,6 +94,18 @@ def build_predict_items() -> str:
     return _hub_item("汇总", "走势预测汇总", "predict/index.html", "predict", "走势预测汇总")
 
 
+def build_replay_items() -> str:
+    if not (ROOT / "reports" / "replay" / "index.html").exists():
+        return ""
+    return _hub_item("汇总", "十日前滚动推演", "replay/index.html", "replay", "十日前滚动推演")
+
+
+def build_review_items() -> str:
+    if not (ROOT / "reports" / "review" / "index.html").exists():
+        return ""
+    return _hub_item("汇总", "后验复盘", "review/index.html", "review", "后验复盘")
+
+
 def build_decision_items() -> str:
     if not (ROOT / "reports" / "decision" / "index.html").exists():
         return ""
@@ -174,6 +186,8 @@ def sync_report_index_hubs() -> bool:
         ("agent", "agent", "Agent 分析", build_agent_items()),
         ("factors", "factors", "多因子排名", build_factor_items()),
         ("predict", "predict", "走势预测", build_predict_items()),
+        ("replay", "replay", "历史推演", build_replay_items()),
+        ("review", "review", "后验复盘", build_review_items()),
         ("selector", "selector", "上涨候选", build_selector_items()),
         ("decision", "decision", "操作建议", build_decision_items()),
         ("impact", "impact", "实际影响", build_impact_items()),

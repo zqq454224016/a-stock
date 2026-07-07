@@ -1,20 +1,18 @@
 {
   "code": "600378",
-  "trade_date": "2026-07-06",
+  "trade_date": "2026-07-07",
   "horizon": "5d",
-  "signal": "bullish",
-  "signal_score": 87.0,
+  "signal": "neutral",
+  "signal_score": 56.0,
   "drivers": [
-    "above_ma20",
-    "rsi14_strong",
-    "macd_hist_positive",
-    "momentum_20_up",
-    "ma20_breakout"
+    "rsi14_neutral_up",
+    "macd_hist_negative",
+    "momentum_20_up"
   ],
   "limitations": [
     "not_backtested",
     "technical_only"
   ],
   "signal_version": "1.0.0",
-  "updated_at": "2026-07-06 23:29:03"
+  "updated_at": "2026-07-07 21:01:29"
 }

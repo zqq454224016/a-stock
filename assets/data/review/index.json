@@ -1,0 +1,49 @@
+{
+  "updated_at": "2026-07-07 21:02:11",
+  "items": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "status": "ok",
+      "trade_date": "2026-07-07",
+      "evaluated_count": 0,
+      "pending_count": 9,
+      "hit_rate": null,
+      "avg_return_pct": null,
+      "worst_adverse_pct": null
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "status": "ok",
+      "trade_date": "2026-07-07",
+      "evaluated_count": 0,
+      "pending_count": 9,
+      "hit_rate": null,
+      "avg_return_pct": null,
+      "worst_adverse_pct": null
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "status": "ok",
+      "trade_date": "2026-07-07",
+      "evaluated_count": 0,
+      "pending_count": 9,
+      "hit_rate": null,
+      "avg_return_pct": null,
+      "worst_adverse_pct": null
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "status": "ok",
+      "trade_date": "2026-07-07",
+      "evaluated_count": 0,
+      "pending_count": 9,
+      "hit_rate": null,
+      "avg_return_pct": null,
+      "worst_adverse_pct": null
+    }
+  ]
+}

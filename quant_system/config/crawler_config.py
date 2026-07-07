@@ -32,6 +32,10 @@ class CrawlerConfig:
     skip_bulk_spot: bool = os.getenv("CRAWLER_SKIP_BULK_SPOT", "0") == "1"  # 强制跳过全市场行情
     fetch_workers: int = int(os.getenv("CRAWLER_FETCH_WORKERS", "4"))  # 并发拉取线程数
     enhance_probe_retries: int = 1  # 增强数据探测重试次数
+    disable_eastmoney: bool = os.getenv("CRAWLER_DISABLE_EASTMONEY", "0") == "1"  # 强制跳过东财
+    disable_ths: bool = os.getenv("CRAWLER_DISABLE_THS", "0") == "1"  # 强制跳过同花顺
+    extra_sources: str = os.getenv("CRAWLER_EXTRA_SOURCES", "ths,xueqiu,tencent")  # 备用行情源
+    star_board_reference_only: bool = os.getenv("STAR_BOARD_REFERENCE_ONLY", "1") != "0"
 
     data_dir: Path = PROJECT_ROOT / "assets" / "data"
     stock_data_dir: Path = PROJECT_ROOT / "assets" / "data" / "stocks"
@@ -42,7 +46,7 @@ class CrawlerConfig:
         "000001": "上证指数",
         "399001": "深证成指",
         "399006": "创业板指",
-        "000688": "科创50",
+        "000688": "科创50参考",
         "899050": "北证50",
     })
 
@@ -50,7 +54,7 @@ class CrawlerConfig:
         "sh000001": ("000001", "上证指数"),
         "sz399001": ("399001", "深证成指"),
         "sz399006": ("399006", "创业板指"),
-        "sh000688": ("000688", "科创50"),
+        "sh000688": ("000688", "科创50参考"),
         "bj899050": ("899050", "北证50"),
     })
 
