@@ -1,49 +1,60 @@
 {
-  "updated_at": "2026-07-07 21:00:53",
+  "updated_at": "2026-07-10 17:41:26",
   "stocks": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-07",
-      "close": 65.57,
-      "change_pct": -4.15,
-      "trend": "震荡",
+      "trade_date": "2026-07-10",
+      "close": 60.58,
+      "change_pct": -8.489,
+      "trend": "偏空",
       "quality_score": 100.0,
-      "primary_signal": "neutral",
+      "primary_signal": "bearish",
       "report": "reports/stock/600378.html"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-07",
-      "close": 111.07,
-      "change_pct": -10.0,
+      "trade_date": "2026-07-10",
+      "close": 116.6,
+      "change_pct": -5.472,
       "trend": "偏空",
       "quality_score": 100.0,
-      "primary_signal": "bearish",
+      "primary_signal": "neutral",
       "report": "reports/stock/603629.html"
     },
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-07",
-      "close": 61.26,
-      "change_pct": 4.72,
+      "trade_date": "2026-07-10",
+      "close": 60.01,
+      "change_pct": -6.889,
       "trend": "偏空",
       "quality_score": 100.0,
-      "primary_signal": "neutral",
+      "primary_signal": "bearish",
       "report": "reports/stock/000636.html"
     },
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-07",
-      "close": 153.59,
-      "change_pct": 2.6,
-      "trend": "偏空",
+      "trade_date": "2026-07-10",
+      "close": 158.07,
+      "change_pct": -0.585,
+      "trend": "震荡",
       "quality_score": 100.0,
-      "primary_signal": "bearish",
+      "primary_signal": "neutral",
       "report": "reports/stock/000988.html"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "trade_date": "2026-07-10",
+      "close": 242.3,
+      "change_pct": -7.278,
+      "trend": "震荡",
+      "quality_score": 100.0,
+      "primary_signal": "neutral",
+      "report": "reports/stock/002384.html"
     }
   ]
 }

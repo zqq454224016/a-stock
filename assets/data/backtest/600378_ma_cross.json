@@ -3,8 +3,8 @@
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
   "engine_version": "1.1.0",
-  "data_version": "daily_kline_600378_20260707",
-  "quality_score": 100.0,
+  "data_version": "daily_kline_600378_20260710",
+  "quality_score": 90.0,
   "config": {
     "initial_cash": 100000.0,
     "commission_rate": 0.0003,
@@ -15,63 +15,42 @@
     "min_daily_amount_yi": 0.05
   },
   "metrics": {
-    "total_return_pct": 104.59,
-    "annual_return_pct": 106.36,
-    "max_drawdown_pct": -20.83,
-    "sharpe_ratio": 1.74,
-    "win_rate_pct": 33.33,
-    "profit_loss_ratio": 2.46,
-    "trade_count": 13,
-    "closed_trades": 6,
-    "final_equity": 204591.46
+    "total_return_pct": 96.65,
+    "annual_return_pct": 98.26,
+    "max_drawdown_pct": -26.0,
+    "sharpe_ratio": 1.63,
+    "win_rate_pct": 40.0,
+    "profit_loss_ratio": 2.22,
+    "trade_count": 11,
+    "closed_trades": 5,
+    "final_equity": 196647.22
   },
   "attribution": {
-    "realized_pnl": 5278.46,
-    "unrealized_hint": 99313.0,
-    "closed_trades": 6,
-    "avg_hold_days": 27.0,
+    "realized_pnl": 10098.58,
+    "unrealized_hint": 86548.64,
+    "closed_trades": 5,
+    "avg_hold_days": 32.4,
     "by_reason": [
       {
         "reason": "MA20死叉",
-        "count": 6,
-        "total_pnl": 5278.46,
-        "avg_pnl": 879.74,
-        "win_rate_pct": 33.33
+        "count": 5,
+        "total_pnl": 10098.58,
+        "avg_pnl": 2019.72,
+        "win_rate_pct": 40.0
       }
     ],
     "best_trade": {
       "date": "2026-02-05",
-      "pnl": 17513.65,
+      "pnl": 18681.21,
       "reason": "MA20死叉"
     },
     "worst_trade": {
       "date": "2025-11-24",
-      "pnl": -7775.39,
+      "pnl": -8277.03,
       "reason": "MA20死叉"
     }
   },
   "equity_curve": [
-    {
-      "date": "2025-06-26",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 26.12
-    },
-    {
-      "date": "2025-06-27",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 26.67
-    },
-    {
-      "date": "2025-06-30",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 26.9
-    },
     {
       "date": "2025-07-01",
       "equity": 100000.0,
@@ -95,1742 +74,1742 @@
     },
     {
       "date": "2025-07-04",
-      "equity": 99391.98,
-      "cash": 2192.98,
-      "shares": 3700,
+      "equity": 100000.0,
+      "cash": 100000.0,
+      "shares": 0,
       "close": 26.27
     },
     {
       "date": "2025-07-07",
-      "equity": 97430.98,
-      "cash": 2192.98,
-      "shares": 3700,
+      "equity": 100000.0,
+      "cash": 100000.0,
+      "shares": 0,
       "close": 25.74
     },
     {
       "date": "2025-07-08",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 25.1
     },
     {
       "date": "2025-07-09",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 24.88
     },
     {
       "date": "2025-07-10",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 24.92
     },
     {
       "date": "2025-07-11",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 25.0
     },
     {
       "date": "2025-07-14",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 24.9
     },
     {
       "date": "2025-07-15",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 24.84
     },
     {
       "date": "2025-07-16",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 24.94
     },
     {
       "date": "2025-07-17",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 25.57
     },
     {
       "date": "2025-07-18",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 25.41
     },
     {
       "date": "2025-07-21",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 25.47
     },
     {
       "date": "2025-07-22",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 26.04
     },
     {
       "date": "2025-07-23",
-      "equity": 97027.44,
-      "cash": 97027.44,
+      "equity": 100000.0,
+      "cash": 100000.0,
       "shares": 0,
       "close": 25.62
     },
     {
       "date": "2025-07-24",
-      "equity": 97027.44,
-      "cash": 97027.44,
-      "shares": 0,
+      "equity": 101742.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 26.08
     },
     {
       "date": "2025-07-25",
-      "equity": 97027.44,
-      "cash": 97027.44,
-      "shares": 0,
+      "equity": 100845.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.85
     },
     {
       "date": "2025-07-28",
-      "equity": 96311.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 100221.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.69
     },
     {
       "date": "2025-07-29",
-      "equity": 95534.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 99402.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.48
     },
     {
       "date": "2025-07-30",
-      "equity": 97495.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 101469.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 26.01
     },
     {
       "date": "2025-07-31",
-      "equity": 95645.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 99519.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.51
     },
     {
       "date": "2025-08-01",
-      "equity": 94720.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 98544.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.26
     },
     {
       "date": "2025-08-04",
-      "equity": 95349.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 99207.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.43
     },
     {
       "date": "2025-08-05",
-      "equity": 96422.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 100338.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.72
     },
     {
       "date": "2025-08-06",
-      "equity": 97939.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 101937.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 26.13
     },
     {
       "date": "2025-08-07",
-      "equity": 97902.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 101898.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 26.12
     },
     {
       "date": "2025-08-08",
-      "equity": 97199.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 101157.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 25.93
     },
     {
       "date": "2025-08-11",
-      "equity": 101195.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 105369.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 27.01
     },
     {
       "date": "2025-08-12",
-      "equity": 103748.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 108060.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 27.7
     },
     {
       "date": "2025-08-13",
-      "equity": 105006.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 109386.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.04
     },
     {
       "date": "2025-08-14",
-      "equity": 103008.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 107280.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 27.5
     },
     {
       "date": "2025-08-15",
-      "equity": 106153.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 110595.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.35
     },
     {
       "date": "2025-08-18",
-      "equity": 107337.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 111843.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.67
     },
     {
       "date": "2025-08-19",
-      "equity": 108114.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 112662.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.88
     },
     {
       "date": "2025-08-20",
-      "equity": 105635.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 110049.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.21
     },
     {
       "date": "2025-08-21",
-      "equity": 104969.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 109347.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.03
     },
     {
       "date": "2025-08-22",
-      "equity": 106597.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 111063.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.47
     },
     {
       "date": "2025-08-25",
-      "equity": 110593.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 115275.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.55
     },
     {
       "date": "2025-08-26",
-      "equity": 111407.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 116133.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.77
     },
     {
       "date": "2025-08-27",
-      "equity": 112147.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 116913.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.97
     },
     {
       "date": "2025-08-28",
-      "equity": 111888.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 116640.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.9
     },
     {
       "date": "2025-08-29",
-      "equity": 112924.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 117732.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.18
     },
     {
       "date": "2025-09-01",
-      "equity": 113923.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 118785.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.45
     },
     {
       "date": "2025-09-02",
-      "equity": 110519.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 115197.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.53
     },
     {
       "date": "2025-09-03",
-      "equity": 107633.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 112155.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.75
     },
     {
       "date": "2025-09-04",
-      "equity": 105450.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 109854.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.16
     },
     {
       "date": "2025-09-05",
-      "equity": 109187.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 113793.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.17
     },
     {
       "date": "2025-09-08",
-      "equity": 113516.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 118356.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.34
     },
     {
       "date": "2025-09-09",
-      "equity": 114885.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 119799.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.71
     },
     {
       "date": "2025-09-10",
-      "equity": 113331.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 118161.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.29
     },
     {
       "date": "2025-09-11",
-      "equity": 113775.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 118629.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.41
     },
     {
       "date": "2025-09-12",
-      "equity": 113072.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 117888.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 30.22
     },
     {
       "date": "2025-09-15",
-      "equity": 111481.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 116211.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.79
     },
     {
       "date": "2025-09-16",
-      "equity": 110630.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 115314.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.56
     },
     {
       "date": "2025-09-17",
-      "equity": 111259.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 115977.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 29.73
     },
     {
       "date": "2025-09-18",
-      "equity": 108521.07,
-      "cash": 1258.07,
-      "shares": 3700,
+      "equity": 113091.17,
+      "cash": 30.17,
+      "shares": 3900,
       "close": 28.99
     },
     {
       "date": "2025-09-19",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 29.37
     },
     {
       "date": "2025-09-22",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 29.12
     },
     {
       "date": "2025-09-23",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 28.96
     },
     {
       "date": "2025-09-24",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 29.85
     },
     {
       "date": "2025-09-25",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 30.28
     },
     {
       "date": "2025-09-26",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 29.48
     },
     {
       "date": "2025-09-29",
-      "equity": 107905.31,
-      "cash": 107905.31,
+      "equity": 112442.12,
+      "cash": 112442.12,
       "shares": 0,
       "close": 30.43
     },
     {
       "date": "2025-09-30",
-      "equity": 108116.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 112659.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 30.53
     },
     {
       "date": "2025-10-09",
-      "equity": 111896.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 116547.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 31.61
     },
     {
       "date": "2025-10-10",
-      "equity": 110041.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 114639.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 31.08
     },
     {
       "date": "2025-10-13",
-      "equity": 107871.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 112407.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 30.46
     },
     {
       "date": "2025-10-14",
-      "equity": 106191.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 110679.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 29.98
     },
     {
       "date": "2025-10-15",
-      "equity": 105911.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 110391.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 29.9
     },
     {
       "date": "2025-10-16",
-      "equity": 103671.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 108087.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 29.26
     },
     {
       "date": "2025-10-17",
-      "equity": 99891.81,
-      "cash": 1261.81,
-      "shares": 3500,
+      "equity": 104199.67,
+      "cash": 2751.67,
+      "shares": 3600,
       "close": 28.18
     },
     {
       "date": "2025-10-20",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 28.35
     },
     {
       "date": "2025-10-21",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 28.44
     },
     {
       "date": "2025-10-22",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 28.28
     },
     {
       "date": "2025-10-23",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 28.61
     },
     {
       "date": "2025-10-24",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 28.81
     },
     {
       "date": "2025-10-27",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 29.0
     },
     {
       "date": "2025-10-28",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 30.11
     },
     {
       "date": "2025-10-29",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 31.37
     },
     {
       "date": "2025-10-30",
-      "equity": 100503.12,
-      "cash": 100503.12,
+      "equity": 104828.44,
+      "cash": 104828.44,
       "shares": 0,
       "close": 31.59
     },
     {
       "date": "2025-10-31",
-      "equity": 100220.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 104527.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 31.54
     },
     {
       "date": "2025-11-03",
-      "equity": 98546.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 102745.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 31.0
     },
     {
       "date": "2025-11-04",
-      "equity": 97058.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 101161.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 30.52
     },
     {
       "date": "2025-11-05",
-      "equity": 97647.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 101788.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 30.71
     },
     {
       "date": "2025-11-06",
-      "equity": 100313.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 104626.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 31.57
     },
     {
       "date": "2025-11-07",
-      "equity": 102328.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 106771.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 32.22
     },
     {
       "date": "2025-11-10",
-      "equity": 102483.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 106936.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 32.27
     },
     {
       "date": "2025-11-11",
-      "equity": 101770.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 106177.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 32.04
     },
     {
       "date": "2025-11-12",
-      "equity": 103258.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 107761.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 32.52
     },
     {
       "date": "2025-11-13",
-      "equity": 104994.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 109609.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 33.08
     },
     {
       "date": "2025-11-14",
-      "equity": 103661.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 108190.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 32.65
     },
     {
       "date": "2025-11-17",
-      "equity": 102235.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 106672.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 32.19
     },
     {
       "date": "2025-11-18",
-      "equity": 100561.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 104890.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 31.65
     },
     {
       "date": "2025-11-19",
-      "equity": 99786.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 104065.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 31.4
     },
     {
       "date": "2025-11-20",
-      "equity": 97492.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 101623.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 30.66
     },
     {
       "date": "2025-11-21",
-      "equity": 92129.77,
-      "cash": 2446.77,
-      "shares": 3100,
+      "equity": 95914.88,
+      "cash": 445.88,
+      "shares": 3300,
       "close": 28.93
     },
     {
       "date": "2025-11-24",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.1
     },
     {
       "date": "2025-11-25",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.29
     },
     {
       "date": "2025-11-26",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.16
     },
     {
       "date": "2025-11-27",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.4
     },
     {
       "date": "2025-11-28",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.98
     },
     {
       "date": "2025-12-01",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.87
     },
     {
       "date": "2025-12-02",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.45
     },
     {
       "date": "2025-12-03",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.89
     },
     {
       "date": "2025-12-04",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.61
     },
     {
       "date": "2025-12-05",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.9
     },
     {
       "date": "2025-12-08",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.87
     },
     {
       "date": "2025-12-09",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.57
     },
     {
       "date": "2025-12-10",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.68
     },
     {
       "date": "2025-12-11",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 29.54
     },
     {
       "date": "2025-12-12",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 30.36
     },
     {
       "date": "2025-12-15",
-      "equity": 92727.73,
-      "cash": 92727.73,
+      "equity": 96551.42,
+      "cash": 96551.42,
       "shares": 0,
       "close": 30.41
     },
     {
       "date": "2025-12-16",
-      "equity": 90960.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 94666.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 29.57
     },
     {
       "date": "2025-12-17",
-      "equity": 92340.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 96138.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 30.03
     },
     {
       "date": "2025-12-18",
-      "equity": 91290.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 95018.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 29.68
     },
     {
       "date": "2025-12-19",
-      "equity": 92220.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 96010.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 29.99
     },
     {
       "date": "2025-12-22",
-      "equity": 93180.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 97034.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 30.31
     },
     {
       "date": "2025-12-23",
-      "equity": 94410.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 98346.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 30.72
     },
     {
       "date": "2025-12-24",
-      "equity": 95550.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 99562.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 31.1
     },
     {
       "date": "2025-12-25",
-      "equity": 98100.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 102282.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 31.95
     },
     {
       "date": "2025-12-26",
-      "equity": 99300.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 103562.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 32.35
     },
     {
       "date": "2025-12-29",
-      "equity": 96810.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 100906.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 31.52
     },
     {
       "date": "2025-12-30",
-      "equity": 96660.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 100746.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 31.47
     },
     {
       "date": "2025-12-31",
-      "equity": 97530.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 101674.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 31.76
     },
     {
       "date": "2026-01-05",
-      "equity": 99240.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 103498.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 32.33
     },
     {
       "date": "2026-01-06",
-      "equity": 102240.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 106698.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 33.33
     },
     {
       "date": "2026-01-07",
-      "equity": 104430.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 109034.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.06
     },
     {
       "date": "2026-01-08",
-      "equity": 104250.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 108842.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.0
     },
     {
       "date": "2026-01-09",
-      "equity": 108270.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 113130.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 35.34
     },
     {
       "date": "2026-01-12",
-      "equity": 108090.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 112938.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 35.28
     },
     {
       "date": "2026-01-13",
-      "equity": 106740.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 111498.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.83
     },
     {
       "date": "2026-01-14",
-      "equity": 104400.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 109002.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.05
     },
     {
       "date": "2026-01-15",
-      "equity": 106320.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 111050.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.69
     },
     {
       "date": "2026-01-16",
-      "equity": 105750.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 110442.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.5
     },
     {
       "date": "2026-01-19",
-      "equity": 116100.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 121482.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 37.95
     },
     {
       "date": "2026-01-20",
-      "equity": 115110.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 120426.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 37.62
     },
     {
       "date": "2026-01-21",
-      "equity": 115470.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 120810.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 37.74
     },
     {
       "date": "2026-01-22",
-      "equity": 116970.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 122410.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 38.24
     },
     {
       "date": "2026-01-23",
-      "equity": 120570.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 126250.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 39.44
     },
     {
       "date": "2026-01-26",
-      "equity": 116010.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 121386.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 37.92
     },
     {
       "date": "2026-01-27",
-      "equity": 117990.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 123498.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 38.58
     },
     {
       "date": "2026-01-28",
-      "equity": 120750.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 126442.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 39.5
     },
     {
       "date": "2026-01-29",
-      "equity": 117870.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 123370.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 38.54
     },
     {
       "date": "2026-01-30",
-      "equity": 113010.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 118186.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 36.92
     },
     {
       "date": "2026-02-02",
-      "equity": 105420.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 110090.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 34.39
     },
     {
       "date": "2026-02-03",
-      "equity": 110310.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 115306.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 36.02
     },
     {
       "date": "2026-02-04",
-      "equity": 110670.23,
-      "cash": 2250.23,
-      "shares": 3000,
+      "equity": 115690.08,
+      "cash": 42.08,
+      "shares": 3200,
       "close": 36.14
     },
     {
       "date": "2026-02-05",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 35.23
     },
     {
       "date": "2026-02-06",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 35.28
     },
     {
       "date": "2026-02-09",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 35.6
     },
     {
       "date": "2026-02-10",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 35.47
     },
     {
       "date": "2026-02-11",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 35.9
     },
     {
       "date": "2026-02-12",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 36.36
     },
     {
       "date": "2026-02-13",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 35.33
     },
     {
       "date": "2026-02-24",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 36.9
     },
     {
       "date": "2026-02-25",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 37.12
     },
     {
       "date": "2026-02-26",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 37.41
     },
     {
       "date": "2026-02-27",
-      "equity": 110241.38,
-      "cash": 110241.38,
+      "equity": 115232.63,
+      "cash": 115232.63,
       "shares": 0,
       "close": 37.5
     },
     {
       "date": "2026-03-02",
-      "equity": 112941.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 118026.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 38.48
     },
     {
       "date": "2026-03-03",
-      "equity": 107344.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 112236.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 36.55
     },
     {
       "date": "2026-03-04",
-      "equity": 109925.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 114906.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 37.44
     },
     {
       "date": "2026-03-05",
-      "equity": 108243.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 113166.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 36.86
     },
     {
       "date": "2026-03-06",
-      "equity": 109432.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 114396.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 37.27
     },
     {
       "date": "2026-03-09",
-      "equity": 106155.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 111006.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 36.14
     },
     {
       "date": "2026-03-10",
-      "equity": 106358.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 111216.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 36.21
     },
     {
       "date": "2026-03-11",
-      "equity": 104879.96,
-      "cash": 1349.96,
-      "shares": 2900,
+      "equity": 109686.34,
+      "cash": 2586.34,
+      "shares": 3000,
       "close": 35.7
     },
     {
       "date": "2026-03-12",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 34.61
     },
     {
       "date": "2026-03-13",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 34.19
     },
     {
       "date": "2026-03-16",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 33.7
     },
     {
       "date": "2026-03-17",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 33.54
     },
     {
       "date": "2026-03-18",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 33.21
     },
     {
       "date": "2026-03-19",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.57
     },
     {
       "date": "2026-03-20",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.31
     },
     {
       "date": "2026-03-23",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 29.69
     },
     {
       "date": "2026-03-24",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 30.21
     },
     {
       "date": "2026-03-25",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.1
     },
     {
       "date": "2026-03-26",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 30.62
     },
     {
       "date": "2026-03-27",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.26
     },
     {
       "date": "2026-03-30",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.06
     },
     {
       "date": "2026-03-31",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 30.2
     },
     {
       "date": "2026-04-01",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.14
     },
     {
       "date": "2026-04-02",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 30.34
     },
     {
       "date": "2026-04-03",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 31.72
     },
     {
       "date": "2026-04-07",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 33.13
     },
     {
       "date": "2026-04-08",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 33.42
     },
     {
       "date": "2026-04-09",
-      "equity": 105278.47,
-      "cash": 105278.47,
+      "equity": 110098.59,
+      "cash": 110098.59,
       "shares": 0,
       "close": 33.28
     },
     {
       "date": "2026-04-10",
-      "equity": 104554.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 109351.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 33.3
     },
     {
       "date": "2026-04-13",
-      "equity": 100896.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 105575.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 32.12
     },
     {
       "date": "2026-04-14",
-      "equity": 101795.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 106503.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 32.41
     },
     {
       "date": "2026-04-15",
-      "equity": 100555.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 105223.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 32.01
     },
     {
       "date": "2026-04-16",
-      "equity": 103314.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 108071.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 32.9
     },
     {
       "date": "2026-04-17",
-      "equity": 102384.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 107111.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 32.6
     },
     {
       "date": "2026-04-20",
-      "equity": 103345.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 108103.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 32.91
     },
     {
       "date": "2026-04-21",
-      "equity": 106352.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 111207.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 33.88
     },
     {
       "date": "2026-04-22",
-      "equity": 109080.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 114023.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 34.76
     },
     {
       "date": "2026-04-23",
-      "equity": 106569.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 111431.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 33.95
     },
     {
       "date": "2026-04-24",
-      "equity": 109917.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 114887.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.03
     },
     {
       "date": "2026-04-27",
-      "equity": 111622.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 116647.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.58
     },
     {
       "date": "2026-04-28",
-      "equity": 110971.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 115975.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.37
     },
     {
       "date": "2026-04-29",
-      "equity": 111219.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 116231.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.45
     },
     {
       "date": "2026-04-30",
-      "equity": 113482.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 118567.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 36.18
     },
     {
       "date": "2026-05-06",
-      "equity": 114102.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 119207.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 36.38
     },
     {
       "date": "2026-05-07",
-      "equity": 111312.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 116327.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.48
     },
     {
       "date": "2026-05-08",
-      "equity": 107065.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 111943.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 34.11
     },
     {
       "date": "2026-05-11",
-      "equity": 108894.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 113831.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 34.7
     },
     {
       "date": "2026-05-12",
-      "equity": 103934.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 108711.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 33.1
     },
     {
       "date": "2026-05-13",
-      "equity": 109886.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 114855.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.02
     },
     {
       "date": "2026-05-14",
-      "equity": 114288.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 119399.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 36.44
     },
     {
       "date": "2026-05-15",
-      "equity": 115094.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 120231.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 36.7
     },
     {
       "date": "2026-05-18",
-      "equity": 110413.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 115399.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.19
     },
     {
       "date": "2026-05-19",
-      "equity": 108584.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 113511.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 34.6
     },
     {
       "date": "2026-05-20",
-      "equity": 112149.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 117191.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.75
     },
     {
       "date": "2026-05-21",
-      "equity": 109328.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 114279.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 34.84
     },
     {
       "date": "2026-05-22",
-      "equity": 113699.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 118791.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 36.25
     },
     {
       "date": "2026-05-25",
-      "equity": 111250.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 116263.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 35.46
     },
     {
       "date": "2026-05-26",
-      "equity": 122255.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 127623.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 39.01
     },
     {
       "date": "2026-05-27",
-      "equity": 124549.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 129991.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 39.75
     },
     {
       "date": "2026-05-28",
-      "equity": 125727.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 131207.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 40.13
     },
     {
       "date": "2026-05-29",
-      "equity": 120550.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 125863.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 38.46
     },
     {
       "date": "2026-06-01",
-      "equity": 127277.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 132807.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 40.63
     },
     {
       "date": "2026-06-02",
-      "equity": 135058.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 140839.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 43.14
     },
     {
       "date": "2026-06-03",
-      "equity": 129633.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 135239.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 41.39
     },
     {
       "date": "2026-06-04",
-      "equity": 135523.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 141319.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 43.29
     },
     {
       "date": "2026-06-05",
-      "equity": 144885.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 150983.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 46.31
     },
     {
       "date": "2026-06-08",
-      "equity": 156045.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 162503.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 49.91
     },
     {
       "date": "2026-06-09",
-      "equity": 164012.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 170727.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 52.48
     },
     {
       "date": "2026-06-10",
-      "equity": 180256.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 187495.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 57.72
     },
     {
       "date": "2026-06-11",
-      "equity": 198174.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 205991.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 63.5
     },
     {
       "date": "2026-06-12",
-      "equity": 178489.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 185671.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 57.15
     },
     {
       "date": "2026-06-15",
-      "equity": 175761.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 182855.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 56.27
     },
     {
       "date": "2026-06-16",
-      "equity": 181124.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 188391.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 58.0
     },
     {
       "date": "2026-06-17",
-      "equity": 199104.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 206951.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 63.8
     },
     {
       "date": "2026-06-18",
-      "equity": 203320.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 211303.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 65.16
     },
     {
       "date": "2026-06-22",
-      "equity": 219006.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 227495.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 70.22
     },
     {
       "date": "2026-06-23",
-      "equity": 206978.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 215079.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 66.34
     },
     {
       "date": "2026-06-24",
-      "equity": 209489.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 217671.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 67.15
     },
     {
       "date": "2026-06-25",
-      "equity": 213364.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 221671.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 68.4
     },
     {
       "date": "2026-06-26",
-      "equity": 194454.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 202151.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 62.3
     },
     {
       "date": "2026-06-29",
-      "equity": 213767.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 222087.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 68.53
     },
     {
       "date": "2026-06-30",
-      "equity": 235002.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 244007.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 75.38
     },
     {
       "date": "2026-07-01",
-      "equity": 252424.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 261991.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 81.0
     },
     {
       "date": "2026-07-02",
-      "equity": 256051.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 265735.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 82.17
     },
     {
       "date": "2026-07-03",
-      "equity": 236955.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 246023.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 76.01
     },
     {
       "date": "2026-07-06",
-      "equity": 213395.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 221703.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 68.41
     },
     {
       "date": "2026-07-07",
-      "equity": 204591.46,
-      "cash": 1324.46,
-      "shares": 3100,
+      "equity": 212615.22,
+      "cash": 2791.22,
+      "shares": 3200,
       "close": 65.57
+    },
+    {
+      "date": "2026-07-08",
+      "equity": 202823.22,
+      "cash": 2791.22,
+      "shares": 3200,
+      "close": 62.51
+    },
+    {
+      "date": "2026-07-09",
+      "equity": 214631.22,
+      "cash": 2791.22,
+      "shares": 3200,
+      "close": 66.2
+    },
+    {
+      "date": "2026-07-10",
+      "equity": 196647.22,
+      "cash": 2791.22,
+      "shares": 3200,
+      "close": 60.58
     }
   ],
   "trades": [
     {
-      "date": "2025-07-04",
+      "date": "2025-07-24",
       "action": "buy",
-      "price": 26.41,
-      "shares": 3700,
-      "amount": 97728.84,
-      "fee": 78.18,
-      "reason": "MA5金叉",
-      "status": "filled"
-    },
-    {
-      "date": "2025-07-08",
-      "action": "sell",
-      "price": 25.68,
-      "shares": 3700,
-      "amount": 95005.47,
-      "fee": 171.01,
-      "pnl": -2972.56,
-      "reason": "MA20死叉",
-      "status": "filled"
-    },
-    {
-      "date": "2025-07-28",
-      "action": "buy",
-      "price": 25.86,
-      "shares": 3700,
-      "amount": 95692.82,
-      "fee": 76.55,
+      "price": 25.61,
+      "shares": 3900,
+      "amount": 99889.92,
+      "fee": 79.91,
       "reason": "MA5金叉",
       "status": "filled"
     },
@@ -1838,10 +1817,10 @@
       "date": "2025-09-19",
       "action": "sell",
       "price": 28.88,
-      "shares": 3700,
-      "amount": 106839.55,
-      "fee": 192.31,
-      "pnl": 10877.87,
+      "shares": 3900,
+      "amount": 112614.66,
+      "fee": 202.71,
+      "pnl": 12442.12,
       "reason": "MA20死叉",
       "status": "filled"
     },
@@ -1849,9 +1828,9 @@
       "date": "2025-09-30",
       "action": "buy",
       "price": 30.45,
-      "shares": 3500,
-      "amount": 106558.25,
-      "fee": 85.25,
+      "shares": 3600,
+      "amount": 109602.77,
+      "fee": 87.68,
       "reason": "MA5金叉",
       "status": "filled"
     },
@@ -1859,10 +1838,10 @@
       "date": "2025-10-20",
       "action": "sell",
       "price": 28.41,
-      "shares": 3500,
-      "amount": 99420.27,
-      "fee": 178.96,
-      "pnl": -7402.2,
+      "shares": 3600,
+      "amount": 102260.84,
+      "fee": 184.07,
+      "pnl": -7613.68,
       "reason": "MA20死叉",
       "status": "filled"
     },
@@ -1870,9 +1849,9 @@
       "date": "2025-10-31",
       "action": "buy",
       "price": 31.61,
-      "shares": 3100,
-      "amount": 97977.96,
-      "fee": 78.38,
+      "shares": 3300,
+      "amount": 104299.12,
+      "fee": 83.44,
       "reason": "MA5金叉",
       "status": "filled"
     },
@@ -1880,10 +1859,10 @@
       "date": "2025-11-24",
       "action": "sell",
       "price": 29.18,
-      "shares": 3100,
-      "amount": 90443.76,
-      "fee": 162.8,
-      "pnl": -7775.39,
+      "shares": 3300,
+      "amount": 96278.84,
+      "fee": 173.3,
+      "pnl": -8277.03,
       "reason": "MA20死叉",
       "status": "filled"
     },
@@ -1891,9 +1870,9 @@
       "date": "2025-12-16",
       "action": "buy",
       "price": 30.14,
-      "shares": 3000,
-      "amount": 90405.18,
-      "fee": 72.32,
+      "shares": 3200,
+      "amount": 96432.19,
+      "fee": 77.15,
       "reason": "MA5金叉",
       "status": "filled"
     },
@@ -1901,10 +1880,10 @@
       "date": "2026-02-05",
       "action": "sell",
       "price": 36.06,
-      "shares": 3000,
-      "amount": 108185.88,
-      "fee": 194.73,
-      "pnl": 17513.65,
+      "shares": 3200,
+      "amount": 115398.27,
+      "fee": 207.72,
+      "pnl": 18681.21,
       "reason": "MA20死叉",
       "status": "filled"
     },
@@ -1912,9 +1891,9 @@
       "date": "2026-03-02",
       "action": "buy",
       "price": 37.52,
-      "shares": 2900,
-      "amount": 108804.37,
-      "fee": 87.04,
+      "shares": 3000,
+      "amount": 112556.25,
+      "fee": 90.04,
       "reason": "MA5金叉",
       "status": "filled"
     },
@@ -1922,10 +1901,10 @@
       "date": "2026-03-12",
       "action": "sell",
       "price": 35.9,
-      "shares": 2900,
-      "amount": 104115.92,
-      "fee": 187.41,
-      "pnl": -4962.91,
+      "shares": 3000,
+      "amount": 107706.12,
+      "fee": 193.87,
+      "pnl": -5134.04,
       "reason": "MA20死叉",
       "status": "filled"
     },
@@ -1933,12 +1912,12 @@
       "date": "2026-04-10",
       "action": "buy",
       "price": 33.51,
-      "shares": 3100,
-      "amount": 103870.91,
-      "fee": 83.1,
+      "shares": 3200,
+      "amount": 107221.58,
+      "fee": 85.78,
       "reason": "MA5金叉",
       "status": "filled"
     }
   ],
-  "updated_at": "2026-07-07 21:02:10"
+  "updated_at": "2026-07-10 17:43:27"
 }

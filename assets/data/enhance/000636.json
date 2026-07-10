@@ -1,50 +1,26 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-07",
-  "updated_at": "2026-07-07 21:01:28",
+  "trade_date": "2026-07-10",
+  "updated_at": "2026-07-10 17:42:41",
   "version": "1.0.0",
   "fundamentals": {
-    "source": "eastmoney_value",
-    "trade_date": "2026-07-07",
-    "close": 61.26,
-    "market_cap_yi": 708.79,
-    "float_cap_yi": 708.79,
-    "pe_ttm": 230.64853929,
-    "pe_static": 250.17453981,
-    "pb": 5.67802928,
-    "ps": 11.81866986,
-    "peg": -15.261303170612
+    "source": "baidu_pe",
+    "pe_ttm": 225.94,
+    "trade_date": "2026-07-10",
+    "pb": 5.98
   },
   "corporate": {
     "dividends": [],
-    "lockups": [
-      {
-        "unlock_date": "2023-12-08",
-        "unlock_shares": 78534031.0,
-        "unlock_value_yi": 11.18,
-        "pct_total": 0.067876520556,
-        "pct_float": 0.067876692152,
-        "holder_type": "定向增发机构配售股份"
-      },
-      {
-        "unlock_date": "2022-11-04",
-        "unlock_shares": 183246069.0,
-        "unlock_value_yi": 27.63,
-        "pct_total": 0.158378545083,
-        "pct_float": 0.169912022535,
-        "holder_type": "定向增发机构配售股份"
-      },
-      {
-        "unlock_date": "2020-01-23",
-        "unlock_shares": 30000.0,
-        "unlock_value_yi": 0.0,
-        "pct_total": 3.3510825e-05,
-        "pct_float": 3.3510825e-05,
-        "holder_type": "股权分置限售股份"
-      }
-    ],
-    "earnings_forecast": null
+    "lockups": [],
+    "earnings_forecast": {
+      "indicator": "预测年报每股收益",
+      "forecast_type": "机构预测",
+      "forecast_value": "1.0",
+      "announce_date": "2026-07-10",
+      "report_period": "行业平均",
+      "source": "ths_profit_forecast"
+    }
   },
   "fund_flow": {
     "northbound": {},
@@ -56,22 +32,34 @@
       {
         "name": "上证指数",
         "code": "000001",
-        "close": 4050.44,
-        "change_pct": 0.17
+        "close": 3996.1616,
+        "change_pct": -1.001
       },
       {
-        "name": "科创50",
+        "name": "深证成指",
+        "code": "399001",
+        "close": 15046.67,
+        "change_pct": -2.286
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3842.731,
+        "change_pct": -4.366
+      },
+      {
+        "name": "科创50参考",
         "code": "000688",
-        "close": 2011.17,
-        "change_pct": 1.8
+        "close": 2064.9756,
+        "change_pct": -5.529
       }
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -758.28,
+      "main_net": -790.0,
       "retail_net": 0.0
     },
-    "stock_return_20d": 10.32
+    "stock_return_20d": -6.53
   },
   "cross_source": null,
   "quality_ref": {
@@ -85,8 +73,11 @@
   ],
   "sources_failed": [
     "dividend",
-    "earnings_forecast_20260930",
+    "earnings_forecast_20261231",
+    "individual_info",
+    "lockup",
     "margin_szse",
-    "northbound"
+    "northbound",
+    "valuation_em"
   ]
 }

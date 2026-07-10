@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-07 21:02:10",
+  "updated_at": "2026-07-10 17:43:27",
   "decisions": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "action": "watch",
       "position_suggestion": 0.0,
       "confidence": "low",
@@ -13,7 +13,7 @@
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "action": "watch",
       "position_suggestion": 0.0,
       "confidence": "low",
@@ -22,7 +22,7 @@
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "action": "watch",
       "position_suggestion": 0.0,
       "confidence": "medium",
@@ -31,7 +31,16 @@
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
+      "action": "watch",
+      "position_suggestion": 0.0,
+      "confidence": "medium",
+      "requires_human_review": false
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "trade_date": "2026-07-10",
       "action": "watch",
       "position_suggestion": 0.0,
       "confidence": "medium",

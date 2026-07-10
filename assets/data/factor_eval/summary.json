@@ -1,0 +1,560 @@
+{
+  "factor_eval_version": "1.0.0",
+  "updated_at": "2026-07-09 15:54:37",
+  "sample_count": 680,
+  "stock_count": 4,
+  "horizons": [
+    "1d",
+    "5d",
+    "20d"
+  ],
+  "factors": {
+    "technical_score": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.0884,
+        "rank_ic": 0.0732,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.3383
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.3566
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.439
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.1512,
+        "rank_ic": 0.115,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 2.0423
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 2.8725
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 6.5649
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.1484,
+        "rank_ic": 0.0517,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 13.1961
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 20.4148
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 24.3224
+            }
+          }
+        }
+      }
+    },
+    "ma20_bias": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.1513,
+        "rank_ic": 0.0766,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.3602
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.4625
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.3112
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.2541,
+        "rank_ic": 0.1459,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 2.4117
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 1.6139
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 7.4556
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.1853,
+        "rank_ic": 0.0746,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 13.5917
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 14.8316
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 29.5118
+            }
+          }
+        }
+      }
+    },
+    "rsi14": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.1093,
+        "rank_ic": 0.0739,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.4387
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.1861
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.5096
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.1745,
+        "rank_ic": 0.1143,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 2.6437
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 1.5802
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 7.2584
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.1852,
+        "rank_ic": 0.0623,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 13.8738
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 16.679
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 27.3836
+            }
+          }
+        }
+      }
+    },
+    "macd_hist": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.1301,
+        "rank_ic": 0.114,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.0036
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.5788
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.5501
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.1724,
+        "rank_ic": 0.2111,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 1.0953
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 2.4884
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 7.8917
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.074,
+        "rank_ic": 0.0716,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 14.9038
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 15.7873
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 27.2498
+            }
+          }
+        }
+      }
+    },
+    "momentum_20": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.118,
+        "rank_ic": 0.0582,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.4858
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.3864
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.2623
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.1904,
+        "rank_ic": 0.1055,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 2.0435
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 3.1192
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 6.3169
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.0886,
+        "rank_ic": -0.0158,
+        "direction": "弱相关",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 13.2637
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 18.984
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 25.6859
+            }
+          }
+        }
+      }
+    },
+    "volume_ratio_20": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.0352,
+        "rank_ic": 0.0407,
+        "direction": "弱相关",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.5698
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.5186
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.0465
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.098,
+        "rank_ic": 0.0633,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 2.7257
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 2.969
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 5.7879
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.1015,
+        "rank_ic": 0.0977,
+        "direction": "正向有效",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 12.6797
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 18.3626
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 26.8888
+            }
+          }
+        }
+      }
+    },
+    "above_ma20": {
+      "1d": {
+        "sample_count": 680,
+        "ic": 0.063,
+        "rank_ic": 0.0292,
+        "direction": "弱相关",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 0.3377
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 0.7377
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 1.0585
+            }
+          }
+        }
+      },
+      "5d": {
+        "sample_count": 680,
+        "ic": 0.0934,
+        "rank_ic": 0.0469,
+        "direction": "弱相关",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 2.3507
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 3.9585
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 5.1717
+            }
+          }
+        }
+      },
+      "20d": {
+        "sample_count": 680,
+        "ic": 0.1201,
+        "rank_ic": 0.0417,
+        "direction": "弱相关",
+        "stratified": {
+          "status": "ok",
+          "groups": {
+            "低分组": {
+              "count": 226,
+              "avg_return_pct": 13.4905
+            },
+            "中分组": {
+              "count": 227,
+              "avg_return_pct": 17.6163
+            },
+            "高分组": {
+              "count": 227,
+              "avg_return_pct": 26.8279
+            }
+          }
+        }
+      }
+    }
+  },
+  "drift": {
+    "technical_score": {
+      "status": "正常",
+      "current": 37.0,
+      "history_mean": 65.9382,
+      "zscore": -1.1802
+    },
+    "ma20_bias": {
+      "status": "正常",
+      "current": -8.86,
+      "history_mean": 6.6197,
+      "zscore": -1.1579
+    },
+    "rsi14": {
+      "status": "正常",
+      "current": 43.3225,
+      "history_mean": 58.349,
+      "zscore": -0.8412
+    },
+    "macd_hist": {
+      "status": "异常偏低",
+      "current": -2.7062,
+      "history_mean": 0.1544,
+      "zscore": -2.7548
+    },
+    "momentum_20": {
+      "status": "正常",
+      "current": 3.5175,
+      "history_mean": 16.1358,
+      "zscore": -0.4141
+    },
+    "volume_ratio_20": {
+      "status": "异常偏低",
+      "current": 0.0,
+      "history_mean": 1.0821,
+      "zscore": -2.0319
+    },
+    "above_ma20": {
+      "status": "正常",
+      "current": 0.0,
+      "history_mean": 0.6706,
+      "zscore": -1.4268
+    }
+  },
+  "limitations": [
+    "uses_historical_technical_proxy_samples",
+    "pooled_time_series_not_cross_sectional_ic",
+    "industry_neutralization_not_applied",
+    "sentiment_fundamental_fund_flow_need_point_in_time_history"
+  ]
+}

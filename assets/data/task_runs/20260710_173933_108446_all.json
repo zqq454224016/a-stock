@@ -1,0 +1,13 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260710_173933_108446_all",
+  "command": "all",
+  "argv": [
+    "all"
+  ],
+  "status": "success",
+  "started_at": "2026-07-10 17:39:33",
+  "ended_at": "2026-07-10 17:43:28",
+  "duration_sec": 235.5437,
+  "artifacts": []
+}

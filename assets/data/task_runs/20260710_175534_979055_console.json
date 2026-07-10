@@ -1,0 +1,20 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260710_175534_979055_console",
+  "command": "console",
+  "argv": [
+    "console"
+  ],
+  "status": "success",
+  "started_at": "2026-07-10 17:55:34",
+  "ended_at": "2026-07-10 17:55:35",
+  "duration_sec": 0.0533,
+  "artifacts": [
+    {
+      "path": "../../reports/console/index.html",
+      "exists": true,
+      "size": 12921,
+      "mtime": "2026-07-10 17:55:35"
+    }
+  ]
+}

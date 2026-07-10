@@ -1,0 +1,52 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-10",
+  "version": "1.1.0",
+  "impact_score": -33,
+  "impact_direction": "negative",
+  "events": [
+    {
+      "event_type": "valuation_pressure",
+      "title": "估值压力",
+      "period": "2026-07-10",
+      "announce_date": "2026-07-10",
+      "impact_score": -33,
+      "impact_direction": "negative",
+      "confidence": "medium",
+      "metrics": {
+        "pe_ttm": 217.54,
+        "pb": 19.6
+      },
+      "evidence": [
+        "PE(TTM)=217.54",
+        "PB=19.60"
+      ],
+      "source": "baidu_pe",
+      "limitations": [],
+      "evidence_quality": {
+        "score": 95,
+        "level": "high",
+        "missing_evidence": []
+      }
+    }
+  ],
+  "evidence_quality": {
+    "avg_score": 95.0,
+    "low_quality_event_count": 0,
+    "missing_evidence": []
+  },
+  "post_event_review": {
+    "status": "missing",
+    "evaluated_count": 0,
+    "pending_count": 0,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "worst_adverse_pct": null,
+    "limitations": [
+      "impact_review_missing"
+    ]
+  },
+  "limitations": [],
+  "updated_at": "2026-07-10 17:43:27"
+}

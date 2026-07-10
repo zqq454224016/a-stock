@@ -198,7 +198,93 @@ def _requested_q2_gap(code: str, enhance: dict[str, Any]) -> dict[str, Any] | No
     }
 
 
-def build_impact_payload(code: str, name: str, enhance: dict[str, Any] | None) -> dict[str, Any]:
+def _evidence_quality(event: dict[str, Any]) -> dict[str, Any]:
+    score = 20
+    missing: list[str] = []
+    evidence = event.get("evidence") or []
+    metrics = event.get("metrics") or {}
+    source = event.get("source") or ""
+
+    if evidence:
+        score += 25
+    else:
+        missing.append("缺少文字证据")
+    if metrics:
+        score += 20
+    else:
+        missing.append("缺少量化指标")
+    if event.get("announce_date"):
+        score += 15
+    else:
+        missing.append("缺少公告/事件日期")
+    if source and source != "system_gap":
+        score += 15
+    else:
+        missing.append("缺少外部数据来源")
+    if event.get("confidence") == "high":
+        score += 10
+    elif event.get("confidence") == "low":
+        score -= 10
+    score -= min(len(event.get("limitations") or []) * 8, 24)
+    score = max(min(score, 100), 0)
+    if score >= 75:
+        level = "high"
+    elif score >= 50:
+        level = "medium"
+    else:
+        level = "low"
+    return {
+        "score": score,
+        "level": level,
+        "missing_evidence": missing,
+    }
+
+
+def _attach_evidence_quality(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    enriched: list[dict[str, Any]] = []
+    for event in events:
+        row = dict(event)
+        row["evidence_quality"] = _evidence_quality(row)
+        enriched.append(row)
+    return enriched
+
+
+def _post_event_review(review: dict[str, Any] | None) -> dict[str, Any]:
+    if not review:
+        return {
+            "status": "missing",
+            "evaluated_count": 0,
+            "pending_count": 0,
+            "hit_rate": None,
+            "avg_return_pct": None,
+            "worst_adverse_pct": None,
+            "limitations": ["impact_review_missing"],
+        }
+    summary = review.get("summary") or {}
+    evaluated_count = int(_to_float(summary.get("evaluated_count"), 0) or 0)
+    pending_count = int(_to_float(summary.get("pending_count"), 0) or 0)
+    status = "evaluated" if evaluated_count else "pending" if pending_count else "insufficient"
+    limitations = list(review.get("limitations") or [])
+    if not evaluated_count:
+        limitations.append("impact_review_requires_future_kline")
+    return {
+        "status": status,
+        "evaluated_count": evaluated_count,
+        "pending_count": pending_count,
+        "hit_rate": summary.get("hit_rate"),
+        "avg_return_pct": summary.get("avg_return_pct"),
+        "worst_adverse_pct": summary.get("worst_adverse_pct"),
+        "failure_reasons": summary.get("failure_reasons") or [],
+        "limitations": sorted(set(limitations)),
+    }
+
+
+def build_impact_payload(
+    code: str,
+    name: str,
+    enhance: dict[str, Any] | None,
+    review: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     enhance = enhance or {}
     events = [
         e for e in (
@@ -210,6 +296,7 @@ def build_impact_payload(code: str, name: str, enhance: dict[str, Any] | None) -
         )
         if e
     ]
+    events = _attach_evidence_quality(events)
     total = sum(int(e.get("impact_score") or 0) for e in events)
     if total > 15:
         direction = "positive"
@@ -225,6 +312,17 @@ def build_impact_payload(code: str, name: str, enhance: dict[str, Any] | None) -
         "impact_score": max(min(total, 100), -100),
         "impact_direction": direction,
         "events": events,
+        "evidence_quality": {
+            "avg_score": round(sum((e.get("evidence_quality") or {}).get("score", 0) for e in events) / len(events), 2)
+            if events else 0,
+            "low_quality_event_count": sum(1 for e in events if (e.get("evidence_quality") or {}).get("level") == "low"),
+            "missing_evidence": sorted({
+                x
+                for e in events
+                for x in ((e.get("evidence_quality") or {}).get("missing_evidence") or [])
+            }),
+        },
+        "post_event_review": _post_event_review(review),
         "limitations": sorted({x for e in events for x in (e.get("limitations") or [])}),
         "updated_at": now_str(),
     }

@@ -1,60 +1,59 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-07",
-  "version": "1.0.0",
-  "updated_at": "2026-07-07 21:02:11",
-  "summary": "综合因子中性，等待更清晰信号",
-  "confidence": "medium",
-  "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
+  "trade_date": "2026-07-10",
+  "version": "1.1.0",
+  "updated_at": "2026-07-10 17:43:28",
+  "summary": "谨慎",
+  "confidence": "low",
+  "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
   "stock_selection": {
-    "verdict": "neutral",
-    "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 50.1,
+    "verdict": "negative",
+    "headline": "综合因子偏空，谨慎对待",
+    "composite_score": 37.7,
     "evidence": [
-      "技术分 52.0",
-      "情绪分 46.5",
+      "技术分 24.0",
+      "情绪分 57.7",
       "基本面分 50.0",
-      "趋势 震荡",
+      "趋势 偏空",
       "舆情 看空"
     ],
     "drivers": [
-      "rsi14_neutral_up",
+      "ma_death_cross",
       "macd_hist_negative",
-      "momentum_20_up"
+      "ma20_breakdown"
     ],
     "risks": [
       "not_backtested",
       "technical_only"
     ],
-    "primary_signal": "neutral",
-    "trend": "震荡"
+    "primary_signal": "bearish",
+    "trend": "偏空"
   },
   "strategy_diagnosis": {
     "available": true,
     "strategy": "ma_cross",
     "verdict": "mixed",
     "findings": [
-      "胜率偏低（33.33%）",
-      "单笔最大亏损 -7775.39（MA20死叉）"
+      "单笔最大亏损 -8277.03（MA20死叉）"
     ],
     "suggestions": [
-      "考虑提高买入阈值或叠加趋势过滤"
+      "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 106.36,
-      "max_drawdown_pct": -20.83,
-      "sharpe_ratio": 1.74,
-      "win_rate_pct": 33.33,
-      "closed_trades": 6
+      "annual_return_pct": 98.26,
+      "max_drawdown_pct": -26.0,
+      "sharpe_ratio": 1.63,
+      "win_rate_pct": 40.0,
+      "closed_trades": 5
     },
     "attribution_top": [
       {
         "reason": "MA20死叉",
-        "count": 6,
-        "total_pnl": 5278.46,
-        "avg_pnl": 879.74,
-        "win_rate_pct": 33.33
+        "count": 5,
+        "total_pnl": 10098.58,
+        "avg_pnl": 2019.72,
+        "win_rate_pct": 40.0
       }
     ],
     "rolling_summary": null
@@ -63,15 +62,17 @@
     "available": true,
     "horizon": "5d",
     "direction": "down",
-    "probability": 0.281,
+    "probability": 0.3052,
     "confidence": "high",
-    "expected_return": -0.0167,
-    "alignment": "partial",
-    "drivers": [],
+    "expected_return": -0.0175,
+    "alignment": "aligned",
+    "drivers": [
+      "均线死叉"
+    ],
     "notes": [
-      "5d 预测 偏空，概率 28.1%，置信度 high",
-      "历史样本 65，回测胜率 33.3%",
-      "信号与预测部分一致，存在中性分歧",
+      "5d 预测 偏空，概率 30.5%，置信度 high",
+      "历史样本 62，回测胜率 40.0%",
+      "初级技术信号与预测方向一致",
       "风险标记: high_volatility"
     ],
     "failure_conditions": [
@@ -81,9 +82,11 @@
   },
   "data_health": {
     "status": "ok",
-    "quality_score": 100.0,
+    "quality_score": 90.0,
     "factor_eligible": true,
-    "issues": []
+    "issues": [
+      "K 线末日期 2026-07-08 落后于最近交易日 2026-07-10"
+    ]
   },
   "limitations": [
     "rule_based_only",
@@ -99,6 +102,96 @@
       "signals/600378.json",
       "stocks/600378.json"
     ],
-    "strategy_ref": "ma_cross"
+    "strategy_ref": "ma_cross",
+    "schema_version": "1.0.0",
+    "provider": "rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "policy_passed": true,
+    "audit_path": "agent/audit/600378.json"
+  },
+  "provider": {
+    "requested": "rule",
+    "active": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "fallback_reason": ""
+  },
+  "evidence_package": {
+    "schema_version": "1.0.0",
+    "task": "stock_review",
+    "allowed_actions": [
+      "analyze",
+      "summarize",
+      "suggest"
+    ],
+    "missing_inputs": [],
+    "inputs_used": [
+      "backtest/600378_ma_cross.json",
+      "decisions/600378.json",
+      "enhance/600378.json",
+      "factors/600378.json",
+      "framework/snapshot.json",
+      "impact/600378.json",
+      "predictions/600378.json",
+      "quality/latest.json",
+      "sentiment/600378.json",
+      "signals/600378.json",
+      "stocks/600378.json"
+    ]
+  },
+  "provider_output": {
+    "provider": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "summary": "谨慎",
+    "direction_view": "bearish",
+    "confidence": "low",
+    "evidence": [
+      "技术分 24.0",
+      "情绪分 57.7",
+      "基本面分 50.0",
+      "趋势 偏空",
+      "舆情 看空",
+      "ma_death_cross",
+      "macd_hist_negative",
+      "ma20_breakdown",
+      "单笔最大亏损 -8277.03（MA20死叉）",
+      "5d 预测 偏空，概率 30.5%，置信度 high",
+      "历史样本 62，回测胜率 40.0%",
+      "初级技术信号与预测方向一致"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "high_volatility",
+      "rule_based_only",
+      "no_auto_trade"
+    ],
+    "failure_conditions": [
+      "high_volatility"
+    ],
+    "suggested_actions": [
+      "仅用于研究解释",
+      "进入人工复核后再考虑操作"
+    ],
+    "forbidden_actions": [
+      "不得自动下单",
+      "不得绕过风控",
+      "不得修改生产参数"
+    ],
+    "requires_human_review": true,
+    "raw_output": {
+      "source": "rule_report",
+      "missing_inputs": []
+    }
+  },
+  "policy": {
+    "passed": true,
+    "violations": [],
+    "allowed_actions": [
+      "analyze",
+      "suggest",
+      "summarize"
+    ]
   }
 }

@@ -1,0 +1,111 @@
+{
+  "updated_at": "2026-07-10 17:52:51",
+  "items": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "previous_trade_date": "2026-07-09",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 5.9,
+      "today_return_pct": -8.49,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "单日跌幅较深",
+        "大盘走弱",
+        "收盘跌破 MA20",
+        "冲高回落或日内承接弱"
+      ],
+      "limitations": [
+        "market_data_degraded",
+        "today_volume_missing_or_zero"
+      ]
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "previous_trade_date": "2026-07-09",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 6.92,
+      "today_return_pct": -5.47,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "单日跌幅较深",
+        "大盘走弱",
+        "收盘跌破 MA20",
+        "冲高回落或日内承接弱"
+      ],
+      "limitations": [
+        "market_data_degraded",
+        "today_volume_missing_or_zero"
+      ]
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "previous_trade_date": "2026-07-09",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 6.34,
+      "today_return_pct": -6.89,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "单日跌幅较深",
+        "大盘走弱",
+        "收盘跌破 MA20",
+        "冲高回落或日内承接弱"
+      ],
+      "limitations": [
+        "market_data_degraded",
+        "today_volume_missing_or_zero"
+      ]
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "previous_trade_date": "2026-07-09",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 7.8,
+      "today_return_pct": -0.58,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "大盘走弱",
+        "收盘跌破 MA20",
+        "回吐前一交易日收盘",
+        "市场主力资金净流出"
+      ],
+      "limitations": [
+        "market_data_degraded",
+        "today_volume_missing_or_zero"
+      ]
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "previous_trade_date": "2026-07-09",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 10.0,
+      "today_return_pct": -7.28,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "单日跌幅较深",
+        "大盘走弱",
+        "收盘跌破 MA20",
+        "冲高回落或日内承接弱"
+      ],
+      "limitations": [
+        "market_data_degraded",
+        "today_volume_missing_or_zero",
+        "replay_missing"
+      ]
+    }
+  ]
+}

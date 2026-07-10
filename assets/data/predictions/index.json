@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-07-07 21:02:10",
+  "updated_at": "2026-07-10 17:43:27",
   "predictions": [
     {
       "code": "600378",
       "horizon": "5d",
       "direction": "down",
-      "probability": 0.281,
+      "probability": 0.3052,
       "confidence": "high",
-      "expected_return": -0.0167
+      "expected_return": -0.0175
     },
     {
       "code": "603629",
       "horizon": "5d",
       "direction": "down",
-      "probability": 0.2368,
+      "probability": 0.1606,
       "confidence": "high",
       "expected_return": -0.0615
     },
@@ -23,15 +23,23 @@
       "direction": "neutral",
       "probability": 0.4612,
       "confidence": "medium",
-      "expected_return": -0.0176
+      "expected_return": -0.0175
     },
     {
       "code": "000988",
       "horizon": "5d",
       "direction": "neutral",
-      "probability": 0.5429,
+      "probability": 0.5186,
       "confidence": "high",
-      "expected_return": -0.0291
+      "expected_return": -0.029
+    },
+    {
+      "code": "002384",
+      "horizon": "5d",
+      "direction": "neutral",
+      "probability": 0.4792,
+      "confidence": "medium",
+      "expected_return": -0.0519
     }
   ]
 }

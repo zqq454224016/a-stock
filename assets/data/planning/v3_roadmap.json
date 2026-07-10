@@ -1,0 +1,178 @@
+{
+  "roadmap_version": "3.0.0",
+  "updated_at": "2026-07-10 18:08:56",
+  "objective": "把 v2 的首版研究闭环推进到可长期运行、可扩展股票池、可审计外部智能、可持续评估的 v3 稳定化系统。",
+  "principles": [
+    "不恢复自动实盘，实盘相关仍保持只读、模拟、人工确认和审计优先。",
+    "先补运行可靠性和数据血缘，再扩大股票池和模型能力。",
+    "所有新增智能输出必须可解释、可回放、可降级。"
+  ],
+  "completed_v2": [
+    "Selector 阈值校准",
+    "Impact 证据质量",
+    "组合管理",
+    "因子有效性代理评估",
+    "多周期推荐",
+    "模块化契约",
+    "Agent Provider 框架",
+    "统一控制台",
+    "监控告警与数据血缘"
+  ],
+  "phases": [
+    {
+      "id": "V3-01",
+      "title": "运行时任务日志",
+      "priority": "P0",
+      "status": "done",
+      "goal": "记录每次任务的开始、结束、耗时、状态、异常和产物路径",
+      "inputs": [
+        "main.py",
+        "scheduler",
+        "tasks",
+        "monitoring"
+      ],
+      "outputs": [
+        "assets/data/task_runs/*.json",
+        "reports/monitoring/"
+      ],
+      "acceptance": [
+        "所有 CLI 任务可写入 task_run 记录",
+        "monitor 报告展示最近任务状态和失败原因",
+        "失败任务能关联到日志、输入和输出产物"
+      ]
+    },
+    {
+      "id": "V3-02",
+      "title": "数据注册表与血缘版本",
+      "priority": "P0",
+      "status": "done",
+      "goal": "把数据源、抓取时间、降级原因、字段质量、版本快照纳入统一注册表",
+      "inputs": [
+        "storage",
+        "data_source",
+        "pipeline",
+        "monitoring"
+      ],
+      "outputs": [
+        "assets/data/data_registry/*.json",
+        "reports/monitoring/"
+      ],
+      "acceptance": [
+        "每个关键 JSON 产物有来源、更新时间、生成任务和字段摘要",
+        "数据降级、缓存命中、补录来源可追踪",
+        "血缘图不再只依赖静态模块清单"
+      ]
+    },
+    {
+      "id": "V3-03",
+      "title": "全市场股票池首版",
+      "priority": "P1",
+      "status": "next",
+      "goal": "从 watchlist 扩展到可过滤的股票池，保留科创板参考模式",
+      "inputs": [
+        "watchlist",
+        "market_scope",
+        "quality",
+        "factors"
+      ],
+      "outputs": [
+        "assets/data/universe/*.json",
+        "reports/console/"
+      ],
+      "acceptance": [
+        "支持 watchlist、行业池、风险排除池、参考池",
+        "默认不重型拉取科创板，仅保留参考标的",
+        "推荐模块可选择股票池而不是固定自选股"
+      ]
+    },
+    {
+      "id": "V3-04",
+      "title": "横截面因子检验",
+      "priority": "P1",
+      "status": "planned",
+      "goal": "把因子评估从小股票池时间序列代理升级到横截面检验",
+      "inputs": [
+        "universe",
+        "factors",
+        "stocks"
+      ],
+      "outputs": [
+        "assets/data/factor_eval/cross_section.json",
+        "reports/factor_eval/"
+      ],
+      "acceptance": [
+        "输出逐日 IC、RankIC、分层收益和换手",
+        "支持行业/市值中性化限制说明",
+        "报告明确样本数量和偏差边界"
+      ]
+    },
+    {
+      "id": "V3-05",
+      "title": "真实 LLM Provider",
+      "priority": "P2",
+      "status": "planned",
+      "goal": "在现有 Agent Provider 框架下接入真实 LLM，保留规则降级",
+      "inputs": [
+        "EvidencePackage",
+        "agent/providers",
+        "policy",
+        "audit"
+      ],
+      "outputs": [
+        "assets/data/agent/*.json",
+        "assets/data/agent/audit/*.json"
+      ],
+      "acceptance": [
+        "密钥只从环境变量读取",
+        "超时或失败自动降级为规则 Provider",
+        "LLM 输出必须通过 Policy Guard 并可审计回放"
+      ]
+    },
+    {
+      "id": "V3-06",
+      "title": "外部通知与告警",
+      "priority": "P2",
+      "status": "planned",
+      "goal": "把 monitor 的严重/警告事件发送到可配置通知渠道",
+      "inputs": [
+        "monitoring",
+        "task_runs"
+      ],
+      "outputs": [
+        "assets/data/monitoring/notifications.json"
+      ],
+      "acceptance": [
+        "支持 dry-run 和本地日志通知",
+        "同一告警去重和冷却",
+        "不包含密钥和敏感账户信息"
+      ]
+    }
+  ],
+  "current_next": {
+    "id": "V3-03",
+    "title": "全市场股票池首版",
+    "priority": "P1",
+    "status": "next",
+    "goal": "从 watchlist 扩展到可过滤的股票池，保留科创板参考模式",
+    "inputs": [
+      "watchlist",
+      "market_scope",
+      "quality",
+      "factors"
+    ],
+    "outputs": [
+      "assets/data/universe/*.json",
+      "reports/console/"
+    ],
+    "acceptance": [
+      "支持 watchlist、行业池、风险排除池、参考池",
+      "默认不重型拉取科创板，仅保留参考标的",
+      "推荐模块可选择股票池而不是固定自选股"
+    ]
+  },
+  "open_risks": [
+    "外部数据源和网络稳定性仍可能影响实时性。",
+    "当前推荐范围仍以本地自选股为主，未代表全市场机会。",
+    "真实 LLM、外部通知、券商只读网关均需要密钥和权限管理。"
+  ]
+}

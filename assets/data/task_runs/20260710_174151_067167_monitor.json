@@ -1,0 +1,26 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260710_174151_067167_monitor",
+  "command": "monitor",
+  "argv": [
+    "monitor"
+  ],
+  "status": "success",
+  "started_at": "2026-07-10 17:41:51",
+  "ended_at": "2026-07-10 17:41:51",
+  "duration_sec": 0.055,
+  "artifacts": [
+    {
+      "path": "monitoring/snapshot.json",
+      "exists": true,
+      "size": 15164,
+      "mtime": "2026-07-10 17:41:51"
+    },
+    {
+      "path": "../../reports/monitoring/index.html",
+      "exists": true,
+      "size": 9471,
+      "mtime": "2026-07-10 17:41:51"
+    }
+  ]
+}

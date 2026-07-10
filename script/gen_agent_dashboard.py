@@ -61,6 +61,10 @@ def render_stock_page(data: dict) -> str:
     diag = data.get("strategy_diagnosis") or {}
     rev = data.get("prediction_review") or {}
     health = data.get("data_health") or {}
+    provider = data.get("provider") or {}
+    policy = data.get("policy") or {}
+    evidence = data.get("evidence_package") or {}
+    provider_output = data.get("provider_output") or {}
 
     def li(items):
         return "".join(f"<li>{x}</li>" for x in items) or "<li>—</li>"
@@ -92,6 +96,14 @@ def render_stock_page(data: dict) -> str:
       <div class="stat-card"><div class="name">策略诊断</div><div class="value">{_verdict_badge(diag.get('verdict',''))}</div><div class="change">{_strategy_label(diag.get('strategy',''))}</div></div>
       <div class="stat-card"><div class="name">预测复盘</div><div class="value">{_verdict_badge(rev.get('alignment',''))}</div><div class="change">{rev.get('horizon','—')} {_verdict_badge(rev.get('direction',''))}</div></div>
       <div class="stat-card"><div class="name">数据质量</div><div class="value">{health.get('quality_score','—')}</div><div class="change">{_verdict_badge(health.get('status',''))}</div></div>
+    </section>
+
+    <section class="panel"><h2>Provider 与审计</h2>
+      <p>请求 {provider.get('requested','—')} · 实际 {provider.get('active','—')} · 模型 {provider.get('model','—')} · 提示词 {provider.get('prompt_version','—')}</p>
+      <p>权限校验：{'通过' if policy.get('passed') else '未通过'} · 缺失输入：{'；'.join(evidence.get('missing_inputs') or ['—'])}</p>
+      <p><strong>Provider 输出</strong>：{provider_output.get('summary','—')} · 方向 {provider_output.get('direction_view','—')} · 置信度 {provider_output.get('confidence','—')}</p>
+      <p><strong>建议</strong></p><ul>{li(provider_output.get('suggested_actions') or [])}</ul>
+      <p><strong>禁止动作</strong></p><ul>{li(provider_output.get('forbidden_actions') or [])}</ul>
     </section>
 
     <section class="panel"><h2>选股解释</h2><p>{sel.get('headline','')}</p>
@@ -135,7 +147,8 @@ def render_dashboard(reports: list[dict], market: dict) -> str:
           <p>{r.get('summary')}</p>
           <p>选股 { _verdict_badge(sel.get('verdict','')) } ·
              策略 { _verdict_badge(diag.get('verdict','')) } ·
-             预测 { _verdict_badge(rev.get('alignment','')) }</p>
+             预测 { _verdict_badge(rev.get('alignment','')) } ·
+             Provider {(r.get('provider') or {}).get('active','—')}</p>
           <p style="font-size:0.9rem">
             <a href="../stock/{code}.html">个股</a> ·
             <a href="../backtest/{code}_ma_cross.html">回测</a> ·

@@ -1,0 +1,40 @@
+{
+  "registry_version": "1.0.0",
+  "module": "factors",
+  "label": "因子",
+  "path": "factors/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/factors/index.json",
+  "exists": true,
+  "size": 2057,
+  "file_mtime": "2026-07-10 17:42:41",
+  "updated_at": "2026-07-10 17:42:41",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "stocks",
+      "updated_at"
+    ],
+    "list_fields": {
+      "stocks": 5
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "stocks"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "factors/index.json",
+    "expected_command": "factor",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

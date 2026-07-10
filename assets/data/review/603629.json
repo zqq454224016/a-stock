@@ -3,14 +3,14 @@
   "name": "利通电子",
   "review_version": "1.0.0",
   "status": "ok",
-  "trade_date": "2026-07-07",
-  "base_close": 111.07,
+  "trade_date": "2026-07-10",
+  "base_close": 116.6,
   "sections": {
     "prediction": {
       "status": "ok",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "direction": "down",
-      "probability": 0.2368,
+      "probability": 0.1606,
       "confidence": "high",
       "items": [
         {
@@ -32,7 +32,7 @@
     },
     "selector": {
       "status": "ok",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "selector_status": "rejected",
       "rank_bucket": "排除",
       "upside_score": 0.0,
@@ -56,7 +56,7 @@
     },
     "decision": {
       "status": "ok",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "action": "watch",
       "position_suggestion": 0.0,
       "confidence": "low",

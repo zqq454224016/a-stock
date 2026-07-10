@@ -1,31 +1,55 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-07",
-  "version": "1.0.0",
+  "trade_date": "2026-07-09",
+  "version": "1.1.0",
   "impact_score": -33,
   "impact_direction": "negative",
   "events": [
     {
       "event_type": "valuation_pressure",
       "title": "估值压力",
-      "period": "2026-07-07",
-      "announce_date": "2026-07-07",
+      "period": "2026-07-09",
+      "announce_date": "2026-07-09",
       "impact_score": -33,
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "pe_ttm": 90.8788461,
-        "pb": 13.21372101
+        "pe_ttm": 94.08,
+        "pb": 13.6
       },
       "evidence": [
-        "PE(TTM)=90.88",
-        "PB=13.21"
+        "PE(TTM)=94.08",
+        "PB=13.60"
       ],
-      "source": "eastmoney_value",
-      "limitations": []
+      "source": "baidu_pe",
+      "limitations": [],
+      "evidence_quality": {
+        "score": 95,
+        "level": "high",
+        "missing_evidence": []
+      }
     }
   ],
+  "evidence_quality": {
+    "avg_score": 95.0,
+    "low_quality_event_count": 0,
+    "missing_evidence": []
+  },
+  "post_event_review": {
+    "status": "pending",
+    "evaluated_count": 0,
+    "pending_count": 9,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "worst_adverse_pct": null,
+    "failure_reasons": [],
+    "limitations": [
+      "impact_review_requires_future_kline",
+      "review_requires_future_kline_after_signal_date",
+      "watch_action_hit_rule_uses_abs_return_below_1pct"
+    ]
+  },
   "limitations": [],
-  "updated_at": "2026-07-07 21:02:10"
+  "updated_at": "2026-07-10 17:43:27"
 }

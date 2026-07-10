@@ -25,6 +25,14 @@
       <input type="search" id="search-input" placeholder="搜索报表名称或日期…" class="search-input">
       <select id="category-filter" class="select-input">
         <option value="all">全部分类</option>
+        <option value="attribution">每日归因</option>
+        <option value="planning">v3路线</option>
+        <option value="monitoring">监控告警</option>
+        <option value="console">统一控制台</option>
+        <option value="framework">模块框架</option>
+        <option value="recommendation">多周期推荐</option>
+        <option value="factor_eval">因子有效性</option>
+        <option value="portfolio">组合管理</option>
         <option value="review">后验复盘</option>
         <option value="replay">历史推演</option>
         <option value="selector">上涨候选</option>
@@ -270,34 +278,41 @@
       <ul class="report-list" data-category="stock">
         <li class="report-item" data-name="600378 昊华科技 个股分析">
           <a href="stock/600378.html">
-            <span class="report-date">2026-07-07</span>
-            <span class="report-title">昊华科技 (600378) · 震荡</span>
+            <span class="report-date">2026-07-10</span>
+            <span class="report-title">昊华科技 (600378) · 偏空</span>
             <span class="report-tag">stock</span>
           </a>
         </li>
         <li class="report-item" data-name="603629 利通电子 个股分析">
           <a href="stock/603629.html">
-            <span class="report-date">2026-07-07</span>
+            <span class="report-date">2026-07-10</span>
             <span class="report-title">利通电子 (603629) · 偏空</span>
             <span class="report-tag">stock</span>
           </a>
         </li>
         <li class="report-item" data-name="000636 风华高科 个股分析">
           <a href="stock/000636.html">
-            <span class="report-date">2026-07-07</span>
+            <span class="report-date">2026-07-10</span>
             <span class="report-title">风华高科 (000636) · 偏空</span>
             <span class="report-tag">stock</span>
           </a>
         </li>
         <li class="report-item" data-name="000988 华工科技 个股分析">
           <a href="stock/000988.html">
-            <span class="report-date">2026-07-07</span>
-            <span class="report-title">华工科技 (000988) · 偏空</span>
+            <span class="report-date">2026-07-10</span>
+            <span class="report-title">华工科技 (000988) · 震荡</span>
+            <span class="report-tag">stock</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="002384 东山精密 个股分析">
+          <a href="stock/002384.html">
+            <span class="report-date">2026-07-10</span>
+            <span class="report-title">东山精密 (002384) · 震荡</span>
             <span class="report-tag">stock</span>
           </a>
         </li></ul>
     </section>
-  
+
     <section id="live" class="report-section">
       <h2>盘中看板</h2>
       <ul class="report-list" data-category="live">
@@ -311,48 +326,55 @@
       </ul>
     </section>
 
-  
+
     <section id="agent" class="report-section">
-      <h2>Agent 分析</h2>
+      <h2>智能分析</h2>
       <ul class="report-list" data-category="agent">
 <li class="report-item" data-name="Agent 统一看板">
           <a href="agent/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">Agent 统一看板</span>
-            <span class="report-tag">agent</span>
+            <span class="report-tag">智能分析</span>
           </a>
         </li>
         <li class="report-item" data-name="600378 昊华科技 Agent">
           <a href="agent/600378.html">
-            <span class="report-date">2026-07-07</span>
-            <span class="report-title">昊华科技 (600378) · 综合因子中性，等待更清晰信号</span>
-            <span class="report-tag">agent</span>
+            <span class="report-date">2026-07-10</span>
+            <span class="report-title">昊华科技 (600378) · 谨慎</span>
+            <span class="report-tag">智能分析</span>
           </a>
         </li>
         <li class="report-item" data-name="603629 利通电子 Agent">
           <a href="agent/603629.html">
-            <span class="report-date">2026-07-07</span>
+            <span class="report-date">2026-07-10</span>
             <span class="report-title">利通电子 (603629) · 谨慎</span>
-            <span class="report-tag">agent</span>
+            <span class="report-tag">智能分析</span>
           </a>
         </li>
         <li class="report-item" data-name="000636 风华高科 Agent">
           <a href="agent/000636.html">
-            <span class="report-date">2026-07-07</span>
+            <span class="report-date">2026-07-10</span>
             <span class="report-title">风华高科 (000636) · 综合因子中性，等待更清晰信号</span>
-            <span class="report-tag">agent</span>
+            <span class="report-tag">智能分析</span>
           </a>
         </li>
         <li class="report-item" data-name="000988 华工科技 Agent">
           <a href="agent/000988.html">
-            <span class="report-date">2026-07-07</span>
-            <span class="report-title">华工科技 (000988) · 谨慎</span>
-            <span class="report-tag">agent</span>
+            <span class="report-date">2026-07-10</span>
+            <span class="report-title">华工科技 (000988) · 综合因子中性，等待更清晰信号</span>
+            <span class="report-tag">智能分析</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="002384 东山精密 Agent">
+          <a href="agent/002384.html">
+            <span class="report-date">2026-07-10</span>
+            <span class="report-title">东山精密 (002384) · 综合因子中性，等待更清晰信号</span>
+            <span class="report-tag">智能分析</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="factors" class="report-section">
       <h2>多因子排名</h2>
       <ul class="report-list" data-category="factors">
@@ -360,12 +382,12 @@
           <a href="factors/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">多因子排名</span>
-            <span class="report-tag">factors</span>
+            <span class="report-tag">多因子</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="predict" class="report-section">
       <h2>走势预测</h2>
       <ul class="report-list" data-category="predict">
@@ -373,12 +395,12 @@
           <a href="predict/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">走势预测汇总</span>
-            <span class="report-tag">predict</span>
+            <span class="report-tag">走势预测</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="enhance" class="report-section">
       <h2>数据增强</h2>
       <ul class="report-list" data-category="enhance">
@@ -386,12 +408,12 @@
           <a href="enhance/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">数据增强摘要</span>
-            <span class="report-tag">enhance</span>
+            <span class="report-tag">数据增强</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="backtest" class="report-section">
       <h2>策略回测</h2>
       <ul class="report-list" data-category="backtest">
@@ -399,33 +421,40 @@
           <a href="backtest/600378_ma_cross.html">
             <span class="report-date">ma_cross</span>
             <span class="report-title">600378 · ma_cross</span>
-            <span class="report-tag">backtest</span>
+            <span class="report-tag">策略回测</span>
           </a>
         </li>
         <li class="report-item" data-name="603629 ma_cross 回测">
           <a href="backtest/603629_ma_cross.html">
             <span class="report-date">ma_cross</span>
             <span class="report-title">603629 · ma_cross</span>
-            <span class="report-tag">backtest</span>
+            <span class="report-tag">策略回测</span>
           </a>
         </li>
         <li class="report-item" data-name="000636 ma_cross 回测">
           <a href="backtest/000636_ma_cross.html">
             <span class="report-date">ma_cross</span>
             <span class="report-title">000636 · ma_cross</span>
-            <span class="report-tag">backtest</span>
+            <span class="report-tag">策略回测</span>
           </a>
         </li>
         <li class="report-item" data-name="000988 ma_cross 回测">
           <a href="backtest/000988_ma_cross.html">
             <span class="report-date">ma_cross</span>
             <span class="report-title">000988 · ma_cross</span>
-            <span class="report-tag">backtest</span>
+            <span class="report-tag">策略回测</span>
+          </a>
+        </li>
+        <li class="report-item" data-name="002384 ma_cross 回测">
+          <a href="backtest/002384_ma_cross.html">
+            <span class="report-date">ma_cross</span>
+            <span class="report-title">002384 · ma_cross</span>
+            <span class="report-tag">策略回测</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="trading" class="report-section">
       <h2>模拟交易</h2>
       <ul class="report-list" data-category="trading">
@@ -433,12 +462,12 @@
           <a href="trading/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">模拟交易看板</span>
-            <span class="report-tag">trading</span>
+            <span class="report-tag">模拟交易</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="decision" class="report-section">
       <h2>操作建议</h2>
       <ul class="report-list" data-category="decision">
@@ -446,12 +475,12 @@
           <a href="decision/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">单股操作建议</span>
-            <span class="report-tag">decision</span>
+            <span class="report-tag">操作建议</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="impact" class="report-section">
       <h2>实际影响</h2>
       <ul class="report-list" data-category="impact">
@@ -459,12 +488,12 @@
           <a href="impact/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">实际影响数据</span>
-            <span class="report-tag">impact</span>
+            <span class="report-tag">实际影响</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="selector" class="report-section">
       <h2>上涨候选</h2>
       <ul class="report-list" data-category="selector">
@@ -472,12 +501,12 @@
           <a href="selector/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">上涨候选池</span>
-            <span class="report-tag">selector</span>
+            <span class="report-tag">上涨候选</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="replay" class="report-section">
       <h2>历史推演</h2>
       <ul class="report-list" data-category="replay">
@@ -485,12 +514,12 @@
           <a href="replay/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">十日前滚动推演</span>
-            <span class="report-tag">replay</span>
+            <span class="report-tag">历史推演</span>
           </a>
         </li>
       </ul>
     </section>
-  
+
     <section id="review" class="report-section">
       <h2>后验复盘</h2>
       <ul class="report-list" data-category="review">
@@ -498,7 +527,111 @@
           <a href="review/index.html">
             <span class="report-date">汇总</span>
             <span class="report-title">后验复盘</span>
-            <span class="report-tag">review</span>
+            <span class="report-tag">后验复盘</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="report-section">
+      <h2>组合管理</h2>
+      <ul class="report-list" data-category="portfolio">
+<li class="report-item" data-name="组合管理">
+          <a href="portfolio/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">组合管理</span>
+            <span class="report-tag">组合管理</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="factor-eval" class="report-section">
+      <h2>因子有效性</h2>
+      <ul class="report-list" data-category="factor_eval">
+<li class="report-item" data-name="因子有效性评估">
+          <a href="factor_eval/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">因子有效性评估</span>
+            <span class="report-tag">因子评估</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="recommendations" class="report-section">
+      <h2>多周期推荐</h2>
+      <ul class="report-list" data-category="recommendation">
+<li class="report-item" data-name="短中长线推荐">
+          <a href="recommendations/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">短中长线推荐</span>
+            <span class="report-tag">多周期推荐</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="framework" class="report-section">
+      <h2>模块框架</h2>
+      <ul class="report-list" data-category="framework">
+<li class="report-item" data-name="模块化算法框架">
+          <a href="framework/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">模块化算法框架</span>
+            <span class="report-tag">模块框架</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="console" class="report-section">
+      <h2>统一控制台</h2>
+      <ul class="report-list" data-category="console">
+<li class="report-item" data-name="统一 Web 控制台">
+          <a href="console/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">统一 Web 控制台</span>
+            <span class="report-tag">统一控制台</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="monitoring" class="report-section">
+      <h2>监控告警</h2>
+      <ul class="report-list" data-category="monitoring">
+<li class="report-item" data-name="监控告警与数据血缘">
+          <a href="monitoring/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">监控告警与数据血缘</span>
+            <span class="report-tag">监控告警</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="planning" class="report-section">
+      <h2>v3路线</h2>
+      <ul class="report-list" data-category="planning">
+<li class="report-item" data-name="v3 稳定化与扩展路线">
+          <a href="planning/v3.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">v3 稳定化与扩展路线</span>
+            <span class="report-tag">v3路线</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="attribution" class="report-section">
+      <h2>每日归因</h2>
+      <ul class="report-list" data-category="attribution">
+<li class="report-item" data-name="每日涨跌归因">
+          <a href="attribution/index.html">
+            <span class="report-date">汇总</span>
+            <span class="report-title">每日涨跌归因</span>
+            <span class="report-tag">每日归因</span>
           </a>
         </li>
       </ul>

@@ -1,48 +1,71 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-07",
-  "selector_version": "1.0.0",
+  "trade_date": "2026-07-10",
+  "selector_version": "1.1.0",
   "upside_score": 0.0,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
     "收盘价站上 MA60",
-    "20日动量为正",
-    "回测夏普 1.74"
+    "回测夏普 1.63"
   ],
   "risks": [
-    "因子分偏低 50.1",
-    "预测方向向下，概率 0.28",
+    "因子分偏低 37.7",
+    "预测方向向下，概率 0.31",
     "预测标记高波动",
     "未站上 MA20",
     "5日跌幅较大",
-    "回测胜率偏低 33.33%",
-    "实际影响偏负面，impact_score=-20"
+    "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+    "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
   ],
   "reject_reasons": [
-    "预测方向为 down"
+    "预测方向为偏空",
+    "因子分过低 37.7"
   ],
   "candidate_blockers": [
     "预测尚未形成向上确认",
     "因子分未达到观察线",
-    "趋势未站上 MA20",
-    "实际影响分为负"
+    "趋势未站上 MA20"
   ],
   "next_triggers": [
-    "预测方向从 down 修复为 neutral/up",
-    "预测概率提升到 0.55 以上",
+    "预测方向从偏空修复为震荡或偏多",
+    "预测概率提升到 0.58 以上",
     "因子分提升到 55 以上",
-    "收盘价重新站上 MA20",
-    "实际影响分修复到非负"
+    "收盘价重新站上 MA20"
   ],
   "metrics": {
-    "quality_score": 100.0,
-    "factor_score": 50.1,
+    "quality_score": 90.0,
+    "factor_score": 37.7,
+    "candidate_score_threshold": 74.0,
+    "watch_score_threshold": 57.0,
+    "probability_floor": 0.58,
     "prediction_direction": "down",
-    "prediction_probability": 0.281,
-    "impact_score": -20.0,
-    "impact_direction": "negative"
+    "prediction_probability": 0.3052,
+    "impact_score": 0.0,
+    "impact_direction": "neutral"
   },
-  "updated_at": "2026-07-07 21:02:10"
+  "calibration": {
+    "calibration_version": "1.0.0",
+    "mode": "replay",
+    "score_adjustment": -6.0,
+    "candidate_score_delta": 4.0,
+    "watch_score_delta": 2.0,
+    "probability_floor_delta": 0.03,
+    "reasons": [],
+    "risk_notes": [
+      "十日推演命中率偏低 0%，候选阈值上调",
+      "未命中原因包含概率边界问题，需提高预测概率确认"
+    ],
+    "evidence": {
+      "evaluated_count": 10,
+      "hit_rate": 0.0,
+      "false_up_count": 0,
+      "false_down_count": 0,
+      "miss_reason_distribution": {
+        "预测概率处于边界区，后续应降低仓位或只观察": 10
+      }
+    }
+  },
+  "updated_at": "2026-07-10 17:43:27"
 }

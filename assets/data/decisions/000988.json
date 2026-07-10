@@ -1,7 +1,7 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-07",
+  "trade_date": "2026-07-10",
   "decision_version": "1.0.0",
   "action": "watch",
   "position_suggestion": 0.0,
@@ -18,22 +18,22 @@
   "evidence": {
     "prediction": {
       "direction": "neutral",
-      "probability": 0.5429,
+      "probability": 0.5186,
       "confidence": "high",
-      "expected_return": -0.0291,
+      "expected_return": -0.029,
       "risk_flags": [
         "high_volatility"
       ]
     },
-    "factor_score": 31.3,
-    "quality_score": 100.0,
+    "factor_score": 54.8,
+    "quality_score": 90.0,
     "backtest_health": "ok",
     "position": {
       "shares": 0,
       "unrealized_pnl_pct": 0.0,
       "market_value": null
     },
-    "agent_summary": "综合因子中性，等待更清晰信号",
+    "agent_summary": "谨慎",
     "impact": {
       "impact_score": -33.0,
       "impact_direction": "negative",
@@ -50,5 +50,5 @@
   },
   "requires_human_review": false,
   "disclaimer": "指导性意见，仅供研究和模拟交易，不构成投资建议",
-  "updated_at": "2026-07-07 21:02:10"
+  "updated_at": "2026-07-10 17:43:27"
 }

@@ -1,0 +1,1227 @@
+{
+  "registry_version": "1.0.0",
+  "updated_at": "2026-07-10 18:10:10",
+  "summary": {
+    "artifact_count": 20,
+    "existing_count": 20,
+    "missing_count": 0,
+    "degraded_count": 1,
+    "with_task_lineage_count": 2
+  },
+  "items": [
+    {
+      "registry_version": "1.0.0",
+      "module": "market",
+      "label": "大盘行情",
+      "path": "latest.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/latest.json",
+      "exists": true,
+      "size": 4895,
+      "file_mtime": "2026-07-10 17:40:44",
+      "updated_at": "2026-07-10 17:40:44",
+      "record_count": 1,
+      "field_summary": {
+        "top_level_fields": [
+          "degraded",
+          "fund_flow",
+          "indices",
+          "industries",
+          "limitations",
+          "market_distribution",
+          "spot_scope",
+          "top_gainers",
+          "top_losers",
+          "top_volume",
+          "trade_date",
+          "updated_at"
+        ],
+        "list_fields": {
+          "indices": 4,
+          "market_distribution": 7,
+          "top_gainers": 5,
+          "top_losers": 5,
+          "top_volume": 5,
+          "industries": 20,
+          "limitations": 2
+        },
+        "dict_fields": [
+          "fund_flow"
+        ]
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": true,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": [
+          "bulk_spot_skipped",
+          "spot_watchlist_only"
+        ]
+      },
+      "dependencies": [],
+      "generated_by": {},
+      "source": {
+        "declared_output": "latest.json",
+        "expected_command": "market",
+        "payload_trade_date": "2026-07-07",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "stocks",
+      "label": "个股分析",
+      "path": "stocks/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/stocks/index.json",
+      "exists": true,
+      "size": 1485,
+      "file_mtime": "2026-07-10 17:41:26",
+      "updated_at": "2026-07-10 17:41:26",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "stocks",
+          "updated_at"
+        ],
+        "list_fields": {
+          "stocks": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "market"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "stocks/index.json",
+        "expected_command": "stock",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "enhance",
+      "label": "数据增强",
+      "path": "enhance/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/enhance/index.json",
+      "exists": true,
+      "size": 2107,
+      "file_mtime": "2026-07-10 17:42:41",
+      "updated_at": "2026-07-10 17:42:41",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "stocks",
+          "updated_at"
+        ],
+        "list_fields": {
+          "stocks": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "market"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "enhance/index.json",
+        "expected_command": "enhance",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "factors",
+      "label": "因子",
+      "path": "factors/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/factors/index.json",
+      "exists": true,
+      "size": 2057,
+      "file_mtime": "2026-07-10 17:42:41",
+      "updated_at": "2026-07-10 17:42:41",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "stocks",
+          "updated_at"
+        ],
+        "list_fields": {
+          "stocks": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "factors/index.json",
+        "expected_command": "factor",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "backtest",
+      "label": "策略回测",
+      "path": "backtest/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/backtest/index.json",
+      "exists": true,
+      "size": 1348,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "results",
+          "updated_at"
+        ],
+        "list_fields": {
+          "results": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "factors"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "backtest/index.json",
+        "expected_command": "backtest",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "predictions",
+      "label": "走势预测",
+      "path": "predictions/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/predictions/index.json",
+      "exists": true,
+      "size": 961,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "predictions",
+          "updated_at"
+        ],
+        "list_fields": {
+          "predictions": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "factors",
+        "backtest"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "predictions/index.json",
+        "expected_command": "predict",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "selector",
+      "label": "上涨候选",
+      "path": "selector/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/selector/index.json",
+      "exists": true,
+      "size": 4096,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "items",
+          "updated_at"
+        ],
+        "list_fields": {
+          "items": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "predictions",
+        "factors",
+        "impact"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "selector/index.json",
+        "expected_command": "selector",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "decisions",
+      "label": "操作建议",
+      "path": "decisions/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/decisions/index.json",
+      "exists": true,
+      "size": 1191,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "decisions",
+          "updated_at"
+        ],
+        "list_fields": {
+          "decisions": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "predictions",
+        "selector",
+        "agent",
+        "impact"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "decisions/index.json",
+        "expected_command": "decision",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "review",
+      "label": "后验复盘",
+      "path": "review/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/review/index.json",
+      "exists": true,
+      "size": 1373,
+      "file_mtime": "2026-07-10 17:43:28",
+      "updated_at": "2026-07-10 17:43:28",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "items",
+          "updated_at"
+        ],
+        "list_fields": {
+          "items": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "predictions",
+        "selector",
+        "decisions"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "review/index.json",
+        "expected_command": "review",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "replay",
+      "label": "十日推演",
+      "path": "replay/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/replay/index.json",
+      "exists": true,
+      "size": 1436,
+      "file_mtime": "2026-07-07 11:50:05",
+      "updated_at": "2026-07-07 11:50:05",
+      "record_count": 4,
+      "field_summary": {
+        "top_level_fields": [
+          "items",
+          "updated_at"
+        ],
+        "list_fields": {
+          "items": 4
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "impact"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "replay/index.json",
+        "expected_command": "replay",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "impact",
+      "label": "实际影响",
+      "path": "impact/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/impact/index.json",
+      "exists": true,
+      "size": 3972,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "items",
+          "updated_at"
+        ],
+        "list_fields": {
+          "items": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "enhance",
+        "review"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "impact/index.json",
+        "expected_command": "impact",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "attribution",
+      "label": "每日归因",
+      "path": "attribution/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/attribution/index.json",
+      "exists": true,
+      "size": 2958,
+      "file_mtime": "2026-07-10 17:52:51",
+      "updated_at": "2026-07-10 17:52:51",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "items",
+          "updated_at"
+        ],
+        "list_fields": {
+          "items": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "market",
+        "impact",
+        "replay"
+      ],
+      "generated_by": {
+        "run_id": "20260710_175251_573762_attribution",
+        "command": "attribution",
+        "status": "success",
+        "ended_at": "2026-07-10 17:52:51",
+        "duration_sec": 0.056,
+        "artifact_exists_at_finish": true
+      },
+      "source": {
+        "declared_output": "attribution/index.json",
+        "expected_command": "attribution",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "agent",
+      "label": "Agent",
+      "path": "agent/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/agent/index.json",
+      "exists": true,
+      "size": 1783,
+      "file_mtime": "2026-07-10 17:43:28",
+      "updated_at": "2026-07-10 17:43:28",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "reports",
+          "updated_at"
+        ],
+        "list_fields": {
+          "reports": 5
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "predictions",
+        "factors"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "agent/index.json",
+        "expected_command": "agent",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "trading",
+      "label": "模拟交易",
+      "path": "trading/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/trading/index.json",
+      "exists": true,
+      "size": 1845,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "decisions",
+          "positions",
+          "summary",
+          "updated_at"
+        ],
+        "list_fields": {
+          "decisions": 5,
+          "positions": 0
+        },
+        "dict_fields": [
+          "summary"
+        ]
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "decisions",
+        "predictions"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "trading/index.json",
+        "expected_command": "simtrade",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "portfolio",
+      "label": "组合管理",
+      "path": "portfolio/summary.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/portfolio/summary.json",
+      "exists": true,
+      "size": 847,
+      "file_mtime": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-10 17:43:27",
+      "record_count": 0,
+      "field_summary": {
+        "top_level_fields": [
+          "exposures",
+          "limitations",
+          "portfolio_version",
+          "positions",
+          "rebalance_plan",
+          "risk_alerts",
+          "summary",
+          "target_positions",
+          "updated_at"
+        ],
+        "list_fields": {
+          "positions": 0,
+          "target_positions": 0,
+          "rebalance_plan": 0,
+          "risk_alerts": 0,
+          "limitations": 2
+        },
+        "dict_fields": [
+          "exposures",
+          "summary"
+        ]
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": [
+          "industry_exposure_requires_industry_classification_data",
+          "portfolio_uses_simtrade_account_until_live_account_is_connected"
+        ]
+      },
+      "dependencies": [
+        "decisions",
+        "trading"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "portfolio/summary.json",
+        "expected_command": "portfolio",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "recommendations",
+      "label": "多周期推荐",
+      "path": "recommendations/summary.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/recommendations/summary.json",
+      "exists": true,
+      "size": 21983,
+      "file_mtime": "2026-07-09 17:18:16",
+      "updated_at": "2026-07-09 17:18:16",
+      "record_count": 12,
+      "field_summary": {
+        "top_level_fields": [
+          "limitations",
+          "market_context",
+          "periods",
+          "recommendation_version",
+          "updated_at"
+        ],
+        "list_fields": {
+          "limitations": 3
+        },
+        "dict_fields": [
+          "market_context",
+          "periods"
+        ]
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": [
+          "recommendation_universe_limited_to_local_watchlist",
+          "long_horizon_lacks_dedicated_prediction_model",
+          "degraded_market_or_fund_flow_data_may_reduce_confidence"
+        ]
+      },
+      "dependencies": [
+        "market",
+        "selector",
+        "predictions",
+        "impact",
+        "replay"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "recommendations/summary.json",
+        "expected_command": "recommend",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "framework",
+      "label": "模块框架",
+      "path": "framework/snapshot.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/framework/snapshot.json",
+      "exists": true,
+      "size": 26708,
+      "file_mtime": "2026-07-10 15:11:19",
+      "updated_at": "2026-07-10 15:11:19",
+      "record_count": 4,
+      "field_summary": {
+        "top_level_fields": [
+          "analysis_findings",
+          "coverage",
+          "execution_intents",
+          "framework_version",
+          "limitations",
+          "portfolio_targets",
+          "risk_checks",
+          "signals",
+          "universe",
+          "updated_at"
+        ],
+        "list_fields": {
+          "universe": 4,
+          "signals": 20,
+          "risk_checks": 4,
+          "portfolio_targets": 4,
+          "execution_intents": 4,
+          "analysis_findings": 8,
+          "limitations": 3
+        },
+        "dict_fields": [
+          "coverage"
+        ]
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": [
+          "当前为现有 JSON 输出的标准契约适配层，尚未替换各模块内部算法。",
+          "执行意图只表示可进入人工确认，不代表自动下单。",
+          "实盘辅助已按用户要求跳过，账户与委托契约仍待后续接入。"
+        ]
+      },
+      "dependencies": [
+        "stocks",
+        "predictions",
+        "selector",
+        "decisions"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "framework/snapshot.json",
+        "expected_command": "framework",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "console",
+      "label": "统一控制台",
+      "path": "../../reports/console/index.html",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/reports/console/index.html",
+      "exists": true,
+      "size": 12921,
+      "file_mtime": "2026-07-10 17:55:35",
+      "updated_at": "2026-07-10 17:55:35",
+      "record_count": 0,
+      "field_summary": {
+        "top_level_fields": [],
+        "list_fields": {},
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks",
+        "selector",
+        "decisions",
+        "agent",
+        "framework"
+      ],
+      "generated_by": {
+        "run_id": "20260710_175534_979055_console",
+        "command": "console",
+        "status": "success",
+        "ended_at": "2026-07-10 17:55:35",
+        "duration_sec": 0.0533,
+        "artifact_exists_at_finish": true
+      },
+      "source": {
+        "declared_output": "../../reports/console/index.html",
+        "expected_command": "console",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "quality",
+      "label": "质量巡检",
+      "path": "quality/latest.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/quality/latest.json",
+      "exists": true,
+      "size": 2931,
+      "file_mtime": "2026-07-10 17:39:35",
+      "updated_at": "2026-07-10 17:39:35",
+      "record_count": 5,
+      "field_summary": {
+        "top_level_fields": [
+          "stocks",
+          "summary",
+          "total",
+          "updated_at"
+        ],
+        "list_fields": {
+          "stocks": 5
+        },
+        "dict_fields": [
+          "summary"
+        ]
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [
+        "stocks"
+      ],
+      "generated_by": {},
+      "source": {
+        "declared_output": "quality/latest.json",
+        "expected_command": "inspect",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    },
+    {
+      "registry_version": "1.0.0",
+      "module": "task_runs",
+      "label": "任务运行",
+      "path": "task_runs/index.json",
+      "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/task_runs/index.json",
+      "exists": true,
+      "size": 8242,
+      "file_mtime": "2026-07-10 18:09:07",
+      "updated_at": "2026-07-10 18:09:07",
+      "record_count": 12,
+      "field_summary": {
+        "top_level_fields": [
+          "runs",
+          "updated_at"
+        ],
+        "list_fields": {
+          "runs": 12
+        },
+        "dict_fields": []
+      },
+      "data_quality": {
+        "exists": true,
+        "degraded": false,
+        "quality_status": "",
+        "quality_score": null,
+        "limitations": []
+      },
+      "dependencies": [],
+      "generated_by": {},
+      "source": {
+        "declared_output": "task_runs/index.json",
+        "expected_command": "任意 CLI 命令",
+        "payload_trade_date": "",
+        "payload_version": ""
+      },
+      "registered_at": "2026-07-10 18:10:10"
+    }
+  ],
+  "lineage": [
+    {
+      "module": "market",
+      "label": "大盘行情",
+      "inputs": [],
+      "output": "latest.json",
+      "generated_by": "",
+      "input_status": {}
+    },
+    {
+      "module": "stocks",
+      "label": "个股分析",
+      "inputs": [
+        "market"
+      ],
+      "output": "stocks/index.json",
+      "generated_by": "",
+      "input_status": {
+        "market": "ok"
+      }
+    },
+    {
+      "module": "enhance",
+      "label": "数据增强",
+      "inputs": [
+        "stocks",
+        "market"
+      ],
+      "output": "enhance/index.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok",
+        "market": "ok"
+      }
+    },
+    {
+      "module": "factors",
+      "label": "因子",
+      "inputs": [
+        "stocks"
+      ],
+      "output": "factors/index.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok"
+      }
+    },
+    {
+      "module": "backtest",
+      "label": "策略回测",
+      "inputs": [
+        "stocks",
+        "factors"
+      ],
+      "output": "backtest/index.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok",
+        "factors": "ok"
+      }
+    },
+    {
+      "module": "predictions",
+      "label": "走势预测",
+      "inputs": [
+        "stocks",
+        "factors",
+        "backtest"
+      ],
+      "output": "predictions/index.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok",
+        "factors": "ok",
+        "backtest": "ok"
+      }
+    },
+    {
+      "module": "selector",
+      "label": "上涨候选",
+      "inputs": [
+        "predictions",
+        "factors",
+        "impact"
+      ],
+      "output": "selector/index.json",
+      "generated_by": "",
+      "input_status": {
+        "predictions": "ok",
+        "factors": "ok",
+        "impact": "ok"
+      }
+    },
+    {
+      "module": "decisions",
+      "label": "操作建议",
+      "inputs": [
+        "predictions",
+        "selector",
+        "agent",
+        "impact"
+      ],
+      "output": "decisions/index.json",
+      "generated_by": "",
+      "input_status": {
+        "predictions": "ok",
+        "selector": "ok",
+        "agent": "ok",
+        "impact": "ok"
+      }
+    },
+    {
+      "module": "review",
+      "label": "后验复盘",
+      "inputs": [
+        "predictions",
+        "selector",
+        "decisions"
+      ],
+      "output": "review/index.json",
+      "generated_by": "",
+      "input_status": {
+        "predictions": "ok",
+        "selector": "ok",
+        "decisions": "ok"
+      }
+    },
+    {
+      "module": "replay",
+      "label": "十日推演",
+      "inputs": [
+        "stocks",
+        "impact"
+      ],
+      "output": "replay/index.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok",
+        "impact": "ok"
+      }
+    },
+    {
+      "module": "impact",
+      "label": "实际影响",
+      "inputs": [
+        "enhance",
+        "review"
+      ],
+      "output": "impact/index.json",
+      "generated_by": "",
+      "input_status": {
+        "enhance": "ok",
+        "review": "ok"
+      }
+    },
+    {
+      "module": "attribution",
+      "label": "每日归因",
+      "inputs": [
+        "stocks",
+        "market",
+        "impact",
+        "replay"
+      ],
+      "output": "attribution/index.json",
+      "generated_by": "attribution",
+      "input_status": {
+        "stocks": "ok",
+        "market": "ok",
+        "impact": "ok",
+        "replay": "ok"
+      }
+    },
+    {
+      "module": "agent",
+      "label": "Agent",
+      "inputs": [
+        "stocks",
+        "predictions",
+        "factors"
+      ],
+      "output": "agent/index.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok",
+        "predictions": "ok",
+        "factors": "ok"
+      }
+    },
+    {
+      "module": "trading",
+      "label": "模拟交易",
+      "inputs": [
+        "decisions",
+        "predictions"
+      ],
+      "output": "trading/index.json",
+      "generated_by": "",
+      "input_status": {
+        "decisions": "ok",
+        "predictions": "ok"
+      }
+    },
+    {
+      "module": "portfolio",
+      "label": "组合管理",
+      "inputs": [
+        "decisions",
+        "trading"
+      ],
+      "output": "portfolio/summary.json",
+      "generated_by": "",
+      "input_status": {
+        "decisions": "ok",
+        "trading": "ok"
+      }
+    },
+    {
+      "module": "recommendations",
+      "label": "多周期推荐",
+      "inputs": [
+        "market",
+        "selector",
+        "predictions",
+        "impact",
+        "replay"
+      ],
+      "output": "recommendations/summary.json",
+      "generated_by": "",
+      "input_status": {
+        "market": "ok",
+        "selector": "ok",
+        "predictions": "ok",
+        "impact": "ok",
+        "replay": "ok"
+      }
+    },
+    {
+      "module": "framework",
+      "label": "模块框架",
+      "inputs": [
+        "stocks",
+        "predictions",
+        "selector",
+        "decisions"
+      ],
+      "output": "framework/snapshot.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok",
+        "predictions": "ok",
+        "selector": "ok",
+        "decisions": "ok"
+      }
+    },
+    {
+      "module": "console",
+      "label": "统一控制台",
+      "inputs": [
+        "stocks",
+        "selector",
+        "decisions",
+        "agent",
+        "framework"
+      ],
+      "output": "../../reports/console/index.html",
+      "generated_by": "console",
+      "input_status": {
+        "stocks": "ok",
+        "selector": "ok",
+        "decisions": "ok",
+        "agent": "ok",
+        "framework": "ok"
+      }
+    },
+    {
+      "module": "quality",
+      "label": "质量巡检",
+      "inputs": [
+        "stocks"
+      ],
+      "output": "quality/latest.json",
+      "generated_by": "",
+      "input_status": {
+        "stocks": "ok"
+      }
+    },
+    {
+      "module": "task_runs",
+      "label": "任务运行",
+      "inputs": [],
+      "output": "task_runs/index.json",
+      "generated_by": "",
+      "input_status": {}
+    }
+  ],
+  "limitations": [
+    "首版注册表从关键产物、静态依赖和最近任务日志推导血缘。",
+    "未被 CLI 任务日志命中的旧产物只能记录文件时间和字段摘要。",
+    "缓存命中、降级原因和字段质量仍需要后续各任务写入更细粒度元数据。"
+  ]
+}

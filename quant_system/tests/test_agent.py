@@ -5,7 +5,9 @@ from pathlib import Path
 
 from quant_system.agent.context import StockContext
 from quant_system.agent.orchestrator import build_agent_report
+from quant_system.agent.policy import validate_agent_output
 from quant_system.agent.predict_review import review_prediction
+from quant_system.agent.schemas import build_evidence_package
 from quant_system.agent.stock_explainer import explain_stock_selection
 from quant_system.agent.strategy_diagnosis import diagnose_strategy
 from quant_system.config.db_config import DBConfig
@@ -108,3 +110,52 @@ def test_build_agent_report(tmp_path: Path):
     assert report["code"] == code
     assert "stock_selection" in report
     assert "rule_based_only" in report["limitations"]
+    assert report["provider"]["active"] == "rule"
+    assert report["policy"]["passed"] is True
+    assert report["audit"]["policy_passed"] is True
+
+
+def test_evidence_package_marks_missing_inputs(tmp_path: Path):
+    store = JsonStore(DBConfig())
+    store.config.json_data_dir = tmp_path
+    code = "600378"
+    _write(store, f"stocks/{code}.json", {"code": code, "name": "昊华科技", "trade_date": "2026-07-06"})
+    ctx = StockContext(code, store)
+    package = build_evidence_package(ctx).to_dict()
+
+    assert package["code"] == code
+    assert package["allowed_actions"] == ["analyze", "summarize", "suggest"]
+    assert "prediction" in package["missing_inputs"]
+    assert "stock" not in package["missing_inputs"]
+
+
+def test_policy_blocks_forbidden_agent_output():
+    evidence = {"allowed_actions": ["analyze", "summarize", "suggest"]}
+    result = {
+        "summary": "无需人工确认，直接下单",
+        "evidence": ["因子较强"],
+        "risks": ["波动较大"],
+        "suggested_actions": ["买入"],
+        "requires_human_review": False,
+    }
+    policy = validate_agent_output(result, evidence)
+
+    assert policy["passed"] is False
+    assert any("禁止表述" in x for x in policy["violations"])
+    assert any("人工确认" in x for x in policy["violations"])
+
+
+def test_llm_provider_falls_back_to_rule_with_audit(tmp_path: Path):
+    store = JsonStore(DBConfig())
+    store.config.json_data_dir = tmp_path
+    code = "600378"
+    _write(store, f"stocks/{code}.json", {"code": code, "name": "昊华科技", "trade_date": "2026-07-06"})
+    _write(store, f"factors/{code}.json", {"factors": {"multi_factor_score": 55}})
+    _write(store, f"signals/{code}.json", {"signal": "neutral"})
+    ctx = StockContext(code, store)
+    report = build_agent_report(ctx, provider="llm")
+
+    assert report["provider"]["requested"] == "llm"
+    assert report["provider"]["active"] == "rule"
+    assert "未配置" in report["provider"]["fallback_reason"]
+    assert report["_audit_record"]["fallback_reason"] == report["provider"]["fallback_reason"]

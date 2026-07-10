@@ -1,49 +1,18 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-07",
-  "updated_at": "2026-07-07 21:01:28",
+  "trade_date": "2026-07-09",
+  "updated_at": "2026-07-10 17:42:40",
   "version": "1.0.0",
   "fundamentals": {
-    "source": "eastmoney_value",
-    "trade_date": "2026-07-07",
-    "close": 65.57,
-    "market_cap_yi": 845.85,
-    "float_cap_yi": 703.28,
-    "pe_ttm": 53.95347105,
-    "pe_static": 58.55812055,
-    "pb": 4.55215362,
-    "ps": 4.76185919,
-    "peg": 1.444284747545
+    "source": "baidu_pe",
+    "pe_ttm": 54.47,
+    "trade_date": "2026-07-09",
+    "pb": 4.21
   },
   "corporate": {
     "dividends": [],
-    "lockups": [
-      {
-        "unlock_date": "2028-01-10",
-        "unlock_shares": 20161290.0,
-        "unlock_value_yi": 13.22,
-        "pct_total": 0.015628911581,
-        "pct_float": 0.018797260004,
-        "holder_type": "定向增发机构配售股份"
-      },
-      {
-        "unlock_date": "2027-07-26",
-        "unlock_shares": 197272967.0,
-        "unlock_value_yi": 129.35,
-        "pct_total": 0.152924825668,
-        "pct_float": 0.183926289069,
-        "holder_type": "定向增发机构配售股份"
-      },
-      {
-        "unlock_date": "2025-07-08",
-        "unlock_shares": 161290322.0,
-        "unlock_value_yi": 40.73,
-        "pct_total": 0.125031294195,
-        "pct_float": 0.1503780819,
-        "holder_type": "定向增发机构配售股份"
-      }
-    ],
+    "lockups": [],
     "earnings_forecast": null
   },
   "fund_flow": {
@@ -56,22 +25,34 @@
       {
         "name": "上证指数",
         "code": "000001",
-        "close": 4050.44,
-        "change_pct": 0.17
+        "close": 3996.1616,
+        "change_pct": -1.001
       },
       {
-        "name": "科创50",
+        "name": "深证成指",
+        "code": "399001",
+        "close": 15046.67,
+        "change_pct": -2.286
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3842.731,
+        "change_pct": -4.366
+      },
+      {
+        "name": "科创50参考",
         "code": "000688",
-        "close": 2011.17,
-        "change_pct": 1.8
+        "close": 2064.9756,
+        "change_pct": -5.529
       }
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -758.28,
+      "main_net": -790.0,
       "retail_net": 0.0
     },
-    "stock_return_20d": 31.38
+    "stock_return_20d": -4.6
   },
   "cross_source": null,
   "quality_ref": {
@@ -85,8 +66,11 @@
   ],
   "sources_failed": [
     "dividend",
-    "earnings_forecast_20260930",
+    "earnings_forecast",
+    "individual_info",
+    "lockup",
     "margin_sse",
-    "northbound"
+    "northbound",
+    "valuation_em"
   ]
 }

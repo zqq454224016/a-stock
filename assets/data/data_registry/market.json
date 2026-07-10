@@ -1,0 +1,59 @@
+{
+  "registry_version": "1.0.0",
+  "module": "market",
+  "label": "大盘行情",
+  "path": "latest.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/latest.json",
+  "exists": true,
+  "size": 4895,
+  "file_mtime": "2026-07-10 17:40:44",
+  "updated_at": "2026-07-10 17:40:44",
+  "record_count": 1,
+  "field_summary": {
+    "top_level_fields": [
+      "degraded",
+      "fund_flow",
+      "indices",
+      "industries",
+      "limitations",
+      "market_distribution",
+      "spot_scope",
+      "top_gainers",
+      "top_losers",
+      "top_volume",
+      "trade_date",
+      "updated_at"
+    ],
+    "list_fields": {
+      "indices": 4,
+      "market_distribution": 7,
+      "top_gainers": 5,
+      "top_losers": 5,
+      "top_volume": 5,
+      "industries": 20,
+      "limitations": 2
+    },
+    "dict_fields": [
+      "fund_flow"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": true,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": [
+      "bulk_spot_skipped",
+      "spot_watchlist_only"
+    ]
+  },
+  "dependencies": [],
+  "generated_by": {},
+  "source": {
+    "declared_output": "latest.json",
+    "expected_command": "market",
+    "payload_trade_date": "2026-07-07",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

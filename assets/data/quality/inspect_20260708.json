@@ -1,0 +1,100 @@
+{
+  "updated_at": "2026-07-08 23:16:06",
+  "total": 4,
+  "summary": {
+    "ok": 4,
+    "warning": 0,
+    "error": 0,
+    "factor_blocked": 0
+  },
+  "stocks": [
+    {
+      "code": "600378",
+      "trade_date": "2026-07-08",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-06-26",
+        "2026-07-07"
+      ],
+      "latest_expected": "2026-07-08",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-07 落后于最近交易日 2026-07-08"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-08 23:16:06"
+    },
+    {
+      "code": "603629",
+      "trade_date": "2026-07-08",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-06-26",
+        "2026-07-07"
+      ],
+      "latest_expected": "2026-07-08",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-07 落后于最近交易日 2026-07-08"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-08 23:16:06"
+    },
+    {
+      "code": "000636",
+      "trade_date": "2026-07-08",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-06-26",
+        "2026-07-07"
+      ],
+      "latest_expected": "2026-07-08",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-07 落后于最近交易日 2026-07-08"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-08 23:16:06"
+    },
+    {
+      "code": "000988",
+      "trade_date": "2026-07-08",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-06-26",
+        "2026-07-07"
+      ],
+      "latest_expected": "2026-07-08",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-07 落后于最近交易日 2026-07-08"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-08 23:16:06"
+    }
+  ]
+}

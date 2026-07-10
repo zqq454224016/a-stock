@@ -1,0 +1,63 @@
+{
+  "registry_version": "1.0.0",
+  "module": "framework",
+  "label": "模块框架",
+  "path": "framework/snapshot.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/framework/snapshot.json",
+  "exists": true,
+  "size": 26708,
+  "file_mtime": "2026-07-10 15:11:19",
+  "updated_at": "2026-07-10 15:11:19",
+  "record_count": 4,
+  "field_summary": {
+    "top_level_fields": [
+      "analysis_findings",
+      "coverage",
+      "execution_intents",
+      "framework_version",
+      "limitations",
+      "portfolio_targets",
+      "risk_checks",
+      "signals",
+      "universe",
+      "updated_at"
+    ],
+    "list_fields": {
+      "universe": 4,
+      "signals": 20,
+      "risk_checks": 4,
+      "portfolio_targets": 4,
+      "execution_intents": 4,
+      "analysis_findings": 8,
+      "limitations": 3
+    },
+    "dict_fields": [
+      "coverage"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": [
+      "当前为现有 JSON 输出的标准契约适配层，尚未替换各模块内部算法。",
+      "执行意图只表示可进入人工确认，不代表自动下单。",
+      "实盘辅助已按用户要求跳过，账户与委托契约仍待后续接入。"
+    ]
+  },
+  "dependencies": [
+    "stocks",
+    "predictions",
+    "selector",
+    "decisions"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "framework/snapshot.json",
+    "expected_command": "framework",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

@@ -41,8 +41,26 @@ def _status_class(status: str) -> str:
     return ""
 
 
+def _mode_label(mode: str) -> str:
+    return {
+        "review": "后验复盘",
+        "replay": "十日推演",
+        "neutral": "默认阈值",
+        "manual": "手动校准",
+    }.get(mode, mode or "—")
+
+
 def _list(items: list[str]) -> str:
     return "<br>".join(items or ["—"])
+
+
+def _calibration(r: dict) -> str:
+    calibration = r.get("calibration") or {}
+    metrics = r.get("metrics") or {}
+    mode = _mode_label(calibration.get("mode") or "")
+    candidate = metrics.get("candidate_score_threshold")
+    prob = metrics.get("probability_floor")
+    return f"{mode}<br>候选 {candidate}<br>概率 {prob}"
 
 
 def render(rows: list[dict]) -> str:
@@ -58,10 +76,11 @@ def render(rows: list[dict]) -> str:
           <td>{_list((r.get('risks') or [])[:3])}</td>
           <td>{_list(r.get('reject_reasons') or [])}</td>
           <td>{_list(r.get('candidate_blockers') or [])}</td>
+          <td>{_calibration(r)}</td>
           <td>{_list((r.get('next_triggers') or [])[:3])}</td>
         </tr>"""
         for idx, r in enumerate(rows, 1)
-    ) or '<tr><td colspan="10">运行 python quant_system/main.py selector</td></tr>'
+    ) or '<tr><td colspan="11">运行 python quant_system/main.py selector</td></tr>'
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -80,11 +99,11 @@ def render(rows: list[dict]) -> str:
   <main class="container report-body">
     <section class="table-section">
       <table class="data-table">
-        <thead><tr><th>排名</th><th>代码</th><th>名称</th><th>上涨分</th><th>分层</th><th>正面依据</th><th>风险</th><th>排除原因</th><th>候选阻断</th><th>进入候选触发</th></tr></thead>
+        <thead><tr><th>排名</th><th>代码</th><th>名称</th><th>上涨分</th><th>分层</th><th>正面依据</th><th>风险</th><th>排除原因</th><th>候选阻断</th><th>校准</th><th>进入候选触发</th></tr></thead>
         <tbody>{body}</tbody>
       </table>
     </section>
-    <p style="color:var(--color-muted);font-size:0.9rem">候选池用于研究和复盘，不构成投资建议。candidate 表示进入上涨候选，watch 表示观察候选。</p>
+    <p style="color:var(--color-muted);font-size:0.9rem">候选池用于研究和复盘，不构成投资建议。“上涨候选”表示进入候选池，“观察候选”表示等待更多确认。</p>
   </main>
 </body>
 </html>"""

@@ -53,6 +53,25 @@ def _hit(value) -> str:
     return "—"
 
 
+def _status_label(status: str) -> str:
+    return {
+        "ok": "正常",
+        "pending": "待评估",
+        "evaluated": "已评估",
+        "missing": "缺少数据",
+        "skipped": "已跳过",
+        "error": "异常",
+    }.get(status, status or "—")
+
+
+def _horizon_label(horizon: str) -> str:
+    return {
+        "1d": "1日",
+        "5d": "5日",
+        "20d": "20日",
+    }.get(horizon, horizon or "—")
+
+
 def _list(items: list[str]) -> str:
     return "<br>".join(items or ["—"])
 
@@ -86,7 +105,7 @@ def render_index(payloads: list[dict]) -> str:
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">后验复盘</h1>
-      <p class="site-subtitle">统计 prediction、selector、decision 后 1/5/20 日收益、命中率和最大不利波动</p>
+      <p class="site-subtitle">统计走势预测、上涨候选和操作建议发出后 1/5/20 日收益、命中率和最大不利波动</p>
     </div>
   </header>
   <main class="container report-body">
@@ -107,8 +126,8 @@ def _section_rows(title: str, section: dict) -> str:
         rows.append(f"""
         <tr>
           <td>{title}</td>
-          <td>{item.get('horizon')}</td>
-          <td>{item.get('status')}</td>
+          <td>{_horizon_label(item.get('horizon'))}</td>
+          <td>{_status_label(item.get('status'))}</td>
           <td>{item.get('target_date') or '—'}</td>
           <td>{_ret(item.get('return_pct'))}</td>
           <td>{_ret(item.get('max_favorable_pct'))}</td>

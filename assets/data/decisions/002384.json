@@ -1,0 +1,54 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-10",
+  "decision_version": "1.0.0",
+  "action": "watch",
+  "position_suggestion": 0.0,
+  "confidence": "medium",
+  "reasons": [
+    "预测、因子或回测条件不足，暂不买入",
+    "回测指标处于可接受区间"
+  ],
+  "risks": [
+    "实际影响数据偏负面，impact_score=-33.0",
+    "high_volatility"
+  ],
+  "invalid_conditions": [],
+  "evidence": {
+    "prediction": {
+      "direction": "neutral",
+      "probability": 0.4792,
+      "confidence": "medium",
+      "expected_return": -0.0519,
+      "risk_flags": [
+        "high_volatility"
+      ]
+    },
+    "factor_score": 54.4,
+    "quality_score": 100.0,
+    "backtest_health": "ok",
+    "position": {
+      "shares": 0,
+      "unrealized_pnl_pct": 0.0,
+      "market_value": null
+    },
+    "agent_summary": "综合因子中性，等待更清晰信号",
+    "impact": {
+      "impact_score": -33.0,
+      "impact_direction": "negative",
+      "events": [
+        {
+          "event_type": "valuation_pressure",
+          "title": "估值压力",
+          "impact_score": -33,
+          "impact_direction": "negative"
+        }
+      ],
+      "limitations": []
+    }
+  },
+  "requires_human_review": false,
+  "disclaimer": "指导性意见，仅供研究和模拟交易，不构成投资建议",
+  "updated_at": "2026-07-10 17:43:27"
+}

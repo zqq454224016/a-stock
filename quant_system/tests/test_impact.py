@@ -27,6 +27,7 @@ def test_litong_q2_profit_gap_is_marked_when_q2_data_missing():
     assert "earnings_forecast" in event_types
     assert "q2_profit_growth_gap" in event_types
     assert "requires_q2_official_report_or_forecast" in payload["limitations"]
+    assert payload["evidence_quality"]["low_quality_event_count"] >= 1
 
 
 def test_haohua_material_price_reason_creates_positive_event():
@@ -51,6 +52,7 @@ def test_haohua_material_price_reason_creates_positive_event():
     assert material
     assert material[0]["impact_direction"] == "positive"
     assert material[0]["impact_score"] > 0
+    assert material[0]["evidence_quality"]["level"] in {"medium", "high"}
 
 
 def test_high_valuation_creates_negative_pressure_event():
@@ -73,3 +75,23 @@ def test_past_lockup_is_not_current_negative_event():
     )
 
     assert not [e for e in payload["events"] if e["event_type"] == "lockup_pressure"]
+
+
+def test_impact_payload_contains_post_event_review_summary():
+    payload = build_impact_payload(
+        "600001",
+        "测试股票",
+        {"fundamentals": {"pe_ttm": 90, "pb": 12}},
+        review={
+            "summary": {
+                "evaluated_count": 3,
+                "pending_count": 0,
+                "hit_rate": 0.67,
+                "avg_return_pct": 2.4,
+                "worst_adverse_pct": -1.2,
+            }
+        },
+    )
+
+    assert payload["post_event_review"]["status"] == "evaluated"
+    assert payload["post_event_review"]["hit_rate"] == 0.67

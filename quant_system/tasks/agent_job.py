@@ -21,6 +21,7 @@ def run_agent_job(
     codes: list[str] | None = None,
     *,
     strategy: str = "ma_cross",
+    provider: str = "rule",
 ) -> list[dict[str, Any]]:
     cfg = CrawlerConfig()
     store = JsonStore(DBConfig())
@@ -39,14 +40,19 @@ def run_agent_job(
         code = normalize_code(item["code"])
         try:
             ctx = StockContext(code, store)
-            report = build_agent_report(ctx, strategy=strategy)
+            report = build_agent_report(ctx, strategy=strategy, provider=provider)
+            audit_record = report.pop("_audit_record", None)
             store.save_agent_report(code, report)
+            if audit_record:
+                store.save_agent_audit(code, audit_record)
             index.append({
                 "code": code,
                 "name": report.get("name"),
                 "trade_date": report.get("trade_date"),
                 "summary": report.get("summary"),
                 "confidence": report.get("confidence"),
+                "provider": (report.get("provider") or {}).get("active"),
+                "policy_passed": (report.get("policy") or {}).get("passed"),
                 "selection_verdict": (report.get("stock_selection") or {}).get("verdict"),
                 "strategy_verdict": (report.get("strategy_diagnosis") or {}).get("verdict"),
                 "prediction_alignment": (report.get("prediction_review") or {}).get("alignment"),

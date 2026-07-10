@@ -1,0 +1,58 @@
+{
+  "registry_version": "1.0.0",
+  "module": "portfolio",
+  "label": "组合管理",
+  "path": "portfolio/summary.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/portfolio/summary.json",
+  "exists": true,
+  "size": 847,
+  "file_mtime": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-10 17:43:27",
+  "record_count": 0,
+  "field_summary": {
+    "top_level_fields": [
+      "exposures",
+      "limitations",
+      "portfolio_version",
+      "positions",
+      "rebalance_plan",
+      "risk_alerts",
+      "summary",
+      "target_positions",
+      "updated_at"
+    ],
+    "list_fields": {
+      "positions": 0,
+      "target_positions": 0,
+      "rebalance_plan": 0,
+      "risk_alerts": 0,
+      "limitations": 2
+    },
+    "dict_fields": [
+      "exposures",
+      "summary"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": [
+      "industry_exposure_requires_industry_classification_data",
+      "portfolio_uses_simtrade_account_until_live_account_is_connected"
+    ]
+  },
+  "dependencies": [
+    "decisions",
+    "trading"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "portfolio/summary.json",
+    "expected_command": "portfolio",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

@@ -1,0 +1,908 @@
+{
+  "framework_version": "1.0.0",
+  "updated_at": "2026-07-10 15:11:19",
+  "universe": [
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "trade_date": "2026-07-08",
+      "quality_score": 100.0,
+      "market_scope": "watchlist",
+      "is_tradeable": true,
+      "data_version": "daily_kline_000636_20260708",
+      "notes": []
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "trade_date": "2026-07-08",
+      "quality_score": 100.0,
+      "market_scope": "watchlist",
+      "is_tradeable": true,
+      "data_version": "daily_kline_000988_20260708",
+      "notes": []
+    },
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "trade_date": "2026-07-08",
+      "quality_score": 100.0,
+      "market_scope": "watchlist",
+      "is_tradeable": true,
+      "data_version": "daily_kline_600378_20260708",
+      "notes": []
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "trade_date": "2026-07-08",
+      "quality_score": 100.0,
+      "market_scope": "watchlist",
+      "is_tradeable": true,
+      "data_version": "daily_kline_603629_20260708",
+      "notes": []
+    }
+  ],
+  "signals": [
+    {
+      "code": "000636",
+      "source": "prediction",
+      "direction": "neutral",
+      "strength": 46.12,
+      "confidence": "medium",
+      "horizon": "5d",
+      "evidence": [
+        "预测概率 0.46",
+        "期望收益 -0.0176"
+      ],
+      "risks": [
+        "high_volatility"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "000636",
+      "source": "selector",
+      "direction": "down",
+      "strength": 37.91,
+      "confidence": "low",
+      "horizon": "1-5d",
+      "evidence": [
+        "预测中性，概率 0.46",
+        "收盘价站上 MA60",
+        "回测夏普 2.43",
+        "回测胜率 57.14%",
+        "阈值校准：十日推演证据中性，命中率 60%"
+      ],
+      "risks": [
+        "因子分偏低 45.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-26",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "实际影响数据显著偏负面"
+      ],
+      "version": "1.1.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "000636",
+      "source": "recommendation.short",
+      "direction": "down",
+      "strength": 33.93,
+      "confidence": "low",
+      "horizon": "1-5个交易日",
+      "evidence": [
+        "候选评分 37.9",
+        "多因子评分 45.8",
+        "5日历史涨跌 -18.41%",
+        "实际影响评分 -26",
+        "十日推演命中率 60%"
+      ],
+      "risks": [
+        "因子分偏低 45.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-26",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "实际影响数据显著偏负面"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "000636",
+      "source": "recommendation.medium",
+      "direction": "down",
+      "strength": 40.72,
+      "confidence": "low",
+      "horizon": "1-3个月",
+      "evidence": [
+        "候选评分 37.9",
+        "多因子评分 45.8",
+        "20日历史涨跌 -0.62%",
+        "实际影响评分 -26",
+        "十日推演命中率 60%"
+      ],
+      "risks": [
+        "因子分偏低 45.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-26",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "中线实际影响显著偏负面"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "000636",
+      "source": "recommendation.long",
+      "direction": "down",
+      "strength": 46.29,
+      "confidence": "low",
+      "horizon": "6-12个月",
+      "evidence": [
+        "候选评分 37.9",
+        "多因子评分 45.8",
+        "60日历史涨跌 207.65%",
+        "实际影响评分 -26",
+        "十日推演命中率 60%"
+      ],
+      "risks": [
+        "因子分偏低 45.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-26",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "000988",
+      "source": "prediction",
+      "direction": "neutral",
+      "strength": 52.0,
+      "confidence": "high",
+      "horizon": "5d",
+      "evidence": [
+        "预测概率 0.55",
+        "期望收益 -0.0290"
+      ],
+      "risks": [
+        "high_volatility"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "000988",
+      "source": "selector",
+      "direction": "down",
+      "strength": 34.68,
+      "confidence": "low",
+      "horizon": "1-5d",
+      "evidence": [
+        "预测中性，概率 0.55",
+        "收盘价站上 MA60",
+        "回测夏普 1.84",
+        "回测胜率 66.67%"
+      ],
+      "risks": [
+        "因子分偏低 39.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-33",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "因子分过低 39.8",
+        "实际影响数据显著偏负面"
+      ],
+      "version": "1.1.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "000988",
+      "source": "recommendation.short",
+      "direction": "down",
+      "strength": 29.7,
+      "confidence": "low",
+      "horizon": "1-5个交易日",
+      "evidence": [
+        "候选评分 34.7",
+        "多因子评分 39.8",
+        "5日历史涨跌 -15.01%",
+        "实际影响评分 -33",
+        "十日推演命中率 10%"
+      ],
+      "risks": [
+        "因子分偏低 39.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-33",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "因子分过低 39.8",
+        "实际影响数据显著偏负面"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "000988",
+      "source": "recommendation.medium",
+      "direction": "down",
+      "strength": 32.51,
+      "confidence": "low",
+      "horizon": "1-3个月",
+      "evidence": [
+        "候选评分 34.7",
+        "多因子评分 39.8",
+        "20日历史涨跌 -5.00%",
+        "实际影响评分 -33",
+        "十日推演命中率 10%"
+      ],
+      "risks": [
+        "因子分偏低 39.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-33",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "中线实际影响显著偏负面"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "000988",
+      "source": "recommendation.long",
+      "direction": "down",
+      "strength": 37.69,
+      "confidence": "low",
+      "horizon": "6-12个月",
+      "evidence": [
+        "候选评分 34.7",
+        "多因子评分 39.8",
+        "60日历史涨跌 28.55%",
+        "实际影响评分 -33",
+        "十日推演命中率 10%"
+      ],
+      "risks": [
+        "因子分偏低 39.8",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "实际影响偏负面，impact_score=-33",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "中长期实际影响显著偏负面"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "600378",
+      "source": "prediction",
+      "direction": "down",
+      "strength": 71.9,
+      "confidence": "high",
+      "horizon": "5d",
+      "evidence": [
+        "预测概率 0.28",
+        "期望收益 -0.0167"
+      ],
+      "risks": [
+        "high_volatility"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "600378",
+      "source": "selector",
+      "direction": "down",
+      "strength": 0.0,
+      "confidence": "low",
+      "horizon": "1-5d",
+      "evidence": [
+        "收盘价站上 MA60",
+        "20日动量为正",
+        "回测夏普 1.64"
+      ],
+      "risks": [
+        "因子分偏低 49.3",
+        "预测方向向下，概率 0.28",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "回测胜率偏低 33.33%",
+        "影响数据限制：not_q2_report_period",
+        "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "预测方向为偏空"
+      ],
+      "version": "1.1.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "600378",
+      "source": "recommendation.short",
+      "direction": "down",
+      "strength": 26.45,
+      "confidence": "low",
+      "horizon": "1-5个交易日",
+      "evidence": [
+        "候选评分 0.0",
+        "多因子评分 49.3",
+        "5日历史涨跌 -22.83%",
+        "实际影响评分 0",
+        "十日推演命中率 0%"
+      ],
+      "risks": [
+        "因子分偏低 49.3",
+        "预测方向向下，概率 0.28",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "回测胜率偏低 33.33%",
+        "影响数据限制：not_q2_report_period",
+        "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "预测方向为偏空",
+        "短线预测方向偏空"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "600378",
+      "source": "recommendation.medium",
+      "direction": "down",
+      "strength": 36.36,
+      "confidence": "low",
+      "horizon": "1-3个月",
+      "evidence": [
+        "候选评分 0.0",
+        "多因子评分 49.3",
+        "20日历史涨跌 19.11%",
+        "实际影响评分 0",
+        "十日推演命中率 0%"
+      ],
+      "risks": [
+        "因子分偏低 49.3",
+        "预测方向向下，概率 0.28",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "回测胜率偏低 33.33%",
+        "影响数据限制：not_q2_report_period",
+        "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "600378",
+      "source": "recommendation.long",
+      "direction": "down",
+      "strength": 48.71,
+      "confidence": "low",
+      "horizon": "6-12个月",
+      "evidence": [
+        "候选评分 0.0",
+        "多因子评分 49.3",
+        "60日历史涨跌 87.83%",
+        "实际影响评分 0",
+        "十日推演命中率 0%"
+      ],
+      "risks": [
+        "因子分偏低 49.3",
+        "预测方向向下，概率 0.28",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "回测胜率偏低 33.33%",
+        "影响数据限制：not_q2_report_period",
+        "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "603629",
+      "source": "prediction",
+      "direction": "down",
+      "strength": 81.66,
+      "confidence": "high",
+      "horizon": "5d",
+      "evidence": [
+        "预测概率 0.18",
+        "期望收益 -0.0615"
+      ],
+      "risks": [
+        "high_volatility",
+        "high_historical_drawdown"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "603629",
+      "source": "selector",
+      "direction": "down",
+      "strength": 0.0,
+      "confidence": "low",
+      "horizon": "1-5d",
+      "evidence": [
+        "收盘价站上 MA60",
+        "20日动量为正",
+        "回测夏普 2.05"
+      ],
+      "risks": [
+        "因子分偏低 43.8",
+        "预测方向向下，概率 0.18",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "历史最大回撤较大 -51.78%",
+        "回测胜率偏低 20.00%",
+        "实际影响偏负面，impact_score=-27",
+        "影响数据限制：requires_q2_official_report_or_forecast",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "预测方向为偏空",
+        "因子分过低 43.8",
+        "实际影响数据显著偏负面"
+      ],
+      "version": "1.1.0",
+      "updated_at": "2026-07-08 23:18:17"
+    },
+    {
+      "code": "603629",
+      "source": "recommendation.short",
+      "direction": "down",
+      "strength": 28.31,
+      "confidence": "low",
+      "horizon": "1-5个交易日",
+      "evidence": [
+        "候选评分 0.0",
+        "多因子评分 43.8",
+        "5日历史涨跌 -16.43%",
+        "实际影响评分 -27",
+        "十日推演命中率 10%"
+      ],
+      "risks": [
+        "因子分偏低 43.8",
+        "预测方向向下，概率 0.18",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "历史最大回撤较大 -51.78%",
+        "回测胜率偏低 20.00%",
+        "实际影响偏负面，impact_score=-27",
+        "影响数据限制：requires_q2_official_report_or_forecast",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "预测方向为偏空",
+        "因子分过低 43.8",
+        "实际影响数据显著偏负面",
+        "短线预测方向偏空"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "603629",
+      "source": "recommendation.medium",
+      "direction": "down",
+      "strength": 27.67,
+      "confidence": "low",
+      "horizon": "1-3个月",
+      "evidence": [
+        "候选评分 0.0",
+        "多因子评分 43.8",
+        "20日历史涨跌 0.58%",
+        "实际影响评分 -27",
+        "十日推演命中率 10%"
+      ],
+      "risks": [
+        "因子分偏低 43.8",
+        "预测方向向下，概率 0.18",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "历史最大回撤较大 -51.78%",
+        "回测胜率偏低 20.00%",
+        "实际影响偏负面，impact_score=-27",
+        "影响数据限制：requires_q2_official_report_or_forecast",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+        "中线实际影响显著偏负面"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    },
+    {
+      "code": "603629",
+      "source": "recommendation.long",
+      "direction": "down",
+      "strength": 37.92,
+      "confidence": "low",
+      "horizon": "6-12个月",
+      "evidence": [
+        "候选评分 0.0",
+        "多因子评分 43.8",
+        "60日历史涨跌 116.62%",
+        "实际影响评分 -27",
+        "十日推演命中率 10%"
+      ],
+      "risks": [
+        "因子分偏低 43.8",
+        "预测方向向下，概率 0.18",
+        "预测标记高波动",
+        "未站上 MA20",
+        "5日跌幅较大",
+        "历史最大回撤较大 -51.78%",
+        "回测胜率偏低 20.00%",
+        "实际影响偏负面，impact_score=-27",
+        "影响数据限制：requires_q2_official_report_or_forecast",
+        "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+        "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+      ],
+      "version": "1.0.0",
+      "updated_at": "2026-07-09 17:18:16"
+    }
+  ],
+  "risk_checks": [
+    {
+      "code": "000636",
+      "passed": false,
+      "level": "block",
+      "checks": [
+        "数据质量",
+        "候选池排除项",
+        "操作建议风险"
+      ],
+      "blockers": [
+        "实际影响数据显著偏负面"
+      ],
+      "warnings": [
+        "实际影响数据偏负面，impact_score=-26.0",
+        "high_volatility"
+      ]
+    },
+    {
+      "code": "000988",
+      "passed": false,
+      "level": "block",
+      "checks": [
+        "数据质量",
+        "候选池排除项",
+        "操作建议风险"
+      ],
+      "blockers": [
+        "因子分过低 39.8",
+        "实际影响数据显著偏负面"
+      ],
+      "warnings": [
+        "实际影响数据偏负面，impact_score=-33.0",
+        "high_volatility"
+      ]
+    },
+    {
+      "code": "600378",
+      "passed": false,
+      "level": "block",
+      "checks": [
+        "数据质量",
+        "候选池排除项",
+        "操作建议风险"
+      ],
+      "blockers": [
+        "预测方向为偏空"
+      ],
+      "warnings": [
+        "high_volatility",
+        "回测胜率偏低 33.33%"
+      ]
+    },
+    {
+      "code": "603629",
+      "passed": false,
+      "level": "block",
+      "checks": [
+        "数据质量",
+        "候选池排除项",
+        "操作建议风险"
+      ],
+      "blockers": [
+        "预测方向为偏空",
+        "因子分过低 43.8",
+        "实际影响数据显著偏负面"
+      ],
+      "warnings": [
+        "实际影响数据偏负面，impact_score=-27.0",
+        "high_volatility",
+        "high_historical_drawdown",
+        "回测胜率偏低 20.0%",
+        "历史最大回撤较大 -51.78%"
+      ]
+    }
+  ],
+  "portfolio_targets": [
+    {
+      "code": "000636",
+      "target_position_pct": 0.0,
+      "action": "watch",
+      "source": "decision",
+      "confidence": "medium",
+      "reasons": [
+        "预测、因子或回测条件不足，暂不买入",
+        "回测指标处于可接受区间"
+      ],
+      "invalid_conditions": []
+    },
+    {
+      "code": "000988",
+      "target_position_pct": 0.0,
+      "action": "watch",
+      "source": "decision",
+      "confidence": "medium",
+      "reasons": [
+        "预测、因子或回测条件不足，暂不买入",
+        "回测指标处于可接受区间"
+      ],
+      "invalid_conditions": []
+    },
+    {
+      "code": "600378",
+      "target_position_pct": 0.0,
+      "action": "watch",
+      "source": "decision",
+      "confidence": "low",
+      "reasons": [
+        "预测、因子或回测条件不足，暂不买入"
+      ],
+      "invalid_conditions": []
+    },
+    {
+      "code": "603629",
+      "target_position_pct": 0.0,
+      "action": "watch",
+      "source": "decision",
+      "confidence": "low",
+      "reasons": [
+        "预测、因子或回测条件不足，暂不买入"
+      ],
+      "invalid_conditions": []
+    }
+  ],
+  "execution_intents": [
+    {
+      "code": "000636",
+      "action": "watch",
+      "target_position_pct": 0.0,
+      "allowed": false,
+      "requires_human_review": false,
+      "reason": "风险门禁未通过或仅观察",
+      "source": "decision"
+    },
+    {
+      "code": "000988",
+      "action": "watch",
+      "target_position_pct": 0.0,
+      "allowed": false,
+      "requires_human_review": false,
+      "reason": "风险门禁未通过或仅观察",
+      "source": "decision"
+    },
+    {
+      "code": "600378",
+      "action": "watch",
+      "target_position_pct": 0.0,
+      "allowed": false,
+      "requires_human_review": false,
+      "reason": "风险门禁未通过或仅观察",
+      "source": "decision"
+    },
+    {
+      "code": "603629",
+      "action": "watch",
+      "target_position_pct": 0.0,
+      "allowed": false,
+      "requires_human_review": false,
+      "reason": "风险门禁未通过或仅观察",
+      "source": "decision"
+    }
+  ],
+  "analysis_findings": [
+    {
+      "code": "000636",
+      "topic": "十日推演",
+      "summary": "命中率 60%",
+      "evidence": [
+        "step_count: 10",
+        "evaluated_count: 10",
+        "hit_count: 6",
+        "hit_rate: 0.6",
+        "up_prediction_count: 8",
+        "down_prediction_count: 2",
+        "total_return_pct: -19.84"
+      ],
+      "limitations": [
+        "prediction_is_technical_only",
+        "uses_historical_data_available_at_each_cutoff",
+        "actual_return_used_only_for_review",
+        "external_context_used_for_root_cause_review_not_for_prediction",
+        "external_context_may_be_latest_snapshot_when_source_date_after_cutoff"
+      ],
+      "source": "replay"
+    },
+    {
+      "code": "000636",
+      "topic": "实际影响",
+      "summary": "方向 negative，评分 -26",
+      "evidence": [
+        "valuation_pressure: 估值压力"
+      ],
+      "limitations": [],
+      "source": "impact"
+    },
+    {
+      "code": "000988",
+      "topic": "十日推演",
+      "summary": "命中率 10%",
+      "evidence": [
+        "step_count: 10",
+        "evaluated_count: 10",
+        "hit_count: 1",
+        "hit_rate: 0.1",
+        "up_prediction_count: 3",
+        "down_prediction_count: 0",
+        "total_return_pct: -14.3"
+      ],
+      "limitations": [
+        "prediction_is_technical_only",
+        "uses_historical_data_available_at_each_cutoff",
+        "actual_return_used_only_for_review",
+        "external_context_used_for_root_cause_review_not_for_prediction",
+        "external_context_may_be_latest_snapshot_when_source_date_after_cutoff"
+      ],
+      "source": "replay"
+    },
+    {
+      "code": "000988",
+      "topic": "实际影响",
+      "summary": "方向 negative，评分 -33",
+      "evidence": [
+        "valuation_pressure: 估值压力"
+      ],
+      "limitations": [],
+      "source": "impact"
+    },
+    {
+      "code": "600378",
+      "topic": "十日推演",
+      "summary": "命中率 0%",
+      "evidence": [
+        "step_count: 10",
+        "evaluated_count: 10",
+        "hit_count: 0",
+        "hit_rate: 0.0",
+        "up_prediction_count: 0",
+        "down_prediction_count: 0",
+        "total_return_pct: -2.58"
+      ],
+      "limitations": [
+        "prediction_is_technical_only",
+        "uses_historical_data_available_at_each_cutoff",
+        "actual_return_used_only_for_review",
+        "external_context_used_for_root_cause_review_not_for_prediction",
+        "external_context_may_be_latest_snapshot_when_source_date_after_cutoff"
+      ],
+      "source": "replay"
+    },
+    {
+      "code": "600378",
+      "topic": "实际影响",
+      "summary": "方向 neutral，评分 0",
+      "evidence": [
+        "earnings_forecast: 业绩预告：机构预测"
+      ],
+      "limitations": [
+        "not_q2_report_period"
+      ],
+      "source": "impact"
+    },
+    {
+      "code": "603629",
+      "topic": "十日推演",
+      "summary": "命中率 10%",
+      "evidence": [
+        "step_count: 10",
+        "evaluated_count: 10",
+        "hit_count: 1",
+        "hit_rate: 0.1",
+        "up_prediction_count: 0",
+        "down_prediction_count: 4",
+        "total_return_pct: -10.99"
+      ],
+      "limitations": [
+        "prediction_is_technical_only",
+        "uses_historical_data_available_at_each_cutoff",
+        "actual_return_used_only_for_review",
+        "external_context_used_for_root_cause_review_not_for_prediction",
+        "external_context_may_be_latest_snapshot_when_source_date_after_cutoff"
+      ],
+      "source": "replay"
+    },
+    {
+      "code": "603629",
+      "topic": "实际影响",
+      "summary": "方向 negative，评分 -27",
+      "evidence": [
+        "valuation_pressure: 估值压力",
+        "q2_profit_growth_gap: 二季度利润增长数据待补充"
+      ],
+      "limitations": [
+        "requires_q2_official_report_or_forecast"
+      ],
+      "source": "impact"
+    }
+  ],
+  "coverage": {
+    "universe_count": 4,
+    "signal_count": 20,
+    "module_coverage": {
+      "stocks": {
+        "count": 4,
+        "ratio": 1.0
+      },
+      "predictions": {
+        "count": 4,
+        "ratio": 1.0
+      },
+      "selectors": {
+        "count": 4,
+        "ratio": 1.0
+      },
+      "decisions": {
+        "count": 4,
+        "ratio": 1.0
+      },
+      "impacts": {
+        "count": 4,
+        "ratio": 1.0
+      },
+      "replays": {
+        "count": 4,
+        "ratio": 1.0
+      }
+    }
+  },
+  "limitations": [
+    "当前为现有 JSON 输出的标准契约适配层，尚未替换各模块内部算法。",
+    "执行意图只表示可进入人工确认，不代表自动下单。",
+    "实盘辅助已按用户要求跳过，账户与委托契约仍待后续接入。"
+  ]
+}

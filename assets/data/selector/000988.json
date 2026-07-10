@@ -1,27 +1,29 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-07",
-  "selector_version": "1.0.0",
-  "upside_score": 43.05,
+  "trade_date": "2026-07-10",
+  "selector_version": "1.1.0",
+  "upside_score": 57.56,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
-    "预测中性，概率 0.54",
+    "预测中性，概率 0.52",
     "收盘价站上 MA60",
     "20日动量为正",
-    "回测夏普 1.93",
-    "回测胜率 66.67%"
+    "5日动量为正",
+    "回测夏普 1.91",
+    "回测胜率 57.14%"
   ],
   "risks": [
-    "因子分偏低 31.3",
+    "因子分偏低 54.8",
     "预测标记高波动",
     "未站上 MA20",
-    "5日跌幅较大",
-    "实际影响偏负面，impact_score=-33"
+    "实际影响偏负面，impact_score=-33",
+    "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+    "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+    "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
   ],
   "reject_reasons": [
-    "因子分过低 31.3",
     "实际影响数据显著偏负面"
   ],
   "candidate_blockers": [
@@ -31,18 +33,46 @@
     "实际影响分为负"
   ],
   "next_triggers": [
-    "预测概率提升到 0.55 以上",
+    "预测概率提升到 0.58 以上",
     "因子分提升到 55 以上",
     "收盘价重新站上 MA20",
     "实际影响分修复到非负"
   ],
   "metrics": {
-    "quality_score": 100.0,
-    "factor_score": 31.3,
+    "quality_score": 90.0,
+    "factor_score": 54.8,
+    "candidate_score_threshold": 74.0,
+    "watch_score_threshold": 57.0,
+    "probability_floor": 0.58,
     "prediction_direction": "neutral",
-    "prediction_probability": 0.5429,
+    "prediction_probability": 0.5186,
     "impact_score": -33.0,
     "impact_direction": "negative"
   },
-  "updated_at": "2026-07-07 21:02:10"
+  "calibration": {
+    "calibration_version": "1.0.0",
+    "mode": "replay",
+    "score_adjustment": -6.0,
+    "candidate_score_delta": 4.0,
+    "watch_score_delta": 2.0,
+    "probability_floor_delta": 0.03,
+    "reasons": [],
+    "risk_notes": [
+      "十日推演命中率偏低 10%，候选阈值上调",
+      "历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+      "未命中原因包含概率边界问题，需提高预测概率确认"
+    ],
+    "evidence": {
+      "evaluated_count": 10,
+      "hit_rate": 0.1,
+      "false_up_count": 2,
+      "false_down_count": 0,
+      "miss_reason_distribution": {
+        "预测概率处于边界区，后续应降低仓位或只观察": 9,
+        "技术信号中性时方向判断不稳定，应进入 no-trade 区间": 3,
+        "看多未命中：需要提高买入确认条件，重点检查趋势与放量是否同步": 2
+      }
+    }
+  },
+  "updated_at": "2026-07-10 17:43:27"
 }

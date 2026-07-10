@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "code": "000636",
+  "provider": "rule",
+  "model": "local-rule",
+  "prompt_version": "stock_review_v1.0.0",
+  "updated_at": "2026-07-10 17:43:28",
+  "fallback_reason": "",
+  "input_summary": {
+    "task": "stock_review",
+    "trade_date": "2026-07-10",
+    "allowed_actions": [
+      "analyze",
+      "summarize",
+      "suggest"
+    ],
+    "missing_inputs": [],
+    "inputs_used": [
+      "backtest/000636_ma_cross.json",
+      "decisions/000636.json",
+      "enhance/000636.json",
+      "factors/000636.json",
+      "framework/snapshot.json",
+      "impact/000636.json",
+      "predictions/000636.json",
+      "quality/latest.json",
+      "sentiment/000636.json",
+      "signals/000636.json",
+      "stocks/000636.json"
+    ]
+  },
+  "output_summary": {
+    "summary": "综合因子中性，等待更清晰信号",
+    "direction_view": "neutral",
+    "confidence": "medium",
+    "suggested_actions": [
+      "仅用于研究解释",
+      "进入人工复核后再考虑操作"
+    ],
+    "requires_human_review": true
+  },
+  "policy": {
+    "passed": true,
+    "violations": [],
+    "allowed_actions": [
+      "analyze",
+      "suggest",
+      "summarize"
+    ]
+  },
+  "replayable": true
+}

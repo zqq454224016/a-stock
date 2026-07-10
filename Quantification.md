@@ -1,8 +1,8 @@
-# AI 量化交易系统（增强版需求文档 v2.18）
+# AI 量化交易系统（增强版需求文档 v2.33）
 
-> **当前状态**：已完成数据基建、因子、回测、5d 预测、上涨候选池、实际影响数据、单股决策、模拟交易、后验复盘、规则型 Agent 和静态看板 MVP  
+> **当前状态**：已完成数据基建、因子、回测、5d 预测、上涨候选池、实际影响数据、每日涨跌归因、单股决策、模拟交易、组合管理、后验复盘、规则型 Agent、Agent Provider 框架、多周期推荐、模块化契约、统一控制台、监控告警与数据血缘、运行时任务日志、数据注册表、静态看板 MVP
 > **目标**：构建「数据 → 因子 → 回测 → 实盘 → AI Agent → 可视化」的完整闭环量化系统  
-> **本次迭代**：落地 P3-3 后验复盘模块，并补充实盘接入前必须准备的账户、接口、风控、审计、运维和权限边界
+> **本次迭代**：完成 V3-02 数据注册表首版，新增 `registry` 命令和 `assets/data/data_registry/`，为关键产物记录来源任务、更新时间、字段摘要、记录数、降级状态和动态血缘；V3 当前唯一下一步切换为 V3-03 全市场股票池首版
 
 ---
 
@@ -72,15 +72,21 @@ Web 可视化平台
 | 多因子合成 | `factors/composite.py`, `factors/fundamental.py` | ✅ 技术+情绪+基本面+资金 |
 | 舆情 | `data_source/sentiment_api.py`, `tasks/sentiment_job.py` | ✅ 东财评论+雪球热榜 |
 | 数据增强 | `data_source/enhance_api.py`, `tasks/enhance_job.py` | ✅ 估值/公司行为/资金/指数 |
-| 实际影响 | `impact/`, `tasks/impact_job.py`, `reports/impact/` | ✅ 业绩/估值/解禁/材料价格事件提取 |
+| 实际影响 | `impact/`, `tasks/impact_job.py`, `reports/impact/` | ✅ 业绩/估值/解禁/材料价格事件提取；已接入证据质量与后验复盘摘要 |
 | 回测引擎 | `backtest/`, `strategy/`, `tasks/backtest_job.py` | ✅ 含 P2-4 容量/归因/滚动验证 |
 | 走势预测 | `prediction/verified.py`, `tasks/predict_job.py` | ✅ L2（5d 可验证预测） |
 | 历史推演 | `replay/`, `tasks/replay_job.py`, `reports/replay/` | ✅ 十日前视角逐日滚动复盘 + 技术/市场/资金/事件根因分析 |
+| 每日归因 | `attribution/`, `tasks/attribution_job.py`, `reports/attribution/` | ✅ 昨日/今日涨跌对比，输出量价、趋势、大盘、资金、事件和 replay 根因，判断上涨逻辑是否破坏 |
 | 后验复盘 | `evaluation/`, `tasks/review_job.py`, `reports/review/` | ✅ 预测/候选/决策后 1/5/20 日收益复盘 |
-| 上涨候选 | `selector/`, `tasks/selector_job.py`, `reports/selector/` | ✅ 预测/因子/趋势/回测/影响综合排名 |
+| 上涨候选 | `selector/`, `tasks/selector_job.py`, `reports/selector/` | ✅ 预测/因子/趋势/回测/影响综合排名；已接入 review/replay 阈值自动校准 |
 | 操作决策 | `decision/`, `tasks/decision_job.py`, `reports/decision/` | ✅ 指导性操作建议 MVP（买入/持有/减仓/卖出/观望） |
-| Agent | `agent/`, `tasks/agent_job.py`, `reports/agent/` | ✅ 规则型解释（P4-1） |
+| Agent | `agent/`, `tasks/agent_job.py`, `reports/agent/` | ✅ 规则型解释 + Provider/证据包/权限校验/审计首版 |
 | 风控 | `risk/`（仓位计算） | 🔶 基础规则已接入回测/模拟交易，无账户级组合风控 |
+| 组合管理 | `portfolio/`, `tasks/portfolio_job.py`, `reports/portfolio/` | ✅ 账户级组合分析、行业/风格暴露、调仓计划与风险告警 |
+| 因子评估 | `evaluation/factor_effectiveness.py`, `tasks/factor_eval_job.py`, `reports/factor_eval/` | ✅ 技术因子历史代理相关性、分层收益和漂移首版 |
+| 多周期推荐 | `recommendation/`, `tasks/recommendation_job.py`, `reports/recommendations/` | ✅ 短/中/长线独立评分、风险门禁、证据和缺额说明首版 |
+| 模块化框架 | `contracts/`, `tasks/framework_job.py`, `reports/framework/` | ✅ 标准 Universe/Signal/Target/Risk/Execution/Analyzer 契约快照首版 |
+| 监控血缘 | `monitoring/`, `registry/`, `tasks/monitoring_job.py`, `reports/monitoring/` | ✅ 本地产物监控、告警、调度配置、CLI 运行时任务日志、数据注册表和动态血缘首版 |
 | 模拟交易 | `trading/`, `tasks/sim_trade_job.py`, `reports/trading/` | ✅ P3-1 MVP 已完成（虚拟账户/订单/持仓/复盘） |
 | 调度 | `scheduler/cron_runner` | ✅ 已完成 |
 
@@ -122,7 +128,9 @@ quant_system/
   backtest/         # 回测引擎、成交撮合、绩效分析
   prediction/       # 可验证走势预测、概率输出、预测复盘
   replay/           # 历史视角滚动推演、无未来函数复盘
+  attribution/      # 每日涨跌归因、上涨逻辑破坏判断、后续观察位
   evaluation/       # 预测、候选、决策的后验收益复盘
+  contracts/        # Universe、Signal、Target、Risk、Execution、Analyzer 标准契约
   selector/         # 上涨候选池筛选、排序、排除原因
   impact/           # 实际影响数据：业绩、估值、解禁、材料/产品价格
   decision/         # 单股指导性操作建议、仓位建议、失效条件
@@ -146,10 +154,13 @@ quant_system/
 - `risk` 同时服务回测和实盘，保证两端风控规则一致。
 - `prediction` 只能基于已通过回测验证的策略或因子组合输出概率化预测。
 - `replay` 用历史时点数据逐日推演下一交易日，真实收益只用于事后复盘，并沉淀技术、大盘、资金、公告/业绩、估值、产业价格事件根因、未命中原因和阈值优化建议。
+- `attribution` 对比最近两个交易日，解释昨日上涨与今日下跌的主因，输出量价、趋势、大盘、资金、事件、replay 根因和上涨逻辑是否被破坏，不直接生成交易动作。
 - `evaluation` 只做后验复盘，不生成买卖建议；用于校准预测、候选和决策阈值。
+- `contracts` 只做标准对象定义和现有模块输出适配，不改写各模块内部算法。
 - `selector` 汇总预测、因子、趋势、回测、实际影响和风险，输出上涨候选排名，不直接生成交易动作。
 - `impact` 将增强数据中的财报、估值、解禁、产业价格描述转成可评分事件，必须保留来源与限制。
 - `decision` 汇总预测、因子、回测、Agent、质量和持仓上下文，只输出指导性建议，不直接下单。
+- `portfolio` 汇总账户、持仓、目标仓位和风险告警，不直接下单。
 - `trading` 只执行已通过风控的订单，不能绕过 `risk`。
 - `monitoring` 负责采集、回测、预测、交易和 Agent 行为的运行状态与审计记录。
 
@@ -1178,7 +1189,7 @@ Phase 3 完成后，系统开始具备“可验证”的走势预测能力。这
 | Agent | 规则型选股解释、策略诊断、预测复盘 | 已满足 P4-1 基础目标 | 接入外部 LLM Agent 时保持证据链和权限边界 |
 | 风控 | 仓位计算和基础规则已接入回测 | 部分满足 | 补账户级风控、组合敞口、熔断规则 |
 | 模拟交易 | `trading/` 已实现虚拟账户、订单、持仓和报表 | 已满足 P3-1 MVP | 下一步补组合级复盘和风险指标 |
-| Web 报表 | 行情、个股、因子、预测、增强、Agent 报表 | 已满足静态看板 | 增加统一交互式控制台 |
+| Web 报表 | 行情、个股、因子、预测、增强、Agent 报表与统一控制台 | 已满足静态看板和首版统一入口 | 增加更多交互式钻取、对比和监控面板 |
 | 行业对标补强 | 已对标 LEAN、Backtrader、VeighNa 的模块化能力 | 当前仍是功能模块串联，缺少统一契约 | 补 `Universe/Signal/PortfolioTarget/Risk/Execution/Analyzer` 标准接口 |
 
 ### 5.2 代码优化记录
@@ -1216,35 +1227,37 @@ Phase 3 完成后，系统开始具备“可验证”的走势预测能力。这
 | 预测系统 | `5d` 可验证预测 | 输出方向、概率、置信度、风险标记 | 增加 `1d/20d`、预测命中率和失效原因复盘 |
 | 历史推演 | 十日前视角滚动推演 | 每步只用当时之前数据，真实收益仅用于复盘 | 将 replay 结果纳入预测/selector 阈值校准 |
 | 上涨候选池 | Selector MVP 已完成 | 新增候选阻断、触发条件、边界风险处理 | 增加候选后验复盘：candidate/watch 后 1/5/20 日收益 |
-| 周期推荐 | 短/中/长线推荐需求已定义 | 需结合当日大盘和十日前滚动推演 | 实现 `recommend/`，每周期输出 5 支或说明不足原因 |
+| 周期推荐 | 短/中/长线推荐首版已完成 | 已结合当日大盘、资金、因子、事件、估值和十日前滚动推演 | 扩展全市场股票池、周期专用预测模型和推荐后验校准 |
 | 实际影响 | 业绩/估值/解禁/材料价格事件评分 | 过滤过去解禁，缺少二季度数据显式标记 | 接入公告全文解析、产业价格源、事件后验收益统计 |
 | 操作决策 | 买/持/减/卖/观望和仓位建议 | impact 和持仓上下文已接入 | 增加建议复盘：建议后收益、最大不利波动、失效触发 |
-| 模拟交易 | 虚拟账户、订单、持仓、复盘 | 决策优先调仓已接入 | 增加组合净值、行业暴露、账户级风控和回撤告警 |
-| Agent | 规则型解释和报告 | 输入字段容错已增强 | 固化 EvidencePackage Schema，再接 LLM Provider |
-| Web 报表 | 多个静态报告入口 | selector/impact/decision 已纳入总入口 | 建设统一控制台：筛选、排序、钻取、复盘 |
+| 模拟交易 | 虚拟账户、订单、持仓、复盘 | 决策优先调仓已接入 | 继续统计执行偏差和成交质量 |
+| 组合管理 | 账户级组合分析 MVP 已完成 | 输出净值、现金、持仓、目标仓位、市场暴露和风险告警 | 增加行业分类、风格暴露、组合再平衡建议 |
+| Agent | 规则型解释和 Provider 框架首版已完成 | 已固化 EvidencePackage、权限校验、审计和未配置 LLM 降级 | 接入真实外部 LLM Provider 与专用提示词模板 |
+| Web 报表 | 统一控制台首版已完成 | 已支持搜索、风险筛选、操作筛选、周期筛选、表格排序和证据链跳转 | 增加单股详情抽屉、跨模块对比和监控状态 |
 | 市场范围控制 | 科创板默认参考模式 | `688/689` 默认跳过重型研究链路，科创50保留参考 | 增加更多市场分层策略，如北交所/新股/高波动主题 |
 
 #### 5.3.2 未完成项 backlog
 
 | 优先级 | 未完成项 | 目标 | 依赖 | 验收标准 |
 |--------|----------|------|------|----------|
-| P3-2 | 组合风控与组合管理 | 从单股建议升级到账户视角 | `trading/`, `risk/`, `selector/decision` | 输出组合净值、现金、持仓、市值、行业暴露、单票集中度和账户级风险 |
+| P3-2 | 组合风控与组合管理 | 从单股建议升级到账户视角 | `trading/`, `risk/`, `selector/decision` | ✅ 已实现 Portfolio MVP：输出组合净值、现金、持仓、市值、市场暴露、单票集中度和账户级风险 |
 | P3-3 | 候选/预测/决策复盘 | 验证系统建议是否有效 | `predictions/`, `selector/`, `decisions/`, K 线 | ✅ 已实现 Review MVP：输出 1/5/20 日命中率、平均收益、最大不利波动、失效原因 |
 | P3-3.5 | 十日推演根因迭代 | 将每一步涨跌根因、未命中原因和阈值优化建议纳入 replay | `replay/`, K 线、大盘、资金、公告/业绩、impact 事件 | 输出 root_cause、miss_reasons、learning、operation_levels，并在报告中展示 source/source_timing |
-| P3-4 | 因子有效性评估 | 避免因子长期失效仍被使用 | `factors/`, K 线历史 | 输出 IC、RankIC、分层收益、换手和因子漂移 |
+| P3-4 | 因子有效性评估 | 避免因子长期失效仍被使用 | `factors/`, K 线历史 | ✅ 首版输出 1/5/20 日历史代理相关性、排序相关性、分层收益和漂移；待行业中性化、横截面检验和换手评估 |
+| P3-5 | 短中长线推荐 | 按周期给出最多 5 支可解释候选 | 大盘、资金、selector、factor、impact、enhance、replay | ✅ 首版输出周期评分、证据、风险、失效条件和缺额原因；不强行凑满 |
 | P3-6 | 模块化算法框架 | 对齐成熟量化平台的股票池、信号、组合、风控、执行、复盘分层 | `selector/`, `prediction/`, `decision/`, `trading/`, `replay/` | 有统一 Schema 和接口；现有 CLI 输出可被标准对象串联；老入口保持兼容 |
 | P4-1 | 事件与产业数据增强 | 提高实际影响数据质量 | 公告全文、产业价格、研报/机构预测 | impact 事件有来源、公告日期、适用周期、后验收益统计 |
 | P4-2 | LLM Agent 接入 | 从规则解释升级到证据驱动问答 | EvidencePackage、审计、权限策略 | 无 Key 可降级；LLM 输出不得越权；所有输入输出可审计 |
-| P4-3 | 统一 Web 控制台 | 从静态报告升级到日常操作入口 | reports、assets/data | 支持候选筛选、个股钻取、复盘对比、风险面板 |
+| P4-3 | 统一 Web 控制台 | 从静态报告升级到日常操作入口 | reports、assets/data | ✅ 首版支持候选筛选、个股钻取、复盘对比和风险面板 |
 | P5-1 | 实盘辅助网关 | 生成待确认订单和风控结果 | 组合风控、券商接口、审计日志 | 默认不自动下单；订单必须人工确认和风控通过 |
-| P5-2 | 生产监控告警 | 长期运行可靠性 | scheduler、日志、任务状态 | 数据延迟、任务失败、回撤超限、订单异常可告警 |
+| P5-2 | 生产监控告警 | 长期运行可靠性 | scheduler、日志、任务状态 | ✅ 首版输出模块状态、数据新鲜度、告警、调度配置和血缘；待接外部通知与任务运行日志 |
 
 #### 5.3.3 下一轮推荐执行顺序
 
-1. 实现 `portfolio/`：组合净值、行业暴露、单票集中度、账户级风控。
-2. 扩展 `selector`：用复盘结果自动校准候选阈值。
-3. 扩展 `impact`：接入公告全文和产业价格数据，降低仅靠公告原因文本的偏差。
-4. 实现 `execution/` 实盘辅助网关：先只读账户，再生成待确认订单。
+1. 扩展 `selector`：用复盘结果自动校准候选阈值。
+2. 扩展 `impact`：接入公告全文和产业价格数据，降低仅靠公告原因文本的偏差。
+3. 实现 `execution/` 实盘辅助网关：先只读账户，再生成待确认订单。
+4. 扩展 `portfolio`：接入行业分类、风格暴露、组合再平衡建议。
 5. 接入 LLM Agent：只读证据包，输出解释和复盘，不触发交易。
 
 ### 5.4 行业对标与补强清单
@@ -1264,7 +1277,7 @@ Phase 3 完成后，系统开始具备“可验证”的走势预测能力。这
 
 | 补强方向 | 当前差距 | 优先级 | 目标产物 |
 |----------|----------|--------|----------|
-| 模块化算法框架 | selector、prediction、decision、trading 之间已有串联，但还没有统一 `Universe/Signal/PortfolioTarget/RiskAdjustedTarget/Execution` 契约 | P3-6 | `framework/` 或 `orchestration/`，定义标准数据对象和模块接口 |
+| 模块化算法框架 | 已完成首版 `Universe/Signal/PortfolioTarget/Risk/Execution/Analyzer` 契约快照，但尚未反向约束各模块输入输出 | P3-6 扩展 | 让 Agent、Web、实盘网关优先消费标准契约对象 |
 | 股票池管理 | watchlist 静态为主，缺少动态股票池、行业池、风险池、参考池、黑名单/白名单 | P3-6 | `universe/`，支持大盘过滤、行业过滤、科创参考模式、流动性过滤 |
 | Alpha/信号管理 | 预测、因子、impact、selector 信号分散，缺少统一信号对象和有效期 | P3-6 | `Signal` / `Insight` Schema，包含方向、周期、置信度、失效时间、来源 |
 | 组合构建 | 目前是单股建议和模拟调仓，缺少组合目标仓位、行业暴露、现金约束 | P3-2 | `portfolio/`，输出目标持仓、调仓差异、行业/风格暴露 |
@@ -1274,9 +1287,9 @@ Phase 3 完成后，系统开始具备“可验证”的走势预测能力。这
 | 仓位模型/Sizer | 仓位建议较简单，缺少按波动率、风险预算、置信度动态 sizing | P3-2 | `sizing/`，支持等权、波动率倒数、风险预算、最大亏损约束 |
 | 参数优化与稳定性 | 缺少参数敏感性、滚动阈值校准、过拟合检测 | P3-4 | `optimization/`，参数网格、walk-forward、稳定性评分 |
 | 数据管理 | JSON 可用但缺少数据血缘、版本快照、字段契约和缓存过期策略 | P4-1 | `data_registry/`，记录来源、版本、抓取时间、字段质量 |
-| Web 产品化 | 静态报告已可用，缺少统一筛选、钻取、对比、复盘入口 | P4-3 | `reports/console` 或前端控制台 |
-| Agent 接入 | 规则型解释已完成，缺少 LLM Provider、审计、权限策略 | P4-2 | `agent/providers`, `agent/policy`, `agent/audit` |
-| 监控告警 | scheduler 可跑，但缺少任务状态、失败告警、数据延迟告警 | P5-2 | `monitoring/`，任务健康、数据延迟、异常告警 |
+| Web 产品化 | `reports/console` 首版已完成，仍缺少更深的单股交互和监控面板 | P4-3 扩展 | 单股详情抽屉、跨模块对比、监控状态接入 |
+| Agent 接入 | Provider、审计和权限策略首版已完成，真实外部 LLM Provider 尚未接入 | P4-2 扩展 | `agent/providers/llm_api.py`、提示词模板、超时和异常诊断 |
+| 监控告警 | 本地产物监控和血缘首版已完成，尚未接入外部通知和任务运行时日志 | P5-2 扩展 | 任务开始/结束/异常堆栈、通知渠道、长期趋势 |
 
 #### 5.4.3 对标后的推荐架构
 
@@ -1368,16 +1381,20 @@ Universe（股票池/参考池/过滤）
 
 ### 7.1 当前 Agent 状态
 
-当前系统已具备规则型 Agent：
+当前系统已具备规则型 Agent 与可替换 Provider 框架：
 
 - `agent/context.py`：读取股票、因子、信号、舆情、增强数据、预测、回测和质量报告。
+- `agent/schemas.py`：生成 `EvidencePackage`，限制 Agent 只能消费结构化证据包。
+- `agent/providers/`：定义 Provider 抽象，当前支持 `rule` 与未配置时降级的 `llm` 占位。
+- `agent/policy.py`：拦截越权输出、无证据结论和绕过人工确认的交易动作。
+- `agent/audit.py`：保存输入摘要、输出摘要、模型、提示词版本、权限校验和降级原因。
 - `agent/stock_explainer.py`：解释选股依据。
 - `agent/strategy_diagnosis.py`：诊断策略表现。
 - `agent/predict_review.py`：复核预测方向、证据和风险。
 - `agent/orchestrator.py`：编排并输出 Agent 报告。
-- `tasks/agent_job.py`：批量生成 Agent 报告。
+- `tasks/agent_job.py`：批量生成 Agent 报告，支持 `--provider rule|llm`。
 
-该 Agent 不调用 LLM，不自动下单，适合作为外部 Agent 接入前的可审计解释层。
+当前默认不调用外部 LLM；选择 `--provider llm` 时如未配置真实 Provider，会自动降级为规则型 Agent 并写入审计记录。Agent 不自动下单，所有输出仅用于解释、总结和研究建议。
 
 ### 7.2 外部 Agent 接入目标
 
@@ -1407,8 +1424,8 @@ quant_system/
   agent/
     providers/
       base.py
-      llm_api.py
-      local_llm.py
+      rule.py
+      llm_stub.py
     prompts/
       stock_review.md
       strategy_review.md
@@ -1484,14 +1501,14 @@ quant_system/
 
 ### 7.7 接入步骤
 
-1. 固化 `EvidencePackage` 和 `AgentReport` JSON Schema。
-2. 增加 `agent/providers/base.py` 抽象接口。
-3. 接入一个托管 LLM Provider，密钥走环境变量。
-4. 增加 `agent/policy.py`，校验输出是否越权。
-5. 增加 `agent/audit.py`，保存输入、输出、模型、时间、版本。
-6. 在 `agent_job` 中增加 `--provider rule|llm` 参数，默认仍使用 `rule`。
-7. 将 LLM Agent 输出接入 `reports/agent/`，并保留规则型 Agent 作为兜底。
-8. 增加测试：缺字段、低质量数据、越权输出、无证据结论、LLM 超时降级。
+1. ✅ 固化 `EvidencePackage` 和标准 Provider 输出结构。
+2. ✅ 增加 `agent/providers/base.py` 抽象接口。
+3. ⏳ 接入一个托管 LLM Provider，密钥走环境变量。
+4. ✅ 增加 `agent/policy.py`，校验输出是否越权。
+5. ✅ 增加 `agent/audit.py`，保存输入、输出、模型、时间、版本。
+6. ✅ 在 `agent_job` 中增加 `--provider rule|llm` 参数，默认仍使用 `rule`。
+7. ✅ 将 Provider 输出接入 `reports/agent/`，并保留规则型 Agent 作为兜底。
+8. ✅ 增加测试：缺字段、越权输出、LLM 未配置降级。
 
 ### 7.8 验收标准
 
@@ -1540,12 +1557,12 @@ quant_system/
 | P2-5 | 单股操作决策 | 买入/持有/减仓/卖出/观望、建议仓位、失效条件 | ✅ |
 | P2-6 | 实际影响数据 | 业绩、估值、解禁、材料/产品价格事件评分 | ✅ |
 | P3-1 | 模拟交易 | 虚拟账户、模拟订单、持仓、复盘 | ✅ |
-| P3-2 | 风控与组合管理 | 组合净值、行业暴露、账户级风控、再平衡 | ⏳ |
+| P3-2 | 风控与组合管理 | 组合净值、市场暴露、账户级风控、目标仓位 | ✅ Portfolio MVP |
 | P3-3 | 候选/预测/决策复盘 | 统计 1/5/20 日命中率、收益和失效原因 | ✅ Review MVP |
 | P3-3.5 | 十日推演根因迭代 | 每步解释技术/市场/资金/事件根因、未命中原因、命中率优化思考和价位级操作雏形 | ✅ Replay Root Cause v2 |
-| P3-4 | 因子有效性评估 | IC、RankIC、分层收益、因子漂移 | ⏳ |
-| P3-5 | 短中长线推荐 | 基于当日大盘推演，每周期推荐 5 支并附 replay 验证 | ⏳ |
-| P3-6 | 模块化算法框架 | 标准化 Universe、Signal、PortfolioTarget、Risk、Execution、Analyzer 契约 | ⏳ |
+| P3-4 | 因子有效性评估 | 历史代理相关性、排序相关性、分层收益、因子漂移 | ✅ 首版 |
+| P3-5 | 短中长线推荐 | 基于当日大盘推演，每周期最多推荐 5 支并附 replay 验证 | ✅ 首版 |
+| P3-6 | 模块化算法框架 | 标准化 Universe、Signal、PortfolioTarget、Risk、Execution、Analyzer 契约 | ✅ 首版完成 |
 | P4-1 | AI Agent 与产品化 | 选股解释、策略诊断、预测复盘、统一看板 | ✅ 规则型 |
 
 ### 附录 A.1 实现状态总览（截至 2026-07-06）
@@ -1566,6 +1583,7 @@ quant_system/
 | 筛选 | 上涨候选池排名、分层、排除原因 | `selector`, `reports/selector/` |
 | 决策 | 单股操作建议、仓位建议、理由、风险、失效条件 | `decision`, `reports/decision/` |
 | 模拟交易 | 虚拟账户、决策优先调仓、订单、持仓、交易复盘 | `simtrade`, `reports/trading/` |
+| 组合 | 账户净值、现金、持仓、目标仓位、市场暴露、风险告警 | `portfolio`, `reports/portfolio/` |
 | 可视化 | 大盘/个股/因子/增强/回测/预测/盘中/Agent 看板 | `reports/` |
 | Agent | 选股解释、策略诊断、预测复盘（规则型，不自动下单） | `agent`, `reports/agent/` |
 
@@ -1579,20 +1597,21 @@ quant_system/
 | 数据增强 | 北向/两融等接口可能失败，写入 `limitations` |
 | 实际影响 | 当前基于增强数据和公告原因文本，利通电子二季度利润需等待 `20260630` 正式数据或业绩预告补齐 |
 | 多因子回测 | 长周期回测仅用 K 线技术分，情绪历史未纳入 |
+| 因子有效性 | 已有 7 个技术因子的历史代理评估；当前是小股票池时间序列混合结果，尚未完成标准横截面检验、行业/市值中性化及非技术因子逐日快照 |
 | 上涨候选 | 已能排序与排除，并可通过 review 做后验收益复盘；尚未自动校准阈值 |
 | 操作决策 | 已能给单股建议，并可通过 review 统计建议后收益；尚未把复盘结果反向调参 |
-| Agent | 规则型解释，未接入 LLM；无自动补爬触发 |
+| Agent | Provider/审计/权限校验首版已完成；真实外部 LLM 与自动补爬触发未接入 |
 | 存储 | MySQL/Redis 预留，默认 JSON 本地存储 |
 
 **未实现（后续可选）**
 
 | 项 | 文档优先级 |
 |----|------------|
-| 组合管理、行业暴露、账户级风控、再平衡 | P3-2 |
+| 行业暴露、风格暴露、组合再平衡 | P3-2 扩展 |
 | 候选/预测/决策后验复盘 | P3-3 ✅ Review MVP |
-| 因子 IC、分层收益、漂移检测 | P3-4 |
-| 短线/中线/长线 5 股推荐 | P3-5 |
-| 模块化算法框架、统一股票池/信号/组合/风控/执行契约 | P3-6 |
+| 标准横截面因子检验、行业/市值中性化、因子换手 | P3-4 扩展 |
+| 短线/中线/长线 5 股推荐 | P3-5 ✅ 首版 |
+| 模块化算法框架、统一股票池/信号/组合/风控/执行契约 | P3-6 ✅ 首版 |
 | 实盘券商接口、交易前风控网关 | Next 6 |
 | 行业轮动、事件驱动、参数敏感性分析 | Next 3 扩展 |
 | 机构/研报/产业链因子、LLM Agent | Phase 1–5 扩展 |
@@ -1605,12 +1624,21 @@ quant_system/
 ./run.sh agent    # Agent 分析 + 看板
 ./run.sh enhance  # 数据增强
 ./run.sh impact   # 实际影响数据
+./run.sh attribution # 每日涨跌归因
 ./run.sh selector # 上涨候选池
 ./run.sh replay   # 十日前滚动推演
 ./run.sh review   # 预测/候选/决策后验复盘
 ./run.sh factor   # 多因子重算
+./run.sh factor-eval # 因子历史有效性与漂移评估
+./run.sh recommend # 短线、中线、长线各最多 5 支推荐
+./run.sh framework # 模块化算法框架契约快照
+./run.sh console  # 统一 Web 控制台
+./run.sh monitor  # 监控告警与数据血缘
+./run.sh registry # 数据产物注册表
+./run.sh v3-plan  # v3 稳定化与扩展路线
 ./run.sh decision # 单股操作建议 + 看板
 ./run.sh simtrade # 模拟交易 + 看板
+./run.sh portfolio # 组合管理 + 账户级风控
 ```
 
 ---
@@ -1619,6 +1647,21 @@ quant_system/
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.33 | 2026-07-10 | 完成 V3-02 数据注册表首版：新增 `registry/`、`registry` 命令、`assets/data/data_registry/`，为 20 个关键产物记录存在性、更新时间、记录数、字段摘要、降级状态、依赖和最近生成任务；`monitor` 自动刷新注册表并展示注册表血缘；当前唯一下一步切换为 V3-03 全市场股票池首版 |
+| v2.32 | 2026-07-10 | 新增每日涨跌归因模块：新增 `attribution/`、`attribution` 命令、`assets/data/attribution/` 和 `reports/attribution/index.html`，对比昨日/今日涨跌，输出量价、趋势、大盘、资金、事件、replay 根因、上涨逻辑破坏原因和后续观察价位；已接入首页、监控和全流程 |
+| v2.31 | 2026-07-10 | 完成 V3-01 运行时任务日志首版：新增 `monitoring/task_runs.py`、`assets/data/task_runs/*.json` 与 `index.json`，CLI 入口统一记录成功/失败/跳过、耗时、异常摘要和关键产物状态；`monitor` 快照和报告新增最近任务、失败告警和最近成功时间；当前唯一下一步切换为 V3-02 数据注册表与血缘版本 |
+| v2.30 | 2026-07-10 | 完成 v3 稳定化与扩展路线首版：新增 `planning/`、`v3-plan` 命令、`Quantification-Roadmap-v3.md` 和 `reports/planning/v3.html`，把 v2 首版闭环后的后续工作收敛为 V3-01 至 V3-06；当前唯一下一步为运行时任务日志 |
+| v2.29 | 2026-07-10 | 完成 V2-10 监控告警与数据血缘首版：新增 `monitoring/`、`monitor` 命令和 `reports/monitoring/index.html`，扫描 18 个关键模块产物、更新时间、数据质量、推荐缺额、Agent Provider、框架覆盖和调度配置；输出告警、模块状态、数据血缘和使用边界；v2 主线首版闭环完成，后续进入 v3 稳定化与扩展 |
+| v2.28 | 2026-07-10 | 完成 V2-09 统一 Web 控制台首版：新增 `console` 命令和 `reports/console/index.html`，聚合股票、候选、预测、决策、十日推演、后验复盘、Agent、推荐、组合和框架信号；支持搜索、风险筛选、操作筛选、周期筛选、表格排序和证据链跳转；下一步进入监控告警与数据血缘 |
+| v2.27 | 2026-07-10 | 完成 V2-08 LLM Agent 接入首版框架：新增 `EvidencePackage`、`agent/providers/`、`policy`、`audit`，`agent --provider rule|llm` 支持可替换 Provider；未配置 LLM 时自动降级为规则型 Agent，并输出模型、提示词版本、权限校验、缺失输入和审计记录；下一步进入统一 Web 控制台 |
+| v2.26 | 2026-07-10 | 完成模块化算法框架首版：新增 `contracts/` 标准契约、`framework` 命令和中文报告，把股票池、预测信号、候选信号、多周期推荐、风险门禁、目标仓位、执行意图、十日推演和实际影响统一输出为框架快照；执行意图只允许进入人工确认，不代表自动下单；下一步进入 LLM Agent 接入 |
+| v2.25 | 2026-07-09 | 完成多周期推荐首版：新增 `recommend` 命令、独立 JSON 和中文报告，短线、中线、长线采用独立评分和门禁，融合大盘、资金、预测、因子、趋势、实际影响、估值、selector 与十日推演；每周期最多 5 支，当前数据未通过时输出 0 支及缺额原因，不强行凑数 |
+| v2.24 | 2026-07-09 | 完成因子有效性评估首版：新增 `factor-eval` 命令、独立 JSON 和中文报告，基于本地 K 线滚动构造 7 个技术因子的 1/5/20 日历史代理相关性、排序相关性、三分组收益和当前漂移；报告明确小股票池时间序列代理、未行业中性化及非技术因子缺少逐日快照等限制 |
+| v2.23 | 2026-07-08 | 按用户要求跳过实盘辅助网关，继续迭代组合管理增强：portfolio 版本升级到 v1.1.0，新增行业暴露、风格暴露、调仓计划、风格集中风险和调仓幅度风险；报告新增当前持仓风格、目标仓位行业、调仓计划、行业暴露和风格暴露表 |
+| v2.22 | 2026-07-08 | 继续迭代 Impact 数据增强：impact 版本升级到 v1.1.0，事件输出 `evidence_quality`、缺失证据清单、payload 级平均证据质量和 `post_event_review` 后验摘要；任务读取 review 作为后验输入，impact 报告新增证据质量和后验复盘列，并补齐限制项中文翻译 |
+| v2.21 | 2026-07-08 | 优化评估类报告中文展示：后验复盘报告将英文状态展示为待评估/已评估，将模块展示为走势预测/上涨候选/操作建议；selector 报告将校准来源展示为十日推演/后验复盘/默认阈值；总入口 MVP 标签中文化 |
+| v2.20 | 2026-07-08 | 新增 `Quantification-Roadmap-v2.md`，重整未完成主线任务、可优化项和“当前下一步唯一执行顺序”；selector 升级到 v1.1.0，接入后验复盘/十日推演阈值自动校准，输出有效候选阈值、观察阈值、概率确认线和校准原因 |
+| v2.19 | 2026-07-08 | 落地 P3-2 组合管理与账户级风控 Portfolio MVP：新增 `portfolio/`、`portfolio` 任务和报告，输出账户净值、现金占比、持仓权重、目标仓位、调仓差、市场暴露、单票集中度和风险告警；MVP 流程接入 portfolio 报告 |
 | v2.18 | 2026-07-07 | 落地 P3-3 后验复盘 Review MVP：新增 `evaluation/`、`review` 任务和报告，统计 prediction/selector/decision 后 1/5/20 日收益、命中率、最大不利波动和失效原因；补充实盘接入准备清单，明确券商接口、账户同步、事前风控、订单审计、人工确认、熔断和密钥安全要求 |
 | v2.17 | 2026-07-07 | 将大盘、资金、公告/业绩、估值和产业价格事件接入十日前滚动推演根因复盘：读取 `latest/indices`、`enhance`、`impact` 缓存，输出外部根因 `external_context_causes`，并用 `source_timing` 区分当时已知证据和最新复盘证据，保证外部数据不参与当时预测 |
 | v2.16 | 2026-07-07 | 在十日前滚动推演中新增涨跌根因分析、未命中原因、命中率优化思考和单日价位级操作雏形字段：`root_cause`、`learning`、`operation_levels`；后续将延伸到空仓/半仓/满仓下的买入触发价、卖出防守价和止盈观察价 |

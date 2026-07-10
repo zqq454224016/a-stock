@@ -1,0 +1,46 @@
+{
+  "registry_version": "1.0.0",
+  "module": "trading",
+  "label": "模拟交易",
+  "path": "trading/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/trading/index.json",
+  "exists": true,
+  "size": 1845,
+  "file_mtime": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-10 17:43:27",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "decisions",
+      "positions",
+      "summary",
+      "updated_at"
+    ],
+    "list_fields": {
+      "decisions": 5,
+      "positions": 0
+    },
+    "dict_fields": [
+      "summary"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "decisions",
+    "predictions"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "trading/index.json",
+    "expected_command": "simtrade",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

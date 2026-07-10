@@ -1,0 +1,42 @@
+{
+  "registry_version": "1.0.0",
+  "module": "predictions",
+  "label": "走势预测",
+  "path": "predictions/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/predictions/index.json",
+  "exists": true,
+  "size": 961,
+  "file_mtime": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-10 17:43:27",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "predictions",
+      "updated_at"
+    ],
+    "list_fields": {
+      "predictions": 5
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "stocks",
+    "factors",
+    "backtest"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "predictions/index.json",
+    "expected_command": "predict",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

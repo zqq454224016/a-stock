@@ -1,42 +1,42 @@
 {
-  "updated_at": "2026-07-07 21:02:10",
+  "updated_at": "2026-07-10 17:43:27",
   "items": [
-    {
-      "code": "000636",
-      "name": "风华高科",
-      "trade_date": "2026-07-07",
-      "upside_score": 45.53,
-      "status": "rejected",
-      "rank_bucket": "排除",
-      "top_reason": "预测中性，概率 0.46",
-      "top_risk": "因子分偏低 49.4",
-      "reject_reasons": [
-        "实际影响数据显著偏负面"
-      ],
-      "candidate_blockers": [
-        "预测尚未形成向上确认",
-        "因子分未达到观察线",
-        "趋势未站上 MA20",
-        "实际影响分为负"
-      ],
-      "next_triggers": [
-        "预测概率提升到 0.55 以上",
-        "因子分提升到 55 以上",
-        "收盘价重新站上 MA20",
-        "实际影响分修复到非负"
-      ]
-    },
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-07",
-      "upside_score": 43.05,
+      "trade_date": "2026-07-10",
+      "upside_score": 57.56,
       "status": "rejected",
       "rank_bucket": "排除",
-      "top_reason": "预测中性，概率 0.54",
-      "top_risk": "因子分偏低 31.3",
+      "top_reason": "预测中性，概率 0.52",
+      "top_risk": "因子分偏低 54.8",
       "reject_reasons": [
-        "因子分过低 31.3",
+        "实际影响数据显著偏负面"
+      ],
+      "candidate_blockers": [
+        "预测尚未形成向上确认",
+        "因子分未达到观察线",
+        "趋势未站上 MA20",
+        "实际影响分为负"
+      ],
+      "next_triggers": [
+        "预测概率提升到 0.58 以上",
+        "因子分提升到 55 以上",
+        "收盘价重新站上 MA20",
+        "实际影响分修复到非负"
+      ],
+      "calibration_mode": "replay"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "trade_date": "2026-07-10",
+      "upside_score": 57.19,
+      "status": "rejected",
+      "rank_bucket": "排除",
+      "top_reason": "预测中性，概率 0.48",
+      "top_risk": "因子分偏低 54.4",
+      "reject_reasons": [
         "实际影响数据显著偏负面"
       ],
       "candidate_blockers": [
@@ -50,46 +50,73 @@
         "因子分提升到 55 以上",
         "收盘价重新站上 MA20",
         "实际影响分修复到非负"
-      ]
+      ],
+      "calibration_mode": "neutral"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "trade_date": "2026-07-10",
+      "upside_score": 43.43,
+      "status": "rejected",
+      "rank_bucket": "排除",
+      "top_reason": "预测中性，概率 0.46",
+      "top_risk": "因子分偏低 40.3",
+      "reject_reasons": [
+        "因子分过低 40.3",
+        "实际影响数据显著偏负面"
+      ],
+      "candidate_blockers": [
+        "预测尚未形成向上确认",
+        "因子分未达到观察线",
+        "趋势未站上 MA20",
+        "实际影响分为负"
+      ],
+      "next_triggers": [
+        "预测概率提升到 0.58 以上",
+        "因子分提升到 55 以上",
+        "收盘价重新站上 MA20",
+        "实际影响分修复到非负"
+      ],
+      "calibration_mode": "replay"
     },
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "upside_score": 0.0,
       "status": "rejected",
       "rank_bucket": "排除",
       "top_reason": "收盘价站上 MA60",
-      "top_risk": "因子分偏低 50.1",
+      "top_risk": "因子分偏低 37.7",
       "reject_reasons": [
-        "预测方向为 down"
+        "预测方向为偏空",
+        "因子分过低 37.7"
       ],
       "candidate_blockers": [
         "预测尚未形成向上确认",
         "因子分未达到观察线",
-        "趋势未站上 MA20",
-        "实际影响分为负"
+        "趋势未站上 MA20"
       ],
       "next_triggers": [
-        "预测方向从 down 修复为 neutral/up",
-        "预测概率提升到 0.55 以上",
+        "预测方向从偏空修复为震荡或偏多",
+        "预测概率提升到 0.58 以上",
         "因子分提升到 55 以上",
-        "收盘价重新站上 MA20",
-        "实际影响分修复到非负"
-      ]
+        "收盘价重新站上 MA20"
+      ],
+      "calibration_mode": "replay"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "upside_score": 0.0,
       "status": "rejected",
       "rank_bucket": "排除",
-      "top_reason": "回测夏普 2.02",
-      "top_risk": "因子分偏低 39.4",
+      "top_reason": "20日动量为正",
+      "top_risk": "因子分偏低 47.9",
       "reject_reasons": [
-        "预测方向为 down",
-        "因子分过低 39.4",
+        "预测方向为偏空",
         "实际影响数据显著偏负面"
       ],
       "candidate_blockers": [
@@ -99,13 +126,14 @@
         "实际影响分为负"
       ],
       "next_triggers": [
-        "预测方向从 down 修复为 neutral/up",
-        "预测概率提升到 0.55 以上",
+        "预测方向从偏空修复为震荡或偏多",
+        "预测概率提升到 0.58 以上",
         "因子分提升到 55 以上",
         "收盘价重新站上 MA20",
         "实际影响分修复到非负",
         "回测最大回撤收敛到 35% 内"
-      ]
+      ],
+      "calibration_mode": "replay"
     }
   ]
 }

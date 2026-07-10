@@ -23,6 +23,14 @@ def _load_enhance(store: JsonStore, code: str) -> dict[str, Any] | None:
     return None
 
 
+def _load_review(store: JsonStore, code: str) -> dict[str, Any] | None:
+    path = store.review_dir() / f"{code}.json"
+    if path.exists():
+        payload = store.read(path)
+        return payload if isinstance(payload, dict) else None
+    return None
+
+
 def run_impact_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
     cfg = CrawlerConfig()
     store = JsonStore(DBConfig())
@@ -39,8 +47,9 @@ def run_impact_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
     for item in stocks:
         code = normalize_code(item["code"])
         enhance = _load_enhance(store, code)
+        review = _load_review(store, code)
         name = (enhance or {}).get("name") or item.get("name") or code
-        payload = build_impact_payload(code, name, enhance)
+        payload = build_impact_payload(code, name, enhance, review=review)
         store.save_impact(code, payload)
         payloads.append(payload)
         index.append({
@@ -49,6 +58,8 @@ def run_impact_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
             "impact_score": payload.get("impact_score"),
             "impact_direction": payload.get("impact_direction"),
             "event_count": len(payload.get("events") or []),
+            "evidence_quality": payload.get("evidence_quality") or {},
+            "post_event_review": payload.get("post_event_review") or {},
             "limitations": payload.get("limitations") or [],
         })
         logger.info(

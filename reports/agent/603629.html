@@ -15,29 +15,37 @@
         <a href="index.html">Agent 看板</a> / 603629
       </nav>
       <h1 class="site-title">利通电子 <span class="stock-code">603629</span></h1>
-      <p class="site-subtitle">谨慎 · 置信度 low · 2026-07-07 21:02:11</p>
-      <p style="color:var(--color-muted);font-size:0.85rem">规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。</p>
+      <p class="site-subtitle">谨慎 · 置信度 low · 2026-07-10 17:43:28</p>
+      <p style="color:var(--color-muted);font-size:0.85rem">Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。</p>
     </div>
   </header>
   <main class="container report-body">
     <section class="stats-row">
-      <div class="stat-card"><div class="name">选股结论</div><div class="value"><span style="color:#ef4444;font-weight:600">偏空</span></div><div class="change">综合分 39.4</div></div>
+      <div class="stat-card"><div class="name">选股结论</div><div class="value"><span style="color:#6b7280;font-weight:600">中性</span></div><div class="change">综合分 47.9</div></div>
       <div class="stat-card"><div class="name">策略诊断</div><div class="value"><span style="color:#ef4444;font-weight:600">偏弱</span></div><div class="change">均线金叉</div></div>
-      <div class="stat-card"><div class="name">预测复盘</div><div class="value"><span style="color:#10b981;font-weight:600">一致</span></div><div class="change">5d <span style="color:#ef4444;font-weight:600">下跌</span></div></div>
-      <div class="stat-card"><div class="name">数据质量</div><div class="value">100.0</div><div class="change"><span style="color:#10b981;font-weight:600">正常</span></div></div>
+      <div class="stat-card"><div class="name">预测复盘</div><div class="value"><span style="color:#f59e0b;font-weight:600">部分一致</span></div><div class="change">5d <span style="color:#ef4444;font-weight:600">下跌</span></div></div>
+      <div class="stat-card"><div class="name">数据质量</div><div class="value">90.0</div><div class="change"><span style="color:#10b981;font-weight:600">正常</span></div></div>
     </section>
 
-    <section class="panel"><h2>选股解释</h2><p>综合因子偏空，谨慎对待</p>
-      <p><strong>证据</strong></p><ul><li>技术分 24.0</li><li>情绪分 72.2</li><li>基本面分 36.0</li><li>趋势 偏空</li><li>舆情 看多</li></ul>
-      <p><strong>驱动</strong></p><ul><li>ma_death_cross</li><li>macd_hist_negative</li><li>ma20_breakdown</li></ul>
+    <section class="panel"><h2>Provider 与审计</h2>
+      <p>请求 rule · 实际 rule · 模型 local-rule · 提示词 stock_review_v1.0.0</p>
+      <p>权限校验：通过 · 缺失输入：—</p>
+      <p><strong>Provider 输出</strong>：谨慎 · 方向 neutral · 置信度 low</p>
+      <p><strong>建议</strong></p><ul><li>仅用于研究解释</li><li>进入人工复核后再考虑操作</li></ul>
+      <p><strong>禁止动作</strong></p><ul><li>不得自动下单</li><li>不得绕过风控</li><li>不得修改生产参数</li></ul>
+    </section>
+
+    <section class="panel"><h2>选股解释</h2><p>综合因子中性，等待更清晰信号</p>
+      <p><strong>证据</strong></p><ul><li>技术分 47.0</li><li>情绪分 56.8</li><li>基本面分 36.0</li><li>趋势 偏空</li><li>舆情 看空</li></ul>
+      <p><strong>驱动</strong></p><ul><li>macd_hist_negative</li><li>momentum_20_up</li><li>ma20_breakdown</li></ul>
       <p><strong>风险</strong></p><ul><li>not_backtested</li><li>technical_only</li><li>估值偏高</li></ul>
     </section>
 
-    <section class="panel"><h2>策略诊断</h2><ul><li>胜率偏低（33.33%）</li><li>历史最大回撤较大（-52.0%）</li><li>单笔最大亏损 -11214.27（MA20死叉）</li></ul>
+    <section class="panel"><h2>策略诊断</h2><ul><li>胜率偏低（14.29%）</li><li>历史最大回撤较大（-51.84%）</li><li>单笔最大亏损 -113770.83（MA20死叉）</li></ul>
       <p><strong>建议</strong></p><ul><li>考虑提高买入阈值或叠加趋势过滤</li><li>设置账户级回撤熔断，避免单边行情重仓</li></ul>
     </section>
 
-    <section class="panel"><h2>预测复盘</h2><ul><li>5d 预测 偏空，概率 23.7%，置信度 high</li><li>历史样本 58，回测胜率 33.3%</li><li>初级技术信号与预测方向一致</li><li>风险标记: high_volatility</li><li>风险标记: high_historical_drawdown</li><li>策略历史回撤 -52.0% 偏高</li></ul>
+    <section class="panel"><h2>预测复盘</h2><ul><li>5d 预测 偏空，概率 16.1%，置信度 high</li><li>历史样本 58，回测胜率 14.3%</li><li>信号与预测部分一致，存在中性分歧</li><li>风险标记: high_volatility</li><li>风险标记: high_historical_drawdown</li><li>策略历史回撤 -51.84% 偏高</li></ul>
       <p><strong>失效条件</strong></p><ul><li>high_volatility</li><li>high_historical_drawdown</li></ul>
     </section>
 

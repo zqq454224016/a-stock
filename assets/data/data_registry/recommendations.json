@@ -1,0 +1,54 @@
+{
+  "registry_version": "1.0.0",
+  "module": "recommendations",
+  "label": "多周期推荐",
+  "path": "recommendations/summary.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/recommendations/summary.json",
+  "exists": true,
+  "size": 21983,
+  "file_mtime": "2026-07-09 17:18:16",
+  "updated_at": "2026-07-09 17:18:16",
+  "record_count": 12,
+  "field_summary": {
+    "top_level_fields": [
+      "limitations",
+      "market_context",
+      "periods",
+      "recommendation_version",
+      "updated_at"
+    ],
+    "list_fields": {
+      "limitations": 3
+    },
+    "dict_fields": [
+      "market_context",
+      "periods"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": [
+      "recommendation_universe_limited_to_local_watchlist",
+      "long_horizon_lacks_dedicated_prediction_model",
+      "degraded_market_or_fund_flow_data_may_reduce_confidence"
+    ]
+  },
+  "dependencies": [
+    "market",
+    "selector",
+    "predictions",
+    "impact",
+    "replay"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "recommendations/summary.json",
+    "expected_command": "recommend",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

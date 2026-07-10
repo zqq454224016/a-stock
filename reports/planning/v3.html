@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>v3 稳定化路线 · A股全景</title>
+<link rel="stylesheet" href="../../css/common.css"><link rel="stylesheet" href="../../css/report.css"></head>
+<body><header class="site-header"><div class="container"><nav class="breadcrumb"><a href="../../index.html">首页</a> / <a href="../index.html">报表列表</a> / v3 路线</nav>
+<h1 class="site-title">v3 稳定化与扩展路线</h1><p class="site-subtitle">把 v2 的首版研究闭环推进到可长期运行、可扩展股票池、可审计外部智能、可持续评估的 v3 稳定化系统。</p></div></header>
+<main class="container report-body">
+  <section class="stats-row">
+    <div class="stat-card"><div class="name">路线版本</div><div class="value">3.0.0</div></div>
+    <div class="stat-card"><div class="name">阶段数量</div><div class="value">6</div></div>
+    <div class="stat-card"><div class="name">当前唯一下一步</div><div class="value" style="font-size:1rem">V3-03</div><div class="change">全市场股票池首版</div></div>
+    <div class="stat-card"><div class="name">更新时间</div><div class="value" style="font-size:1rem">2026-07-10 18:08:56</div></div>
+  </section>
+  <section class="table-section"><h2>执行顺序</h2><table class="data-table"><thead><tr><th>编号</th><th>任务</th><th>优先级</th><th>状态</th><th>目标</th><th>产物</th></tr></thead><tbody><tr><td>V3-01</td><td>运行时任务日志</td><td>P0</td><td>done</td><td>记录每次任务的开始、结束、耗时、状态、异常和产物路径</td><td>assets/data/task_runs/*.json；reports/monitoring/</td></tr><tr><td>V3-02</td><td>数据注册表与血缘版本</td><td>P0</td><td>done</td><td>把数据源、抓取时间、降级原因、字段质量、版本快照纳入统一注册表</td><td>assets/data/data_registry/*.json；reports/monitoring/</td></tr><tr><td>V3-03</td><td>全市场股票池首版</td><td>P1</td><td>next</td><td>从 watchlist 扩展到可过滤的股票池，保留科创板参考模式</td><td>assets/data/universe/*.json；reports/console/</td></tr><tr><td>V3-04</td><td>横截面因子检验</td><td>P1</td><td>planned</td><td>把因子评估从小股票池时间序列代理升级到横截面检验</td><td>assets/data/factor_eval/cross_section.json；reports/factor_eval/</td></tr><tr><td>V3-05</td><td>真实 LLM Provider</td><td>P2</td><td>planned</td><td>在现有 Agent Provider 框架下接入真实 LLM，保留规则降级</td><td>assets/data/agent/*.json；assets/data/agent/audit/*.json</td></tr><tr><td>V3-06</td><td>外部通知与告警</td><td>P2</td><td>planned</td><td>把 monitor 的严重/警告事件发送到可配置通知渠道</td><td>assets/data/monitoring/notifications.json</td></tr></tbody></table></section>
+  <section class="table-section"><h2>当前任务验收</h2><ul><li>支持 watchlist、行业池、风险排除池、参考池</li><li>默认不重型拉取科创板，仅保留参考标的</li><li>推荐模块可选择股票池而不是固定自选股</li></ul></section>
+  <section class="table-section"><h2>v2 已完成基础</h2><ul><li>Selector 阈值校准</li><li>Impact 证据质量</li><li>组合管理</li><li>因子有效性代理评估</li><li>多周期推荐</li><li>模块化契约</li><li>Agent Provider 框架</li><li>统一控制台</li><li>监控告警与数据血缘</li></ul></section>
+  <section class="table-section"><h2>原则</h2><ul><li>不恢复自动实盘，实盘相关仍保持只读、模拟、人工确认和审计优先。</li><li>先补运行可靠性和数据血缘，再扩大股票池和模型能力。</li><li>所有新增智能输出必须可解释、可回放、可降级。</li></ul></section>
+  <section class="table-section"><h2>开放风险</h2><ul><li>外部数据源和网络稳定性仍可能影响实时性。</li><li>当前推荐范围仍以本地自选股为主，未代表全市场机会。</li><li>真实 LLM、外部通知、券商只读网关均需要密钥和权限管理。</li></ul></section>
+</main></body></html>

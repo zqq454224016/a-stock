@@ -1,0 +1,40 @@
+{
+  "registry_version": "1.0.0",
+  "module": "stocks",
+  "label": "个股分析",
+  "path": "stocks/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/stocks/index.json",
+  "exists": true,
+  "size": 1485,
+  "file_mtime": "2026-07-10 17:41:26",
+  "updated_at": "2026-07-10 17:41:26",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "stocks",
+      "updated_at"
+    ],
+    "list_fields": {
+      "stocks": 5
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "market"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "stocks/index.json",
+    "expected_command": "stock",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

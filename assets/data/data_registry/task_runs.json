@@ -1,0 +1,38 @@
+{
+  "registry_version": "1.0.0",
+  "module": "task_runs",
+  "label": "任务运行",
+  "path": "task_runs/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/task_runs/index.json",
+  "exists": true,
+  "size": 8242,
+  "file_mtime": "2026-07-10 18:09:07",
+  "updated_at": "2026-07-10 18:09:07",
+  "record_count": 12,
+  "field_summary": {
+    "top_level_fields": [
+      "runs",
+      "updated_at"
+    ],
+    "list_fields": {
+      "runs": 12
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [],
+  "generated_by": {},
+  "source": {
+    "declared_output": "task_runs/index.json",
+    "expected_command": "任意 CLI 命令",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

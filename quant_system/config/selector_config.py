@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-SELECTOR_VERSION = "1.0.0"
+SELECTOR_VERSION = "1.1.0"
 
 
 @dataclass

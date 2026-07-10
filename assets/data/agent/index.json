@@ -1,45 +1,65 @@
 {
-  "updated_at": "2026-07-07 21:02:11",
+  "updated_at": "2026-07-10 17:43:28",
   "reports": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-07",
-      "summary": "综合因子中性，等待更清晰信号",
-      "confidence": "medium",
-      "selection_verdict": "neutral",
+      "trade_date": "2026-07-10",
+      "summary": "谨慎",
+      "confidence": "low",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "negative",
       "strategy_verdict": "mixed",
-      "prediction_alignment": "partial"
+      "prediction_alignment": "aligned"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "summary": "谨慎",
       "confidence": "low",
-      "selection_verdict": "negative",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "neutral",
       "strategy_verdict": "weak",
-      "prediction_alignment": "aligned"
+      "prediction_alignment": "partial"
     },
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-07",
+      "trade_date": "2026-07-10",
       "summary": "综合因子中性，等待更清晰信号",
       "confidence": "medium",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "neutral",
+      "strategy_verdict": "ok",
+      "prediction_alignment": "partial"
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "trade_date": "2026-07-10",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "provider": "rule",
+      "policy_passed": true,
       "selection_verdict": "neutral",
       "strategy_verdict": "ok",
       "prediction_alignment": "aligned"
     },
     {
-      "code": "000988",
-      "name": "华工科技",
-      "trade_date": "2026-07-07",
-      "summary": "谨慎",
-      "confidence": "low",
-      "selection_verdict": "negative",
+      "code": "002384",
+      "name": "东山精密",
+      "trade_date": "2026-07-10",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "neutral",
       "strategy_verdict": "ok",
-      "prediction_alignment": "partial"
+      "prediction_alignment": "aligned"
     }
   ]
 }

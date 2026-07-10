@@ -1,29 +1,34 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-07",
-  "version": "1.0.0",
-  "impact_score": -27,
+  "trade_date": "2026-07-10",
+  "version": "1.1.0",
+  "impact_score": -33,
   "impact_direction": "negative",
   "events": [
     {
       "event_type": "valuation_pressure",
       "title": "估值压力",
-      "period": "2026-07-07",
-      "announce_date": "2026-07-07",
-      "impact_score": -27,
+      "period": "2026-07-10",
+      "announce_date": "2026-07-10",
+      "impact_score": -33,
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "pe_ttm": 76.21945275,
-        "pb": 18.14560116
+        "pe_ttm": 80.01,
+        "pb": 20.15
       },
       "evidence": [
-        "PE(TTM)=76.22",
-        "PB=18.15"
+        "PE(TTM)=80.01",
+        "PB=20.15"
       ],
-      "source": "eastmoney_value",
-      "limitations": []
+      "source": "baidu_pe",
+      "limitations": [],
+      "evidence_quality": {
+        "score": 95,
+        "level": "high",
+        "missing_evidence": []
+      }
     },
     {
       "event_type": "q2_profit_growth_gap",
@@ -40,11 +45,43 @@
       "source": "system_gap",
       "limitations": [
         "requires_q2_official_report_or_forecast"
-      ]
+      ],
+      "evidence_quality": {
+        "score": 27,
+        "level": "low",
+        "missing_evidence": [
+          "缺少量化指标",
+          "缺少公告/事件日期",
+          "缺少外部数据来源"
+        ]
+      }
     }
   ],
+  "evidence_quality": {
+    "avg_score": 61.0,
+    "low_quality_event_count": 1,
+    "missing_evidence": [
+      "缺少公告/事件日期",
+      "缺少外部数据来源",
+      "缺少量化指标"
+    ]
+  },
+  "post_event_review": {
+    "status": "pending",
+    "evaluated_count": 0,
+    "pending_count": 9,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "worst_adverse_pct": null,
+    "failure_reasons": [],
+    "limitations": [
+      "impact_review_requires_future_kline",
+      "review_requires_future_kline_after_signal_date",
+      "watch_action_hit_rule_uses_abs_return_below_1pct"
+    ]
+  },
   "limitations": [
     "requires_q2_official_report_or_forecast"
   ],
-  "updated_at": "2026-07-07 21:02:10"
+  "updated_at": "2026-07-10 17:43:27"
 }

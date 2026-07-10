@@ -1,0 +1,42 @@
+{
+  "registry_version": "1.0.0",
+  "module": "selector",
+  "label": "上涨候选",
+  "path": "selector/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/selector/index.json",
+  "exists": true,
+  "size": 4096,
+  "file_mtime": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-10 17:43:27",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "items",
+      "updated_at"
+    ],
+    "list_fields": {
+      "items": 5
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "predictions",
+    "factors",
+    "impact"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "selector/index.json",
+    "expected_command": "selector",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

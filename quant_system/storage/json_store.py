@@ -65,6 +65,102 @@ class JsonStore:
         self.write(path, {"updated_at": updated_at, "stocks": stocks})
         return path
 
+    def factor_eval_dir(self) -> Path:
+        return self.config.json_data_dir / "factor_eval"
+
+    def save_factor_eval(self, data: dict[str, Any]) -> Path:
+        path = self.factor_eval_dir() / "summary.json"
+        self.write(path, data)
+        return path
+
+    def recommendation_dir(self) -> Path:
+        return self.config.json_data_dir / "recommendations"
+
+    def save_recommendations(self, data: dict[str, Any]) -> Path:
+        path = self.recommendation_dir() / "summary.json"
+        self.write(path, data)
+        return path
+
+    def framework_dir(self) -> Path:
+        return self.config.json_data_dir / "framework"
+
+    def save_framework_snapshot(self, data: dict[str, Any]) -> Path:
+        path = self.framework_dir() / "snapshot.json"
+        self.write(path, data)
+        return path
+
+    def monitoring_dir(self) -> Path:
+        return self.config.json_data_dir / "monitoring"
+
+    def save_monitoring_snapshot(self, data: dict[str, Any]) -> Path:
+        path = self.monitoring_dir() / "snapshot.json"
+        self.write(path, data)
+        return path
+
+    def data_registry_dir(self) -> Path:
+        return self.config.json_data_dir / "data_registry"
+
+    def save_data_registry_item(self, module: str, data: dict[str, Any]) -> Path:
+        path = self.data_registry_dir() / f"{module}.json"
+        self.write(path, data)
+        return path
+
+    def save_data_registry_index(self, data: dict[str, Any]) -> Path:
+        path = self.data_registry_dir() / "index.json"
+        self.write(path, data)
+        return path
+
+    def task_runs_dir(self) -> Path:
+        return self.config.json_data_dir / "task_runs"
+
+    def save_task_run(self, data: dict[str, Any], *, max_runs: int = 100) -> Path:
+        run_id = str(data.get("run_id") or "unknown")
+        path = self.task_runs_dir() / f"{run_id}.json"
+        self.write(path, data)
+
+        index_path = self.task_runs_dir() / "index.json"
+        if index_path.exists():
+            try:
+                index = self.read(index_path)
+            except (json.JSONDecodeError, OSError):
+                index = {}
+        else:
+            index = {}
+
+        def _summary(item: dict[str, Any]) -> dict[str, Any]:
+            error = item.get("error") or {}
+            return {
+                "run_id": item.get("run_id"),
+                "command": item.get("command"),
+                "argv": item.get("argv") or [],
+                "status": item.get("status"),
+                "started_at": item.get("started_at"),
+                "ended_at": item.get("ended_at"),
+                "duration_sec": item.get("duration_sec"),
+                "error": {
+                    "type": error.get("type", ""),
+                    "message": error.get("message", ""),
+                } if error else {},
+                "skip_reason": item.get("skip_reason", ""),
+                "artifacts": item.get("artifacts") or [],
+                "path": f"task_runs/{run_id}.json",
+            }
+
+        runs = [row for row in (index.get("runs") or []) if row.get("run_id") != run_id]
+        runs.insert(0, _summary(data))
+        runs = runs[:max(1, max_runs)]
+        from quant_system.utils.time_utils import now_str
+        self.write(index_path, {"updated_at": now_str(), "runs": runs})
+        return path
+
+    def planning_dir(self) -> Path:
+        return self.config.json_data_dir / "planning"
+
+    def save_v3_roadmap(self, data: dict[str, Any]) -> Path:
+        path = self.planning_dir() / "v3_roadmap.json"
+        self.write(path, data)
+        return path
+
     def signals_dir(self) -> Path:
         return self.config.json_data_dir / "signals"
 
@@ -118,6 +214,11 @@ class JsonStore:
 
     def save_agent_report(self, code: str, data: dict[str, Any]) -> Path:
         path = self.agent_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_agent_audit(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.agent_dir() / "audit" / f"{code}.json"
         self.write(path, data)
         return path
 
@@ -191,6 +292,19 @@ class JsonStore:
         self.write(path, {"updated_at": updated_at, "items": items})
         return path
 
+    def attribution_dir(self) -> Path:
+        return self.config.json_data_dir / "attribution"
+
+    def save_attribution(self, code: str, data: dict[str, Any]) -> Path:
+        path = self.attribution_dir() / f"{code}.json"
+        self.write(path, data)
+        return path
+
+    def save_attribution_index(self, items: list[dict], updated_at: str) -> Path:
+        path = self.attribution_dir() / "index.json"
+        self.write(path, {"updated_at": updated_at, "items": items})
+        return path
+
     def quality_dir(self) -> Path:
         return self.config.json_data_dir / "quality"
 
@@ -238,6 +352,14 @@ class JsonStore:
 
     def save_trading_index(self, data: dict[str, Any]) -> Path:
         path = self.trading_dir() / "index.json"
+        self.write(path, data)
+        return path
+
+    def portfolio_dir(self) -> Path:
+        return self.config.json_data_dir / "portfolio"
+
+    def save_portfolio(self, data: dict[str, Any]) -> Path:
+        path = self.portfolio_dir() / "summary.json"
         self.write(path, data)
         return path
 

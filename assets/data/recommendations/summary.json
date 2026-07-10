@@ -1,0 +1,620 @@
+{
+  "recommendation_version": "1.0.0",
+  "updated_at": "2026-07-09 17:18:16",
+  "market_context": {
+    "trade_date": "2026-07-07",
+    "regime": "偏弱",
+    "index_avg_change_pct": -1.35,
+    "main_net_yi": -364.2,
+    "score_adjustment": -5.0,
+    "degraded": true
+  },
+  "periods": {
+    "short": {
+      "label": "短线",
+      "horizon": "1-5个交易日",
+      "threshold": 58.0,
+      "recommendations": [],
+      "watchlist": [],
+      "evaluated": [
+        {
+          "code": "000636",
+          "name": "风华高科",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 33.93,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 37.9",
+            "多因子评分 45.8",
+            "5日历史涨跌 -18.41%",
+            "实际影响评分 -26",
+            "十日推演命中率 60%"
+          ],
+          "risks": [
+            "因子分偏低 45.8",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "实际影响偏负面，impact_score=-26",
+            "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "实际影响数据显著偏负面"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 6,
+            "hit_rate": 0.6,
+            "up_prediction_count": 8,
+            "down_prediction_count": 2,
+            "total_return_pct": -19.84
+          }
+        },
+        {
+          "code": "000988",
+          "name": "华工科技",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 29.7,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 34.7",
+            "多因子评分 39.8",
+            "5日历史涨跌 -15.01%",
+            "实际影响评分 -33",
+            "十日推演命中率 10%"
+          ],
+          "risks": [
+            "因子分偏低 39.8",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "实际影响偏负面，impact_score=-33",
+            "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+            "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "因子分过低 39.8",
+            "实际影响数据显著偏负面"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 1,
+            "hit_rate": 0.1,
+            "up_prediction_count": 3,
+            "down_prediction_count": 0,
+            "total_return_pct": -14.3
+          }
+        },
+        {
+          "code": "603629",
+          "name": "利通电子",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 28.31,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 43.8",
+            "5日历史涨跌 -16.43%",
+            "实际影响评分 -27",
+            "十日推演命中率 10%"
+          ],
+          "risks": [
+            "因子分偏低 43.8",
+            "预测方向向下，概率 0.18",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "历史最大回撤较大 -51.78%",
+            "回测胜率偏低 20.00%",
+            "实际影响偏负面，impact_score=-27",
+            "影响数据限制：requires_q2_official_report_or_forecast",
+            "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "预测方向为偏空",
+            "因子分过低 43.8",
+            "实际影响数据显著偏负面",
+            "短线预测方向偏空"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测方向从偏空修复为震荡或偏多",
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负",
+            "回测最大回撤收敛到 35% 内"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 1,
+            "hit_rate": 0.1,
+            "up_prediction_count": 0,
+            "down_prediction_count": 4,
+            "total_return_pct": -10.99
+          }
+        },
+        {
+          "code": "600378",
+          "name": "昊华科技",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 26.45,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 49.3",
+            "5日历史涨跌 -22.83%",
+            "实际影响评分 0",
+            "十日推演命中率 0%"
+          ],
+          "risks": [
+            "因子分偏低 49.3",
+            "预测方向向下，概率 0.28",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "回测胜率偏低 33.33%",
+            "影响数据限制：not_q2_report_period",
+            "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "预测方向为偏空",
+            "短线预测方向偏空"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测方向从偏空修复为震荡或偏多",
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 0,
+            "hit_rate": 0.0,
+            "up_prediction_count": 0,
+            "down_prediction_count": 0,
+            "total_return_pct": -2.58
+          }
+        }
+      ],
+      "shortage_count": 5,
+      "shortage_reason": "仅有0只通过阈值和硬性风险门禁，不为凑满5只而降低标准"
+    },
+    "medium": {
+      "label": "中线",
+      "horizon": "1-3个月",
+      "threshold": 60.0,
+      "recommendations": [],
+      "watchlist": [],
+      "evaluated": [
+        {
+          "code": "000636",
+          "name": "风华高科",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 40.72,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 37.9",
+            "多因子评分 45.8",
+            "20日历史涨跌 -0.62%",
+            "实际影响评分 -26",
+            "十日推演命中率 60%"
+          ],
+          "risks": [
+            "因子分偏低 45.8",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "实际影响偏负面，impact_score=-26",
+            "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "中线实际影响显著偏负面"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 6,
+            "hit_rate": 0.6,
+            "up_prediction_count": 8,
+            "down_prediction_count": 2,
+            "total_return_pct": -19.84
+          }
+        },
+        {
+          "code": "600378",
+          "name": "昊华科技",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 36.36,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 49.3",
+            "20日历史涨跌 19.11%",
+            "实际影响评分 0",
+            "十日推演命中率 0%"
+          ],
+          "risks": [
+            "因子分偏低 49.3",
+            "预测方向向下，概率 0.28",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "回测胜率偏低 33.33%",
+            "影响数据限制：not_q2_report_period",
+            "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测方向从偏空修复为震荡或偏多",
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 0,
+            "hit_rate": 0.0,
+            "up_prediction_count": 0,
+            "down_prediction_count": 0,
+            "total_return_pct": -2.58
+          }
+        },
+        {
+          "code": "000988",
+          "name": "华工科技",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 32.51,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 34.7",
+            "多因子评分 39.8",
+            "20日历史涨跌 -5.00%",
+            "实际影响评分 -33",
+            "十日推演命中率 10%"
+          ],
+          "risks": [
+            "因子分偏低 39.8",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "实际影响偏负面，impact_score=-33",
+            "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+            "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "中线实际影响显著偏负面"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 1,
+            "hit_rate": 0.1,
+            "up_prediction_count": 3,
+            "down_prediction_count": 0,
+            "total_return_pct": -14.3
+          }
+        },
+        {
+          "code": "603629",
+          "name": "利通电子",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 27.67,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 43.8",
+            "20日历史涨跌 0.58%",
+            "实际影响评分 -27",
+            "十日推演命中率 10%"
+          ],
+          "risks": [
+            "因子分偏低 43.8",
+            "预测方向向下，概率 0.18",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "历史最大回撤较大 -51.78%",
+            "回测胜率偏低 20.00%",
+            "实际影响偏负面，impact_score=-27",
+            "影响数据限制：requires_q2_official_report_or_forecast",
+            "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "中线实际影响显著偏负面"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测方向从偏空修复为震荡或偏多",
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负",
+            "回测最大回撤收敛到 35% 内"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 1,
+            "hit_rate": 0.1,
+            "up_prediction_count": 0,
+            "down_prediction_count": 4,
+            "total_return_pct": -10.99
+          }
+        }
+      ],
+      "shortage_count": 5,
+      "shortage_reason": "仅有0只通过阈值和硬性风险门禁，不为凑满5只而降低标准"
+    },
+    "long": {
+      "label": "长线",
+      "horizon": "6-12个月",
+      "threshold": 62.0,
+      "recommendations": [],
+      "watchlist": [],
+      "evaluated": [
+        {
+          "code": "600378",
+          "name": "昊华科技",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 48.71,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 49.3",
+            "60日历史涨跌 87.83%",
+            "实际影响评分 0",
+            "十日推演命中率 0%"
+          ],
+          "risks": [
+            "因子分偏低 49.3",
+            "预测方向向下，概率 0.28",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "回测胜率偏低 33.33%",
+            "影响数据限制：not_q2_report_period",
+            "阈值校准：十日推演命中率偏低 0%，候选阈值上调",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测方向从偏空修复为震荡或偏多",
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 0,
+            "hit_rate": 0.0,
+            "up_prediction_count": 0,
+            "down_prediction_count": 0,
+            "total_return_pct": -2.58
+          }
+        },
+        {
+          "code": "000636",
+          "name": "风华高科",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 46.29,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 37.9",
+            "多因子评分 45.8",
+            "60日历史涨跌 207.65%",
+            "实际影响评分 -26",
+            "十日推演命中率 60%"
+          ],
+          "risks": [
+            "因子分偏低 45.8",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "实际影响偏负面，impact_score=-26",
+            "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 6,
+            "hit_rate": 0.6,
+            "up_prediction_count": 8,
+            "down_prediction_count": 2,
+            "total_return_pct": -19.84
+          }
+        },
+        {
+          "code": "603629",
+          "name": "利通电子",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 37.92,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 43.8",
+            "60日历史涨跌 116.62%",
+            "实际影响评分 -27",
+            "十日推演命中率 10%"
+          ],
+          "risks": [
+            "因子分偏低 43.8",
+            "预测方向向下，概率 0.18",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "历史最大回撤较大 -51.78%",
+            "回测胜率偏低 20.00%",
+            "实际影响偏负面，impact_score=-27",
+            "影响数据限制：requires_q2_official_report_or_forecast",
+            "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测方向从偏空修复为震荡或偏多",
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负",
+            "回测最大回撤收敛到 35% 内"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 1,
+            "hit_rate": 0.1,
+            "up_prediction_count": 0,
+            "down_prediction_count": 4,
+            "total_return_pct": -10.99
+          }
+        },
+        {
+          "code": "000988",
+          "name": "华工科技",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 37.69,
+          "status": "excluded",
+          "evidence": [
+            "候选评分 34.7",
+            "多因子评分 39.8",
+            "60日历史涨跌 28.55%",
+            "实际影响评分 -33",
+            "十日推演命中率 10%"
+          ],
+          "risks": [
+            "因子分偏低 39.8",
+            "预测标记高波动",
+            "未站上 MA20",
+            "5日跌幅较大",
+            "实际影响偏负面，impact_score=-33",
+            "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+            "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
+            "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认",
+            "中长期实际影响显著偏负面"
+          ],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "预测概率提升到 0.58 以上",
+            "因子分提升到 55 以上",
+            "收盘价重新站上 MA20",
+            "实际影响分修复到非负"
+          ],
+          "replay_summary": {
+            "step_count": 10,
+            "evaluated_count": 10,
+            "hit_count": 1,
+            "hit_rate": 0.1,
+            "up_prediction_count": 3,
+            "down_prediction_count": 0,
+            "total_return_pct": -14.3
+          }
+        }
+      ],
+      "shortage_count": 5,
+      "shortage_reason": "仅有0只通过阈值和硬性风险门禁，不为凑满5只而降低标准"
+    }
+  },
+  "limitations": [
+    "recommendation_universe_limited_to_local_watchlist",
+    "long_horizon_lacks_dedicated_prediction_model",
+    "degraded_market_or_fund_flow_data_may_reduce_confidence"
+  ]
+}

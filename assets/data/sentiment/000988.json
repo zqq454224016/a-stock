@@ -1,33 +1,17 @@
 {
   "code": "000988",
   "symbol": "sz000988",
-  "trade_date": "2026-07-07",
-  "fetched_at": "2026-07-07 21:01:26",
+  "trade_date": "2026-07-10",
+  "fetched_at": "2026-07-10 17:42:06",
   "em_snapshot": {
-    "composite_score": 69.48998233,
-    "focus_index": 86.0,
-    "rank": 605,
-    "rank_change": 377.0,
-    "trade_date": "2026-07-07"
+    "composite_score": 71.14433397,
+    "focus_index": 90.4,
+    "rank": 587,
+    "rank_change": -462.0,
+    "trade_date": "2026-07-10"
   },
   "em_series": {
     "desire": [
-      {
-        "date": "2026-07-01",
-        "股票代码": "000988",
-        "参与意愿": 43.33,
-        "5日平均参与意愿": 48.53,
-        "参与意愿变化": -11.03,
-        "5日平均变化": -1.69
-      },
-      {
-        "date": "2026-07-02",
-        "股票代码": "000988",
-        "参与意愿": 42.08,
-        "5日平均参与意愿": 46.93,
-        "参与意愿变化": -1.25,
-        "5日平均变化": -1.6
-      },
       {
         "date": "2026-07-03",
         "股票代码": "000988",
@@ -51,21 +35,25 @@
         "5日平均参与意愿": 46.98,
         "参与意愿变化": 5.37,
         "5日平均变化": 1.0
+      },
+      {
+        "date": "2026-07-08",
+        "股票代码": "000988",
+        "参与意愿": 46.79,
+        "5日平均参与意愿": 47.68,
+        "参与意愿变化": -6.25,
+        "5日平均变化": 1.0
+      },
+      {
+        "date": "2026-07-09",
+        "股票代码": "000988",
+        "参与意愿": 56.27,
+        "5日平均参与意愿": 50.52,
+        "参与意愿变化": 9.48,
+        "5日平均变化": 2.84
       }
     ],
     "focus": [
-      {
-        "date": "2026-05-26",
-        "用户关注指数": 95.2
-      },
-      {
-        "date": "2026-05-27",
-        "用户关注指数": 94.8
-      },
-      {
-        "date": "2026-05-28",
-        "用户关注指数": 92.0
-      },
       {
         "date": "2026-05-29",
         "用户关注指数": 95.2
@@ -173,13 +161,21 @@
       {
         "date": "2026-07-07",
         "用户关注指数": 86.0
+      },
+      {
+        "date": "2026-07-08",
+        "用户关注指数": 88.0
+      },
+      {
+        "date": "2026-07-09",
+        "用户关注指数": 86.4
+      },
+      {
+        "date": "2026-07-10",
+        "用户关注指数": 90.4
       }
     ],
     "institution": [
-      {
-        "date": "2026-05-08",
-        "机构参与度": 53.439080000000004
-      },
       {
         "date": "2026-05-11",
         "机构参与度": 57.38495999999999
@@ -343,6 +339,18 @@
       {
         "date": "2026-07-07",
         "机构参与度": 49.0292
+      },
+      {
+        "date": "2026-07-08",
+        "机构参与度": 46.908280000000005
+      },
+      {
+        "date": "2026-07-09",
+        "机构参与度": 51.247319999999995
+      },
+      {
+        "date": "2026-07-10",
+        "机构参与度": 50.30452
       }
     ]
   },
@@ -350,24 +358,24 @@
     "in_hot_tweet": true,
     "in_hot_follow": true,
     "in_hot_deal": true,
-    "tweet_rank": 5572,
+    "tweet_rank": 108,
     "follow_rank": 211,
-    "deal_rank": 5458,
-    "tweet_heat": 0,
-    "follow_heat": 203938,
-    "deal_heat": 0
+    "deal_rank": 96,
+    "tweet_heat": 6685,
+    "follow_heat": 204281,
+    "deal_heat": 69
   },
   "posts": [
     {
       "code": "000988",
       "platform": "xueqiu",
-      "title": "雪球热议榜 #5572",
-      "content": "关注热度 0",
+      "title": "雪球热议榜 #108",
+      "content": "关注热度 6685",
       "author": "xueqiu_hot",
-      "publish_time": "2026-07-07 21:01:26",
-      "likes": 0,
+      "publish_time": "2026-07-10 17:42:06",
+      "likes": 6685,
       "replies": 0,
-      "heat": 0.0,
+      "heat": 6685.0,
       "label": "中性"
     }
   ],
@@ -377,34 +385,34 @@
   ],
   "factors": {
     "code": "000988",
-    "trade_date": "2026-07-07",
+    "trade_date": "2026-07-10",
     "sentiment_version": "1.0.0",
     "platform": "eastmoney+xueqiu",
     "label": "看多",
-    "long_short_ratio": 1.1295,
-    "heat_index": 86.0,
-    "sentiment_accel": -8.0,
-    "desire_score": 53.04,
-    "desire_change": 5.37,
-    "composite_score": 69.48998233,
-    "rank_change": 377.0,
+    "long_short_ratio": 1.2868,
+    "heat_index": 90.4,
+    "sentiment_accel": 4.0,
+    "desire_score": 56.27,
+    "desire_change": 9.48,
+    "composite_score": 71.14433397,
+    "rank_change": -462.0,
     "xueqiu_hot": {
       "in_hot_tweet": true,
       "in_hot_follow": true,
       "in_hot_deal": true,
-      "tweet_rank": 5572,
+      "tweet_rank": 108,
       "follow_rank": 211,
-      "deal_rank": 5458,
-      "tweet_heat": 0,
-      "follow_heat": 203938,
-      "deal_heat": 0
+      "deal_rank": 96,
+      "tweet_heat": 6685,
+      "follow_heat": 204281,
+      "deal_heat": 69
     },
-    "xueqiu_heat": 203938,
+    "xueqiu_heat": 204281,
     "post_count": 1,
     "limitations": [
       "not_backtested",
       "sentiment_proxy"
     ],
-    "updated_at": "2026-07-07 21:01:26"
+    "updated_at": "2026-07-10 17:42:06"
   }
 }

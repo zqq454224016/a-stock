@@ -1,0 +1,44 @@
+{
+  "registry_version": "1.0.0",
+  "module": "quality",
+  "label": "质量巡检",
+  "path": "quality/latest.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/quality/latest.json",
+  "exists": true,
+  "size": 2931,
+  "file_mtime": "2026-07-10 17:39:35",
+  "updated_at": "2026-07-10 17:39:35",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "stocks",
+      "summary",
+      "total",
+      "updated_at"
+    ],
+    "list_fields": {
+      "stocks": 5
+    },
+    "dict_fields": [
+      "summary"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "stocks"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "quality/latest.json",
+    "expected_command": "inspect",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

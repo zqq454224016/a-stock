@@ -13,23 +13,32 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from quant_system.scheduler.cron_runner import run_job, start_scheduler
+from quant_system.monitoring.task_runs import TaskRunRecorder
 from quant_system.tasks.agent_job import run_agent_job
+from quant_system.tasks.attribution_job import run_attribution_job
 from quant_system.tasks.backfill_job import run_backfill
 from quant_system.tasks.backtest_job import run_backtest_job
 from quant_system.tasks.daily_job import run_daily_market
 from quant_system.tasks.decision_job import run_decision_job
 from quant_system.tasks.enhance_job import run_enhance_job
+from quant_system.tasks.factor_eval_job import run_factor_eval_job
 from quant_system.tasks.factor_job import run_factor_compute
+from quant_system.tasks.framework_job import run_framework_job
 from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.intraday_job import run_intraday_live, run_intraday_loop
 from quant_system.tasks.inspect_job import run_data_inspect
+from quant_system.tasks.monitoring_job import run_monitoring_job
 from quant_system.tasks.predict_job import run_predict_job
+from quant_system.tasks.portfolio_job import run_portfolio_job
 from quant_system.tasks.replay_job import run_replay_job
+from quant_system.tasks.recommendation_job import run_recommendation_job
+from quant_system.tasks.registry_job import run_registry_job
 from quant_system.tasks.review_job import run_review_job
 from quant_system.tasks.selector_job import run_selector_job
 from quant_system.tasks.sentiment_job import run_sentiment_job
 from quant_system.tasks.sim_trade_job import run_sim_trade_job
 from quant_system.tasks.stock_job import run_daily_stock
+from quant_system.tasks.v3_plan_job import run_v3_plan_job
 from quant_system.utils.logger import get_logger
 from quant_system.utils.watchlist_utils import ensure_watchlist_history, ensure_watchlist_stocks, resolve_codes
 
@@ -56,6 +65,7 @@ def build_parser() -> argparse.ArgumentParser:
     factor = sub.add_parser("factor", help="计算自选股技术因子")
     factor.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
     factor.add_argument("--force", action="store_true", help="忽略质量门禁")
+    sub.add_parser("factor-eval", help="因子有效性评估（相关性、分层收益、漂移）")
 
     inspect = sub.add_parser("inspect", help="K 线质量巡检")
     inspect.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
@@ -90,9 +100,13 @@ def build_parser() -> argparse.ArgumentParser:
     impact = sub.add_parser("impact", help="实际影响数据提取（业绩/估值/解禁/材料价格）")
     impact.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
 
+    attribution = sub.add_parser("attribution", help="每日涨跌归因（昨日/今日对比）")
+    attribution.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+
     agent = sub.add_parser("agent", help="Agent 分析（选股解释/策略诊断/预测复盘）")
     agent.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
     agent.add_argument("--strategy", default="ma_cross", choices=["ma_cross", "multi_factor"])
+    agent.add_argument("--provider", default="rule", choices=["rule", "llm"], help="Agent Provider，llm 未配置时自动降级")
 
     decision = sub.add_parser("decision", help="单股指导性操作建议（高指导性、低实时性）")
     decision.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
@@ -113,6 +127,12 @@ def build_parser() -> argparse.ArgumentParser:
     sim.add_argument("--cash", type=float, default=None, help="重置时使用的初始资金")
     sim.add_argument("--no-predict", action="store_true", help="缺少预测时不自动补跑 predict")
     sim.add_argument("--no-decision", action="store_true", help="缺少决策时不自动生成")
+
+    sub.add_parser("portfolio", help="组合管理与账户级风控")
+    sub.add_parser("console", help="统一 Web 控制台")
+    sub.add_parser("monitor", help="监控告警与数据血缘")
+    sub.add_parser("registry", help="数据产物注册表")
+    sub.add_parser("v3-plan", help="v3 稳定化与扩展路线")
 
     bt = sub.add_parser("backtest", help="单策略日线回测（MA金叉）")
     bt.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
@@ -136,6 +156,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     review = sub.add_parser("review", help="后验复盘（预测/候选/决策 1/5/20 日收益）")
     review.add_argument("codes", nargs="*", help="股票代码，不传则读 watchlist.json")
+    recommend = sub.add_parser("recommend", help="短线、中线、长线股票推荐")
+    recommend.add_argument("--limit", type=int, default=5, help="每个周期最多推荐数量")
+    sub.add_parser("framework", help="模块化算法框架契约快照")
 
     return p
 
@@ -161,6 +184,54 @@ def generate_factor_reports() -> None:
     path = ROOT / "script" / "gen_factor_report.py"
     if path.exists():
         logger.info("生成因子排名: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_factor_eval_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_factor_eval_report.py"
+    if path.exists():
+        logger.info("生成因子有效性报告: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_recommendation_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_recommendation_report.py"
+    if path.exists():
+        logger.info("生成多周期推荐报告: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_framework_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_framework_report.py"
+    if path.exists():
+        logger.info("生成模块化框架报告: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_console_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_console_report.py"
+    if path.exists():
+        logger.info("生成统一控制台: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_monitoring_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_monitoring_report.py"
+    if path.exists():
+        logger.info("生成监控告警报告: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_v3_roadmap_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_v3_roadmap_report.py"
+    if path.exists():
+        logger.info("生成 v3 路线报告: %s", path.name)
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
@@ -196,6 +267,14 @@ def generate_trading_report() -> None:
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
+def generate_portfolio_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_portfolio_report.py"
+    if path.exists():
+        logger.info("生成组合管理报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
 def generate_decision_report() -> None:
     import subprocess
     path = ROOT / "script" / "gen_decision_report.py"
@@ -209,6 +288,14 @@ def generate_impact_report() -> None:
     path = ROOT / "script" / "gen_impact_report.py"
     if path.exists():
         logger.info("生成实际影响数据报表: %s", path.name)
+        subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
+
+
+def generate_attribution_report() -> None:
+    import subprocess
+    path = ROOT / "script" / "gen_attribution_report.py"
+    if path.exists():
+        logger.info("生成每日归因报表: %s", path.name)
         subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
@@ -272,14 +359,21 @@ def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False
     generate_decision_report()
     run_sim_trade_job(auto_predict=False)
     generate_trading_report()
+    run_portfolio_job()
+    generate_portfolio_report()
     run_review_job()
     generate_review_report()
+    run_attribution_job()
+    generate_attribution_report()
     generate_reports()
     generate_factor_reports()
     generate_enhance_reports()
     generate_live_dashboard()
     run_agent_job()
     generate_agent_dashboard()
+    generate_console_report()
+    run_monitoring_job()
+    generate_monitoring_report()
     sync_report_index_hubs()
     logger.info("=== MVP 闭环完成 ===")
 
@@ -298,9 +392,7 @@ def generate_reports(stock_only: bool = False) -> None:
             subprocess.run([sys.executable, str(path)], check=False, cwd=ROOT)
 
 
-def main() -> None:
-    args = build_parser().parse_args()
-
+def _execute(args: argparse.Namespace) -> None:
     if args.command == "scheduler":
         start_scheduler()
     elif args.command == "market":
@@ -330,8 +422,12 @@ def main() -> None:
         run_impact_job(codes=resolve_codes(args.codes) if args.codes else None)
         generate_impact_report()
         sync_report_index_hubs()
+    elif args.command == "attribution":
+        run_attribution_job(codes=resolve_codes(args.codes) if args.codes else None)
+        generate_attribution_report()
+        sync_report_index_hubs()
     elif args.command == "agent":
-        run_agent_job(codes=resolve_codes(args.codes) if args.codes else None, strategy=args.strategy)
+        run_agent_job(codes=resolve_codes(args.codes) if args.codes else None, strategy=args.strategy, provider=args.provider)
         generate_agent_dashboard()
     elif args.command == "decision":
         run_decision_job(
@@ -362,8 +458,16 @@ def main() -> None:
         )
         generate_trading_report()
         sync_report_index_hubs()
+    elif args.command == "portfolio":
+        run_portfolio_job()
+        generate_portfolio_report()
+        sync_report_index_hubs()
     elif args.command == "factor":
         run_factor_compute(codes=resolve_codes(args.codes) if args.codes else None, ignore_quality=args.force)
+    elif args.command == "factor-eval":
+        run_factor_eval_job()
+        generate_factor_eval_report()
+        sync_report_index_hubs()
     elif args.command == "inspect":
         run_data_inspect(
             codes=resolve_codes(args.codes) if args.codes else None,
@@ -404,6 +508,27 @@ def main() -> None:
         run_review_job(codes=resolve_codes(args.codes) if args.codes else None)
         generate_review_report()
         sync_report_index_hubs()
+    elif args.command == "recommend":
+        run_recommendation_job(limit=max(1, min(args.limit, 20)))
+        generate_recommendation_report()
+        sync_report_index_hubs()
+    elif args.command == "framework":
+        run_framework_job()
+        generate_framework_report()
+        sync_report_index_hubs()
+    elif args.command == "console":
+        generate_console_report()
+        sync_report_index_hubs()
+    elif args.command == "monitor":
+        run_monitoring_job()
+        generate_monitoring_report()
+        sync_report_index_hubs()
+    elif args.command == "registry":
+        run_registry_job()
+    elif args.command == "v3-plan":
+        run_v3_plan_job()
+        generate_v3_roadmap_report()
+        sync_report_index_hubs()
     elif args.command == "run":
         run_job(args.job)
     elif args.command == "all":
@@ -433,17 +558,43 @@ def main() -> None:
             generate_decision_report()
             run_sim_trade_job(auto_predict=False)
             generate_trading_report()
+            run_portfolio_job()
+            generate_portfolio_report()
             run_review_job()
             generate_review_report()
+            run_attribution_job()
+            generate_attribution_report()
         generate_reports()
         generate_factor_reports()
         generate_enhance_reports()
         generate_live_dashboard()
         run_agent_job()
         generate_agent_dashboard()
+        generate_console_report()
+        run_monitoring_job()
+        generate_monitoring_report()
         sync_report_index_hubs()
     else:
         build_parser().print_help()
+
+
+def main() -> None:
+    args = build_parser().parse_args()
+    command = args.command or "help"
+    recorder = TaskRunRecorder(command=command, argv=sys.argv[1:])
+    recorder.start()
+    try:
+        _execute(args)
+    except SystemExit as exc:
+        status = "success" if exc.code in (0, None) else "failed"
+        recorder.finish(status=status, error=exc if status == "failed" else None)
+        raise
+    except BaseException as exc:
+        recorder.finish(status="failed", error=exc)
+        raise
+    else:
+        status = "skipped" if command == "help" else "success"
+        recorder.finish(status=status)
 
 
 if __name__ == "__main__":

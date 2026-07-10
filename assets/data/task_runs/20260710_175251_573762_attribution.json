@@ -1,0 +1,26 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260710_175251_573762_attribution",
+  "command": "attribution",
+  "argv": [
+    "attribution"
+  ],
+  "status": "success",
+  "started_at": "2026-07-10 17:52:51",
+  "ended_at": "2026-07-10 17:52:51",
+  "duration_sec": 0.056,
+  "artifacts": [
+    {
+      "path": "attribution/index.json",
+      "exists": true,
+      "size": 2958,
+      "mtime": "2026-07-10 17:52:51"
+    },
+    {
+      "path": "../../reports/attribution/index.html",
+      "exists": true,
+      "size": 7308,
+      "mtime": "2026-07-10 17:52:51"
+    }
+  ]
+}

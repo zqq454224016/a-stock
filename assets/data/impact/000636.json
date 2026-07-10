@@ -1,31 +1,85 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-07",
-  "version": "1.0.0",
+  "trade_date": "2026-07-10",
+  "version": "1.1.0",
   "impact_score": -26,
   "impact_direction": "negative",
   "events": [
     {
+      "event_type": "earnings_forecast",
+      "title": "业绩预告：机构预测",
+      "period": "行业平均",
+      "announce_date": "2026-07-10",
+      "impact_score": 0,
+      "impact_direction": "neutral",
+      "confidence": "medium",
+      "metrics": {
+        "change_pct": 0.0,
+        "forecast_value": "1.0",
+        "indicator": "预测年报每股收益"
+      },
+      "evidence": [],
+      "source": "ths_profit_forecast",
+      "limitations": [
+        "not_q2_report_period"
+      ],
+      "evidence_quality": {
+        "score": 62,
+        "level": "medium",
+        "missing_evidence": [
+          "缺少文字证据"
+        ]
+      }
+    },
+    {
       "event_type": "valuation_pressure",
       "title": "估值压力",
-      "period": "2026-07-07",
-      "announce_date": "2026-07-07",
+      "period": "2026-07-10",
+      "announce_date": "2026-07-10",
       "impact_score": -26,
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "pe_ttm": 230.64853929,
-        "pb": 5.67802928
+        "pe_ttm": 225.94,
+        "pb": 5.98
       },
       "evidence": [
-        "PE(TTM)=230.65",
-        "PB=5.68"
+        "PE(TTM)=225.94",
+        "PB=5.98"
       ],
-      "source": "eastmoney_value",
-      "limitations": []
+      "source": "baidu_pe",
+      "limitations": [],
+      "evidence_quality": {
+        "score": 95,
+        "level": "high",
+        "missing_evidence": []
+      }
     }
   ],
-  "limitations": [],
-  "updated_at": "2026-07-07 21:02:10"
+  "evidence_quality": {
+    "avg_score": 78.5,
+    "low_quality_event_count": 0,
+    "missing_evidence": [
+      "缺少文字证据"
+    ]
+  },
+  "post_event_review": {
+    "status": "pending",
+    "evaluated_count": 0,
+    "pending_count": 9,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "worst_adverse_pct": null,
+    "failure_reasons": [],
+    "limitations": [
+      "impact_review_requires_future_kline",
+      "review_requires_future_kline_after_signal_date",
+      "watch_action_hit_rule_uses_abs_return_below_1pct"
+    ]
+  },
+  "limitations": [
+    "not_q2_report_period"
+  ],
+  "updated_at": "2026-07-10 17:43:27"
 }

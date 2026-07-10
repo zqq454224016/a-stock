@@ -1,12 +1,12 @@
 {
   "code": "000988",
-  "trade_date": "2026-07-07",
+  "trade_date": "2026-07-10",
   "horizon": "5d",
-  "signal": "bearish",
-  "signal_score": 24.0,
+  "signal": "neutral",
+  "signal_score": 47.0,
   "drivers": [
-    "ma_death_cross",
     "macd_hist_negative",
+    "momentum_20_up",
     "ma20_breakdown"
   ],
   "limitations": [
@@ -14,5 +14,5 @@
     "technical_only"
   ],
   "signal_version": "1.0.0",
-  "updated_at": "2026-07-07 21:01:29"
+  "updated_at": "2026-07-10 17:42:41"
 }

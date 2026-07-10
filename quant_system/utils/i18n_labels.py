@@ -15,6 +15,13 @@ LIMITATION_LABELS: dict[str, str] = {
     "market_fetch_failed": "大盘采集失败",
     "indices_unavailable": "指数数据不可用",
     "industries_unavailable": "行业数据不可用",
+    "not_q2_report_period": "不是二季度报告期",
+    "uses_company_reason_text": "仅使用公司原因描述",
+    "requires_q2_official_report_or_forecast": "需要补充二季度正式报告或业绩预告",
+    "impact_review_missing": "缺少实际影响后验复盘",
+    "impact_review_requires_future_kline": "实际影响复盘需要信号日之后的K线",
+    "review_requires_future_kline_after_signal_date": "复盘需要信号日之后的K线",
+    "watch_action_hit_rule_uses_abs_return_below_1pct": "观望动作以小幅波动作为命中规则",
 }
 
 VERDICT_LABELS: dict[str, str] = {

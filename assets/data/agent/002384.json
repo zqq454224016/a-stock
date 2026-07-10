@@ -1,0 +1,193 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-10",
+  "version": "1.1.0",
+  "updated_at": "2026-07-10 17:43:28",
+  "summary": "综合因子中性，等待更清晰信号",
+  "confidence": "medium",
+  "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
+  "stock_selection": {
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 54.4,
+    "evidence": [
+      "技术分 52.0",
+      "情绪分 70.1",
+      "基本面分 36.0",
+      "趋势 震荡",
+      "舆情 看多"
+    ],
+    "drivers": [
+      "macd_hist_negative",
+      "momentum_20_up"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高"
+    ],
+    "primary_signal": "neutral",
+    "trend": "震荡"
+  },
+  "strategy_diagnosis": {
+    "available": true,
+    "strategy": "ma_cross",
+    "verdict": "ok",
+    "findings": [
+      "单笔最大亏损 -24424.08（MA20死叉）"
+    ],
+    "suggestions": [
+      "维持现有参数，持续滚动验证"
+    ],
+    "metrics": {
+      "annual_return_pct": 196.41,
+      "max_drawdown_pct": -21.67,
+      "sharpe_ratio": 2.07,
+      "win_rate_pct": 66.67,
+      "closed_trades": 9
+    },
+    "attribution_top": [
+      {
+        "reason": "MA20死叉",
+        "count": 9,
+        "total_pnl": 192599.69,
+        "avg_pnl": 21399.97,
+        "win_rate_pct": 66.67
+      }
+    ],
+    "rolling_summary": null
+  },
+  "prediction_review": {
+    "available": true,
+    "horizon": "5d",
+    "direction": "neutral",
+    "probability": 0.4792,
+    "confidence": "medium",
+    "expected_return": -0.0519,
+    "alignment": "aligned",
+    "drivers": [],
+    "notes": [
+      "5d 预测 震荡，概率 47.9%，置信度 medium",
+      "历史样本 48，回测胜率 66.7%",
+      "初级技术信号与预测方向一致",
+      "风险标记: high_volatility"
+    ],
+    "failure_conditions": [
+      "high_volatility"
+    ],
+    "disclaimer": "统计倾向，非确定性预测，不构成投资建议"
+  },
+  "data_health": {
+    "status": "ok",
+    "quality_score": 100.0,
+    "factor_eligible": true,
+    "issues": []
+  },
+  "limitations": [
+    "rule_based_only",
+    "no_auto_trade"
+  ],
+  "audit": {
+    "inputs_used": [
+      "backtest/002384_ma_cross.json",
+      "factors/002384.json",
+      "predictions/002384.json",
+      "quality/latest.json",
+      "sentiment/002384.json",
+      "signals/002384.json",
+      "stocks/002384.json"
+    ],
+    "strategy_ref": "ma_cross",
+    "schema_version": "1.0.0",
+    "provider": "rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "policy_passed": true,
+    "audit_path": "agent/audit/002384.json"
+  },
+  "provider": {
+    "requested": "rule",
+    "active": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "fallback_reason": ""
+  },
+  "evidence_package": {
+    "schema_version": "1.0.0",
+    "task": "stock_review",
+    "allowed_actions": [
+      "analyze",
+      "summarize",
+      "suggest"
+    ],
+    "missing_inputs": [],
+    "inputs_used": [
+      "backtest/002384_ma_cross.json",
+      "decisions/002384.json",
+      "enhance/002384.json",
+      "factors/002384.json",
+      "framework/snapshot.json",
+      "impact/002384.json",
+      "predictions/002384.json",
+      "quality/latest.json",
+      "sentiment/002384.json",
+      "signals/002384.json",
+      "stocks/002384.json"
+    ]
+  },
+  "provider_output": {
+    "provider": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "summary": "综合因子中性，等待更清晰信号",
+    "direction_view": "neutral",
+    "confidence": "medium",
+    "evidence": [
+      "技术分 52.0",
+      "情绪分 70.1",
+      "基本面分 36.0",
+      "趋势 震荡",
+      "舆情 看多",
+      "macd_hist_negative",
+      "momentum_20_up",
+      "单笔最大亏损 -24424.08（MA20死叉）",
+      "5d 预测 震荡，概率 47.9%，置信度 medium",
+      "历史样本 48，回测胜率 66.7%",
+      "初级技术信号与预测方向一致"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高",
+      "high_volatility",
+      "rule_based_only",
+      "no_auto_trade"
+    ],
+    "failure_conditions": [
+      "high_volatility"
+    ],
+    "suggested_actions": [
+      "仅用于研究解释",
+      "进入人工复核后再考虑操作"
+    ],
+    "forbidden_actions": [
+      "不得自动下单",
+      "不得绕过风控",
+      "不得修改生产参数"
+    ],
+    "requires_human_review": true,
+    "raw_output": {
+      "source": "rule_report",
+      "missing_inputs": []
+    }
+  },
+  "policy": {
+    "passed": true,
+    "violations": [],
+    "allowed_actions": [
+      "analyze",
+      "suggest",
+      "summarize"
+    ]
+  }
+}

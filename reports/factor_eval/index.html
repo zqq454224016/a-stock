@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>因子有效性评估 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+</head>
+<body>
+  <header class="site-header"><div class="container">
+    <h1 class="site-title">因子有效性评估</h1>
+    <p class="site-subtitle">历史代理相关性、分层收益与当前因子漂移</p>
+  </div></header>
+  <main class="container report-body">
+    <section class="summary-grid">
+      <div class="summary-card"><span>股票数</span><strong>4</strong></div>
+      <div class="summary-card"><span>历史样本数</span><strong>680</strong></div>
+      <div class="summary-card"><span>评估周期</span><strong>1d、5d、20d</strong></div>
+      <div class="summary-card"><span>评估版本</span><strong>1.0.0</strong></div>
+    </section>
+    <section class="table-section"><h2>历史有效性</h2>
+      <table class="data-table"><thead><tr><th>因子</th><th>周期</th><th>样本</th>
+      <th>线性相关</th><th>排序相关</th><th>方向判断</th>
+      <th>低分组收益</th><th>中分组收益</th><th>高分组收益</th></tr></thead>
+      <tbody>
+        <tr><td>技术综合分</td><td>1d</td>
+        <td>680</td><td>0.0884</td>
+        <td>0.0732</td><td>正向有效</td>
+        <td>0.34%</td>
+        <td>0.36%</td>
+        <td>1.44%</td></tr>
+        <tr><td>技术综合分</td><td>5d</td>
+        <td>680</td><td>0.1512</td>
+        <td>0.1150</td><td>正向有效</td>
+        <td>2.04%</td>
+        <td>2.87%</td>
+        <td>6.56%</td></tr>
+        <tr><td>技术综合分</td><td>20d</td>
+        <td>680</td><td>0.1484</td>
+        <td>0.0517</td><td>正向有效</td>
+        <td>13.20%</td>
+        <td>20.41%</td>
+        <td>24.32%</td></tr>
+        <tr><td>20日均线偏离</td><td>1d</td>
+        <td>680</td><td>0.1513</td>
+        <td>0.0766</td><td>正向有效</td>
+        <td>0.36%</td>
+        <td>0.46%</td>
+        <td>1.31%</td></tr>
+        <tr><td>20日均线偏离</td><td>5d</td>
+        <td>680</td><td>0.2541</td>
+        <td>0.1459</td><td>正向有效</td>
+        <td>2.41%</td>
+        <td>1.61%</td>
+        <td>7.46%</td></tr>
+        <tr><td>20日均线偏离</td><td>20d</td>
+        <td>680</td><td>0.1853</td>
+        <td>0.0746</td><td>正向有效</td>
+        <td>13.59%</td>
+        <td>14.83%</td>
+        <td>29.51%</td></tr>
+        <tr><td>14日强弱指标</td><td>1d</td>
+        <td>680</td><td>0.1093</td>
+        <td>0.0739</td><td>正向有效</td>
+        <td>0.44%</td>
+        <td>0.19%</td>
+        <td>1.51%</td></tr>
+        <tr><td>14日强弱指标</td><td>5d</td>
+        <td>680</td><td>0.1745</td>
+        <td>0.1143</td><td>正向有效</td>
+        <td>2.64%</td>
+        <td>1.58%</td>
+        <td>7.26%</td></tr>
+        <tr><td>14日强弱指标</td><td>20d</td>
+        <td>680</td><td>0.1852</td>
+        <td>0.0623</td><td>正向有效</td>
+        <td>13.87%</td>
+        <td>16.68%</td>
+        <td>27.38%</td></tr>
+        <tr><td>指数平滑异同移动平均柱</td><td>1d</td>
+        <td>680</td><td>0.1301</td>
+        <td>0.1140</td><td>正向有效</td>
+        <td>0.00%</td>
+        <td>0.58%</td>
+        <td>1.55%</td></tr>
+        <tr><td>指数平滑异同移动平均柱</td><td>5d</td>
+        <td>680</td><td>0.1724</td>
+        <td>0.2111</td><td>正向有效</td>
+        <td>1.10%</td>
+        <td>2.49%</td>
+        <td>7.89%</td></tr>
+        <tr><td>指数平滑异同移动平均柱</td><td>20d</td>
+        <td>680</td><td>0.0740</td>
+        <td>0.0716</td><td>正向有效</td>
+        <td>14.90%</td>
+        <td>15.79%</td>
+        <td>27.25%</td></tr>
+        <tr><td>20日动量</td><td>1d</td>
+        <td>680</td><td>0.1180</td>
+        <td>0.0582</td><td>正向有效</td>
+        <td>0.49%</td>
+        <td>0.39%</td>
+        <td>1.26%</td></tr>
+        <tr><td>20日动量</td><td>5d</td>
+        <td>680</td><td>0.1904</td>
+        <td>0.1055</td><td>正向有效</td>
+        <td>2.04%</td>
+        <td>3.12%</td>
+        <td>6.32%</td></tr>
+        <tr><td>20日动量</td><td>20d</td>
+        <td>680</td><td>0.0886</td>
+        <td>-0.0158</td><td>弱相关</td>
+        <td>13.26%</td>
+        <td>18.98%</td>
+        <td>25.69%</td></tr>
+        <tr><td>20日量比</td><td>1d</td>
+        <td>680</td><td>0.0352</td>
+        <td>0.0407</td><td>弱相关</td>
+        <td>0.57%</td>
+        <td>0.52%</td>
+        <td>1.05%</td></tr>
+        <tr><td>20日量比</td><td>5d</td>
+        <td>680</td><td>0.0980</td>
+        <td>0.0633</td><td>正向有效</td>
+        <td>2.73%</td>
+        <td>2.97%</td>
+        <td>5.79%</td></tr>
+        <tr><td>20日量比</td><td>20d</td>
+        <td>680</td><td>0.1015</td>
+        <td>0.0977</td><td>正向有效</td>
+        <td>12.68%</td>
+        <td>18.36%</td>
+        <td>26.89%</td></tr>
+        <tr><td>站上20日均线</td><td>1d</td>
+        <td>680</td><td>0.0630</td>
+        <td>0.0292</td><td>弱相关</td>
+        <td>0.34%</td>
+        <td>0.74%</td>
+        <td>1.06%</td></tr>
+        <tr><td>站上20日均线</td><td>5d</td>
+        <td>680</td><td>0.0934</td>
+        <td>0.0469</td><td>弱相关</td>
+        <td>2.35%</td>
+        <td>3.96%</td>
+        <td>5.17%</td></tr>
+        <tr><td>站上20日均线</td><td>20d</td>
+        <td>680</td><td>0.1201</td>
+        <td>0.0417</td><td>弱相关</td>
+        <td>13.49%</td>
+        <td>17.62%</td>
+        <td>26.83%</td></tr></tbody></table>
+    </section>
+    <section class="table-section"><h2>当前漂移</h2>
+      <table class="data-table"><thead><tr><th>因子</th><th>当前值</th><th>历史均值</th>
+      <th>标准分</th><th>状态</th></tr></thead><tbody><tr><td>技术综合分</td><td>37.0000</td>
+        <td>65.9382</td><td>-1.1802</td>
+        <td>正常</td></tr><tr><td>20日均线偏离</td><td>-8.8600</td>
+        <td>6.6197</td><td>-1.1579</td>
+        <td>正常</td></tr><tr><td>14日强弱指标</td><td>43.3225</td>
+        <td>58.3490</td><td>-0.8412</td>
+        <td>正常</td></tr><tr><td>指数平滑异同移动平均柱</td><td>-2.7062</td>
+        <td>0.1544</td><td>-2.7548</td>
+        <td>异常偏低</td></tr><tr><td>20日动量</td><td>3.5175</td>
+        <td>16.1358</td><td>-0.4141</td>
+        <td>正常</td></tr><tr><td>20日量比</td><td>0.0000</td>
+        <td>1.0821</td><td>-2.0319</td>
+        <td>异常偏低</td></tr><tr><td>站上20日均线</td><td>0.0000</td>
+        <td>0.6706</td><td>-1.4268</td>
+        <td>正常</td></tr></tbody></table>
+    </section>
+    <section class="table-section"><h2>使用边界</h2><ul><li>当前使用历史技术因子代理样本，结果用于研究验证。</li><li>当前为小股票池时间序列混合相关性，不等同于成熟横截面因子检验。</li><li>当前尚未完成行业和市值中性化，跨行业差异可能影响结果。</li><li>情绪、基本面和资金因子仍需补齐逐日历史快照后评估。</li></ul></section>
+  </main>
+</body>
+</html>

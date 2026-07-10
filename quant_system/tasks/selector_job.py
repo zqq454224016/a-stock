@@ -19,6 +19,17 @@ from quant_system.utils.time_utils import now_str
 logger = get_logger(__name__)
 
 
+def _read_optional(store: JsonStore, path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+    try:
+        payload = store.read(path)
+    except Exception as exc:  # pragma: no cover - 防御损坏 JSON
+        logger.warning("读取 selector 校准证据失败 %s: %s", path, exc)
+        return None
+    return payload if isinstance(payload, dict) else None
+
+
 def run_selector_job(
     codes: list[str] | None = None,
     *,
@@ -49,6 +60,8 @@ def run_selector_job(
         if not impact and auto_impact:
             run_impact_job(codes=[code])
             impact = ctx.impact
+        review = _read_optional(store, store.review_dir() / f"{code}.json")
+        replay = _read_optional(store, store.replay_dir() / f"{code}.json")
 
         candidate = build_upside_candidate(
             code=code,
@@ -59,6 +72,8 @@ def run_selector_job(
             backtest=ctx.backtest(strategy),
             quality=ctx.quality,
             impact=impact,
+            review=review,
+            replay=replay,
         )
         store.save_selector(code, candidate)
         rows.append(candidate)
@@ -81,6 +96,7 @@ def run_selector_job(
             "reject_reasons": r.get("reject_reasons") or [],
             "candidate_blockers": r.get("candidate_blockers") or [],
             "next_triggers": r.get("next_triggers") or [],
+            "calibration_mode": (r.get("calibration") or {}).get("mode"),
         }
         for r in rows
     ], now_str())

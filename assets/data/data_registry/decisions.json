@@ -1,0 +1,43 @@
+{
+  "registry_version": "1.0.0",
+  "module": "decisions",
+  "label": "操作建议",
+  "path": "decisions/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/decisions/index.json",
+  "exists": true,
+  "size": 1191,
+  "file_mtime": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-10 17:43:27",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "decisions",
+      "updated_at"
+    ],
+    "list_fields": {
+      "decisions": 5
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "predictions",
+    "selector",
+    "agent",
+    "impact"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "decisions/index.json",
+    "expected_command": "decision",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

@@ -1,0 +1,95 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "review_version": "1.0.0",
+  "status": "ok",
+  "trade_date": "2026-07-10",
+  "base_close": 242.3,
+  "sections": {
+    "prediction": {
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "direction": "neutral",
+      "probability": 0.4792,
+      "confidence": "medium",
+      "items": [
+        {
+          "status": "pending",
+          "horizon": "1d",
+          "reason": "future_kline_missing"
+        },
+        {
+          "status": "pending",
+          "horizon": "5d",
+          "reason": "future_kline_missing"
+        },
+        {
+          "status": "pending",
+          "horizon": "20d",
+          "reason": "future_kline_missing"
+        }
+      ]
+    },
+    "selector": {
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "selector_status": "rejected",
+      "rank_bucket": "排除",
+      "upside_score": 57.19,
+      "items": [
+        {
+          "status": "pending",
+          "horizon": "1d",
+          "reason": "future_kline_missing"
+        },
+        {
+          "status": "pending",
+          "horizon": "5d",
+          "reason": "future_kline_missing"
+        },
+        {
+          "status": "pending",
+          "horizon": "20d",
+          "reason": "future_kline_missing"
+        }
+      ]
+    },
+    "decision": {
+      "status": "ok",
+      "trade_date": "2026-07-10",
+      "action": "watch",
+      "position_suggestion": 0.0,
+      "confidence": "medium",
+      "items": [
+        {
+          "status": "pending",
+          "horizon": "1d",
+          "reason": "future_kline_missing"
+        },
+        {
+          "status": "pending",
+          "horizon": "5d",
+          "reason": "future_kline_missing"
+        },
+        {
+          "status": "pending",
+          "horizon": "20d",
+          "reason": "future_kline_missing"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "evaluated_count": 0,
+    "pending_count": 9,
+    "hit_count": 0,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "worst_adverse_pct": null,
+    "failure_reasons": []
+  },
+  "limitations": [
+    "review_requires_future_kline_after_signal_date",
+    "watch_action_hit_rule_uses_abs_return_below_1pct"
+  ]
+}

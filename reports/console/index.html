@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>统一控制台 · A股全景</title>
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/report.css">
+  <style>
+    .console-toolbar { display:grid; grid-template-columns: minmax(180px, 1fr) 160px 160px 160px; gap:.75rem; margin:1.25rem 0; }
+    .console-link-row { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0 1.5rem; }
+    .console-link { border:1px solid var(--color-border); border-radius:var(--radius); padding:.45rem .7rem; background:var(--color-surface); }
+    .status-pill { display:inline-block; min-width:3.5rem; text-align:center; border-radius:4px; padding:.15rem .4rem; background:var(--color-border); color:var(--color-text); }
+    .risk-high { color:#fca5a5; } .risk-mid { color:#fbbf24; } .risk-low { color:#86efac; }
+    .console-table th { cursor:pointer; user-select:none; }
+    .console-table td { vertical-align:top; }
+    .console-actions a { margin-right:.45rem; white-space:nowrap; }
+    @media (max-width: 820px) { .console-toolbar { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .console-toolbar { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="breadcrumb"><a href="../../index.html">首页</a> / <a href="../index.html">报表列表</a> / 统一控制台</nav>
+      <h1 class="site-title">统一控制台</h1>
+      <p class="site-subtitle">交易日 2026-07-07 · 上证指数 -1.001%；深证成指 -2.286%；创业板指 -4.366%；科创50参考 -5.529%</p>
+    </div>
+  </header>
+  <main class="container report-body">
+    <section class="stats-row">
+      <div class="stat-card"><div class="name">股票数量</div><div class="value">5</div></div>
+      <div class="stat-card"><div class="name">上涨候选</div><div class="value">0</div></div>
+      <div class="stat-card"><div class="name">买入建议</div><div class="value">0</div></div>
+      <div class="stat-card"><div class="name">标准信号</div><div class="value">20</div></div>
+    </section>
+    <div class="console-link-row"><a class="console-link" href="../recommendations/index.html">短中长线推荐</a><a class="console-link" href="../framework/index.html">模块化框架</a><a class="console-link" href="../agent/index.html">Agent 看板</a><a class="console-link" href="../portfolio/index.html">组合管理</a><a class="console-link" href="../monitoring/index.html">监控告警</a><a class="console-link" href="../planning/v3.html">v3 路线</a><a class="console-link" href="../review/index.html">后验复盘</a><a class="console-link" href="../replay/index.html">十日推演</a><a class="console-link" href="../attribution/index.html">每日归因</a></div>
+    <section class="table-section">
+      <h2>股票证据链</h2>
+      <div class="console-toolbar">
+        <input id="console-search" class="search-input" type="search" placeholder="搜索代码、名称、结论">
+        <select id="risk-filter" class="select-input"><option value="all">全部风险</option><option value="高">高风险</option><option value="中">中风险</option><option value="低">低风险</option></select>
+        <select id="action-filter" class="select-input"><option value="all">全部动作</option><option value="buy">买入</option><option value="hold">持有</option><option value="watch">观察</option><option value="reduce">减仓</option><option value="sell">卖出</option><option value="缺失">缺失</option></select>
+        <select id="period-filter" class="select-input"><option value="all">全部周期</option><option value="short">短线推荐</option><option value="medium">中线推荐</option><option value="long">长线推荐</option></select>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table console-table">
+          <thead><tr>
+            <th data-sort="code">代码</th><th data-sort="selector_score">候选</th><th data-sort="prediction_probability">预测</th>
+            <th data-sort="target_position">操作</th><th data-sort="replay_hit_rate">复盘</th><th data-sort="risk_level">风险</th><th>Agent</th><th>证据链</th>
+          </tr></thead>
+          <tbody id="console-rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script id="console-data" type="application/json">{"updated_at": "2026-07-10 17:43:28", "market": {"trade_date": "2026-07-07", "degraded": true, "indices": [{"name": "上证指数", "code": "000001", "close": 3996.1616, "change": -40.426, "change_pct": -1.001}, {"name": "深证成指", "code": "399001", "close": 15046.67, "change": -352.059, "change_pct": -2.286}, {"name": "创业板指", "code": "399006", "close": 3842.731, "change": -175.443, "change_pct": -4.366}, {"name": "科创50参考", "code": "000688", "close": 2064.9756, "change": -120.85, "change_pct": -5.529}], "fund_flow": {"north_net": 0.0, "main_net": -790.0, "retail_net": 0.0}}, "summary": {"stock_count": 5, "candidate_count": 0, "buy_count": 0, "risk_counts": {"高": 5, "中": 0, "低": 0}, "portfolio_equity": 100000.0, "framework_signals": 20}, "rows": [{"code": "600378", "name": "昊华科技", "trade_date": "2026-07-10", "close": 60.58, "change_pct": -8.489, "quality_score": 100.0, "selector_status": "排除", "selector_score": 0.0, "decision_action": "watch", "target_position": 0.0, "prediction_direction": "down", "prediction_probability": 0.3052, "review_hit_rate": 0.0, "replay_hit_rate": 0.0, "agent_summary": "谨慎", "agent_provider": "rule", "risk_level": "高", "recommendation": {"short": "excluded", "medium": "excluded", "long": "excluded"}, "links": {"stock": "../stock/600378.html", "agent": "../agent/600378.html", "decision": "../decision/index.html", "selector": "../selector/index.html", "replay": "../replay/index.html", "review": "../review/index.html"}}, {"code": "603629", "name": "利通电子", "trade_date": "2026-07-10", "close": 116.6, "change_pct": -5.472, "quality_score": 100.0, "selector_status": "排除", "selector_score": 0.0, "decision_action": "watch", "target_position": 0.0, "prediction_direction": "down", "prediction_probability": 0.1606, "review_hit_rate": 0.0, "replay_hit_rate": 0.1, "agent_summary": "谨慎", "agent_provider": "rule", "risk_level": "高", "recommendation": {"short": "excluded", "medium": "excluded", "long": "excluded"}, "links": {"stock": "../stock/603629.html", "agent": "../agent/603629.html", "decision": "../decision/index.html", "selector": "../selector/index.html", "replay": "../replay/index.html", "review": "../review/index.html"}}, {"code": "000636", "name": "风华高科", "trade_date": "2026-07-10", "close": 60.01, "change_pct": -6.889, "quality_score": 100.0, "selector_status": "排除", "selector_score": 43.43, "decision_action": "watch", "target_position": 0.0, "prediction_direction": "neutral", "prediction_probability": 0.4612, "review_hit_rate": 0.0, "replay_hit_rate": 0.6, "agent_summary": "综合因子中性，等待更清晰信号", "agent_provider": "rule", "risk_level": "高", "recommendation": {"short": "excluded", "medium": "excluded", "long": "excluded"}, "links": {"stock": "../stock/000636.html", "agent": "../agent/000636.html", "decision": "../decision/index.html", "selector": "../selector/index.html", "replay": "../replay/index.html", "review": "../review/index.html"}}, {"code": "000988", "name": "华工科技", "trade_date": "2026-07-10", "close": 158.07, "change_pct": -0.585, "quality_score": 100.0, "selector_status": "排除", "selector_score": 57.56, "decision_action": "watch", "target_position": 0.0, "prediction_direction": "neutral", "prediction_probability": 0.5186, "review_hit_rate": 0.0, "replay_hit_rate": 0.1, "agent_summary": "综合因子中性，等待更清晰信号", "agent_provider": "rule", "risk_level": "高", "recommendation": {"short": "excluded", "medium": "excluded", "long": "excluded"}, "links": {"stock": "../stock/000988.html", "agent": "../agent/000988.html", "decision": "../decision/index.html", "selector": "../selector/index.html", "replay": "../replay/index.html", "review": "../review/index.html"}}, {"code": "002384", "name": "东山精密", "trade_date": "2026-07-10", "close": 242.3, "change_pct": -7.278, "quality_score": 100.0, "selector_status": "排除", "selector_score": 57.19, "decision_action": "watch", "target_position": 0.0, "prediction_direction": "neutral", "prediction_probability": 0.4792, "review_hit_rate": 0.0, "replay_hit_rate": 0.0, "agent_summary": "综合因子中性，等待更清晰信号", "agent_provider": "rule", "risk_level": "高", "recommendation": {}, "links": {"stock": "../stock/002384.html", "agent": "../agent/002384.html", "decision": "../decision/index.html", "selector": "../selector/index.html", "replay": "../replay/index.html", "review": "../review/index.html"}}], "module_links": [{"title": "短中长线推荐", "href": "../recommendations/index.html"}, {"title": "模块化框架", "href": "../framework/index.html"}, {"title": "Agent 看板", "href": "../agent/index.html"}, {"title": "组合管理", "href": "../portfolio/index.html"}, {"title": "监控告警", "href": "../monitoring/index.html"}, {"title": "v3 路线", "href": "../planning/v3.html"}, {"title": "后验复盘", "href": "../review/index.html"}, {"title": "十日推演", "href": "../replay/index.html"}, {"title": "每日归因", "href": "../attribution/index.html"}]}</script>
+  <script>
+    const payload = JSON.parse(document.getElementById('console-data').textContent);
+    let rows = [...payload.rows];
+    let sortKey = 'selector_score';
+    let sortDir = -1;
+    const tbody = document.getElementById('console-rows');
+    const riskClass = (v) => v === '高' ? 'risk-high' : v === '中' ? 'risk-mid' : 'risk-low';
+    const fmtPct = (v) => Number.isFinite(Number(v)) ? (Number(v) * 100).toFixed(0) + '%' : '—';
+    const fmtNum = (v, n=2) => Number.isFinite(Number(v)) ? Number(v).toFixed(n) : '—';
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+    }
+    function rowMatches(row) {
+      const q = document.getElementById('console-search').value.trim().toLowerCase();
+      const risk = document.getElementById('risk-filter').value;
+      const action = document.getElementById('action-filter').value;
+      const period = document.getElementById('period-filter').value;
+      const hay = `${row.code} ${row.name} ${row.agent_summary} ${row.selector_status} ${row.decision_action}`.toLowerCase();
+      if (q && !hay.includes(q)) return false;
+      if (risk !== 'all' && row.risk_level !== risk) return false;
+      if (action !== 'all' && row.decision_action !== action) return false;
+      if (period !== 'all' && row.recommendation[period] !== 'recommended') return false;
+      return true;
+    }
+    function renderRows() {
+      const filtered = rows.filter(rowMatches).sort((a, b) => {
+        const av = a[sortKey], bv = b[sortKey];
+        if (typeof av === 'number' && typeof bv === 'number') return (av - bv) * sortDir;
+        return String(av).localeCompare(String(bv), 'zh-CN') * sortDir;
+      });
+      tbody.innerHTML = filtered.map(row => `
+        <tr>
+          <td><strong>${escapeHtml(row.name)}</strong><br><span class="stock-code">${escapeHtml(row.code)}</span></td>
+          <td><span class="status-pill">${escapeHtml(row.selector_status)}</span><br>${fmtNum(row.selector_score, 1)}分</td>
+          <td>${escapeHtml(row.prediction_direction)}<br>${fmtPct(row.prediction_probability)}</td>
+          <td>${escapeHtml(row.decision_action)}<br>目标仓位 ${fmtPct(row.target_position)}</td>
+          <td>推演 ${fmtPct(row.replay_hit_rate)}<br>后验 ${fmtPct(row.review_hit_rate)}</td>
+          <td class="${riskClass(row.risk_level)}">${escapeHtml(row.risk_level)}</td>
+          <td>${escapeHtml(row.agent_summary)}<br><span class="stock-code">${escapeHtml(row.agent_provider)}</span></td>
+          <td class="console-actions">
+            <a href="${row.links.stock}">个股</a><a href="${row.links.agent}">Agent</a><a href="${row.links.selector}">候选</a><a href="${row.links.replay}">推演</a><a href="${row.links.review}">复盘</a>
+          </td>
+        </tr>`).join('') || '<tr><td colspan="8">无匹配股票</td></tr>';
+    }
+    document.querySelectorAll('.console-toolbar input, .console-toolbar select').forEach(el => el.addEventListener('input', renderRows));
+    document.querySelectorAll('.console-table th[data-sort]').forEach(th => th.addEventListener('click', () => {
+      const key = th.dataset.sort;
+      sortDir = sortKey === key ? sortDir * -1 : -1;
+      sortKey = key;
+      renderRows();
+    }));
+    renderRows();
+  </script>
+</body>
+</html>

@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 
 from quant_system.config.selector_config import SELECTOR_VERSION, SelectorConfig
+from quant_system.selector.calibration import build_selector_calibration, normalize_calibration
 from quant_system.utils.time_utils import now_str
 
 
@@ -126,12 +127,18 @@ def _impact_points(impact: dict[str, Any] | None, cfg: SelectorConfig) -> tuple[
     return points, reasons, risks
 
 
-def _classify(score: float, reject_reasons: list[str], cfg: SelectorConfig) -> str:
+def _classify(
+    score: float,
+    reject_reasons: list[str],
+    *,
+    candidate_threshold: float,
+    watch_threshold: float,
+) -> str:
     if reject_reasons:
         return "rejected"
-    if score >= cfg.candidate_score:
+    if score >= candidate_threshold:
         return "candidate"
-    if score >= cfg.watch_score:
+    if score >= watch_threshold:
         return "watch"
     return "weak"
 
@@ -143,14 +150,17 @@ def _candidate_blockers(
     factor_score: float,
     impact: dict[str, Any] | None,
     cfg: SelectorConfig,
+    probability_floor: float,
 ) -> list[str]:
     analysis = stock.get("analysis") or {}
     ma_signal = analysis.get("ma_signal") or {}
     probability = _to_float(prediction.get("probability"), 0.5)
     impact_score = _to_float((impact or {}).get("impact_score"))
     blockers: list[str] = []
-    if prediction.get("direction") != "up" and probability < 0.55:
+    if prediction.get("direction") != "up" and probability < probability_floor:
         blockers.append("预测尚未形成向上确认")
+    elif probability < probability_floor:
+        blockers.append(f"预测概率未达到校准确认线 {probability_floor:.2f}")
     if factor_score < cfg.watch_factor_score:
         blockers.append("因子分未达到观察线")
     if not ma_signal.get("above_ma20"):
@@ -168,6 +178,7 @@ def _next_triggers(
     impact: dict[str, Any] | None,
     backtest: dict[str, Any] | None,
     cfg: SelectorConfig,
+    probability_floor: float,
 ) -> list[str]:
     analysis = stock.get("analysis") or {}
     ma_signal = analysis.get("ma_signal") or {}
@@ -178,9 +189,9 @@ def _next_triggers(
     max_dd = _to_float(metrics.get("max_drawdown_pct"))
 
     if prediction.get("direction") == "down":
-        triggers.append("预测方向从 down 修复为 neutral/up")
-    if probability < 0.55:
-        triggers.append("预测概率提升到 0.55 以上")
+        triggers.append("预测方向从偏空修复为震荡或偏多")
+    if probability < probability_floor:
+        triggers.append(f"预测概率提升到 {probability_floor:.2f} 以上")
     if factor_score < cfg.watch_factor_score:
         triggers.append(f"因子分提升到 {cfg.watch_factor_score:.0f} 以上")
     if not ma_signal.get("above_ma20"):
@@ -204,10 +215,14 @@ def build_upside_candidate(
     backtest: dict[str, Any] | None = None,
     quality: dict[str, Any] | None = None,
     impact: dict[str, Any] | None = None,
+    review: dict[str, Any] | None = None,
+    replay: dict[str, Any] | None = None,
+    calibration: dict[str, Any] | None = None,
     cfg: SelectorConfig | None = None,
 ) -> dict[str, Any]:
     """输出单股上涨候选评分。"""
     cfg = cfg or SelectorConfig()
+    calibration = normalize_calibration(calibration) if calibration else build_selector_calibration(review=review, replay=replay)
     stock = stock or {}
     prediction = prediction or {}
     quality = quality or {}
@@ -221,7 +236,7 @@ def build_upside_candidate(
     if qscore < cfg.min_quality_score:
         reject_reasons.append(f"数据质量不足 quality_score={qscore:.0f}")
     if prediction.get("direction") == "down":
-        reject_reasons.append("预测方向为 down")
+        reject_reasons.append("预测方向为偏空")
     if factor_score < cfg.reject_factor_score:
         reject_reasons.append(f"因子分过低 {factor_score:.1f}")
     if _to_float((impact or {}).get("impact_score")) < cfg.negative_impact_score:
@@ -245,14 +260,27 @@ def build_upside_candidate(
         reasons.extend(rs)
         risks.extend(rk)
 
+    score += _to_float(calibration.get("score_adjustment"))
+    reasons.extend(f"阈值校准：{r}" for r in calibration.get("reasons") or [])
+    risks.extend(f"阈值校准：{r}" for r in calibration.get("risk_notes") or [])
+
+    candidate_threshold = cfg.candidate_score + _to_float(calibration.get("candidate_score_delta"))
+    watch_threshold = cfg.watch_score + _to_float(calibration.get("watch_score_delta"))
+    probability_floor = 0.55 + _to_float(calibration.get("probability_floor_delta"))
     score = round(max(min(score, 100.0), 0.0), 2)
-    status = _classify(score, reject_reasons, cfg)
+    status = _classify(
+        score,
+        reject_reasons,
+        candidate_threshold=candidate_threshold,
+        watch_threshold=watch_threshold,
+    )
     candidate_blockers = _candidate_blockers(
         stock=stock,
         prediction=prediction,
         factor_score=factor_score,
         impact=impact,
         cfg=cfg,
+        probability_floor=probability_floor,
     )
     if status == "candidate" and candidate_blockers:
         status = "watch"
@@ -263,6 +291,7 @@ def build_upside_candidate(
         impact=impact,
         backtest=backtest,
         cfg=cfg,
+        probability_floor=probability_floor,
     )
     return {
         "code": code,
@@ -285,10 +314,14 @@ def build_upside_candidate(
         "metrics": {
             "quality_score": qscore,
             "factor_score": factor_score,
+            "candidate_score_threshold": round(candidate_threshold, 2),
+            "watch_score_threshold": round(watch_threshold, 2),
+            "probability_floor": round(probability_floor, 3),
             "prediction_direction": prediction.get("direction", "neutral"),
             "prediction_probability": _to_float(prediction.get("probability"), 0.5),
             "impact_score": _to_float((impact or {}).get("impact_score")),
             "impact_direction": (impact or {}).get("impact_direction", "neutral"),
         },
+        "calibration": calibration,
         "updated_at": now_str(),
     }

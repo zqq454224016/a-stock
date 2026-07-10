@@ -1,0 +1,42 @@
+{
+  "registry_version": "1.0.0",
+  "module": "agent",
+  "label": "Agent",
+  "path": "agent/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/agent/index.json",
+  "exists": true,
+  "size": 1783,
+  "file_mtime": "2026-07-10 17:43:28",
+  "updated_at": "2026-07-10 17:43:28",
+  "record_count": 5,
+  "field_summary": {
+    "top_level_fields": [
+      "reports",
+      "updated_at"
+    ],
+    "list_fields": {
+      "reports": 5
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "stocks",
+    "predictions",
+    "factors"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "agent/index.json",
+    "expected_command": "agent",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

@@ -1,49 +1,18 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-07",
-  "updated_at": "2026-07-07 21:01:28",
+  "trade_date": "2026-07-10",
+  "updated_at": "2026-07-10 17:42:40",
   "version": "1.0.0",
   "fundamentals": {
-    "source": "eastmoney_value",
-    "trade_date": "2026-07-07",
-    "close": 111.07,
-    "market_cap_yi": 407.32,
-    "float_cap_yi": 400.66,
-    "pe_ttm": 76.21945275,
-    "pe_static": 139.21393353,
-    "pb": 18.14560116,
-    "ps": 11.31301862,
-    "peg": 0.044955654195
+    "source": "baidu_pe",
+    "pe_ttm": 80.01,
+    "trade_date": "2026-07-10",
+    "pb": 20.15
   },
   "corporate": {
     "dividends": [],
-    "lockups": [
-      {
-        "unlock_date": "2028-12-08",
-        "unlock_shares": 126000.0,
-        "unlock_value_yi": 0.14,
-        "pct_total": 0.000343578892,
-        "pct_float": 0.000349298105,
-        "holder_type": "股权激励限售股份"
-      },
-      {
-        "unlock_date": "2028-11-06",
-        "unlock_shares": 903000.0,
-        "unlock_value_yi": 1.0,
-        "pct_total": 0.002462315395,
-        "pct_float": 0.002503303085,
-        "holder_type": "股权激励限售股份"
-      },
-      {
-        "unlock_date": "2028-01-18",
-        "unlock_shares": 462000.0,
-        "unlock_value_yi": 0.51,
-        "pct_total": 0.001259789272,
-        "pct_float": 0.001280759718,
-        "holder_type": "股权激励限售股份"
-      }
-    ],
+    "lockups": [],
     "earnings_forecast": null
   },
   "fund_flow": {
@@ -56,22 +25,34 @@
       {
         "name": "上证指数",
         "code": "000001",
-        "close": 4050.44,
-        "change_pct": 0.17
+        "close": 3996.1616,
+        "change_pct": -1.001
       },
       {
-        "name": "科创50",
+        "name": "深证成指",
+        "code": "399001",
+        "close": 15046.67,
+        "change_pct": -2.286
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3842.731,
+        "change_pct": -4.366
+      },
+      {
+        "name": "科创50参考",
         "code": "000688",
-        "close": 2011.17,
-        "change_pct": 1.8
+        "close": 2064.9756,
+        "change_pct": -5.529
       }
     ],
     "market_fund_flow": {
       "north_net": 0.0,
-      "main_net": -758.28,
+      "main_net": -790.0,
       "retail_net": 0.0
     },
-    "stock_return_20d": -4.15
+    "stock_return_20d": 17.27
   },
   "cross_source": null,
   "quality_ref": {
@@ -85,8 +66,11 @@
   ],
   "sources_failed": [
     "dividend",
-    "earnings_forecast_20260930",
-    "margin_sse",
-    "northbound"
+    "earnings_forecast",
+    "individual_info",
+    "lockup",
+    "margin",
+    "northbound",
+    "valuation_em"
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "registry_version": "1.0.0",
+  "module": "replay",
+  "label": "十日推演",
+  "path": "replay/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/replay/index.json",
+  "exists": true,
+  "size": 1436,
+  "file_mtime": "2026-07-07 11:50:05",
+  "updated_at": "2026-07-07 11:50:05",
+  "record_count": 4,
+  "field_summary": {
+    "top_level_fields": [
+      "items",
+      "updated_at"
+    ],
+    "list_fields": {
+      "items": 4
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "stocks",
+    "impact"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "replay/index.json",
+    "expected_command": "replay",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-10 18:10:10"
+}

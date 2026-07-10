@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-07 21:02:11",
+  "updated_at": "2026-07-10 17:43:27",
   "summary": {
-    "updated_at": "2026-07-07 21:02:11",
+    "updated_at": "2026-07-10 17:43:27",
     "initial_cash": 100000.0,
     "cash": 100000.0,
     "market_value": 0.0,
@@ -20,9 +20,9 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 65.57,
+      "price": 60.58,
       "direction": "down",
-      "probability": 0.281,
+      "probability": 0.3052,
       "confidence": "low"
     },
     {
@@ -32,9 +32,9 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 111.07,
+      "price": 116.6,
       "direction": "down",
-      "probability": 0.2368,
+      "probability": 0.1606,
       "confidence": "low"
     },
     {
@@ -44,7 +44,7 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 61.26,
+      "price": 60.01,
       "direction": "neutral",
       "probability": 0.4612,
       "confidence": "medium"
@@ -56,9 +56,21 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 153.59,
+      "price": 158.07,
       "direction": "neutral",
-      "probability": 0.5429,
+      "probability": 0.5186,
+      "confidence": "medium"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 242.3,
+      "direction": "neutral",
+      "probability": 0.4792,
       "confidence": "medium"
     }
   ],

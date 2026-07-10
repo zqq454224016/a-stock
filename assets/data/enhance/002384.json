@@ -1,0 +1,76 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-10",
+  "updated_at": "2026-07-10 17:42:41",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "baidu_pe",
+    "pe_ttm": 217.54,
+    "trade_date": "2026-07-10",
+    "pb": 19.6
+  },
+  "corporate": {
+    "dividends": [],
+    "lockups": [],
+    "earnings_forecast": null
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-07",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3996.1616,
+        "change_pct": -1.001
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "close": 15046.67,
+        "change_pct": -2.286
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3842.731,
+        "change_pct": -4.366
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 2064.9756,
+        "change_pct": -5.529
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -790.0,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": 14.84
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 100.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing",
+    "dividend_missing"
+  ],
+  "sources_failed": [
+    "dividend",
+    "earnings_forecast",
+    "individual_info",
+    "lockup",
+    "margin",
+    "northbound",
+    "valuation_em"
+  ]
+}

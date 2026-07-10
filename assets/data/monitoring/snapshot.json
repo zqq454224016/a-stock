@@ -1,0 +1,1253 @@
+{
+  "monitoring_version": "1.0.0",
+  "updated_at": "2026-07-10 18:10:10",
+  "summary": {
+    "module_count": 21,
+    "ok_count": 21,
+    "missing_count": 0,
+    "stale_count": 0,
+    "critical_alerts": 0,
+    "warning_alerts": 0,
+    "info_alerts": 8,
+    "recent_task_count": 10,
+    "failed_task_runs": 0,
+    "last_task_command": "monitor",
+    "last_task_status": "success",
+    "last_success_at": "2026-07-10 18:09:07",
+    "registry_artifact_count": 20,
+    "registry_with_task_lineage_count": 2,
+    "registry_degraded_count": 1
+  },
+  "modules": [
+    {
+      "name": "market",
+      "label": "大盘行情",
+      "path": "latest.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.49,
+      "item_count": 1,
+      "updated_at": "2026-07-10 17:40:44",
+      "dependencies": []
+    },
+    {
+      "name": "stocks",
+      "label": "个股分析",
+      "path": "stocks/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.48,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:41:26",
+      "dependencies": [
+        "market"
+      ]
+    },
+    {
+      "name": "enhance",
+      "label": "数据增强",
+      "path": "enhance/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.46,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:42:41",
+      "dependencies": [
+        "stocks",
+        "market"
+      ]
+    },
+    {
+      "name": "factors",
+      "label": "因子",
+      "path": "factors/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.46,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:42:41",
+      "dependencies": [
+        "stocks"
+      ]
+    },
+    {
+      "name": "backtest",
+      "label": "策略回测",
+      "path": "backtest/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "stocks",
+        "factors"
+      ]
+    },
+    {
+      "name": "predictions",
+      "label": "走势预测",
+      "path": "predictions/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "stocks",
+        "factors",
+        "backtest"
+      ]
+    },
+    {
+      "name": "selector",
+      "label": "上涨候选",
+      "path": "selector/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "predictions",
+        "factors",
+        "impact"
+      ]
+    },
+    {
+      "name": "decisions",
+      "label": "操作建议",
+      "path": "decisions/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "predictions",
+        "selector",
+        "agent",
+        "impact"
+      ]
+    },
+    {
+      "name": "review",
+      "label": "后验复盘",
+      "path": "review/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:28",
+      "dependencies": [
+        "predictions",
+        "selector",
+        "decisions"
+      ]
+    },
+    {
+      "name": "replay",
+      "label": "十日推演",
+      "path": "replay/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 78.33,
+      "item_count": 4,
+      "updated_at": "2026-07-07 11:50:05",
+      "dependencies": [
+        "stocks",
+        "impact"
+      ]
+    },
+    {
+      "name": "impact",
+      "label": "实际影响",
+      "path": "impact/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "enhance",
+        "review"
+      ]
+    },
+    {
+      "name": "attribution",
+      "label": "每日归因",
+      "path": "attribution/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.29,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:52:51",
+      "dependencies": [
+        "stocks",
+        "market",
+        "impact",
+        "replay"
+      ]
+    },
+    {
+      "name": "agent",
+      "label": "Agent",
+      "path": "agent/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:28",
+      "dependencies": [
+        "stocks",
+        "predictions",
+        "factors"
+      ]
+    },
+    {
+      "name": "trading",
+      "label": "模拟交易",
+      "path": "trading/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "decisions",
+        "predictions"
+      ]
+    },
+    {
+      "name": "portfolio",
+      "label": "组合管理",
+      "path": "portfolio/summary.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.45,
+      "item_count": 0,
+      "updated_at": "2026-07-10 17:43:27",
+      "dependencies": [
+        "decisions",
+        "trading"
+      ]
+    },
+    {
+      "name": "recommendations",
+      "label": "多周期推荐",
+      "path": "recommendations/summary.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 24.87,
+      "item_count": 12,
+      "updated_at": "2026-07-09 17:18:16",
+      "dependencies": [
+        "market",
+        "selector",
+        "predictions",
+        "impact",
+        "replay"
+      ]
+    },
+    {
+      "name": "framework",
+      "label": "模块框架",
+      "path": "framework/snapshot.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 2.98,
+      "item_count": 4,
+      "updated_at": "2026-07-10 15:11:19",
+      "dependencies": [
+        "stocks",
+        "predictions",
+        "selector",
+        "decisions"
+      ]
+    },
+    {
+      "name": "console",
+      "label": "统一控制台",
+      "path": "../../reports/console/index.html",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.24,
+      "item_count": 0,
+      "updated_at": "",
+      "dependencies": [
+        "stocks",
+        "selector",
+        "decisions",
+        "agent",
+        "framework"
+      ]
+    },
+    {
+      "name": "quality",
+      "label": "质量巡检",
+      "path": "quality/latest.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.51,
+      "item_count": 5,
+      "updated_at": "2026-07-10 17:39:35",
+      "dependencies": [
+        "stocks"
+      ]
+    },
+    {
+      "name": "task_runs",
+      "label": "任务运行",
+      "path": "task_runs/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.02,
+      "item_count": 12,
+      "updated_at": "2026-07-10 18:09:07",
+      "dependencies": []
+    },
+    {
+      "name": "data_registry",
+      "label": "数据注册表",
+      "path": "data_registry/index.json",
+      "exists": true,
+      "status": "ok",
+      "age_hours": 0.0,
+      "item_count": 20,
+      "updated_at": "2026-07-10 18:10:10",
+      "dependencies": [
+        "task_runs"
+      ]
+    }
+  ],
+  "alerts": [
+    {
+      "level": "info",
+      "module": "recommendations",
+      "message": "短线推荐缺额5只",
+      "source": "recommendations/summary.json"
+    },
+    {
+      "level": "info",
+      "module": "recommendations",
+      "message": "中线推荐缺额5只",
+      "source": "recommendations/summary.json"
+    },
+    {
+      "level": "info",
+      "module": "recommendations",
+      "message": "长线推荐缺额5只",
+      "source": "recommendations/summary.json"
+    },
+    {
+      "level": "info",
+      "module": "agent",
+      "message": "600378 使用规则 Provider",
+      "source": "agent/index.json"
+    },
+    {
+      "level": "info",
+      "module": "agent",
+      "message": "603629 使用规则 Provider",
+      "source": "agent/index.json"
+    },
+    {
+      "level": "info",
+      "module": "agent",
+      "message": "000636 使用规则 Provider",
+      "source": "agent/index.json"
+    },
+    {
+      "level": "info",
+      "module": "agent",
+      "message": "000988 使用规则 Provider",
+      "source": "agent/index.json"
+    },
+    {
+      "level": "info",
+      "module": "agent",
+      "message": "002384 使用规则 Provider",
+      "source": "agent/index.json"
+    }
+  ],
+  "recent_task_runs": [
+    {
+      "run_id": "20260710_180907_040331_monitor",
+      "command": "monitor",
+      "argv": [
+        "monitor"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 18:09:07",
+      "ended_at": "2026-07-10 18:09:07",
+      "duration_sec": 0.0871,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28624,
+          "mtime": "2026-07-10 18:09:07"
+        },
+        {
+          "path": "../../reports/monitoring/index.html",
+          "exists": true,
+          "size": 15229,
+          "mtime": "2026-07-10 18:09:07"
+        }
+      ],
+      "path": "task_runs/20260710_180907_040331_monitor.json"
+    },
+    {
+      "run_id": "20260710_180856_558047_v3-plan",
+      "command": "v3-plan",
+      "argv": [
+        "v3-plan"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 18:08:56",
+      "ended_at": "2026-07-10 18:08:56",
+      "duration_sec": 0.0489,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "planning/v3_roadmap.json",
+          "exists": true,
+          "size": 5404,
+          "mtime": "2026-07-10 18:08:56"
+        },
+        {
+          "path": "../../reports/planning/v3.html",
+          "exists": true,
+          "size": 4092,
+          "mtime": "2026-07-10 18:08:56"
+        }
+      ],
+      "path": "task_runs/20260710_180856_558047_v3-plan.json"
+    },
+    {
+      "run_id": "20260710_180624_972533_monitor",
+      "command": "monitor",
+      "argv": [
+        "monitor"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 18:06:24",
+      "ended_at": "2026-07-10 18:06:25",
+      "duration_sec": 0.0712,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 27881,
+          "mtime": "2026-07-10 18:06:24"
+        },
+        {
+          "path": "../../reports/monitoring/index.html",
+          "exists": true,
+          "size": 15017,
+          "mtime": "2026-07-10 18:06:25"
+        }
+      ],
+      "path": "task_runs/20260710_180624_972533_monitor.json"
+    },
+    {
+      "run_id": "20260710_180617_070933_registry",
+      "command": "registry",
+      "argv": [
+        "registry"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 18:06:17",
+      "ended_at": "2026-07-10 18:06:17",
+      "duration_sec": 0.0227,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "data_registry/index.json",
+          "exists": true,
+          "size": 30367,
+          "mtime": "2026-07-10 18:06:17"
+        }
+      ],
+      "path": "task_runs/20260710_180617_070933_registry.json"
+    },
+    {
+      "run_id": "20260710_175534_979025_monitor",
+      "command": "monitor",
+      "argv": [
+        "monitor"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 17:55:34",
+      "ended_at": "2026-07-10 17:55:35",
+      "duration_sec": 0.0549,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 18460,
+          "mtime": "2026-07-10 17:55:34"
+        },
+        {
+          "path": "../../reports/monitoring/index.html",
+          "exists": true,
+          "size": 10530,
+          "mtime": "2026-07-10 17:55:35"
+        }
+      ],
+      "path": "task_runs/20260710_175534_979025_monitor.json"
+    },
+    {
+      "run_id": "20260710_175534_979055_console",
+      "command": "console",
+      "argv": [
+        "console"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 17:55:34",
+      "ended_at": "2026-07-10 17:55:35",
+      "duration_sec": 0.0533,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "../../reports/console/index.html",
+          "exists": true,
+          "size": 12921,
+          "mtime": "2026-07-10 17:55:35"
+        }
+      ],
+      "path": "task_runs/20260710_175534_979055_console.json"
+    },
+    {
+      "run_id": "20260710_175251_573762_attribution",
+      "command": "attribution",
+      "argv": [
+        "attribution"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 17:52:51",
+      "ended_at": "2026-07-10 17:52:51",
+      "duration_sec": 0.056,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "attribution/index.json",
+          "exists": true,
+          "size": 2958,
+          "mtime": "2026-07-10 17:52:51"
+        },
+        {
+          "path": "../../reports/attribution/index.html",
+          "exists": true,
+          "size": 7308,
+          "mtime": "2026-07-10 17:52:51"
+        }
+      ],
+      "path": "task_runs/20260710_175251_573762_attribution.json"
+    },
+    {
+      "run_id": "20260710_173933_108446_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 17:39:33",
+      "ended_at": "2026-07-10 17:43:28",
+      "duration_sec": 235.5437,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260710_173933_108446_all.json"
+    },
+    {
+      "run_id": "20260710_174242_659245_monitor",
+      "command": "monitor",
+      "argv": [
+        "monitor"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 17:42:42",
+      "ended_at": "2026-07-10 17:42:42",
+      "duration_sec": 0.0569,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 15900,
+          "mtime": "2026-07-10 17:42:42"
+        },
+        {
+          "path": "../../reports/monitoring/index.html",
+          "exists": true,
+          "size": 9677,
+          "mtime": "2026-07-10 17:42:42"
+        }
+      ],
+      "path": "task_runs/20260710_174242_659245_monitor.json"
+    },
+    {
+      "run_id": "20260710_174151_067167_monitor",
+      "command": "monitor",
+      "argv": [
+        "monitor"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 17:41:51",
+      "ended_at": "2026-07-10 17:41:51",
+      "duration_sec": 0.055,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 15164,
+          "mtime": "2026-07-10 17:41:51"
+        },
+        {
+          "path": "../../reports/monitoring/index.html",
+          "exists": true,
+          "size": 9471,
+          "mtime": "2026-07-10 17:41:51"
+        }
+      ],
+      "path": "task_runs/20260710_174151_067167_monitor.json"
+    }
+  ],
+  "data_registry": {
+    "summary": {
+      "artifact_count": 20,
+      "existing_count": 20,
+      "missing_count": 0,
+      "degraded_count": 1,
+      "with_task_lineage_count": 2
+    },
+    "lineage": [
+      {
+        "module": "market",
+        "label": "大盘行情",
+        "inputs": [],
+        "output": "latest.json",
+        "generated_by": "",
+        "input_status": {}
+      },
+      {
+        "module": "stocks",
+        "label": "个股分析",
+        "inputs": [
+          "market"
+        ],
+        "output": "stocks/index.json",
+        "generated_by": "",
+        "input_status": {
+          "market": "ok"
+        }
+      },
+      {
+        "module": "enhance",
+        "label": "数据增强",
+        "inputs": [
+          "stocks",
+          "market"
+        ],
+        "output": "enhance/index.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok",
+          "market": "ok"
+        }
+      },
+      {
+        "module": "factors",
+        "label": "因子",
+        "inputs": [
+          "stocks"
+        ],
+        "output": "factors/index.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok"
+        }
+      },
+      {
+        "module": "backtest",
+        "label": "策略回测",
+        "inputs": [
+          "stocks",
+          "factors"
+        ],
+        "output": "backtest/index.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok",
+          "factors": "ok"
+        }
+      },
+      {
+        "module": "predictions",
+        "label": "走势预测",
+        "inputs": [
+          "stocks",
+          "factors",
+          "backtest"
+        ],
+        "output": "predictions/index.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok",
+          "factors": "ok",
+          "backtest": "ok"
+        }
+      },
+      {
+        "module": "selector",
+        "label": "上涨候选",
+        "inputs": [
+          "predictions",
+          "factors",
+          "impact"
+        ],
+        "output": "selector/index.json",
+        "generated_by": "",
+        "input_status": {
+          "predictions": "ok",
+          "factors": "ok",
+          "impact": "ok"
+        }
+      },
+      {
+        "module": "decisions",
+        "label": "操作建议",
+        "inputs": [
+          "predictions",
+          "selector",
+          "agent",
+          "impact"
+        ],
+        "output": "decisions/index.json",
+        "generated_by": "",
+        "input_status": {
+          "predictions": "ok",
+          "selector": "ok",
+          "agent": "ok",
+          "impact": "ok"
+        }
+      },
+      {
+        "module": "review",
+        "label": "后验复盘",
+        "inputs": [
+          "predictions",
+          "selector",
+          "decisions"
+        ],
+        "output": "review/index.json",
+        "generated_by": "",
+        "input_status": {
+          "predictions": "ok",
+          "selector": "ok",
+          "decisions": "ok"
+        }
+      },
+      {
+        "module": "replay",
+        "label": "十日推演",
+        "inputs": [
+          "stocks",
+          "impact"
+        ],
+        "output": "replay/index.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok",
+          "impact": "ok"
+        }
+      },
+      {
+        "module": "impact",
+        "label": "实际影响",
+        "inputs": [
+          "enhance",
+          "review"
+        ],
+        "output": "impact/index.json",
+        "generated_by": "",
+        "input_status": {
+          "enhance": "ok",
+          "review": "ok"
+        }
+      },
+      {
+        "module": "attribution",
+        "label": "每日归因",
+        "inputs": [
+          "stocks",
+          "market",
+          "impact",
+          "replay"
+        ],
+        "output": "attribution/index.json",
+        "generated_by": "attribution",
+        "input_status": {
+          "stocks": "ok",
+          "market": "ok",
+          "impact": "ok",
+          "replay": "ok"
+        }
+      },
+      {
+        "module": "agent",
+        "label": "Agent",
+        "inputs": [
+          "stocks",
+          "predictions",
+          "factors"
+        ],
+        "output": "agent/index.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok",
+          "predictions": "ok",
+          "factors": "ok"
+        }
+      },
+      {
+        "module": "trading",
+        "label": "模拟交易",
+        "inputs": [
+          "decisions",
+          "predictions"
+        ],
+        "output": "trading/index.json",
+        "generated_by": "",
+        "input_status": {
+          "decisions": "ok",
+          "predictions": "ok"
+        }
+      },
+      {
+        "module": "portfolio",
+        "label": "组合管理",
+        "inputs": [
+          "decisions",
+          "trading"
+        ],
+        "output": "portfolio/summary.json",
+        "generated_by": "",
+        "input_status": {
+          "decisions": "ok",
+          "trading": "ok"
+        }
+      },
+      {
+        "module": "recommendations",
+        "label": "多周期推荐",
+        "inputs": [
+          "market",
+          "selector",
+          "predictions",
+          "impact",
+          "replay"
+        ],
+        "output": "recommendations/summary.json",
+        "generated_by": "",
+        "input_status": {
+          "market": "ok",
+          "selector": "ok",
+          "predictions": "ok",
+          "impact": "ok",
+          "replay": "ok"
+        }
+      },
+      {
+        "module": "framework",
+        "label": "模块框架",
+        "inputs": [
+          "stocks",
+          "predictions",
+          "selector",
+          "decisions"
+        ],
+        "output": "framework/snapshot.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok",
+          "predictions": "ok",
+          "selector": "ok",
+          "decisions": "ok"
+        }
+      },
+      {
+        "module": "console",
+        "label": "统一控制台",
+        "inputs": [
+          "stocks",
+          "selector",
+          "decisions",
+          "agent",
+          "framework"
+        ],
+        "output": "../../reports/console/index.html",
+        "generated_by": "console",
+        "input_status": {
+          "stocks": "ok",
+          "selector": "ok",
+          "decisions": "ok",
+          "agent": "ok",
+          "framework": "ok"
+        }
+      },
+      {
+        "module": "quality",
+        "label": "质量巡检",
+        "inputs": [
+          "stocks"
+        ],
+        "output": "quality/latest.json",
+        "generated_by": "",
+        "input_status": {
+          "stocks": "ok"
+        }
+      },
+      {
+        "module": "task_runs",
+        "label": "任务运行",
+        "inputs": [],
+        "output": "task_runs/index.json",
+        "generated_by": "",
+        "input_status": {}
+      }
+    ]
+  },
+  "lineage": [
+    {
+      "module": "market",
+      "label": "大盘行情",
+      "inputs": [],
+      "output": "latest.json",
+      "input_status": {}
+    },
+    {
+      "module": "stocks",
+      "label": "个股分析",
+      "inputs": [
+        "market"
+      ],
+      "output": "stocks/index.json",
+      "input_status": {
+        "market": "ok"
+      }
+    },
+    {
+      "module": "enhance",
+      "label": "数据增强",
+      "inputs": [
+        "stocks",
+        "market"
+      ],
+      "output": "enhance/index.json",
+      "input_status": {
+        "stocks": "ok",
+        "market": "ok"
+      }
+    },
+    {
+      "module": "factors",
+      "label": "因子",
+      "inputs": [
+        "stocks"
+      ],
+      "output": "factors/index.json",
+      "input_status": {
+        "stocks": "ok"
+      }
+    },
+    {
+      "module": "backtest",
+      "label": "策略回测",
+      "inputs": [
+        "stocks",
+        "factors"
+      ],
+      "output": "backtest/index.json",
+      "input_status": {
+        "stocks": "ok",
+        "factors": "ok"
+      }
+    },
+    {
+      "module": "predictions",
+      "label": "走势预测",
+      "inputs": [
+        "stocks",
+        "factors",
+        "backtest"
+      ],
+      "output": "predictions/index.json",
+      "input_status": {
+        "stocks": "ok",
+        "factors": "ok",
+        "backtest": "ok"
+      }
+    },
+    {
+      "module": "selector",
+      "label": "上涨候选",
+      "inputs": [
+        "predictions",
+        "factors",
+        "impact"
+      ],
+      "output": "selector/index.json",
+      "input_status": {
+        "predictions": "ok",
+        "factors": "ok",
+        "impact": "ok"
+      }
+    },
+    {
+      "module": "decisions",
+      "label": "操作建议",
+      "inputs": [
+        "predictions",
+        "selector",
+        "agent",
+        "impact"
+      ],
+      "output": "decisions/index.json",
+      "input_status": {
+        "predictions": "ok",
+        "selector": "ok",
+        "agent": "ok",
+        "impact": "ok"
+      }
+    },
+    {
+      "module": "review",
+      "label": "后验复盘",
+      "inputs": [
+        "predictions",
+        "selector",
+        "decisions"
+      ],
+      "output": "review/index.json",
+      "input_status": {
+        "predictions": "ok",
+        "selector": "ok",
+        "decisions": "ok"
+      }
+    },
+    {
+      "module": "replay",
+      "label": "十日推演",
+      "inputs": [
+        "stocks",
+        "impact"
+      ],
+      "output": "replay/index.json",
+      "input_status": {
+        "stocks": "ok",
+        "impact": "ok"
+      }
+    },
+    {
+      "module": "impact",
+      "label": "实际影响",
+      "inputs": [
+        "enhance",
+        "review"
+      ],
+      "output": "impact/index.json",
+      "input_status": {
+        "enhance": "ok",
+        "review": "ok"
+      }
+    },
+    {
+      "module": "attribution",
+      "label": "每日归因",
+      "inputs": [
+        "stocks",
+        "market",
+        "impact",
+        "replay"
+      ],
+      "output": "attribution/index.json",
+      "input_status": {
+        "stocks": "ok",
+        "market": "ok",
+        "impact": "ok",
+        "replay": "ok"
+      }
+    },
+    {
+      "module": "agent",
+      "label": "Agent",
+      "inputs": [
+        "stocks",
+        "predictions",
+        "factors"
+      ],
+      "output": "agent/index.json",
+      "input_status": {
+        "stocks": "ok",
+        "predictions": "ok",
+        "factors": "ok"
+      }
+    },
+    {
+      "module": "trading",
+      "label": "模拟交易",
+      "inputs": [
+        "decisions",
+        "predictions"
+      ],
+      "output": "trading/index.json",
+      "input_status": {
+        "decisions": "ok",
+        "predictions": "ok"
+      }
+    },
+    {
+      "module": "portfolio",
+      "label": "组合管理",
+      "inputs": [
+        "decisions",
+        "trading"
+      ],
+      "output": "portfolio/summary.json",
+      "input_status": {
+        "decisions": "ok",
+        "trading": "ok"
+      }
+    },
+    {
+      "module": "recommendations",
+      "label": "多周期推荐",
+      "inputs": [
+        "market",
+        "selector",
+        "predictions",
+        "impact",
+        "replay"
+      ],
+      "output": "recommendations/summary.json",
+      "input_status": {
+        "market": "ok",
+        "selector": "ok",
+        "predictions": "ok",
+        "impact": "ok",
+        "replay": "ok"
+      }
+    },
+    {
+      "module": "framework",
+      "label": "模块框架",
+      "inputs": [
+        "stocks",
+        "predictions",
+        "selector",
+        "decisions"
+      ],
+      "output": "framework/snapshot.json",
+      "input_status": {
+        "stocks": "ok",
+        "predictions": "ok",
+        "selector": "ok",
+        "decisions": "ok"
+      }
+    },
+    {
+      "module": "console",
+      "label": "统一控制台",
+      "inputs": [
+        "stocks",
+        "selector",
+        "decisions",
+        "agent",
+        "framework"
+      ],
+      "output": "../../reports/console/index.html",
+      "input_status": {
+        "stocks": "ok",
+        "selector": "ok",
+        "decisions": "ok",
+        "agent": "ok",
+        "framework": "ok"
+      }
+    },
+    {
+      "module": "quality",
+      "label": "质量巡检",
+      "inputs": [
+        "stocks"
+      ],
+      "output": "quality/latest.json",
+      "input_status": {
+        "stocks": "ok"
+      }
+    },
+    {
+      "module": "task_runs",
+      "label": "任务运行",
+      "inputs": [],
+      "output": "task_runs/index.json",
+      "input_status": {}
+    },
+    {
+      "module": "data_registry",
+      "label": "数据注册表",
+      "inputs": [
+        "task_runs"
+      ],
+      "output": "data_registry/index.json",
+      "input_status": {
+        "task_runs": "ok"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "job": "daily_market",
+      "cron": "30 18 * * 1-5",
+      "enabled": true
+    },
+    {
+      "job": "daily_stock",
+      "cron": "45 18 * * 1-5",
+      "enabled": true
+    },
+    {
+      "job": "intraday_snapshot",
+      "cron": "*/1 9-15 * * 1-5",
+      "enabled": true
+    },
+    {
+      "job": "data_inspect",
+      "cron": "30 2 * * 0",
+      "enabled": true
+    },
+    {
+      "job": "backfill_weekly",
+      "cron": "0 2 * * 0",
+      "enabled": true
+    }
+  ],
+  "limitations": [
+    "当前为本地 JSON 与报告文件监控，尚未接入外部通知渠道。",
+    "任务运行日志已覆盖 CLI 入口；长驻 scheduler 内部子任务仍需在后续版本补充独立 run_id。"
+  ]
+}

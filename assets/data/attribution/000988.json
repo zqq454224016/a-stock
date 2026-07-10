@@ -1,0 +1,251 @@
+{
+  "code": "000988",
+  "name": "华工科技",
+  "daily_attribution_version": "1.0.0",
+  "status": "ok",
+  "trade_date": "2026-07-10",
+  "previous_trade_date": "2026-07-09",
+  "pattern": "yesterday_up_today_down",
+  "items": [
+    {
+      "label": "昨日",
+      "date": "2026-07-09",
+      "fact": {
+        "date": "2026-07-09",
+        "open": 150.0,
+        "high": 159.68,
+        "low": 147.0,
+        "close": 159.0,
+        "prev_close": 147.5,
+        "return_pct": 7.8,
+        "intraday_pct": 6.0,
+        "amplitude_pct": 8.63,
+        "volume": 60212650.0,
+        "volume_ratio_20": 0.85,
+        "ma5": 152.75,
+        "ma10": 161.61,
+        "ma20": 163.51,
+        "ma60": 147.03,
+        "direction": "up"
+      },
+      "direction": "up",
+      "cause_scores": {
+        "bullish": 1.1,
+        "bearish": 5.0,
+        "neutral": 0.0
+      },
+      "dominant_causes": [
+        {
+          "category": "price_action",
+          "label": "单日涨幅较强",
+          "effect": "bullish",
+          "evidence": "收盘涨幅 7.80%",
+          "source": "stock.kline",
+          "weight": 1.1
+        }
+      ],
+      "all_causes": [
+        {
+          "category": "price_action",
+          "label": "单日涨幅较强",
+          "effect": "bullish",
+          "evidence": "收盘涨幅 7.80%",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 159.00，MA20 163.51",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "上证指数、深证成指、创业板指 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "fund_flow",
+          "label": "市场主力资金净流出",
+          "effect": "bearish",
+          "evidence": "主力净流出 -790.00 亿",
+          "source": "latest.fund_flow",
+          "weight": 1.0
+        },
+        {
+          "category": "market_breadth",
+          "label": "市场宽度偏弱",
+          "effect": "bearish",
+          "evidence": "上涨 0 家，下跌 5 家",
+          "source": "latest.market_distribution",
+          "weight": 0.9
+        },
+        {
+          "category": "event",
+          "label": "估值压力",
+          "effect": "bearish",
+          "evidence": "PE(TTM)=94.08；PB=13.60",
+          "source": "impact.valuation_pressure",
+          "weight": 1.0
+        }
+      ],
+      "conclusion": "上涨主要由量价/趋势强化、市场或事件正向因素共同解释"
+    },
+    {
+      "label": "今日",
+      "date": "2026-07-10",
+      "fact": {
+        "date": "2026-07-10",
+        "open": 165.98,
+        "high": 168.98,
+        "low": 157.8,
+        "close": 158.07,
+        "prev_close": 159.0,
+        "return_pct": -0.58,
+        "intraday_pct": -4.77,
+        "amplitude_pct": 7.08,
+        "volume": 0.0,
+        "volume_ratio_20": 0.0,
+        "ma5": 153.57,
+        "ma10": 161.32,
+        "ma20": 163.9,
+        "ma60": 147.58,
+        "direction": "down"
+      },
+      "direction": "down",
+      "cause_scores": {
+        "bullish": 0.0,
+        "bearish": 6.0,
+        "neutral": 0.3
+      },
+      "dominant_causes": [
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "上证指数、深证成指、创业板指 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 158.07，MA20 163.90",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "reversal",
+          "label": "回吐前一交易日收盘",
+          "effect": "bearish",
+          "evidence": "收盘 158.07 低于前日 159.00",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "fund_flow",
+          "label": "市场主力资金净流出",
+          "effect": "bearish",
+          "evidence": "主力净流出 -790.00 亿",
+          "source": "latest.fund_flow",
+          "weight": 1.0
+        }
+      ],
+      "all_causes": [
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 158.07，MA20 163.90",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "data_quality",
+          "label": "成交量缺失或为零",
+          "effect": "neutral",
+          "evidence": "当日成交量不可用，资金归因降权",
+          "source": "stock.kline",
+          "weight": 0.3
+        },
+        {
+          "category": "reversal",
+          "label": "回吐前一交易日收盘",
+          "effect": "bearish",
+          "evidence": "收盘 158.07 低于前日 159.00",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "上证指数、深证成指、创业板指 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "fund_flow",
+          "label": "市场主力资金净流出",
+          "effect": "bearish",
+          "evidence": "主力净流出 -790.00 亿",
+          "source": "latest.fund_flow",
+          "weight": 1.0
+        },
+        {
+          "category": "market_breadth",
+          "label": "市场宽度偏弱",
+          "effect": "bearish",
+          "evidence": "上涨 0 家，下跌 5 家",
+          "source": "latest.market_distribution",
+          "weight": 0.9
+        },
+        {
+          "category": "event",
+          "label": "估值压力",
+          "effect": "bearish",
+          "evidence": "PE(TTM)=94.08；PB=13.60",
+          "source": "impact.valuation_pressure",
+          "weight": 1.0
+        }
+      ],
+      "conclusion": "下跌主要由技术走弱、资金/大盘压力或事件风险共同解释"
+    }
+  ],
+  "logic_review": {
+    "logic_broken": true,
+    "broken_reasons": [
+      "昨日上涨后今日转跌，短线延续性不足",
+      "今日收盘低于昨日收盘，昨日上涨被回吐",
+      "今日收盘低于 MA20，中期趋势支撑转弱"
+    ],
+    "next_watch": {
+      "recover_price": 159.0,
+      "risk_price": 147.0,
+      "pressure_price": 168.98,
+      "note": "重新站上恢复价且资金/成交同步改善，才视为上涨逻辑修复；跌破风险价则昨日上涨确认失败。"
+    }
+  },
+  "summary": {
+    "yesterday_return_pct": 7.8,
+    "today_return_pct": -0.58,
+    "logic_broken": true,
+    "primary_today_causes": [
+      "大盘走弱",
+      "收盘跌破 MA20",
+      "回吐前一交易日收盘",
+      "市场主力资金净流出"
+    ]
+  },
+  "limitations": [
+    "market_data_degraded",
+    "today_volume_missing_or_zero"
+  ],
+  "updated_at": "2026-07-10 17:52:51"
+}

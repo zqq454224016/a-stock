@@ -1,28 +1,29 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-07",
-  "selector_version": "1.0.0",
+  "trade_date": "2026-07-10",
+  "selector_version": "1.1.0",
   "upside_score": 0.0,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
-    "回测夏普 2.02"
+    "20日动量为正",
+    "回测夏普 1.99"
   ],
   "risks": [
-    "因子分偏低 39.4",
-    "预测方向向下，概率 0.24",
+    "因子分偏低 47.9",
+    "预测方向向下，概率 0.16",
     "预测标记高波动",
     "未站上 MA20",
-    "5日跌幅较大",
-    "历史最大回撤较大 -52.00%",
-    "回测胜率偏低 33.33%",
-    "实际影响偏负面，impact_score=-27",
-    "影响数据限制：requires_q2_official_report_or_forecast"
+    "历史最大回撤较大 -51.84%",
+    "回测胜率偏低 14.29%",
+    "实际影响偏负面，impact_score=-33",
+    "影响数据限制：requires_q2_official_report_or_forecast",
+    "阈值校准：十日推演命中率偏低 10%，候选阈值上调",
+    "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
   ],
   "reject_reasons": [
-    "预测方向为 down",
-    "因子分过低 39.4",
+    "预测方向为偏空",
     "实际影响数据显著偏负面"
   ],
   "candidate_blockers": [
@@ -32,20 +33,47 @@
     "实际影响分为负"
   ],
   "next_triggers": [
-    "预测方向从 down 修复为 neutral/up",
-    "预测概率提升到 0.55 以上",
+    "预测方向从偏空修复为震荡或偏多",
+    "预测概率提升到 0.58 以上",
     "因子分提升到 55 以上",
     "收盘价重新站上 MA20",
     "实际影响分修复到非负",
     "回测最大回撤收敛到 35% 内"
   ],
   "metrics": {
-    "quality_score": 100.0,
-    "factor_score": 39.4,
+    "quality_score": 90.0,
+    "factor_score": 47.9,
+    "candidate_score_threshold": 74.0,
+    "watch_score_threshold": 57.0,
+    "probability_floor": 0.58,
     "prediction_direction": "down",
-    "prediction_probability": 0.2368,
-    "impact_score": -27.0,
+    "prediction_probability": 0.1606,
+    "impact_score": -33.0,
     "impact_direction": "negative"
   },
-  "updated_at": "2026-07-07 21:02:10"
+  "calibration": {
+    "calibration_version": "1.0.0",
+    "mode": "replay",
+    "score_adjustment": -6.0,
+    "candidate_score_delta": 4.0,
+    "watch_score_delta": 2.0,
+    "probability_floor_delta": 0.03,
+    "reasons": [],
+    "risk_notes": [
+      "十日推演命中率偏低 10%，候选阈值上调",
+      "未命中原因包含概率边界问题，需提高预测概率确认"
+    ],
+    "evidence": {
+      "evaluated_count": 10,
+      "hit_rate": 0.1,
+      "false_up_count": 0,
+      "false_down_count": 3,
+      "miss_reason_distribution": {
+        "预测概率处于边界区，后续应降低仓位或只观察": 9,
+        "看空未命中：可能忽略超跌反弹或趋势修复，需要加入反转过滤": 3,
+        "技术信号中性时方向判断不稳定，应进入 no-trade 区间": 2
+      }
+    }
+  },
+  "updated_at": "2026-07-10 17:43:27"
 }

@@ -1,26 +1,27 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-07",
-  "version": "1.0.0",
-  "updated_at": "2026-07-07 21:02:11",
+  "trade_date": "2026-07-10",
+  "version": "1.1.0",
+  "updated_at": "2026-07-10 17:43:28",
   "summary": "综合因子中性，等待更清晰信号",
   "confidence": "medium",
-  "disclaimer": "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。",
+  "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
   "stock_selection": {
     "verdict": "neutral",
     "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 49.4,
+    "composite_score": 40.3,
     "evidence": [
-      "技术分 47.0",
-      "情绪分 58.5",
+      "技术分 23.0",
+      "情绪分 74.0",
       "基本面分 42.0",
       "趋势 偏空",
       "舆情 看多"
     ],
     "drivers": [
+      "rsi14_weak",
       "macd_hist_negative",
-      "momentum_20_up",
+      "momentum_20_down",
       "ma20_breakdown"
     ],
     "risks": [
@@ -28,7 +29,7 @@
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "neutral",
+    "primary_signal": "bearish",
     "trend": "偏空"
   },
   "strategy_diagnosis": {
@@ -36,15 +37,15 @@
     "strategy": "ma_cross",
     "verdict": "ok",
     "findings": [
-      "单笔最大亏损 -7307.47（MA20死叉）"
+      "单笔最大亏损 -7248.97（MA20死叉）"
     ],
     "suggestions": [
       "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 228.45,
-      "max_drawdown_pct": -28.11,
-      "sharpe_ratio": 2.41,
+      "annual_return_pct": 227.8,
+      "max_drawdown_pct": -28.12,
+      "sharpe_ratio": 2.4,
       "win_rate_pct": 57.14,
       "closed_trades": 7
     },
@@ -52,8 +53,8 @@
       {
         "reason": "MA20死叉",
         "count": 7,
-        "total_pnl": 223835.93,
-        "avg_pnl": 31976.56,
+        "total_pnl": 223199.86,
+        "avg_pnl": 31885.69,
         "win_rate_pct": 57.14
       }
     ],
@@ -65,13 +66,13 @@
     "direction": "neutral",
     "probability": 0.4612,
     "confidence": "medium",
-    "expected_return": -0.0176,
-    "alignment": "aligned",
+    "expected_return": -0.0175,
+    "alignment": "partial",
     "drivers": [],
     "notes": [
       "5d 预测 震荡，概率 46.1%，置信度 medium",
       "历史样本 49，回测胜率 57.1%",
-      "初级技术信号与预测方向一致",
+      "信号与预测部分一致，存在中性分歧",
       "风险标记: high_volatility"
     ],
     "failure_conditions": [
@@ -81,9 +82,11 @@
   },
   "data_health": {
     "status": "ok",
-    "quality_score": 100.0,
+    "quality_score": 90.0,
     "factor_eligible": true,
-    "issues": []
+    "issues": [
+      "K 线末日期 2026-07-08 落后于最近交易日 2026-07-10"
+    ]
   },
   "limitations": [
     "rule_based_only",
@@ -99,6 +102,98 @@
       "signals/000636.json",
       "stocks/000636.json"
     ],
-    "strategy_ref": "ma_cross"
+    "strategy_ref": "ma_cross",
+    "schema_version": "1.0.0",
+    "provider": "rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "policy_passed": true,
+    "audit_path": "agent/audit/000636.json"
+  },
+  "provider": {
+    "requested": "rule",
+    "active": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "fallback_reason": ""
+  },
+  "evidence_package": {
+    "schema_version": "1.0.0",
+    "task": "stock_review",
+    "allowed_actions": [
+      "analyze",
+      "summarize",
+      "suggest"
+    ],
+    "missing_inputs": [],
+    "inputs_used": [
+      "backtest/000636_ma_cross.json",
+      "decisions/000636.json",
+      "enhance/000636.json",
+      "factors/000636.json",
+      "framework/snapshot.json",
+      "impact/000636.json",
+      "predictions/000636.json",
+      "quality/latest.json",
+      "sentiment/000636.json",
+      "signals/000636.json",
+      "stocks/000636.json"
+    ]
+  },
+  "provider_output": {
+    "provider": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "summary": "综合因子中性，等待更清晰信号",
+    "direction_view": "neutral",
+    "confidence": "medium",
+    "evidence": [
+      "技术分 23.0",
+      "情绪分 74.0",
+      "基本面分 42.0",
+      "趋势 偏空",
+      "舆情 看多",
+      "rsi14_weak",
+      "macd_hist_negative",
+      "momentum_20_down",
+      "ma20_breakdown",
+      "单笔最大亏损 -7248.97（MA20死叉）",
+      "5d 预测 震荡，概率 46.1%，置信度 medium",
+      "历史样本 49，回测胜率 57.1%",
+      "信号与预测部分一致，存在中性分歧"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高",
+      "high_volatility",
+      "rule_based_only",
+      "no_auto_trade"
+    ],
+    "failure_conditions": [
+      "high_volatility"
+    ],
+    "suggested_actions": [
+      "仅用于研究解释",
+      "进入人工复核后再考虑操作"
+    ],
+    "forbidden_actions": [
+      "不得自动下单",
+      "不得绕过风控",
+      "不得修改生产参数"
+    ],
+    "requires_human_review": true,
+    "raw_output": {
+      "source": "rule_report",
+      "missing_inputs": []
+    }
+  },
+  "policy": {
+    "passed": true,
+    "violations": [],
+    "allowed_actions": [
+      "analyze",
+      "suggest",
+      "summarize"
+    ]
   }
 }

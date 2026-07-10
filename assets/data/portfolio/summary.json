@@ -1,0 +1,35 @@
+{
+  "portfolio_version": "1.1.0",
+  "updated_at": "2026-07-10 17:43:27",
+  "summary": {
+    "initial_cash": 100000.0,
+    "cash": 100000.0,
+    "market_value": 0.0,
+    "total_equity": 100000.0,
+    "total_return_pct": 0.0,
+    "cash_weight": 1.0,
+    "invested_weight": 0.0,
+    "position_count": 0,
+    "target_count": 0,
+    "rebalance_count": 0,
+    "risk_alert_count": 0
+  },
+  "positions": [],
+  "target_positions": [],
+  "rebalance_plan": [],
+  "exposures": {
+    "cash_weight": 1.0,
+    "by_market": {},
+    "target_by_market": {},
+    "by_industry": {},
+    "target_by_industry": {},
+    "by_style": {},
+    "target_by_style": {},
+    "top_positions": []
+  },
+  "risk_alerts": [],
+  "limitations": [
+    "industry_exposure_requires_industry_classification_data",
+    "portfolio_uses_simtrade_account_until_live_account_is_connected"
+  ]
+}

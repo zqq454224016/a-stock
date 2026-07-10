@@ -1,9 +1,11 @@
-"""Agent 配置（P4-1）。"""
+"""Agent 配置（P4-1/P4-2）。"""
 
 from __future__ import annotations
 
-AGENT_VERSION = "1.0.0"
-AGENT_DISCLAIMER = "规则型解释输出，非 LLM 推理，不构成投资建议，不触发任何交易。"
+AGENT_VERSION = "1.1.0"
+AGENT_REPORT_SCHEMA_VERSION = "1.0.0"
+AGENT_PROMPT_VERSION = "stock_review_v1.0.0"
+AGENT_DISCLAIMER = "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。"
 
 # 选股综合分阈值
 SCORE_BULLISH = 65

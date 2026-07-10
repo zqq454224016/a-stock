@@ -1,0 +1,26 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260710_180856_558047_v3-plan",
+  "command": "v3-plan",
+  "argv": [
+    "v3-plan"
+  ],
+  "status": "success",
+  "started_at": "2026-07-10 18:08:56",
+  "ended_at": "2026-07-10 18:08:56",
+  "duration_sec": 0.0489,
+  "artifacts": [
+    {
+      "path": "planning/v3_roadmap.json",
+      "exists": true,
+      "size": 5404,
+      "mtime": "2026-07-10 18:08:56"
+    },
+    {
+      "path": "../../reports/planning/v3.html",
+      "exists": true,
+      "size": 4092,
+      "mtime": "2026-07-10 18:08:56"
+    }
+  ]
+}

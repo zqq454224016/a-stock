@@ -1,27 +1,27 @@
 {
   "code": "000636",
-  "trade_date": "2026-07-07",
+  "trade_date": "2026-07-10",
   "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": "1.0.0",
   "enhance_version": "1.0.0",
-  "data_version": "daily_kline_000636_20260707",
+  "data_version": "daily_kline_000636_20260710",
   "factors": {
-    "ma20_bias": -11.16,
-    "rsi14": 40.56,
-    "macd": 3.9529,
-    "macd_signal": 6.9225,
-    "macd_hist": -2.9696,
-    "atr14": 6.4079,
-    "momentum_20": 10.32,
-    "volume_ratio_20": 0.61,
+    "ma20_bias": -12.85,
+    "rsi14": 37.8,
+    "macd": 2.0768,
+    "macd_signal": 4.7952,
+    "macd_hist": -2.7184,
+    "atr14": 6.5557,
+    "momentum_20": -6.53,
+    "volume_ratio_20": 0.0,
     "above_ma20": false,
     "ma_cross": "none",
-    "technical_score": 47.0,
-    "sentiment_score": 58.5,
+    "technical_score": 23.0,
+    "sentiment_score": 74.0,
     "fundamental_score": 42.0,
     "fund_flow_score": null,
-    "multi_factor_score": 49.4,
+    "multi_factor_score": 40.3,
     "has_sentiment": true,
     "has_fundamental": true,
     "has_fund_flow": false,
@@ -31,14 +31,14 @@
       "fundamental": 0.167
     },
     "fundamental_detail": {
-      "pe_ttm": 230.64853929,
-      "pb": 5.67802928,
-      "market_cap_yi": 708.79,
-      "valuation_source": "eastmoney_value",
-      "next_lockup": "2023-12-08",
-      "forecast_type": null
+      "pe_ttm": 225.94,
+      "pb": 5.98,
+      "market_cap_yi": null,
+      "valuation_source": "baidu_pe",
+      "next_lockup": null,
+      "forecast_type": "机构预测"
     },
     "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-07 21:01:29"
+  "updated_at": "2026-07-10 17:42:41"
 }
