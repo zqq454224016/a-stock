@@ -3,20 +3,23 @@
 
 from __future__ import annotations
 
-import json
 import re
-from datetime import datetime
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA_FILE = ROOT / "assets" / "data" / "latest.json"
-REPORTS_DIR = ROOT / "reports"
+sys.path.insert(0, str(ROOT))
+
+from quant_system.presentation.report_base import css_links, data_path, read_json, read_text, report_path, safe_json_script, write_html
+
+DATA_FILE = data_path("latest.json")
+REPORTS_DIR = report_path()
 
 
 def load_data() -> dict:
     if not DATA_FILE.exists():
         raise FileNotFoundError(f"数据文件不存在: {DATA_FILE}，请先运行 fetch_data.py")
-    return json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    return read_json(DATA_FILE, {})
 
 
 def date_slug(trade_date: str) -> str:
@@ -31,8 +34,7 @@ def render_daily_report(data: dict) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{data['trade_date']} 每日行情 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
 <body>
@@ -84,7 +86,7 @@ def render_daily_report(data: dict) -> str:
 
   <script src="../../js/chart.js"></script>
   <script>
-    const data = {json.dumps(data, ensure_ascii=False)};
+    const data = {safe_json_script(data)};
     renderIndexStats(data.indices, 'index-stats');
     renderIndexChart('index-chart', data.indices);
     renderDistributionChart('distribution-chart', data.market_distribution);
@@ -104,8 +106,7 @@ def render_industry_report(data: dict) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{data['trade_date']} 板块行业 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
 <body>
@@ -134,7 +135,7 @@ def render_industry_report(data: dict) -> str:
 
   <script src="../../js/chart.js"></script>
   <script>
-    renderIndustryChart('industry-chart', {json.dumps(industries, ensure_ascii=False)});
+    renderIndustryChart('industry-chart', {safe_json_script(industries)});
   </script>
 </body>
 </html>
@@ -149,8 +150,7 @@ def render_fund_flow_report(data: dict) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{data['trade_date']} 资金流向 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
 </head>
 <body>
   <header class="site-header">
@@ -209,8 +209,7 @@ def render_stock_rank_report(data: dict) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{data['trade_date']} 个股排行 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
 </head>
 <body>
   <header class="site-header">
@@ -261,7 +260,7 @@ def update_report_index(data: dict) -> None:
         return
 
     slug = date_slug(data["trade_date"])
-    content = index_path.read_text(encoding="utf-8")
+    content = read_text(index_path)
 
     categories = [
         ("daily", f"daily/{slug}.html", f"{data['trade_date']} 每日行情概览"),
@@ -295,7 +294,7 @@ def update_report_index(data: dict) -> None:
         new_inner = new_item + inner
         content = content[:match.start(2)] + new_inner + content[match.end(2):]
 
-    index_path.write_text(content, encoding="utf-8")
+    write_html(index_path, content)
     print(f"[gen_report] 已更新 {index_path}")
 
 
@@ -311,8 +310,7 @@ def main() -> None:
     }
 
     for path, html in reports.items():
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(html, encoding="utf-8")
+        write_html(path, html)
         print(f"[gen_report] 已生成 {path}")
 
     update_report_index(data)

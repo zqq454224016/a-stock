@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-14 00:10:54",
   "items": [
     {
       "code": "600378",
@@ -31,7 +31,7 @@
     {
       "code": "603629",
       "name": "利通电子",
-      "impact_score": -33,
+      "impact_score": -27,
       "impact_direction": "negative",
       "event_count": 2,
       "evidence_quality": {
@@ -66,13 +66,11 @@
       "name": "风华高科",
       "impact_score": -26,
       "impact_direction": "negative",
-      "event_count": 2,
+      "event_count": 1,
       "evidence_quality": {
-        "avg_score": 78.5,
+        "avg_score": 95.0,
         "low_quality_event_count": 0,
-        "missing_evidence": [
-          "缺少文字证据"
-        ]
+        "missing_evidence": []
       },
       "post_event_review": {
         "status": "pending",
@@ -88,9 +86,7 @@
           "watch_action_hit_rule_uses_abs_return_below_1pct"
         ]
       },
-      "limitations": [
-        "not_q2_report_period"
-      ]
+      "limitations": []
     },
     {
       "code": "000988",
@@ -131,14 +127,17 @@
         "missing_evidence": []
       },
       "post_event_review": {
-        "status": "missing",
+        "status": "pending",
         "evaluated_count": 0,
-        "pending_count": 0,
+        "pending_count": 9,
         "hit_rate": null,
         "avg_return_pct": null,
         "worst_adverse_pct": null,
+        "failure_reasons": [],
         "limitations": [
-          "impact_review_missing"
+          "impact_review_requires_future_kline",
+          "review_requires_future_kline_after_signal_date",
+          "watch_action_hit_rule_uses_abs_return_below_1pct"
         ]
       },
       "limitations": []

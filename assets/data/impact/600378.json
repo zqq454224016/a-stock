@@ -1,7 +1,7 @@
 {
   "code": "600378",
   "name": "昊华科技",
-  "trade_date": "2026-07-09",
+  "trade_date": "2026-07-13",
   "version": "1.1.0",
   "impact_score": 0,
   "impact_direction": "neutral",
@@ -26,5 +26,5 @@
     ]
   },
   "limitations": [],
-  "updated_at": "2026-07-10 17:43:27"
+  "updated_at": "2026-07-14 00:10:54"
 }

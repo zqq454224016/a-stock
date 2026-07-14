@@ -1,26 +1,26 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-13",
   "version": "1.1.0",
-  "impact_score": -33,
+  "impact_score": -27,
   "impact_direction": "negative",
   "events": [
     {
       "event_type": "valuation_pressure",
       "title": "估值压力",
-      "period": "2026-07-10",
-      "announce_date": "2026-07-10",
-      "impact_score": -33,
+      "period": "2026-07-13",
+      "announce_date": "2026-07-13",
+      "impact_score": -27,
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "pe_ttm": 80.01,
-        "pb": 20.15
+        "pe_ttm": 74.22,
+        "pb": 17.67
       },
       "evidence": [
-        "PE(TTM)=80.01",
-        "PB=20.15"
+        "PE(TTM)=74.22",
+        "PB=17.67"
       ],
       "source": "baidu_pe",
       "limitations": [],
@@ -83,5 +83,5 @@
   "limitations": [
     "requires_q2_official_report_or_forecast"
   ],
-  "updated_at": "2026-07-10 17:43:27"
+  "updated_at": "2026-07-14 00:10:54"
 }

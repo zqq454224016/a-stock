@@ -5,9 +5,9 @@
   "path": "latest.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/latest.json",
   "exists": true,
-  "size": 4895,
-  "file_mtime": "2026-07-10 17:40:44",
-  "updated_at": "2026-07-10 17:40:44",
+  "size": 4913,
+  "file_mtime": "2026-07-14 00:08:11",
+  "updated_at": "2026-07-14 00:08:11",
   "record_count": 1,
   "field_summary": {
     "top_level_fields": [
@@ -55,5 +55,5 @@
     "payload_trade_date": "2026-07-07",
     "payload_version": ""
   },
-  "registered_at": "2026-07-10 18:10:10"
+  "registered_at": "2026-07-14 00:10:55"
 }

@@ -1,15 +1,16 @@
-# AI 量化交易系统（增强版需求文档 v2.33）
+# AI 量化交易系统（增强版需求文档 v2.41）
 
-> **当前状态**：已完成数据基建、因子、回测、5d 预测、上涨候选池、实际影响数据、每日涨跌归因、单股决策、模拟交易、组合管理、后验复盘、规则型 Agent、Agent Provider 框架、多周期推荐、模块化契约、统一控制台、监控告警与数据血缘、运行时任务日志、数据注册表、静态看板 MVP
-> **目标**：构建「数据 → 因子 → 回测 → 实盘 → AI Agent → 可视化」的完整闭环量化系统  
-> **本次迭代**：完成 V3-02 数据注册表首版，新增 `registry` 命令和 `assets/data/data_registry/`，为关键产物记录来源任务、更新时间、字段摘要、记录数、降级状态和动态血缘；V3 当前唯一下一步切换为 V3-03 全市场股票池首版
+> **当前状态**：MVP / v2 首版主线已全量完成（数据基建、因子、回测、5d 预测、上涨候选池、实际影响、每日归因、单股决策、模拟交易、组合管理、后验复盘、Agent、多周期推荐、模块化契约、统一控制台、监控血缘、任务日志、数据注册表、静态看板）
+> **目标**：构建「数据 → 因子 → 回测 → 实盘 → AI Agent → 可视化」的完整闭环量化系统
+> **文档分工**：能力说明以本文为准；**工程优化**见 `Quantification-Optimization.md`；**模块拆分清单**见 `Quantification-Module-Split.md`；能力扩展见 `Quantification-Roadmap-v3.md`
+> **本次迭代**：完成工程优化 S-05 任务 runtime 首轮收尾；sentiment / enhance / stock / intraday 复用公共任务编排；当前唯一下一步为 S-06 决策域边界
 
 ---
 
 ## 目录
 
 - [一、系统总体架构](#一系统总体架构)
-  - [1.3 MVP 闭环定义](#13-mvp-闭环定义)
+  - [1.3 MVP 闭环（已归档）](#13-mvp-闭环已归档)
   - [1.4 目标工程结构](#14-目标工程结构)
   - [1.5 阶段能力矩阵](#15-阶段能力矩阵)
 - [二、阶段拆分](#二阶段拆分)
@@ -90,31 +91,22 @@ Web 可视化平台
 | 模拟交易 | `trading/`, `tasks/sim_trade_job.py`, `reports/trading/` | ✅ P3-1 MVP 已完成（虚拟账户/订单/持仓/复盘） |
 | 调度 | `scheduler/cron_runner` | ✅ 已完成 |
 
-### 1.3 MVP 闭环定义
+### 1.3 MVP 闭环（已归档）
 
-> **MVP 目标**：优先打通「日线数据 → 清洗 / 复权 → 技术因子 → 单策略回测 → 报告输出」闭环，先验证数据可信度和策略评估能力，再扩展舆情、研报、实盘和 Agent。
+> **归档结论（2026-07-10）**：MVP 与 v2 首版主线已全量完成，不再作为待建设清单。
+> `./run.sh mvp` 仅保留为全链路兼容别名。后续工程工作以 `Quantification-Optimization.md` 为准；能力扩展以 `Quantification-Roadmap-v3.md` 为准。
 
-**MVP 范围**
+**已交付范围（归档）**
 
-- 日线 K 线数据清洗、去重、缺失检查、前复权。
-- A 股交易日历统一。
-- 技术因子库 MVP：MA、MACD、RSI、ATR、动量、均线突破。
-- 单策略回测 MVP：T+1、手续费、印花税、滑点、涨跌停和停牌处理。
-- 输出回测报告：收益曲线、最大回撤、夏普比率、胜率、盈亏比、交易明细。
+- 日线清洗 / 复权 / 交易日历 / 质量门禁。
+- 技术因子、单策略回测、5d 可验证预测与静态报告。
+- 在此基础上已扩展：舆情、数据增强、候选池、决策、模拟交易、复盘、Agent、控制台、监控与注册表。
 
-**MVP 暂不包含**
+**仍不在默认范围内**
 
 - 自动实盘下单。
 - Tick 级高频回测。
 - 多 Agent 自动决策闭环。
-- 复杂组合优化和机器学习模型训练。
-
-**MVP 验收标准**
-
-- 可对不少于 100 只 A 股运行最近 3 年日线回测。
-- 回测结果可重复，固定输入数据与参数时输出一致。
-- 每次回测可追溯使用的数据版本、因子版本、策略版本和参数。
-- 对低质量数据可主动告警或拒绝进入因子 / 回测流程。
 
 ### 1.4 目标工程结构
 
@@ -1647,6 +1639,14 @@ quant_system/
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
+| v2.41 | 2026-07-14 | 完成工程优化 S-05 首轮收尾：`intraday_job.py` 接入 `tasks/runtime.py`，runtime 增加 index 写入钩子，`sentiment_job.py`、`enhance_job.py`、`stock_job.py`、`intraday_job.py` 均复用公共 watchlist、并发、成功项过滤和索引保存模板；当前唯一下一步推进为 S-06 决策域边界 |
+| v2.40 | 2026-07-14 | 完成工程优化 S-05 任务 runtime 首轮：新增 `tasks/runtime.py`，统一 codes/watchlist 解析、科创参考过滤、并发 map、成功项过滤和空列表日志；迁移 `sentiment_job.py`、`enhance_job.py`、`stock_job.py` 的重复编排；新增 `test_task_runtime.py`；当前唯一下一步为继续迁移 `intraday_job.py` |
+| v2.39 | 2026-07-14 | 完成工程优化 S-03 增强 Provider 首轮拆分：`enhance_api.py` 降为 51 行门面，新增 `data_source/enhance/runtime.py`、`valuation.py`、`corporate.py`、`fund_flow.py`、`bundle.py`；`enhance_job` 调用方式不变；当前唯一下一步推进为 S-05 任务编排公共层 |
+| v2.38 | 2026-07-14 | 完成工程优化 S-04 主要大脚本迁移：`gen_stock_report.py`、`gen_report.py`、`report_index_utils.py` 接入 `presentation/report_base.py`，统一 JSON/文本读写、HTML 写入、公共 CSS 与安全 JSON 注入；报表公共层测试增至 7 项；当前唯一下一步推进为 S-03 增强 Provider 拆分 |
+| v2.37 | 2026-07-14 | 完成工程优化 S-04 首轮：新增 `quant_system/presentation/report_base.py` 与 `i18n.py`，收敛报表 JSON 读写、HTML 写入、公共 CSS 和内嵌 JSON 安全转义；迁移 `gen_console_report.py` 与 `gen_selector_report.py`；新增公共层测试；当前唯一下一步为继续迁移 `gen_stock_report.py`、`gen_report.py`、`report_index_utils.py` |
+| v2.36 | 2026-07-13 | 完成工程优化 S-02 首轮代码拆分：`AkShareAPI` 降为 68 行门面，新增 `data_source/providers/spot.py`、`spot_quote.py`、`daily.py`、`market_meta.py`、`snapshot.py`；保持原 import 路径不变；降级、行情快照、源守卫相关测试全绿；当前唯一下一步推进为 S-04 报表公共层 |
+| v2.35 | 2026-07-13 | 完成工程优化 S-01 首轮代码拆分：新增 `quant_system/apps/cli.py`、`commands.py`、`pipeline.py`、`reports.py`，`main.py` 变为 38 行薄入口；新增 CLI 分发单测覆盖 `mvp` 兼容别名与 `all` skip 参数；当前唯一下一步推进为 S-02 行情 Provider 拆分 |
+| v2.34 | 2026-07-10 | 确认 MVP/v2 首版主线已全量完成并归档；移除 `Quantification-Roadmap-v2.md` 与 `ExcellentQuantSystemRequirements.md`；新增 `Quantification-Optimization.md`（代码优化、功能点优化、模块拆分）；文档分工：能力说明 / 工程优化 / v3 能力扩展 |
 | v2.33 | 2026-07-10 | 完成 V3-02 数据注册表首版：新增 `registry/`、`registry` 命令、`assets/data/data_registry/`，为 20 个关键产物记录存在性、更新时间、记录数、字段摘要、降级状态、依赖和最近生成任务；`monitor` 自动刷新注册表并展示注册表血缘；当前唯一下一步切换为 V3-03 全市场股票池首版 |
 | v2.32 | 2026-07-10 | 新增每日涨跌归因模块：新增 `attribution/`、`attribution` 命令、`assets/data/attribution/` 和 `reports/attribution/index.html`，对比昨日/今日涨跌，输出量价、趋势、大盘、资金、事件、replay 根因、上涨逻辑破坏原因和后续观察价位；已接入首页、监控和全流程 |
 | v2.31 | 2026-07-10 | 完成 V3-01 运行时任务日志首版：新增 `monitoring/task_runs.py`、`assets/data/task_runs/*.json` 与 `index.json`，CLI 入口统一记录成功/失败/跳过、耗时、异常摘要和关键产物状态；`monitor` 快照和报告新增最近任务、失败告警和最近成功时间；当前唯一下一步切换为 V3-02 数据注册表与血缘版本 |

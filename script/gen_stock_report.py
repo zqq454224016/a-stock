@@ -3,20 +3,21 @@
 
 from __future__ import annotations
 
-import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STOCK_DATA_DIR = ROOT / "assets" / "data" / "stocks"
-WATCHLIST_FILE = ROOT / "assets" / "data" / "watchlist.json"
-REPORTS_DIR = ROOT / "reports" / "stock"
-
-import sys
 sys.path.insert(0, str(ROOT))
+
 from quant_system.config.crawler_config import CrawlerConfig
+from quant_system.presentation.report_base import css_links, data_path, read_data_json, read_json, read_text, report_path, safe_json_script, write_html
 from quant_system.utils.i18n_labels import translate_limitations, translate_status
 from quant_system.utils.watchlist_utils import ensure_watchlist_stocks, get_watchlist_codes
+
+STOCK_DATA_DIR = data_path("stocks")
+WATCHLIST_FILE = data_path("watchlist.json")
+REPORTS_DIR = report_path("stock")
 
 CACHE_META = """  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
@@ -27,7 +28,7 @@ def load_stock(code: str) -> dict:
     path = STOCK_DATA_DIR / f"{code}.json"
     if not path.exists():
         raise FileNotFoundError(f"个股数据不存在: {path}，请先运行 python quant_system/main.py stock")
-    return json.loads(path.read_text(encoding="utf-8"))
+    return read_json(path, {})
 
 
 def render_stock_report(data: dict) -> str:
@@ -41,14 +42,9 @@ def render_stock_report(data: dict) -> str:
     rng = a["range_60d"]
     factors = data.get("factors") or {}
     quality = data.get("quality") or {}
-    predict_path = ROOT / "assets" / "data" / "predictions" / f"{code}.json"
-    prediction = {}
-    if predict_path.exists():
-        prediction = json.loads(predict_path.read_text(encoding="utf-8"))
+    prediction = read_data_json(f"predictions/{code}.json", {})
     if not factors:
-        factor_path = ROOT / "assets" / "data" / "factors" / f"{code}.json"
-        if factor_path.exists():
-            factors = json.loads(factor_path.read_text(encoding="utf-8")).get("factors", {})
+        factors = (read_data_json(f"factors/{code}.json", {}) or {}).get("factors", {})
 
     def fac(key, fmt=".2f", suffix=""):
         v = factors.get(key)
@@ -82,9 +78,7 @@ def render_stock_report(data: dict) -> str:
 
     primary_signal = data.get("primary_signal") or {}
     if not primary_signal:
-        sig_path = ROOT / "assets" / "data" / "signals" / f"{code}.json"
-        if sig_path.exists():
-            primary_signal = json.loads(sig_path.read_text(encoding="utf-8"))
+        primary_signal = read_data_json(f"signals/{code}.json", {})
 
     def sig_label(s):
         return {"bullish": "偏多 ↑", "bearish": "偏空 ↓", "neutral": "震荡 →"}.get(s, s or "--")
@@ -114,9 +108,7 @@ def render_stock_report(data: dict) -> str:
     </section>"""
 
     sentiment_data = {}
-    sent_path = ROOT / "assets" / "data" / "sentiment" / f"{code}.json"
-    if sent_path.exists():
-        sentiment_data = json.loads(sent_path.read_text(encoding="utf-8"))
+    sentiment_data = read_data_json(f"sentiment/{code}.json", {})
     sent_factors = sentiment_data.get("factors") or {}
 
     sentiment_block = ""
@@ -157,9 +149,7 @@ def render_stock_report(data: dict) -> str:
     </section>"""
 
     enhance_data = {}
-    enhance_path = ROOT / "assets" / "data" / "enhance" / f"{code}.json"
-    if enhance_path.exists():
-        enhance_data = json.loads(enhance_path.read_text(encoding="utf-8"))
+    enhance_data = read_data_json(f"enhance/{code}.json", {})
 
     enhance_block = ""
     if enhance_data:
@@ -257,8 +247,7 @@ def render_stock_report(data: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {CACHE_META}
   <title>{name} ({code}) 个股分析 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
 <body>
@@ -430,7 +419,7 @@ def render_stock_report(data: dict) -> str:
   <script src="../../js/chart.js"></script>
   <script src="../../js/live.js"></script>
   <script>
-    const stockData = {json.dumps(data, ensure_ascii=False)};
+    const stockData = {safe_json_script(data)};
     const stockCode = "{code}";
     renderStockKlineChart('kline-chart', stockData.kline);
     renderStockVolumeChart('volume-chart', stockData.kline);
@@ -447,7 +436,7 @@ def update_report_index(stocks: list[dict]) -> None:
     if not index_path.exists() or not stocks:
         return
 
-    content = index_path.read_text(encoding="utf-8")
+    content = read_text(index_path)
 
     if 'data-category="stock"' not in content:
         stock_section = """
@@ -487,14 +476,14 @@ def update_report_index(stocks: list[dict]) -> None:
 
     new_inner = "".join(items)
     content = content[:match.start(2)] + new_inner + content[match.end(2):]
-    index_path.write_text(content, encoding="utf-8")
+    write_html(index_path, content)
     print(f"[gen_stock_report] 已更新 {index_path}")
 
 
 def load_watchlist_codes() -> list[str]:
     if not WATCHLIST_FILE.exists():
         return []
-    data = json.loads(WATCHLIST_FILE.read_text(encoding="utf-8"))
+    data = read_json(WATCHLIST_FILE, {})
     return [str(s["code"]) for s in data.get("stocks", [])]
 
 
@@ -519,7 +508,7 @@ def main() -> None:
     if not codes:
         index_file = STOCK_DATA_DIR / "index.json"
         if index_file.exists():
-            index = json.loads(index_file.read_text(encoding="utf-8"))
+            index = read_json(index_file, {})
             codes = [s["code"] for s in index.get("stocks", [])]
         else:
             codes = [p.stem for p in STOCK_DATA_DIR.glob("*.json") if p.stem != "index"]
@@ -529,7 +518,6 @@ def main() -> None:
         return
 
     cleanup_stale_stock_files(codes)
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     generated = []
 
     for code in codes:
@@ -539,7 +527,7 @@ def main() -> None:
             print(f"[gen_stock_report] 跳过 {code}: {e}")
             continue
         out = REPORTS_DIR / f"{code}.html"
-        out.write_text(render_stock_report(data), encoding="utf-8")
+        write_html(out, render_stock_report(data))
         print(f"[gen_stock_report] 已生成 {out}")
         generated.append({
             "code": code,

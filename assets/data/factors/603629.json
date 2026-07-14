@@ -1,27 +1,27 @@
 {
   "code": "603629",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": "1.0.0",
   "enhance_version": "1.0.0",
-  "data_version": "daily_kline_603629_20260710",
+  "data_version": "daily_kline_603629_20260714",
   "factors": {
-    "ma20_bias": -7.98,
-    "rsi14": 40.38,
-    "macd": -1.5866,
-    "macd_signal": 0.687,
-    "macd_hist": -2.2737,
-    "atr14": 13.2386,
-    "momentum_20": 17.27,
+    "ma20_bias": -14.25,
+    "rsi14": 27.13,
+    "macd": -3.465,
+    "macd_signal": -0.6784,
+    "macd_hist": -2.7866,
+    "atr14": 12.0364,
+    "momentum_20": -9.48,
     "volume_ratio_20": 0.0,
     "above_ma20": false,
     "ma_cross": "none",
-    "technical_score": 47.0,
-    "sentiment_score": 56.8,
+    "technical_score": 23.0,
+    "sentiment_score": 52.9,
     "fundamental_score": 36.0,
     "fund_flow_score": null,
-    "multi_factor_score": 47.9,
+    "multi_factor_score": 33.5,
     "has_sentiment": true,
     "has_fundamental": true,
     "has_fund_flow": false,
@@ -31,8 +31,8 @@
       "fundamental": 0.167
     },
     "fundamental_detail": {
-      "pe_ttm": 80.01,
-      "pb": 20.15,
+      "pe_ttm": 74.22,
+      "pb": 17.67,
       "market_cap_yi": null,
       "valuation_source": "baidu_pe",
       "next_lockup": null,
@@ -40,5 +40,5 @@
     },
     "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-10 17:42:41"
+  "updated_at": "2026-07-14 00:10:19"
 }

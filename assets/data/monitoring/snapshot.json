@@ -1,6 +1,6 @@
 {
   "monitoring_version": "1.0.0",
-  "updated_at": "2026-07-10 18:10:10",
+  "updated_at": "2026-07-14 00:10:55",
   "summary": {
     "module_count": 21,
     "ok_count": 21,
@@ -13,7 +13,7 @@
     "failed_task_runs": 0,
     "last_task_command": "monitor",
     "last_task_status": "success",
-    "last_success_at": "2026-07-10 18:09:07",
+    "last_success_at": "2026-07-10 18:10:10",
     "registry_artifact_count": 20,
     "registry_with_task_lineage_count": 2,
     "registry_degraded_count": 1
@@ -25,9 +25,9 @@
       "path": "latest.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.49,
+      "age_hours": 0.05,
       "item_count": 1,
-      "updated_at": "2026-07-10 17:40:44",
+      "updated_at": "2026-07-14 00:08:11",
       "dependencies": []
     },
     {
@@ -36,9 +36,9 @@
       "path": "stocks/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.48,
+      "age_hours": 0.04,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:41:26",
+      "updated_at": "2026-07-14 00:08:48",
       "dependencies": [
         "market"
       ]
@@ -49,9 +49,9 @@
       "path": "enhance/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.46,
+      "age_hours": 0.01,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:42:41",
+      "updated_at": "2026-07-14 00:10:19",
       "dependencies": [
         "stocks",
         "market"
@@ -63,9 +63,9 @@
       "path": "factors/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.46,
+      "age_hours": 0.01,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:42:41",
+      "updated_at": "2026-07-14 00:10:19",
       "dependencies": [
         "stocks"
       ]
@@ -76,9 +76,9 @@
       "path": "backtest/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "stocks",
         "factors"
@@ -90,9 +90,9 @@
       "path": "predictions/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "stocks",
         "factors",
@@ -105,9 +105,9 @@
       "path": "selector/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "predictions",
         "factors",
@@ -120,9 +120,9 @@
       "path": "decisions/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "predictions",
         "selector",
@@ -136,9 +136,9 @@
       "path": "review/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:28",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "predictions",
         "selector",
@@ -151,7 +151,7 @@
       "path": "replay/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 78.33,
+      "age_hours": 156.35,
       "item_count": 4,
       "updated_at": "2026-07-07 11:50:05",
       "dependencies": [
@@ -165,9 +165,9 @@
       "path": "impact/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "enhance",
         "review"
@@ -179,9 +179,9 @@
       "path": "attribution/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.29,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:52:51",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "stocks",
         "market",
@@ -195,9 +195,9 @@
       "path": "agent/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:28",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "stocks",
         "predictions",
@@ -210,9 +210,9 @@
       "path": "trading/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "decisions",
         "predictions"
@@ -224,9 +224,9 @@
       "path": "portfolio/summary.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.45,
+      "age_hours": 0.0,
       "item_count": 0,
-      "updated_at": "2026-07-10 17:43:27",
+      "updated_at": "2026-07-14 00:10:54",
       "dependencies": [
         "decisions",
         "trading"
@@ -238,7 +238,7 @@
       "path": "recommendations/summary.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 24.87,
+      "age_hours": 102.88,
       "item_count": 12,
       "updated_at": "2026-07-09 17:18:16",
       "dependencies": [
@@ -255,7 +255,7 @@
       "path": "framework/snapshot.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 2.98,
+      "age_hours": 80.99,
       "item_count": 4,
       "updated_at": "2026-07-10 15:11:19",
       "dependencies": [
@@ -271,7 +271,7 @@
       "path": "../../reports/console/index.html",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.24,
+      "age_hours": 0.0,
       "item_count": 0,
       "updated_at": "",
       "dependencies": [
@@ -288,9 +288,9 @@
       "path": "quality/latest.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.51,
+      "age_hours": 0.06,
       "item_count": 5,
-      "updated_at": "2026-07-10 17:39:35",
+      "updated_at": "2026-07-14 00:07:32",
       "dependencies": [
         "stocks"
       ]
@@ -301,9 +301,9 @@
       "path": "task_runs/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.02,
-      "item_count": 12,
-      "updated_at": "2026-07-10 18:09:07",
+      "age_hours": 78.01,
+      "item_count": 13,
+      "updated_at": "2026-07-10 18:10:10",
       "dependencies": []
     },
     {
@@ -314,7 +314,7 @@
       "status": "ok",
       "age_hours": 0.0,
       "item_count": 20,
-      "updated_at": "2026-07-10 18:10:10",
+      "updated_at": "2026-07-14 00:10:55",
       "dependencies": [
         "task_runs"
       ]
@@ -371,6 +371,34 @@
     }
   ],
   "recent_task_runs": [
+    {
+      "run_id": "20260710_181010_361054_monitor",
+      "command": "monitor",
+      "argv": [
+        "monitor"
+      ],
+      "status": "success",
+      "started_at": "2026-07-10 18:10:10",
+      "ended_at": "2026-07-10 18:10:10",
+      "duration_sec": 0.1274,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28626,
+          "mtime": "2026-07-10 18:10:10"
+        },
+        {
+          "path": "../../reports/monitoring/index.html",
+          "exists": true,
+          "size": 15230,
+          "mtime": "2026-07-10 18:10:10"
+        }
+      ],
+      "path": "task_runs/20260710_181010_361054_monitor.json"
+    },
     {
       "run_id": "20260710_180907_040331_monitor",
       "command": "monitor",
@@ -597,34 +625,6 @@
         }
       ],
       "path": "task_runs/20260710_174242_659245_monitor.json"
-    },
-    {
-      "run_id": "20260710_174151_067167_monitor",
-      "command": "monitor",
-      "argv": [
-        "monitor"
-      ],
-      "status": "success",
-      "started_at": "2026-07-10 17:41:51",
-      "ended_at": "2026-07-10 17:41:51",
-      "duration_sec": 0.055,
-      "error": {},
-      "skip_reason": "",
-      "artifacts": [
-        {
-          "path": "monitoring/snapshot.json",
-          "exists": true,
-          "size": 15164,
-          "mtime": "2026-07-10 17:41:51"
-        },
-        {
-          "path": "../../reports/monitoring/index.html",
-          "exists": true,
-          "size": 9471,
-          "mtime": "2026-07-10 17:41:51"
-        }
-      ],
-      "path": "task_runs/20260710_174151_067167_monitor.json"
     }
   ],
   "data_registry": {

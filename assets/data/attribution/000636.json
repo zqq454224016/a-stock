@@ -3,53 +3,77 @@
   "name": "风华高科",
   "daily_attribution_version": "1.0.0",
   "status": "ok",
-  "trade_date": "2026-07-10",
-  "previous_trade_date": "2026-07-09",
-  "pattern": "yesterday_up_today_down",
+  "trade_date": "2026-07-14",
+  "previous_trade_date": "2026-07-13",
+  "pattern": "down_then_flat",
   "items": [
     {
       "label": "昨日",
-      "date": "2026-07-09",
+      "date": "2026-07-13",
       "fact": {
-        "date": "2026-07-09",
-        "open": 61.79,
-        "high": 64.9,
-        "low": 59.07,
-        "close": 64.45,
-        "prev_close": 60.61,
-        "return_pct": 6.34,
-        "intraday_pct": 4.3,
-        "amplitude_pct": 9.87,
-        "volume": 93822173.0,
-        "volume_ratio_20": 0.72,
-        "ma5": 61.55,
-        "ma10": 67.96,
-        "ma20": 69.07,
-        "ma60": 46.43,
-        "direction": "up"
+        "date": "2026-07-13",
+        "open": 56.0,
+        "high": 57.5,
+        "low": 54.01,
+        "close": 54.01,
+        "prev_close": 60.01,
+        "return_pct": -10.0,
+        "intraday_pct": -3.55,
+        "amplitude_pct": 6.46,
+        "volume": 22290963.0,
+        "volume_ratio_20": 0.18,
+        "ma5": 60.05,
+        "ma10": 63.51,
+        "ma20": 68.61,
+        "ma60": 47.64,
+        "direction": "down"
       },
-      "direction": "up",
+      "direction": "down",
       "cause_scores": {
-        "bullish": 1.1,
-        "bearish": 5.0,
-        "neutral": 1.0
+        "bullish": 0.0,
+        "bearish": 7.9,
+        "neutral": 0.0
       },
       "dominant_causes": [
         {
           "category": "price_action",
-          "label": "单日涨幅较强",
-          "effect": "bullish",
-          "evidence": "收盘涨幅 6.34%",
+          "label": "单日跌幅较深",
+          "effect": "bearish",
+          "evidence": "收盘跌幅 -10.00%",
           "source": "stock.kline",
           "weight": 1.1
+        },
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "上证指数、深证成指、创业板指 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 54.01，MA20 68.61",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "reversal",
+          "label": "回吐前一交易日收盘",
+          "effect": "bearish",
+          "evidence": "收盘 54.01 低于前日 60.01",
+          "source": "stock.kline",
+          "weight": 1.0
         }
       ],
       "all_causes": [
         {
           "category": "price_action",
-          "label": "单日涨幅较强",
-          "effect": "bullish",
-          "evidence": "收盘涨幅 6.34%",
+          "label": "单日跌幅较深",
+          "effect": "bearish",
+          "evidence": "收盘跌幅 -10.00%",
           "source": "stock.kline",
           "weight": 1.1
         },
@@ -57,7 +81,23 @@
           "category": "trend",
           "label": "收盘跌破 MA20",
           "effect": "bearish",
-          "evidence": "收盘 64.45，MA20 69.07",
+          "evidence": "收盘 54.01，MA20 68.61",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "short_trend",
+          "label": "收盘低于 MA5",
+          "effect": "bearish",
+          "evidence": "收盘 54.01，MA5 60.05",
+          "source": "stock.kline",
+          "weight": 0.8
+        },
+        {
+          "category": "reversal",
+          "label": "回吐前一交易日收盘",
+          "effect": "bearish",
+          "evidence": "收盘 54.01 低于前日 60.01",
           "source": "stock.kline",
           "weight": 1.0
         },
@@ -73,7 +113,7 @@
           "category": "fund_flow",
           "label": "市场主力资金净流出",
           "effect": "bearish",
-          "evidence": "主力净流出 -790.00 亿",
+          "evidence": "主力净流出 -1216.10 亿",
           "source": "latest.fund_flow",
           "weight": 1.0
         },
@@ -87,98 +127,58 @@
         },
         {
           "category": "event",
-          "label": "业绩预告：机构预测",
-          "effect": "neutral",
-          "evidence": "影响分 0",
-          "source": "impact.earnings_forecast",
-          "weight": 1.0
-        },
-        {
-          "category": "event",
           "label": "估值压力",
           "effect": "bearish",
-          "evidence": "PE(TTM)=225.94；PB=5.98",
+          "evidence": "PE(TTM)=203.35；PB=5.01",
           "source": "impact.valuation_pressure",
           "weight": 1.0
         }
       ],
-      "conclusion": "上涨主要由量价/趋势强化、市场或事件正向因素共同解释"
+      "conclusion": "下跌主要由技术走弱、资金/大盘压力或事件风险共同解释"
     },
     {
       "label": "今日",
-      "date": "2026-07-10",
+      "date": "2026-07-14",
       "fact": {
-        "date": "2026-07-10",
-        "open": 64.7,
-        "high": 66.28,
-        "low": 60.0,
-        "close": 60.01,
-        "prev_close": 64.45,
-        "return_pct": -6.89,
-        "intraday_pct": -7.25,
-        "amplitude_pct": 10.47,
+        "date": "2026-07-14",
+        "open": 56.0,
+        "high": 57.5,
+        "low": 54.01,
+        "close": 54.01,
+        "prev_close": 54.01,
+        "return_pct": 0.0,
+        "intraday_pct": -3.55,
+        "amplitude_pct": 6.46,
         "volume": 0.0,
         "volume_ratio_20": 0.0,
-        "ma5": 60.93,
-        "ma10": 66.12,
-        "ma20": 68.86,
-        "ma60": 47.09,
-        "direction": "down"
+        "ma5": 58.62,
+        "ma10": 61.7,
+        "ma20": 68.06,
+        "ma60": 48.19,
+        "direction": "flat"
       },
-      "direction": "down",
+      "direction": "flat",
       "cause_scores": {
         "bullish": 0.0,
-        "bearish": 8.9,
-        "neutral": 1.3
+        "bearish": 5.8,
+        "neutral": 0.3
       },
       "dominant_causes": [
         {
-          "category": "price_action",
-          "label": "单日跌幅较深",
-          "effect": "bearish",
-          "evidence": "收盘跌幅 -6.89%",
+          "category": "data_quality",
+          "label": "成交量缺失或为零",
+          "effect": "neutral",
+          "evidence": "当日成交量不可用，资金归因降权",
           "source": "stock.kline",
-          "weight": 1.1
-        },
-        {
-          "category": "market",
-          "label": "大盘走弱",
-          "effect": "bearish",
-          "evidence": "上证指数、深证成指、创业板指 跌幅超过1%",
-          "source": "latest.indices",
-          "weight": 1.1
-        },
-        {
-          "category": "trend",
-          "label": "收盘跌破 MA20",
-          "effect": "bearish",
-          "evidence": "收盘 60.01，MA20 68.86",
-          "source": "stock.kline",
-          "weight": 1.0
-        },
-        {
-          "category": "intraday",
-          "label": "冲高回落或日内承接弱",
-          "effect": "bearish",
-          "evidence": "日内涨跌 -7.25%，振幅 10.47%",
-          "source": "stock.kline",
-          "weight": 1.0
+          "weight": 0.3
         }
       ],
       "all_causes": [
         {
-          "category": "price_action",
-          "label": "单日跌幅较深",
-          "effect": "bearish",
-          "evidence": "收盘跌幅 -6.89%",
-          "source": "stock.kline",
-          "weight": 1.1
-        },
-        {
           "category": "trend",
           "label": "收盘跌破 MA20",
           "effect": "bearish",
-          "evidence": "收盘 60.01，MA20 68.86",
+          "evidence": "收盘 54.01，MA20 68.06",
           "source": "stock.kline",
           "weight": 1.0
         },
@@ -186,7 +186,7 @@
           "category": "short_trend",
           "label": "收盘低于 MA5",
           "effect": "bearish",
-          "evidence": "收盘 60.01，MA5 60.93",
+          "evidence": "收盘 54.01，MA5 58.62",
           "source": "stock.kline",
           "weight": 0.8
         },
@@ -199,22 +199,6 @@
           "weight": 0.3
         },
         {
-          "category": "intraday",
-          "label": "冲高回落或日内承接弱",
-          "effect": "bearish",
-          "evidence": "日内涨跌 -7.25%，振幅 10.47%",
-          "source": "stock.kline",
-          "weight": 1.0
-        },
-        {
-          "category": "reversal",
-          "label": "回吐前一交易日收盘",
-          "effect": "bearish",
-          "evidence": "收盘 60.01 低于前日 64.45",
-          "source": "stock.kline",
-          "weight": 1.0
-        },
-        {
           "category": "market",
           "label": "大盘走弱",
           "effect": "bearish",
@@ -226,7 +210,7 @@
           "category": "fund_flow",
           "label": "市场主力资金净流出",
           "effect": "bearish",
-          "evidence": "主力净流出 -790.00 亿",
+          "evidence": "主力净流出 -1216.10 亿",
           "source": "latest.fund_flow",
           "weight": 1.0
         },
@@ -240,53 +224,39 @@
         },
         {
           "category": "event",
-          "label": "业绩预告：机构预测",
-          "effect": "neutral",
-          "evidence": "影响分 0",
-          "source": "impact.earnings_forecast",
-          "weight": 1.0
-        },
-        {
-          "category": "event",
           "label": "估值压力",
           "effect": "bearish",
-          "evidence": "PE(TTM)=225.94；PB=5.98",
+          "evidence": "PE(TTM)=203.35；PB=5.01",
           "source": "impact.valuation_pressure",
           "weight": 1.0
         }
       ],
-      "conclusion": "下跌主要由技术走弱、资金/大盘压力或事件风险共同解释"
+      "conclusion": "涨跌幅较小，暂按震荡处理"
     }
   ],
   "logic_review": {
     "logic_broken": true,
     "broken_reasons": [
-      "昨日上涨后今日转跌，短线延续性不足",
-      "今日收盘低于昨日收盘，昨日上涨被回吐",
-      "今日收盘低于 MA20，中期趋势支撑转弱",
-      "今日量价或日内结构显示承接不足"
+      "今日收盘低于 MA20，中期趋势支撑转弱"
     ],
     "next_watch": {
-      "recover_price": 64.45,
-      "risk_price": 59.07,
-      "pressure_price": 66.28,
+      "recover_price": 58.62,
+      "risk_price": 54.01,
+      "pressure_price": 57.5,
       "note": "重新站上恢复价且资金/成交同步改善，才视为上涨逻辑修复；跌破风险价则昨日上涨确认失败。"
     }
   },
   "summary": {
-    "yesterday_return_pct": 6.34,
-    "today_return_pct": -6.89,
+    "yesterday_return_pct": -10.0,
+    "today_return_pct": 0.0,
     "logic_broken": true,
     "primary_today_causes": [
-      "单日跌幅较深",
-      "大盘走弱",
-      "收盘跌破 MA20",
-      "冲高回落或日内承接弱"
+      "成交量缺失或为零"
     ]
   },
   "limitations": [
     "market_data_degraded",
     "today_volume_missing_or_zero"
   ],
-  "updated_at": "2026-07-10 17:52:51"
+  "updated_at": "2026-07-14 00:10:54"
 }

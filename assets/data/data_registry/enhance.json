@@ -5,9 +5,9 @@
   "path": "enhance/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/enhance/index.json",
   "exists": true,
-  "size": 2107,
-  "file_mtime": "2026-07-10 17:42:41",
-  "updated_at": "2026-07-10 17:42:41",
+  "size": 2109,
+  "file_mtime": "2026-07-14 00:10:19",
+  "updated_at": "2026-07-14 00:10:19",
   "record_count": 5,
   "field_summary": {
     "top_level_fields": [
@@ -37,5 +37,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-10 18:10:10"
+  "registered_at": "2026-07-14 00:10:55"
 }

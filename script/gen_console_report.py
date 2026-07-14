@@ -4,31 +4,27 @@
 from __future__ import annotations
 
 import html
-import json
-from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "assets" / "data"
-REPORTS_DIR = ROOT / "reports" / "console"
+from quant_system.presentation.report_base import (
+    css_links,
+    data_path,
+    read_data_json,
+    read_json_map,
+    report_path,
+    safe_json_script,
+    write_html,
+)
+
+REPORTS_DIR = report_path("console")
 
 
 def _read_json(rel: str, default: Any) -> Any:
-    path = DATA_DIR / rel
-    if not path.exists():
-        return default
-    return json.loads(path.read_text(encoding="utf-8"))
+    return read_data_json(rel, default)
 
 
 def _load_map(folder: str) -> dict[str, dict[str, Any]]:
-    base = DATA_DIR / folder
-    if not base.exists():
-        return {}
-    return {
-        path.stem: json.loads(path.read_text(encoding="utf-8"))
-        for path in sorted(base.glob("*.json"))
-        if path.stem != "index"
-    }
+    return read_json_map(data_path(folder))
 
 
 def _f(value: Any, default: float = 0.0) -> float:
@@ -168,7 +164,7 @@ def build_console_payload() -> dict[str, Any]:
 
 
 def _json_script(payload: dict[str, Any]) -> str:
-    return json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+    return safe_json_script(payload)
 
 
 def render(payload: dict[str, Any]) -> str:
@@ -189,8 +185,7 @@ def render(payload: dict[str, Any]) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>统一控制台 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
   <style>
     .console-toolbar {{ display:grid; grid-template-columns: minmax(180px, 1fr) 160px 160px 160px; gap:.75rem; margin:1.25rem 0; }}
     .console-link-row {{ display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0 1.5rem; }}
@@ -298,10 +293,9 @@ def render(payload: dict[str, Any]) -> str:
 
 
 def main() -> None:
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     payload = build_console_payload()
     out = REPORTS_DIR / "index.html"
-    out.write_text(render(payload), encoding="utf-8")
+    write_html(out, render(payload))
     print(f"[gen_console_report] 已生成 {out} ({len(payload.get('rows') or [])} 只)")
 
 

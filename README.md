@@ -63,8 +63,8 @@ chmod +x setup.sh
 ```bash
 cd a-stock
 chmod +x run.sh setup.sh
-./run.sh mvp              # MVP 闭环（推荐）：750日补录→行情→因子→增强→回测→预测→看板
-./run.sh all              # 同上，可 --skip-backtest / --skip-predict / --skip-enhance
+./run.sh all              # 全链路（推荐）：750日补录→行情→因子→增强→回测→预测→看板
+./run.sh mvp              # all 的兼容别名（MVP 已归档，仅保留命令）
 ./run.sh stock
 ./run.sh enhance          # 数据增强（P1-3）
 ./run.sh agent            # Agent 看板（P4-1）
@@ -108,7 +108,7 @@ python quant_system/main.py market          # 大盘行情
 python quant_system/main.py stock           # 自选股分析
 python quant_system/main.py all             # watchlist 全量：巡检→行情→个股→回测→预测→看板→报表
 
-> **MVP 闭环**：`./run.sh mvp` 或 `./run.sh all` 按 Quantification.md §1.3 执行完整链路（含 750 日历史补录、跨源校验、因子、回测、可验证预测、盘中看板）。
+> **全链路**：`./run.sh all`（`mvp` 为兼容别名）执行完整研究闭环。需求文档：`Quantification.md`（能力说明）、`Quantification-Optimization.md`（代码/功能优化）、`Quantification-Module-Split.md`（模块拆分清单）、`Quantification-Roadmap-v3.md`（能力扩展）。
 
 > **watchlist 约定**：`assets/data/watchlist.json` 中的股票为默认执行范围。新增代码后运行 `stock` / `all` / `gen_stock_report` 会自动补采集缺失数据，无需手动传代码参数。
 

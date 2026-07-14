@@ -5,9 +5,9 @@
   "path": "../../reports/console/index.html",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/reports/console/index.html",
   "exists": true,
-  "size": 12921,
-  "file_mtime": "2026-07-10 17:55:35",
-  "updated_at": "2026-07-10 17:55:35",
+  "size": 12959,
+  "file_mtime": "2026-07-14 00:10:55",
+  "updated_at": "2026-07-14 00:10:55",
   "record_count": 0,
   "field_summary": {
     "top_level_fields": [],
@@ -42,5 +42,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-10 18:10:10"
+  "registered_at": "2026-07-14 00:10:55"
 }

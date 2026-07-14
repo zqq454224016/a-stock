@@ -1,7 +1,7 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-09",
+  "trade_date": "2026-07-13",
   "version": "1.1.0",
   "impact_score": -33,
   "impact_direction": "negative",
@@ -9,18 +9,18 @@
     {
       "event_type": "valuation_pressure",
       "title": "估值压力",
-      "period": "2026-07-09",
-      "announce_date": "2026-07-09",
+      "period": "2026-07-13",
+      "announce_date": "2026-07-13",
       "impact_score": -33,
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "pe_ttm": 94.08,
-        "pb": 13.6
+        "pe_ttm": 91.26,
+        "pb": 13.27
       },
       "evidence": [
-        "PE(TTM)=94.08",
-        "PB=13.60"
+        "PE(TTM)=91.26",
+        "PB=13.27"
       ],
       "source": "baidu_pe",
       "limitations": [],
@@ -51,5 +51,5 @@
     ]
   },
   "limitations": [],
-  "updated_at": "2026-07-10 17:43:27"
+  "updated_at": "2026-07-14 00:10:54"
 }

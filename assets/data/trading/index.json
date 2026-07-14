@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-14 00:10:54",
   "summary": {
-    "updated_at": "2026-07-10 17:43:27",
+    "updated_at": "2026-07-14 00:10:54",
     "initial_cash": 100000.0,
     "cash": 100000.0,
     "market_value": 0.0,
@@ -20,9 +20,9 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 60.58,
+      "price": 54.59,
       "direction": "down",
-      "probability": 0.3052,
+      "probability": 0.3377,
       "confidence": "low"
     },
     {
@@ -32,9 +32,9 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 116.6,
+      "price": 108.15,
       "direction": "down",
-      "probability": 0.1606,
+      "probability": 0.1785,
       "confidence": "low"
     },
     {
@@ -44,9 +44,9 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 60.01,
+      "price": 54.01,
       "direction": "neutral",
-      "probability": 0.4612,
+      "probability": 0.4756,
       "confidence": "medium"
     },
     {
@@ -56,7 +56,7 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 158.07,
+      "price": 154.24,
       "direction": "neutral",
       "probability": 0.5186,
       "confidence": "medium"
@@ -68,9 +68,9 @@
       "source": "decision",
       "decision_action": "watch",
       "position_suggestion": 0.0,
-      "price": 242.3,
+      "price": 236.7,
       "direction": "neutral",
-      "probability": 0.4792,
+      "probability": 0.4827,
       "confidence": "medium"
     }
   ],

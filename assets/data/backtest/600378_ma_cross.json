@@ -3,7 +3,7 @@
   "strategy": "ma_cross",
   "strategy_version": "1.0.0",
   "engine_version": "1.1.0",
-  "data_version": "daily_kline_600378_20260710",
+  "data_version": "daily_kline_600378_20260714",
   "quality_score": 90.0,
   "config": {
     "initial_cash": 100000.0,
@@ -15,33 +15,33 @@
     "min_daily_amount_yi": 0.05
   },
   "metrics": {
-    "total_return_pct": 96.65,
-    "annual_return_pct": 98.26,
-    "max_drawdown_pct": -26.0,
-    "sharpe_ratio": 1.63,
-    "win_rate_pct": 40.0,
-    "profit_loss_ratio": 2.22,
-    "trade_count": 11,
-    "closed_trades": 5,
-    "final_equity": 196647.22
+    "total_return_pct": 91.35,
+    "annual_return_pct": 92.34,
+    "max_drawdown_pct": -27.99,
+    "sharpe_ratio": 1.56,
+    "win_rate_pct": 50.0,
+    "profit_loss_ratio": 5.34,
+    "trade_count": 12,
+    "closed_trades": 6,
+    "final_equity": 191348.71
   },
   "attribution": {
-    "realized_pnl": 10098.58,
-    "unrealized_hint": 86548.64,
-    "closed_trades": 5,
-    "avg_hold_days": 32.4,
+    "realized_pnl": 91348.7,
+    "unrealized_hint": 0.01,
+    "closed_trades": 6,
+    "avg_hold_days": 42.7,
     "by_reason": [
       {
         "reason": "MA20死叉",
-        "count": 5,
-        "total_pnl": 10098.58,
-        "avg_pnl": 2019.72,
-        "win_rate_pct": 40.0
+        "count": 6,
+        "total_pnl": 91348.7,
+        "avg_pnl": 15224.78,
+        "win_rate_pct": 50.0
       }
     ],
     "best_trade": {
-      "date": "2026-02-05",
-      "pnl": 18681.21,
+      "date": "2026-07-13",
+      "pnl": 81250.12,
       "reason": "MA20死叉"
     },
     "worst_trade": {
@@ -51,13 +51,6 @@
     }
   },
   "equity_curve": [
-    {
-      "date": "2025-07-01",
-      "equity": 100000.0,
-      "cash": 100000.0,
-      "shares": 0,
-      "close": 26.63
-    },
     {
       "date": "2025-07-02",
       "equity": 100000.0,
@@ -1800,6 +1793,20 @@
       "cash": 2791.22,
       "shares": 3200,
       "close": 60.58
+    },
+    {
+      "date": "2026-07-13",
+      "equity": 191348.71,
+      "cash": 191348.71,
+      "shares": 0,
+      "close": 54.59
+    },
+    {
+      "date": "2026-07-14",
+      "equity": 191348.71,
+      "cash": 191348.71,
+      "shares": 0,
+      "close": 54.59
     }
   ],
   "trades": [
@@ -1917,7 +1924,18 @@
       "fee": 85.78,
       "reason": "MA5金叉",
       "status": "filled"
+    },
+    {
+      "date": "2026-07-13",
+      "action": "sell",
+      "price": 59.03,
+      "shares": 3200,
+      "amount": 188897.5,
+      "fee": 340.02,
+      "pnl": 81250.12,
+      "reason": "MA20死叉",
+      "status": "filled"
     }
   ],
-  "updated_at": "2026-07-10 17:43:27"
+  "updated_at": "2026-07-14 00:10:54"
 }

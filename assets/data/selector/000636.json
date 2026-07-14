@@ -1,29 +1,29 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "selector_version": "1.1.0",
-  "upside_score": 43.43,
+  "upside_score": 40.67,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
-    "预测中性，概率 0.46",
+    "预测中性，概率 0.48",
     "收盘价站上 MA60",
     "回测夏普 2.40",
     "回测胜率 57.14%",
     "阈值校准：十日推演证据中性，命中率 60%"
   ],
   "risks": [
-    "因子分偏低 40.3",
+    "因子分偏低 40.5",
     "预测标记高波动",
     "未站上 MA20",
+    "5日跌幅较大",
     "实际影响偏负面，impact_score=-26",
-    "影响数据限制：not_q2_report_period",
     "阈值校准：历史推演中误判上涨多于误判下跌，需提高向上概率门槛",
     "阈值校准：未命中原因包含概率边界问题，需提高预测概率确认"
   ],
   "reject_reasons": [
-    "因子分过低 40.3",
+    "因子分过低 40.5",
     "实际影响数据显著偏负面"
   ],
   "candidate_blockers": [
@@ -40,12 +40,12 @@
   ],
   "metrics": {
     "quality_score": 90.0,
-    "factor_score": 40.3,
+    "factor_score": 40.5,
     "candidate_score_threshold": 70.0,
     "watch_score_threshold": 55.0,
     "probability_floor": 0.58,
     "prediction_direction": "neutral",
-    "prediction_probability": 0.4612,
+    "prediction_probability": 0.4756,
     "impact_score": -26.0,
     "impact_direction": "negative"
   },
@@ -74,5 +74,5 @@
       }
     }
   },
-  "updated_at": "2026-07-10 17:43:27"
+  "updated_at": "2026-07-14 00:10:54"
 }

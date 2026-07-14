@@ -13,7 +13,7 @@ from quant_system.pipeline.adjuster import apply_adjustment
 from quant_system.pipeline.cleaner import clean_kline_df
 from quant_system.pipeline.cross_source import run_cross_source_check
 from quant_system.pipeline.kline_loader import make_data_version
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code, normalize_kline_df, to_symbol
+from quant_system.pipeline.normalizer import normalize_code, normalize_kline_df, to_symbol
 from quant_system.pipeline.kline_merge import merge_spot_into_daily_kline
 from quant_system.pipeline.quality_gate import factor_block_reason
 from quant_system.pipeline.quality_inspector import inspect_kline_df
@@ -21,9 +21,8 @@ from quant_system.pipeline.stock_analyzer import build_stock_analysis
 from quant_system.pipeline.validator import validate_kline_df
 from quant_system.storage.json_store import JsonStore
 from quant_system.tasks.factor_utils import save_composite_factors
-from quant_system.utils.concurrent_fetch import run_parallel_map
+from quant_system.tasks.runtime import resolve_stock_items, run_for_watchlist
 from quant_system.utils.logger import get_logger
-from quant_system.utils.time_utils import now_str
 from quant_system.utils.trade_calendar import get_calendar
 
 logger = get_logger(__name__)
@@ -109,11 +108,7 @@ def run_daily_stock(codes: list[str] | None = None) -> list[dict]:
     store = JsonStore(DBConfig())
     cal = get_calendar()
 
-    if codes:
-        stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
-    else:
-        stocks = load_watchlist(cfg)
-
+    stocks = resolve_stock_items(cfg, codes=codes, reason="个股采集", research_only=False)
     if not stocks:
         logger.error("未配置自选股，请编辑 assets/data/watchlist.json")
         return []
@@ -122,14 +117,15 @@ def run_daily_stock(codes: list[str] | None = None) -> list[dict]:
     spot_map = api.fetch_spot_map(codes=codes_list)
 
     worker = lambda item: _process_daily_stock(item, api, store, cfg, cal, spot_map)
-    results = run_parallel_map(
-        stocks,
-        worker,
-        max_workers=cfg.fetch_workers,
+    index = run_for_watchlist(
+        cfg=cfg,
+        items=stocks,
+        worker=worker,
         label="个股采集",
+        empty_message="未配置自选股，请编辑 assets/data/watchlist.json",
+        on_success=lambda rows, ts: store.save_stock_index(rows, ts),
+        save_when_empty=True,
     )
-    index = [r for r in results if r is not None]
 
-    store.save_stock_index(index, now_str())
     logger.info("个股采集完成，共 %s 只", len(index))
     return index

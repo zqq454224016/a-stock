@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-10 17:41:26",
+  "updated_at": "2026-07-14 00:08:48",
   "stocks": [
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-10",
-      "close": 60.58,
-      "change_pct": -8.489,
+      "trade_date": "2026-07-14",
+      "close": 54.59,
+      "change_pct": -9.888,
       "trend": "偏空",
       "quality_score": 100.0,
       "primary_signal": "bearish",
@@ -15,20 +15,20 @@
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-10",
-      "close": 116.6,
-      "change_pct": -5.472,
+      "trade_date": "2026-07-14",
+      "close": 108.15,
+      "change_pct": -7.247,
       "trend": "偏空",
       "quality_score": 100.0,
-      "primary_signal": "neutral",
+      "primary_signal": "bearish",
       "report": "reports/stock/603629.html"
     },
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-10",
-      "close": 60.01,
-      "change_pct": -6.889,
+      "trade_date": "2026-07-14",
+      "close": 54.01,
+      "change_pct": -9.998,
       "trend": "偏空",
       "quality_score": 100.0,
       "primary_signal": "bearish",
@@ -37,23 +37,23 @@
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-10",
-      "close": 158.07,
-      "change_pct": -0.585,
-      "trend": "震荡",
+      "trade_date": "2026-07-14",
+      "close": 154.24,
+      "change_pct": -2.423,
+      "trend": "偏空",
       "quality_score": 100.0,
-      "primary_signal": "neutral",
+      "primary_signal": "bearish",
       "report": "reports/stock/000988.html"
     },
     {
       "code": "002384",
       "name": "东山精密",
-      "trade_date": "2026-07-10",
-      "close": 242.3,
-      "change_pct": -7.278,
-      "trend": "震荡",
+      "trade_date": "2026-07-14",
+      "close": 236.7,
+      "change_pct": -2.311,
+      "trend": "偏空",
       "quality_score": 100.0,
-      "primary_signal": "neutral",
+      "primary_signal": "bearish",
       "report": "reports/stock/002384.html"
     }
   ]

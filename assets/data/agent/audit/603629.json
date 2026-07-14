@@ -4,11 +4,11 @@
   "provider": "rule",
   "model": "local-rule",
   "prompt_version": "stock_review_v1.0.0",
-  "updated_at": "2026-07-10 17:43:28",
+  "updated_at": "2026-07-14 00:10:54",
   "fallback_reason": "",
   "input_summary": {
     "task": "stock_review",
-    "trade_date": "2026-07-10",
+    "trade_date": "2026-07-14",
     "allowed_actions": [
       "analyze",
       "summarize",
@@ -31,7 +31,7 @@
   },
   "output_summary": {
     "summary": "谨慎",
-    "direction_view": "neutral",
+    "direction_view": "bearish",
     "confidence": "low",
     "suggested_actions": [
       "仅用于研究解释",

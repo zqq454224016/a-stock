@@ -1,33 +1,17 @@
 {
   "code": "600378",
   "symbol": "sh600378",
-  "trade_date": "2026-07-10",
-  "fetched_at": "2026-07-10 17:42:07",
+  "trade_date": "2026-07-13",
+  "fetched_at": "2026-07-14 00:09:22",
   "em_snapshot": {
-    "composite_score": 65.43042937,
+    "composite_score": 64.5132667,
     "focus_index": 86.8,
-    "rank": 1877,
-    "rank_change": -1387.0,
-    "trade_date": "2026-07-10"
+    "rank": 1429,
+    "rank_change": 373.0,
+    "trade_date": "2026-07-13"
   },
   "em_series": {
     "desire": [
-      {
-        "date": "2026-07-03",
-        "股票代码": "600378",
-        "参与意愿": 47.93,
-        "5日平均参与意愿": 49.6,
-        "参与意愿变化": -3.05,
-        "5日平均变化": 1.03
-      },
-      {
-        "date": "2026-07-06",
-        "股票代码": "600378",
-        "参与意愿": 50.58,
-        "5日平均参与意愿": 49.87,
-        "参与意愿变化": 2.65,
-        "5日平均变化": 1.0
-      },
       {
         "date": "2026-07-07",
         "股票代码": "600378",
@@ -51,13 +35,25 @@
         "5日平均参与意愿": 48.81,
         "参与意愿变化": 1.0,
         "5日平均变化": 1.0
+      },
+      {
+        "date": "2026-07-10",
+        "股票代码": "600378",
+        "参与意愿": 44.31,
+        "5日平均参与意愿": 48.09,
+        "参与意愿变化": -3.66,
+        "5日平均变化": 1.0
+      },
+      {
+        "date": "2026-07-13",
+        "股票代码": "600378",
+        "参与意愿": 52.15,
+        "5日平均参与意愿": 48.4,
+        "参与意愿变化": 7.83,
+        "5日平均变化": 1.0
       }
     ],
     "focus": [
-      {
-        "date": "2026-05-29",
-        "用户关注指数": 87.2
-      },
       {
         "date": "2026-06-01",
         "用户关注指数": 88.8
@@ -173,21 +169,13 @@
       {
         "date": "2026-07-10",
         "用户关注指数": 86.8
+      },
+      {
+        "date": "2026-07-13",
+        "用户关注指数": 86.8
       }
     ],
     "institution": [
-      {
-        "date": "2026-05-11",
-        "机构参与度": 32.09784
-      },
-      {
-        "date": "2026-05-12",
-        "机构参与度": 28.50216
-      },
-      {
-        "date": "2026-05-13",
-        "机构参与度": 35.67304
-      },
       {
         "date": "2026-05-14",
         "机构参与度": 36.84692
@@ -351,6 +339,10 @@
       {
         "date": "2026-07-10",
         "机构参与度": 43.54392
+      },
+      {
+        "date": "2026-07-13",
+        "机构参与度": 38.61224
       }
     ]
   },
@@ -358,24 +350,24 @@
     "in_hot_tweet": true,
     "in_hot_follow": true,
     "in_hot_deal": true,
-    "tweet_rank": 1962,
-    "follow_rank": 1087,
-    "deal_rank": 1044,
-    "tweet_heat": 564,
-    "follow_heat": 62419,
+    "tweet_rank": 1868,
+    "follow_rank": 1088,
+    "deal_rank": 989,
+    "tweet_heat": 468,
+    "follow_heat": 62398,
     "deal_heat": 14
   },
   "posts": [
     {
       "code": "600378",
       "platform": "xueqiu",
-      "title": "雪球热议榜 #1962",
-      "content": "关注热度 564",
+      "title": "雪球热议榜 #1868",
+      "content": "关注热度 468",
       "author": "xueqiu_hot",
-      "publish_time": "2026-07-10 17:42:07",
-      "likes": 564,
+      "publish_time": "2026-07-14 00:09:22",
+      "likes": 468,
       "replies": 0,
-      "heat": 564.0,
+      "heat": 468.0,
       "label": "中性"
     }
   ],
@@ -385,34 +377,34 @@
   ],
   "factors": {
     "code": "600378",
-    "trade_date": "2026-07-10",
+    "trade_date": "2026-07-13",
     "sentiment_version": "1.0.0",
     "platform": "eastmoney+xueqiu",
-    "label": "看空",
-    "long_short_ratio": 0.922,
+    "label": "看多",
+    "long_short_ratio": 1.0899,
     "heat_index": 86.8,
-    "sentiment_accel": 1.2,
-    "desire_score": 47.97,
-    "desire_change": 1.0,
-    "composite_score": 65.43042937,
-    "rank_change": -1387.0,
+    "sentiment_accel": 0.0,
+    "desire_score": 52.15,
+    "desire_change": 7.83,
+    "composite_score": 64.5132667,
+    "rank_change": 373.0,
     "xueqiu_hot": {
       "in_hot_tweet": true,
       "in_hot_follow": true,
       "in_hot_deal": true,
-      "tweet_rank": 1962,
-      "follow_rank": 1087,
-      "deal_rank": 1044,
-      "tweet_heat": 564,
-      "follow_heat": 62419,
+      "tweet_rank": 1868,
+      "follow_rank": 1088,
+      "deal_rank": 989,
+      "tweet_heat": 468,
+      "follow_heat": 62398,
       "deal_heat": 14
     },
-    "xueqiu_heat": 62419,
+    "xueqiu_heat": 62398,
     "post_count": 1,
     "limitations": [
       "not_backtested",
       "sentiment_proxy"
     ],
-    "updated_at": "2026-07-10 17:42:07"
+    "updated_at": "2026-07-14 00:09:22"
   }
 }

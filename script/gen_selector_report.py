@@ -3,33 +3,26 @@
 
 from __future__ import annotations
 
-import json
-from pathlib import Path
+from quant_system.presentation.i18n import translate_status
+from quant_system.presentation.report_base import css_links, data_path, read_json, report_path, write_html
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "assets" / "data" / "selector"
-REPORTS_DIR = ROOT / "reports" / "selector"
-
-
-def _read(path: Path) -> dict:
-    if not path.exists():
-        return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+DATA_DIR = data_path("selector")
+REPORTS_DIR = report_path("selector")
 
 
 def load_rows() -> list[dict]:
-    index = _read(DATA_DIR / "index.json")
+    index = read_json(DATA_DIR / "index.json", {})
     rows = index.get("items") or []
     payloads = []
     if rows:
         for row in rows:
             path = DATA_DIR / f"{row.get('code')}.json"
             if path.exists():
-                payloads.append(_read(path))
+                payloads.append(read_json(path, {}))
     else:
         for path in sorted(DATA_DIR.glob("*.json")):
             if path.stem != "index":
-                payloads.append(_read(path))
+                payloads.append(read_json(path, {}))
     return sorted(payloads, key=lambda x: float(x.get("upside_score") or 0), reverse=True)
 
 
@@ -48,6 +41,10 @@ def _mode_label(mode: str) -> str:
         "neutral": "默认阈值",
         "manual": "手动校准",
     }.get(mode, mode or "—")
+
+
+def _rank_label(row: dict) -> str:
+    return row.get("rank_bucket") or translate_status(row.get("status"))
 
 
 def _list(items: list[str]) -> str:
@@ -71,7 +68,7 @@ def render(rows: list[dict]) -> str:
           <td>{r.get('code')}</td>
           <td>{r.get('name') or ''}</td>
           <td>{r.get('upside_score')}</td>
-          <td class="{_status_class(r.get('status',''))}">{r.get('rank_bucket')}</td>
+          <td class="{_status_class(r.get('status',''))}">{_rank_label(r)}</td>
           <td>{_list((r.get('reasons') or [])[:3])}</td>
           <td>{_list((r.get('risks') or [])[:3])}</td>
           <td>{_list(r.get('reject_reasons') or [])}</td>
@@ -86,8 +83,7 @@ def render(rows: list[dict]) -> str:
 <head>
   <meta charset="UTF-8">
   <title>上涨候选池 · A股全景</title>
-  <link rel="stylesheet" href="../../css/common.css">
-  <link rel="stylesheet" href="../../css/report.css">
+{css_links()}
 </head>
 <body>
   <header class="site-header">
@@ -110,10 +106,9 @@ def render(rows: list[dict]) -> str:
 
 
 def main() -> None:
-    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     rows = load_rows()
     out = REPORTS_DIR / "index.html"
-    out.write_text(render(rows), encoding="utf-8")
+    write_html(out, render(rows))
     print(f"[gen_selector_report] 已生成 {out} ({len(rows)} 只)")
 
 

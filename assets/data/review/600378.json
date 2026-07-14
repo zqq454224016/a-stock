@@ -3,14 +3,14 @@
   "name": "昊华科技",
   "review_version": "1.0.0",
   "status": "ok",
-  "trade_date": "2026-07-10",
-  "base_close": 60.58,
+  "trade_date": "2026-07-14",
+  "base_close": 54.59,
   "sections": {
     "prediction": {
       "status": "ok",
-      "trade_date": "2026-07-10",
+      "trade_date": "2026-07-14",
       "direction": "down",
-      "probability": 0.3052,
+      "probability": 0.3377,
       "confidence": "high",
       "items": [
         {
@@ -32,10 +32,10 @@
     },
     "selector": {
       "status": "ok",
-      "trade_date": "2026-07-10",
+      "trade_date": "2026-07-14",
       "selector_status": "rejected",
       "rank_bucket": "排除",
-      "upside_score": 0.0,
+      "upside_score": 4.72,
       "items": [
         {
           "status": "pending",
@@ -56,7 +56,7 @@
     },
     "decision": {
       "status": "ok",
-      "trade_date": "2026-07-10",
+      "trade_date": "2026-07-14",
       "action": "watch",
       "position_suggestion": 0.0,
       "confidence": "low",

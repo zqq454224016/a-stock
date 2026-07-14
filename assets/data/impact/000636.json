@@ -1,52 +1,26 @@
 {
   "code": "000636",
   "name": "风华高科",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-13",
   "version": "1.1.0",
   "impact_score": -26,
   "impact_direction": "negative",
   "events": [
     {
-      "event_type": "earnings_forecast",
-      "title": "业绩预告：机构预测",
-      "period": "行业平均",
-      "announce_date": "2026-07-10",
-      "impact_score": 0,
-      "impact_direction": "neutral",
-      "confidence": "medium",
-      "metrics": {
-        "change_pct": 0.0,
-        "forecast_value": "1.0",
-        "indicator": "预测年报每股收益"
-      },
-      "evidence": [],
-      "source": "ths_profit_forecast",
-      "limitations": [
-        "not_q2_report_period"
-      ],
-      "evidence_quality": {
-        "score": 62,
-        "level": "medium",
-        "missing_evidence": [
-          "缺少文字证据"
-        ]
-      }
-    },
-    {
       "event_type": "valuation_pressure",
       "title": "估值压力",
-      "period": "2026-07-10",
-      "announce_date": "2026-07-10",
+      "period": "2026-07-13",
+      "announce_date": "2026-07-13",
       "impact_score": -26,
       "impact_direction": "negative",
       "confidence": "medium",
       "metrics": {
-        "pe_ttm": 225.94,
-        "pb": 5.98
+        "pe_ttm": 203.35,
+        "pb": 5.01
       },
       "evidence": [
-        "PE(TTM)=225.94",
-        "PB=5.98"
+        "PE(TTM)=203.35",
+        "PB=5.01"
       ],
       "source": "baidu_pe",
       "limitations": [],
@@ -58,11 +32,9 @@
     }
   ],
   "evidence_quality": {
-    "avg_score": 78.5,
+    "avg_score": 95.0,
     "low_quality_event_count": 0,
-    "missing_evidence": [
-      "缺少文字证据"
-    ]
+    "missing_evidence": []
   },
   "post_event_review": {
     "status": "pending",
@@ -78,8 +50,6 @@
       "watch_action_hit_rule_uses_abs_return_below_1pct"
     ]
   },
-  "limitations": [
-    "not_q2_report_period"
-  ],
-  "updated_at": "2026-07-10 17:43:27"
+  "limitations": [],
+  "updated_at": "2026-07-14 00:10:54"
 }

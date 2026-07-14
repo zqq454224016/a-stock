@@ -3,19 +3,21 @@
 
 from __future__ import annotations
 
-import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-INDEX_PATH = ROOT / "reports" / "index.html"
-DATA_DIR = ROOT / "assets" / "data"
+sys.path.insert(0, str(ROOT))
+
+from quant_system.presentation.report_base import data_path, read_json, read_text, report_path, write_html
+
+INDEX_PATH = report_path("index.html")
+DATA_DIR = data_path()
 
 
 def _read_json(path: Path) -> dict | list | None:
-    if not path.exists():
-        return None
-    return json.loads(path.read_text(encoding="utf-8"))
+    return read_json(path, None)
 
 
 def _hub_item(date: str, title: str, href: str, tag: str, name: str) -> str:
@@ -88,7 +90,7 @@ def build_agent_items() -> str:
         for path in sorted((DATA_DIR / "agent").glob("*.json")):
             if path.stem == "index":
                 continue
-            rows.append(json.loads(path.read_text(encoding="utf-8")))
+            rows.append(read_json(path, {}))
     for row in rows:
         code = row.get("code", "")
         name = row.get("name") or code
@@ -104,103 +106,103 @@ def build_agent_items() -> str:
 
 
 def build_factor_items() -> str:
-    if not (ROOT / "reports" / "factors" / "index.html").exists():
+    if not report_path("factors", "index.html").exists():
         return ""
     return _hub_item("汇总", "多因子排名", "factors/index.html", "factors", "多因子排名")
 
 
 def build_factor_eval_items() -> str:
-    if not (ROOT / "reports" / "factor_eval" / "index.html").exists():
+    if not report_path("factor_eval", "index.html").exists():
         return ""
     return _hub_item("汇总", "因子有效性评估", "factor_eval/index.html", "factor_eval", "因子有效性评估")
 
 
 def build_recommendation_items() -> str:
-    if not (ROOT / "reports" / "recommendations" / "index.html").exists():
+    if not report_path("recommendations", "index.html").exists():
         return ""
     return _hub_item("汇总", "短中长线推荐", "recommendations/index.html", "recommendation", "短中长线推荐")
 
 
 def build_framework_items() -> str:
-    if not (ROOT / "reports" / "framework" / "index.html").exists():
+    if not report_path("framework", "index.html").exists():
         return ""
     return _hub_item("汇总", "模块化算法框架", "framework/index.html", "framework", "模块化算法框架")
 
 
 def build_console_items() -> str:
-    if not (ROOT / "reports" / "console" / "index.html").exists():
+    if not report_path("console", "index.html").exists():
         return ""
     return _hub_item("汇总", "统一 Web 控制台", "console/index.html", "console", "统一 Web 控制台")
 
 
 def build_monitoring_items() -> str:
-    if not (ROOT / "reports" / "monitoring" / "index.html").exists():
+    if not report_path("monitoring", "index.html").exists():
         return ""
     return _hub_item("汇总", "监控告警与数据血缘", "monitoring/index.html", "monitoring", "监控告警与数据血缘")
 
 
 def build_planning_items() -> str:
-    if not (ROOT / "reports" / "planning" / "v3.html").exists():
+    if not report_path("planning", "v3.html").exists():
         return ""
     return _hub_item("汇总", "v3 稳定化与扩展路线", "planning/v3.html", "planning", "v3 稳定化与扩展路线")
 
 
 def build_predict_items() -> str:
-    if not (ROOT / "reports" / "predict" / "index.html").exists():
+    if not report_path("predict", "index.html").exists():
         return ""
     return _hub_item("汇总", "走势预测汇总", "predict/index.html", "predict", "走势预测汇总")
 
 
 def build_replay_items() -> str:
-    if not (ROOT / "reports" / "replay" / "index.html").exists():
+    if not report_path("replay", "index.html").exists():
         return ""
     return _hub_item("汇总", "十日前滚动推演", "replay/index.html", "replay", "十日前滚动推演")
 
 
 def build_review_items() -> str:
-    if not (ROOT / "reports" / "review" / "index.html").exists():
+    if not report_path("review", "index.html").exists():
         return ""
     return _hub_item("汇总", "后验复盘", "review/index.html", "review", "后验复盘")
 
 
 def build_decision_items() -> str:
-    if not (ROOT / "reports" / "decision" / "index.html").exists():
+    if not report_path("decision", "index.html").exists():
         return ""
     return _hub_item("汇总", "单股操作建议", "decision/index.html", "decision", "单股操作建议")
 
 
 def build_selector_items() -> str:
-    if not (ROOT / "reports" / "selector" / "index.html").exists():
+    if not report_path("selector", "index.html").exists():
         return ""
     return _hub_item("汇总", "上涨候选池", "selector/index.html", "selector", "上涨候选池")
 
 
 def build_impact_items() -> str:
-    if not (ROOT / "reports" / "impact" / "index.html").exists():
+    if not report_path("impact", "index.html").exists():
         return ""
     return _hub_item("汇总", "实际影响数据", "impact/index.html", "impact", "实际影响数据")
 
 
 def build_attribution_items() -> str:
-    if not (ROOT / "reports" / "attribution" / "index.html").exists():
+    if not report_path("attribution", "index.html").exists():
         return ""
     return _hub_item("汇总", "每日涨跌归因", "attribution/index.html", "attribution", "每日涨跌归因")
 
 
 def build_trading_items() -> str:
-    if not (ROOT / "reports" / "trading" / "index.html").exists():
+    if not report_path("trading", "index.html").exists():
         return ""
     return _hub_item("汇总", "模拟交易看板", "trading/index.html", "trading", "模拟交易看板")
 
 
 def build_portfolio_items() -> str:
-    if not (ROOT / "reports" / "portfolio" / "index.html").exists():
+    if not report_path("portfolio", "index.html").exists():
         return ""
     return _hub_item("汇总", "组合管理", "portfolio/index.html", "portfolio", "组合管理")
 
 
 def build_enhance_items() -> str:
-    if not (ROOT / "reports" / "enhance" / "index.html").exists():
+    if not report_path("enhance", "index.html").exists():
         return ""
     return _hub_item("汇总", "数据增强摘要", "enhance/index.html", "enhance", "数据增强摘要")
 
@@ -217,7 +219,7 @@ def build_backtest_items() -> str:
         if key in seen:
             continue
         seen.add(key)
-        path = ROOT / "reports" / "backtest" / f"{code}_{strategy}.html"
+        path = report_path("backtest", f"{code}_{strategy}.html")
         if not path.exists():
             continue
         items.append(_hub_item(
@@ -228,7 +230,7 @@ def build_backtest_items() -> str:
             f"{code} {strategy} 回测",
         ))
     if not items:
-        for path in sorted((ROOT / "reports" / "backtest").glob("*_*.html")):
+        for path in sorted(report_path("backtest").glob("*_*.html")):
             stem = path.stem
             if "_" not in stem:
                 continue
@@ -249,7 +251,7 @@ def sync_report_index_hubs() -> bool:
         print(f"[report_index] 跳过：{INDEX_PATH} 不存在")
         return False
 
-    content = INDEX_PATH.read_text(encoding="utf-8")
+    content = read_text(INDEX_PATH)
 
     hubs = [
         ("console", "console", "统一控制台", build_console_items()),
@@ -280,7 +282,7 @@ def sync_report_index_hubs() -> bool:
         content = _upsert_section(content, section_id, _section(section_id, title, category, items_html))
 
     content = re.sub(r"^[ \t]+$", "", content, flags=re.MULTILINE)
-    INDEX_PATH.write_text(content, encoding="utf-8")
+    write_html(INDEX_PATH, content)
     print(f"[report_index] 已同步 MVP 入口 → {INDEX_PATH}")
     return True
 

@@ -1,6 +1,21 @@
 {
-  "updated_at": "2026-07-10 18:10:10",
+  "updated_at": "2026-07-14 00:10:55",
   "runs": [
+    {
+      "run_id": "20260714_000732_930667_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-14 00:07:32",
+      "ended_at": "2026-07-14 00:10:55",
+      "duration_sec": 202.1837,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260714_000732_930667_all.json"
+    },
     {
       "run_id": "20260710_181010_361054_monitor",
       "command": "monitor",

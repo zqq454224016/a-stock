@@ -1,17 +1,17 @@
 {
   "code": "002384",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "horizon": "5d",
-  "signal": "neutral",
-  "signal_score": 52.0,
+  "signal": "bearish",
+  "signal_score": 39.0,
   "drivers": [
     "macd_hist_negative",
-    "momentum_20_up"
+    "ma20_breakdown"
   ],
   "limitations": [
     "not_backtested",
     "technical_only"
   ],
   "signal_version": "1.0.0",
-  "updated_at": "2026-07-10 17:42:41"
+  "updated_at": "2026-07-14 00:10:19"
 }

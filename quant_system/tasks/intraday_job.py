@@ -12,12 +12,12 @@ from quant_system.config.db_config import DBConfig
 from quant_system.data_source.akshare_api import AkShareAPI
 from quant_system.data_source.minute_api import MinuteAPI
 from quant_system.pipeline.intraday_analyzer import build_intraday_analysis
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code, to_symbol
+from quant_system.pipeline.normalizer import normalize_code, to_symbol
 from quant_system.storage.json_store import JsonStore
 from quant_system.storage.redis_client import RedisClient
-from quant_system.utils.concurrent_fetch import run_parallel_map
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str, today_str
+from quant_system.tasks.runtime import resolve_stock_items, run_for_watchlist
 
 logger = get_logger(__name__)
 
@@ -144,10 +144,7 @@ def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
     redis = RedisClient(DBConfig())
     redis.connect()
 
-    if codes:
-        stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
-    else:
-        stocks = load_watchlist(cfg)
+    stocks = resolve_stock_items(cfg, codes=codes, reason="盘中采集", research_only=False)
 
     if not stocks:
         logger.error("未配置自选股，请编辑 assets/data/watchlist.json")
@@ -170,16 +167,15 @@ def run_intraday_live(codes: list[str] | None = None) -> list[dict]:
     worker = lambda item: _process_intraday_stock(
         item, api, minute_api, store, redis, cfg, spot_map,
     )
-    results = run_parallel_map(
-        stocks,
-        worker,
-        max_workers=cfg.fetch_workers,
+    index = run_for_watchlist(
+        cfg=cfg,
+        items=stocks,
+        worker=worker,
         label="盘中采集",
+        empty_message="未配置自选股，请编辑 assets/data/watchlist.json",
+        on_success=lambda rows, ts: store.save_live_index(rows, ts),
     )
-    index = [r for r in results if r is not None]
 
-    if index:
-        store.save_live_index(index, now_str())
     logger.info("盘中采集完成，共 %s 只", len(index))
     return index
 

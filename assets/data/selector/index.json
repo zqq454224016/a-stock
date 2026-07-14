@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-07-10 17:43:27",
+  "updated_at": "2026-07-14 00:10:54",
   "items": [
     {
       "code": "000988",
       "name": "华工科技",
-      "trade_date": "2026-07-10",
-      "upside_score": 57.56,
+      "trade_date": "2026-07-14",
+      "upside_score": 47.13,
       "status": "rejected",
       "rank_bucket": "排除",
       "top_reason": "预测中性，概率 0.52",
-      "top_risk": "因子分偏低 54.8",
+      "top_risk": "因子分偏低 45.9",
       "reject_reasons": [
         "实际影响数据显著偏负面"
       ],
@@ -30,13 +30,14 @@
     {
       "code": "002384",
       "name": "东山精密",
-      "trade_date": "2026-07-10",
-      "upside_score": 57.19,
+      "trade_date": "2026-07-14",
+      "upside_score": 45.2,
       "status": "rejected",
       "rank_bucket": "排除",
       "top_reason": "预测中性，概率 0.48",
-      "top_risk": "因子分偏低 54.4",
+      "top_risk": "因子分偏低 42.2",
       "reject_reasons": [
+        "因子分过低 42.2",
         "实际影响数据显著偏负面"
       ],
       "candidate_blockers": [
@@ -56,14 +57,14 @@
     {
       "code": "000636",
       "name": "风华高科",
-      "trade_date": "2026-07-10",
-      "upside_score": 43.43,
+      "trade_date": "2026-07-14",
+      "upside_score": 40.67,
       "status": "rejected",
       "rank_bucket": "排除",
-      "top_reason": "预测中性，概率 0.46",
-      "top_risk": "因子分偏低 40.3",
+      "top_reason": "预测中性，概率 0.48",
+      "top_risk": "因子分偏低 40.5",
       "reject_reasons": [
-        "因子分过低 40.3",
+        "因子分过低 40.5",
         "实际影响数据显著偏负面"
       ],
       "candidate_blockers": [
@@ -83,15 +84,15 @@
     {
       "code": "600378",
       "name": "昊华科技",
-      "trade_date": "2026-07-10",
-      "upside_score": 0.0,
+      "trade_date": "2026-07-14",
+      "upside_score": 4.72,
       "status": "rejected",
       "rank_bucket": "排除",
       "top_reason": "收盘价站上 MA60",
-      "top_risk": "因子分偏低 37.7",
+      "top_risk": "因子分偏低 44.1",
       "reject_reasons": [
         "预测方向为偏空",
-        "因子分过低 37.7"
+        "因子分过低 44.1"
       ],
       "candidate_blockers": [
         "预测尚未形成向上确认",
@@ -109,14 +110,15 @@
     {
       "code": "603629",
       "name": "利通电子",
-      "trade_date": "2026-07-10",
+      "trade_date": "2026-07-14",
       "upside_score": 0.0,
       "status": "rejected",
       "rank_bucket": "排除",
-      "top_reason": "20日动量为正",
-      "top_risk": "因子分偏低 47.9",
+      "top_reason": "回测夏普 2.09",
+      "top_risk": "因子分偏低 33.5",
       "reject_reasons": [
         "预测方向为偏空",
+        "因子分过低 33.5",
         "实际影响数据显著偏负面"
       ],
       "candidate_blockers": [

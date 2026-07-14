@@ -1,34 +1,34 @@
 {
   "code": "002384",
   "name": "东山精密",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "version": "1.1.0",
-  "updated_at": "2026-07-10 17:43:28",
+  "updated_at": "2026-07-14 00:10:54",
   "summary": "综合因子中性，等待更清晰信号",
   "confidence": "medium",
   "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
   "stock_selection": {
     "verdict": "neutral",
     "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 54.4,
+    "composite_score": 42.2,
     "evidence": [
-      "技术分 52.0",
-      "情绪分 70.1",
+      "技术分 39.0",
+      "情绪分 52.2",
       "基本面分 36.0",
-      "趋势 震荡",
-      "舆情 看多"
+      "趋势 偏空",
+      "舆情 看空"
     ],
     "drivers": [
       "macd_hist_negative",
-      "momentum_20_up"
+      "ma20_breakdown"
     ],
     "risks": [
       "not_backtested",
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "neutral",
-    "trend": "震荡"
+    "primary_signal": "bearish",
+    "trend": "偏空"
   },
   "strategy_diagnosis": {
     "available": true,
@@ -41,9 +41,9 @@
       "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 196.41,
-      "max_drawdown_pct": -21.67,
-      "sharpe_ratio": 2.07,
+      "annual_return_pct": 174.49,
+      "max_drawdown_pct": -21.87,
+      "sharpe_ratio": 1.94,
       "win_rate_pct": 66.67,
       "closed_trades": 9
     },
@@ -51,8 +51,8 @@
       {
         "reason": "MA20死叉",
         "count": 9,
-        "total_pnl": 192599.69,
-        "avg_pnl": 21399.97,
+        "total_pnl": 172297.66,
+        "avg_pnl": 19144.18,
         "win_rate_pct": 66.67
       }
     ],
@@ -62,15 +62,15 @@
     "available": true,
     "horizon": "5d",
     "direction": "neutral",
-    "probability": 0.4792,
-    "confidence": "medium",
-    "expected_return": -0.0519,
-    "alignment": "aligned",
+    "probability": 0.4827,
+    "confidence": "high",
+    "expected_return": -0.0509,
+    "alignment": "partial",
     "drivers": [],
     "notes": [
-      "5d 预测 震荡，概率 47.9%，置信度 medium",
-      "历史样本 48，回测胜率 66.7%",
-      "初级技术信号与预测方向一致",
+      "5d 预测 震荡，概率 48.3%，置信度 high",
+      "历史样本 50，回测胜率 66.7%",
+      "信号与预测部分一致，存在中性分歧",
       "风险标记: high_volatility"
     ],
     "failure_conditions": [
@@ -80,9 +80,11 @@
   },
   "data_health": {
     "status": "ok",
-    "quality_score": 100.0,
+    "quality_score": 90.0,
     "factor_eligible": true,
-    "issues": []
+    "issues": [
+      "K 线末日期 2026-07-10 落后于最近交易日 2026-07-14"
+    ]
   },
   "limitations": [
     "rule_based_only",
@@ -143,17 +145,17 @@
     "direction_view": "neutral",
     "confidence": "medium",
     "evidence": [
-      "技术分 52.0",
-      "情绪分 70.1",
+      "技术分 39.0",
+      "情绪分 52.2",
       "基本面分 36.0",
-      "趋势 震荡",
-      "舆情 看多",
+      "趋势 偏空",
+      "舆情 看空",
       "macd_hist_negative",
-      "momentum_20_up",
+      "ma20_breakdown",
       "单笔最大亏损 -24424.08（MA20死叉）",
-      "5d 预测 震荡，概率 47.9%，置信度 medium",
-      "历史样本 48，回测胜率 66.7%",
-      "初级技术信号与预测方向一致"
+      "5d 预测 震荡，概率 48.3%，置信度 high",
+      "历史样本 50，回测胜率 66.7%",
+      "信号与预测部分一致，存在中性分歧"
     ],
     "risks": [
       "not_backtested",

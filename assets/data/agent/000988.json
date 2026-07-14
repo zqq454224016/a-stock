@@ -1,26 +1,25 @@
 {
   "code": "000988",
   "name": "华工科技",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "version": "1.1.0",
-  "updated_at": "2026-07-10 17:43:28",
+  "updated_at": "2026-07-14 00:10:54",
   "summary": "综合因子中性，等待更清晰信号",
   "confidence": "medium",
   "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
   "stock_selection": {
     "verdict": "neutral",
     "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 54.8,
+    "composite_score": 45.9,
     "evidence": [
-      "技术分 47.0",
-      "情绪分 81.8",
+      "技术分 39.0",
+      "情绪分 65.8",
       "基本面分 36.0",
-      "趋势 震荡",
-      "舆情 看多"
+      "趋势 偏空",
+      "舆情 看空"
     ],
     "drivers": [
       "macd_hist_negative",
-      "momentum_20_up",
       "ma20_breakdown"
     ],
     "risks": [
@@ -28,23 +27,23 @@
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "neutral",
-    "trend": "震荡"
+    "primary_signal": "bearish",
+    "trend": "偏空"
   },
   "strategy_diagnosis": {
     "available": true,
     "strategy": "ma_cross",
     "verdict": "ok",
     "findings": [
-      "单笔最大亏损 -26690.68（MA20死叉）"
+      "单笔最大亏损 -25022.5（MA20死叉）"
     ],
     "suggestions": [
       "维持现有参数，持续滚动验证"
     ],
     "metrics": {
-      "annual_return_pct": 150.01,
-      "max_drawdown_pct": -28.36,
-      "sharpe_ratio": 1.91,
+      "annual_return_pct": 139.78,
+      "max_drawdown_pct": -28.04,
+      "sharpe_ratio": 1.84,
       "win_rate_pct": 57.14,
       "closed_trades": 7
     },
@@ -52,8 +51,8 @@
       {
         "reason": "MA20死叉",
         "count": 7,
-        "total_pnl": 147295.4,
-        "avg_pnl": 21042.2,
+        "total_pnl": 138119.31,
+        "avg_pnl": 19731.33,
         "win_rate_pct": 57.14
       }
     ],
@@ -65,13 +64,13 @@
     "direction": "neutral",
     "probability": 0.5186,
     "confidence": "high",
-    "expected_return": -0.029,
-    "alignment": "aligned",
+    "expected_return": -0.0279,
+    "alignment": "partial",
     "drivers": [],
     "notes": [
       "5d 预测 震荡，概率 51.9%，置信度 high",
       "历史样本 60，回测胜率 57.1%",
-      "初级技术信号与预测方向一致",
+      "信号与预测部分一致，存在中性分歧",
       "风险标记: high_volatility"
     ],
     "failure_conditions": [
@@ -84,7 +83,7 @@
     "quality_score": 90.0,
     "factor_eligible": true,
     "issues": [
-      "K 线末日期 2026-07-08 落后于最近交易日 2026-07-10"
+      "K 线末日期 2026-07-10 落后于最近交易日 2026-07-14"
     ]
   },
   "limitations": [
@@ -146,18 +145,17 @@
     "direction_view": "neutral",
     "confidence": "medium",
     "evidence": [
-      "技术分 47.0",
-      "情绪分 81.8",
+      "技术分 39.0",
+      "情绪分 65.8",
       "基本面分 36.0",
-      "趋势 震荡",
-      "舆情 看多",
+      "趋势 偏空",
+      "舆情 看空",
       "macd_hist_negative",
-      "momentum_20_up",
       "ma20_breakdown",
-      "单笔最大亏损 -26690.68（MA20死叉）",
+      "单笔最大亏损 -25022.5（MA20死叉）",
       "5d 预测 震荡，概率 51.9%，置信度 high",
       "历史样本 60，回测胜率 57.1%",
-      "初级技术信号与预测方向一致"
+      "信号与预测部分一致，存在中性分歧"
     ],
     "risks": [
       "not_backtested",

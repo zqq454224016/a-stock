@@ -8,12 +8,10 @@ from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
 from quant_system.data_source.sentiment_api import SentimentAPI
 from quant_system.factors.sentiment import compute_sentiment_factors
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
 from quant_system.storage.json_store import JsonStore
-from quant_system.utils.concurrent_fetch import run_parallel_map
 from quant_system.utils.logger import get_logger
-from quant_system.utils.market_scope import filter_research_stocks
-from quant_system.utils.time_utils import now_str
+from quant_system.tasks.runtime import resolve_stock_items, run_for_watchlist
 
 logger = get_logger(__name__)
 
@@ -51,25 +49,16 @@ def run_sentiment_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
     api = SentimentAPI(cfg)
     store = JsonStore(DBConfig())
 
-    if codes:
-        stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
-    else:
-        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="舆情采集")
-
-    if not stocks:
-        logger.error("未配置自选股")
-        return []
+    stocks = resolve_stock_items(cfg, codes=codes, reason="舆情采集")
 
     worker = lambda item: _process_sentiment(item, api, store)
-    results = run_parallel_map(
-        stocks,
-        worker,
-        max_workers=cfg.fetch_workers,
+    index = run_for_watchlist(
+        cfg=cfg,
+        items=stocks,
+        worker=worker,
         label="舆情采集",
+        on_success=lambda rows, ts: store.save_sentiment_index(rows, ts),
     )
-    index = [r for r in results if r is not None]
 
-    if index:
-        store.save_sentiment_index(index, now_str())
     logger.info("舆情采集完成，共 %s 只", len(index))
     return index

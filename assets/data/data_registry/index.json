@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0.0",
-  "updated_at": "2026-07-10 18:10:10",
+  "updated_at": "2026-07-14 00:10:55",
   "summary": {
     "artifact_count": 20,
     "existing_count": 20,
@@ -16,9 +16,9 @@
       "path": "latest.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/latest.json",
       "exists": true,
-      "size": 4895,
-      "file_mtime": "2026-07-10 17:40:44",
-      "updated_at": "2026-07-10 17:40:44",
+      "size": 4913,
+      "file_mtime": "2026-07-14 00:08:11",
+      "updated_at": "2026-07-14 00:08:11",
       "record_count": 1,
       "field_summary": {
         "top_level_fields": [
@@ -66,7 +66,7 @@
         "payload_trade_date": "2026-07-07",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -75,9 +75,9 @@
       "path": "stocks/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/stocks/index.json",
       "exists": true,
-      "size": 1485,
-      "file_mtime": "2026-07-10 17:41:26",
-      "updated_at": "2026-07-10 17:41:26",
+      "size": 1486,
+      "file_mtime": "2026-07-14 00:08:48",
+      "updated_at": "2026-07-14 00:08:48",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -106,7 +106,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -115,9 +115,9 @@
       "path": "enhance/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/enhance/index.json",
       "exists": true,
-      "size": 2107,
-      "file_mtime": "2026-07-10 17:42:41",
-      "updated_at": "2026-07-10 17:42:41",
+      "size": 2109,
+      "file_mtime": "2026-07-14 00:10:19",
+      "updated_at": "2026-07-14 00:10:19",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -147,7 +147,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -156,9 +156,9 @@
       "path": "factors/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/factors/index.json",
       "exists": true,
-      "size": 2057,
-      "file_mtime": "2026-07-10 17:42:41",
-      "updated_at": "2026-07-10 17:42:41",
+      "size": 2061,
+      "file_mtime": "2026-07-14 00:10:19",
+      "updated_at": "2026-07-14 00:10:19",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -187,7 +187,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -196,9 +196,9 @@
       "path": "backtest/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/backtest/index.json",
       "exists": true,
-      "size": 1348,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "size": 1350,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -228,7 +228,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -237,9 +237,9 @@
       "path": "predictions/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/predictions/index.json",
       "exists": true,
-      "size": 961,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "size": 957,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -270,7 +270,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -279,9 +279,9 @@
       "path": "selector/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/selector/index.json",
       "exists": true,
-      "size": 4096,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "size": 4160,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -312,7 +312,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -322,8 +322,8 @@
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/decisions/index.json",
       "exists": true,
       "size": 1191,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -355,7 +355,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -365,8 +365,8 @@
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/review/index.json",
       "exists": true,
       "size": 1373,
-      "file_mtime": "2026-07-10 17:43:28",
-      "updated_at": "2026-07-10 17:43:28",
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -397,7 +397,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -438,7 +438,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -447,9 +447,9 @@
       "path": "impact/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/impact/index.json",
       "exists": true,
-      "size": 3972,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "size": 4061,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -479,7 +479,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -488,9 +488,9 @@
       "path": "attribution/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/attribution/index.json",
       "exists": true,
-      "size": 2958,
-      "file_mtime": "2026-07-10 17:52:51",
-      "updated_at": "2026-07-10 17:52:51",
+      "size": 2507,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -529,7 +529,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -538,9 +538,9 @@
       "path": "agent/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/agent/index.json",
       "exists": true,
-      "size": 1783,
-      "file_mtime": "2026-07-10 17:43:28",
-      "updated_at": "2026-07-10 17:43:28",
+      "size": 1819,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -571,7 +571,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -580,9 +580,9 @@
       "path": "trading/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/trading/index.json",
       "exists": true,
-      "size": 1845,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "size": 1846,
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -617,7 +617,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -627,8 +627,8 @@
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/portfolio/summary.json",
       "exists": true,
       "size": 847,
-      "file_mtime": "2026-07-10 17:43:27",
-      "updated_at": "2026-07-10 17:43:27",
+      "file_mtime": "2026-07-14 00:10:54",
+      "updated_at": "2026-07-14 00:10:54",
       "record_count": 0,
       "field_summary": {
         "top_level_fields": [
@@ -675,7 +675,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -729,7 +729,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -792,7 +792,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -801,9 +801,9 @@
       "path": "../../reports/console/index.html",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/reports/console/index.html",
       "exists": true,
-      "size": 12921,
-      "file_mtime": "2026-07-10 17:55:35",
-      "updated_at": "2026-07-10 17:55:35",
+      "size": 12959,
+      "file_mtime": "2026-07-14 00:10:55",
+      "updated_at": "2026-07-14 00:10:55",
       "record_count": 0,
       "field_summary": {
         "top_level_fields": [],
@@ -838,7 +838,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -847,9 +847,9 @@
       "path": "quality/latest.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/quality/latest.json",
       "exists": true,
-      "size": 2931,
-      "file_mtime": "2026-07-10 17:39:35",
-      "updated_at": "2026-07-10 17:39:35",
+      "size": 3009,
+      "file_mtime": "2026-07-14 00:07:32",
+      "updated_at": "2026-07-14 00:07:32",
       "record_count": 5,
       "field_summary": {
         "top_level_fields": [
@@ -882,7 +882,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     },
     {
       "registry_version": "1.0.0",
@@ -891,17 +891,17 @@
       "path": "task_runs/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/task_runs/index.json",
       "exists": true,
-      "size": 8242,
-      "file_mtime": "2026-07-10 18:09:07",
-      "updated_at": "2026-07-10 18:09:07",
-      "record_count": 12,
+      "size": 8981,
+      "file_mtime": "2026-07-10 18:10:10",
+      "updated_at": "2026-07-10 18:10:10",
+      "record_count": 13,
       "field_summary": {
         "top_level_fields": [
           "runs",
           "updated_at"
         ],
         "list_fields": {
-          "runs": 12
+          "runs": 13
         },
         "dict_fields": []
       },
@@ -920,7 +920,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-10 18:10:10"
+      "registered_at": "2026-07-14 00:10:55"
     }
   ],
   "lineage": [

@@ -1,27 +1,26 @@
 {
   "code": "002384",
   "name": "东山精密",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "selector_version": "1.1.0",
-  "upside_score": 57.19,
+  "upside_score": 45.2,
   "status": "rejected",
   "rank_bucket": "排除",
   "reasons": [
     "预测中性，概率 0.48",
     "收盘价站上 MA60",
-    "20日动量为正",
-    "5日动量为正",
-    "回测夏普 2.07",
+    "回测夏普 1.94",
     "回测胜率 66.67%"
   ],
   "risks": [
-    "因子分偏低 54.4",
+    "因子分偏低 42.2",
     "预测标记高波动",
     "未站上 MA20",
     "实际影响偏负面，impact_score=-33",
     "阈值校准：后验复盘样本不足，selector 阈值保持默认"
   ],
   "reject_reasons": [
+    "因子分过低 42.2",
     "实际影响数据显著偏负面"
   ],
   "candidate_blockers": [
@@ -37,13 +36,13 @@
     "实际影响分修复到非负"
   ],
   "metrics": {
-    "quality_score": 100.0,
-    "factor_score": 54.4,
+    "quality_score": 90.0,
+    "factor_score": 42.2,
     "candidate_score_threshold": 70.0,
     "watch_score_threshold": 55.0,
     "probability_floor": 0.55,
     "prediction_direction": "neutral",
-    "prediction_probability": 0.4792,
+    "prediction_probability": 0.4827,
     "impact_score": -33.0,
     "impact_direction": "negative"
   },
@@ -60,5 +59,5 @@
     ],
     "evidence": {}
   },
-  "updated_at": "2026-07-10 17:43:27"
+  "updated_at": "2026-07-14 00:10:54"
 }

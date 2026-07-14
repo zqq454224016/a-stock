@@ -1,26 +1,27 @@
 {
   "code": "603629",
   "name": "利通电子",
-  "trade_date": "2026-07-10",
+  "trade_date": "2026-07-14",
   "version": "1.1.0",
-  "updated_at": "2026-07-10 17:43:28",
+  "updated_at": "2026-07-14 00:10:54",
   "summary": "谨慎",
   "confidence": "low",
   "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
   "stock_selection": {
-    "verdict": "neutral",
-    "headline": "综合因子中性，等待更清晰信号",
-    "composite_score": 47.9,
+    "verdict": "negative",
+    "headline": "综合因子偏空，谨慎对待",
+    "composite_score": 33.5,
     "evidence": [
-      "技术分 47.0",
-      "情绪分 56.8",
+      "技术分 23.0",
+      "情绪分 52.9",
       "基本面分 36.0",
       "趋势 偏空",
       "舆情 看空"
     ],
     "drivers": [
+      "rsi14_weak",
       "macd_hist_negative",
-      "momentum_20_up",
+      "momentum_20_down",
       "ma20_breakdown"
     ],
     "risks": [
@@ -28,7 +29,7 @@
       "technical_only",
       "估值偏高"
     ],
-    "primary_signal": "neutral",
+    "primary_signal": "bearish",
     "trend": "偏空"
   },
   "strategy_diagnosis": {
@@ -36,28 +37,28 @@
     "strategy": "ma_cross",
     "verdict": "weak",
     "findings": [
-      "胜率偏低（14.29%）",
-      "历史最大回撤较大（-51.84%）",
-      "单笔最大亏损 -113770.83（MA20死叉）"
+      "胜率偏低（16.67%）",
+      "历史最大回撤较大（-51.56%）",
+      "单笔最大亏损 -117984.57（MA20死叉）"
     ],
     "suggestions": [
       "考虑提高买入阈值或叠加趋势过滤",
       "设置账户级回撤熔断，避免单边行情重仓"
     ],
     "metrics": {
-      "annual_return_pct": 212.46,
-      "max_drawdown_pct": -51.84,
-      "sharpe_ratio": 1.99,
-      "win_rate_pct": 14.29,
-      "closed_trades": 7
+      "annual_return_pct": 229.85,
+      "max_drawdown_pct": -51.56,
+      "sharpe_ratio": 2.09,
+      "win_rate_pct": 16.67,
+      "closed_trades": 6
     },
     "attribution_top": [
       {
         "reason": "MA20死叉",
-        "count": 7,
-        "total_pnl": 208249.19,
-        "avg_pnl": 29749.88,
-        "win_rate_pct": 14.29
+        "count": 6,
+        "total_pnl": 226739.27,
+        "avg_pnl": 37789.88,
+        "win_rate_pct": 16.67
       }
     ],
     "rolling_summary": null
@@ -66,20 +67,22 @@
     "available": true,
     "horizon": "5d",
     "direction": "down",
-    "probability": 0.1606,
+    "probability": 0.1785,
     "confidence": "high",
-    "expected_return": -0.0615,
-    "alignment": "partial",
+    "expected_return": -0.0601,
+    "alignment": "aligned",
     "drivers": [],
     "notes": [
-      "5d 预测 偏空，概率 16.1%，置信度 high",
-      "历史样本 58，回测胜率 14.3%",
-      "信号与预测部分一致，存在中性分歧",
+      "5d 预测 偏空，概率 17.8%，置信度 high",
+      "历史样本 59，回测胜率 16.7%",
+      "初级技术信号与预测方向一致",
+      "风险标记: rsi_oversold",
       "风险标记: high_volatility",
       "风险标记: high_historical_drawdown",
-      "策略历史回撤 -51.84% 偏高"
+      "策略历史回撤 -51.56% 偏高"
     ],
     "failure_conditions": [
+      "rsi_oversold",
       "high_volatility",
       "high_historical_drawdown"
     ],
@@ -90,7 +93,7 @@
     "quality_score": 90.0,
     "factor_eligible": true,
     "issues": [
-      "K 线末日期 2026-07-08 落后于最近交易日 2026-07-10"
+      "K 线末日期 2026-07-10 落后于最近交易日 2026-07-14"
     ]
   },
   "limitations": [
@@ -149,34 +152,37 @@
     "model": "local-rule",
     "prompt_version": "stock_review_v1.0.0",
     "summary": "谨慎",
-    "direction_view": "neutral",
+    "direction_view": "bearish",
     "confidence": "low",
     "evidence": [
-      "技术分 47.0",
-      "情绪分 56.8",
+      "技术分 23.0",
+      "情绪分 52.9",
       "基本面分 36.0",
       "趋势 偏空",
       "舆情 看空",
+      "rsi14_weak",
       "macd_hist_negative",
-      "momentum_20_up",
+      "momentum_20_down",
       "ma20_breakdown",
-      "胜率偏低（14.29%）",
-      "历史最大回撤较大（-51.84%）",
-      "单笔最大亏损 -113770.83（MA20死叉）",
-      "5d 预测 偏空，概率 16.1%，置信度 high",
-      "历史样本 58，回测胜率 14.3%",
-      "信号与预测部分一致，存在中性分歧"
+      "胜率偏低（16.67%）",
+      "历史最大回撤较大（-51.56%）",
+      "单笔最大亏损 -117984.57（MA20死叉）",
+      "5d 预测 偏空，概率 17.8%，置信度 high",
+      "历史样本 59，回测胜率 16.7%",
+      "初级技术信号与预测方向一致"
     ],
     "risks": [
       "not_backtested",
       "technical_only",
       "估值偏高",
+      "rsi_oversold",
       "high_volatility",
       "high_historical_drawdown",
       "rule_based_only",
       "no_auto_trade"
     ],
     "failure_conditions": [
+      "rsi_oversold",
       "high_volatility",
       "high_historical_drawdown"
     ],
