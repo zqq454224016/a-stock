@@ -1,30 +1,8 @@
 {
   "code": "603721",
   "source": "sina",
-  "fetched_at": "2026-07-24 01:52:29",
+  "fetched_at": "2026-07-27 23:52:07",
   "klines": [
-    {
-      "date": "2021-05-19",
-      "open": 21.15,
-      "high": 22.32,
-      "low": 20.24,
-      "close": 20.5,
-      "volume": 22244912.0,
-      "amount": 483425401.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
-    {
-      "date": "2021-05-20",
-      "open": 20.41,
-      "high": 22.55,
-      "low": 20.41,
-      "close": 22.55,
-      "volume": 18998829.0,
-      "amount": 430583619.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
     {
       "date": "2021-05-21",
       "open": 22.6,
@@ -13750,6 +13728,28 @@
       "close": 14.89,
       "volume": 2462100.0,
       "amount": 36095316.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-24",
+      "open": 14.75,
+      "high": 14.77,
+      "low": 14.38,
+      "close": 14.4,
+      "volume": 1822900.0,
+      "amount": 26491037.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-27",
+      "open": 14.59,
+      "high": 15.2,
+      "low": 14.38,
+      "close": 15.12,
+      "volume": 2394000.0,
+      "amount": 35834693.0,
       "adj_factor": 1.0,
       "adj_type": "qfq"
     }

@@ -1,7 +1,7 @@
 {
   "code": "001331",
   "source": "sina",
-  "fetched_at": "2026-07-24 01:52:03",
+  "fetched_at": "2026-07-27 23:32:47",
   "klines": [
     {
       "date": "2022-09-08",
@@ -9977,6 +9977,28 @@
       "close": 46.47,
       "volume": 5472852.0,
       "amount": 249452533.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-24",
+      "open": 45.5,
+      "high": 45.56,
+      "low": 41.83,
+      "close": 41.83,
+      "volume": 9543082.0,
+      "amount": 408013819.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-27",
+      "open": 41.83,
+      "high": 46.01,
+      "low": 41.53,
+      "close": 44.35,
+      "volume": 14477087.0,
+      "amount": 642599375.0,
       "adj_factor": 1.0,
       "adj_type": "qfq"
     }

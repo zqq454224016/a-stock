@@ -1,30 +1,8 @@
 {
   "code": "002729",
   "source": "sina",
-  "fetched_at": "2026-07-24 01:52:05",
+  "fetched_at": "2026-07-27 23:38:39",
   "klines": [
-    {
-      "date": "2021-05-07",
-      "open": 15.51,
-      "high": 15.67,
-      "low": 15.51,
-      "close": 15.57,
-      "volume": 155300.0,
-      "amount": 6692309.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
-    {
-      "date": "2021-05-10",
-      "open": 15.57,
-      "high": 15.59,
-      "low": 15.33,
-      "close": 15.4,
-      "volume": 232912.0,
-      "amount": 9918027.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
     {
       "date": "2021-05-11",
       "open": 15.4,
@@ -13750,6 +13728,28 @@
       "close": 12.42,
       "volume": 4105100.0,
       "amount": 50502335.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-24",
+      "open": 12.38,
+      "high": 12.38,
+      "low": 12.0,
+      "close": 12.23,
+      "volume": 2947900.0,
+      "amount": 35985838.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-27",
+      "open": 12.45,
+      "high": 12.71,
+      "low": 12.3,
+      "close": 12.7,
+      "volume": 3770500.0,
+      "amount": 47450242.0,
       "adj_factor": 1.0,
       "adj_type": "qfq"
     }

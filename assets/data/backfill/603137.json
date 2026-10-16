@@ -1,7 +1,7 @@
 {
   "code": "603137",
   "source": "sina",
-  "fetched_at": "2026-07-24 01:52:28",
+  "fetched_at": "2026-07-27 23:48:55",
   "klines": [
     {
       "date": "2023-04-19",
@@ -8580,6 +8580,28 @@
       "close": 25.8,
       "volume": 32365377.0,
       "amount": 803647889.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-24",
+      "open": 24.6,
+      "high": 27.55,
+      "low": 24.6,
+      "close": 26.51,
+      "volume": 30054003.0,
+      "amount": 791927105.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-27",
+      "open": 26.28,
+      "high": 28.32,
+      "low": 23.86,
+      "close": 28.32,
+      "volume": 30536704.0,
+      "amount": 791917228.0,
       "adj_factor": 1.0,
       "adj_type": "qfq"
     }

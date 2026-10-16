@@ -1,52 +1,8 @@
 {
   "code": "000008",
   "source": "sina",
-  "fetched_at": "2026-07-24 01:52:03",
+  "fetched_at": "2026-07-30 10:49:19",
   "klines": [
-    {
-      "date": "2021-05-21",
-      "open": 2.25,
-      "high": 2.27,
-      "low": 2.24,
-      "close": 2.26,
-      "volume": 9260808.0,
-      "amount": 20892510.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
-    {
-      "date": "2021-05-24",
-      "open": 2.26,
-      "high": 2.28,
-      "low": 2.25,
-      "close": 2.27,
-      "volume": 8402428.0,
-      "amount": 19030464.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
-    {
-      "date": "2021-05-25",
-      "open": 2.27,
-      "high": 2.28,
-      "low": 2.26,
-      "close": 2.28,
-      "volume": 9519340.0,
-      "amount": 21631054.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
-    {
-      "date": "2021-05-26",
-      "open": 2.28,
-      "high": 2.3,
-      "low": 2.26,
-      "close": 2.29,
-      "volume": 18109483.0,
-      "amount": 41364550.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
     {
       "date": "2021-05-27",
       "open": 2.29,
@@ -13750,6 +13706,50 @@
       "close": 2.34,
       "volume": 32439623.0,
       "amount": 75001792.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-24",
+      "open": 2.32,
+      "high": 2.34,
+      "low": 2.28,
+      "close": 2.28,
+      "volume": 21118400.0,
+      "amount": 48564063.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-27",
+      "open": 2.28,
+      "high": 2.31,
+      "low": 2.27,
+      "close": 2.31,
+      "volume": 15839988.0,
+      "amount": 36410384.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-28",
+      "open": 2.3,
+      "high": 2.38,
+      "low": 2.29,
+      "close": 2.35,
+      "volume": 32545596.0,
+      "amount": 76529711.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-29",
+      "open": 2.35,
+      "high": 2.4,
+      "low": 2.35,
+      "close": 2.37,
+      "volume": 27522712.0,
+      "amount": 65368302.0,
       "adj_factor": 1.0,
       "adj_type": "qfq"
     }

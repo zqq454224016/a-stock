@@ -1,30 +1,8 @@
 {
   "code": "002677",
   "source": "sina",
-  "fetched_at": "2026-07-24 01:52:05",
+  "fetched_at": "2026-07-27 23:38:22",
   "klines": [
-    {
-      "date": "2021-05-21",
-      "open": 16.96,
-      "high": 16.97,
-      "low": 16.26,
-      "close": 16.48,
-      "volume": 5565674.0,
-      "amount": 114991694.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
-    {
-      "date": "2021-05-24",
-      "open": 16.43,
-      "high": 16.48,
-      "low": 16.17,
-      "close": 16.2,
-      "volume": 4425320.0,
-      "amount": 89784322.0,
-      "adj_factor": 1.0,
-      "adj_type": "qfq"
-    },
     {
       "date": "2021-05-25",
       "open": 16.28,
@@ -13750,6 +13728,28 @@
       "close": 6.31,
       "volume": 17375450.0,
       "amount": 107561783.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-24",
+      "open": 6.21,
+      "high": 6.3,
+      "low": 6.05,
+      "close": 6.08,
+      "volume": 12995751.0,
+      "amount": 79728513.0,
+      "adj_factor": 1.0,
+      "adj_type": "qfq"
+    },
+    {
+      "date": "2026-07-27",
+      "open": 6.08,
+      "high": 6.58,
+      "low": 6.07,
+      "close": 6.45,
+      "volume": 17767709.0,
+      "amount": 113336085.0,
       "adj_factor": 1.0,
       "adj_type": "qfq"
     }
