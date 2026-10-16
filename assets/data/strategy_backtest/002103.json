@@ -1,0 +1,32 @@
+{
+  "code": "002103",
+  "name": "广博股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 924,
+      "hit_rate": 0.4784,
+      "avg_signed_return_pct": 0.085,
+      "max_adverse_pct": -36.508
+    },
+    "20d": {
+      "sample_count": 921,
+      "hit_rate": 0.468,
+      "avg_signed_return_pct": 1.173,
+      "max_adverse_pct": -66.483
+    },
+    "60d": {
+      "sample_count": 890,
+      "hit_rate": 0.4315,
+      "avg_signed_return_pct": 1.934,
+      "max_adverse_pct": -65.667
+    }
+  },
+  "limitations": []
+}

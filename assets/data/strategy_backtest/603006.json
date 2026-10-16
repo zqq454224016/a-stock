@@ -1,0 +1,32 @@
+{
+  "code": "603006",
+  "name": "联明股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 895,
+      "hit_rate": 0.4536,
+      "avg_signed_return_pct": -0.271,
+      "max_adverse_pct": -37.269
+    },
+    "20d": {
+      "sample_count": 883,
+      "hit_rate": 0.4009,
+      "avg_signed_return_pct": -2.736,
+      "max_adverse_pct": -109.237
+    },
+    "60d": {
+      "sample_count": 852,
+      "hit_rate": 0.338,
+      "avg_signed_return_pct": -6.392,
+      "max_adverse_pct": -76.89
+    }
+  },
+  "limitations": []
+}

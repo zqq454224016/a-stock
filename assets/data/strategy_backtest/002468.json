@@ -1,0 +1,32 @@
+{
+  "code": "002468",
+  "name": "申通快递",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 935,
+      "hit_rate": 0.4759,
+      "avg_signed_return_pct": -0.299,
+      "max_adverse_pct": -22.609
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.487,
+      "avg_signed_return_pct": -0.498,
+      "max_adverse_pct": -53.649
+    },
+    "60d": {
+      "sample_count": 909,
+      "hit_rate": 0.3432,
+      "avg_signed_return_pct": -5.483,
+      "max_adverse_pct": -85.017
+    }
+  },
+  "limitations": []
+}

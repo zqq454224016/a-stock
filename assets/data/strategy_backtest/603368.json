@@ -1,0 +1,32 @@
+{
+  "code": "603368",
+  "name": "柳药集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.4698,
+      "avg_signed_return_pct": -0.272,
+      "max_adverse_pct": -27.285
+    },
+    "20d": {
+      "sample_count": 868,
+      "hit_rate": 0.4551,
+      "avg_signed_return_pct": -1.186,
+      "max_adverse_pct": -37.018
+    },
+    "60d": {
+      "sample_count": 850,
+      "hit_rate": 0.4082,
+      "avg_signed_return_pct": -3.349,
+      "max_adverse_pct": -52.892
+    }
+  },
+  "limitations": []
+}

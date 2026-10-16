@@ -1,0 +1,32 @@
+{
+  "code": "600100",
+  "name": "同方股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 854,
+      "hit_rate": 0.4719,
+      "avg_signed_return_pct": 0.09,
+      "max_adverse_pct": -20.6
+    },
+    "20d": {
+      "sample_count": 845,
+      "hit_rate": 0.4308,
+      "avg_signed_return_pct": 0.069,
+      "max_adverse_pct": -56.025
+    },
+    "60d": {
+      "sample_count": 826,
+      "hit_rate": 0.4334,
+      "avg_signed_return_pct": -1.124,
+      "max_adverse_pct": -99.304
+    }
+  },
+  "limitations": []
+}

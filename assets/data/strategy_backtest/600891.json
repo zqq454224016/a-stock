@@ -1,0 +1,32 @@
+{
+  "code": "600891",
+  "name": "退市秋林",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1016,
+      "hit_rate": 0.5187,
+      "avg_signed_return_pct": 1.017,
+      "max_adverse_pct": -29.499
+    },
+    "20d": {
+      "sample_count": 1001,
+      "hit_rate": 0.5524,
+      "avg_signed_return_pct": 2.577,
+      "max_adverse_pct": -52.628
+    },
+    "60d": {
+      "sample_count": 972,
+      "hit_rate": 0.5072,
+      "avg_signed_return_pct": 1.304,
+      "max_adverse_pct": -79.503
+    }
+  },
+  "limitations": []
+}

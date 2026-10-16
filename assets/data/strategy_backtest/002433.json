@@ -1,0 +1,32 @@
+{
+  "code": "002433",
+  "name": "太安退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 941,
+      "hit_rate": 0.4857,
+      "avg_signed_return_pct": 0.934,
+      "max_adverse_pct": -26.744
+    },
+    "20d": {
+      "sample_count": 926,
+      "hit_rate": 0.5227,
+      "avg_signed_return_pct": 2.988,
+      "max_adverse_pct": -39.677
+    },
+    "60d": {
+      "sample_count": 886,
+      "hit_rate": 0.5056,
+      "avg_signed_return_pct": 1.925,
+      "max_adverse_pct": -78.378
+    }
+  },
+  "limitations": []
+}

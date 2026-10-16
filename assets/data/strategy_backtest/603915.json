@@ -1,0 +1,32 @@
+{
+  "code": "603915",
+  "name": "国茂股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 938,
+      "hit_rate": 0.5043,
+      "avg_signed_return_pct": 0.069,
+      "max_adverse_pct": -31.94
+    },
+    "20d": {
+      "sample_count": 925,
+      "hit_rate": 0.4768,
+      "avg_signed_return_pct": -0.727,
+      "max_adverse_pct": -44.553
+    },
+    "60d": {
+      "sample_count": 896,
+      "hit_rate": 0.4319,
+      "avg_signed_return_pct": -3.406,
+      "max_adverse_pct": -78.759
+    }
+  },
+  "limitations": []
+}

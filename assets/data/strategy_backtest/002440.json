@@ -1,0 +1,32 @@
+{
+  "code": "002440",
+  "name": "闰土股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 851,
+      "hit_rate": 0.4865,
+      "avg_signed_return_pct": -0.016,
+      "max_adverse_pct": -23.535
+    },
+    "20d": {
+      "sample_count": 847,
+      "hit_rate": 0.4345,
+      "avg_signed_return_pct": 0.45,
+      "max_adverse_pct": -27.595
+    },
+    "60d": {
+      "sample_count": 812,
+      "hit_rate": 0.3608,
+      "avg_signed_return_pct": -2.036,
+      "max_adverse_pct": -67.004
+    }
+  },
+  "limitations": []
+}

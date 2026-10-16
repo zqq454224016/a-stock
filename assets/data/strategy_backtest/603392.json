@@ -1,0 +1,32 @@
+{
+  "code": "603392",
+  "name": "万泰生物",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 886,
+      "hit_rate": 0.4966,
+      "avg_signed_return_pct": -0.301,
+      "max_adverse_pct": -26.19
+    },
+    "20d": {
+      "sample_count": 871,
+      "hit_rate": 0.4971,
+      "avg_signed_return_pct": -0.541,
+      "max_adverse_pct": -41.609
+    },
+    "60d": {
+      "sample_count": 850,
+      "hit_rate": 0.5412,
+      "avg_signed_return_pct": -0.071,
+      "max_adverse_pct": -79.715
+    }
+  },
+  "limitations": []
+}

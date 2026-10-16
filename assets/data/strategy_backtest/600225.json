@@ -1,0 +1,32 @@
+{
+  "code": "600225",
+  "name": "退市卓朗",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 943,
+      "hit_rate": 0.5016,
+      "avg_signed_return_pct": 0.765,
+      "max_adverse_pct": -44.595
+    },
+    "20d": {
+      "sample_count": 928,
+      "hit_rate": 0.4752,
+      "avg_signed_return_pct": -0.592,
+      "max_adverse_pct": -138.095
+    },
+    "60d": {
+      "sample_count": 899,
+      "hit_rate": 0.4994,
+      "avg_signed_return_pct": -1.537,
+      "max_adverse_pct": -133.667
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "603700",
+  "name": "宁水集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 804,
+      "hit_rate": 0.4266,
+      "avg_signed_return_pct": -0.743,
+      "max_adverse_pct": -23.278
+    },
+    "20d": {
+      "sample_count": 801,
+      "hit_rate": 0.3895,
+      "avg_signed_return_pct": -1.691,
+      "max_adverse_pct": -37.412
+    },
+    "60d": {
+      "sample_count": 773,
+      "hit_rate": 0.4153,
+      "avg_signed_return_pct": -2.111,
+      "max_adverse_pct": -38.151
+    }
+  },
+  "limitations": []
+}

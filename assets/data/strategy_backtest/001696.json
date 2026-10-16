@@ -1,0 +1,32 @@
+{
+  "code": "001696",
+  "name": "宗申动力",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 889,
+      "hit_rate": 0.4274,
+      "avg_signed_return_pct": -0.515,
+      "max_adverse_pct": -59.035
+    },
+    "20d": {
+      "sample_count": 879,
+      "hit_rate": 0.3948,
+      "avg_signed_return_pct": -1.092,
+      "max_adverse_pct": -67.125
+    },
+    "60d": {
+      "sample_count": 857,
+      "hit_rate": 0.3676,
+      "avg_signed_return_pct": -3.388,
+      "max_adverse_pct": -161.883
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000558",
+  "name": "天府文旅",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 915,
+      "hit_rate": 0.4503,
+      "avg_signed_return_pct": -0.225,
+      "max_adverse_pct": -32.329
+    },
+    "20d": {
+      "sample_count": 907,
+      "hit_rate": 0.4697,
+      "avg_signed_return_pct": -0.182,
+      "max_adverse_pct": -37.278
+    },
+    "60d": {
+      "sample_count": 875,
+      "hit_rate": 0.5143,
+      "avg_signed_return_pct": 1.252,
+      "max_adverse_pct": -54.028
+    }
+  },
+  "limitations": []
+}

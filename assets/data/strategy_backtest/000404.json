@@ -1,0 +1,32 @@
+{
+  "code": "000404",
+  "name": "长虹华意",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.4538,
+      "avg_signed_return_pct": -0.508,
+      "max_adverse_pct": -30.067
+    },
+    "20d": {
+      "sample_count": 862,
+      "hit_rate": 0.4582,
+      "avg_signed_return_pct": -0.803,
+      "max_adverse_pct": -51.641
+    },
+    "60d": {
+      "sample_count": 832,
+      "hit_rate": 0.4351,
+      "avg_signed_return_pct": -2.146,
+      "max_adverse_pct": -58.643
+    }
+  },
+  "limitations": []
+}

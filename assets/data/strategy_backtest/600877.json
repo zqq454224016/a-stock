@@ -1,0 +1,32 @@
+{
+  "code": "600877",
+  "name": "电科芯片",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:43",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 901,
+      "hit_rate": 0.4539,
+      "avg_signed_return_pct": -0.174,
+      "max_adverse_pct": -29.061
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.4363,
+      "avg_signed_return_pct": -1.0,
+      "max_adverse_pct": -57.57
+    },
+    "60d": {
+      "sample_count": 855,
+      "hit_rate": 0.4713,
+      "avg_signed_return_pct": -2.188,
+      "max_adverse_pct": -85.479
+    }
+  },
+  "limitations": []
+}

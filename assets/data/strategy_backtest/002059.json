@@ -1,0 +1,32 @@
+{
+  "code": "002059",
+  "name": "云南旅游",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 833,
+      "hit_rate": 0.425,
+      "avg_signed_return_pct": -0.797,
+      "max_adverse_pct": -29.16
+    },
+    "20d": {
+      "sample_count": 825,
+      "hit_rate": 0.3515,
+      "avg_signed_return_pct": -2.784,
+      "max_adverse_pct": -62.316
+    },
+    "60d": {
+      "sample_count": 794,
+      "hit_rate": 0.3741,
+      "avg_signed_return_pct": -3.837,
+      "max_adverse_pct": -74.359
+    }
+  },
+  "limitations": []
+}

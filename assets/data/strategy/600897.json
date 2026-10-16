@@ -1,0 +1,47 @@
+{
+  "code": "600897",
+  "name": "厦门空港",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 37.38,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 14.85,
+    "ma60": 14.8297,
+    "momentum20": -7.9272,
+    "momentum60": -2.1409,
+    "ma20_slope10": -2.1771,
+    "volatility20": 46.2959
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

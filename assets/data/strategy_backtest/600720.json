@@ -1,0 +1,32 @@
+{
+  "code": "600720",
+  "name": "中交设计",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 805,
+      "hit_rate": 0.472,
+      "avg_signed_return_pct": -0.225,
+      "max_adverse_pct": -18.78
+    },
+    "20d": {
+      "sample_count": 802,
+      "hit_rate": 0.4015,
+      "avg_signed_return_pct": -1.808,
+      "max_adverse_pct": -59.39
+    },
+    "60d": {
+      "sample_count": 784,
+      "hit_rate": 0.4707,
+      "avg_signed_return_pct": -0.484,
+      "max_adverse_pct": -43.22
+    }
+  },
+  "limitations": []
+}

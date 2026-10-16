@@ -1,0 +1,32 @@
+{
+  "code": "002051",
+  "name": "中工国际",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 867,
+      "hit_rate": 0.4325,
+      "avg_signed_return_pct": -0.442,
+      "max_adverse_pct": -25.731
+    },
+    "20d": {
+      "sample_count": 862,
+      "hit_rate": 0.4629,
+      "avg_signed_return_pct": -0.779,
+      "max_adverse_pct": -38.163
+    },
+    "60d": {
+      "sample_count": 828,
+      "hit_rate": 0.4577,
+      "avg_signed_return_pct": 0.092,
+      "max_adverse_pct": -58.228
+    }
+  },
+  "limitations": []
+}

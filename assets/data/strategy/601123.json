@@ -1,0 +1,10 @@
+{
+  "code": "601123",
+  "name": "马矿股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "insufficient",
+  "limitations": [
+    "history_less_than_60_bars"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "code": "600020",
+  "name": "中原高速",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 66.56,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 3.879,
+    "ma60": 3.8475,
+    "momentum20": 0.7653,
+    "momentum60": 5.0532,
+    "ma20_slope10": -0.0644,
+    "volatility20": 15.569
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002238",
+  "name": "天威视讯",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 946,
+      "hit_rate": 0.4503,
+      "avg_signed_return_pct": -0.267,
+      "max_adverse_pct": -36.933
+    },
+    "20d": {
+      "sample_count": 933,
+      "hit_rate": 0.4684,
+      "avg_signed_return_pct": -3.244,
+      "max_adverse_pct": -161.935
+    },
+    "60d": {
+      "sample_count": 897,
+      "hit_rate": 0.3612,
+      "avg_signed_return_pct": -9.343,
+      "max_adverse_pct": -171.56
+    }
+  },
+  "limitations": []
+}

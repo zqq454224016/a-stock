@@ -1,0 +1,32 @@
+{
+  "code": "603992",
+  "name": "松霖科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 903,
+      "hit_rate": 0.4441,
+      "avg_signed_return_pct": -0.698,
+      "max_adverse_pct": -31.051
+    },
+    "20d": {
+      "sample_count": 888,
+      "hit_rate": 0.4617,
+      "avg_signed_return_pct": -2.187,
+      "max_adverse_pct": -50.157
+    },
+    "60d": {
+      "sample_count": 848,
+      "hit_rate": 0.3844,
+      "avg_signed_return_pct": -3.672,
+      "max_adverse_pct": -55.092
+    }
+  },
+  "limitations": []
+}

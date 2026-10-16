@@ -1,0 +1,32 @@
+{
+  "code": "605258",
+  "name": "协和电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4661,
+      "avg_signed_return_pct": 0.099,
+      "max_adverse_pct": -33.333
+    },
+    "20d": {
+      "sample_count": 884,
+      "hit_rate": 0.4774,
+      "avg_signed_return_pct": 0.167,
+      "max_adverse_pct": -46.866
+    },
+    "60d": {
+      "sample_count": 846,
+      "hit_rate": 0.3723,
+      "avg_signed_return_pct": -5.495,
+      "max_adverse_pct": -69.774
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000625",
+  "name": "长安汽车",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 941,
+      "hit_rate": 0.5122,
+      "avg_signed_return_pct": 0.323,
+      "max_adverse_pct": -30.166
+    },
+    "20d": {
+      "sample_count": 940,
+      "hit_rate": 0.4777,
+      "avg_signed_return_pct": -0.066,
+      "max_adverse_pct": -56.354
+    },
+    "60d": {
+      "sample_count": 923,
+      "hit_rate": 0.4204,
+      "avg_signed_return_pct": -5.017,
+      "max_adverse_pct": -145.717
+    }
+  },
+  "limitations": []
+}

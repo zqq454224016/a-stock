@@ -1,0 +1,32 @@
+{
+  "code": "000910",
+  "name": "大亚圣象",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 830,
+      "hit_rate": 0.4831,
+      "avg_signed_return_pct": -0.027,
+      "max_adverse_pct": -20.0
+    },
+    "20d": {
+      "sample_count": 820,
+      "hit_rate": 0.439,
+      "avg_signed_return_pct": -0.274,
+      "max_adverse_pct": -26.427
+    },
+    "60d": {
+      "sample_count": 791,
+      "hit_rate": 0.3552,
+      "avg_signed_return_pct": -2.746,
+      "max_adverse_pct": -45.769
+    }
+  },
+  "limitations": []
+}

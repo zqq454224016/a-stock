@@ -1,0 +1,47 @@
+{
+  "code": "603406",
+  "name": "天富龙",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 25.98,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 28.1613,
+    "ma60": 27.8208,
+    "momentum20": -14.8079,
+    "momentum60": 2.1005,
+    "ma20_slope10": -4.4935,
+    "volatility20": 38.6185
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

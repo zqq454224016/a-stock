@@ -1,0 +1,32 @@
+{
+  "code": "603396",
+  "name": "金辰股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1015,
+      "hit_rate": 0.5113,
+      "avg_signed_return_pct": 0.215,
+      "max_adverse_pct": -37.386
+    },
+    "20d": {
+      "sample_count": 1002,
+      "hit_rate": 0.479,
+      "avg_signed_return_pct": -1.531,
+      "max_adverse_pct": -55.891
+    },
+    "60d": {
+      "sample_count": 964,
+      "hit_rate": 0.5187,
+      "avg_signed_return_pct": -2.136,
+      "max_adverse_pct": -162.94
+    }
+  },
+  "limitations": []
+}

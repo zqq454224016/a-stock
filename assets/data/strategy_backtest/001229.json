@@ -1,0 +1,34 @@
+{
+  "code": "001229",
+  "name": "魅视科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:16",
+  "window": "past_954_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 954,
+  "metrics": {
+    "5d": {
+      "sample_count": 657,
+      "hit_rate": 0.4201,
+      "avg_signed_return_pct": -0.612,
+      "max_adverse_pct": -60.101
+    },
+    "20d": {
+      "sample_count": 647,
+      "hit_rate": 0.4096,
+      "avg_signed_return_pct": -1.101,
+      "max_adverse_pct": -98.191
+    },
+    "60d": {
+      "sample_count": 616,
+      "hit_rate": 0.4221,
+      "avg_signed_return_pct": -5.909,
+      "max_adverse_pct": -124.228
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

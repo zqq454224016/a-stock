@@ -1,0 +1,32 @@
+{
+  "code": "000559",
+  "name": "万向钱潮",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 847,
+      "hit_rate": 0.4545,
+      "avg_signed_return_pct": -0.312,
+      "max_adverse_pct": -44.296
+    },
+    "20d": {
+      "sample_count": 837,
+      "hit_rate": 0.4719,
+      "avg_signed_return_pct": -0.02,
+      "max_adverse_pct": -72.337
+    },
+    "60d": {
+      "sample_count": 806,
+      "hit_rate": 0.438,
+      "avg_signed_return_pct": 0.965,
+      "max_adverse_pct": -89.487
+    }
+  },
+  "limitations": []
+}

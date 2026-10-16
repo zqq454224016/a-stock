@@ -1,0 +1,47 @@
+{
+  "code": "600737",
+  "name": "中粮糖业",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 23.69,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 14.8475,
+    "ma60": 14.257,
+    "momentum20": -21.156,
+    "momentum60": 22.4872,
+    "ma20_slope10": -5.3968,
+    "volatility20": 78.121
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

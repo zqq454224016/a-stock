@@ -1,0 +1,47 @@
+{
+  "code": "603005",
+  "name": "晶方科技",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 0.0,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 27.432,
+    "ma60": 29.8168,
+    "momentum20": -23.5714,
+    "momentum60": -34.8696,
+    "ma20_slope10": -7.7001,
+    "volatility20": 37.049
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

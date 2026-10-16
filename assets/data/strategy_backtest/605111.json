@@ -1,0 +1,32 @@
+{
+  "code": "605111",
+  "name": "新洁能",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 937,
+      "hit_rate": 0.4899,
+      "avg_signed_return_pct": -0.095,
+      "max_adverse_pct": -36.095
+    },
+    "20d": {
+      "sample_count": 924,
+      "hit_rate": 0.4026,
+      "avg_signed_return_pct": -3.328,
+      "max_adverse_pct": -68.986
+    },
+    "60d": {
+      "sample_count": 901,
+      "hit_rate": 0.3873,
+      "avg_signed_return_pct": -7.328,
+      "max_adverse_pct": -172.406
+    }
+  },
+  "limitations": []
+}

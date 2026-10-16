@@ -1,0 +1,32 @@
+{
+  "code": "600637",
+  "name": "东方明珠",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 889,
+      "hit_rate": 0.4702,
+      "avg_signed_return_pct": 0.043,
+      "max_adverse_pct": -23.327
+    },
+    "20d": {
+      "sample_count": 877,
+      "hit_rate": 0.4584,
+      "avg_signed_return_pct": 0.069,
+      "max_adverse_pct": -31.495
+    },
+    "60d": {
+      "sample_count": 846,
+      "hit_rate": 0.4799,
+      "avg_signed_return_pct": 1.266,
+      "max_adverse_pct": -35.478
+    }
+  },
+  "limitations": []
+}

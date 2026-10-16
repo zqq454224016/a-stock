@@ -1,0 +1,32 @@
+{
+  "code": "600230",
+  "name": "沧州大化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 873,
+      "hit_rate": 0.4559,
+      "avg_signed_return_pct": -0.349,
+      "max_adverse_pct": -32.258
+    },
+    "20d": {
+      "sample_count": 871,
+      "hit_rate": 0.3881,
+      "avg_signed_return_pct": -1.646,
+      "max_adverse_pct": -42.551
+    },
+    "60d": {
+      "sample_count": 839,
+      "hit_rate": 0.3707,
+      "avg_signed_return_pct": -4.718,
+      "max_adverse_pct": -77.76
+    }
+  },
+  "limitations": []
+}

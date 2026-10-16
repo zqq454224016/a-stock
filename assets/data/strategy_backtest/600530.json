@@ -1,0 +1,34 @@
+{
+  "code": "600530",
+  "name": "交大昂立",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-08-05 00:29:58",
+  "window": "past_1190_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1190,
+  "metrics": {
+    "5d": {
+      "sample_count": 880,
+      "hit_rate": 0.458,
+      "avg_signed_return_pct": 0.121,
+      "max_adverse_pct": -26.692
+    },
+    "20d": {
+      "sample_count": 865,
+      "hit_rate": 0.4439,
+      "avg_signed_return_pct": -1.437,
+      "max_adverse_pct": -81.345
+    },
+    "60d": {
+      "sample_count": 839,
+      "hit_rate": 0.4732,
+      "avg_signed_return_pct": 4.396,
+      "max_adverse_pct": -99.592
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

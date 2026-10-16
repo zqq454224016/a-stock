@@ -1,0 +1,32 @@
+{
+  "code": "603721",
+  "name": "中广天择",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.4489,
+      "avg_signed_return_pct": -0.741,
+      "max_adverse_pct": -41.793
+    },
+    "20d": {
+      "sample_count": 889,
+      "hit_rate": 0.4173,
+      "avg_signed_return_pct": -2.906,
+      "max_adverse_pct": -87.819
+    },
+    "60d": {
+      "sample_count": 858,
+      "hit_rate": 0.3427,
+      "avg_signed_return_pct": -9.226,
+      "max_adverse_pct": -155.556
+    }
+  },
+  "limitations": []
+}

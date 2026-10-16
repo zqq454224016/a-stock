@@ -1,0 +1,32 @@
+{
+  "code": "603003",
+  "name": "退市龙宇",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 897,
+      "hit_rate": 0.466,
+      "avg_signed_return_pct": -0.242,
+      "max_adverse_pct": -32.682
+    },
+    "20d": {
+      "sample_count": 882,
+      "hit_rate": 0.4286,
+      "avg_signed_return_pct": -3.051,
+      "max_adverse_pct": -54.809
+    },
+    "60d": {
+      "sample_count": 862,
+      "hit_rate": 0.3654,
+      "avg_signed_return_pct": -5.623,
+      "max_adverse_pct": -63.113
+    }
+  },
+  "limitations": []
+}

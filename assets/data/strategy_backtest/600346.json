@@ -1,0 +1,32 @@
+{
+  "code": "600346",
+  "name": "恒力石化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 878,
+      "hit_rate": 0.4784,
+      "avg_signed_return_pct": -0.398,
+      "max_adverse_pct": -25.783
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.468,
+      "avg_signed_return_pct": -0.685,
+      "max_adverse_pct": -25.702
+    },
+    "60d": {
+      "sample_count": 839,
+      "hit_rate": 0.4374,
+      "avg_signed_return_pct": -1.546,
+      "max_adverse_pct": -44.279
+    }
+  },
+  "limitations": []
+}

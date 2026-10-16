@@ -1,0 +1,32 @@
+{
+  "code": "605358",
+  "name": "立昂微",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 915,
+      "hit_rate": 0.4699,
+      "avg_signed_return_pct": -0.49,
+      "max_adverse_pct": -31.182
+    },
+    "20d": {
+      "sample_count": 906,
+      "hit_rate": 0.4161,
+      "avg_signed_return_pct": -2.207,
+      "max_adverse_pct": -54.498
+    },
+    "60d": {
+      "sample_count": 879,
+      "hit_rate": 0.4187,
+      "avg_signed_return_pct": -5.057,
+      "max_adverse_pct": -139.257
+    }
+  },
+  "limitations": []
+}

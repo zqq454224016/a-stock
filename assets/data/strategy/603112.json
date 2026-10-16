@@ -1,0 +1,47 @@
+{
+  "code": "603112",
+  "name": "华翔股份",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 33.13,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 16.468,
+    "ma60": 15.7747,
+    "momentum20": -11.7927,
+    "momentum60": 0.8169,
+    "ma20_slope10": -2.5014,
+    "volatility20": 48.3192
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

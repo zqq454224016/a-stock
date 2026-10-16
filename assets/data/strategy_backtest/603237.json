@@ -1,0 +1,34 @@
+{
+  "code": "603237",
+  "name": "五芳斋",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_937_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 937,
+  "metrics": {
+    "5d": {
+      "sample_count": 652,
+      "hit_rate": 0.454,
+      "avg_signed_return_pct": -0.284,
+      "max_adverse_pct": -18.776
+    },
+    "20d": {
+      "sample_count": 642,
+      "hit_rate": 0.4159,
+      "avg_signed_return_pct": -0.919,
+      "max_adverse_pct": -22.321
+    },
+    "60d": {
+      "sample_count": 611,
+      "hit_rate": 0.3486,
+      "avg_signed_return_pct": -3.73,
+      "max_adverse_pct": -24.678
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

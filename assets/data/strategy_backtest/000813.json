@@ -1,0 +1,32 @@
+{
+  "code": "000813",
+  "name": "德展健康",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 881,
+      "hit_rate": 0.4733,
+      "avg_signed_return_pct": -0.176,
+      "max_adverse_pct": -28.296
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.46,
+      "avg_signed_return_pct": -0.626,
+      "max_adverse_pct": -41.613
+    },
+    "60d": {
+      "sample_count": 849,
+      "hit_rate": 0.4912,
+      "avg_signed_return_pct": -0.671,
+      "max_adverse_pct": -56.452
+    }
+  },
+  "limitations": []
+}

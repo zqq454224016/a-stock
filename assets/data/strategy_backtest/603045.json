@@ -1,0 +1,32 @@
+{
+  "code": "603045",
+  "name": "福达合金",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 888,
+      "hit_rate": 0.4696,
+      "avg_signed_return_pct": 0.229,
+      "max_adverse_pct": -24.881
+    },
+    "20d": {
+      "sample_count": 873,
+      "hit_rate": 0.4307,
+      "avg_signed_return_pct": 0.37,
+      "max_adverse_pct": -46.306
+    },
+    "60d": {
+      "sample_count": 839,
+      "hit_rate": 0.5292,
+      "avg_signed_return_pct": 5.903,
+      "max_adverse_pct": -63.506
+    }
+  },
+  "limitations": []
+}

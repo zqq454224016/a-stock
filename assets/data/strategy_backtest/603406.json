@@ -1,0 +1,34 @@
+{
+  "code": "603406",
+  "name": "天富龙",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_226_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 226,
+  "metrics": {
+    "5d": {
+      "sample_count": 164,
+      "hit_rate": 0.5061,
+      "avg_signed_return_pct": 0.659,
+      "max_adverse_pct": -12.651
+    },
+    "20d": {
+      "sample_count": 160,
+      "hit_rate": 0.6687,
+      "avg_signed_return_pct": 2.965,
+      "max_adverse_pct": -16.069
+    },
+    "60d": {
+      "sample_count": 132,
+      "hit_rate": 0.7424,
+      "avg_signed_return_pct": 9.355,
+      "max_adverse_pct": -29.569
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

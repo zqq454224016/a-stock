@@ -1,0 +1,34 @@
+{
+  "code": "603352",
+  "name": "至信股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_120_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 120,
+  "metrics": {
+    "5d": {
+      "sample_count": 91,
+      "hit_rate": 0.6154,
+      "avg_signed_return_pct": 1.051,
+      "max_adverse_pct": -13.658
+    },
+    "20d": {
+      "sample_count": 82,
+      "hit_rate": 0.6707,
+      "avg_signed_return_pct": 6.088,
+      "max_adverse_pct": -15.81
+    },
+    "60d": {
+      "sample_count": 60,
+      "hit_rate": 0.9333,
+      "avg_signed_return_pct": 14.942,
+      "max_adverse_pct": -3.619
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

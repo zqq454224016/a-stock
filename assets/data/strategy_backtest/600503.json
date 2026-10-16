@@ -1,0 +1,32 @@
+{
+  "code": "600503",
+  "name": "华丽家族",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:38",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 867,
+      "hit_rate": 0.4025,
+      "avg_signed_return_pct": -0.581,
+      "max_adverse_pct": -23.925
+    },
+    "20d": {
+      "sample_count": 857,
+      "hit_rate": 0.3594,
+      "avg_signed_return_pct": -2.291,
+      "max_adverse_pct": -35.389
+    },
+    "60d": {
+      "sample_count": 824,
+      "hit_rate": 0.409,
+      "avg_signed_return_pct": -3.209,
+      "max_adverse_pct": -97.661
+    }
+  },
+  "limitations": []
+}

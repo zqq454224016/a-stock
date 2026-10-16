@@ -1,0 +1,32 @@
+{
+  "code": "002425",
+  "name": "凯撒文化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 923,
+      "hit_rate": 0.4659,
+      "avg_signed_return_pct": -0.73,
+      "max_adverse_pct": -29.478
+    },
+    "20d": {
+      "sample_count": 923,
+      "hit_rate": 0.4063,
+      "avg_signed_return_pct": -3.436,
+      "max_adverse_pct": -56.4
+    },
+    "60d": {
+      "sample_count": 887,
+      "hit_rate": 0.5017,
+      "avg_signed_return_pct": -0.567,
+      "max_adverse_pct": -69.543
+    }
+  },
+  "limitations": []
+}

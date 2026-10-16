@@ -1,0 +1,47 @@
+{
+  "code": "000429",
+  "name": "粤高速Ａ",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "recovery",
+  "trend_score": 59.05,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 12.8535,
+    "ma60": 13.2566,
+    "momentum20": 8.5851,
+    "momentum60": 0.8299,
+    "ma20_slope10": 0.23,
+    "volatility20": 22.3241
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

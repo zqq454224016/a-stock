@@ -1,0 +1,32 @@
+{
+  "code": "605208",
+  "name": "永茂泰",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 881,
+      "hit_rate": 0.4745,
+      "avg_signed_return_pct": -0.142,
+      "max_adverse_pct": -34.477
+    },
+    "20d": {
+      "sample_count": 873,
+      "hit_rate": 0.4124,
+      "avg_signed_return_pct": -1.471,
+      "max_adverse_pct": -98.639
+    },
+    "60d": {
+      "sample_count": 846,
+      "hit_rate": 0.409,
+      "avg_signed_return_pct": -2.327,
+      "max_adverse_pct": -82.831
+    }
+  },
+  "limitations": []
+}

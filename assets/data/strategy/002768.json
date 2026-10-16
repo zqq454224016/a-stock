@@ -1,0 +1,47 @@
+{
+  "code": "002768",
+  "name": "国恩股份",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 35.46,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 66.2975,
+    "ma60": 60.415,
+    "momentum20": -14.6298,
+    "momentum60": -5.0009,
+    "ma20_slope10": 1.3855,
+    "volatility20": 82.8916
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

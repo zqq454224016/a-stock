@@ -1,0 +1,32 @@
+{
+  "code": "600787",
+  "name": "中储股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 793,
+      "hit_rate": 0.4149,
+      "avg_signed_return_pct": -0.736,
+      "max_adverse_pct": -24.706
+    },
+    "20d": {
+      "sample_count": 787,
+      "hit_rate": 0.3723,
+      "avg_signed_return_pct": -1.535,
+      "max_adverse_pct": -28.555
+    },
+    "60d": {
+      "sample_count": 770,
+      "hit_rate": 0.3792,
+      "avg_signed_return_pct": -3.857,
+      "max_adverse_pct": -98.004
+    }
+  },
+  "limitations": []
+}

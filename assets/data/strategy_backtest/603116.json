@@ -1,0 +1,32 @@
+{
+  "code": "603116",
+  "name": "红蜻蜓",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 846,
+      "hit_rate": 0.4456,
+      "avg_signed_return_pct": -0.56,
+      "max_adverse_pct": -25.792
+    },
+    "20d": {
+      "sample_count": 836,
+      "hit_rate": 0.3828,
+      "avg_signed_return_pct": -2.718,
+      "max_adverse_pct": -40.636
+    },
+    "60d": {
+      "sample_count": 803,
+      "hit_rate": 0.3126,
+      "avg_signed_return_pct": -6.189,
+      "max_adverse_pct": -115.61
+    }
+  },
+  "limitations": []
+}

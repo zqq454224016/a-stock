@@ -1,0 +1,47 @@
+{
+  "code": "603353",
+  "name": "和顺石油",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 42.26,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 40.3945,
+    "ma60": 34.2698,
+    "momentum20": -13.2983,
+    "momentum60": 8.4484,
+    "ma20_slope10": 1.6316,
+    "volatility20": 93.0193
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002906",
+  "name": "华阳集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 930,
+      "hit_rate": 0.4613,
+      "avg_signed_return_pct": -0.248,
+      "max_adverse_pct": -22.707
+    },
+    "20d": {
+      "sample_count": 925,
+      "hit_rate": 0.4173,
+      "avg_signed_return_pct": -1.812,
+      "max_adverse_pct": -43.474
+    },
+    "60d": {
+      "sample_count": 889,
+      "hit_rate": 0.3071,
+      "avg_signed_return_pct": -7.228,
+      "max_adverse_pct": -86.655
+    }
+  },
+  "limitations": []
+}

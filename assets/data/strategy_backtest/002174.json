@@ -1,0 +1,32 @@
+{
+  "code": "002174",
+  "name": "游族网络",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 951,
+      "hit_rate": 0.4921,
+      "avg_signed_return_pct": 0.158,
+      "max_adverse_pct": -21.975
+    },
+    "20d": {
+      "sample_count": 936,
+      "hit_rate": 0.4925,
+      "avg_signed_return_pct": 0.118,
+      "max_adverse_pct": -51.67
+    },
+    "60d": {
+      "sample_count": 918,
+      "hit_rate": 0.4793,
+      "avg_signed_return_pct": 0.312,
+      "max_adverse_pct": -50.493
+    }
+  },
+  "limitations": []
+}

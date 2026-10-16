@@ -1,0 +1,32 @@
+{
+  "code": "000572",
+  "name": "海马汽车",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 974,
+      "hit_rate": 0.4877,
+      "avg_signed_return_pct": 0.173,
+      "max_adverse_pct": -24.579
+    },
+    "20d": {
+      "sample_count": 962,
+      "hit_rate": 0.4647,
+      "avg_signed_return_pct": 0.179,
+      "max_adverse_pct": -57.882
+    },
+    "60d": {
+      "sample_count": 930,
+      "hit_rate": 0.4903,
+      "avg_signed_return_pct": 1.509,
+      "max_adverse_pct": -66.113
+    }
+  },
+  "limitations": []
+}

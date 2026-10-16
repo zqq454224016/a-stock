@@ -1,0 +1,47 @@
+{
+  "code": "001380",
+  "name": "华纬科技",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 27.91,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 18.111,
+    "ma60": 17.1803,
+    "momentum20": -16.9222,
+    "momentum60": -7.949,
+    "ma20_slope10": -0.5027,
+    "volatility20": 41.8687
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

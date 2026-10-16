@@ -1,0 +1,47 @@
+{
+  "code": "601998",
+  "name": "中信银行",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 77.77,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 9.0445,
+    "ma60": 8.4042,
+    "momentum20": 1.7917,
+    "momentum60": 24.0109,
+    "ma20_slope10": 1.6065,
+    "volatility20": 15.7537
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

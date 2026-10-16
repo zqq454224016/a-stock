@@ -1,0 +1,47 @@
+{
+  "code": "600507",
+  "name": "方大特钢",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 22.08,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 4.085,
+    "ma60": 4.2345,
+    "momentum20": -5.6206,
+    "momentum60": -6.713,
+    "ma20_slope10": -2.4128,
+    "volatility20": 18.8107
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

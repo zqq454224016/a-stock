@@ -1,0 +1,32 @@
+{
+  "code": "002888",
+  "name": "惠威科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 895,
+      "hit_rate": 0.4268,
+      "avg_signed_return_pct": -1.196,
+      "max_adverse_pct": -42.922
+    },
+    "20d": {
+      "sample_count": 890,
+      "hit_rate": 0.409,
+      "avg_signed_return_pct": -2.857,
+      "max_adverse_pct": -52.963
+    },
+    "60d": {
+      "sample_count": 853,
+      "hit_rate": 0.374,
+      "avg_signed_return_pct": -2.718,
+      "max_adverse_pct": -95.494
+    }
+  },
+  "limitations": []
+}

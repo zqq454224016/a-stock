@@ -1,0 +1,32 @@
+{
+  "code": "600535",
+  "name": "天士力",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 784,
+      "hit_rate": 0.4656,
+      "avg_signed_return_pct": -0.189,
+      "max_adverse_pct": -20.088
+    },
+    "20d": {
+      "sample_count": 770,
+      "hit_rate": 0.4623,
+      "avg_signed_return_pct": -0.186,
+      "max_adverse_pct": -34.862
+    },
+    "60d": {
+      "sample_count": 751,
+      "hit_rate": 0.534,
+      "avg_signed_return_pct": 0.488,
+      "max_adverse_pct": -34.017
+    }
+  },
+  "limitations": []
+}

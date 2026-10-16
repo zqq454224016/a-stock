@@ -1,0 +1,34 @@
+{
+  "code": "605507",
+  "name": "国邦医药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1200_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1200,
+  "metrics": {
+    "5d": {
+      "sample_count": 798,
+      "hit_rate": 0.4549,
+      "avg_signed_return_pct": -0.364,
+      "max_adverse_pct": -16.459
+    },
+    "20d": {
+      "sample_count": 784,
+      "hit_rate": 0.4949,
+      "avg_signed_return_pct": -0.057,
+      "max_adverse_pct": -38.666
+    },
+    "60d": {
+      "sample_count": 766,
+      "hit_rate": 0.547,
+      "avg_signed_return_pct": -0.36,
+      "max_adverse_pct": -42.695
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

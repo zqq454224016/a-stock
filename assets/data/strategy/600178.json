@@ -1,0 +1,47 @@
+{
+  "code": "600178",
+  "name": "东安动力",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 72.64,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 9.76,
+    "ma60": 9.5997,
+    "momentum20": 3.1187,
+    "momentum60": 18.3602,
+    "ma20_slope10": -0.7626,
+    "volatility20": 44.1918
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

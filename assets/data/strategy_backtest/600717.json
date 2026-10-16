@@ -1,0 +1,32 @@
+{
+  "code": "600717",
+  "name": "天津港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 759,
+      "hit_rate": 0.3781,
+      "avg_signed_return_pct": -0.818,
+      "max_adverse_pct": -18.246
+    },
+    "20d": {
+      "sample_count": 755,
+      "hit_rate": 0.3722,
+      "avg_signed_return_pct": -1.891,
+      "max_adverse_pct": -19.118
+    },
+    "60d": {
+      "sample_count": 740,
+      "hit_rate": 0.3946,
+      "avg_signed_return_pct": -1.699,
+      "max_adverse_pct": -22.727
+    }
+  },
+  "limitations": []
+}

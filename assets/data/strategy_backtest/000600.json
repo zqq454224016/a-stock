@@ -1,0 +1,32 @@
+{
+  "code": "000600",
+  "name": "建投能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 898,
+      "hit_rate": 0.4944,
+      "avg_signed_return_pct": -0.18,
+      "max_adverse_pct": -26.364
+    },
+    "20d": {
+      "sample_count": 883,
+      "hit_rate": 0.5074,
+      "avg_signed_return_pct": -0.32,
+      "max_adverse_pct": -46.796
+    },
+    "60d": {
+      "sample_count": 848,
+      "hit_rate": 0.5283,
+      "avg_signed_return_pct": -1.202,
+      "max_adverse_pct": -76.06
+    }
+  },
+  "limitations": []
+}

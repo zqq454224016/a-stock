@@ -1,0 +1,32 @@
+{
+  "code": "000096",
+  "name": "广聚能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 878,
+      "hit_rate": 0.5,
+      "avg_signed_return_pct": 0.258,
+      "max_adverse_pct": -16.648
+    },
+    "20d": {
+      "sample_count": 875,
+      "hit_rate": 0.4331,
+      "avg_signed_return_pct": -1.014,
+      "max_adverse_pct": -92.241
+    },
+    "60d": {
+      "sample_count": 841,
+      "hit_rate": 0.4483,
+      "avg_signed_return_pct": -0.165,
+      "max_adverse_pct": -61.23
+    }
+  },
+  "limitations": []
+}

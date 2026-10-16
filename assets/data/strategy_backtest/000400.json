@@ -1,0 +1,32 @@
+{
+  "code": "000400",
+  "name": "许继电气",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 934,
+      "hit_rate": 0.5,
+      "avg_signed_return_pct": 0.229,
+      "max_adverse_pct": -30.694
+    },
+    "20d": {
+      "sample_count": 921,
+      "hit_rate": 0.5038,
+      "avg_signed_return_pct": -0.209,
+      "max_adverse_pct": -55.977
+    },
+    "60d": {
+      "sample_count": 904,
+      "hit_rate": 0.5177,
+      "avg_signed_return_pct": 1.506,
+      "max_adverse_pct": -55.519
+    }
+  },
+  "limitations": []
+}

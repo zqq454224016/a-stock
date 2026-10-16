@@ -1,0 +1,32 @@
+{
+  "code": "002320",
+  "name": "海峡股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:21",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 843,
+      "hit_rate": 0.4828,
+      "avg_signed_return_pct": 0.084,
+      "max_adverse_pct": -21.261
+    },
+    "20d": {
+      "sample_count": 839,
+      "hit_rate": 0.4946,
+      "avg_signed_return_pct": 1.124,
+      "max_adverse_pct": -30.769
+    },
+    "60d": {
+      "sample_count": 818,
+      "hit_rate": 0.5049,
+      "avg_signed_return_pct": 3.821,
+      "max_adverse_pct": -49.893
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 950,
+      "hit_rate": 0.5095,
+      "avg_signed_return_pct": 1.054,
+      "max_adverse_pct": -29.282
+    },
+    "20d": {
+      "sample_count": 938,
+      "hit_rate": 0.5245,
+      "avg_signed_return_pct": 4.045,
+      "max_adverse_pct": -64.206
+    },
+    "60d": {
+      "sample_count": 911,
+      "hit_rate": 0.5719,
+      "avg_signed_return_pct": 6.926,
+      "max_adverse_pct": -208.309
+    }
+  },
+  "limitations": []
+}

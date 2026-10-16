@@ -1,0 +1,32 @@
+{
+  "code": "601568",
+  "name": "北元化工",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:46",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 774,
+      "hit_rate": 0.4483,
+      "avg_signed_return_pct": -0.29,
+      "max_adverse_pct": -18.868
+    },
+    "20d": {
+      "sample_count": 773,
+      "hit_rate": 0.4036,
+      "avg_signed_return_pct": -1.154,
+      "max_adverse_pct": -21.31
+    },
+    "60d": {
+      "sample_count": 742,
+      "hit_rate": 0.4704,
+      "avg_signed_return_pct": -1.435,
+      "max_adverse_pct": -22.977
+    }
+  },
+  "limitations": []
+}

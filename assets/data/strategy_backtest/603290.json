@@ -1,0 +1,32 @@
+{
+  "code": "603290",
+  "name": "斯达半导",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 931,
+      "hit_rate": 0.4887,
+      "avg_signed_return_pct": -0.602,
+      "max_adverse_pct": -50.527
+    },
+    "20d": {
+      "sample_count": 916,
+      "hit_rate": 0.4465,
+      "avg_signed_return_pct": -2.756,
+      "max_adverse_pct": -51.961
+    },
+    "60d": {
+      "sample_count": 886,
+      "hit_rate": 0.4391,
+      "avg_signed_return_pct": -4.182,
+      "max_adverse_pct": -45.791
+    }
+  },
+  "limitations": []
+}

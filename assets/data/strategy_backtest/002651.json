@@ -1,0 +1,32 @@
+{
+  "code": "002651",
+  "name": "利君股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 927,
+      "hit_rate": 0.4444,
+      "avg_signed_return_pct": -0.204,
+      "max_adverse_pct": -27.031
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.4056,
+      "avg_signed_return_pct": -3.438,
+      "max_adverse_pct": -142.835
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.393,
+      "avg_signed_return_pct": -2.211,
+      "max_adverse_pct": -91.17
+    }
+  },
+  "limitations": []
+}

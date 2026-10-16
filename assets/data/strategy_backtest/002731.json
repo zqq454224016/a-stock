@@ -1,0 +1,34 @@
+{
+  "code": "002731",
+  "name": "",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-07-28 01:04:49",
+  "window": "past_1190_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1190,
+  "metrics": {
+    "5d": {
+      "sample_count": 862,
+      "hit_rate": 0.5,
+      "avg_signed_return_pct": 0.6,
+      "max_adverse_pct": -32.638
+    },
+    "20d": {
+      "sample_count": 847,
+      "hit_rate": 0.51,
+      "avg_signed_return_pct": 1.972,
+      "max_adverse_pct": -54.211
+    },
+    "60d": {
+      "sample_count": 807,
+      "hit_rate": 0.5527,
+      "avg_signed_return_pct": 5.231,
+      "max_adverse_pct": -104.422
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

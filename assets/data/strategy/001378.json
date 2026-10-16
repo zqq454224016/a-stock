@@ -1,0 +1,47 @@
+{
+  "code": "001378",
+  "name": "德冠新材",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 70.97,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 21.934,
+    "ma60": 20.0707,
+    "momentum20": 8.0082,
+    "momentum60": 6.4239,
+    "ma20_slope10": 3.5575,
+    "volatility20": 54.5366
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

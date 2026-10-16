@@ -1,0 +1,32 @@
+{
+  "code": "002884",
+  "name": "凌霄泵业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 793,
+      "hit_rate": 0.4931,
+      "avg_signed_return_pct": -0.303,
+      "max_adverse_pct": -17.222
+    },
+    "20d": {
+      "sample_count": 778,
+      "hit_rate": 0.4152,
+      "avg_signed_return_pct": -0.845,
+      "max_adverse_pct": -20.487
+    },
+    "60d": {
+      "sample_count": 767,
+      "hit_rate": 0.472,
+      "avg_signed_return_pct": -2.663,
+      "max_adverse_pct": -29.564
+    }
+  },
+  "limitations": []
+}

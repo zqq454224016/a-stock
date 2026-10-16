@@ -1,0 +1,32 @@
+{
+  "code": "000682",
+  "name": "东方电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 901,
+      "hit_rate": 0.5006,
+      "avg_signed_return_pct": 0.152,
+      "max_adverse_pct": -18.003
+    },
+    "20d": {
+      "sample_count": 886,
+      "hit_rate": 0.5474,
+      "avg_signed_return_pct": 0.802,
+      "max_adverse_pct": -40.545
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.5574,
+      "avg_signed_return_pct": 1.157,
+      "max_adverse_pct": -76.853
+    }
+  },
+  "limitations": []
+}

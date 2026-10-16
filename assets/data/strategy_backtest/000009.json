@@ -1,0 +1,32 @@
+{
+  "code": "000009",
+  "name": "中国宝安",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:09",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 942,
+      "hit_rate": 0.5318,
+      "avg_signed_return_pct": 0.186,
+      "max_adverse_pct": -29.865
+    },
+    "20d": {
+      "sample_count": 940,
+      "hit_rate": 0.5436,
+      "avg_signed_return_pct": -0.125,
+      "max_adverse_pct": -51.22
+    },
+    "60d": {
+      "sample_count": 911,
+      "hit_rate": 0.4544,
+      "avg_signed_return_pct": 0.256,
+      "max_adverse_pct": -71.296
+    }
+  },
+  "limitations": []
+}

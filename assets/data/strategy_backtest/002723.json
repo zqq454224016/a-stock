@@ -1,0 +1,32 @@
+{
+  "code": "002723",
+  "name": "小崧股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 895,
+      "hit_rate": 0.4592,
+      "avg_signed_return_pct": -1.027,
+      "max_adverse_pct": -38.976
+    },
+    "20d": {
+      "sample_count": 892,
+      "hit_rate": 0.3913,
+      "avg_signed_return_pct": -3.251,
+      "max_adverse_pct": -71.457
+    },
+    "60d": {
+      "sample_count": 856,
+      "hit_rate": 0.4136,
+      "avg_signed_return_pct": -4.343,
+      "max_adverse_pct": -70.672
+    }
+  },
+  "limitations": []
+}

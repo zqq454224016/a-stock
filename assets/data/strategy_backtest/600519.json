@@ -1,0 +1,32 @@
+{
+  "code": "600519",
+  "name": "贵州茅台",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:38",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 809,
+      "hit_rate": 0.4499,
+      "avg_signed_return_pct": -0.284,
+      "max_adverse_pct": -38.561
+    },
+    "20d": {
+      "sample_count": 802,
+      "hit_rate": 0.3803,
+      "avg_signed_return_pct": -1.327,
+      "max_adverse_pct": -24.055
+    },
+    "60d": {
+      "sample_count": 780,
+      "hit_rate": 0.259,
+      "avg_signed_return_pct": -5.061,
+      "max_adverse_pct": -40.592
+    }
+  },
+  "limitations": []
+}

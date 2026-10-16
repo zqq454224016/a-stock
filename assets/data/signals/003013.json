@@ -1,0 +1,18 @@
+{
+  "code": "003013",
+  "trade_date": "2026-10-16",
+  "horizon": "5d",
+  "signal": "bullish",
+  "signal_score": 71.0,
+  "drivers": [
+    "above_ma20",
+    "macd_hist_positive",
+    "ma20_breakout"
+  ],
+  "limitations": [
+    "not_backtested",
+    "technical_only"
+  ],
+  "signal_version": "1.0.0",
+  "updated_at": "2026-10-16 15:57:49"
+}

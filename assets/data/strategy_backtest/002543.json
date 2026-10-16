@@ -1,0 +1,32 @@
+{
+  "code": "002543",
+  "name": "万和电气",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.4972,
+      "avg_signed_return_pct": 0.247,
+      "max_adverse_pct": -23.974
+    },
+    "20d": {
+      "sample_count": 885,
+      "hit_rate": 0.5209,
+      "avg_signed_return_pct": 1.017,
+      "max_adverse_pct": -34.858
+    },
+    "60d": {
+      "sample_count": 855,
+      "hit_rate": 0.4912,
+      "avg_signed_return_pct": 1.258,
+      "max_adverse_pct": -73.79
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002992",
+  "name": "宝明科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:31",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 923,
+      "hit_rate": 0.507,
+      "avg_signed_return_pct": 0.444,
+      "max_adverse_pct": -43.043
+    },
+    "20d": {
+      "sample_count": 912,
+      "hit_rate": 0.4901,
+      "avg_signed_return_pct": 0.285,
+      "max_adverse_pct": -103.075
+    },
+    "60d": {
+      "sample_count": 881,
+      "hit_rate": 0.4154,
+      "avg_signed_return_pct": -3.589,
+      "max_adverse_pct": -174.692
+    }
+  },
+  "limitations": []
+}

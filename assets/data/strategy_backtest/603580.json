@@ -1,0 +1,32 @@
+{
+  "code": "603580",
+  "name": "艾艾精工",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4407,
+      "avg_signed_return_pct": 0.179,
+      "max_adverse_pct": -61.058
+    },
+    "20d": {
+      "sample_count": 870,
+      "hit_rate": 0.4161,
+      "avg_signed_return_pct": -2.438,
+      "max_adverse_pct": -246.759
+    },
+    "60d": {
+      "sample_count": 830,
+      "hit_rate": 0.4313,
+      "avg_signed_return_pct": 4.09,
+      "max_adverse_pct": -243.909
+    }
+  },
+  "limitations": []
+}

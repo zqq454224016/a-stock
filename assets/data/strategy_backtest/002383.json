@@ -1,0 +1,32 @@
+{
+  "code": "002383",
+  "name": "合众思壮",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 957,
+      "hit_rate": 0.4765,
+      "avg_signed_return_pct": -0.355,
+      "max_adverse_pct": -24.663
+    },
+    "20d": {
+      "sample_count": 942,
+      "hit_rate": 0.4777,
+      "avg_signed_return_pct": -0.812,
+      "max_adverse_pct": -47.518
+    },
+    "60d": {
+      "sample_count": 911,
+      "hit_rate": 0.3699,
+      "avg_signed_return_pct": -5.289,
+      "max_adverse_pct": -82.909
+    }
+  },
+  "limitations": []
+}

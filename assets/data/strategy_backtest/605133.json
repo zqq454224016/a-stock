@@ -1,0 +1,32 @@
+{
+  "code": "605133",
+  "name": "嵘泰股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 972,
+      "hit_rate": 0.4877,
+      "avg_signed_return_pct": 0.002,
+      "max_adverse_pct": -38.886
+    },
+    "20d": {
+      "sample_count": 957,
+      "hit_rate": 0.5078,
+      "avg_signed_return_pct": 0.05,
+      "max_adverse_pct": -97.882
+    },
+    "60d": {
+      "sample_count": 925,
+      "hit_rate": 0.4303,
+      "avg_signed_return_pct": -4.779,
+      "max_adverse_pct": -136.086
+    }
+  },
+  "limitations": []
+}

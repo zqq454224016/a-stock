@@ -1,0 +1,32 @@
+{
+  "code": "002215",
+  "name": "诺 普 信",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 923,
+      "hit_rate": 0.5276,
+      "avg_signed_return_pct": 0.062,
+      "max_adverse_pct": -22.622
+    },
+    "20d": {
+      "sample_count": 915,
+      "hit_rate": 0.4525,
+      "avg_signed_return_pct": -0.389,
+      "max_adverse_pct": -40.796
+    },
+    "60d": {
+      "sample_count": 880,
+      "hit_rate": 0.4273,
+      "avg_signed_return_pct": -3.232,
+      "max_adverse_pct": -51.094
+    }
+  },
+  "limitations": []
+}

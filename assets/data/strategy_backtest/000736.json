@@ -1,0 +1,32 @@
+{
+  "code": "000736",
+  "name": "中交发展",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 955,
+      "hit_rate": 0.5089,
+      "avg_signed_return_pct": 0.646,
+      "max_adverse_pct": -43.935
+    },
+    "20d": {
+      "sample_count": 947,
+      "hit_rate": 0.4752,
+      "avg_signed_return_pct": 0.201,
+      "max_adverse_pct": -102.7
+    },
+    "60d": {
+      "sample_count": 911,
+      "hit_rate": 0.4621,
+      "avg_signed_return_pct": 4.376,
+      "max_adverse_pct": -69.676
+    }
+  },
+  "limitations": []
+}

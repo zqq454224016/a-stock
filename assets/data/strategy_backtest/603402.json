@@ -1,0 +1,34 @@
+{
+  "code": "603402",
+  "name": "陕西旅游",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_127_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 127,
+  "metrics": {
+    "5d": {
+      "sample_count": 92,
+      "hit_rate": 0.5543,
+      "avg_signed_return_pct": 0.765,
+      "max_adverse_pct": -19.893
+    },
+    "20d": {
+      "sample_count": 90,
+      "hit_rate": 0.6333,
+      "avg_signed_return_pct": 4.883,
+      "max_adverse_pct": -25.816
+    },
+    "60d": {
+      "sample_count": 62,
+      "hit_rate": 0.8065,
+      "avg_signed_return_pct": 11.592,
+      "max_adverse_pct": -11.201
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

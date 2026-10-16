@@ -1,0 +1,32 @@
+{
+  "code": "002354",
+  "name": "天娱数科",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 942,
+      "hit_rate": 0.4788,
+      "avg_signed_return_pct": -0.083,
+      "max_adverse_pct": -37.363
+    },
+    "20d": {
+      "sample_count": 935,
+      "hit_rate": 0.446,
+      "avg_signed_return_pct": -1.024,
+      "max_adverse_pct": -65.075
+    },
+    "60d": {
+      "sample_count": 915,
+      "hit_rate": 0.4612,
+      "avg_signed_return_pct": -3.354,
+      "max_adverse_pct": -257.2
+    }
+  },
+  "limitations": []
+}

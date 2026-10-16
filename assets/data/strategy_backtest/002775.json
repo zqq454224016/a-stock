@@ -1,0 +1,32 @@
+{
+  "code": "002775",
+  "name": "文科股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 855,
+      "hit_rate": 0.4094,
+      "avg_signed_return_pct": -0.678,
+      "max_adverse_pct": -28.98
+    },
+    "20d": {
+      "sample_count": 843,
+      "hit_rate": 0.3321,
+      "avg_signed_return_pct": -2.731,
+      "max_adverse_pct": -46.898
+    },
+    "60d": {
+      "sample_count": 822,
+      "hit_rate": 0.4221,
+      "avg_signed_return_pct": -2.015,
+      "max_adverse_pct": -109.04
+    }
+  },
+  "limitations": []
+}

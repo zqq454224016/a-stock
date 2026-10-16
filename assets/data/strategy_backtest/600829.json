@@ -1,0 +1,32 @@
+{
+  "code": "600829",
+  "name": "人民同泰",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:43",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 817,
+      "hit_rate": 0.459,
+      "avg_signed_return_pct": -0.296,
+      "max_adverse_pct": -32.393
+    },
+    "20d": {
+      "sample_count": 813,
+      "hit_rate": 0.3961,
+      "avg_signed_return_pct": -2.115,
+      "max_adverse_pct": -88.889
+    },
+    "60d": {
+      "sample_count": 780,
+      "hit_rate": 0.4526,
+      "avg_signed_return_pct": -2.605,
+      "max_adverse_pct": -92.669
+    }
+  },
+  "limitations": []
+}

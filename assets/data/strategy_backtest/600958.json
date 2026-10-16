@@ -1,0 +1,32 @@
+{
+  "code": "600958",
+  "name": "东方证券",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 893,
+      "hit_rate": 0.467,
+      "avg_signed_return_pct": 0.083,
+      "max_adverse_pct": -15.712
+    },
+    "20d": {
+      "sample_count": 878,
+      "hit_rate": 0.4169,
+      "avg_signed_return_pct": -0.418,
+      "max_adverse_pct": -22.489
+    },
+    "60d": {
+      "sample_count": 866,
+      "hit_rate": 0.4885,
+      "avg_signed_return_pct": -0.031,
+      "max_adverse_pct": -62.933
+    }
+  },
+  "limitations": []
+}

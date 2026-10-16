@@ -1,0 +1,32 @@
+{
+  "code": "603917",
+  "name": "合力科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 957,
+      "hit_rate": 0.489,
+      "avg_signed_return_pct": 0.496,
+      "max_adverse_pct": -44.376
+    },
+    "20d": {
+      "sample_count": 944,
+      "hit_rate": 0.4746,
+      "avg_signed_return_pct": 2.861,
+      "max_adverse_pct": -63.599
+    },
+    "60d": {
+      "sample_count": 913,
+      "hit_rate": 0.4688,
+      "avg_signed_return_pct": -2.524,
+      "max_adverse_pct": -290.355
+    }
+  },
+  "limitations": []
+}

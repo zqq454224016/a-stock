@@ -1,0 +1,32 @@
+{
+  "code": "605080",
+  "name": "浙江自然",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 906,
+      "hit_rate": 0.5011,
+      "avg_signed_return_pct": -0.079,
+      "max_adverse_pct": -30.683
+    },
+    "20d": {
+      "sample_count": 895,
+      "hit_rate": 0.4927,
+      "avg_signed_return_pct": -0.996,
+      "max_adverse_pct": -47.431
+    },
+    "60d": {
+      "sample_count": 865,
+      "hit_rate": 0.4486,
+      "avg_signed_return_pct": 0.129,
+      "max_adverse_pct": -66.169
+    }
+  },
+  "limitations": []
+}

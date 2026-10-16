@@ -1,0 +1,32 @@
+{
+  "code": "002678",
+  "name": "珠江钢琴",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 830,
+      "hit_rate": 0.441,
+      "avg_signed_return_pct": -0.577,
+      "max_adverse_pct": -26.872
+    },
+    "20d": {
+      "sample_count": 828,
+      "hit_rate": 0.401,
+      "avg_signed_return_pct": -2.299,
+      "max_adverse_pct": -50.664
+    },
+    "60d": {
+      "sample_count": 797,
+      "hit_rate": 0.3852,
+      "avg_signed_return_pct": -4.697,
+      "max_adverse_pct": -64.0
+    }
+  },
+  "limitations": []
+}

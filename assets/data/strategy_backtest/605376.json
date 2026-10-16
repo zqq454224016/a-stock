@@ -1,0 +1,32 @@
+{
+  "code": "605376",
+  "name": "博迁新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 987,
+      "hit_rate": 0.4965,
+      "avg_signed_return_pct": 0.561,
+      "max_adverse_pct": -32.715
+    },
+    "20d": {
+      "sample_count": 972,
+      "hit_rate": 0.5278,
+      "avg_signed_return_pct": 2.189,
+      "max_adverse_pct": -49.69
+    },
+    "60d": {
+      "sample_count": 947,
+      "hit_rate": 0.51,
+      "avg_signed_return_pct": 2.009,
+      "max_adverse_pct": -160.7
+    }
+  },
+  "limitations": []
+}

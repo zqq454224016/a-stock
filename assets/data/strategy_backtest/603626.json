@@ -1,0 +1,32 @@
+{
+  "code": "603626",
+  "name": "科森科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 922,
+      "hit_rate": 0.4978,
+      "avg_signed_return_pct": 0.959,
+      "max_adverse_pct": -37.85
+    },
+    "20d": {
+      "sample_count": 907,
+      "hit_rate": 0.4399,
+      "avg_signed_return_pct": -2.446,
+      "max_adverse_pct": -163.673
+    },
+    "60d": {
+      "sample_count": 868,
+      "hit_rate": 0.3836,
+      "avg_signed_return_pct": -9.149,
+      "max_adverse_pct": -147.143
+    }
+  },
+  "limitations": []
+}

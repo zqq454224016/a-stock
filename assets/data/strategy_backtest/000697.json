@@ -1,0 +1,32 @@
+{
+  "code": "000697",
+  "name": "炼石航空",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 918,
+      "hit_rate": 0.4412,
+      "avg_signed_return_pct": -0.343,
+      "max_adverse_pct": -22.464
+    },
+    "20d": {
+      "sample_count": 908,
+      "hit_rate": 0.4218,
+      "avg_signed_return_pct": -2.284,
+      "max_adverse_pct": -48.25
+    },
+    "60d": {
+      "sample_count": 878,
+      "hit_rate": 0.4305,
+      "avg_signed_return_pct": -5.048,
+      "max_adverse_pct": -73.372
+    }
+  },
+  "limitations": []
+}

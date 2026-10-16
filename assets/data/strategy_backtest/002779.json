@@ -1,0 +1,32 @@
+{
+  "code": "002779",
+  "name": "中坚科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 957,
+      "hit_rate": 0.5005,
+      "avg_signed_return_pct": 0.393,
+      "max_adverse_pct": -28.934
+    },
+    "20d": {
+      "sample_count": 948,
+      "hit_rate": 0.5084,
+      "avg_signed_return_pct": 2.391,
+      "max_adverse_pct": -54.581
+    },
+    "60d": {
+      "sample_count": 910,
+      "hit_rate": 0.5604,
+      "avg_signed_return_pct": 11.564,
+      "max_adverse_pct": -70.187
+    }
+  },
+  "limitations": []
+}

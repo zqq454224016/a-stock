@@ -1,0 +1,32 @@
+{
+  "code": "002707",
+  "name": "众信旅游",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 828,
+      "hit_rate": 0.4408,
+      "avg_signed_return_pct": -0.671,
+      "max_adverse_pct": -25.421
+    },
+    "20d": {
+      "sample_count": 826,
+      "hit_rate": 0.3596,
+      "avg_signed_return_pct": -2.38,
+      "max_adverse_pct": -36.994
+    },
+    "60d": {
+      "sample_count": 792,
+      "hit_rate": 0.3788,
+      "avg_signed_return_pct": -1.4,
+      "max_adverse_pct": -37.187
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000726",
+  "name": "鲁 泰Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 810,
+      "hit_rate": 0.4593,
+      "avg_signed_return_pct": -0.3,
+      "max_adverse_pct": -18.122
+    },
+    "20d": {
+      "sample_count": 801,
+      "hit_rate": 0.4806,
+      "avg_signed_return_pct": -0.906,
+      "max_adverse_pct": -25.0
+    },
+    "60d": {
+      "sample_count": 778,
+      "hit_rate": 0.4383,
+      "avg_signed_return_pct": -2.662,
+      "max_adverse_pct": -35.315
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,47 @@
+{
+  "code": "002712",
+  "name": "思美传媒",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 77.06,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 5.114,
+    "ma60": 4.8485,
+    "momentum20": 3.7109,
+    "momentum60": 18.2628,
+    "ma20_slope10": 1.1072,
+    "volatility20": 43.6909
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

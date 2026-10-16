@@ -1,0 +1,32 @@
+{
+  "code": "603101",
+  "name": "汇嘉时代",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 928,
+      "hit_rate": 0.4601,
+      "avg_signed_return_pct": -0.354,
+      "max_adverse_pct": -25.561
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.4154,
+      "avg_signed_return_pct": -1.028,
+      "max_adverse_pct": -45.503
+    },
+    "60d": {
+      "sample_count": 889,
+      "hit_rate": 0.4331,
+      "avg_signed_return_pct": -1.485,
+      "max_adverse_pct": -106.682
+    }
+  },
+  "limitations": []
+}

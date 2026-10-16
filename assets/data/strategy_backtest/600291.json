@@ -1,0 +1,32 @@
+{
+  "code": "600291",
+  "name": "退市西水",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1036,
+      "hit_rate": 0.5415,
+      "avg_signed_return_pct": 1.552,
+      "max_adverse_pct": -33.166
+    },
+    "20d": {
+      "sample_count": 1021,
+      "hit_rate": 0.57,
+      "avg_signed_return_pct": 5.083,
+      "max_adverse_pct": -67.136
+    },
+    "60d": {
+      "sample_count": 987,
+      "hit_rate": 0.613,
+      "avg_signed_return_pct": 6.045,
+      "max_adverse_pct": -155.273
+    }
+  },
+  "limitations": []
+}

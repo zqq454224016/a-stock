@@ -1,0 +1,32 @@
+{
+  "code": "000901",
+  "name": "航天科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 883,
+      "hit_rate": 0.4371,
+      "avg_signed_return_pct": -0.166,
+      "max_adverse_pct": -27.104
+    },
+    "20d": {
+      "sample_count": 872,
+      "hit_rate": 0.4312,
+      "avg_signed_return_pct": 0.046,
+      "max_adverse_pct": -35.075
+    },
+    "60d": {
+      "sample_count": 834,
+      "hit_rate": 0.4424,
+      "avg_signed_return_pct": 3.226,
+      "max_adverse_pct": -45.421
+    }
+  },
+  "limitations": []
+}

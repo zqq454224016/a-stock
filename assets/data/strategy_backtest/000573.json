@@ -1,0 +1,32 @@
+{
+  "code": "000573",
+  "name": "粤宏远Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 859,
+      "hit_rate": 0.4342,
+      "avg_signed_return_pct": -0.495,
+      "max_adverse_pct": -29.487
+    },
+    "20d": {
+      "sample_count": 852,
+      "hit_rate": 0.3967,
+      "avg_signed_return_pct": -1.75,
+      "max_adverse_pct": -43.505
+    },
+    "60d": {
+      "sample_count": 822,
+      "hit_rate": 0.3771,
+      "avg_signed_return_pct": -2.363,
+      "max_adverse_pct": -87.923
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600335",
+  "name": "国机汽车",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 903,
+      "hit_rate": 0.4441,
+      "avg_signed_return_pct": -0.376,
+      "max_adverse_pct": -42.857
+    },
+    "20d": {
+      "sample_count": 898,
+      "hit_rate": 0.4543,
+      "avg_signed_return_pct": -0.814,
+      "max_adverse_pct": -63.406
+    },
+    "60d": {
+      "sample_count": 874,
+      "hit_rate": 0.4073,
+      "avg_signed_return_pct": -2.2,
+      "max_adverse_pct": -92.414
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600802",
+  "name": "福建水泥",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 916,
+      "hit_rate": 0.4924,
+      "avg_signed_return_pct": 0.389,
+      "max_adverse_pct": -23.529
+    },
+    "20d": {
+      "sample_count": 901,
+      "hit_rate": 0.5061,
+      "avg_signed_return_pct": 0.821,
+      "max_adverse_pct": -40.223
+    },
+    "60d": {
+      "sample_count": 866,
+      "hit_rate": 0.4919,
+      "avg_signed_return_pct": -0.6,
+      "max_adverse_pct": -75.728
+    }
+  },
+  "limitations": []
+}

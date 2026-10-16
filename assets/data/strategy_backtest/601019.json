@@ -1,0 +1,32 @@
+{
+  "code": "601019",
+  "name": "山东出版",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 808,
+      "hit_rate": 0.4777,
+      "avg_signed_return_pct": -0.228,
+      "max_adverse_pct": -17.412
+    },
+    "20d": {
+      "sample_count": 800,
+      "hit_rate": 0.3925,
+      "avg_signed_return_pct": -1.333,
+      "max_adverse_pct": -29.383
+    },
+    "60d": {
+      "sample_count": 784,
+      "hit_rate": 0.4758,
+      "avg_signed_return_pct": 2.414,
+      "max_adverse_pct": -32.92
+    }
+  },
+  "limitations": []
+}

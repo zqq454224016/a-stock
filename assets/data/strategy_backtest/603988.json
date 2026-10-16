@@ -1,0 +1,32 @@
+{
+  "code": "603988",
+  "name": "中电电机",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 900,
+      "hit_rate": 0.49,
+      "avg_signed_return_pct": 0.359,
+      "max_adverse_pct": -61.23
+    },
+    "20d": {
+      "sample_count": 895,
+      "hit_rate": 0.4436,
+      "avg_signed_return_pct": -1.295,
+      "max_adverse_pct": -67.128
+    },
+    "60d": {
+      "sample_count": 865,
+      "hit_rate": 0.326,
+      "avg_signed_return_pct": -4.074,
+      "max_adverse_pct": -118.717
+    }
+  },
+  "limitations": []
+}

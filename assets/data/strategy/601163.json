@@ -1,0 +1,47 @@
+{
+  "code": "601163",
+  "name": "三角轮胎",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 46.01,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 12.2672,
+    "ma60": 12.5641,
+    "momentum20": -0.2418,
+    "momentum60": -3.3471,
+    "ma20_slope10": -0.2631,
+    "volatility20": 12.1026
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

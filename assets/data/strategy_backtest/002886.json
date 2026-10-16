@@ -1,0 +1,32 @@
+{
+  "code": "002886",
+  "name": "沃特股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 941,
+      "hit_rate": 0.491,
+      "avg_signed_return_pct": 0.367,
+      "max_adverse_pct": -27.46
+    },
+    "20d": {
+      "sample_count": 931,
+      "hit_rate": 0.4329,
+      "avg_signed_return_pct": -1.813,
+      "max_adverse_pct": -65.282
+    },
+    "60d": {
+      "sample_count": 893,
+      "hit_rate": 0.355,
+      "avg_signed_return_pct": -5.825,
+      "max_adverse_pct": -76.292
+    }
+  },
+  "limitations": []
+}

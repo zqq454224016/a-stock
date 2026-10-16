@@ -1,0 +1,32 @@
+{
+  "code": "600764",
+  "name": "中国海防",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 884,
+      "hit_rate": 0.4502,
+      "avg_signed_return_pct": -0.246,
+      "max_adverse_pct": -22.118
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.4635,
+      "avg_signed_return_pct": 0.071,
+      "max_adverse_pct": -33.566
+    },
+    "60d": {
+      "sample_count": 857,
+      "hit_rate": 0.4714,
+      "avg_signed_return_pct": -0.661,
+      "max_adverse_pct": -87.319
+    }
+  },
+  "limitations": []
+}

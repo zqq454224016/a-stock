@@ -1,0 +1,32 @@
+{
+  "code": "002434",
+  "name": "万里扬",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 953,
+      "hit_rate": 0.5058,
+      "avg_signed_return_pct": 0.55,
+      "max_adverse_pct": -21.087
+    },
+    "20d": {
+      "sample_count": 938,
+      "hit_rate": 0.5458,
+      "avg_signed_return_pct": 2.045,
+      "max_adverse_pct": -42.174
+    },
+    "60d": {
+      "sample_count": 913,
+      "hit_rate": 0.4732,
+      "avg_signed_return_pct": 0.097,
+      "max_adverse_pct": -64.138
+    }
+  },
+  "limitations": []
+}

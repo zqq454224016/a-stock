@@ -1,0 +1,32 @@
+{
+  "code": "603806",
+  "name": "福斯特",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 879,
+      "hit_rate": 0.4562,
+      "avg_signed_return_pct": -0.558,
+      "max_adverse_pct": -30.332
+    },
+    "20d": {
+      "sample_count": 865,
+      "hit_rate": 0.3977,
+      "avg_signed_return_pct": -2.579,
+      "max_adverse_pct": -42.847
+    },
+    "60d": {
+      "sample_count": 835,
+      "hit_rate": 0.4599,
+      "avg_signed_return_pct": -3.321,
+      "max_adverse_pct": -48.064
+    }
+  },
+  "limitations": []
+}

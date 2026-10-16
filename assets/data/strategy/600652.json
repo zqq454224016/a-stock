@@ -1,0 +1,47 @@
+{
+  "code": "600652",
+  "name": "退市游久",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 28.11,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 1.094,
+    "ma60": 1.288,
+    "momentum20": -4.8,
+    "momentum60": -25.625,
+    "ma20_slope10": -2.5824,
+    "volatility20": 137.6356
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

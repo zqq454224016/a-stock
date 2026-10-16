@@ -1,0 +1,32 @@
+{
+  "code": "603815",
+  "name": "交建股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 931,
+      "hit_rate": 0.5113,
+      "avg_signed_return_pct": 0.196,
+      "max_adverse_pct": -24.566
+    },
+    "20d": {
+      "sample_count": 918,
+      "hit_rate": 0.5022,
+      "avg_signed_return_pct": -0.351,
+      "max_adverse_pct": -36.396
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.42,
+      "avg_signed_return_pct": -3.226,
+      "max_adverse_pct": -81.009
+    }
+  },
+  "limitations": []
+}

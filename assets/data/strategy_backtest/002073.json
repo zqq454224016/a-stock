@@ -1,0 +1,32 @@
+{
+  "code": "002073",
+  "name": "软控股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 932,
+      "hit_rate": 0.4796,
+      "avg_signed_return_pct": 0.427,
+      "max_adverse_pct": -21.413
+    },
+    "20d": {
+      "sample_count": 932,
+      "hit_rate": 0.4989,
+      "avg_signed_return_pct": 1.229,
+      "max_adverse_pct": -44.568
+    },
+    "60d": {
+      "sample_count": 902,
+      "hit_rate": 0.3847,
+      "avg_signed_return_pct": -4.087,
+      "max_adverse_pct": -85.144
+    }
+  },
+  "limitations": []
+}

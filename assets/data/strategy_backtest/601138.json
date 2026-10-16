@@ -1,0 +1,32 @@
+{
+  "code": "601138",
+  "name": "工业富联",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 944,
+      "hit_rate": 0.5159,
+      "avg_signed_return_pct": 0.957,
+      "max_adverse_pct": -34.645
+    },
+    "20d": {
+      "sample_count": 935,
+      "hit_rate": 0.5497,
+      "avg_signed_return_pct": 3.833,
+      "max_adverse_pct": -69.872
+    },
+    "60d": {
+      "sample_count": 910,
+      "hit_rate": 0.4582,
+      "avg_signed_return_pct": 9.202,
+      "max_adverse_pct": -89.418
+    }
+  },
+  "limitations": []
+}

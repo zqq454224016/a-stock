@@ -1,0 +1,32 @@
+{
+  "code": "002151",
+  "name": "北斗星通",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4655,
+      "avg_signed_return_pct": -0.061,
+      "max_adverse_pct": -30.02
+    },
+    "20d": {
+      "sample_count": 874,
+      "hit_rate": 0.4485,
+      "avg_signed_return_pct": -0.431,
+      "max_adverse_pct": -32.75
+    },
+    "60d": {
+      "sample_count": 842,
+      "hit_rate": 0.4964,
+      "avg_signed_return_pct": -0.905,
+      "max_adverse_pct": -126.934
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,34 @@
+{
+  "code": "603272",
+  "name": "",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-07-28 01:05:02",
+  "window": "past_955_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 955,
+  "metrics": {
+    "5d": {
+      "sample_count": 666,
+      "hit_rate": 0.476,
+      "avg_signed_return_pct": 0.261,
+      "max_adverse_pct": -36.051
+    },
+    "20d": {
+      "sample_count": 654,
+      "hit_rate": 0.4205,
+      "avg_signed_return_pct": -0.949,
+      "max_adverse_pct": -52.806
+    },
+    "60d": {
+      "sample_count": 632,
+      "hit_rate": 0.5253,
+      "avg_signed_return_pct": 2.58,
+      "max_adverse_pct": -89.701
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

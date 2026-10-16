@@ -1,0 +1,32 @@
+{
+  "code": "002761",
+  "name": "浙江建投",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:27",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 911,
+      "hit_rate": 0.4929,
+      "avg_signed_return_pct": 0.685,
+      "max_adverse_pct": -22.855
+    },
+    "20d": {
+      "sample_count": 906,
+      "hit_rate": 0.4415,
+      "avg_signed_return_pct": 3.367,
+      "max_adverse_pct": -43.249
+    },
+    "60d": {
+      "sample_count": 880,
+      "hit_rate": 0.5375,
+      "avg_signed_return_pct": 14.478,
+      "max_adverse_pct": -49.584
+    }
+  },
+  "limitations": []
+}

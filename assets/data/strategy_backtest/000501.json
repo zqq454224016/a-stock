@@ -1,0 +1,32 @@
+{
+  "code": "000501",
+  "name": "武商集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 847,
+      "hit_rate": 0.4486,
+      "avg_signed_return_pct": -0.104,
+      "max_adverse_pct": -21.163
+    },
+    "20d": {
+      "sample_count": 846,
+      "hit_rate": 0.4409,
+      "avg_signed_return_pct": -0.694,
+      "max_adverse_pct": -26.847
+    },
+    "60d": {
+      "sample_count": 818,
+      "hit_rate": 0.4597,
+      "avg_signed_return_pct": -1.418,
+      "max_adverse_pct": -36.787
+    }
+  },
+  "limitations": []
+}

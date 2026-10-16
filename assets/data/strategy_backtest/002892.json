@@ -1,0 +1,32 @@
+{
+  "code": "002892",
+  "name": "科力尔",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 942,
+      "hit_rate": 0.4883,
+      "avg_signed_return_pct": 0.31,
+      "max_adverse_pct": -33.639
+    },
+    "20d": {
+      "sample_count": 927,
+      "hit_rate": 0.4941,
+      "avg_signed_return_pct": 0.146,
+      "max_adverse_pct": -66.004
+    },
+    "60d": {
+      "sample_count": 891,
+      "hit_rate": 0.4366,
+      "avg_signed_return_pct": -5.197,
+      "max_adverse_pct": -124.505
+    }
+  },
+  "limitations": []
+}

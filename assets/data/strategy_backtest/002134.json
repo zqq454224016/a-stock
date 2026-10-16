@@ -1,0 +1,32 @@
+{
+  "code": "002134",
+  "name": "天津普林",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 884,
+      "hit_rate": 0.4729,
+      "avg_signed_return_pct": 0.281,
+      "max_adverse_pct": -23.924
+    },
+    "20d": {
+      "sample_count": 871,
+      "hit_rate": 0.3892,
+      "avg_signed_return_pct": -2.782,
+      "max_adverse_pct": -151.66
+    },
+    "60d": {
+      "sample_count": 839,
+      "hit_rate": 0.3623,
+      "avg_signed_return_pct": -9.913,
+      "max_adverse_pct": -189.384
+    }
+  },
+  "limitations": []
+}

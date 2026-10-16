@@ -1,0 +1,32 @@
+{
+  "code": "000965",
+  "name": "天保基建",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 901,
+      "hit_rate": 0.4606,
+      "avg_signed_return_pct": 0.09,
+      "max_adverse_pct": -32.63
+    },
+    "20d": {
+      "sample_count": 894,
+      "hit_rate": 0.4452,
+      "avg_signed_return_pct": 0.43,
+      "max_adverse_pct": -51.464
+    },
+    "60d": {
+      "sample_count": 864,
+      "hit_rate": 0.4745,
+      "avg_signed_return_pct": 4.711,
+      "max_adverse_pct": -73.667
+    }
+  },
+  "limitations": []
+}

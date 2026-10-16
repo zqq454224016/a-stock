@@ -1,0 +1,32 @@
+{
+  "code": "002573",
+  "name": "清新环境",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 805,
+      "hit_rate": 0.4534,
+      "avg_signed_return_pct": -0.464,
+      "max_adverse_pct": -23.121
+    },
+    "20d": {
+      "sample_count": 801,
+      "hit_rate": 0.3571,
+      "avg_signed_return_pct": -2.372,
+      "max_adverse_pct": -39.759
+    },
+    "60d": {
+      "sample_count": 780,
+      "hit_rate": 0.3667,
+      "avg_signed_return_pct": -3.437,
+      "max_adverse_pct": -38.344
+    }
+  },
+  "limitations": []
+}

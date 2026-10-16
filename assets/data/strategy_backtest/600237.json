@@ -1,0 +1,32 @@
+{
+  "code": "600237",
+  "name": "铜峰电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 912,
+      "hit_rate": 0.4726,
+      "avg_signed_return_pct": -0.212,
+      "max_adverse_pct": -25.771
+    },
+    "20d": {
+      "sample_count": 904,
+      "hit_rate": 0.4889,
+      "avg_signed_return_pct": -0.685,
+      "max_adverse_pct": -67.153
+    },
+    "60d": {
+      "sample_count": 877,
+      "hit_rate": 0.3455,
+      "avg_signed_return_pct": -9.109,
+      "max_adverse_pct": -80.81
+    }
+  },
+  "limitations": []
+}

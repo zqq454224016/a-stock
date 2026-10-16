@@ -1,0 +1,32 @@
+{
+  "code": "600909",
+  "name": "华安证券",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 812,
+      "hit_rate": 0.436,
+      "avg_signed_return_pct": -0.029,
+      "max_adverse_pct": -24.877
+    },
+    "20d": {
+      "sample_count": 798,
+      "hit_rate": 0.3634,
+      "avg_signed_return_pct": -1.343,
+      "max_adverse_pct": -36.673
+    },
+    "60d": {
+      "sample_count": 780,
+      "hit_rate": 0.3949,
+      "avg_signed_return_pct": -4.133,
+      "max_adverse_pct": -117.438
+    }
+  },
+  "limitations": []
+}

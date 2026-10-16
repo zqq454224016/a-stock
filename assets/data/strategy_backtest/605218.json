@@ -1,0 +1,32 @@
+{
+  "code": "605218",
+  "name": "伟时电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 929,
+      "hit_rate": 0.4575,
+      "avg_signed_return_pct": -0.339,
+      "max_adverse_pct": -34.698
+    },
+    "20d": {
+      "sample_count": 928,
+      "hit_rate": 0.4483,
+      "avg_signed_return_pct": -1.45,
+      "max_adverse_pct": -64.28
+    },
+    "60d": {
+      "sample_count": 896,
+      "hit_rate": 0.3996,
+      "avg_signed_return_pct": -4.524,
+      "max_adverse_pct": -130.458
+    }
+  },
+  "limitations": []
+}

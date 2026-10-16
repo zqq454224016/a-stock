@@ -1,0 +1,47 @@
+{
+  "code": "002136",
+  "name": "安 纳 达",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 12.18,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 11.753,
+    "ma60": 12.0812,
+    "momentum20": -10.8626,
+    "momentum60": -3.7931,
+    "ma20_slope10": -4.7299,
+    "volatility20": 33.6928
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

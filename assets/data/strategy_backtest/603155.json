@@ -1,0 +1,32 @@
+{
+  "code": "603155",
+  "name": "新亚强",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 864,
+      "hit_rate": 0.4213,
+      "avg_signed_return_pct": -0.897,
+      "max_adverse_pct": -43.791
+    },
+    "20d": {
+      "sample_count": 852,
+      "hit_rate": 0.4049,
+      "avg_signed_return_pct": -1.206,
+      "max_adverse_pct": -40.048
+    },
+    "60d": {
+      "sample_count": 831,
+      "hit_rate": 0.4416,
+      "avg_signed_return_pct": -2.349,
+      "max_adverse_pct": -92.181
+    }
+  },
+  "limitations": []
+}

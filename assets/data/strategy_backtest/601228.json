@@ -1,0 +1,32 @@
+{
+  "code": "601228",
+  "name": "广州港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:46",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 755,
+      "hit_rate": 0.4013,
+      "avg_signed_return_pct": -0.358,
+      "max_adverse_pct": -15.635
+    },
+    "20d": {
+      "sample_count": 749,
+      "hit_rate": 0.3952,
+      "avg_signed_return_pct": -1.172,
+      "max_adverse_pct": -23.046
+    },
+    "60d": {
+      "sample_count": 724,
+      "hit_rate": 0.3923,
+      "avg_signed_return_pct": -2.304,
+      "max_adverse_pct": -23.44
+    }
+  },
+  "limitations": []
+}

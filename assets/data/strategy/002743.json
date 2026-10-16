@@ -1,0 +1,47 @@
+{
+  "code": "002743",
+  "name": "富煌钢构",
+  "trade_date": "2026-09-03",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 100.0,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 4.4745,
+    "ma60": 4.0722,
+    "momentum20": 25.1928,
+    "momentum60": 9.1928,
+    "ma20_slope10": 15.5306,
+    "volatility20": 78.4476
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

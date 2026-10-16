@@ -1,0 +1,32 @@
+{
+  "code": "605007",
+  "name": "五洲特纸",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 907,
+      "hit_rate": 0.4719,
+      "avg_signed_return_pct": -0.272,
+      "max_adverse_pct": -33.762
+    },
+    "20d": {
+      "sample_count": 898,
+      "hit_rate": 0.3987,
+      "avg_signed_return_pct": -1.69,
+      "max_adverse_pct": -28.514
+    },
+    "60d": {
+      "sample_count": 875,
+      "hit_rate": 0.2423,
+      "avg_signed_return_pct": -9.016,
+      "max_adverse_pct": -60.618
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,47 @@
+{
+  "code": "601326",
+  "name": "秦港股份",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 66.02,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 3.5685,
+    "ma60": 3.4932,
+    "momentum20": -1.3736,
+    "momentum60": 8.397,
+    "ma20_slope10": 0.3656,
+    "volatility20": 22.508
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

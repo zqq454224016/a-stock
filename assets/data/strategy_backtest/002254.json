@@ -1,0 +1,32 @@
+{
+  "code": "002254",
+  "name": "泰和新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 949,
+      "hit_rate": 0.5047,
+      "avg_signed_return_pct": 0.397,
+      "max_adverse_pct": -22.082
+    },
+    "20d": {
+      "sample_count": 941,
+      "hit_rate": 0.5027,
+      "avg_signed_return_pct": -0.393,
+      "max_adverse_pct": -51.347
+    },
+    "60d": {
+      "sample_count": 908,
+      "hit_rate": 0.4482,
+      "avg_signed_return_pct": -1.347,
+      "max_adverse_pct": -92.361
+    }
+  },
+  "limitations": []
+}

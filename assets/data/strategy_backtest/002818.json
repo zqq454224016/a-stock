@@ -1,0 +1,32 @@
+{
+  "code": "002818",
+  "name": "富森美",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 806,
+      "hit_rate": 0.4355,
+      "avg_signed_return_pct": -0.436,
+      "max_adverse_pct": -14.48
+    },
+    "20d": {
+      "sample_count": 793,
+      "hit_rate": 0.4224,
+      "avg_signed_return_pct": -0.989,
+      "max_adverse_pct": -24.929
+    },
+    "60d": {
+      "sample_count": 768,
+      "hit_rate": 0.3451,
+      "avg_signed_return_pct": -2.708,
+      "max_adverse_pct": -33.014
+    }
+  },
+  "limitations": []
+}

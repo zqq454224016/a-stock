@@ -1,0 +1,32 @@
+{
+  "code": "000863",
+  "name": "三湘印象",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 904,
+      "hit_rate": 0.4181,
+      "avg_signed_return_pct": -0.751,
+      "max_adverse_pct": -46.556
+    },
+    "20d": {
+      "sample_count": 889,
+      "hit_rate": 0.3847,
+      "avg_signed_return_pct": -3.165,
+      "max_adverse_pct": -58.997
+    },
+    "60d": {
+      "sample_count": 855,
+      "hit_rate": 0.3801,
+      "avg_signed_return_pct": -3.718,
+      "max_adverse_pct": -63.291
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002623",
+  "name": "亚玛顿",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 963,
+      "hit_rate": 0.4735,
+      "avg_signed_return_pct": -0.114,
+      "max_adverse_pct": -36.881
+    },
+    "20d": {
+      "sample_count": 951,
+      "hit_rate": 0.4595,
+      "avg_signed_return_pct": -0.027,
+      "max_adverse_pct": -61.467
+    },
+    "60d": {
+      "sample_count": 927,
+      "hit_rate": 0.3916,
+      "avg_signed_return_pct": -6.772,
+      "max_adverse_pct": -156.789
+    }
+  },
+  "limitations": []
+}

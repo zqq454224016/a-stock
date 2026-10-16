@@ -1,0 +1,32 @@
+{
+  "code": "600962",
+  "name": "国投中鲁",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 882,
+      "hit_rate": 0.4388,
+      "avg_signed_return_pct": -0.862,
+      "max_adverse_pct": -36.429
+    },
+    "20d": {
+      "sample_count": 879,
+      "hit_rate": 0.4061,
+      "avg_signed_return_pct": -2.36,
+      "max_adverse_pct": -68.44
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.4555,
+      "avg_signed_return_pct": -1.653,
+      "max_adverse_pct": -64.292
+    }
+  },
+  "limitations": []
+}

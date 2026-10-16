@@ -1,0 +1,34 @@
+{
+  "code": "605167",
+  "name": "利柏特",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1205_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1205,
+  "metrics": {
+    "5d": {
+      "sample_count": 813,
+      "hit_rate": 0.4145,
+      "avg_signed_return_pct": -1.248,
+      "max_adverse_pct": -51.077
+    },
+    "20d": {
+      "sample_count": 800,
+      "hit_rate": 0.3738,
+      "avg_signed_return_pct": -3.067,
+      "max_adverse_pct": -61.095
+    },
+    "60d": {
+      "sample_count": 765,
+      "hit_rate": 0.417,
+      "avg_signed_return_pct": -3.418,
+      "max_adverse_pct": -82.5
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

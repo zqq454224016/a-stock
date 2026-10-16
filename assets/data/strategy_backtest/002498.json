@@ -1,0 +1,32 @@
+{
+  "code": "002498",
+  "name": "汉缆股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 860,
+      "hit_rate": 0.4616,
+      "avg_signed_return_pct": 0.023,
+      "max_adverse_pct": -33.892
+    },
+    "20d": {
+      "sample_count": 857,
+      "hit_rate": 0.4527,
+      "avg_signed_return_pct": 0.666,
+      "max_adverse_pct": -33.606
+    },
+    "60d": {
+      "sample_count": 831,
+      "hit_rate": 0.4091,
+      "avg_signed_return_pct": 2.251,
+      "max_adverse_pct": -155.014
+    }
+  },
+  "limitations": []
+}

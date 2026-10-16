@@ -1,0 +1,32 @@
+{
+  "code": "002069",
+  "name": "獐子岛",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 903,
+      "hit_rate": 0.4695,
+      "avg_signed_return_pct": 0.022,
+      "max_adverse_pct": -24.178
+    },
+    "20d": {
+      "sample_count": 893,
+      "hit_rate": 0.4166,
+      "avg_signed_return_pct": -0.837,
+      "max_adverse_pct": -34.722
+    },
+    "60d": {
+      "sample_count": 859,
+      "hit_rate": 0.3737,
+      "avg_signed_return_pct": -3.242,
+      "max_adverse_pct": -55.755
+    }
+  },
+  "limitations": []
+}

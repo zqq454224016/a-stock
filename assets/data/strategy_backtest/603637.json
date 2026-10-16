@@ -1,0 +1,32 @@
+{
+  "code": "603637",
+  "name": "镇海股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 866,
+      "hit_rate": 0.4746,
+      "avg_signed_return_pct": -0.057,
+      "max_adverse_pct": -28.046
+    },
+    "20d": {
+      "sample_count": 862,
+      "hit_rate": 0.4513,
+      "avg_signed_return_pct": -1.941,
+      "max_adverse_pct": -60.918
+    },
+    "60d": {
+      "sample_count": 827,
+      "hit_rate": 0.4099,
+      "avg_signed_return_pct": -1.069,
+      "max_adverse_pct": -40.093
+    }
+  },
+  "limitations": []
+}

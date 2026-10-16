@@ -1,0 +1,32 @@
+{
+  "code": "002926",
+  "name": "华西证券",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 831,
+      "hit_rate": 0.4344,
+      "avg_signed_return_pct": -0.28,
+      "max_adverse_pct": -18.407
+    },
+    "20d": {
+      "sample_count": 828,
+      "hit_rate": 0.4384,
+      "avg_signed_return_pct": -0.828,
+      "max_adverse_pct": -34.158
+    },
+    "60d": {
+      "sample_count": 800,
+      "hit_rate": 0.5025,
+      "avg_signed_return_pct": -0.016,
+      "max_adverse_pct": -51.813
+    }
+  },
+  "limitations": []
+}

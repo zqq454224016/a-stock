@@ -1,0 +1,32 @@
+{
+  "code": "000578",
+  "name": "盐湖集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 972,
+      "hit_rate": 0.4537,
+      "avg_signed_return_pct": 0.061,
+      "max_adverse_pct": -755.625
+    },
+    "20d": {
+      "sample_count": 957,
+      "hit_rate": 0.4566,
+      "avg_signed_return_pct": -12.747,
+      "max_adverse_pct": -1009.615
+    },
+    "60d": {
+      "sample_count": 931,
+      "hit_rate": 0.4092,
+      "avg_signed_return_pct": -7.871,
+      "max_adverse_pct": -1087.232
+    }
+  },
+  "limitations": []
+}

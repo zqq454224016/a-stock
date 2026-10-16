@@ -1,0 +1,32 @@
+{
+  "code": "002780",
+  "name": "三夫户外",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 892,
+      "hit_rate": 0.4821,
+      "avg_signed_return_pct": -0.581,
+      "max_adverse_pct": -35.468
+    },
+    "20d": {
+      "sample_count": 881,
+      "hit_rate": 0.4722,
+      "avg_signed_return_pct": -2.303,
+      "max_adverse_pct": -44.144
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.377,
+      "avg_signed_return_pct": -5.178,
+      "max_adverse_pct": -57.943
+    }
+  },
+  "limitations": []
+}

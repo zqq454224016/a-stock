@@ -1,0 +1,32 @@
+{
+  "code": "000006",
+  "name": "深振业Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:09",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4383,
+      "avg_signed_return_pct": 0.027,
+      "max_adverse_pct": -24.524
+    },
+    "20d": {
+      "sample_count": 894,
+      "hit_rate": 0.4251,
+      "avg_signed_return_pct": -0.045,
+      "max_adverse_pct": -77.225
+    },
+    "60d": {
+      "sample_count": 864,
+      "hit_rate": 0.3958,
+      "avg_signed_return_pct": -1.257,
+      "max_adverse_pct": -155.525
+    }
+  },
+  "limitations": []
+}

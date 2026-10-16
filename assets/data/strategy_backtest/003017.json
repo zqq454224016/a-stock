@@ -1,0 +1,32 @@
+{
+  "code": "003017",
+  "name": "大洋生物",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:31",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.455,
+      "avg_signed_return_pct": -0.369,
+      "max_adverse_pct": -25.85
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.4121,
+      "avg_signed_return_pct": -2.423,
+      "max_adverse_pct": -43.17
+    },
+    "60d": {
+      "sample_count": 840,
+      "hit_rate": 0.3929,
+      "avg_signed_return_pct": -2.209,
+      "max_adverse_pct": -42.252
+    }
+  },
+  "limitations": []
+}

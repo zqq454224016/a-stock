@@ -1,0 +1,32 @@
+{
+  "code": "002697",
+  "name": "红旗连锁",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 823,
+      "hit_rate": 0.4775,
+      "avg_signed_return_pct": -0.221,
+      "max_adverse_pct": -19.526
+    },
+    "20d": {
+      "sample_count": 818,
+      "hit_rate": 0.4548,
+      "avg_signed_return_pct": -0.915,
+      "max_adverse_pct": -27.057
+    },
+    "60d": {
+      "sample_count": 793,
+      "hit_rate": 0.3619,
+      "avg_signed_return_pct": -3.353,
+      "max_adverse_pct": -71.942
+    }
+  },
+  "limitations": []
+}

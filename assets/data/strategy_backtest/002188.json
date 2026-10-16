@@ -1,0 +1,32 @@
+{
+  "code": "002188",
+  "name": "中天服务",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 906,
+      "hit_rate": 0.4779,
+      "avg_signed_return_pct": -0.558,
+      "max_adverse_pct": -42.074
+    },
+    "20d": {
+      "sample_count": 897,
+      "hit_rate": 0.4593,
+      "avg_signed_return_pct": -1.32,
+      "max_adverse_pct": -52.926
+    },
+    "60d": {
+      "sample_count": 860,
+      "hit_rate": 0.3488,
+      "avg_signed_return_pct": -6.106,
+      "max_adverse_pct": -122.393
+    }
+  },
+  "limitations": []
+}

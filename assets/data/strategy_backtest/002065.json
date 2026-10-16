@@ -1,0 +1,32 @@
+{
+  "code": "002065",
+  "name": "东华软件",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 872,
+      "hit_rate": 0.4805,
+      "avg_signed_return_pct": 0.045,
+      "max_adverse_pct": -29.395
+    },
+    "20d": {
+      "sample_count": 857,
+      "hit_rate": 0.4271,
+      "avg_signed_return_pct": -1.109,
+      "max_adverse_pct": -106.295
+    },
+    "60d": {
+      "sample_count": 832,
+      "hit_rate": 0.5132,
+      "avg_signed_return_pct": -0.525,
+      "max_adverse_pct": -106.546
+    }
+  },
+  "limitations": []
+}

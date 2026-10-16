@@ -1,0 +1,32 @@
+{
+  "code": "600395",
+  "name": "盘江股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:37",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 813,
+      "hit_rate": 0.4477,
+      "avg_signed_return_pct": -0.43,
+      "max_adverse_pct": -22.717
+    },
+    "20d": {
+      "sample_count": 812,
+      "hit_rate": 0.383,
+      "avg_signed_return_pct": -1.884,
+      "max_adverse_pct": -28.55
+    },
+    "60d": {
+      "sample_count": 777,
+      "hit_rate": 0.3024,
+      "avg_signed_return_pct": -5.364,
+      "max_adverse_pct": -38.811
+    }
+  },
+  "limitations": []
+}

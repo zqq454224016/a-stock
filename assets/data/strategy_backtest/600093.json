@@ -1,0 +1,32 @@
+{
+  "code": "600093",
+  "name": "退市易见",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 963,
+      "hit_rate": 0.4881,
+      "avg_signed_return_pct": 0.98,
+      "max_adverse_pct": -25.0
+    },
+    "20d": {
+      "sample_count": 948,
+      "hit_rate": 0.5253,
+      "avg_signed_return_pct": 2.42,
+      "max_adverse_pct": -78.963
+    },
+    "60d": {
+      "sample_count": 908,
+      "hit_rate": 0.4262,
+      "avg_signed_return_pct": -4.999,
+      "max_adverse_pct": -153.916
+    }
+  },
+  "limitations": []
+}

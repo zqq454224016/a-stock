@@ -1,0 +1,47 @@
+{
+  "code": "600600",
+  "name": "青岛啤酒",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "recovery",
+  "trend_score": 51.4,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 50.6955,
+    "ma60": 52.0337,
+    "momentum20": 3.0845,
+    "momentum60": -0.7378,
+    "ma20_slope10": -0.0197,
+    "volatility20": 12.5442
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

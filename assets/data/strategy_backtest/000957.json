@@ -1,0 +1,32 @@
+{
+  "code": "000957",
+  "name": "中通客车",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 889,
+      "hit_rate": 0.4443,
+      "avg_signed_return_pct": -0.355,
+      "max_adverse_pct": -61.426
+    },
+    "20d": {
+      "sample_count": 886,
+      "hit_rate": 0.3894,
+      "avg_signed_return_pct": -4.44,
+      "max_adverse_pct": -337.736
+    },
+    "60d": {
+      "sample_count": 859,
+      "hit_rate": 0.3446,
+      "avg_signed_return_pct": -17.361,
+      "max_adverse_pct": -408.6
+    }
+  },
+  "limitations": []
+}

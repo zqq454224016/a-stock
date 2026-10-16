@@ -1,0 +1,47 @@
+{
+  "code": "002518",
+  "name": "科士达",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 10.44,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 34.69,
+    "ma60": 34.2748,
+    "momentum20": -19.1785,
+    "momentum60": -20.728,
+    "ma20_slope10": -5.6465,
+    "volatility20": 51.8873
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

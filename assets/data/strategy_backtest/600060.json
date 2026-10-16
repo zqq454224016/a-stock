@@ -1,0 +1,32 @@
+{
+  "code": "600060",
+  "name": "海信视像",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 883,
+      "hit_rate": 0.4813,
+      "avg_signed_return_pct": 0.141,
+      "max_adverse_pct": -30.724
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.4943,
+      "avg_signed_return_pct": 0.228,
+      "max_adverse_pct": -48.507
+    },
+    "60d": {
+      "sample_count": 851,
+      "hit_rate": 0.4501,
+      "avg_signed_return_pct": -2.004,
+      "max_adverse_pct": -45.01
+    }
+  },
+  "limitations": []
+}

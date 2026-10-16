@@ -1,0 +1,10 @@
+{
+  "code": "001232",
+  "name": "嘉立创",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "insufficient",
+  "limitations": [
+    "history_less_than_60_bars"
+  ]
+}

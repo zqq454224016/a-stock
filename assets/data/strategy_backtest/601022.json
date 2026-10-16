@@ -1,0 +1,34 @@
+{
+  "code": "601022",
+  "name": "宁波远洋",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_872_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 872,
+  "metrics": {
+    "5d": {
+      "sample_count": 622,
+      "hit_rate": 0.4807,
+      "avg_signed_return_pct": -0.495,
+      "max_adverse_pct": -52.719
+    },
+    "20d": {
+      "sample_count": 614,
+      "hit_rate": 0.4739,
+      "avg_signed_return_pct": -2.247,
+      "max_adverse_pct": -51.709
+    },
+    "60d": {
+      "sample_count": 583,
+      "hit_rate": 0.3259,
+      "avg_signed_return_pct": -5.497,
+      "max_adverse_pct": -41.741
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

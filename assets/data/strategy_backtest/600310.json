@@ -1,0 +1,32 @@
+{
+  "code": "600310",
+  "name": "广西能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4429,
+      "avg_signed_return_pct": -0.125,
+      "max_adverse_pct": -29.848
+    },
+    "20d": {
+      "sample_count": 870,
+      "hit_rate": 0.4184,
+      "avg_signed_return_pct": -1.647,
+      "max_adverse_pct": -64.602
+    },
+    "60d": {
+      "sample_count": 844,
+      "hit_rate": 0.3709,
+      "avg_signed_return_pct": -5.494,
+      "max_adverse_pct": -99.013
+    }
+  },
+  "limitations": []
+}

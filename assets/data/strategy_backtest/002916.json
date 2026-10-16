@@ -1,0 +1,32 @@
+{
+  "code": "002916",
+  "name": "深南电路",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 933,
+      "hit_rate": 0.4855,
+      "avg_signed_return_pct": -0.189,
+      "max_adverse_pct": -33.279
+    },
+    "20d": {
+      "sample_count": 925,
+      "hit_rate": 0.48,
+      "avg_signed_return_pct": -0.434,
+      "max_adverse_pct": -77.451
+    },
+    "60d": {
+      "sample_count": 902,
+      "hit_rate": 0.4734,
+      "avg_signed_return_pct": 0.2,
+      "max_adverse_pct": -114.886
+    }
+  },
+  "limitations": []
+}

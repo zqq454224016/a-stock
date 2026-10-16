@@ -1,0 +1,32 @@
+{
+  "code": "000605",
+  "name": "渤海股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 850,
+      "hit_rate": 0.4271,
+      "avg_signed_return_pct": -0.637,
+      "max_adverse_pct": -33.925
+    },
+    "20d": {
+      "sample_count": 846,
+      "hit_rate": 0.3416,
+      "avg_signed_return_pct": -2.265,
+      "max_adverse_pct": -42.921
+    },
+    "60d": {
+      "sample_count": 814,
+      "hit_rate": 0.3243,
+      "avg_signed_return_pct": -4.354,
+      "max_adverse_pct": -109.425
+    }
+  },
+  "limitations": []
+}

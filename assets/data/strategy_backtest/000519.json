@@ -1,0 +1,32 @@
+{
+  "code": "000519",
+  "name": "中兵红箭",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 943,
+      "hit_rate": 0.4634,
+      "avg_signed_return_pct": 0.128,
+      "max_adverse_pct": -25.93
+    },
+    "20d": {
+      "sample_count": 939,
+      "hit_rate": 0.475,
+      "avg_signed_return_pct": -0.221,
+      "max_adverse_pct": -40.49
+    },
+    "60d": {
+      "sample_count": 905,
+      "hit_rate": 0.411,
+      "avg_signed_return_pct": -3.417,
+      "max_adverse_pct": -58.57
+    }
+  },
+  "limitations": []
+}

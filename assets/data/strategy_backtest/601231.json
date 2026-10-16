@@ -1,0 +1,32 @@
+{
+  "code": "601231",
+  "name": "环旭电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:46",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 882,
+      "hit_rate": 0.4535,
+      "avg_signed_return_pct": -0.441,
+      "max_adverse_pct": -29.826
+    },
+    "20d": {
+      "sample_count": 871,
+      "hit_rate": 0.4397,
+      "avg_signed_return_pct": -0.212,
+      "max_adverse_pct": -33.336
+    },
+    "60d": {
+      "sample_count": 836,
+      "hit_rate": 0.4713,
+      "avg_signed_return_pct": 2.271,
+      "max_adverse_pct": -67.715
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000090",
+  "name": "天健集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 874,
+      "hit_rate": 0.4256,
+      "avg_signed_return_pct": -0.321,
+      "max_adverse_pct": -31.378
+    },
+    "20d": {
+      "sample_count": 865,
+      "hit_rate": 0.4566,
+      "avg_signed_return_pct": -1.408,
+      "max_adverse_pct": -42.048
+    },
+    "60d": {
+      "sample_count": 831,
+      "hit_rate": 0.414,
+      "avg_signed_return_pct": -3.963,
+      "max_adverse_pct": -50.873
+    }
+  },
+  "limitations": []
+}

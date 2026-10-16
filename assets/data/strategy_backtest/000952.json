@@ -1,0 +1,32 @@
+{
+  "code": "000952",
+  "name": "广济药业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 835,
+      "hit_rate": 0.4635,
+      "avg_signed_return_pct": -0.79,
+      "max_adverse_pct": -42.727
+    },
+    "20d": {
+      "sample_count": 827,
+      "hit_rate": 0.3797,
+      "avg_signed_return_pct": -2.393,
+      "max_adverse_pct": -32.739
+    },
+    "60d": {
+      "sample_count": 790,
+      "hit_rate": 0.3608,
+      "avg_signed_return_pct": -4.367,
+      "max_adverse_pct": -47.674
+    }
+  },
+  "limitations": []
+}

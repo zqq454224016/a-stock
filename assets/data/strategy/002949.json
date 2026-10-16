@@ -1,0 +1,47 @@
+{
+  "code": "002949",
+  "name": "华阳国际",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 88.47,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 12.962,
+    "ma60": 11.7953,
+    "momentum20": 10.3825,
+    "momentum60": 37.6826,
+    "ma20_slope10": -0.5905,
+    "volatility20": 72.4023
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

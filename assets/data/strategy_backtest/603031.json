@@ -1,0 +1,32 @@
+{
+  "code": "603031",
+  "name": "安孚科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 873,
+      "hit_rate": 0.4971,
+      "avg_signed_return_pct": 0.152,
+      "max_adverse_pct": -23.906
+    },
+    "20d": {
+      "sample_count": 862,
+      "hit_rate": 0.3747,
+      "avg_signed_return_pct": -2.168,
+      "max_adverse_pct": -47.306
+    },
+    "60d": {
+      "sample_count": 825,
+      "hit_rate": 0.4097,
+      "avg_signed_return_pct": -0.017,
+      "max_adverse_pct": -67.537
+    }
+  },
+  "limitations": []
+}

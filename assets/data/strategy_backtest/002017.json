@@ -1,0 +1,32 @@
+{
+  "code": "002017",
+  "name": "东信和平",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 898,
+      "hit_rate": 0.4844,
+      "avg_signed_return_pct": 0.547,
+      "max_adverse_pct": -22.715
+    },
+    "20d": {
+      "sample_count": 893,
+      "hit_rate": 0.4658,
+      "avg_signed_return_pct": 1.431,
+      "max_adverse_pct": -43.39
+    },
+    "60d": {
+      "sample_count": 859,
+      "hit_rate": 0.4843,
+      "avg_signed_return_pct": 1.155,
+      "max_adverse_pct": -159.198
+    }
+  },
+  "limitations": []
+}

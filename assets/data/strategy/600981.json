@@ -1,0 +1,47 @@
+{
+  "code": "600981",
+  "name": "苏豪汇鸿",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 39.93,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 2.3995,
+    "ma60": 2.3992,
+    "momentum20": -6.7194,
+    "momentum60": 2.1645,
+    "ma20_slope10": -2.38,
+    "volatility20": 29.8129
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

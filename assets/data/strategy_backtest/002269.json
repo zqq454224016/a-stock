@@ -1,0 +1,32 @@
+{
+  "code": "002269",
+  "name": "美邦服饰",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 941,
+      "hit_rate": 0.475,
+      "avg_signed_return_pct": 0.159,
+      "max_adverse_pct": -26.962
+    },
+    "20d": {
+      "sample_count": 941,
+      "hit_rate": 0.5271,
+      "avg_signed_return_pct": 0.965,
+      "max_adverse_pct": -33.696
+    },
+    "60d": {
+      "sample_count": 909,
+      "hit_rate": 0.5479,
+      "avg_signed_return_pct": 4.639,
+      "max_adverse_pct": -60.185
+    }
+  },
+  "limitations": []
+}

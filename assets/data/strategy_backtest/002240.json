@@ -1,0 +1,32 @@
+{
+  "code": "002240",
+  "name": "盛新锂能",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 989,
+      "hit_rate": 0.5167,
+      "avg_signed_return_pct": 0.731,
+      "max_adverse_pct": -40.792
+    },
+    "20d": {
+      "sample_count": 974,
+      "hit_rate": 0.5678,
+      "avg_signed_return_pct": 2.729,
+      "max_adverse_pct": -43.231
+    },
+    "60d": {
+      "sample_count": 938,
+      "hit_rate": 0.6429,
+      "avg_signed_return_pct": 8.028,
+      "max_adverse_pct": -77.333
+    }
+  },
+  "limitations": []
+}

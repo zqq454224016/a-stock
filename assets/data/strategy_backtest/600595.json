@@ -1,0 +1,32 @@
+{
+  "code": "600595",
+  "name": "中孚实业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 892,
+      "hit_rate": 0.4776,
+      "avg_signed_return_pct": 0.11,
+      "max_adverse_pct": -27.481
+    },
+    "20d": {
+      "sample_count": 884,
+      "hit_rate": 0.483,
+      "avg_signed_return_pct": -0.227,
+      "max_adverse_pct": -35.926
+    },
+    "60d": {
+      "sample_count": 867,
+      "hit_rate": 0.5087,
+      "avg_signed_return_pct": 2.19,
+      "max_adverse_pct": -55.495
+    }
+  },
+  "limitations": []
+}

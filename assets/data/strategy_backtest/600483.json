@@ -1,0 +1,32 @@
+{
+  "code": "600483",
+  "name": "福能股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:38",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 852,
+      "hit_rate": 0.4601,
+      "avg_signed_return_pct": -0.39,
+      "max_adverse_pct": -26.035
+    },
+    "20d": {
+      "sample_count": 843,
+      "hit_rate": 0.4709,
+      "avg_signed_return_pct": -0.831,
+      "max_adverse_pct": -24.46
+    },
+    "60d": {
+      "sample_count": 820,
+      "hit_rate": 0.4256,
+      "avg_signed_return_pct": -3.144,
+      "max_adverse_pct": -38.939
+    }
+  },
+  "limitations": []
+}

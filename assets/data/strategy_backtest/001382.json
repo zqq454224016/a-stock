@@ -1,0 +1,34 @@
+{
+  "code": "001382",
+  "name": "新亚电缆",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_321_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 321,
+  "metrics": {
+    "5d": {
+      "sample_count": 182,
+      "hit_rate": 0.3407,
+      "avg_signed_return_pct": -0.871,
+      "max_adverse_pct": -19.655
+    },
+    "20d": {
+      "sample_count": 182,
+      "hit_rate": 0.2143,
+      "avg_signed_return_pct": -3.159,
+      "max_adverse_pct": -27.348
+    },
+    "60d": {
+      "sample_count": 157,
+      "hit_rate": 0.2994,
+      "avg_signed_return_pct": -3.525,
+      "max_adverse_pct": -30.135
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

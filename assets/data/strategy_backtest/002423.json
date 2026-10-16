@@ -1,0 +1,32 @@
+{
+  "code": "002423",
+  "name": "中粮资本",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 847,
+      "hit_rate": 0.4652,
+      "avg_signed_return_pct": -0.238,
+      "max_adverse_pct": -60.976
+    },
+    "20d": {
+      "sample_count": 845,
+      "hit_rate": 0.4355,
+      "avg_signed_return_pct": -2.125,
+      "max_adverse_pct": -143.255
+    },
+    "60d": {
+      "sample_count": 817,
+      "hit_rate": 0.4284,
+      "avg_signed_return_pct": -1.032,
+      "max_adverse_pct": -124.552
+    }
+  },
+  "limitations": []
+}

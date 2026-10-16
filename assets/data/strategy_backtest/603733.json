@@ -1,0 +1,32 @@
+{
+  "code": "603733",
+  "name": "仙鹤股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 968,
+      "hit_rate": 0.531,
+      "avg_signed_return_pct": 0.315,
+      "max_adverse_pct": -28.779
+    },
+    "20d": {
+      "sample_count": 953,
+      "hit_rate": 0.5079,
+      "avg_signed_return_pct": -0.349,
+      "max_adverse_pct": -39.245
+    },
+    "60d": {
+      "sample_count": 918,
+      "hit_rate": 0.4085,
+      "avg_signed_return_pct": -5.496,
+      "max_adverse_pct": -67.966
+    }
+  },
+  "limitations": []
+}

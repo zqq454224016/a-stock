@@ -1,0 +1,47 @@
+{
+  "code": "002920",
+  "name": "德赛西威",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 4.3,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 80.438,
+    "ma60": 85.659,
+    "momentum20": -11.6379,
+    "momentum60": -14.1161,
+    "ma20_slope10": -6.3945,
+    "volatility20": 29.3158
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

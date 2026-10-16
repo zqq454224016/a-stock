@@ -1,0 +1,47 @@
+{
+  "code": "600293",
+  "name": "三峡新材",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 100.0,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 3.2675,
+    "ma60": 2.911,
+    "momentum20": 31.4381,
+    "momentum60": 51.1538,
+    "ma20_slope10": 10.7064,
+    "volatility20": 58.7091
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

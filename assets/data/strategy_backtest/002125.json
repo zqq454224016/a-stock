@@ -1,0 +1,32 @@
+{
+  "code": "002125",
+  "name": "湘潭电化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 933,
+      "hit_rate": 0.448,
+      "avg_signed_return_pct": -0.109,
+      "max_adverse_pct": -27.371
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.4295,
+      "avg_signed_return_pct": -1.759,
+      "max_adverse_pct": -52.865
+    },
+    "60d": {
+      "sample_count": 887,
+      "hit_rate": 0.3675,
+      "avg_signed_return_pct": -6.868,
+      "max_adverse_pct": -120.236
+    }
+  },
+  "limitations": []
+}

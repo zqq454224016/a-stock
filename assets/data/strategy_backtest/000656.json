@@ -1,0 +1,32 @@
+{
+  "code": "000656",
+  "name": "金科股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4483,
+      "avg_signed_return_pct": -0.714,
+      "max_adverse_pct": -106.097
+    },
+    "20d": {
+      "sample_count": 894,
+      "hit_rate": 0.4083,
+      "avg_signed_return_pct": -4.073,
+      "max_adverse_pct": -109.164
+    },
+    "60d": {
+      "sample_count": 877,
+      "hit_rate": 0.4276,
+      "avg_signed_return_pct": -6.612,
+      "max_adverse_pct": -154.651
+    }
+  },
+  "limitations": []
+}

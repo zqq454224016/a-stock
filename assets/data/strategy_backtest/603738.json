@@ -1,0 +1,32 @@
+{
+  "code": "603738",
+  "name": "泰晶科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 928,
+      "hit_rate": 0.4763,
+      "avg_signed_return_pct": 0.271,
+      "max_adverse_pct": -34.081
+    },
+    "20d": {
+      "sample_count": 914,
+      "hit_rate": 0.4781,
+      "avg_signed_return_pct": 0.405,
+      "max_adverse_pct": -55.359
+    },
+    "60d": {
+      "sample_count": 882,
+      "hit_rate": 0.3617,
+      "avg_signed_return_pct": 1.753,
+      "max_adverse_pct": -43.437
+    }
+  },
+  "limitations": []
+}

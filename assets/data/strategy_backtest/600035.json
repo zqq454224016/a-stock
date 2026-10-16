@@ -1,0 +1,32 @@
+{
+  "code": "600035",
+  "name": "楚天高速",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 741,
+      "hit_rate": 0.417,
+      "avg_signed_return_pct": -0.435,
+      "max_adverse_pct": -16.043
+    },
+    "20d": {
+      "sample_count": 729,
+      "hit_rate": 0.3567,
+      "avg_signed_return_pct": -1.352,
+      "max_adverse_pct": -20.357
+    },
+    "60d": {
+      "sample_count": 704,
+      "hit_rate": 0.4389,
+      "avg_signed_return_pct": -0.78,
+      "max_adverse_pct": -31.638
+    }
+  },
+  "limitations": []
+}

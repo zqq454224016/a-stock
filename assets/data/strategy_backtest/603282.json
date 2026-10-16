@@ -1,0 +1,34 @@
+{
+  "code": "603282",
+  "name": "亚光股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_809_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 809,
+  "metrics": {
+    "5d": {
+      "sample_count": 623,
+      "hit_rate": 0.5329,
+      "avg_signed_return_pct": 0.068,
+      "max_adverse_pct": -18.112
+    },
+    "20d": {
+      "sample_count": 608,
+      "hit_rate": 0.5707,
+      "avg_signed_return_pct": -0.077,
+      "max_adverse_pct": -33.543
+    },
+    "60d": {
+      "sample_count": 573,
+      "hit_rate": 0.5637,
+      "avg_signed_return_pct": 0.062,
+      "max_adverse_pct": -38.956
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

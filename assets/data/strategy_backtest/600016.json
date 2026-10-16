@@ -1,0 +1,32 @@
+{
+  "code": "600016",
+  "name": "民生银行",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 767,
+      "hit_rate": 0.472,
+      "avg_signed_return_pct": 0.058,
+      "max_adverse_pct": -11.144
+    },
+    "20d": {
+      "sample_count": 757,
+      "hit_rate": 0.4201,
+      "avg_signed_return_pct": -0.04,
+      "max_adverse_pct": -20.408
+    },
+    "60d": {
+      "sample_count": 735,
+      "hit_rate": 0.4857,
+      "avg_signed_return_pct": -1.367,
+      "max_adverse_pct": -39.447
+    }
+  },
+  "limitations": []
+}

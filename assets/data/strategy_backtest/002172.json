@@ -1,0 +1,32 @@
+{
+  "code": "002172",
+  "name": "澳洋健康",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.5174,
+      "avg_signed_return_pct": 0.217,
+      "max_adverse_pct": -37.462
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.5046,
+      "avg_signed_return_pct": 0.451,
+      "max_adverse_pct": -50.167
+    },
+    "60d": {
+      "sample_count": 840,
+      "hit_rate": 0.4393,
+      "avg_signed_return_pct": -5.278,
+      "max_adverse_pct": -105.923
+    }
+  },
+  "limitations": []
+}

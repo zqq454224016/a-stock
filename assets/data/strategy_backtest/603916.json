@@ -1,0 +1,32 @@
+{
+  "code": "603916",
+  "name": "苏博特",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 913,
+      "hit_rate": 0.4786,
+      "avg_signed_return_pct": -0.12,
+      "max_adverse_pct": -30.896
+    },
+    "20d": {
+      "sample_count": 908,
+      "hit_rate": 0.457,
+      "avg_signed_return_pct": -2.18,
+      "max_adverse_pct": -57.493
+    },
+    "60d": {
+      "sample_count": 874,
+      "hit_rate": 0.4588,
+      "avg_signed_return_pct": -3.469,
+      "max_adverse_pct": -71.908
+    }
+  },
+  "limitations": []
+}

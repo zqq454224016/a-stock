@@ -1,0 +1,17 @@
+{
+  "code": "920679",
+  "trade_date": "2026-07-23",
+  "horizon": "5d",
+  "signal": "bullish",
+  "signal_score": 66.0,
+  "drivers": [
+    "above_ma20",
+    "macd_hist_positive"
+  ],
+  "limitations": [
+    "not_backtested",
+    "technical_only"
+  ],
+  "signal_version": "1.0.0",
+  "updated_at": "2026-07-24 01:39:21"
+}

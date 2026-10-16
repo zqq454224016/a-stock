@@ -1,0 +1,32 @@
+{
+  "code": "002882",
+  "name": "金龙羽",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 909,
+      "hit_rate": 0.484,
+      "avg_signed_return_pct": -0.294,
+      "max_adverse_pct": -39.468
+    },
+    "20d": {
+      "sample_count": 901,
+      "hit_rate": 0.4295,
+      "avg_signed_return_pct": -1.291,
+      "max_adverse_pct": -95.648
+    },
+    "60d": {
+      "sample_count": 864,
+      "hit_rate": 0.4201,
+      "avg_signed_return_pct": -2.287,
+      "max_adverse_pct": -119.279
+    }
+  },
+  "limitations": []
+}

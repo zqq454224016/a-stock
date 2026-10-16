@@ -1,0 +1,32 @@
+{
+  "code": "600740",
+  "name": "山西焦化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 861,
+      "hit_rate": 0.4646,
+      "avg_signed_return_pct": -0.028,
+      "max_adverse_pct": -24.761
+    },
+    "20d": {
+      "sample_count": 853,
+      "hit_rate": 0.4467,
+      "avg_signed_return_pct": -0.522,
+      "max_adverse_pct": -44.636
+    },
+    "60d": {
+      "sample_count": 819,
+      "hit_rate": 0.398,
+      "avg_signed_return_pct": -3.804,
+      "max_adverse_pct": -45.304
+    }
+  },
+  "limitations": []
+}

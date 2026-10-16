@@ -1,0 +1,32 @@
+{
+  "code": "603055",
+  "name": "台华新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 916,
+      "hit_rate": 0.4694,
+      "avg_signed_return_pct": 0.057,
+      "max_adverse_pct": -30.869
+    },
+    "20d": {
+      "sample_count": 905,
+      "hit_rate": 0.4541,
+      "avg_signed_return_pct": 0.009,
+      "max_adverse_pct": -46.154
+    },
+    "60d": {
+      "sample_count": 879,
+      "hit_rate": 0.3038,
+      "avg_signed_return_pct": -6.53,
+      "max_adverse_pct": -80.279
+    }
+  },
+  "limitations": []
+}

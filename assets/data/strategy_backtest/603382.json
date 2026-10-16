@@ -1,0 +1,34 @@
+{
+  "code": "603382",
+  "name": "海阳科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_267_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 267,
+  "metrics": {
+    "5d": {
+      "sample_count": 192,
+      "hit_rate": 0.5625,
+      "avg_signed_return_pct": 0.72,
+      "max_adverse_pct": -16.429
+    },
+    "20d": {
+      "sample_count": 192,
+      "hit_rate": 0.5417,
+      "avg_signed_return_pct": 1.703,
+      "max_adverse_pct": -44.202
+    },
+    "60d": {
+      "sample_count": 159,
+      "hit_rate": 0.6415,
+      "avg_signed_return_pct": 8.766,
+      "max_adverse_pct": -24.921
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000969",
+  "name": "安泰科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:16",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 843,
+      "hit_rate": 0.452,
+      "avg_signed_return_pct": -0.356,
+      "max_adverse_pct": -49.211
+    },
+    "20d": {
+      "sample_count": 836,
+      "hit_rate": 0.4043,
+      "avg_signed_return_pct": -2.025,
+      "max_adverse_pct": -61.533
+    },
+    "60d": {
+      "sample_count": 805,
+      "hit_rate": 0.4298,
+      "avg_signed_return_pct": -2.123,
+      "max_adverse_pct": -55.447
+    }
+  },
+  "limitations": []
+}

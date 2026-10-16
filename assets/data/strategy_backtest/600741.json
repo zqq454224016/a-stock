@@ -1,0 +1,32 @@
+{
+  "code": "600741",
+  "name": "华域汽车",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 864,
+      "hit_rate": 0.5012,
+      "avg_signed_return_pct": -0.085,
+      "max_adverse_pct": -14.385
+    },
+    "20d": {
+      "sample_count": 852,
+      "hit_rate": 0.4613,
+      "avg_signed_return_pct": -0.817,
+      "max_adverse_pct": -24.678
+    },
+    "60d": {
+      "sample_count": 837,
+      "hit_rate": 0.4886,
+      "avg_signed_return_pct": -1.934,
+      "max_adverse_pct": -40.434
+    }
+  },
+  "limitations": []
+}

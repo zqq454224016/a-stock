@@ -1,0 +1,32 @@
+{
+  "code": "600847",
+  "name": "万里股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:43",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 937,
+      "hit_rate": 0.5059,
+      "avg_signed_return_pct": 0.267,
+      "max_adverse_pct": -37.569
+    },
+    "20d": {
+      "sample_count": 932,
+      "hit_rate": 0.4431,
+      "avg_signed_return_pct": -1.297,
+      "max_adverse_pct": -109.884
+    },
+    "60d": {
+      "sample_count": 899,
+      "hit_rate": 0.4372,
+      "avg_signed_return_pct": -6.008,
+      "max_adverse_pct": -165.881
+    }
+  },
+  "limitations": []
+}

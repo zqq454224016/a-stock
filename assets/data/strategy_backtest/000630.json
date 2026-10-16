@@ -1,0 +1,32 @@
+{
+  "code": "000630",
+  "name": "铜陵有色",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 897,
+      "hit_rate": 0.4627,
+      "avg_signed_return_pct": -0.295,
+      "max_adverse_pct": -21.763
+    },
+    "20d": {
+      "sample_count": 891,
+      "hit_rate": 0.4411,
+      "avg_signed_return_pct": 0.027,
+      "max_adverse_pct": -33.38
+    },
+    "60d": {
+      "sample_count": 862,
+      "hit_rate": 0.4118,
+      "avg_signed_return_pct": -0.271,
+      "max_adverse_pct": -41.016
+    }
+  },
+  "limitations": []
+}

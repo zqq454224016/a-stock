@@ -1,0 +1,47 @@
+{
+  "code": "600933",
+  "name": "爱柯迪",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 33.23,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 13.225,
+    "ma60": 13.4512,
+    "momentum20": 1.0778,
+    "momentum60": -3.739,
+    "ma20_slope10": -1.3759,
+    "volatility20": 50.0692
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

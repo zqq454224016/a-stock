@@ -1,0 +1,32 @@
+{
+  "code": "603186",
+  "name": "华正新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 946,
+      "hit_rate": 0.4905,
+      "avg_signed_return_pct": 0.587,
+      "max_adverse_pct": -54.158
+    },
+    "20d": {
+      "sample_count": 931,
+      "hit_rate": 0.5177,
+      "avg_signed_return_pct": 3.665,
+      "max_adverse_pct": -85.091
+    },
+    "60d": {
+      "sample_count": 903,
+      "hit_rate": 0.5249,
+      "avg_signed_return_pct": 5.994,
+      "max_adverse_pct": -242.939
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "601611",
+  "name": "中国核建",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 847,
+      "hit_rate": 0.4345,
+      "avg_signed_return_pct": -0.415,
+      "max_adverse_pct": -29.908
+    },
+    "20d": {
+      "sample_count": 836,
+      "hit_rate": 0.4426,
+      "avg_signed_return_pct": -1.468,
+      "max_adverse_pct": -71.429
+    },
+    "60d": {
+      "sample_count": 811,
+      "hit_rate": 0.4969,
+      "avg_signed_return_pct": -0.13,
+      "max_adverse_pct": -57.668
+    }
+  },
+  "limitations": []
+}

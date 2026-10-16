@@ -1,0 +1,32 @@
+{
+  "code": "002564",
+  "name": "天沃科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 979,
+      "hit_rate": 0.4811,
+      "avg_signed_return_pct": 0.076,
+      "max_adverse_pct": -38.158
+    },
+    "20d": {
+      "sample_count": 964,
+      "hit_rate": 0.4647,
+      "avg_signed_return_pct": -0.731,
+      "max_adverse_pct": -54.217
+    },
+    "60d": {
+      "sample_count": 935,
+      "hit_rate": 0.4075,
+      "avg_signed_return_pct": -3.306,
+      "max_adverse_pct": -95.161
+    }
+  },
+  "limitations": []
+}

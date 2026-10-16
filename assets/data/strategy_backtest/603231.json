@@ -1,0 +1,34 @@
+{
+  "code": "603231",
+  "name": "索宝蛋白",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_624_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 624,
+  "metrics": {
+    "5d": {
+      "sample_count": 450,
+      "hit_rate": 0.4644,
+      "avg_signed_return_pct": -0.429,
+      "max_adverse_pct": -21.956
+    },
+    "20d": {
+      "sample_count": 436,
+      "hit_rate": 0.4794,
+      "avg_signed_return_pct": -1.311,
+      "max_adverse_pct": -27.523
+    },
+    "60d": {
+      "sample_count": 403,
+      "hit_rate": 0.4442,
+      "avg_signed_return_pct": -1.772,
+      "max_adverse_pct": -25.463
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

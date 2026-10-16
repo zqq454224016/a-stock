@@ -1,0 +1,32 @@
+{
+  "code": "000521",
+  "name": "长虹美菱",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 905,
+      "hit_rate": 0.474,
+      "avg_signed_return_pct": -0.145,
+      "max_adverse_pct": -21.637
+    },
+    "20d": {
+      "sample_count": 890,
+      "hit_rate": 0.5101,
+      "avg_signed_return_pct": 0.292,
+      "max_adverse_pct": -38.899
+    },
+    "60d": {
+      "sample_count": 856,
+      "hit_rate": 0.5479,
+      "avg_signed_return_pct": 1.331,
+      "max_adverse_pct": -67.69
+    }
+  },
+  "limitations": []
+}

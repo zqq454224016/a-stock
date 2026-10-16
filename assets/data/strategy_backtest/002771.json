@@ -1,0 +1,32 @@
+{
+  "code": "002771",
+  "name": "真视通",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 888,
+      "hit_rate": 0.4245,
+      "avg_signed_return_pct": -1.328,
+      "max_adverse_pct": -61.065
+    },
+    "20d": {
+      "sample_count": 877,
+      "hit_rate": 0.366,
+      "avg_signed_return_pct": -5.842,
+      "max_adverse_pct": -158.96
+    },
+    "60d": {
+      "sample_count": 847,
+      "hit_rate": 0.3506,
+      "avg_signed_return_pct": -6.89,
+      "max_adverse_pct": -136.819
+    }
+  },
+  "limitations": []
+}

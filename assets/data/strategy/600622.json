@@ -1,0 +1,47 @@
+{
+  "code": "600622",
+  "name": "光大嘉宝",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 44.93,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 2.4125,
+    "ma60": 2.2855,
+    "momentum20": -8.0972,
+    "momentum60": 8.6124,
+    "ma20_slope10": -0.1862,
+    "volatility20": 42.525
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

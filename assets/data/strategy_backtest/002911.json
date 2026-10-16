@@ -1,0 +1,32 @@
+{
+  "code": "002911",
+  "name": "佛燃能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 846,
+      "hit_rate": 0.4728,
+      "avg_signed_return_pct": 0.01,
+      "max_adverse_pct": -23.469
+    },
+    "20d": {
+      "sample_count": 837,
+      "hit_rate": 0.4612,
+      "avg_signed_return_pct": -0.005,
+      "max_adverse_pct": -29.802
+    },
+    "60d": {
+      "sample_count": 815,
+      "hit_rate": 0.3828,
+      "avg_signed_return_pct": -3.689,
+      "max_adverse_pct": -106.597
+    }
+  },
+  "limitations": []
+}

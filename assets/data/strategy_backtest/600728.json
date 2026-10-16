@@ -1,0 +1,32 @@
+{
+  "code": "600728",
+  "name": "佳都科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 871,
+      "hit_rate": 0.5098,
+      "avg_signed_return_pct": 0.098,
+      "max_adverse_pct": -26.316
+    },
+    "20d": {
+      "sample_count": 869,
+      "hit_rate": 0.4465,
+      "avg_signed_return_pct": -0.774,
+      "max_adverse_pct": -31.667
+    },
+    "60d": {
+      "sample_count": 850,
+      "hit_rate": 0.4671,
+      "avg_signed_return_pct": -1.772,
+      "max_adverse_pct": -62.64
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002985",
+  "name": "北摩高科",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:31",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 896,
+      "hit_rate": 0.452,
+      "avg_signed_return_pct": -0.307,
+      "max_adverse_pct": -35.49
+    },
+    "20d": {
+      "sample_count": 886,
+      "hit_rate": 0.4357,
+      "avg_signed_return_pct": -1.447,
+      "max_adverse_pct": -45.152
+    },
+    "60d": {
+      "sample_count": 857,
+      "hit_rate": 0.4644,
+      "avg_signed_return_pct": -2.648,
+      "max_adverse_pct": -48.141
+    }
+  },
+  "limitations": []
+}

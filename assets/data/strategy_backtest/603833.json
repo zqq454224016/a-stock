@@ -1,0 +1,32 @@
+{
+  "code": "603833",
+  "name": "欧派家居",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 946,
+      "hit_rate": 0.4915,
+      "avg_signed_return_pct": -0.197,
+      "max_adverse_pct": -33.461
+    },
+    "20d": {
+      "sample_count": 934,
+      "hit_rate": 0.4582,
+      "avg_signed_return_pct": -1.605,
+      "max_adverse_pct": -52.273
+    },
+    "60d": {
+      "sample_count": 909,
+      "hit_rate": 0.3652,
+      "avg_signed_return_pct": -5.34,
+      "max_adverse_pct": -89.101
+    }
+  },
+  "limitations": []
+}

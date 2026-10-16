@@ -1,0 +1,32 @@
+{
+  "code": "600631",
+  "name": "百联股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 943,
+      "hit_rate": 0.4867,
+      "avg_signed_return_pct": 0.288,
+      "max_adverse_pct": -33.477
+    },
+    "20d": {
+      "sample_count": 928,
+      "hit_rate": 0.5183,
+      "avg_signed_return_pct": 2.06,
+      "max_adverse_pct": -43.508
+    },
+    "60d": {
+      "sample_count": 904,
+      "hit_rate": 0.6206,
+      "avg_signed_return_pct": 6.313,
+      "max_adverse_pct": -116.866
+    }
+  },
+  "limitations": []
+}

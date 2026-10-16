@@ -1,0 +1,32 @@
+{
+  "code": "003033",
+  "name": "征和工业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 915,
+      "hit_rate": 0.4885,
+      "avg_signed_return_pct": -0.027,
+      "max_adverse_pct": -31.963
+    },
+    "20d": {
+      "sample_count": 900,
+      "hit_rate": 0.4722,
+      "avg_signed_return_pct": 0.903,
+      "max_adverse_pct": -33.998
+    },
+    "60d": {
+      "sample_count": 873,
+      "hit_rate": 0.4719,
+      "avg_signed_return_pct": 3.273,
+      "max_adverse_pct": -82.852
+    }
+  },
+  "limitations": []
+}

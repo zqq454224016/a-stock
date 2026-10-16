@@ -1,0 +1,32 @@
+{
+  "code": "000673",
+  "name": "当代退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1029,
+      "hit_rate": 0.4985,
+      "avg_signed_return_pct": 0.774,
+      "max_adverse_pct": -61.246
+    },
+    "20d": {
+      "sample_count": 1014,
+      "hit_rate": 0.5059,
+      "avg_signed_return_pct": 0.798,
+      "max_adverse_pct": -81.443
+    },
+    "60d": {
+      "sample_count": 981,
+      "hit_rate": 0.3364,
+      "avg_signed_return_pct": -11.214,
+      "max_adverse_pct": -136.842
+    }
+  },
+  "limitations": []
+}

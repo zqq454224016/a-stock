@@ -1,0 +1,32 @@
+{
+  "code": "600276",
+  "name": "恒瑞医药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 862,
+      "hit_rate": 0.478,
+      "avg_signed_return_pct": 0.087,
+      "max_adverse_pct": -17.293
+    },
+    "20d": {
+      "sample_count": 850,
+      "hit_rate": 0.4871,
+      "avg_signed_return_pct": 0.068,
+      "max_adverse_pct": -26.019
+    },
+    "60d": {
+      "sample_count": 833,
+      "hit_rate": 0.4658,
+      "avg_signed_return_pct": -0.541,
+      "max_adverse_pct": -40.613
+    }
+  },
+  "limitations": []
+}

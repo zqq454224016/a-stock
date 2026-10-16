@@ -1,0 +1,32 @@
+{
+  "code": "601015",
+  "name": "陕西黑猫",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 920,
+      "hit_rate": 0.4804,
+      "avg_signed_return_pct": -0.105,
+      "max_adverse_pct": -23.186
+    },
+    "20d": {
+      "sample_count": 910,
+      "hit_rate": 0.4934,
+      "avg_signed_return_pct": -0.247,
+      "max_adverse_pct": -36.489
+    },
+    "60d": {
+      "sample_count": 873,
+      "hit_rate": 0.4857,
+      "avg_signed_return_pct": -2.219,
+      "max_adverse_pct": -51.099
+    }
+  },
+  "limitations": []
+}

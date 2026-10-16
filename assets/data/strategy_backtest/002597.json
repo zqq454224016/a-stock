@@ -1,0 +1,32 @@
+{
+  "code": "002597",
+  "name": "金禾实业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 898,
+      "hit_rate": 0.4621,
+      "avg_signed_return_pct": -0.292,
+      "max_adverse_pct": -17.509
+    },
+    "20d": {
+      "sample_count": 886,
+      "hit_rate": 0.4661,
+      "avg_signed_return_pct": -0.067,
+      "max_adverse_pct": -33.425
+    },
+    "60d": {
+      "sample_count": 867,
+      "hit_rate": 0.4833,
+      "avg_signed_return_pct": -2.143,
+      "max_adverse_pct": -49.254
+    }
+  },
+  "limitations": []
+}

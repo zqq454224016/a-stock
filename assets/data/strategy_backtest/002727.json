@@ -1,0 +1,32 @@
+{
+  "code": "002727",
+  "name": "一心堂",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 924,
+      "hit_rate": 0.4968,
+      "avg_signed_return_pct": 0.104,
+      "max_adverse_pct": -31.774
+    },
+    "20d": {
+      "sample_count": 916,
+      "hit_rate": 0.5066,
+      "avg_signed_return_pct": 0.239,
+      "max_adverse_pct": -29.885
+    },
+    "60d": {
+      "sample_count": 890,
+      "hit_rate": 0.4607,
+      "avg_signed_return_pct": -2.295,
+      "max_adverse_pct": -44.391
+    }
+  },
+  "limitations": []
+}

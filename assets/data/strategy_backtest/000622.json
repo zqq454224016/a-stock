@@ -1,0 +1,32 @@
+{
+  "code": "000622",
+  "name": "恒立退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 871,
+      "hit_rate": 0.4432,
+      "avg_signed_return_pct": 0.432,
+      "max_adverse_pct": -31.624
+    },
+    "20d": {
+      "sample_count": 856,
+      "hit_rate": 0.4171,
+      "avg_signed_return_pct": -1.318,
+      "max_adverse_pct": -77.273
+    },
+    "60d": {
+      "sample_count": 830,
+      "hit_rate": 0.4072,
+      "avg_signed_return_pct": -2.844,
+      "max_adverse_pct": -94.163
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000757",
+  "name": "浩物股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 923,
+      "hit_rate": 0.4626,
+      "avg_signed_return_pct": -0.147,
+      "max_adverse_pct": -27.046
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.4512,
+      "avg_signed_return_pct": -0.923,
+      "max_adverse_pct": -41.313
+    },
+    "60d": {
+      "sample_count": 886,
+      "hit_rate": 0.4594,
+      "avg_signed_return_pct": -1.219,
+      "max_adverse_pct": -50.403
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002068",
+  "name": "黑猫股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 970,
+      "hit_rate": 0.4918,
+      "avg_signed_return_pct": -0.135,
+      "max_adverse_pct": -32.09
+    },
+    "20d": {
+      "sample_count": 955,
+      "hit_rate": 0.4555,
+      "avg_signed_return_pct": -2.169,
+      "max_adverse_pct": -66.225
+    },
+    "60d": {
+      "sample_count": 929,
+      "hit_rate": 0.4069,
+      "avg_signed_return_pct": -7.858,
+      "max_adverse_pct": -167.622
+    }
+  },
+  "limitations": []
+}

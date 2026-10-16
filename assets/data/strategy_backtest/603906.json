@@ -1,0 +1,32 @@
+{
+  "code": "603906",
+  "name": "龙蟠科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1015,
+      "hit_rate": 0.5123,
+      "avg_signed_return_pct": 0.496,
+      "max_adverse_pct": -31.524
+    },
+    "20d": {
+      "sample_count": 1001,
+      "hit_rate": 0.5355,
+      "avg_signed_return_pct": 0.674,
+      "max_adverse_pct": -60.448
+    },
+    "60d": {
+      "sample_count": 967,
+      "hit_rate": 0.5853,
+      "avg_signed_return_pct": -1.971,
+      "max_adverse_pct": -120.93
+    }
+  },
+  "limitations": []
+}

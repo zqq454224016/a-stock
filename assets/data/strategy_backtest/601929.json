@@ -1,0 +1,32 @@
+{
+  "code": "601929",
+  "name": "吉视传媒",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 888,
+      "hit_rate": 0.4595,
+      "avg_signed_return_pct": 0.608,
+      "max_adverse_pct": -35.754
+    },
+    "20d": {
+      "sample_count": 882,
+      "hit_rate": 0.4705,
+      "avg_signed_return_pct": 2.196,
+      "max_adverse_pct": -43.2
+    },
+    "60d": {
+      "sample_count": 856,
+      "hit_rate": 0.5315,
+      "avg_signed_return_pct": 5.139,
+      "max_adverse_pct": -102.062
+    }
+  },
+  "limitations": []
+}

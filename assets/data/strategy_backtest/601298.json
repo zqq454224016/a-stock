@@ -1,0 +1,32 @@
+{
+  "code": "601298",
+  "name": "青岛港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:46",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 777,
+      "hit_rate": 0.4131,
+      "avg_signed_return_pct": -0.31,
+      "max_adverse_pct": -12.633
+    },
+    "20d": {
+      "sample_count": 762,
+      "hit_rate": 0.4239,
+      "avg_signed_return_pct": -0.617,
+      "max_adverse_pct": -16.547
+    },
+    "60d": {
+      "sample_count": 726,
+      "hit_rate": 0.427,
+      "avg_signed_return_pct": 1.092,
+      "max_adverse_pct": -28.808
+    }
+  },
+  "limitations": []
+}

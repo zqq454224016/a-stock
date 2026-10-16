@@ -1,0 +1,32 @@
+{
+  "code": "600385",
+  "name": "退市金泰",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:37",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 888,
+      "hit_rate": 0.4921,
+      "avg_signed_return_pct": 0.477,
+      "max_adverse_pct": -33.632
+    },
+    "20d": {
+      "sample_count": 873,
+      "hit_rate": 0.4811,
+      "avg_signed_return_pct": 0.948,
+      "max_adverse_pct": -39.464
+    },
+    "60d": {
+      "sample_count": 839,
+      "hit_rate": 0.4243,
+      "avg_signed_return_pct": -1.814,
+      "max_adverse_pct": -42.299
+    }
+  },
+  "limitations": []
+}

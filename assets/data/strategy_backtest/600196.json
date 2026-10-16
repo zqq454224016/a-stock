@@ -1,0 +1,32 @@
+{
+  "code": "600196",
+  "name": "复星医药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 845,
+      "hit_rate": 0.4544,
+      "avg_signed_return_pct": -0.323,
+      "max_adverse_pct": -23.803
+    },
+    "20d": {
+      "sample_count": 835,
+      "hit_rate": 0.4,
+      "avg_signed_return_pct": -1.335,
+      "max_adverse_pct": -32.614
+    },
+    "60d": {
+      "sample_count": 819,
+      "hit_rate": 0.4994,
+      "avg_signed_return_pct": -1.074,
+      "max_adverse_pct": -44.3
+    }
+  },
+  "limitations": []
+}

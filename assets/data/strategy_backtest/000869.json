@@ -1,0 +1,32 @@
+{
+  "code": "000869",
+  "name": "张 裕Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 815,
+      "hit_rate": 0.4748,
+      "avg_signed_return_pct": -0.152,
+      "max_adverse_pct": -15.083
+    },
+    "20d": {
+      "sample_count": 801,
+      "hit_rate": 0.4507,
+      "avg_signed_return_pct": -0.589,
+      "max_adverse_pct": -27.988
+    },
+    "60d": {
+      "sample_count": 780,
+      "hit_rate": 0.4115,
+      "avg_signed_return_pct": -1.074,
+      "max_adverse_pct": -28.857
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002030",
+  "name": "达安基因",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 821,
+      "hit_rate": 0.4568,
+      "avg_signed_return_pct": -0.401,
+      "max_adverse_pct": -30.534
+    },
+    "20d": {
+      "sample_count": 816,
+      "hit_rate": 0.337,
+      "avg_signed_return_pct": -2.761,
+      "max_adverse_pct": -33.539
+    },
+    "60d": {
+      "sample_count": 791,
+      "hit_rate": 0.4437,
+      "avg_signed_return_pct": -0.448,
+      "max_adverse_pct": -41.389
+    }
+  },
+  "limitations": []
+}

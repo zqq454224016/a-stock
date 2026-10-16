@@ -1,0 +1,32 @@
+{
+  "code": "603725",
+  "name": "天安新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 896,
+      "hit_rate": 0.4643,
+      "avg_signed_return_pct": -0.513,
+      "max_adverse_pct": -30.841
+    },
+    "20d": {
+      "sample_count": 885,
+      "hit_rate": 0.4644,
+      "avg_signed_return_pct": -1.263,
+      "max_adverse_pct": -49.838
+    },
+    "60d": {
+      "sample_count": 863,
+      "hit_rate": 0.3766,
+      "avg_signed_return_pct": -2.246,
+      "max_adverse_pct": -68.203
+    }
+  },
+  "limitations": []
+}

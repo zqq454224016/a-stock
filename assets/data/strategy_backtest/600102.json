@@ -1,0 +1,32 @@
+{
+  "code": "600102",
+  "name": "莱钢股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 971,
+      "hit_rate": 0.5438,
+      "avg_signed_return_pct": 1.448,
+      "max_adverse_pct": -27.39
+    },
+    "20d": {
+      "sample_count": 967,
+      "hit_rate": 0.5388,
+      "avg_signed_return_pct": 3.79,
+      "max_adverse_pct": -116.912
+    },
+    "60d": {
+      "sample_count": 941,
+      "hit_rate": 0.559,
+      "avg_signed_return_pct": 9.663,
+      "max_adverse_pct": -264.277
+    }
+  },
+  "limitations": []
+}

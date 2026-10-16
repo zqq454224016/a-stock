@@ -1,0 +1,34 @@
+{
+  "code": "603130",
+  "name": "云中马",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_886_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 886,
+  "metrics": {
+    "5d": {
+      "sample_count": 617,
+      "hit_rate": 0.4668,
+      "avg_signed_return_pct": -0.451,
+      "max_adverse_pct": -28.845
+    },
+    "20d": {
+      "sample_count": 607,
+      "hit_rate": 0.3839,
+      "avg_signed_return_pct": -2.83,
+      "max_adverse_pct": -50.756
+    },
+    "60d": {
+      "sample_count": 583,
+      "hit_rate": 0.5232,
+      "avg_signed_return_pct": 1.03,
+      "max_adverse_pct": -59.149
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

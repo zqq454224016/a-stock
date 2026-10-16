@@ -1,0 +1,32 @@
+{
+  "code": "600435",
+  "name": "北方导航",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:37",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 905,
+      "hit_rate": 0.4497,
+      "avg_signed_return_pct": -0.034,
+      "max_adverse_pct": -22.678
+    },
+    "20d": {
+      "sample_count": 896,
+      "hit_rate": 0.4766,
+      "avg_signed_return_pct": -0.905,
+      "max_adverse_pct": -34.729
+    },
+    "60d": {
+      "sample_count": 867,
+      "hit_rate": 0.4014,
+      "avg_signed_return_pct": -3.448,
+      "max_adverse_pct": -66.963
+    }
+  },
+  "limitations": []
+}

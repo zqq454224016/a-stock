@@ -1,0 +1,32 @@
+{
+  "code": "600317",
+  "name": "营口港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 744,
+      "hit_rate": 0.3992,
+      "avg_signed_return_pct": -0.122,
+      "max_adverse_pct": -14.286
+    },
+    "20d": {
+      "sample_count": 738,
+      "hit_rate": 0.3659,
+      "avg_signed_return_pct": -0.704,
+      "max_adverse_pct": -38.679
+    },
+    "60d": {
+      "sample_count": 719,
+      "hit_rate": 0.3588,
+      "avg_signed_return_pct": -1.968,
+      "max_adverse_pct": -40.175
+    }
+  },
+  "limitations": []
+}

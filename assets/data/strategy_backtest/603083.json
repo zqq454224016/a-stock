@@ -1,0 +1,32 @@
+{
+  "code": "603083",
+  "name": "剑桥科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 991,
+      "hit_rate": 0.5005,
+      "avg_signed_return_pct": 0.646,
+      "max_adverse_pct": -54.635
+    },
+    "20d": {
+      "sample_count": 976,
+      "hit_rate": 0.5297,
+      "avg_signed_return_pct": 4.349,
+      "max_adverse_pct": -87.2
+    },
+    "60d": {
+      "sample_count": 946,
+      "hit_rate": 0.5106,
+      "avg_signed_return_pct": 13.484,
+      "max_adverse_pct": -314.676
+    }
+  },
+  "limitations": []
+}

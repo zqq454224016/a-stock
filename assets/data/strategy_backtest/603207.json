@@ -1,0 +1,34 @@
+{
+  "code": "603207",
+  "name": "小方制药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_456_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 456,
+  "metrics": {
+    "5d": {
+      "sample_count": 311,
+      "hit_rate": 0.4566,
+      "avg_signed_return_pct": -0.411,
+      "max_adverse_pct": -17.876
+    },
+    "20d": {
+      "sample_count": 307,
+      "hit_rate": 0.5147,
+      "avg_signed_return_pct": 0.653,
+      "max_adverse_pct": -24.178
+    },
+    "60d": {
+      "sample_count": 277,
+      "hit_rate": 0.5523,
+      "avg_signed_return_pct": 0.907,
+      "max_adverse_pct": -47.372
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

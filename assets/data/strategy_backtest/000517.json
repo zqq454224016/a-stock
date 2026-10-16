@@ -1,0 +1,32 @@
+{
+  "code": "000517",
+  "name": "荣安地产",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 858,
+      "hit_rate": 0.4429,
+      "avg_signed_return_pct": -0.857,
+      "max_adverse_pct": -34.848
+    },
+    "20d": {
+      "sample_count": 858,
+      "hit_rate": 0.3928,
+      "avg_signed_return_pct": -3.083,
+      "max_adverse_pct": -54.46
+    },
+    "60d": {
+      "sample_count": 821,
+      "hit_rate": 0.4153,
+      "avg_signed_return_pct": -2.798,
+      "max_adverse_pct": -46.875
+    }
+  },
+  "limitations": []
+}

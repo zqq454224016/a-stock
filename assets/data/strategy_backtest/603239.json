@@ -1,0 +1,32 @@
+{
+  "code": "603239",
+  "name": "浙江仙通",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 907,
+      "hit_rate": 0.4983,
+      "avg_signed_return_pct": -0.068,
+      "max_adverse_pct": -28.632
+    },
+    "20d": {
+      "sample_count": 901,
+      "hit_rate": 0.4661,
+      "avg_signed_return_pct": -0.809,
+      "max_adverse_pct": -39.07
+    },
+    "60d": {
+      "sample_count": 880,
+      "hit_rate": 0.3784,
+      "avg_signed_return_pct": -5.945,
+      "max_adverse_pct": -92.706
+    }
+  },
+  "limitations": []
+}

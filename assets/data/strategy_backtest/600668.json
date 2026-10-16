@@ -1,0 +1,32 @@
+{
+  "code": "600668",
+  "name": "尖峰集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 863,
+      "hit_rate": 0.4832,
+      "avg_signed_return_pct": 0.07,
+      "max_adverse_pct": -23.327
+    },
+    "20d": {
+      "sample_count": 863,
+      "hit_rate": 0.4693,
+      "avg_signed_return_pct": -0.213,
+      "max_adverse_pct": -36.805
+    },
+    "60d": {
+      "sample_count": 838,
+      "hit_rate": 0.5322,
+      "avg_signed_return_pct": 1.96,
+      "max_adverse_pct": -61.655
+    }
+  },
+  "limitations": []
+}

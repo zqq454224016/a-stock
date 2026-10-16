@@ -1,0 +1,32 @@
+{
+  "code": "600622",
+  "name": "光大嘉宝",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 934,
+      "hit_rate": 0.4465,
+      "avg_signed_return_pct": -0.219,
+      "max_adverse_pct": -29.623
+    },
+    "20d": {
+      "sample_count": 919,
+      "hit_rate": 0.4037,
+      "avg_signed_return_pct": -3.005,
+      "max_adverse_pct": -154.762
+    },
+    "60d": {
+      "sample_count": 884,
+      "hit_rate": 0.448,
+      "avg_signed_return_pct": -6.258,
+      "max_adverse_pct": -188.36
+    }
+  },
+  "limitations": []
+}

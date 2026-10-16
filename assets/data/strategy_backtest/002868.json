@@ -1,0 +1,32 @@
+{
+  "code": "002868",
+  "name": "绿康生化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 968,
+      "hit_rate": 0.4876,
+      "avg_signed_return_pct": 0.193,
+      "max_adverse_pct": -50.425
+    },
+    "20d": {
+      "sample_count": 965,
+      "hit_rate": 0.5326,
+      "avg_signed_return_pct": 2.225,
+      "max_adverse_pct": -77.817
+    },
+    "60d": {
+      "sample_count": 929,
+      "hit_rate": 0.6738,
+      "avg_signed_return_pct": 12.301,
+      "max_adverse_pct": -99.119
+    }
+  },
+  "limitations": []
+}

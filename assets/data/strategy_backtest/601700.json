@@ -1,0 +1,32 @@
+{
+  "code": "601700",
+  "name": "风范股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 840,
+      "hit_rate": 0.4238,
+      "avg_signed_return_pct": -0.45,
+      "max_adverse_pct": -19.95
+    },
+    "20d": {
+      "sample_count": 839,
+      "hit_rate": 0.3802,
+      "avg_signed_return_pct": -1.955,
+      "max_adverse_pct": -64.642
+    },
+    "60d": {
+      "sample_count": 801,
+      "hit_rate": 0.2996,
+      "avg_signed_return_pct": -6.752,
+      "max_adverse_pct": -69.697
+    }
+  },
+  "limitations": []
+}

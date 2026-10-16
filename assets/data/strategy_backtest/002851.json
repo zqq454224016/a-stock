@@ -1,0 +1,32 @@
+{
+  "code": "002851",
+  "name": "麦格米特",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 969,
+      "hit_rate": 0.5232,
+      "avg_signed_return_pct": 0.591,
+      "max_adverse_pct": -25.596
+    },
+    "20d": {
+      "sample_count": 957,
+      "hit_rate": 0.5172,
+      "avg_signed_return_pct": 0.899,
+      "max_adverse_pct": -114.458
+    },
+    "60d": {
+      "sample_count": 932,
+      "hit_rate": 0.4635,
+      "avg_signed_return_pct": -1.984,
+      "max_adverse_pct": -165.953
+    }
+  },
+  "limitations": []
+}

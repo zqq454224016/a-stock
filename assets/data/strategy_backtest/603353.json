@@ -1,0 +1,32 @@
+{
+  "code": "603353",
+  "name": "和顺石油",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 892,
+      "hit_rate": 0.5168,
+      "avg_signed_return_pct": 0.454,
+      "max_adverse_pct": -33.904
+    },
+    "20d": {
+      "sample_count": 877,
+      "hit_rate": 0.4652,
+      "avg_signed_return_pct": 0.334,
+      "max_adverse_pct": -50.651
+    },
+    "60d": {
+      "sample_count": 842,
+      "hit_rate": 0.4905,
+      "avg_signed_return_pct": 2.123,
+      "max_adverse_pct": -67.463
+    }
+  },
+  "limitations": []
+}

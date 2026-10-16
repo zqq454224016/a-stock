@@ -1,0 +1,32 @@
+{
+  "code": "002023",
+  "name": "海特高新",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 908,
+      "hit_rate": 0.4482,
+      "avg_signed_return_pct": -0.474,
+      "max_adverse_pct": -23.293
+    },
+    "20d": {
+      "sample_count": 894,
+      "hit_rate": 0.434,
+      "avg_signed_return_pct": -2.599,
+      "max_adverse_pct": -58.512
+    },
+    "60d": {
+      "sample_count": 863,
+      "hit_rate": 0.3244,
+      "avg_signed_return_pct": -5.998,
+      "max_adverse_pct": -65.289
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "601360",
+  "name": "三六零",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:46",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4836,
+      "avg_signed_return_pct": -0.126,
+      "max_adverse_pct": -35.88
+    },
+    "20d": {
+      "sample_count": 873,
+      "hit_rate": 0.4502,
+      "avg_signed_return_pct": 0.433,
+      "max_adverse_pct": -44.131
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.5234,
+      "avg_signed_return_pct": -1.193,
+      "max_adverse_pct": -193.578
+    }
+  },
+  "limitations": []
+}

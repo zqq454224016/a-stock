@@ -1,0 +1,32 @@
+{
+  "code": "002539",
+  "name": "云图控股",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 854,
+      "hit_rate": 0.4789,
+      "avg_signed_return_pct": 0.009,
+      "max_adverse_pct": -33.11
+    },
+    "20d": {
+      "sample_count": 854,
+      "hit_rate": 0.4859,
+      "avg_signed_return_pct": -0.235,
+      "max_adverse_pct": -29.555
+    },
+    "60d": {
+      "sample_count": 817,
+      "hit_rate": 0.4639,
+      "avg_signed_return_pct": -1.851,
+      "max_adverse_pct": -45.641
+    }
+  },
+  "limitations": []
+}

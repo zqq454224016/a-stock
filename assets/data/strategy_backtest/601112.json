@@ -1,0 +1,34 @@
+{
+  "code": "601112",
+  "name": "振石股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_110_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 110,
+  "metrics": {
+    "5d": {
+      "sample_count": 78,
+      "hit_rate": 0.5128,
+      "avg_signed_return_pct": -0.051,
+      "max_adverse_pct": -13.63
+    },
+    "20d": {
+      "sample_count": 67,
+      "hit_rate": 0.5522,
+      "avg_signed_return_pct": 1.677,
+      "max_adverse_pct": -22.327
+    },
+    "60d": {
+      "sample_count": 42,
+      "hit_rate": 0.8571,
+      "avg_signed_return_pct": 5.043,
+      "max_adverse_pct": -28.074
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

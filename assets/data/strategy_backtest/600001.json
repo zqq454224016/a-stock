@@ -1,0 +1,32 @@
+{
+  "code": "600001",
+  "name": "邯郸钢铁",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 910,
+      "hit_rate": 0.5264,
+      "avg_signed_return_pct": 0.782,
+      "max_adverse_pct": -26.835
+    },
+    "20d": {
+      "sample_count": 895,
+      "hit_rate": 0.5196,
+      "avg_signed_return_pct": 1.551,
+      "max_adverse_pct": -70.775
+    },
+    "60d": {
+      "sample_count": 862,
+      "hit_rate": 0.5197,
+      "avg_signed_return_pct": 3.094,
+      "max_adverse_pct": -58.172
+    }
+  },
+  "limitations": []
+}

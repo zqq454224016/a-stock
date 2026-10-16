@@ -1,0 +1,47 @@
+{
+  "code": "002409",
+  "name": "雅克科技",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 0.0,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 122.8393,
+    "ma60": 135.8271,
+    "momentum20": -26.3858,
+    "momentum60": -37.0127,
+    "ma20_slope10": -8.1639,
+    "volatility20": 42.0055
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

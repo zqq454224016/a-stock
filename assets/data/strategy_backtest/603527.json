@@ -1,0 +1,32 @@
+{
+  "code": "603527",
+  "name": "众源新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 890,
+      "hit_rate": 0.4787,
+      "avg_signed_return_pct": 0.087,
+      "max_adverse_pct": -33.645
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.4543,
+      "avg_signed_return_pct": 0.339,
+      "max_adverse_pct": -41.635
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.4859,
+      "avg_signed_return_pct": -3.643,
+      "max_adverse_pct": -169.372
+    }
+  },
+  "limitations": []
+}

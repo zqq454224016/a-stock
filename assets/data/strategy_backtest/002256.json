@@ -1,0 +1,32 @@
+{
+  "code": "002256",
+  "name": "兆新股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 934,
+      "hit_rate": 0.4593,
+      "avg_signed_return_pct": 0.238,
+      "max_adverse_pct": -33.421
+    },
+    "20d": {
+      "sample_count": 919,
+      "hit_rate": 0.4592,
+      "avg_signed_return_pct": -0.938,
+      "max_adverse_pct": -69.13
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.402,
+      "avg_signed_return_pct": -1.925,
+      "max_adverse_pct": -82.979
+    }
+  },
+  "limitations": []
+}

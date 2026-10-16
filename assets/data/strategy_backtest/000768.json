@@ -1,0 +1,32 @@
+{
+  "code": "000768",
+  "name": "中航西飞",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 892,
+      "hit_rate": 0.472,
+      "avg_signed_return_pct": -0.282,
+      "max_adverse_pct": -31.09
+    },
+    "20d": {
+      "sample_count": 880,
+      "hit_rate": 0.4648,
+      "avg_signed_return_pct": -1.265,
+      "max_adverse_pct": -33.229
+    },
+    "60d": {
+      "sample_count": 856,
+      "hit_rate": 0.4171,
+      "avg_signed_return_pct": -3.288,
+      "max_adverse_pct": -65.378
+    }
+  },
+  "limitations": []
+}

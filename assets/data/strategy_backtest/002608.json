@@ -1,0 +1,32 @@
+{
+  "code": "002608",
+  "name": "江苏国信",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 850,
+      "hit_rate": 0.4235,
+      "avg_signed_return_pct": -0.476,
+      "max_adverse_pct": -16.762
+    },
+    "20d": {
+      "sample_count": 842,
+      "hit_rate": 0.4418,
+      "avg_signed_return_pct": -1.65,
+      "max_adverse_pct": -36.745
+    },
+    "60d": {
+      "sample_count": 813,
+      "hit_rate": 0.3296,
+      "avg_signed_return_pct": -2.961,
+      "max_adverse_pct": -33.214
+    }
+  },
+  "limitations": []
+}

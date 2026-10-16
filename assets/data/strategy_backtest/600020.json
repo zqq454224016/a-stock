@@ -1,0 +1,32 @@
+{
+  "code": "600020",
+  "name": "中原高速",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 793,
+      "hit_rate": 0.4174,
+      "avg_signed_return_pct": -0.363,
+      "max_adverse_pct": -14.961
+    },
+    "20d": {
+      "sample_count": 792,
+      "hit_rate": 0.4432,
+      "avg_signed_return_pct": -0.616,
+      "max_adverse_pct": -13.959
+    },
+    "60d": {
+      "sample_count": 768,
+      "hit_rate": 0.4596,
+      "avg_signed_return_pct": 0.074,
+      "max_adverse_pct": -28.974
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002045",
+  "name": "国光电器",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 938,
+      "hit_rate": 0.4979,
+      "avg_signed_return_pct": 0.219,
+      "max_adverse_pct": -40.619
+    },
+    "20d": {
+      "sample_count": 931,
+      "hit_rate": 0.4984,
+      "avg_signed_return_pct": 0.626,
+      "max_adverse_pct": -42.898
+    },
+    "60d": {
+      "sample_count": 897,
+      "hit_rate": 0.4749,
+      "avg_signed_return_pct": -0.315,
+      "max_adverse_pct": -109.189
+    }
+  },
+  "limitations": []
+}

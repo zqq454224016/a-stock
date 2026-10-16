@@ -1,0 +1,32 @@
+{
+  "code": "600125",
+  "name": "铁龙物流",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 816,
+      "hit_rate": 0.4081,
+      "avg_signed_return_pct": -0.675,
+      "max_adverse_pct": -20.192
+    },
+    "20d": {
+      "sample_count": 808,
+      "hit_rate": 0.3973,
+      "avg_signed_return_pct": -1.557,
+      "max_adverse_pct": -21.444
+    },
+    "60d": {
+      "sample_count": 795,
+      "hit_rate": 0.3711,
+      "avg_signed_return_pct": -2.79,
+      "max_adverse_pct": -35.7
+    }
+  },
+  "limitations": []
+}

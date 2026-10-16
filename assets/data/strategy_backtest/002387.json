@@ -1,0 +1,32 @@
+{
+  "code": "002387",
+  "name": "维信诺",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 901,
+      "hit_rate": 0.4828,
+      "avg_signed_return_pct": -0.238,
+      "max_adverse_pct": -26.52
+    },
+    "20d": {
+      "sample_count": 886,
+      "hit_rate": 0.4221,
+      "avg_signed_return_pct": -0.991,
+      "max_adverse_pct": -46.381
+    },
+    "60d": {
+      "sample_count": 852,
+      "hit_rate": 0.4272,
+      "avg_signed_return_pct": -3.473,
+      "max_adverse_pct": -133.95
+    }
+  },
+  "limitations": []
+}

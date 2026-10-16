@@ -1,0 +1,47 @@
+{
+  "code": "003026",
+  "name": "中晶科技",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 53.76,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 32.1485,
+    "ma60": 29.5952,
+    "momentum20": -0.3621,
+    "momentum60": -14.0537,
+    "ma20_slope10": 3.5579,
+    "volatility20": 75.9782
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

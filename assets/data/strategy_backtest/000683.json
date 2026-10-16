@@ -1,0 +1,32 @@
+{
+  "code": "000683",
+  "name": "博源化工",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 908,
+      "hit_rate": 0.5132,
+      "avg_signed_return_pct": 0.096,
+      "max_adverse_pct": -32.157
+    },
+    "20d": {
+      "sample_count": 904,
+      "hit_rate": 0.5,
+      "avg_signed_return_pct": -0.61,
+      "max_adverse_pct": -37.972
+    },
+    "60d": {
+      "sample_count": 883,
+      "hit_rate": 0.4383,
+      "avg_signed_return_pct": -3.927,
+      "max_adverse_pct": -54.192
+    }
+  },
+  "limitations": []
+}

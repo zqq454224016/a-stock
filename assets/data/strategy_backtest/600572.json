@@ -1,0 +1,32 @@
+{
+  "code": "600572",
+  "name": "康恩贝",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 808,
+      "hit_rate": 0.4431,
+      "avg_signed_return_pct": -0.337,
+      "max_adverse_pct": -21.481
+    },
+    "20d": {
+      "sample_count": 803,
+      "hit_rate": 0.4147,
+      "avg_signed_return_pct": -0.855,
+      "max_adverse_pct": -21.378
+    },
+    "60d": {
+      "sample_count": 777,
+      "hit_rate": 0.3681,
+      "avg_signed_return_pct": -2.504,
+      "max_adverse_pct": -26.329
+    }
+  },
+  "limitations": []
+}

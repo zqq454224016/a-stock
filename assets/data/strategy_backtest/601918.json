@@ -1,0 +1,32 @@
+{
+  "code": "601918",
+  "name": "新集能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 874,
+      "hit_rate": 0.4805,
+      "avg_signed_return_pct": 0.002,
+      "max_adverse_pct": -23.741
+    },
+    "20d": {
+      "sample_count": 861,
+      "hit_rate": 0.4715,
+      "avg_signed_return_pct": 0.089,
+      "max_adverse_pct": -41.558
+    },
+    "60d": {
+      "sample_count": 824,
+      "hit_rate": 0.5534,
+      "avg_signed_return_pct": 3.857,
+      "max_adverse_pct": -36.544
+    }
+  },
+  "limitations": []
+}

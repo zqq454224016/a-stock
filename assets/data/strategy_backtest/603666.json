@@ -1,0 +1,32 @@
+{
+  "code": "603666",
+  "name": "亿嘉和",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 956,
+      "hit_rate": 0.501,
+      "avg_signed_return_pct": 0.2,
+      "max_adverse_pct": -25.915
+    },
+    "20d": {
+      "sample_count": 952,
+      "hit_rate": 0.4874,
+      "avg_signed_return_pct": 0.322,
+      "max_adverse_pct": -51.389
+    },
+    "60d": {
+      "sample_count": 919,
+      "hit_rate": 0.4396,
+      "avg_signed_return_pct": -3.926,
+      "max_adverse_pct": -116.955
+    }
+  },
+  "limitations": []
+}

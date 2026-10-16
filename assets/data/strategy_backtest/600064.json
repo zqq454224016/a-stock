@@ -1,0 +1,32 @@
+{
+  "code": "600064",
+  "name": "南京高科",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 787,
+      "hit_rate": 0.4155,
+      "avg_signed_return_pct": -0.472,
+      "max_adverse_pct": -11.811
+    },
+    "20d": {
+      "sample_count": 775,
+      "hit_rate": 0.4103,
+      "avg_signed_return_pct": -1.265,
+      "max_adverse_pct": -25.046
+    },
+    "60d": {
+      "sample_count": 746,
+      "hit_rate": 0.4732,
+      "avg_signed_return_pct": -0.751,
+      "max_adverse_pct": -43.705
+    }
+  },
+  "limitations": []
+}

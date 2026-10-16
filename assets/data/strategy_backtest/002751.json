@@ -1,0 +1,32 @@
+{
+  "code": "002751",
+  "name": "易尚退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:27",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 948,
+      "hit_rate": 0.5084,
+      "avg_signed_return_pct": 0.55,
+      "max_adverse_pct": -50.616
+    },
+    "20d": {
+      "sample_count": 933,
+      "hit_rate": 0.433,
+      "avg_signed_return_pct": -2.537,
+      "max_adverse_pct": -86.819
+    },
+    "60d": {
+      "sample_count": 908,
+      "hit_rate": 0.3392,
+      "avg_signed_return_pct": -3.447,
+      "max_adverse_pct": -88.669
+    }
+  },
+  "limitations": []
+}

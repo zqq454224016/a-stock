@@ -1,0 +1,47 @@
+{
+  "code": "002849",
+  "name": "威星智能",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "rising",
+  "trend_score": 72.48,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 19.989,
+    "ma60": 17.5923,
+    "momentum20": 1.0734,
+    "momentum60": 25.5439,
+    "ma20_slope10": 5.1278,
+    "volatility20": 86.8305
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

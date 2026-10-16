@@ -1,0 +1,32 @@
+{
+  "code": "002799",
+  "name": "环球印务",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 881,
+      "hit_rate": 0.4767,
+      "avg_signed_return_pct": -0.313,
+      "max_adverse_pct": -24.086
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.4441,
+      "avg_signed_return_pct": -1.411,
+      "max_adverse_pct": -37.043
+    },
+    "60d": {
+      "sample_count": 840,
+      "hit_rate": 0.45,
+      "avg_signed_return_pct": -1.416,
+      "max_adverse_pct": -47.532
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,47 @@
+{
+  "code": "601990",
+  "name": "南京证券",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 29.86,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 6.642,
+    "ma60": 6.71,
+    "momentum20": -2.4963,
+    "momentum60": -2.0716,
+    "ma20_slope10": -1.2122,
+    "volatility20": 18.1959
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

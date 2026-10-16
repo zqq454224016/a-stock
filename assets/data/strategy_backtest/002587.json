@@ -1,0 +1,32 @@
+{
+  "code": "002587",
+  "name": "奥拓电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 882,
+      "hit_rate": 0.4331,
+      "avg_signed_return_pct": -0.885,
+      "max_adverse_pct": -26.527
+    },
+    "20d": {
+      "sample_count": 867,
+      "hit_rate": 0.3599,
+      "avg_signed_return_pct": -4.256,
+      "max_adverse_pct": -47.191
+    },
+    "60d": {
+      "sample_count": 841,
+      "hit_rate": 0.3579,
+      "avg_signed_return_pct": -6.082,
+      "max_adverse_pct": -57.073
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600628",
+  "name": "新世界",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 798,
+      "hit_rate": 0.4612,
+      "avg_signed_return_pct": -0.336,
+      "max_adverse_pct": -27.411
+    },
+    "20d": {
+      "sample_count": 794,
+      "hit_rate": 0.4307,
+      "avg_signed_return_pct": -0.278,
+      "max_adverse_pct": -31.296
+    },
+    "60d": {
+      "sample_count": 761,
+      "hit_rate": 0.435,
+      "avg_signed_return_pct": -1.429,
+      "max_adverse_pct": -38.398
+    }
+  },
+  "limitations": []
+}

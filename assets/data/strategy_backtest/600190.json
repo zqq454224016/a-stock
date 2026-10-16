@@ -1,0 +1,32 @@
+{
+  "code": "600190",
+  "name": "退市锦港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 855,
+      "hit_rate": 0.4538,
+      "avg_signed_return_pct": 0.123,
+      "max_adverse_pct": -46.154
+    },
+    "20d": {
+      "sample_count": 840,
+      "hit_rate": 0.4702,
+      "avg_signed_return_pct": -0.109,
+      "max_adverse_pct": -40.377
+    },
+    "60d": {
+      "sample_count": 806,
+      "hit_rate": 0.3834,
+      "avg_signed_return_pct": -1.317,
+      "max_adverse_pct": -66.443
+    }
+  },
+  "limitations": []
+}

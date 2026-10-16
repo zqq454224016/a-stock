@@ -1,0 +1,32 @@
+{
+  "code": "002509",
+  "name": "天茂退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1002,
+      "hit_rate": 0.519,
+      "avg_signed_return_pct": 1.211,
+      "max_adverse_pct": -36.285
+    },
+    "20d": {
+      "sample_count": 987,
+      "hit_rate": 0.5856,
+      "avg_signed_return_pct": 4.343,
+      "max_adverse_pct": -51.522
+    },
+    "60d": {
+      "sample_count": 947,
+      "hit_rate": 0.5554,
+      "avg_signed_return_pct": 6.14,
+      "max_adverse_pct": -141.935
+    }
+  },
+  "limitations": []
+}

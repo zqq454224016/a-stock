@@ -1,0 +1,47 @@
+{
+  "code": "600084",
+  "name": "",
+  "trade_date": "2026-07-27",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 32.71,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 4.162,
+    "ma60": 4.5108,
+    "momentum20": 4.4386,
+    "momentum60": -32.5464,
+    "ma20_slope10": 1.3886,
+    "volatility20": 68.6284
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600463",
+  "name": "空港股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:37",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.4602,
+      "avg_signed_return_pct": -0.375,
+      "max_adverse_pct": -34.444
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.3585,
+      "avg_signed_return_pct": -2.922,
+      "max_adverse_pct": -51.101
+    },
+    "60d": {
+      "sample_count": 852,
+      "hit_rate": 0.3486,
+      "avg_signed_return_pct": -6.574,
+      "max_adverse_pct": -131.417
+    }
+  },
+  "limitations": []
+}

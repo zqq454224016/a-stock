@@ -1,0 +1,47 @@
+{
+  "code": "603167",
+  "name": "渤海轮渡",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "falling",
+  "trend_score": 29.15,
+  "confidence": "medium",
+  "outlook": {
+    "5d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "20d": {
+      "direction": "down",
+      "strength": "medium"
+    },
+    "60d": {
+      "direction": "down",
+      "strength": "medium"
+    }
+  },
+  "metrics": {
+    "ma20": 8.0545,
+    "ma60": 8.3693,
+    "momentum20": -2.3171,
+    "momentum60": -5.8754,
+    "ma20_slope10": -1.0078,
+    "volatility20": 7.8129
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

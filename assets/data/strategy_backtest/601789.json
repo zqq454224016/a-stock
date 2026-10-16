@@ -1,0 +1,32 @@
+{
+  "code": "601789",
+  "name": "宁波建工",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 869,
+      "hit_rate": 0.4684,
+      "avg_signed_return_pct": -0.164,
+      "max_adverse_pct": -24.919
+    },
+    "20d": {
+      "sample_count": 865,
+      "hit_rate": 0.4358,
+      "avg_signed_return_pct": -0.535,
+      "max_adverse_pct": -61.631
+    },
+    "60d": {
+      "sample_count": 847,
+      "hit_rate": 0.4404,
+      "avg_signed_return_pct": -0.289,
+      "max_adverse_pct": -125.212
+    }
+  },
+  "limitations": []
+}

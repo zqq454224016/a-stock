@@ -1,0 +1,32 @@
+{
+  "code": "600702",
+  "name": "舍得酒业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 969,
+      "hit_rate": 0.5201,
+      "avg_signed_return_pct": 0.34,
+      "max_adverse_pct": -54.402
+    },
+    "20d": {
+      "sample_count": 954,
+      "hit_rate": 0.544,
+      "avg_signed_return_pct": 0.098,
+      "max_adverse_pct": -70.11
+    },
+    "60d": {
+      "sample_count": 934,
+      "hit_rate": 0.5043,
+      "avg_signed_return_pct": -2.85,
+      "max_adverse_pct": -85.614
+    }
+  },
+  "limitations": []
+}

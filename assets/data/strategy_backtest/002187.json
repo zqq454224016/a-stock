@@ -1,0 +1,32 @@
+{
+  "code": "002187",
+  "name": "广百股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 873,
+      "hit_rate": 0.48,
+      "avg_signed_return_pct": 0.177,
+      "max_adverse_pct": -34.91
+    },
+    "20d": {
+      "sample_count": 865,
+      "hit_rate": 0.496,
+      "avg_signed_return_pct": 0.399,
+      "max_adverse_pct": -30.487
+    },
+    "60d": {
+      "sample_count": 828,
+      "hit_rate": 0.494,
+      "avg_signed_return_pct": 0.221,
+      "max_adverse_pct": -95.933
+    }
+  },
+  "limitations": []
+}

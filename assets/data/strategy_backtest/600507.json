@@ -1,0 +1,32 @@
+{
+  "code": "600507",
+  "name": "方大特钢",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:38",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 816,
+      "hit_rate": 0.4767,
+      "avg_signed_return_pct": -0.035,
+      "max_adverse_pct": -20.718
+    },
+    "20d": {
+      "sample_count": 804,
+      "hit_rate": 0.4154,
+      "avg_signed_return_pct": -1.173,
+      "max_adverse_pct": -25.434
+    },
+    "60d": {
+      "sample_count": 793,
+      "hit_rate": 0.4741,
+      "avg_signed_return_pct": -0.857,
+      "max_adverse_pct": -46.572
+    }
+  },
+  "limitations": []
+}

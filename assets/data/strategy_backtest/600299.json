@@ -1,0 +1,32 @@
+{
+  "code": "600299",
+  "name": "安迪苏",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 798,
+      "hit_rate": 0.4612,
+      "avg_signed_return_pct": -0.112,
+      "max_adverse_pct": -24.204
+    },
+    "20d": {
+      "sample_count": 796,
+      "hit_rate": 0.3844,
+      "avg_signed_return_pct": -0.395,
+      "max_adverse_pct": -28.296
+    },
+    "60d": {
+      "sample_count": 769,
+      "hit_rate": 0.4044,
+      "avg_signed_return_pct": -3.115,
+      "max_adverse_pct": -72.949
+    }
+  },
+  "limitations": []
+}

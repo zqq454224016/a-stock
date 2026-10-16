@@ -1,0 +1,32 @@
+{
+  "code": "603867",
+  "name": "新化股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 922,
+      "hit_rate": 0.4902,
+      "avg_signed_return_pct": -0.036,
+      "max_adverse_pct": -25.901
+    },
+    "20d": {
+      "sample_count": 907,
+      "hit_rate": 0.5226,
+      "avg_signed_return_pct": -0.597,
+      "max_adverse_pct": -37.001
+    },
+    "60d": {
+      "sample_count": 871,
+      "hit_rate": 0.3502,
+      "avg_signed_return_pct": -4.23,
+      "max_adverse_pct": -41.456
+    }
+  },
+  "limitations": []
+}

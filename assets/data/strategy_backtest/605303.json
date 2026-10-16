@@ -1,0 +1,32 @@
+{
+  "code": "605303",
+  "name": "园林股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:57",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 938,
+      "hit_rate": 0.4872,
+      "avg_signed_return_pct": -0.131,
+      "max_adverse_pct": -37.452
+    },
+    "20d": {
+      "sample_count": 923,
+      "hit_rate": 0.4561,
+      "avg_signed_return_pct": -1.467,
+      "max_adverse_pct": -57.585
+    },
+    "60d": {
+      "sample_count": 889,
+      "hit_rate": 0.4218,
+      "avg_signed_return_pct": -3.287,
+      "max_adverse_pct": -84.416
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "603890",
+  "name": "春秋电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 929,
+      "hit_rate": 0.4887,
+      "avg_signed_return_pct": 0.286,
+      "max_adverse_pct": -31.796
+    },
+    "20d": {
+      "sample_count": 914,
+      "hit_rate": 0.4694,
+      "avg_signed_return_pct": -1.344,
+      "max_adverse_pct": -62.603
+    },
+    "60d": {
+      "sample_count": 882,
+      "hit_rate": 0.3571,
+      "avg_signed_return_pct": -8.198,
+      "max_adverse_pct": -119.845
+    }
+  },
+  "limitations": []
+}

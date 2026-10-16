@@ -1,0 +1,32 @@
+{
+  "code": "600250",
+  "name": "南京商旅",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 858,
+      "hit_rate": 0.4301,
+      "avg_signed_return_pct": -0.616,
+      "max_adverse_pct": -30.322
+    },
+    "20d": {
+      "sample_count": 854,
+      "hit_rate": 0.3735,
+      "avg_signed_return_pct": -1.302,
+      "max_adverse_pct": -41.61
+    },
+    "60d": {
+      "sample_count": 819,
+      "hit_rate": 0.3687,
+      "avg_signed_return_pct": -5.862,
+      "max_adverse_pct": -115.445
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600267",
+  "name": "海正药业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 805,
+      "hit_rate": 0.4261,
+      "avg_signed_return_pct": -0.477,
+      "max_adverse_pct": -31.398
+    },
+    "20d": {
+      "sample_count": 796,
+      "hit_rate": 0.3606,
+      "avg_signed_return_pct": -2.804,
+      "max_adverse_pct": -45.541
+    },
+    "60d": {
+      "sample_count": 763,
+      "hit_rate": 0.4771,
+      "avg_signed_return_pct": -1.007,
+      "max_adverse_pct": -42.761
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002374",
+  "name": "中锐股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 926,
+      "hit_rate": 0.4687,
+      "avg_signed_return_pct": 0.029,
+      "max_adverse_pct": -35.465
+    },
+    "20d": {
+      "sample_count": 916,
+      "hit_rate": 0.4225,
+      "avg_signed_return_pct": -1.569,
+      "max_adverse_pct": -204.633
+    },
+    "60d": {
+      "sample_count": 892,
+      "hit_rate": 0.4283,
+      "avg_signed_return_pct": -5.116,
+      "max_adverse_pct": -195.257
+    }
+  },
+  "limitations": []
+}

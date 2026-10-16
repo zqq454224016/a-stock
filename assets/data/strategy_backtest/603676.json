@@ -1,0 +1,32 @@
+{
+  "code": "603676",
+  "name": "卫信康",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 844,
+      "hit_rate": 0.4455,
+      "avg_signed_return_pct": -0.829,
+      "max_adverse_pct": -36.93
+    },
+    "20d": {
+      "sample_count": 842,
+      "hit_rate": 0.4299,
+      "avg_signed_return_pct": -1.142,
+      "max_adverse_pct": -47.802
+    },
+    "60d": {
+      "sample_count": 820,
+      "hit_rate": 0.45,
+      "avg_signed_return_pct": -1.948,
+      "max_adverse_pct": -101.127
+    }
+  },
+  "limitations": []
+}

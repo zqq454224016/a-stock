@@ -1,0 +1,34 @@
+{
+  "code": "601033",
+  "name": "永兴股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_601_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 601,
+  "metrics": {
+    "5d": {
+      "sample_count": 383,
+      "hit_rate": 0.4804,
+      "avg_signed_return_pct": -0.309,
+      "max_adverse_pct": -23.437
+    },
+    "20d": {
+      "sample_count": 379,
+      "hit_rate": 0.3747,
+      "avg_signed_return_pct": -1.448,
+      "max_adverse_pct": -18.034
+    },
+    "60d": {
+      "sample_count": 355,
+      "hit_rate": 0.2761,
+      "avg_signed_return_pct": -3.977,
+      "max_adverse_pct": -26.615
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

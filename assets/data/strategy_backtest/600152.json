@@ -1,0 +1,32 @@
+{
+  "code": "600152",
+  "name": "维科技术",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 970,
+      "hit_rate": 0.5216,
+      "avg_signed_return_pct": 1.006,
+      "max_adverse_pct": -28.955
+    },
+    "20d": {
+      "sample_count": 963,
+      "hit_rate": 0.5701,
+      "avg_signed_return_pct": 2.977,
+      "max_adverse_pct": -48.117
+    },
+    "60d": {
+      "sample_count": 928,
+      "hit_rate": 0.555,
+      "avg_signed_return_pct": 5.6,
+      "max_adverse_pct": -114.882
+    }
+  },
+  "limitations": []
+}

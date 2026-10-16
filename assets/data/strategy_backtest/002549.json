@@ -1,0 +1,32 @@
+{
+  "code": "002549",
+  "name": "凯美特气",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 964,
+      "hit_rate": 0.4741,
+      "avg_signed_return_pct": -0.137,
+      "max_adverse_pct": -29.388
+    },
+    "20d": {
+      "sample_count": 949,
+      "hit_rate": 0.4278,
+      "avg_signed_return_pct": 0.232,
+      "max_adverse_pct": -53.74
+    },
+    "60d": {
+      "sample_count": 913,
+      "hit_rate": 0.5761,
+      "avg_signed_return_pct": 5.819,
+      "max_adverse_pct": -114.561
+    }
+  },
+  "limitations": []
+}

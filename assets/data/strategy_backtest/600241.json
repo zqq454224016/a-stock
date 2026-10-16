@@ -1,0 +1,32 @@
+{
+  "code": "600241",
+  "name": "时代万恒",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 924,
+      "hit_rate": 0.4957,
+      "avg_signed_return_pct": -0.039,
+      "max_adverse_pct": -33.04
+    },
+    "20d": {
+      "sample_count": 919,
+      "hit_rate": 0.4581,
+      "avg_signed_return_pct": -1.002,
+      "max_adverse_pct": -65.198
+    },
+    "60d": {
+      "sample_count": 884,
+      "hit_rate": 0.3846,
+      "avg_signed_return_pct": -5.154,
+      "max_adverse_pct": -103.343
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600212",
+  "name": "绿能慧充",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 909,
+      "hit_rate": 0.495,
+      "avg_signed_return_pct": -0.232,
+      "max_adverse_pct": -29.425
+    },
+    "20d": {
+      "sample_count": 902,
+      "hit_rate": 0.4213,
+      "avg_signed_return_pct": -2.173,
+      "max_adverse_pct": -78.587
+    },
+    "60d": {
+      "sample_count": 864,
+      "hit_rate": 0.4711,
+      "avg_signed_return_pct": -3.225,
+      "max_adverse_pct": -105.579
+    }
+  },
+  "limitations": []
+}

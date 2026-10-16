@@ -1,0 +1,32 @@
+{
+  "code": "002128",
+  "name": "电投能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4814,
+      "avg_signed_return_pct": -0.054,
+      "max_adverse_pct": -24.619
+    },
+    "20d": {
+      "sample_count": 882,
+      "hit_rate": 0.4717,
+      "avg_signed_return_pct": -0.524,
+      "max_adverse_pct": -52.998
+    },
+    "60d": {
+      "sample_count": 849,
+      "hit_rate": 0.5512,
+      "avg_signed_return_pct": 1.26,
+      "max_adverse_pct": -47.822
+    }
+  },
+  "limitations": []
+}

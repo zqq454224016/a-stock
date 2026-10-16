@@ -1,0 +1,32 @@
+{
+  "code": "002286",
+  "name": "保龄宝",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:21",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 861,
+      "hit_rate": 0.3926,
+      "avg_signed_return_pct": -0.664,
+      "max_adverse_pct": -21.29
+    },
+    "20d": {
+      "sample_count": 856,
+      "hit_rate": 0.403,
+      "avg_signed_return_pct": -1.355,
+      "max_adverse_pct": -33.333
+    },
+    "60d": {
+      "sample_count": 828,
+      "hit_rate": 0.4275,
+      "avg_signed_return_pct": -2.261,
+      "max_adverse_pct": -69.619
+    }
+  },
+  "limitations": []
+}

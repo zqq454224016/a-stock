@@ -1,0 +1,17 @@
+{
+  "code": "002576",
+  "trade_date": "2026-10-16",
+  "horizon": "5d",
+  "signal": "neutral",
+  "signal_score": 49.0,
+  "drivers": [
+    "macd_hist_negative",
+    "volume_expansion"
+  ],
+  "limitations": [
+    "not_backtested",
+    "technical_only"
+  ],
+  "signal_version": "1.0.0",
+  "updated_at": "2026-10-16 15:56:53"
+}

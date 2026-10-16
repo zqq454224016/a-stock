@@ -1,0 +1,34 @@
+{
+  "code": "603091",
+  "name": "众鑫股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_439_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 439,
+  "metrics": {
+    "5d": {
+      "sample_count": 283,
+      "hit_rate": 0.3922,
+      "avg_signed_return_pct": -0.841,
+      "max_adverse_pct": -17.211
+    },
+    "20d": {
+      "sample_count": 280,
+      "hit_rate": 0.3071,
+      "avg_signed_return_pct": -2.058,
+      "max_adverse_pct": -24.026
+    },
+    "60d": {
+      "sample_count": 247,
+      "hit_rate": 0.5466,
+      "avg_signed_return_pct": 2.419,
+      "max_adverse_pct": -74.856
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

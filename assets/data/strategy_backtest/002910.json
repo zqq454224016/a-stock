@@ -1,0 +1,32 @@
+{
+  "code": "002910",
+  "name": "庄园牧场",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 855,
+      "hit_rate": 0.4304,
+      "avg_signed_return_pct": -0.641,
+      "max_adverse_pct": -28.594
+    },
+    "20d": {
+      "sample_count": 851,
+      "hit_rate": 0.3925,
+      "avg_signed_return_pct": -2.864,
+      "max_adverse_pct": -73.483
+    },
+    "60d": {
+      "sample_count": 814,
+      "hit_rate": 0.4582,
+      "avg_signed_return_pct": -3.15,
+      "max_adverse_pct": -57.442
+    }
+  },
+  "limitations": []
+}

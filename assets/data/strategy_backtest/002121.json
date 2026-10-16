@@ -1,0 +1,32 @@
+{
+  "code": "002121",
+  "name": "科陆电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 968,
+      "hit_rate": 0.4917,
+      "avg_signed_return_pct": 0.106,
+      "max_adverse_pct": -60.775
+    },
+    "20d": {
+      "sample_count": 954,
+      "hit_rate": 0.5461,
+      "avg_signed_return_pct": -0.956,
+      "max_adverse_pct": -104.521
+    },
+    "60d": {
+      "sample_count": 925,
+      "hit_rate": 0.5697,
+      "avg_signed_return_pct": -0.073,
+      "max_adverse_pct": -165.714
+    }
+  },
+  "limitations": []
+}

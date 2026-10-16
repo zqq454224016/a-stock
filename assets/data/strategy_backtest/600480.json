@@ -1,0 +1,32 @@
+{
+  "code": "600480",
+  "name": "凌云股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:38",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 907,
+      "hit_rate": 0.4741,
+      "avg_signed_return_pct": -0.083,
+      "max_adverse_pct": -23.738
+    },
+    "20d": {
+      "sample_count": 892,
+      "hit_rate": 0.4473,
+      "avg_signed_return_pct": -0.72,
+      "max_adverse_pct": -31.234
+    },
+    "60d": {
+      "sample_count": 865,
+      "hit_rate": 0.3699,
+      "avg_signed_return_pct": -3.433,
+      "max_adverse_pct": -68.921
+    }
+  },
+  "limitations": []
+}

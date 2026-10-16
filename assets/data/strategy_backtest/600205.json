@@ -1,0 +1,32 @@
+{
+  "code": "600205",
+  "name": "S山东铝",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 957,
+      "hit_rate": 0.5392,
+      "avg_signed_return_pct": 0.841,
+      "max_adverse_pct": -28.055
+    },
+    "20d": {
+      "sample_count": 946,
+      "hit_rate": 0.5571,
+      "avg_signed_return_pct": 1.745,
+      "max_adverse_pct": -48.508
+    },
+    "60d": {
+      "sample_count": 925,
+      "hit_rate": 0.5027,
+      "avg_signed_return_pct": 3.171,
+      "max_adverse_pct": -77.794
+    }
+  },
+  "limitations": []
+}

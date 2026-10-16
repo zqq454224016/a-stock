@@ -1,0 +1,32 @@
+{
+  "code": "603968",
+  "name": "醋化股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 969,
+      "hit_rate": 0.5346,
+      "avg_signed_return_pct": 0.442,
+      "max_adverse_pct": -22.922
+    },
+    "20d": {
+      "sample_count": 962,
+      "hit_rate": 0.5312,
+      "avg_signed_return_pct": 0.7,
+      "max_adverse_pct": -27.464
+    },
+    "60d": {
+      "sample_count": 925,
+      "hit_rate": 0.44,
+      "avg_signed_return_pct": -2.492,
+      "max_adverse_pct": -68.085
+    }
+  },
+  "limitations": []
+}

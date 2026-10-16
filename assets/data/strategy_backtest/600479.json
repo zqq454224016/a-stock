@@ -1,0 +1,32 @@
+{
+  "code": "600479",
+  "name": "千金药业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:37",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 835,
+      "hit_rate": 0.479,
+      "avg_signed_return_pct": -0.101,
+      "max_adverse_pct": -23.025
+    },
+    "20d": {
+      "sample_count": 824,
+      "hit_rate": 0.4478,
+      "avg_signed_return_pct": -0.125,
+      "max_adverse_pct": -32.071
+    },
+    "60d": {
+      "sample_count": 794,
+      "hit_rate": 0.3249,
+      "avg_signed_return_pct": -3.049,
+      "max_adverse_pct": -56.651
+    }
+  },
+  "limitations": []
+}

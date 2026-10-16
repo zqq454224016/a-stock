@@ -1,0 +1,32 @@
+{
+  "code": "000953",
+  "name": "中哲精化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.4857,
+      "avg_signed_return_pct": 0.171,
+      "max_adverse_pct": -39.96
+    },
+    "20d": {
+      "sample_count": 877,
+      "hit_rate": 0.447,
+      "avg_signed_return_pct": -0.248,
+      "max_adverse_pct": -106.356
+    },
+    "60d": {
+      "sample_count": 842,
+      "hit_rate": 0.4751,
+      "avg_signed_return_pct": 1.146,
+      "max_adverse_pct": -87.347
+    }
+  },
+  "limitations": []
+}

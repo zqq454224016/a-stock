@@ -1,0 +1,32 @@
+{
+  "code": "603690",
+  "name": "至纯科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.4287,
+      "avg_signed_return_pct": -0.97,
+      "max_adverse_pct": -35.859
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.4258,
+      "avg_signed_return_pct": -1.877,
+      "max_adverse_pct": -40.526
+    },
+    "60d": {
+      "sample_count": 849,
+      "hit_rate": 0.3486,
+      "avg_signed_return_pct": -6.028,
+      "max_adverse_pct": -64.953
+    }
+  },
+  "limitations": []
+}

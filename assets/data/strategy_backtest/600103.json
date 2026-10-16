@@ -1,0 +1,32 @@
+{
+  "code": "600103",
+  "name": "青山纸业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 886,
+      "hit_rate": 0.474,
+      "avg_signed_return_pct": 0.415,
+      "max_adverse_pct": -20.979
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.5103,
+      "avg_signed_return_pct": 0.552,
+      "max_adverse_pct": -61.765
+    },
+    "60d": {
+      "sample_count": 845,
+      "hit_rate": 0.5124,
+      "avg_signed_return_pct": 1.038,
+      "max_adverse_pct": -52.433
+    }
+  },
+  "limitations": []
+}

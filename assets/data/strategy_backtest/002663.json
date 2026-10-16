@@ -1,0 +1,32 @@
+{
+  "code": "002663",
+  "name": "普邦股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 890,
+      "hit_rate": 0.4517,
+      "avg_signed_return_pct": -0.273,
+      "max_adverse_pct": -44.509
+    },
+    "20d": {
+      "sample_count": 881,
+      "hit_rate": 0.4336,
+      "avg_signed_return_pct": -0.375,
+      "max_adverse_pct": -28.906
+    },
+    "60d": {
+      "sample_count": 846,
+      "hit_rate": 0.3759,
+      "avg_signed_return_pct": -3.048,
+      "max_adverse_pct": -41.152
+    }
+  },
+  "limitations": []
+}

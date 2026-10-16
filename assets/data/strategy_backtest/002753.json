@@ -1,0 +1,32 @@
+{
+  "code": "002753",
+  "name": "永东股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:27",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.4815,
+      "avg_signed_return_pct": -0.038,
+      "max_adverse_pct": -25.489
+    },
+    "20d": {
+      "sample_count": 884,
+      "hit_rate": 0.4468,
+      "avg_signed_return_pct": -1.556,
+      "max_adverse_pct": -43.416
+    },
+    "60d": {
+      "sample_count": 852,
+      "hit_rate": 0.2876,
+      "avg_signed_return_pct": -7.237,
+      "max_adverse_pct": -84.352
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,34 @@
+{
+  "code": "001218",
+  "name": "丽臣实业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:16",
+  "window": "past_1153_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1153,
+  "metrics": {
+    "5d": {
+      "sample_count": 778,
+      "hit_rate": 0.5026,
+      "avg_signed_return_pct": -0.488,
+      "max_adverse_pct": -20.833
+    },
+    "20d": {
+      "sample_count": 776,
+      "hit_rate": 0.451,
+      "avg_signed_return_pct": -1.079,
+      "max_adverse_pct": -37.477
+    },
+    "60d": {
+      "sample_count": 744,
+      "hit_rate": 0.4758,
+      "avg_signed_return_pct": -1.139,
+      "max_adverse_pct": -40.866
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

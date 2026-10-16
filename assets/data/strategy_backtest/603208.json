@@ -1,0 +1,32 @@
+{
+  "code": "603208",
+  "name": "江山欧派",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 896,
+      "hit_rate": 0.4665,
+      "avg_signed_return_pct": -0.356,
+      "max_adverse_pct": -29.231
+    },
+    "20d": {
+      "sample_count": 896,
+      "hit_rate": 0.4799,
+      "avg_signed_return_pct": -0.048,
+      "max_adverse_pct": -34.789
+    },
+    "60d": {
+      "sample_count": 860,
+      "hit_rate": 0.4628,
+      "avg_signed_return_pct": -1.739,
+      "max_adverse_pct": -69.148
+    }
+  },
+  "limitations": []
+}

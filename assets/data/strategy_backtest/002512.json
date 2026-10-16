@@ -1,0 +1,34 @@
+{
+  "code": "002512",
+  "name": "",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-07-28 01:04:47",
+  "window": "past_1190_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1190,
+  "metrics": {
+    "5d": {
+      "sample_count": 883,
+      "hit_rate": 0.4587,
+      "avg_signed_return_pct": 0.026,
+      "max_adverse_pct": -48.352
+    },
+    "20d": {
+      "sample_count": 868,
+      "hit_rate": 0.4286,
+      "avg_signed_return_pct": -1.746,
+      "max_adverse_pct": -64.345
+    },
+    "60d": {
+      "sample_count": 842,
+      "hit_rate": 0.3705,
+      "avg_signed_return_pct": -7.732,
+      "max_adverse_pct": -112.821
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

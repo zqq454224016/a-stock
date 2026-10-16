@@ -1,0 +1,32 @@
+{
+  "code": "601827",
+  "name": "三峰环境",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 768,
+      "hit_rate": 0.3789,
+      "avg_signed_return_pct": -0.674,
+      "max_adverse_pct": -21.881
+    },
+    "20d": {
+      "sample_count": 762,
+      "hit_rate": 0.332,
+      "avg_signed_return_pct": -2.108,
+      "max_adverse_pct": -23.651
+    },
+    "60d": {
+      "sample_count": 737,
+      "hit_rate": 0.3894,
+      "avg_signed_return_pct": -2.36,
+      "max_adverse_pct": -25.217
+    }
+  },
+  "limitations": []
+}

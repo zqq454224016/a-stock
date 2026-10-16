@@ -1,0 +1,32 @@
+{
+  "code": "000155",
+  "name": "川能动力",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 932,
+      "hit_rate": 0.4796,
+      "avg_signed_return_pct": -0.16,
+      "max_adverse_pct": -26.89
+    },
+    "20d": {
+      "sample_count": 928,
+      "hit_rate": 0.4871,
+      "avg_signed_return_pct": -0.839,
+      "max_adverse_pct": -57.424
+    },
+    "60d": {
+      "sample_count": 904,
+      "hit_rate": 0.458,
+      "avg_signed_return_pct": -2.552,
+      "max_adverse_pct": -54.609
+    }
+  },
+  "limitations": []
+}

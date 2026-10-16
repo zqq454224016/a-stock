@@ -1,0 +1,34 @@
+{
+  "code": "603248",
+  "name": "锡华科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_135_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 135,
+  "metrics": {
+    "5d": {
+      "sample_count": 104,
+      "hit_rate": 0.4615,
+      "avg_signed_return_pct": -2.455,
+      "max_adverse_pct": -46.424
+    },
+    "20d": {
+      "sample_count": 90,
+      "hit_rate": 0.3778,
+      "avg_signed_return_pct": -3.957,
+      "max_adverse_pct": -34.275
+    },
+    "60d": {
+      "sample_count": 55,
+      "hit_rate": 0.2364,
+      "avg_signed_return_pct": -14.195,
+      "max_adverse_pct": -41.163
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

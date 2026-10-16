@@ -1,0 +1,32 @@
+{
+  "code": "600487",
+  "name": "亨通光电",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:38",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 978,
+      "hit_rate": 0.501,
+      "avg_signed_return_pct": 0.484,
+      "max_adverse_pct": -31.642
+    },
+    "20d": {
+      "sample_count": 969,
+      "hit_rate": 0.547,
+      "avg_signed_return_pct": 2.842,
+      "max_adverse_pct": -54.629
+    },
+    "60d": {
+      "sample_count": 938,
+      "hit_rate": 0.5053,
+      "avg_signed_return_pct": 5.325,
+      "max_adverse_pct": -153.746
+    }
+  },
+  "limitations": []
+}

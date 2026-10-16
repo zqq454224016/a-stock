@@ -1,0 +1,32 @@
+{
+  "code": "600002",
+  "name": "齐鲁石化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 963,
+      "hit_rate": 0.5379,
+      "avg_signed_return_pct": 0.617,
+      "max_adverse_pct": -25.299
+    },
+    "20d": {
+      "sample_count": 949,
+      "hit_rate": 0.5353,
+      "avg_signed_return_pct": 1.21,
+      "max_adverse_pct": -35.043
+    },
+    "60d": {
+      "sample_count": 909,
+      "hit_rate": 0.4972,
+      "avg_signed_return_pct": 3.318,
+      "max_adverse_pct": -42.596
+    }
+  },
+  "limitations": []
+}

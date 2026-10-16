@@ -1,0 +1,47 @@
+{
+  "code": "600566",
+  "name": "济川药业",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "recovery",
+  "trend_score": 52.51,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 25.6305,
+    "ma60": 25.7442,
+    "momentum20": 1.8424,
+    "momentum60": -1.0286,
+    "ma20_slope10": 1.3284,
+    "volatility20": 28.8243
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

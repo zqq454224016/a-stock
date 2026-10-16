@@ -1,0 +1,32 @@
+{
+  "code": "002291",
+  "name": "遥望科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:21",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 949,
+      "hit_rate": 0.5153,
+      "avg_signed_return_pct": -0.121,
+      "max_adverse_pct": -35.881
+    },
+    "20d": {
+      "sample_count": 939,
+      "hit_rate": 0.4409,
+      "avg_signed_return_pct": -1.415,
+      "max_adverse_pct": -36.342
+    },
+    "60d": {
+      "sample_count": 908,
+      "hit_rate": 0.5077,
+      "avg_signed_return_pct": -0.259,
+      "max_adverse_pct": -132.143
+    }
+  },
+  "limitations": []
+}

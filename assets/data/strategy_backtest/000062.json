@@ -1,0 +1,32 @@
+{
+  "code": "000062",
+  "name": "深圳华强",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 900,
+      "hit_rate": 0.4567,
+      "avg_signed_return_pct": 0.205,
+      "max_adverse_pct": -48.256
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.434,
+      "avg_signed_return_pct": -1.971,
+      "max_adverse_pct": -339.186
+    },
+    "60d": {
+      "sample_count": 851,
+      "hit_rate": 0.3854,
+      "avg_signed_return_pct": -12.423,
+      "max_adverse_pct": -348.406
+    }
+  },
+  "limitations": []
+}

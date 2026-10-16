@@ -1,0 +1,32 @@
+{
+  "code": "603823",
+  "name": "百合花",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.4892,
+      "avg_signed_return_pct": 0.98,
+      "max_adverse_pct": -38.348
+    },
+    "20d": {
+      "sample_count": 864,
+      "hit_rate": 0.4398,
+      "avg_signed_return_pct": 2.857,
+      "max_adverse_pct": -46.995
+    },
+    "60d": {
+      "sample_count": 830,
+      "hit_rate": 0.5349,
+      "avg_signed_return_pct": 0.037,
+      "max_adverse_pct": -364.877
+    }
+  },
+  "limitations": []
+}

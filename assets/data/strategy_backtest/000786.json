@@ -1,0 +1,32 @@
+{
+  "code": "000786",
+  "name": "北新建材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 931,
+      "hit_rate": 0.5038,
+      "avg_signed_return_pct": 0.143,
+      "max_adverse_pct": -28.442
+    },
+    "20d": {
+      "sample_count": 918,
+      "hit_rate": 0.5207,
+      "avg_signed_return_pct": -0.076,
+      "max_adverse_pct": -43.233
+    },
+    "60d": {
+      "sample_count": 889,
+      "hit_rate": 0.3633,
+      "avg_signed_return_pct": -4.59,
+      "max_adverse_pct": -43.974
+    }
+  },
+  "limitations": []
+}

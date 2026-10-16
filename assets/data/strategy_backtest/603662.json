@@ -1,0 +1,32 @@
+{
+  "code": "603662",
+  "name": "柯力传感",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 936,
+      "hit_rate": 0.4904,
+      "avg_signed_return_pct": 0.226,
+      "max_adverse_pct": -48.908
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.4772,
+      "avg_signed_return_pct": 0.404,
+      "max_adverse_pct": -60.547
+    },
+    "60d": {
+      "sample_count": 890,
+      "hit_rate": 0.3438,
+      "avg_signed_return_pct": 1.21,
+      "max_adverse_pct": -94.589
+    }
+  },
+  "limitations": []
+}

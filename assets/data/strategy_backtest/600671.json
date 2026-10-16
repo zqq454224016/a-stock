@@ -1,0 +1,32 @@
+{
+  "code": "600671",
+  "name": "天目药业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 965,
+      "hit_rate": 0.5109,
+      "avg_signed_return_pct": 0.589,
+      "max_adverse_pct": -17.265
+    },
+    "20d": {
+      "sample_count": 952,
+      "hit_rate": 0.5567,
+      "avg_signed_return_pct": 1.728,
+      "max_adverse_pct": -33.917
+    },
+    "60d": {
+      "sample_count": 917,
+      "hit_rate": 0.4547,
+      "avg_signed_return_pct": -1.782,
+      "max_adverse_pct": -66.476
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600350",
+  "name": "山东高速",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 844,
+      "hit_rate": 0.4727,
+      "avg_signed_return_pct": -0.086,
+      "max_adverse_pct": -10.23
+    },
+    "20d": {
+      "sample_count": 834,
+      "hit_rate": 0.5492,
+      "avg_signed_return_pct": 0.539,
+      "max_adverse_pct": -20.089
+    },
+    "60d": {
+      "sample_count": 804,
+      "hit_rate": 0.6182,
+      "avg_signed_return_pct": 2.357,
+      "max_adverse_pct": -27.676
+    }
+  },
+  "limitations": []
+}

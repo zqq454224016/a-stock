@@ -1,0 +1,32 @@
+{
+  "code": "603908",
+  "name": "牧高笛",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 951,
+      "hit_rate": 0.5058,
+      "avg_signed_return_pct": 0.256,
+      "max_adverse_pct": -29.946
+    },
+    "20d": {
+      "sample_count": 944,
+      "hit_rate": 0.4502,
+      "avg_signed_return_pct": -0.689,
+      "max_adverse_pct": -101.387
+    },
+    "60d": {
+      "sample_count": 910,
+      "hit_rate": 0.4407,
+      "avg_signed_return_pct": -5.37,
+      "max_adverse_pct": -187.137
+    }
+  },
+  "limitations": []
+}

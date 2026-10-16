@@ -1,0 +1,32 @@
+{
+  "code": "000560",
+  "name": "我爱我家",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 879,
+      "hit_rate": 0.4209,
+      "avg_signed_return_pct": -0.73,
+      "max_adverse_pct": -32.5
+    },
+    "20d": {
+      "sample_count": 864,
+      "hit_rate": 0.3495,
+      "avg_signed_return_pct": -3.903,
+      "max_adverse_pct": -97.452
+    },
+    "60d": {
+      "sample_count": 835,
+      "hit_rate": 0.4192,
+      "avg_signed_return_pct": -5.043,
+      "max_adverse_pct": -117.341
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "603118",
+  "name": "共进股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 959,
+      "hit_rate": 0.4953,
+      "avg_signed_return_pct": 0.042,
+      "max_adverse_pct": -28.829
+    },
+    "20d": {
+      "sample_count": 952,
+      "hit_rate": 0.5095,
+      "avg_signed_return_pct": -0.688,
+      "max_adverse_pct": -63.964
+    },
+    "60d": {
+      "sample_count": 914,
+      "hit_rate": 0.4333,
+      "avg_signed_return_pct": -2.054,
+      "max_adverse_pct": -69.391
+    }
+  },
+  "limitations": []
+}

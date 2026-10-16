@@ -1,0 +1,32 @@
+{
+  "code": "002973",
+  "name": "侨银股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:31",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 850,
+      "hit_rate": 0.4353,
+      "avg_signed_return_pct": -1.053,
+      "max_adverse_pct": -29.98
+    },
+    "20d": {
+      "sample_count": 839,
+      "hit_rate": 0.3516,
+      "avg_signed_return_pct": -4.352,
+      "max_adverse_pct": -54.356
+    },
+    "60d": {
+      "sample_count": 802,
+      "hit_rate": 0.3716,
+      "avg_signed_return_pct": -4.297,
+      "max_adverse_pct": -46.104
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600117",
+  "name": "西宁特钢",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 825,
+      "hit_rate": 0.44,
+      "avg_signed_return_pct": -0.296,
+      "max_adverse_pct": -43.069
+    },
+    "20d": {
+      "sample_count": 821,
+      "hit_rate": 0.3642,
+      "avg_signed_return_pct": -1.226,
+      "max_adverse_pct": -47.03
+    },
+    "60d": {
+      "sample_count": 794,
+      "hit_rate": 0.4496,
+      "avg_signed_return_pct": -2.106,
+      "max_adverse_pct": -108.411
+    }
+  },
+  "limitations": []
+}

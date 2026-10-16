@@ -1,0 +1,32 @@
+{
+  "code": "002516",
+  "name": "旷达科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.4652,
+      "avg_signed_return_pct": 0.07,
+      "max_adverse_pct": -20.181
+    },
+    "20d": {
+      "sample_count": 867,
+      "hit_rate": 0.4567,
+      "avg_signed_return_pct": -0.171,
+      "max_adverse_pct": -39.046
+    },
+    "60d": {
+      "sample_count": 843,
+      "hit_rate": 0.376,
+      "avg_signed_return_pct": -4.667,
+      "max_adverse_pct": -64.589
+    }
+  },
+  "limitations": []
+}

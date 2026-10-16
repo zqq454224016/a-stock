@@ -1,0 +1,32 @@
+{
+  "code": "000563",
+  "name": "陕国投Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 747,
+      "hit_rate": 0.3869,
+      "avg_signed_return_pct": -0.534,
+      "max_adverse_pct": -13.505
+    },
+    "20d": {
+      "sample_count": 741,
+      "hit_rate": 0.2874,
+      "avg_signed_return_pct": -1.885,
+      "max_adverse_pct": -31.022
+    },
+    "60d": {
+      "sample_count": 723,
+      "hit_rate": 0.3472,
+      "avg_signed_return_pct": -1.861,
+      "max_adverse_pct": -49.265
+    }
+  },
+  "limitations": []
+}

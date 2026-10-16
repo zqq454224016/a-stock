@@ -1,0 +1,34 @@
+{
+  "code": "001259",
+  "name": "利仁科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:16",
+  "window": "past_937_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 937,
+  "metrics": {
+    "5d": {
+      "sample_count": 666,
+      "hit_rate": 0.476,
+      "avg_signed_return_pct": 0.083,
+      "max_adverse_pct": -28.27
+    },
+    "20d": {
+      "sample_count": 654,
+      "hit_rate": 0.4572,
+      "avg_signed_return_pct": -1.875,
+      "max_adverse_pct": -155.327
+    },
+    "60d": {
+      "sample_count": 620,
+      "hit_rate": 0.4774,
+      "avg_signed_return_pct": -0.258,
+      "max_adverse_pct": -105.546
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

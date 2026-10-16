@@ -1,0 +1,32 @@
+{
+  "code": "000425",
+  "name": "徐工机械",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 936,
+      "hit_rate": 0.4829,
+      "avg_signed_return_pct": 0.003,
+      "max_adverse_pct": -13.841
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.5054,
+      "avg_signed_return_pct": 0.117,
+      "max_adverse_pct": -28.007
+    },
+    "60d": {
+      "sample_count": 891,
+      "hit_rate": 0.4444,
+      "avg_signed_return_pct": -0.315,
+      "max_adverse_pct": -37.462
+    }
+  },
+  "limitations": []
+}

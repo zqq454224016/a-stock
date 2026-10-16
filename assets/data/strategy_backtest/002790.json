@@ -1,0 +1,32 @@
+{
+  "code": "002790",
+  "name": "瑞尔特",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 970,
+      "hit_rate": 0.534,
+      "avg_signed_return_pct": 0.685,
+      "max_adverse_pct": -35.194
+    },
+    "20d": {
+      "sample_count": 956,
+      "hit_rate": 0.5575,
+      "avg_signed_return_pct": 1.445,
+      "max_adverse_pct": -67.877
+    },
+    "60d": {
+      "sample_count": 924,
+      "hit_rate": 0.4113,
+      "avg_signed_return_pct": -1.951,
+      "max_adverse_pct": -73.684
+    }
+  },
+  "limitations": []
+}

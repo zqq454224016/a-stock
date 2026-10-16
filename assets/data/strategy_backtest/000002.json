@@ -1,0 +1,32 @@
+{
+  "code": "000002",
+  "name": "万 科Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:09",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 897,
+      "hit_rate": 0.5072,
+      "avg_signed_return_pct": -0.238,
+      "max_adverse_pct": -29.373
+    },
+    "20d": {
+      "sample_count": 882,
+      "hit_rate": 0.4456,
+      "avg_signed_return_pct": -1.89,
+      "max_adverse_pct": -56.986
+    },
+    "60d": {
+      "sample_count": 867,
+      "hit_rate": 0.5352,
+      "avg_signed_return_pct": -0.2,
+      "max_adverse_pct": -50.872
+    }
+  },
+  "limitations": []
+}

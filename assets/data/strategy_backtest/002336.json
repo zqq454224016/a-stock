@@ -1,0 +1,32 @@
+{
+  "code": "002336",
+  "name": "人乐退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:21",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 880,
+      "hit_rate": 0.4807,
+      "avg_signed_return_pct": 1.704,
+      "max_adverse_pct": -45.17
+    },
+    "20d": {
+      "sample_count": 865,
+      "hit_rate": 0.5133,
+      "avg_signed_return_pct": 6.352,
+      "max_adverse_pct": -58.482
+    },
+    "60d": {
+      "sample_count": 830,
+      "hit_rate": 0.5398,
+      "avg_signed_return_pct": 10.966,
+      "max_adverse_pct": -77.046
+    }
+  },
+  "limitations": []
+}

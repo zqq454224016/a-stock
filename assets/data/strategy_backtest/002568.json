@@ -1,0 +1,32 @@
+{
+  "code": "002568",
+  "name": "百润股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 967,
+      "hit_rate": 0.5047,
+      "avg_signed_return_pct": 0.056,
+      "max_adverse_pct": -29.384
+    },
+    "20d": {
+      "sample_count": 957,
+      "hit_rate": 0.5246,
+      "avg_signed_return_pct": -0.369,
+      "max_adverse_pct": -42.796
+    },
+    "60d": {
+      "sample_count": 934,
+      "hit_rate": 0.5557,
+      "avg_signed_return_pct": 1.074,
+      "max_adverse_pct": -82.038
+    }
+  },
+  "limitations": []
+}

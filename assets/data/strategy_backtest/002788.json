@@ -1,0 +1,32 @@
+{
+  "code": "002788",
+  "name": "鹭燕医药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 835,
+      "hit_rate": 0.4922,
+      "avg_signed_return_pct": 0.008,
+      "max_adverse_pct": -36.634
+    },
+    "20d": {
+      "sample_count": 832,
+      "hit_rate": 0.4567,
+      "avg_signed_return_pct": 0.945,
+      "max_adverse_pct": -40.579
+    },
+    "60d": {
+      "sample_count": 801,
+      "hit_rate": 0.4145,
+      "avg_signed_return_pct": -2.352,
+      "max_adverse_pct": -233.617
+    }
+  },
+  "limitations": []
+}

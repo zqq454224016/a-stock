@@ -1,0 +1,32 @@
+{
+  "code": "603636",
+  "name": "南威软件",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 937,
+      "hit_rate": 0.4845,
+      "avg_signed_return_pct": 0.061,
+      "max_adverse_pct": -32.084
+    },
+    "20d": {
+      "sample_count": 923,
+      "hit_rate": 0.455,
+      "avg_signed_return_pct": -1.992,
+      "max_adverse_pct": -77.724
+    },
+    "60d": {
+      "sample_count": 897,
+      "hit_rate": 0.4627,
+      "avg_signed_return_pct": -1.202,
+      "max_adverse_pct": -73.494
+    }
+  },
+  "limitations": []
+}

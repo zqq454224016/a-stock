@@ -1,0 +1,32 @@
+{
+  "code": "603106",
+  "name": "恒银科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 911,
+      "hit_rate": 0.4523,
+      "avg_signed_return_pct": -0.031,
+      "max_adverse_pct": -47.865
+    },
+    "20d": {
+      "sample_count": 909,
+      "hit_rate": 0.4191,
+      "avg_signed_return_pct": -1.084,
+      "max_adverse_pct": -55.276
+    },
+    "60d": {
+      "sample_count": 879,
+      "hit_rate": 0.4334,
+      "avg_signed_return_pct": -2.972,
+      "max_adverse_pct": -212.888
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002491",
+  "name": "通鼎互联",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 970,
+      "hit_rate": 0.4825,
+      "avg_signed_return_pct": 0.578,
+      "max_adverse_pct": -30.831
+    },
+    "20d": {
+      "sample_count": 961,
+      "hit_rate": 0.514,
+      "avg_signed_return_pct": 1.819,
+      "max_adverse_pct": -71.304
+    },
+    "60d": {
+      "sample_count": 928,
+      "hit_rate": 0.5356,
+      "avg_signed_return_pct": 10.164,
+      "max_adverse_pct": -66.142
+    }
+  },
+  "limitations": []
+}

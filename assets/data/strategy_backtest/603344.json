@@ -1,0 +1,34 @@
+{
+  "code": "603344",
+  "name": "星德胜",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_563_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 563,
+  "metrics": {
+    "5d": {
+      "sample_count": 422,
+      "hit_rate": 0.5,
+      "avg_signed_return_pct": -0.014,
+      "max_adverse_pct": -22.428
+    },
+    "20d": {
+      "sample_count": 417,
+      "hit_rate": 0.4652,
+      "avg_signed_return_pct": -3.275,
+      "max_adverse_pct": -49.091
+    },
+    "60d": {
+      "sample_count": 380,
+      "hit_rate": 0.4895,
+      "avg_signed_return_pct": -2.959,
+      "max_adverse_pct": -36.283
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

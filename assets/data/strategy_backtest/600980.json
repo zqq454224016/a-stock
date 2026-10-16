@@ -1,0 +1,32 @@
+{
+  "code": "600980",
+  "name": "北矿科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 861,
+      "hit_rate": 0.453,
+      "avg_signed_return_pct": -0.123,
+      "max_adverse_pct": -23.276
+    },
+    "20d": {
+      "sample_count": 861,
+      "hit_rate": 0.4042,
+      "avg_signed_return_pct": -1.407,
+      "max_adverse_pct": -29.537
+    },
+    "60d": {
+      "sample_count": 828,
+      "hit_rate": 0.372,
+      "avg_signed_return_pct": -2.638,
+      "max_adverse_pct": -55.081
+    }
+  },
+  "limitations": []
+}

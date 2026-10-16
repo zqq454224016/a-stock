@@ -1,0 +1,32 @@
+{
+  "code": "002599",
+  "name": "盛通股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 942,
+      "hit_rate": 0.449,
+      "avg_signed_return_pct": -0.177,
+      "max_adverse_pct": -27.901
+    },
+    "20d": {
+      "sample_count": 932,
+      "hit_rate": 0.4109,
+      "avg_signed_return_pct": -2.911,
+      "max_adverse_pct": -84.553
+    },
+    "60d": {
+      "sample_count": 915,
+      "hit_rate": 0.412,
+      "avg_signed_return_pct": -3.393,
+      "max_adverse_pct": -86.402
+    }
+  },
+  "limitations": []
+}

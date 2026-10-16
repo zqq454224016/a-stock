@@ -1,0 +1,32 @@
+{
+  "code": "600354",
+  "name": "敦煌种业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 856,
+      "hit_rate": 0.4743,
+      "avg_signed_return_pct": -0.57,
+      "max_adverse_pct": -30.649
+    },
+    "20d": {
+      "sample_count": 841,
+      "hit_rate": 0.4185,
+      "avg_signed_return_pct": -0.79,
+      "max_adverse_pct": -37.631
+    },
+    "60d": {
+      "sample_count": 801,
+      "hit_rate": 0.3845,
+      "avg_signed_return_pct": -6.274,
+      "max_adverse_pct": -125.838
+    }
+  },
+  "limitations": []
+}

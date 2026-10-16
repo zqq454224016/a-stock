@@ -1,0 +1,32 @@
+{
+  "code": "002071",
+  "name": "长城退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1007,
+      "hit_rate": 0.4955,
+      "avg_signed_return_pct": 0.004,
+      "max_adverse_pct": -62.032
+    },
+    "20d": {
+      "sample_count": 993,
+      "hit_rate": 0.4743,
+      "avg_signed_return_pct": -2.191,
+      "max_adverse_pct": -89.385
+    },
+    "60d": {
+      "sample_count": 953,
+      "hit_rate": 0.5089,
+      "avg_signed_return_pct": -0.763,
+      "max_adverse_pct": -79.066
+    }
+  },
+  "limitations": []
+}

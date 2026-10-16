@@ -1,0 +1,32 @@
+{
+  "code": "600706",
+  "name": "曲江文旅",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 938,
+      "hit_rate": 0.4797,
+      "avg_signed_return_pct": 0.001,
+      "max_adverse_pct": -25.749
+    },
+    "20d": {
+      "sample_count": 929,
+      "hit_rate": 0.4672,
+      "avg_signed_return_pct": 0.16,
+      "max_adverse_pct": -36.725
+    },
+    "60d": {
+      "sample_count": 894,
+      "hit_rate": 0.4452,
+      "avg_signed_return_pct": 0.85,
+      "max_adverse_pct": -125.705
+    }
+  },
+  "limitations": []
+}

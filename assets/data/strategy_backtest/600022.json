@@ -1,0 +1,32 @@
+{
+  "code": "600022",
+  "name": "山东钢铁",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 833,
+      "hit_rate": 0.4298,
+      "avg_signed_return_pct": -0.208,
+      "max_adverse_pct": -16.935
+    },
+    "20d": {
+      "sample_count": 827,
+      "hit_rate": 0.4305,
+      "avg_signed_return_pct": -1.111,
+      "max_adverse_pct": -26.21
+    },
+    "60d": {
+      "sample_count": 813,
+      "hit_rate": 0.3715,
+      "avg_signed_return_pct": -2.964,
+      "max_adverse_pct": -39.167
+    }
+  },
+  "limitations": []
+}

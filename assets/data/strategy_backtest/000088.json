@@ -1,0 +1,32 @@
+{
+  "code": "000088",
+  "name": "盐 田 港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 716,
+      "hit_rate": 0.3715,
+      "avg_signed_return_pct": -0.801,
+      "max_adverse_pct": -16.699
+    },
+    "20d": {
+      "sample_count": 709,
+      "hit_rate": 0.292,
+      "avg_signed_return_pct": -2.284,
+      "max_adverse_pct": -22.791
+    },
+    "60d": {
+      "sample_count": 672,
+      "hit_rate": 0.2589,
+      "avg_signed_return_pct": -3.315,
+      "max_adverse_pct": -21.163
+    }
+  },
+  "limitations": []
+}

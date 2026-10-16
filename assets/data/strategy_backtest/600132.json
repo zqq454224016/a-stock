@@ -1,0 +1,32 @@
+{
+  "code": "600132",
+  "name": "重庆啤酒",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4705,
+      "avg_signed_return_pct": -0.258,
+      "max_adverse_pct": -32.047
+    },
+    "20d": {
+      "sample_count": 885,
+      "hit_rate": 0.4667,
+      "avg_signed_return_pct": -0.559,
+      "max_adverse_pct": -29.349
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.3934,
+      "avg_signed_return_pct": -3.924,
+      "max_adverse_pct": -42.233
+    }
+  },
+  "limitations": []
+}

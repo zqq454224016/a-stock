@@ -1,0 +1,32 @@
+{
+  "code": "600975",
+  "name": "新五丰",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 861,
+      "hit_rate": 0.4344,
+      "avg_signed_return_pct": -0.322,
+      "max_adverse_pct": -29.045
+    },
+    "20d": {
+      "sample_count": 853,
+      "hit_rate": 0.4396,
+      "avg_signed_return_pct": -0.531,
+      "max_adverse_pct": -29.045
+    },
+    "60d": {
+      "sample_count": 831,
+      "hit_rate": 0.4248,
+      "avg_signed_return_pct": -2.189,
+      "max_adverse_pct": -85.028
+    }
+  },
+  "limitations": []
+}

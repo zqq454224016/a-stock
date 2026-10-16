@@ -1,0 +1,32 @@
+{
+  "code": "000049",
+  "name": "德赛电池",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4805,
+      "avg_signed_return_pct": -0.24,
+      "max_adverse_pct": -27.456
+    },
+    "20d": {
+      "sample_count": 886,
+      "hit_rate": 0.4729,
+      "avg_signed_return_pct": -1.061,
+      "max_adverse_pct": -42.51
+    },
+    "60d": {
+      "sample_count": 869,
+      "hit_rate": 0.4327,
+      "avg_signed_return_pct": -3.742,
+      "max_adverse_pct": -88.149
+    }
+  },
+  "limitations": []
+}

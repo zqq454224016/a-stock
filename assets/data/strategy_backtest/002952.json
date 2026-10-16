@@ -1,0 +1,32 @@
+{
+  "code": "002952",
+  "name": "亚世光电",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 904,
+      "hit_rate": 0.4524,
+      "avg_signed_return_pct": -0.154,
+      "max_adverse_pct": -33.761
+    },
+    "20d": {
+      "sample_count": 903,
+      "hit_rate": 0.4109,
+      "avg_signed_return_pct": -0.576,
+      "max_adverse_pct": -52.124
+    },
+    "60d": {
+      "sample_count": 869,
+      "hit_rate": 0.3901,
+      "avg_signed_return_pct": -5.713,
+      "max_adverse_pct": -185.409
+    }
+  },
+  "limitations": []
+}

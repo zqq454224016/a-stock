@@ -1,0 +1,32 @@
+{
+  "code": "600783",
+  "name": "鲁信创投",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 822,
+      "hit_rate": 0.4282,
+      "avg_signed_return_pct": -0.198,
+      "max_adverse_pct": -34.965
+    },
+    "20d": {
+      "sample_count": 807,
+      "hit_rate": 0.3941,
+      "avg_signed_return_pct": -0.363,
+      "max_adverse_pct": -39.807
+    },
+    "60d": {
+      "sample_count": 774,
+      "hit_rate": 0.3966,
+      "avg_signed_return_pct": -0.356,
+      "max_adverse_pct": -82.325
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002746",
+  "name": "仙坛股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:27",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 813,
+      "hit_rate": 0.4342,
+      "avg_signed_return_pct": -0.453,
+      "max_adverse_pct": -21.125
+    },
+    "20d": {
+      "sample_count": 805,
+      "hit_rate": 0.4087,
+      "avg_signed_return_pct": -1.98,
+      "max_adverse_pct": -54.72
+    },
+    "60d": {
+      "sample_count": 767,
+      "hit_rate": 0.4133,
+      "avg_signed_return_pct": -2.254,
+      "max_adverse_pct": -48.737
+    }
+  },
+  "limitations": []
+}

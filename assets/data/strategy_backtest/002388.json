@@ -1,0 +1,32 @@
+{
+  "code": "002388",
+  "name": "新亚制程",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 940,
+      "hit_rate": 0.5085,
+      "avg_signed_return_pct": 0.382,
+      "max_adverse_pct": -36.434
+    },
+    "20d": {
+      "sample_count": 926,
+      "hit_rate": 0.5086,
+      "avg_signed_return_pct": -0.667,
+      "max_adverse_pct": -79.139
+    },
+    "60d": {
+      "sample_count": 887,
+      "hit_rate": 0.4408,
+      "avg_signed_return_pct": -4.656,
+      "max_adverse_pct": -99.672
+    }
+  },
+  "limitations": []
+}

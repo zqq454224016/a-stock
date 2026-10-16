@@ -1,0 +1,32 @@
+{
+  "code": "002083",
+  "name": "孚日股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 838,
+      "hit_rate": 0.4594,
+      "avg_signed_return_pct": 0.024,
+      "max_adverse_pct": -26.572
+    },
+    "20d": {
+      "sample_count": 824,
+      "hit_rate": 0.409,
+      "avg_signed_return_pct": 0.073,
+      "max_adverse_pct": -28.571
+    },
+    "60d": {
+      "sample_count": 801,
+      "hit_rate": 0.3571,
+      "avg_signed_return_pct": -0.015,
+      "max_adverse_pct": -152.83
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,34 @@
+{
+  "code": "001317",
+  "name": "三羊马",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:16",
+  "window": "past_1116_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1116,
+  "metrics": {
+    "5d": {
+      "sample_count": 812,
+      "hit_rate": 0.4433,
+      "avg_signed_return_pct": -1.029,
+      "max_adverse_pct": -38.098
+    },
+    "20d": {
+      "sample_count": 802,
+      "hit_rate": 0.4115,
+      "avg_signed_return_pct": -2.552,
+      "max_adverse_pct": -46.186
+    },
+    "60d": {
+      "sample_count": 776,
+      "hit_rate": 0.5619,
+      "avg_signed_return_pct": 1.078,
+      "max_adverse_pct": -66.65
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

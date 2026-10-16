@@ -1,0 +1,32 @@
+{
+  "code": "000568",
+  "name": "泸州老窖",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 942,
+      "hit_rate": 0.5563,
+      "avg_signed_return_pct": 0.243,
+      "max_adverse_pct": -46.263
+    },
+    "20d": {
+      "sample_count": 927,
+      "hit_rate": 0.5286,
+      "avg_signed_return_pct": -0.551,
+      "max_adverse_pct": -40.092
+    },
+    "60d": {
+      "sample_count": 909,
+      "hit_rate": 0.3542,
+      "avg_signed_return_pct": -5.911,
+      "max_adverse_pct": -55.556
+    }
+  },
+  "limitations": []
+}

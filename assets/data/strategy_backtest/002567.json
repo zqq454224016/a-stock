@@ -1,0 +1,32 @@
+{
+  "code": "002567",
+  "name": "唐人神",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 839,
+      "hit_rate": 0.4303,
+      "avg_signed_return_pct": -0.48,
+      "max_adverse_pct": -27.083
+    },
+    "20d": {
+      "sample_count": 832,
+      "hit_rate": 0.3762,
+      "avg_signed_return_pct": -2.724,
+      "max_adverse_pct": -31.946
+    },
+    "60d": {
+      "sample_count": 809,
+      "hit_rate": 0.3412,
+      "avg_signed_return_pct": -4.051,
+      "max_adverse_pct": -36.302
+    }
+  },
+  "limitations": []
+}

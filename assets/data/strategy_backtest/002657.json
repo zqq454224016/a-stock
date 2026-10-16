@@ -1,0 +1,32 @@
+{
+  "code": "002657",
+  "name": "中科金财",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 941,
+      "hit_rate": 0.4888,
+      "avg_signed_return_pct": -0.042,
+      "max_adverse_pct": -53.043
+    },
+    "20d": {
+      "sample_count": 935,
+      "hit_rate": 0.431,
+      "avg_signed_return_pct": -1.139,
+      "max_adverse_pct": -63.458
+    },
+    "60d": {
+      "sample_count": 905,
+      "hit_rate": 0.4917,
+      "avg_signed_return_pct": -2.369,
+      "max_adverse_pct": -156.999
+    }
+  },
+  "limitations": []
+}

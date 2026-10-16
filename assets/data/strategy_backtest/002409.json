@@ -1,0 +1,32 @@
+{
+  "code": "002409",
+  "name": "雅克科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 925,
+      "hit_rate": 0.5189,
+      "avg_signed_return_pct": 0.748,
+      "max_adverse_pct": -35.843
+    },
+    "20d": {
+      "sample_count": 910,
+      "hit_rate": 0.4989,
+      "avg_signed_return_pct": 0.812,
+      "max_adverse_pct": -60.082
+    },
+    "60d": {
+      "sample_count": 886,
+      "hit_rate": 0.4616,
+      "avg_signed_return_pct": -1.655,
+      "max_adverse_pct": -197.601
+    }
+  },
+  "limitations": []
+}

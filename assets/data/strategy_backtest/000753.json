@@ -1,0 +1,32 @@
+{
+  "code": "000753",
+  "name": "漳州发展",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 892,
+      "hit_rate": 0.4596,
+      "avg_signed_return_pct": -0.001,
+      "max_adverse_pct": -27.596
+    },
+    "20d": {
+      "sample_count": 878,
+      "hit_rate": 0.4692,
+      "avg_signed_return_pct": 1.306,
+      "max_adverse_pct": -37.553
+    },
+    "60d": {
+      "sample_count": 845,
+      "hit_rate": 0.5515,
+      "avg_signed_return_pct": 1.094,
+      "max_adverse_pct": -161.338
+    }
+  },
+  "limitations": []
+}

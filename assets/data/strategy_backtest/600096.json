@@ -1,0 +1,32 @@
+{
+  "code": "600096",
+  "name": "云天化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 901,
+      "hit_rate": 0.4606,
+      "avg_signed_return_pct": -0.034,
+      "max_adverse_pct": -29.926
+    },
+    "20d": {
+      "sample_count": 898,
+      "hit_rate": 0.5312,
+      "avg_signed_return_pct": 0.684,
+      "max_adverse_pct": -41.68
+    },
+    "60d": {
+      "sample_count": 865,
+      "hit_rate": 0.5006,
+      "avg_signed_return_pct": -0.163,
+      "max_adverse_pct": -53.932
+    }
+  },
+  "limitations": []
+}

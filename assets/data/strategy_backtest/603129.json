@@ -1,0 +1,32 @@
+{
+  "code": "603129",
+  "name": "春风动力",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 957,
+      "hit_rate": 0.5026,
+      "avg_signed_return_pct": 0.087,
+      "max_adverse_pct": -33.017
+    },
+    "20d": {
+      "sample_count": 952,
+      "hit_rate": 0.5042,
+      "avg_signed_return_pct": 0.677,
+      "max_adverse_pct": -44.513
+    },
+    "60d": {
+      "sample_count": 918,
+      "hit_rate": 0.4989,
+      "avg_signed_return_pct": -0.196,
+      "max_adverse_pct": -118.002
+    }
+  },
+  "limitations": []
+}

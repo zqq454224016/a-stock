@@ -1,0 +1,32 @@
+{
+  "code": "000708",
+  "name": "中信特钢",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 849,
+      "hit_rate": 0.4794,
+      "avg_signed_return_pct": -0.417,
+      "max_adverse_pct": -28.316
+    },
+    "20d": {
+      "sample_count": 838,
+      "hit_rate": 0.4905,
+      "avg_signed_return_pct": -1.168,
+      "max_adverse_pct": -25.9
+    },
+    "60d": {
+      "sample_count": 824,
+      "hit_rate": 0.4053,
+      "avg_signed_return_pct": -3.335,
+      "max_adverse_pct": -33.621
+    }
+  },
+  "limitations": []
+}

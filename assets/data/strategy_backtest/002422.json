@@ -1,0 +1,32 @@
+{
+  "code": "002422",
+  "name": "科伦药业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 827,
+      "hit_rate": 0.4547,
+      "avg_signed_return_pct": -0.42,
+      "max_adverse_pct": -32.865
+    },
+    "20d": {
+      "sample_count": 815,
+      "hit_rate": 0.4282,
+      "avg_signed_return_pct": -0.869,
+      "max_adverse_pct": -28.151
+    },
+    "60d": {
+      "sample_count": 792,
+      "hit_rate": 0.4811,
+      "avg_signed_return_pct": -0.856,
+      "max_adverse_pct": -54.98
+    }
+  },
+  "limitations": []
+}

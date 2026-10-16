@@ -1,0 +1,32 @@
+{
+  "code": "002801",
+  "name": "微光股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 906,
+      "hit_rate": 0.4724,
+      "avg_signed_return_pct": -0.221,
+      "max_adverse_pct": -29.811
+    },
+    "20d": {
+      "sample_count": 892,
+      "hit_rate": 0.4843,
+      "avg_signed_return_pct": -0.223,
+      "max_adverse_pct": -37.187
+    },
+    "60d": {
+      "sample_count": 872,
+      "hit_rate": 0.4186,
+      "avg_signed_return_pct": -0.578,
+      "max_adverse_pct": -46.57
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,47 @@
+{
+  "code": "001226",
+  "name": "拓山重工",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 18.68,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 43.934,
+    "ma60": 43.4483,
+    "momentum20": -14.2171,
+    "momentum60": -16.4077,
+    "ma20_slope10": -5.2565,
+    "volatility20": 50.77
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

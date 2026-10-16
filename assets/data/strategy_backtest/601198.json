@@ -1,0 +1,32 @@
+{
+  "code": "601198",
+  "name": "东兴证券",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 775,
+      "hit_rate": 0.4232,
+      "avg_signed_return_pct": -0.22,
+      "max_adverse_pct": -15.875
+    },
+    "20d": {
+      "sample_count": 766,
+      "hit_rate": 0.3956,
+      "avg_signed_return_pct": -1.149,
+      "max_adverse_pct": -17.713
+    },
+    "60d": {
+      "sample_count": 737,
+      "hit_rate": 0.4573,
+      "avg_signed_return_pct": 0.257,
+      "max_adverse_pct": -56.726
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000522",
+  "name": "白云山Ａ",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 944,
+      "hit_rate": 0.5011,
+      "avg_signed_return_pct": 0.666,
+      "max_adverse_pct": -24.006
+    },
+    "20d": {
+      "sample_count": 929,
+      "hit_rate": 0.5048,
+      "avg_signed_return_pct": 0.706,
+      "max_adverse_pct": -110.864
+    },
+    "60d": {
+      "sample_count": 893,
+      "hit_rate": 0.477,
+      "avg_signed_return_pct": -2.956,
+      "max_adverse_pct": -112.903
+    }
+  },
+  "limitations": []
+}

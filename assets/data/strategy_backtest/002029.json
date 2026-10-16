@@ -1,0 +1,32 @@
+{
+  "code": "002029",
+  "name": "七 匹 狼",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 855,
+      "hit_rate": 0.4526,
+      "avg_signed_return_pct": -0.257,
+      "max_adverse_pct": -16.42
+    },
+    "20d": {
+      "sample_count": 847,
+      "hit_rate": 0.4286,
+      "avg_signed_return_pct": -0.945,
+      "max_adverse_pct": -29.058
+    },
+    "60d": {
+      "sample_count": 812,
+      "hit_rate": 0.4704,
+      "avg_signed_return_pct": 0.677,
+      "max_adverse_pct": -62.6
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600551",
+  "name": "时代出版",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 889,
+      "hit_rate": 0.4612,
+      "avg_signed_return_pct": -0.304,
+      "max_adverse_pct": -22.004
+    },
+    "20d": {
+      "sample_count": 876,
+      "hit_rate": 0.4167,
+      "avg_signed_return_pct": -1.855,
+      "max_adverse_pct": -41.612
+    },
+    "60d": {
+      "sample_count": 851,
+      "hit_rate": 0.3995,
+      "avg_signed_return_pct": -2.082,
+      "max_adverse_pct": -53.861
+    }
+  },
+  "limitations": []
+}

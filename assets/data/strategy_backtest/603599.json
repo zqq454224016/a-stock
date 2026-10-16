@@ -1,0 +1,32 @@
+{
+  "code": "603599",
+  "name": "广信股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 846,
+      "hit_rate": 0.448,
+      "avg_signed_return_pct": -0.43,
+      "max_adverse_pct": -32.536
+    },
+    "20d": {
+      "sample_count": 841,
+      "hit_rate": 0.4602,
+      "avg_signed_return_pct": -0.742,
+      "max_adverse_pct": -26.104
+    },
+    "60d": {
+      "sample_count": 824,
+      "hit_rate": 0.3956,
+      "avg_signed_return_pct": -4.035,
+      "max_adverse_pct": -39.681
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "603997",
+  "name": "继峰股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:56",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 928,
+      "hit_rate": 0.4494,
+      "avg_signed_return_pct": 0.038,
+      "max_adverse_pct": -24.05
+    },
+    "20d": {
+      "sample_count": 914,
+      "hit_rate": 0.488,
+      "avg_signed_return_pct": 0.339,
+      "max_adverse_pct": -48.364
+    },
+    "60d": {
+      "sample_count": 879,
+      "hit_rate": 0.3493,
+      "avg_signed_return_pct": -5.632,
+      "max_adverse_pct": -126.904
+    }
+  },
+  "limitations": []
+}

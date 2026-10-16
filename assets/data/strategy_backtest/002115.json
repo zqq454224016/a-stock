@@ -1,0 +1,32 @@
+{
+  "code": "002115",
+  "name": "三维通信",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 909,
+      "hit_rate": 0.495,
+      "avg_signed_return_pct": 0.179,
+      "max_adverse_pct": -31.445
+    },
+    "20d": {
+      "sample_count": 894,
+      "hit_rate": 0.4732,
+      "avg_signed_return_pct": 0.368,
+      "max_adverse_pct": -70.06
+    },
+    "60d": {
+      "sample_count": 874,
+      "hit_rate": 0.5664,
+      "avg_signed_return_pct": 1.544,
+      "max_adverse_pct": -118.483
+    }
+  },
+  "limitations": []
+}

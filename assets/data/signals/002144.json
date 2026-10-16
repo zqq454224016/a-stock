@@ -1,0 +1,19 @@
+{
+  "code": "002144",
+  "trade_date": "2026-10-16",
+  "horizon": "5d",
+  "signal": "bearish",
+  "signal_score": 25.0,
+  "drivers": [
+    "ma_death_cross",
+    "rsi14_neutral_up",
+    "macd_hist_negative",
+    "momentum_20_down"
+  ],
+  "limitations": [
+    "not_backtested",
+    "technical_only"
+  ],
+  "signal_version": "1.0.0",
+  "updated_at": "2026-10-16 15:55:43"
+}

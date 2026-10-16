@@ -1,0 +1,32 @@
+{
+  "code": "000681",
+  "name": "视觉中国",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 934,
+      "hit_rate": 0.4679,
+      "avg_signed_return_pct": -0.144,
+      "max_adverse_pct": -31.98
+    },
+    "20d": {
+      "sample_count": 920,
+      "hit_rate": 0.438,
+      "avg_signed_return_pct": -1.013,
+      "max_adverse_pct": -54.179
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.4448,
+      "avg_signed_return_pct": -0.951,
+      "max_adverse_pct": -188.015
+    }
+  },
+  "limitations": []
+}

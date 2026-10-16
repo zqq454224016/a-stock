@@ -1,0 +1,32 @@
+{
+  "code": "600068",
+  "name": "葛洲坝",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 908,
+      "hit_rate": 0.4934,
+      "avg_signed_return_pct": -0.256,
+      "max_adverse_pct": -24.074
+    },
+    "20d": {
+      "sample_count": 893,
+      "hit_rate": 0.4636,
+      "avg_signed_return_pct": -0.825,
+      "max_adverse_pct": -26.633
+    },
+    "60d": {
+      "sample_count": 854,
+      "hit_rate": 0.4403,
+      "avg_signed_return_pct": -0.253,
+      "max_adverse_pct": -42.264
+    }
+  },
+  "limitations": []
+}

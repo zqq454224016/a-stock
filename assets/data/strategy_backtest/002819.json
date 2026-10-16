@@ -1,0 +1,32 @@
+{
+  "code": "002819",
+  "name": "东方中科",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 902,
+      "hit_rate": 0.4302,
+      "avg_signed_return_pct": -1.064,
+      "max_adverse_pct": -31.757
+    },
+    "20d": {
+      "sample_count": 891,
+      "hit_rate": 0.4355,
+      "avg_signed_return_pct": -2.323,
+      "max_adverse_pct": -45.58
+    },
+    "60d": {
+      "sample_count": 859,
+      "hit_rate": 0.4179,
+      "avg_signed_return_pct": -2.282,
+      "max_adverse_pct": -67.507
+    }
+  },
+  "limitations": []
+}

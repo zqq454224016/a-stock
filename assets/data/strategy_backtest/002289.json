@@ -1,0 +1,32 @@
+{
+  "code": "002289",
+  "name": "宇顺电子",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:21",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 1006,
+      "hit_rate": 0.4742,
+      "avg_signed_return_pct": 0.51,
+      "max_adverse_pct": -31.718
+    },
+    "20d": {
+      "sample_count": 991,
+      "hit_rate": 0.5288,
+      "avg_signed_return_pct": 3.908,
+      "max_adverse_pct": -80.046
+    },
+    "60d": {
+      "sample_count": 964,
+      "hit_rate": 0.5394,
+      "avg_signed_return_pct": 15.082,
+      "max_adverse_pct": -120.811
+    }
+  },
+  "limitations": []
+}

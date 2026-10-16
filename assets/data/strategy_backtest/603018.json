@@ -1,0 +1,32 @@
+{
+  "code": "603018",
+  "name": "华设集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 922,
+      "hit_rate": 0.4566,
+      "avg_signed_return_pct": -0.111,
+      "max_adverse_pct": -25.932
+    },
+    "20d": {
+      "sample_count": 916,
+      "hit_rate": 0.4356,
+      "avg_signed_return_pct": -1.22,
+      "max_adverse_pct": -38.923
+    },
+    "60d": {
+      "sample_count": 903,
+      "hit_rate": 0.402,
+      "avg_signed_return_pct": -4.695,
+      "max_adverse_pct": -67.528
+    }
+  },
+  "limitations": []
+}

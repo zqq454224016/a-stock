@@ -1,0 +1,32 @@
+{
+  "code": "002725",
+  "name": "跃岭股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 883,
+      "hit_rate": 0.4371,
+      "avg_signed_return_pct": -0.329,
+      "max_adverse_pct": -33.85
+    },
+    "20d": {
+      "sample_count": 878,
+      "hit_rate": 0.3337,
+      "avg_signed_return_pct": -3.502,
+      "max_adverse_pct": -84.498
+    },
+    "60d": {
+      "sample_count": 847,
+      "hit_rate": 0.3719,
+      "avg_signed_return_pct": -8.922,
+      "max_adverse_pct": -130.219
+    }
+  },
+  "limitations": []
+}

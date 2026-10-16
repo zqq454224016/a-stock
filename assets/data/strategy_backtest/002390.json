@@ -1,0 +1,32 @@
+{
+  "code": "002390",
+  "name": "信邦制药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 891,
+      "hit_rate": 0.5017,
+      "avg_signed_return_pct": -0.367,
+      "max_adverse_pct": -24.746
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.4318,
+      "avg_signed_return_pct": -1.35,
+      "max_adverse_pct": -52.052
+    },
+    "60d": {
+      "sample_count": 855,
+      "hit_rate": 0.4351,
+      "avg_signed_return_pct": -2.729,
+      "max_adverse_pct": -53.073
+    }
+  },
+  "limitations": []
+}

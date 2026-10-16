@@ -1,0 +1,32 @@
+{
+  "code": "000426",
+  "name": "兴业银锡",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 951,
+      "hit_rate": 0.51,
+      "avg_signed_return_pct": 0.415,
+      "max_adverse_pct": -29.895
+    },
+    "20d": {
+      "sample_count": 949,
+      "hit_rate": 0.51,
+      "avg_signed_return_pct": 1.319,
+      "max_adverse_pct": -46.602
+    },
+    "60d": {
+      "sample_count": 914,
+      "hit_rate": 0.5066,
+      "avg_signed_return_pct": 5.994,
+      "max_adverse_pct": -84.28
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000829",
+  "name": "天音控股",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4599,
+      "avg_signed_return_pct": -0.18,
+      "max_adverse_pct": -39.777
+    },
+    "20d": {
+      "sample_count": 871,
+      "hit_rate": 0.3731,
+      "avg_signed_return_pct": -2.517,
+      "max_adverse_pct": -57.725
+    },
+    "60d": {
+      "sample_count": 847,
+      "hit_rate": 0.4085,
+      "avg_signed_return_pct": -2.914,
+      "max_adverse_pct": -102.945
+    }
+  },
+  "limitations": []
+}

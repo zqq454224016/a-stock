@@ -1,0 +1,32 @@
+{
+  "code": "600025",
+  "name": "华能水电",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 825,
+      "hit_rate": 0.5321,
+      "avg_signed_return_pct": 0.127,
+      "max_adverse_pct": -23.653
+    },
+    "20d": {
+      "sample_count": 814,
+      "hit_rate": 0.5012,
+      "avg_signed_return_pct": 0.113,
+      "max_adverse_pct": -22.951
+    },
+    "60d": {
+      "sample_count": 800,
+      "hit_rate": 0.4675,
+      "avg_signed_return_pct": 0.088,
+      "max_adverse_pct": -28.447
+    }
+  },
+  "limitations": []
+}

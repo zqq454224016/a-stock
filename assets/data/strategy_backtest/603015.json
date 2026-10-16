@@ -1,0 +1,32 @@
+{
+  "code": "603015",
+  "name": "弘讯科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 880,
+      "hit_rate": 0.4159,
+      "avg_signed_return_pct": -0.619,
+      "max_adverse_pct": -33.966
+    },
+    "20d": {
+      "sample_count": 880,
+      "hit_rate": 0.3943,
+      "avg_signed_return_pct": -1.633,
+      "max_adverse_pct": -52.182
+    },
+    "60d": {
+      "sample_count": 849,
+      "hit_rate": 0.3522,
+      "avg_signed_return_pct": -5.364,
+      "max_adverse_pct": -117.204
+    }
+  },
+  "limitations": []
+}

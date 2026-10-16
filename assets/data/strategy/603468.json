@@ -1,0 +1,10 @@
+{
+  "code": "603468",
+  "name": "津富士达",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "insufficient",
+  "limitations": [
+    "history_less_than_60_bars"
+  ]
+}

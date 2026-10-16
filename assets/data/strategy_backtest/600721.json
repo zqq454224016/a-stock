@@ -1,0 +1,32 @@
+{
+  "code": "600721",
+  "name": "百花医药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 864,
+      "hit_rate": 0.4387,
+      "avg_signed_return_pct": -0.691,
+      "max_adverse_pct": -39.964
+    },
+    "20d": {
+      "sample_count": 857,
+      "hit_rate": 0.4154,
+      "avg_signed_return_pct": -1.43,
+      "max_adverse_pct": -143.504
+    },
+    "60d": {
+      "sample_count": 822,
+      "hit_rate": 0.4538,
+      "avg_signed_return_pct": -2.447,
+      "max_adverse_pct": -128.807
+    }
+  },
+  "limitations": []
+}

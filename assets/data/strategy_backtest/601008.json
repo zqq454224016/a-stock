@@ -1,0 +1,32 @@
+{
+  "code": "601008",
+  "name": "连云港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:45",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 864,
+      "hit_rate": 0.4583,
+      "avg_signed_return_pct": -0.109,
+      "max_adverse_pct": -20.366
+    },
+    "20d": {
+      "sample_count": 861,
+      "hit_rate": 0.4506,
+      "avg_signed_return_pct": -0.164,
+      "max_adverse_pct": -39.189
+    },
+    "60d": {
+      "sample_count": 832,
+      "hit_rate": 0.4519,
+      "avg_signed_return_pct": -2.032,
+      "max_adverse_pct": -103.613
+    }
+  },
+  "limitations": []
+}

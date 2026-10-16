@@ -1,0 +1,32 @@
+{
+  "code": "601616",
+  "name": "广电电气",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 889,
+      "hit_rate": 0.4499,
+      "avg_signed_return_pct": -0.054,
+      "max_adverse_pct": -17.982
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.4498,
+      "avg_signed_return_pct": -1.251,
+      "max_adverse_pct": -51.169
+    },
+    "60d": {
+      "sample_count": 849,
+      "hit_rate": 0.3463,
+      "avg_signed_return_pct": -3.63,
+      "max_adverse_pct": -51.103
+    }
+  },
+  "limitations": []
+}

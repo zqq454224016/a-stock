@@ -1,0 +1,32 @@
+{
+  "code": "600697",
+  "name": "欧亚集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 803,
+      "hit_rate": 0.4433,
+      "avg_signed_return_pct": -0.794,
+      "max_adverse_pct": -23.956
+    },
+    "20d": {
+      "sample_count": 792,
+      "hit_rate": 0.3763,
+      "avg_signed_return_pct": -2.298,
+      "max_adverse_pct": -38.674
+    },
+    "60d": {
+      "sample_count": 756,
+      "hit_rate": 0.3571,
+      "avg_signed_return_pct": -4.404,
+      "max_adverse_pct": -59.727
+    }
+  },
+  "limitations": []
+}

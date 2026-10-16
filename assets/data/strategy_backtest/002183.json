@@ -1,0 +1,32 @@
+{
+  "code": "002183",
+  "name": "怡 亚 通",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:19",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 939,
+      "hit_rate": 0.4888,
+      "avg_signed_return_pct": 0.262,
+      "max_adverse_pct": -29.741
+    },
+    "20d": {
+      "sample_count": 925,
+      "hit_rate": 0.4551,
+      "avg_signed_return_pct": -0.223,
+      "max_adverse_pct": -75.216
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.4144,
+      "avg_signed_return_pct": -5.448,
+      "max_adverse_pct": -94.643
+    }
+  },
+  "limitations": []
+}

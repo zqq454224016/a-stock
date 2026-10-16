@@ -1,0 +1,32 @@
+{
+  "code": "000033",
+  "name": "新都退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:09",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 928,
+      "hit_rate": 0.4688,
+      "avg_signed_return_pct": -0.323,
+      "max_adverse_pct": -54.721
+    },
+    "20d": {
+      "sample_count": 916,
+      "hit_rate": 0.476,
+      "avg_signed_return_pct": -1.342,
+      "max_adverse_pct": -86.943
+    },
+    "60d": {
+      "sample_count": 881,
+      "hit_rate": 0.3689,
+      "avg_signed_return_pct": -5.736,
+      "max_adverse_pct": -142.523
+    }
+  },
+  "limitations": []
+}

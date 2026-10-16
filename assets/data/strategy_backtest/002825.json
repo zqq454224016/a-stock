@@ -1,0 +1,32 @@
+{
+  "code": "002825",
+  "name": "纳尔股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 897,
+      "hit_rate": 0.4693,
+      "avg_signed_return_pct": -0.069,
+      "max_adverse_pct": -25.72
+    },
+    "20d": {
+      "sample_count": 887,
+      "hit_rate": 0.4318,
+      "avg_signed_return_pct": -1.415,
+      "max_adverse_pct": -54.103
+    },
+    "60d": {
+      "sample_count": 851,
+      "hit_rate": 0.4242,
+      "avg_signed_return_pct": -2.309,
+      "max_adverse_pct": -55.844
+    }
+  },
+  "limitations": []
+}

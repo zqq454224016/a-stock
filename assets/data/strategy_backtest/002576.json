@@ -1,0 +1,32 @@
+{
+  "code": "002576",
+  "name": "通达动力",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:24",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 894,
+      "hit_rate": 0.4944,
+      "avg_signed_return_pct": -0.056,
+      "max_adverse_pct": -41.784
+    },
+    "20d": {
+      "sample_count": 892,
+      "hit_rate": 0.4439,
+      "avg_signed_return_pct": -2.881,
+      "max_adverse_pct": -135.979
+    },
+    "60d": {
+      "sample_count": 869,
+      "hit_rate": 0.4189,
+      "avg_signed_return_pct": -5.732,
+      "max_adverse_pct": -114.595
+    }
+  },
+  "limitations": []
+}

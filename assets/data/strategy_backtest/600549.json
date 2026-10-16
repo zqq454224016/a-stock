@@ -1,0 +1,32 @@
+{
+  "code": "600549",
+  "name": "厦门钨业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 930,
+      "hit_rate": 0.4957,
+      "avg_signed_return_pct": 0.234,
+      "max_adverse_pct": -29.147
+    },
+    "20d": {
+      "sample_count": 915,
+      "hit_rate": 0.5202,
+      "avg_signed_return_pct": 0.015,
+      "max_adverse_pct": -82.738
+    },
+    "60d": {
+      "sample_count": 886,
+      "hit_rate": 0.4921,
+      "avg_signed_return_pct": 2.664,
+      "max_adverse_pct": -75.993
+    }
+  },
+  "limitations": []
+}

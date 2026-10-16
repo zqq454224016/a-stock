@@ -1,0 +1,32 @@
+{
+  "code": "002797",
+  "name": "第一创业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 831,
+      "hit_rate": 0.4452,
+      "avg_signed_return_pct": 0.109,
+      "max_adverse_pct": -17.414
+    },
+    "20d": {
+      "sample_count": 818,
+      "hit_rate": 0.4401,
+      "avg_signed_return_pct": -0.155,
+      "max_adverse_pct": -22.281
+    },
+    "60d": {
+      "sample_count": 805,
+      "hit_rate": 0.3677,
+      "avg_signed_return_pct": -1.539,
+      "max_adverse_pct": -60.0
+    }
+  },
+  "limitations": []
+}

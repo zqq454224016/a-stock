@@ -1,0 +1,32 @@
+{
+  "code": "002624",
+  "name": "完美世界",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 996,
+      "hit_rate": 0.5181,
+      "avg_signed_return_pct": 0.321,
+      "max_adverse_pct": -24.017
+    },
+    "20d": {
+      "sample_count": 981,
+      "hit_rate": 0.5372,
+      "avg_signed_return_pct": 0.153,
+      "max_adverse_pct": -42.151
+    },
+    "60d": {
+      "sample_count": 950,
+      "hit_rate": 0.5021,
+      "avg_signed_return_pct": -2.337,
+      "max_adverse_pct": -83.582
+    }
+  },
+  "limitations": []
+}

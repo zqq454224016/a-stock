@@ -1,0 +1,32 @@
+{
+  "code": "000166",
+  "name": "申万宏源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:10",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 805,
+      "hit_rate": 0.4522,
+      "avg_signed_return_pct": -0.121,
+      "max_adverse_pct": -34.906
+    },
+    "20d": {
+      "sample_count": 796,
+      "hit_rate": 0.4008,
+      "avg_signed_return_pct": -0.588,
+      "max_adverse_pct": -25.472
+    },
+    "60d": {
+      "sample_count": 779,
+      "hit_rate": 0.4814,
+      "avg_signed_return_pct": 0.299,
+      "max_adverse_pct": -49.591
+    }
+  },
+  "limitations": []
+}

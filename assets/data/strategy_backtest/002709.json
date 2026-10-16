@@ -1,0 +1,32 @@
+{
+  "code": "002709",
+  "name": "天赐材料",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 964,
+      "hit_rate": 0.5083,
+      "avg_signed_return_pct": 0.532,
+      "max_adverse_pct": -41.59
+    },
+    "20d": {
+      "sample_count": 950,
+      "hit_rate": 0.5095,
+      "avg_signed_return_pct": 2.064,
+      "max_adverse_pct": -44.444
+    },
+    "60d": {
+      "sample_count": 915,
+      "hit_rate": 0.4907,
+      "avg_signed_return_pct": 0.933,
+      "max_adverse_pct": -81.947
+    }
+  },
+  "limitations": []
+}

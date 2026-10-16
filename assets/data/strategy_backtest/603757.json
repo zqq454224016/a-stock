@@ -1,0 +1,32 @@
+{
+  "code": "603757",
+  "name": "大元泵业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 921,
+      "hit_rate": 0.5049,
+      "avg_signed_return_pct": 0.398,
+      "max_adverse_pct": -30.789
+    },
+    "20d": {
+      "sample_count": 911,
+      "hit_rate": 0.4424,
+      "avg_signed_return_pct": 1.113,
+      "max_adverse_pct": -42.703
+    },
+    "60d": {
+      "sample_count": 886,
+      "hit_rate": 0.4244,
+      "avg_signed_return_pct": 3.12,
+      "max_adverse_pct": -77.63
+    }
+  },
+  "limitations": []
+}

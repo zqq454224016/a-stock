@@ -1,0 +1,32 @@
+{
+  "code": "003011",
+  "name": "海象新材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:31",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 925,
+      "hit_rate": 0.4995,
+      "avg_signed_return_pct": 0.012,
+      "max_adverse_pct": -30.544
+    },
+    "20d": {
+      "sample_count": 924,
+      "hit_rate": 0.4719,
+      "avg_signed_return_pct": -1.568,
+      "max_adverse_pct": -52.441
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.4989,
+      "avg_signed_return_pct": -3.45,
+      "max_adverse_pct": -64.899
+    }
+  },
+  "limitations": []
+}

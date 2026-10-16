@@ -1,0 +1,32 @@
+{
+  "code": "002943",
+  "name": "宇晶股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:30",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 914,
+      "hit_rate": 0.488,
+      "avg_signed_return_pct": 0.262,
+      "max_adverse_pct": -43.304
+    },
+    "20d": {
+      "sample_count": 899,
+      "hit_rate": 0.4461,
+      "avg_signed_return_pct": -1.337,
+      "max_adverse_pct": -215.514
+    },
+    "60d": {
+      "sample_count": 867,
+      "hit_rate": 0.4764,
+      "avg_signed_return_pct": -0.541,
+      "max_adverse_pct": -149.882
+    }
+  },
+  "limitations": []
+}

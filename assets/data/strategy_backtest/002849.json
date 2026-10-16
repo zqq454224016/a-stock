@@ -1,0 +1,32 @@
+{
+  "code": "002849",
+  "name": "威星智能",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:29",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 915,
+      "hit_rate": 0.4995,
+      "avg_signed_return_pct": 0.161,
+      "max_adverse_pct": -30.381
+    },
+    "20d": {
+      "sample_count": 904,
+      "hit_rate": 0.4624,
+      "avg_signed_return_pct": -0.796,
+      "max_adverse_pct": -65.524
+    },
+    "60d": {
+      "sample_count": 866,
+      "hit_rate": 0.3811,
+      "avg_signed_return_pct": -5.352,
+      "max_adverse_pct": -130.145
+    }
+  },
+  "limitations": []
+}

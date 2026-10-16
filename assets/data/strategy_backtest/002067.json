@@ -1,0 +1,32 @@
+{
+  "code": "002067",
+  "name": "景兴纸业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 762,
+      "hit_rate": 0.4554,
+      "avg_signed_return_pct": -0.168,
+      "max_adverse_pct": -26.622
+    },
+    "20d": {
+      "sample_count": 751,
+      "hit_rate": 0.3569,
+      "avg_signed_return_pct": -1.572,
+      "max_adverse_pct": -27.743
+    },
+    "60d": {
+      "sample_count": 729,
+      "hit_rate": 0.4019,
+      "avg_signed_return_pct": 0.454,
+      "max_adverse_pct": -50.556
+    }
+  },
+  "limitations": []
+}

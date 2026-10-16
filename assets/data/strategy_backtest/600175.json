@@ -1,0 +1,32 @@
+{
+  "code": "600175",
+  "name": "退市美都",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 937,
+      "hit_rate": 0.4856,
+      "avg_signed_return_pct": 0.596,
+      "max_adverse_pct": -32.946
+    },
+    "20d": {
+      "sample_count": 922,
+      "hit_rate": 0.4837,
+      "avg_signed_return_pct": 2.254,
+      "max_adverse_pct": -58.031
+    },
+    "60d": {
+      "sample_count": 882,
+      "hit_rate": 0.4921,
+      "avg_signed_return_pct": -0.062,
+      "max_adverse_pct": -85.714
+    }
+  },
+  "limitations": []
+}

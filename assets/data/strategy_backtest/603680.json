@@ -1,0 +1,32 @@
+{
+  "code": "603680",
+  "name": "今创集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:53",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 856,
+      "hit_rate": 0.4556,
+      "avg_signed_return_pct": -0.12,
+      "max_adverse_pct": -30.841
+    },
+    "20d": {
+      "sample_count": 852,
+      "hit_rate": 0.4178,
+      "avg_signed_return_pct": -1.521,
+      "max_adverse_pct": -56.439
+    },
+    "60d": {
+      "sample_count": 825,
+      "hit_rate": 0.3794,
+      "avg_signed_return_pct": -4.208,
+      "max_adverse_pct": -67.101
+    }
+  },
+  "limitations": []
+}

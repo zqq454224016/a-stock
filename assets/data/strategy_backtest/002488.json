@@ -1,0 +1,32 @@
+{
+  "code": "002488",
+  "name": "金固股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:23",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 978,
+      "hit_rate": 0.5389,
+      "avg_signed_return_pct": 0.737,
+      "max_adverse_pct": -20.87
+    },
+    "20d": {
+      "sample_count": 963,
+      "hit_rate": 0.5618,
+      "avg_signed_return_pct": 2.275,
+      "max_adverse_pct": -54.44
+    },
+    "60d": {
+      "sample_count": 927,
+      "hit_rate": 0.4606,
+      "avg_signed_return_pct": -2.456,
+      "max_adverse_pct": -208.057
+    }
+  },
+  "limitations": []
+}

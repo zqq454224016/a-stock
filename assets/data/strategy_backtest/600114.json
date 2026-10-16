@@ -1,0 +1,32 @@
+{
+  "code": "600114",
+  "name": "东睦股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.515,
+      "avg_signed_return_pct": 0.262,
+      "max_adverse_pct": -28.649
+    },
+    "20d": {
+      "sample_count": 884,
+      "hit_rate": 0.4729,
+      "avg_signed_return_pct": -0.162,
+      "max_adverse_pct": -44.97
+    },
+    "60d": {
+      "sample_count": 847,
+      "hit_rate": 0.4227,
+      "avg_signed_return_pct": -1.987,
+      "max_adverse_pct": -75.609
+    }
+  },
+  "limitations": []
+}

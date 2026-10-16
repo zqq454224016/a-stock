@@ -1,0 +1,34 @@
+{
+  "code": "603057",
+  "name": "紫燕食品",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:48",
+  "window": "past_920_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 920,
+  "metrics": {
+    "5d": {
+      "sample_count": 682,
+      "hit_rate": 0.4956,
+      "avg_signed_return_pct": -0.017,
+      "max_adverse_pct": -19.865
+    },
+    "20d": {
+      "sample_count": 667,
+      "hit_rate": 0.4348,
+      "avg_signed_return_pct": -1.148,
+      "max_adverse_pct": -70.017
+    },
+    "60d": {
+      "sample_count": 636,
+      "hit_rate": 0.4701,
+      "avg_signed_return_pct": -5.322,
+      "max_adverse_pct": -84.727
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

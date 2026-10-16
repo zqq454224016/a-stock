@@ -1,0 +1,32 @@
+{
+  "code": "600639",
+  "name": "浦东金桥",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:40",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 811,
+      "hit_rate": 0.4279,
+      "avg_signed_return_pct": -0.645,
+      "max_adverse_pct": -61.021
+    },
+    "20d": {
+      "sample_count": 801,
+      "hit_rate": 0.422,
+      "avg_signed_return_pct": -2.061,
+      "max_adverse_pct": -50.198
+    },
+    "60d": {
+      "sample_count": 784,
+      "hit_rate": 0.3406,
+      "avg_signed_return_pct": -3.172,
+      "max_adverse_pct": -34.938
+    }
+  },
+  "limitations": []
+}

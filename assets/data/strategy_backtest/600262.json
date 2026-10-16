@@ -1,0 +1,32 @@
+{
+  "code": "600262",
+  "name": "北方股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 865,
+      "hit_rate": 0.4335,
+      "avg_signed_return_pct": -0.722,
+      "max_adverse_pct": -26.004
+    },
+    "20d": {
+      "sample_count": 863,
+      "hit_rate": 0.3835,
+      "avg_signed_return_pct": -3.713,
+      "max_adverse_pct": -39.163
+    },
+    "60d": {
+      "sample_count": 826,
+      "hit_rate": 0.4249,
+      "avg_signed_return_pct": -2.776,
+      "max_adverse_pct": -57.049
+    }
+  },
+  "limitations": []
+}

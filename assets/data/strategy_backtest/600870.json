@@ -1,0 +1,32 @@
+{
+  "code": "600870",
+  "name": "退市厦华",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:43",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 878,
+      "hit_rate": 0.4795,
+      "avg_signed_return_pct": -0.185,
+      "max_adverse_pct": -46.667
+    },
+    "20d": {
+      "sample_count": 867,
+      "hit_rate": 0.4187,
+      "avg_signed_return_pct": -2.552,
+      "max_adverse_pct": -91.778
+    },
+    "60d": {
+      "sample_count": 837,
+      "hit_rate": 0.4743,
+      "avg_signed_return_pct": -0.84,
+      "max_adverse_pct": -92.449
+    }
+  },
+  "limitations": []
+}

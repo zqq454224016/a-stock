@@ -1,0 +1,32 @@
+{
+  "code": "600538",
+  "name": "国发股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 893,
+      "hit_rate": 0.449,
+      "avg_signed_return_pct": -0.313,
+      "max_adverse_pct": -34.353
+    },
+    "20d": {
+      "sample_count": 879,
+      "hit_rate": 0.4084,
+      "avg_signed_return_pct": -1.704,
+      "max_adverse_pct": -43.364
+    },
+    "60d": {
+      "sample_count": 846,
+      "hit_rate": 0.4078,
+      "avg_signed_return_pct": -5.804,
+      "max_adverse_pct": -81.695
+    }
+  },
+  "limitations": []
+}

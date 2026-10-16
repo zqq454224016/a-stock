@@ -1,0 +1,32 @@
+{
+  "code": "600679",
+  "name": "上海凤凰",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:41",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 866,
+      "hit_rate": 0.4642,
+      "avg_signed_return_pct": -0.435,
+      "max_adverse_pct": -38.54
+    },
+    "20d": {
+      "sample_count": 852,
+      "hit_rate": 0.4742,
+      "avg_signed_return_pct": -0.52,
+      "max_adverse_pct": -37.003
+    },
+    "60d": {
+      "sample_count": 823,
+      "hit_rate": 0.4119,
+      "avg_signed_return_pct": 0.22,
+      "max_adverse_pct": -36.764
+    }
+  },
+  "limitations": []
+}

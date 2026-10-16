@@ -1,0 +1,32 @@
+{
+  "code": "000506",
+  "name": "招金黄金",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 953,
+      "hit_rate": 0.4963,
+      "avg_signed_return_pct": 1.093,
+      "max_adverse_pct": -56.951
+    },
+    "20d": {
+      "sample_count": 948,
+      "hit_rate": 0.5295,
+      "avg_signed_return_pct": 4.094,
+      "max_adverse_pct": -72.508
+    },
+    "60d": {
+      "sample_count": 913,
+      "hit_rate": 0.4699,
+      "avg_signed_return_pct": 6.058,
+      "max_adverse_pct": -114.737
+    }
+  },
+  "limitations": []
+}

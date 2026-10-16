@@ -1,0 +1,32 @@
+{
+  "code": "603868",
+  "name": "飞科电器",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 851,
+      "hit_rate": 0.4736,
+      "avg_signed_return_pct": -0.207,
+      "max_adverse_pct": -24.57
+    },
+    "20d": {
+      "sample_count": 841,
+      "hit_rate": 0.4352,
+      "avg_signed_return_pct": -1.308,
+      "max_adverse_pct": -30.174
+    },
+    "60d": {
+      "sample_count": 825,
+      "hit_rate": 0.3661,
+      "avg_signed_return_pct": -1.364,
+      "max_adverse_pct": -32.169
+    }
+  },
+  "limitations": []
+}

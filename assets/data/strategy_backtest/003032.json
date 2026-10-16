@@ -1,0 +1,32 @@
+{
+  "code": "003032",
+  "name": "传智教育",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 923,
+      "hit_rate": 0.467,
+      "avg_signed_return_pct": -0.604,
+      "max_adverse_pct": -39.651
+    },
+    "20d": {
+      "sample_count": 921,
+      "hit_rate": 0.3963,
+      "avg_signed_return_pct": -4.496,
+      "max_adverse_pct": -148.689
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.4899,
+      "avg_signed_return_pct": -2.512,
+      "max_adverse_pct": -93.398
+    }
+  },
+  "limitations": []
+}

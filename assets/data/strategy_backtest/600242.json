@@ -1,0 +1,32 @@
+{
+  "code": "600242",
+  "name": "退市中昌",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 939,
+      "hit_rate": 0.5122,
+      "avg_signed_return_pct": 0.248,
+      "max_adverse_pct": -35.885
+    },
+    "20d": {
+      "sample_count": 924,
+      "hit_rate": 0.447,
+      "avg_signed_return_pct": -2.364,
+      "max_adverse_pct": -58.741
+    },
+    "60d": {
+      "sample_count": 894,
+      "hit_rate": 0.4038,
+      "avg_signed_return_pct": -3.194,
+      "max_adverse_pct": -68.085
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "000593",
+  "name": "德龙汇能",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 938,
+      "hit_rate": 0.4893,
+      "avg_signed_return_pct": 0.248,
+      "max_adverse_pct": -47.724
+    },
+    "20d": {
+      "sample_count": 934,
+      "hit_rate": 0.5032,
+      "avg_signed_return_pct": 1.9,
+      "max_adverse_pct": -48.83
+    },
+    "60d": {
+      "sample_count": 900,
+      "hit_rate": 0.5433,
+      "avg_signed_return_pct": 8.597,
+      "max_adverse_pct": -53.991
+    }
+  },
+  "limitations": []
+}

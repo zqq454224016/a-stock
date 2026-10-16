@@ -1,0 +1,32 @@
+{
+  "code": "002268",
+  "name": "电科网安",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:20",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 955,
+      "hit_rate": 0.5089,
+      "avg_signed_return_pct": 0.389,
+      "max_adverse_pct": -29.663
+    },
+    "20d": {
+      "sample_count": 941,
+      "hit_rate": 0.475,
+      "avg_signed_return_pct": -1.192,
+      "max_adverse_pct": -57.353
+    },
+    "60d": {
+      "sample_count": 932,
+      "hit_rate": 0.4099,
+      "avg_signed_return_pct": -4.201,
+      "max_adverse_pct": -58.093
+    }
+  },
+  "limitations": []
+}

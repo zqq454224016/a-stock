@@ -1,0 +1,47 @@
+{
+  "code": "601000",
+  "name": "唐山港",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "recovery",
+  "trend_score": 58.02,
+  "confidence": "low",
+  "outlook": {
+    "5d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "20d": {
+      "direction": "up",
+      "strength": "low"
+    },
+    "60d": {
+      "direction": "up",
+      "strength": "low"
+    }
+  },
+  "metrics": {
+    "ma20": 4.5995,
+    "ma60": 4.6158,
+    "momentum20": 3.4934,
+    "momentum60": 9.2166,
+    "ma20_slope10": 1.2994,
+    "volatility20": 24.9177
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

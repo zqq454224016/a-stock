@@ -1,0 +1,34 @@
+{
+  "code": "600084",
+  "name": "",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-07-28 01:04:52",
+  "window": "past_1190_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1190,
+  "metrics": {
+    "5d": {
+      "sample_count": 787,
+      "hit_rate": 0.4765,
+      "avg_signed_return_pct": 0.3,
+      "max_adverse_pct": -26.403
+    },
+    "20d": {
+      "sample_count": 774,
+      "hit_rate": 0.4444,
+      "avg_signed_return_pct": 0.1,
+      "max_adverse_pct": -48.113
+    },
+    "60d": {
+      "sample_count": 734,
+      "hit_rate": 0.5109,
+      "avg_signed_return_pct": 0.298,
+      "max_adverse_pct": -46.667
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

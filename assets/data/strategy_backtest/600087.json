@@ -1,0 +1,32 @@
+{
+  "code": "600087",
+  "name": "退市长油",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:33",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 933,
+      "hit_rate": 0.4652,
+      "avg_signed_return_pct": -0.267,
+      "max_adverse_pct": -41.104
+    },
+    "20d": {
+      "sample_count": 918,
+      "hit_rate": 0.463,
+      "avg_signed_return_pct": -2.05,
+      "max_adverse_pct": -56.522
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.4887,
+      "avg_signed_return_pct": -0.132,
+      "max_adverse_pct": -62.195
+    }
+  },
+  "limitations": []
+}

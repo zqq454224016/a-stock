@@ -1,0 +1,32 @@
+{
+  "code": "002034",
+  "name": "旺能环境",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 821,
+      "hit_rate": 0.4604,
+      "avg_signed_return_pct": -0.261,
+      "max_adverse_pct": -21.326
+    },
+    "20d": {
+      "sample_count": 814,
+      "hit_rate": 0.3796,
+      "avg_signed_return_pct": -1.554,
+      "max_adverse_pct": -28.494
+    },
+    "60d": {
+      "sample_count": 786,
+      "hit_rate": 0.3753,
+      "avg_signed_return_pct": -3.006,
+      "max_adverse_pct": -43.674
+    }
+  },
+  "limitations": []
+}

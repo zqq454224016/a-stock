@@ -1,0 +1,32 @@
+{
+  "code": "600129",
+  "name": "太极集团",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 907,
+      "hit_rate": 0.5303,
+      "avg_signed_return_pct": 0.359,
+      "max_adverse_pct": -33.428
+    },
+    "20d": {
+      "sample_count": 893,
+      "hit_rate": 0.5084,
+      "avg_signed_return_pct": 0.226,
+      "max_adverse_pct": -54.933
+    },
+    "60d": {
+      "sample_count": 871,
+      "hit_rate": 0.4971,
+      "avg_signed_return_pct": 1.328,
+      "max_adverse_pct": -73.961
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600968",
+  "name": "海油发展",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 841,
+      "hit_rate": 0.4554,
+      "avg_signed_return_pct": -0.213,
+      "max_adverse_pct": -15.915
+    },
+    "20d": {
+      "sample_count": 834,
+      "hit_rate": 0.4484,
+      "avg_signed_return_pct": -0.415,
+      "max_adverse_pct": -22.846
+    },
+    "60d": {
+      "sample_count": 801,
+      "hit_rate": 0.3908,
+      "avg_signed_return_pct": -2.314,
+      "max_adverse_pct": -60.3
+    }
+  },
+  "limitations": []
+}

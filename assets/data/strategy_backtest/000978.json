@@ -1,0 +1,32 @@
+{
+  "code": "000978",
+  "name": "桂林旅游",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:16",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 877,
+      "hit_rate": 0.4436,
+      "avg_signed_return_pct": -0.686,
+      "max_adverse_pct": -24.866
+    },
+    "20d": {
+      "sample_count": 862,
+      "hit_rate": 0.3979,
+      "avg_signed_return_pct": -1.95,
+      "max_adverse_pct": -32.714
+    },
+    "60d": {
+      "sample_count": 825,
+      "hit_rate": 0.3042,
+      "avg_signed_return_pct": -5.58,
+      "max_adverse_pct": -95.676
+    }
+  },
+  "limitations": []
+}

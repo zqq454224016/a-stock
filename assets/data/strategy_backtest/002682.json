@@ -1,0 +1,32 @@
+{
+  "code": "002682",
+  "name": "龙洲股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 922,
+      "hit_rate": 0.4414,
+      "avg_signed_return_pct": 0.096,
+      "max_adverse_pct": -34.985
+    },
+    "20d": {
+      "sample_count": 913,
+      "hit_rate": 0.4283,
+      "avg_signed_return_pct": -2.198,
+      "max_adverse_pct": -106.03
+    },
+    "60d": {
+      "sample_count": 878,
+      "hit_rate": 0.4066,
+      "avg_signed_return_pct": -6.994,
+      "max_adverse_pct": -158.785
+    }
+  },
+  "limitations": []
+}

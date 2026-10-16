@@ -1,0 +1,32 @@
+{
+  "code": "603192",
+  "name": "汇得科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:50",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 896,
+      "hit_rate": 0.5045,
+      "avg_signed_return_pct": 0.345,
+      "max_adverse_pct": -25.271
+    },
+    "20d": {
+      "sample_count": 889,
+      "hit_rate": 0.4736,
+      "avg_signed_return_pct": -0.275,
+      "max_adverse_pct": -45.894
+    },
+    "60d": {
+      "sample_count": 868,
+      "hit_rate": 0.4078,
+      "avg_signed_return_pct": -0.802,
+      "max_adverse_pct": -54.286
+    }
+  },
+  "limitations": []
+}

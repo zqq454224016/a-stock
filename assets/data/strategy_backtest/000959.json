@@ -1,0 +1,32 @@
+{
+  "code": "000959",
+  "name": "首钢股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:15",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 870,
+      "hit_rate": 0.4506,
+      "avg_signed_return_pct": -0.178,
+      "max_adverse_pct": -23.438
+    },
+    "20d": {
+      "sample_count": 863,
+      "hit_rate": 0.4264,
+      "avg_signed_return_pct": -1.588,
+      "max_adverse_pct": -35.906
+    },
+    "60d": {
+      "sample_count": 842,
+      "hit_rate": 0.4145,
+      "avg_signed_return_pct": -3.232,
+      "max_adverse_pct": -44.231
+    }
+  },
+  "limitations": []
+}

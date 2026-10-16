@@ -1,0 +1,32 @@
+{
+  "code": "600918",
+  "name": "中泰证券",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 803,
+      "hit_rate": 0.4496,
+      "avg_signed_return_pct": -0.251,
+      "max_adverse_pct": -32.09
+    },
+    "20d": {
+      "sample_count": 797,
+      "hit_rate": 0.3902,
+      "avg_signed_return_pct": -1.544,
+      "max_adverse_pct": -24.013
+    },
+    "60d": {
+      "sample_count": 775,
+      "hit_rate": 0.5484,
+      "avg_signed_return_pct": 0.165,
+      "max_adverse_pct": -46.584
+    }
+  },
+  "limitations": []
+}

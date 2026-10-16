@@ -1,0 +1,32 @@
+{
+  "code": "000761",
+  "name": "本钢板材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 836,
+      "hit_rate": 0.445,
+      "avg_signed_return_pct": -0.194,
+      "max_adverse_pct": -37.083
+    },
+    "20d": {
+      "sample_count": 835,
+      "hit_rate": 0.388,
+      "avg_signed_return_pct": -1.985,
+      "max_adverse_pct": -50.679
+    },
+    "60d": {
+      "sample_count": 811,
+      "hit_rate": 0.4439,
+      "avg_signed_return_pct": -3.507,
+      "max_adverse_pct": -64.574
+    }
+  },
+  "limitations": []
+}

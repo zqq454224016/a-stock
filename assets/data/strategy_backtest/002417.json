@@ -1,0 +1,32 @@
+{
+  "code": "002417",
+  "name": "深南退",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 986,
+      "hit_rate": 0.4838,
+      "avg_signed_return_pct": 1.276,
+      "max_adverse_pct": -35.103
+    },
+    "20d": {
+      "sample_count": 971,
+      "hit_rate": 0.5324,
+      "avg_signed_return_pct": 3.419,
+      "max_adverse_pct": -112.774
+    },
+    "60d": {
+      "sample_count": 931,
+      "hit_rate": 0.4823,
+      "avg_signed_return_pct": -1.695,
+      "max_adverse_pct": -126.4
+    }
+  },
+  "limitations": []
+}

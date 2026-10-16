@@ -1,0 +1,34 @@
+{
+  "code": "002759",
+  "name": "",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-07-28 01:04:49",
+  "window": "past_1190_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1190,
+  "metrics": {
+    "5d": {
+      "sample_count": 933,
+      "hit_rate": 0.5241,
+      "avg_signed_return_pct": 1.091,
+      "max_adverse_pct": -41.652
+    },
+    "20d": {
+      "sample_count": 918,
+      "hit_rate": 0.5643,
+      "avg_signed_return_pct": 3.982,
+      "max_adverse_pct": -46.387
+    },
+    "60d": {
+      "sample_count": 888,
+      "hit_rate": 0.5529,
+      "avg_signed_return_pct": 11.81,
+      "max_adverse_pct": -108.963
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

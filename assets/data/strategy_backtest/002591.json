@@ -1,0 +1,32 @@
+{
+  "code": "002591",
+  "name": "恒大高新",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 900,
+      "hit_rate": 0.4722,
+      "avg_signed_return_pct": -0.463,
+      "max_adverse_pct": -50.905
+    },
+    "20d": {
+      "sample_count": 899,
+      "hit_rate": 0.4049,
+      "avg_signed_return_pct": -3.123,
+      "max_adverse_pct": -96.429
+    },
+    "60d": {
+      "sample_count": 863,
+      "hit_rate": 0.4079,
+      "avg_signed_return_pct": -5.866,
+      "max_adverse_pct": -162.558
+    }
+  },
+  "limitations": []
+}

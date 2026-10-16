@@ -1,0 +1,32 @@
+{
+  "code": "601677",
+  "name": "明泰铝业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 915,
+      "hit_rate": 0.4732,
+      "avg_signed_return_pct": -0.238,
+      "max_adverse_pct": -25.535
+    },
+    "20d": {
+      "sample_count": 912,
+      "hit_rate": 0.4814,
+      "avg_signed_return_pct": -0.846,
+      "max_adverse_pct": -37.923
+    },
+    "60d": {
+      "sample_count": 887,
+      "hit_rate": 0.4386,
+      "avg_signed_return_pct": -3.845,
+      "max_adverse_pct": -54.518
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "002014",
+  "name": "永新股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:17",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 805,
+      "hit_rate": 0.477,
+      "avg_signed_return_pct": -0.084,
+      "max_adverse_pct": -19.428
+    },
+    "20d": {
+      "sample_count": 797,
+      "hit_rate": 0.4856,
+      "avg_signed_return_pct": -0.217,
+      "max_adverse_pct": -21.573
+    },
+    "60d": {
+      "sample_count": 777,
+      "hit_rate": 0.5019,
+      "avg_signed_return_pct": -0.343,
+      "max_adverse_pct": -31.703
+    }
+  },
+  "limitations": []
+}

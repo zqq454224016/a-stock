@@ -1,0 +1,32 @@
+{
+  "code": "000822",
+  "name": "山东海化",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 879,
+      "hit_rate": 0.4949,
+      "avg_signed_return_pct": -0.318,
+      "max_adverse_pct": -28.444
+    },
+    "20d": {
+      "sample_count": 878,
+      "hit_rate": 0.4203,
+      "avg_signed_return_pct": -1.556,
+      "max_adverse_pct": -41.121
+    },
+    "60d": {
+      "sample_count": 844,
+      "hit_rate": 0.3365,
+      "avg_signed_return_pct": -5.92,
+      "max_adverse_pct": -53.725
+    }
+  },
+  "limitations": []
+}

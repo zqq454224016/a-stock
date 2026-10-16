@@ -1,0 +1,32 @@
+{
+  "code": "002612",
+  "name": "朗姿股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 941,
+      "hit_rate": 0.4793,
+      "avg_signed_return_pct": -0.38,
+      "max_adverse_pct": -44.962
+    },
+    "20d": {
+      "sample_count": 928,
+      "hit_rate": 0.4666,
+      "avg_signed_return_pct": -1.742,
+      "max_adverse_pct": -52.411
+    },
+    "60d": {
+      "sample_count": 891,
+      "hit_rate": 0.3996,
+      "avg_signed_return_pct": -5.582,
+      "max_adverse_pct": -59.442
+    }
+  },
+  "limitations": []
+}

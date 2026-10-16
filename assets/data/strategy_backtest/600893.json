@@ -1,0 +1,32 @@
+{
+  "code": "600893",
+  "name": "航发动力",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:44",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4727,
+      "avg_signed_return_pct": 0.029,
+      "max_adverse_pct": -20.979
+    },
+    "20d": {
+      "sample_count": 890,
+      "hit_rate": 0.4753,
+      "avg_signed_return_pct": -0.164,
+      "max_adverse_pct": -28.684
+    },
+    "60d": {
+      "sample_count": 852,
+      "hit_rate": 0.4765,
+      "avg_signed_return_pct": -2.798,
+      "max_adverse_pct": -69.321
+    }
+  },
+  "limitations": []
+}

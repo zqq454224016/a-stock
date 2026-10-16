@@ -1,0 +1,32 @@
+{
+  "code": "603938",
+  "name": "三孚股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 958,
+      "hit_rate": 0.5042,
+      "avg_signed_return_pct": 0.04,
+      "max_adverse_pct": -29.595
+    },
+    "20d": {
+      "sample_count": 948,
+      "hit_rate": 0.4831,
+      "avg_signed_return_pct": -0.13,
+      "max_adverse_pct": -63.543
+    },
+    "60d": {
+      "sample_count": 924,
+      "hit_rate": 0.5433,
+      "avg_signed_return_pct": 3.005,
+      "max_adverse_pct": -178.158
+    }
+  },
+  "limitations": []
+}

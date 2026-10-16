@@ -1,0 +1,32 @@
+{
+  "code": "002773",
+  "name": "康弘药业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:28",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 865,
+      "hit_rate": 0.4821,
+      "avg_signed_return_pct": -0.27,
+      "max_adverse_pct": -32.971
+    },
+    "20d": {
+      "sample_count": 855,
+      "hit_rate": 0.469,
+      "avg_signed_return_pct": -0.003,
+      "max_adverse_pct": -41.902
+    },
+    "60d": {
+      "sample_count": 840,
+      "hit_rate": 0.4952,
+      "avg_signed_return_pct": -0.031,
+      "max_adverse_pct": -70.698
+    }
+  },
+  "limitations": []
+}

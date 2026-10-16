@@ -1,0 +1,34 @@
+{
+  "code": "603102",
+  "name": "百合股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_1082_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1082,
+  "metrics": {
+    "5d": {
+      "sample_count": 725,
+      "hit_rate": 0.4607,
+      "avg_signed_return_pct": -0.414,
+      "max_adverse_pct": -18.43
+    },
+    "20d": {
+      "sample_count": 725,
+      "hit_rate": 0.4345,
+      "avg_signed_return_pct": -1.36,
+      "max_adverse_pct": -48.958
+    },
+    "60d": {
+      "sample_count": 694,
+      "hit_rate": 0.3689,
+      "avg_signed_return_pct": -3.638,
+      "max_adverse_pct": -35.932
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

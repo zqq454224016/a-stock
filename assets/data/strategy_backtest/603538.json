@@ -1,0 +1,32 @@
+{
+  "code": "603538",
+  "name": "美诺华",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 968,
+      "hit_rate": 0.4938,
+      "avg_signed_return_pct": 0.246,
+      "max_adverse_pct": -39.385
+    },
+    "20d": {
+      "sample_count": 955,
+      "hit_rate": 0.4764,
+      "avg_signed_return_pct": 0.009,
+      "max_adverse_pct": -168.179
+    },
+    "60d": {
+      "sample_count": 932,
+      "hit_rate": 0.4614,
+      "avg_signed_return_pct": 3.394,
+      "max_adverse_pct": -117.472
+    }
+  },
+  "limitations": []
+}

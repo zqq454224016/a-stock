@@ -1,0 +1,32 @@
+{
+  "code": "002640",
+  "name": "跨境通",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 963,
+      "hit_rate": 0.4829,
+      "avg_signed_return_pct": 0.257,
+      "max_adverse_pct": -44.569
+    },
+    "20d": {
+      "sample_count": 949,
+      "hit_rate": 0.4647,
+      "avg_signed_return_pct": 1.482,
+      "max_adverse_pct": -67.041
+    },
+    "60d": {
+      "sample_count": 924,
+      "hit_rate": 0.5184,
+      "avg_signed_return_pct": 2.977,
+      "max_adverse_pct": -176.978
+    }
+  },
+  "limitations": []
+}

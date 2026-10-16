@@ -1,0 +1,32 @@
+{
+  "code": "000721",
+  "name": "西安饮食",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4757,
+      "avg_signed_return_pct": 0.352,
+      "max_adverse_pct": -34.144
+    },
+    "20d": {
+      "sample_count": 883,
+      "hit_rate": 0.4337,
+      "avg_signed_return_pct": 0.529,
+      "max_adverse_pct": -38.521
+    },
+    "60d": {
+      "sample_count": 844,
+      "hit_rate": 0.3732,
+      "avg_signed_return_pct": 1.404,
+      "max_adverse_pct": -173.397
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600773",
+  "name": "西藏城投",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 960,
+      "hit_rate": 0.5052,
+      "avg_signed_return_pct": 0.4,
+      "max_adverse_pct": -32.827
+    },
+    "20d": {
+      "sample_count": 945,
+      "hit_rate": 0.5079,
+      "avg_signed_return_pct": 0.058,
+      "max_adverse_pct": -43.107
+    },
+    "60d": {
+      "sample_count": 911,
+      "hit_rate": 0.4698,
+      "avg_signed_return_pct": -1.54,
+      "max_adverse_pct": -65.229
+    }
+  },
+  "limitations": []
+}

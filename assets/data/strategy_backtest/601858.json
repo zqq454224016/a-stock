@@ -1,0 +1,32 @@
+{
+  "code": "601858",
+  "name": "中国科传",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:47",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 920,
+      "hit_rate": 0.4587,
+      "avg_signed_return_pct": 0.507,
+      "max_adverse_pct": -37.192
+    },
+    "20d": {
+      "sample_count": 916,
+      "hit_rate": 0.4138,
+      "avg_signed_return_pct": 0.314,
+      "max_adverse_pct": -63.893
+    },
+    "60d": {
+      "sample_count": 885,
+      "hit_rate": 0.391,
+      "avg_signed_return_pct": 6.719,
+      "max_adverse_pct": -76.381
+    }
+  },
+  "limitations": []
+}

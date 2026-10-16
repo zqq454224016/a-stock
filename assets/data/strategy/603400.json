@@ -1,0 +1,47 @@
+{
+  "code": "603400",
+  "name": "华之杰",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 24.6,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 47.156,
+    "ma60": 43.8211,
+    "momentum20": -17.0577,
+    "momentum60": -8.5987,
+    "ma20_slope10": -1.9595,
+    "volatility20": 78.8472
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

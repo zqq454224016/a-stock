@@ -1,0 +1,32 @@
+{
+  "code": "002386",
+  "name": "天原股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 885,
+      "hit_rate": 0.4588,
+      "avg_signed_return_pct": -0.287,
+      "max_adverse_pct": -27.233
+    },
+    "20d": {
+      "sample_count": 879,
+      "hit_rate": 0.4915,
+      "avg_signed_return_pct": -1.56,
+      "max_adverse_pct": -34.661
+    },
+    "60d": {
+      "sample_count": 850,
+      "hit_rate": 0.4471,
+      "avg_signed_return_pct": -2.313,
+      "max_adverse_pct": -43.221
+    }
+  },
+  "limitations": []
+}

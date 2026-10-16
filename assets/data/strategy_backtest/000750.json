@@ -1,0 +1,32 @@
+{
+  "code": "000750",
+  "name": "国海证券",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:13",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 785,
+      "hit_rate": 0.414,
+      "avg_signed_return_pct": 0.007,
+      "max_adverse_pct": -20.527
+    },
+    "20d": {
+      "sample_count": 772,
+      "hit_rate": 0.3497,
+      "avg_signed_return_pct": -0.951,
+      "max_adverse_pct": -22.09
+    },
+    "60d": {
+      "sample_count": 751,
+      "hit_rate": 0.4115,
+      "avg_signed_return_pct": -1.869,
+      "max_adverse_pct": -86.973
+    }
+  },
+  "limitations": []
+}

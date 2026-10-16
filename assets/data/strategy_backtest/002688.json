@@ -1,0 +1,32 @@
+{
+  "code": "002688",
+  "name": "金河生物",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:26",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 842,
+      "hit_rate": 0.4988,
+      "avg_signed_return_pct": -0.027,
+      "max_adverse_pct": -33.8
+    },
+    "20d": {
+      "sample_count": 840,
+      "hit_rate": 0.4714,
+      "avg_signed_return_pct": -0.024,
+      "max_adverse_pct": -48.409
+    },
+    "60d": {
+      "sample_count": 813,
+      "hit_rate": 0.4637,
+      "avg_signed_return_pct": -1.758,
+      "max_adverse_pct": -80.05
+    }
+  },
+  "limitations": []
+}

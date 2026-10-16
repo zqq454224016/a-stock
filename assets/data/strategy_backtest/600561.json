@@ -1,0 +1,32 @@
+{
+  "code": "600561",
+  "name": "江西长运",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:39",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 915,
+      "hit_rate": 0.4929,
+      "avg_signed_return_pct": -0.141,
+      "max_adverse_pct": -30.829
+    },
+    "20d": {
+      "sample_count": 908,
+      "hit_rate": 0.4108,
+      "avg_signed_return_pct": -2.466,
+      "max_adverse_pct": -82.571
+    },
+    "60d": {
+      "sample_count": 870,
+      "hit_rate": 0.4391,
+      "avg_signed_return_pct": -2.427,
+      "max_adverse_pct": -47.541
+    }
+  },
+  "limitations": []
+}

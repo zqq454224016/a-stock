@@ -1,0 +1,32 @@
+{
+  "code": "600273",
+  "name": "嘉化能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:35",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 856,
+      "hit_rate": 0.4871,
+      "avg_signed_return_pct": 0.004,
+      "max_adverse_pct": -17.662
+    },
+    "20d": {
+      "sample_count": 841,
+      "hit_rate": 0.4495,
+      "avg_signed_return_pct": -0.888,
+      "max_adverse_pct": -25.585
+    },
+    "60d": {
+      "sample_count": 825,
+      "hit_rate": 0.4412,
+      "avg_signed_return_pct": -0.95,
+      "max_adverse_pct": -35.369
+    }
+  },
+  "limitations": []
+}

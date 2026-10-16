@@ -1,0 +1,32 @@
+{
+  "code": "600801",
+  "name": "华新建材",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 927,
+      "hit_rate": 0.4995,
+      "avg_signed_return_pct": 0.229,
+      "max_adverse_pct": -39.51
+    },
+    "20d": {
+      "sample_count": 914,
+      "hit_rate": 0.4923,
+      "avg_signed_return_pct": -0.848,
+      "max_adverse_pct": -38.137
+    },
+    "60d": {
+      "sample_count": 874,
+      "hit_rate": 0.349,
+      "avg_signed_return_pct": -3.24,
+      "max_adverse_pct": -58.957
+    }
+  },
+  "limitations": []
+}

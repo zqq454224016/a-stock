@@ -1,0 +1,32 @@
+{
+  "code": "002076",
+  "name": "星光股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:18",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 911,
+      "hit_rate": 0.5005,
+      "avg_signed_return_pct": 0.363,
+      "max_adverse_pct": -47.486
+    },
+    "20d": {
+      "sample_count": 908,
+      "hit_rate": 0.467,
+      "avg_signed_return_pct": 0.253,
+      "max_adverse_pct": -116.418
+    },
+    "60d": {
+      "sample_count": 873,
+      "hit_rate": 0.4422,
+      "avg_signed_return_pct": -4.883,
+      "max_adverse_pct": -185.43
+    }
+  },
+  "limitations": []
+}

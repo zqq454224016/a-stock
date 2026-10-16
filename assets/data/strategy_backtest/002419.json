@@ -1,0 +1,32 @@
+{
+  "code": "002419",
+  "name": "天虹股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 847,
+      "hit_rate": 0.425,
+      "avg_signed_return_pct": -0.622,
+      "max_adverse_pct": -24.91
+    },
+    "20d": {
+      "sample_count": 842,
+      "hit_rate": 0.3741,
+      "avg_signed_return_pct": -2.006,
+      "max_adverse_pct": -31.9
+    },
+    "60d": {
+      "sample_count": 807,
+      "hit_rate": 0.3705,
+      "avg_signed_return_pct": -3.724,
+      "max_adverse_pct": -52.618
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600323",
+  "name": "瀚蓝环境",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 805,
+      "hit_rate": 0.4522,
+      "avg_signed_return_pct": -0.312,
+      "max_adverse_pct": -18.707
+    },
+    "20d": {
+      "sample_count": 802,
+      "hit_rate": 0.4464,
+      "avg_signed_return_pct": -0.85,
+      "max_adverse_pct": -24.341
+    },
+    "60d": {
+      "sample_count": 782,
+      "hit_rate": 0.5499,
+      "avg_signed_return_pct": 0.538,
+      "max_adverse_pct": -32.661
+    }
+  },
+  "limitations": []
+}

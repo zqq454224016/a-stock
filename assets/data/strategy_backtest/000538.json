@@ -1,0 +1,32 @@
+{
+  "code": "000538",
+  "name": "云南白药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:11",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 780,
+      "hit_rate": 0.45,
+      "avg_signed_return_pct": -0.319,
+      "max_adverse_pct": -14.186
+    },
+    "20d": {
+      "sample_count": 765,
+      "hit_rate": 0.4131,
+      "avg_signed_return_pct": -0.899,
+      "max_adverse_pct": -17.65
+    },
+    "60d": {
+      "sample_count": 752,
+      "hit_rate": 0.3218,
+      "avg_signed_return_pct": -2.712,
+      "max_adverse_pct": -28.679
+    }
+  },
+  "limitations": []
+}

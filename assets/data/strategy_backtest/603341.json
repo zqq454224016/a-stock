@@ -1,0 +1,34 @@
+{
+  "code": "603341",
+  "name": "龙旗科技",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:51",
+  "window": "past_576_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 576,
+  "metrics": {
+    "5d": {
+      "sample_count": 392,
+      "hit_rate": 0.3954,
+      "avg_signed_return_pct": -1.405,
+      "max_adverse_pct": -20.409
+    },
+    "20d": {
+      "sample_count": 381,
+      "hit_rate": 0.4383,
+      "avg_signed_return_pct": -1.268,
+      "max_adverse_pct": -35.233
+    },
+    "60d": {
+      "sample_count": 368,
+      "hit_rate": 0.3641,
+      "avg_signed_return_pct": -4.195,
+      "max_adverse_pct": -40.089
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

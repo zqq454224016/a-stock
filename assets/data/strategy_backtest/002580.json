@@ -1,0 +1,32 @@
+{
+  "code": "002580",
+  "name": "圣阳股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:25",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 882,
+      "hit_rate": 0.4694,
+      "avg_signed_return_pct": -0.146,
+      "max_adverse_pct": -26.923
+    },
+    "20d": {
+      "sample_count": 882,
+      "hit_rate": 0.4218,
+      "avg_signed_return_pct": 0.57,
+      "max_adverse_pct": -48.949
+    },
+    "60d": {
+      "sample_count": 847,
+      "hit_rate": 0.5112,
+      "avg_signed_return_pct": 3.178,
+      "max_adverse_pct": -77.522
+    }
+  },
+  "limitations": []
+}

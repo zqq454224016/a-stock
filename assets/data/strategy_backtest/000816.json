@@ -1,0 +1,32 @@
+{
+  "code": "000816",
+  "name": "智慧农业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:14",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 898,
+      "hit_rate": 0.5189,
+      "avg_signed_return_pct": 0.384,
+      "max_adverse_pct": -28.217
+    },
+    "20d": {
+      "sample_count": 891,
+      "hit_rate": 0.4972,
+      "avg_signed_return_pct": 0.965,
+      "max_adverse_pct": -48.658
+    },
+    "60d": {
+      "sample_count": 853,
+      "hit_rate": 0.524,
+      "avg_signed_return_pct": 2.175,
+      "max_adverse_pct": -65.789
+    }
+  },
+  "limitations": []
+}

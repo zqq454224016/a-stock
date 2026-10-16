@@ -1,0 +1,32 @@
+{
+  "code": "000582",
+  "name": "北部湾港",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 771,
+      "hit_rate": 0.4488,
+      "avg_signed_return_pct": -0.693,
+      "max_adverse_pct": -38.852
+    },
+    "20d": {
+      "sample_count": 758,
+      "hit_rate": 0.3377,
+      "avg_signed_return_pct": -2.523,
+      "max_adverse_pct": -59.704
+    },
+    "60d": {
+      "sample_count": 734,
+      "hit_rate": 0.4714,
+      "avg_signed_return_pct": 0.725,
+      "max_adverse_pct": -32.245
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "600755",
+  "name": "厦门国贸",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:42",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 773,
+      "hit_rate": 0.4114,
+      "avg_signed_return_pct": -0.509,
+      "max_adverse_pct": -28.374
+    },
+    "20d": {
+      "sample_count": 767,
+      "hit_rate": 0.3729,
+      "avg_signed_return_pct": -1.39,
+      "max_adverse_pct": -33.106
+    },
+    "60d": {
+      "sample_count": 755,
+      "hit_rate": 0.4199,
+      "avg_signed_return_pct": -1.9,
+      "max_adverse_pct": -42.484
+    }
+  },
+  "limitations": []
+}

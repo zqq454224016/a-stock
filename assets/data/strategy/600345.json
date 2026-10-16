@@ -1,0 +1,47 @@
+{
+  "code": "600345",
+  "name": "长江通信",
+  "trade_date": "2026-10-16",
+  "strategy": "trend_development",
+  "strategy_version": "1.0.0",
+  "status": "analyzed",
+  "trend_stage": "weakening",
+  "trend_score": 2.48,
+  "confidence": "high",
+  "outlook": {
+    "5d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "20d": {
+      "direction": "neutral",
+      "strength": "high"
+    },
+    "60d": {
+      "direction": "neutral",
+      "strength": "high"
+    }
+  },
+  "metrics": {
+    "ma20": 49.188,
+    "ma60": 47.7528,
+    "momentum20": -24.833,
+    "momentum60": -21.4203,
+    "ma20_slope10": -6.1136,
+    "volatility20": 51.5026
+  },
+  "manual_review": {
+    "required": true,
+    "status": "pending",
+    "checks": [
+      "最新公告和中报",
+      "停牌/ST/涨跌停",
+      "市场情绪与行业共振",
+      "流动性和交易成本"
+    ]
+  },
+  "limitations": [
+    "rule_based_trend_not_return_guarantee",
+    "manual_confirmation_required"
+  ]
+}

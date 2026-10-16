@@ -1,0 +1,32 @@
+{
+  "code": "603931",
+  "name": "格林达",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:55",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 906,
+      "hit_rate": 0.4757,
+      "avg_signed_return_pct": -0.095,
+      "max_adverse_pct": -32.886
+    },
+    "20d": {
+      "sample_count": 892,
+      "hit_rate": 0.4518,
+      "avg_signed_return_pct": -1.263,
+      "max_adverse_pct": -73.083
+    },
+    "60d": {
+      "sample_count": 858,
+      "hit_rate": 0.3869,
+      "avg_signed_return_pct": -8.295,
+      "max_adverse_pct": -125.625
+    }
+  },
+  "limitations": []
+}

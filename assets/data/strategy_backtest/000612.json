@@ -1,0 +1,32 @@
+{
+  "code": "000612",
+  "name": "焦作万方",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:12",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 899,
+      "hit_rate": 0.4605,
+      "avg_signed_return_pct": -0.146,
+      "max_adverse_pct": -20.62
+    },
+    "20d": {
+      "sample_count": 892,
+      "hit_rate": 0.4462,
+      "avg_signed_return_pct": -1.336,
+      "max_adverse_pct": -48.954
+    },
+    "60d": {
+      "sample_count": 868,
+      "hit_rate": 0.4136,
+      "avg_signed_return_pct": -5.078,
+      "max_adverse_pct": -89.294
+    }
+  },
+  "limitations": []
+}

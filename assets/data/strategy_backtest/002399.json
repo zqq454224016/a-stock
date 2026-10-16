@@ -1,0 +1,32 @@
+{
+  "code": "002399",
+  "name": "海普瑞",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:22",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 854,
+      "hit_rate": 0.4485,
+      "avg_signed_return_pct": -0.206,
+      "max_adverse_pct": -31.235
+    },
+    "20d": {
+      "sample_count": 848,
+      "hit_rate": 0.4163,
+      "avg_signed_return_pct": -1.319,
+      "max_adverse_pct": -48.981
+    },
+    "60d": {
+      "sample_count": 819,
+      "hit_rate": 0.3565,
+      "avg_signed_return_pct": -4.384,
+      "max_adverse_pct": -44.641
+    }
+  },
+  "limitations": []
+}

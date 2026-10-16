@@ -1,0 +1,32 @@
+{
+  "code": "600173",
+  "name": "卧龙新能",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:34",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 866,
+      "hit_rate": 0.4457,
+      "avg_signed_return_pct": -0.4,
+      "max_adverse_pct": -33.267
+    },
+    "20d": {
+      "sample_count": 861,
+      "hit_rate": 0.3496,
+      "avg_signed_return_pct": -3.312,
+      "max_adverse_pct": -47.952
+    },
+    "60d": {
+      "sample_count": 840,
+      "hit_rate": 0.35,
+      "avg_signed_return_pct": -4.269,
+      "max_adverse_pct": -66.414
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,34 @@
+{
+  "code": "603135",
+  "name": "XD中重科",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:49",
+  "window": "past_792_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 792,
+  "metrics": {
+    "5d": {
+      "sample_count": 569,
+      "hit_rate": 0.4657,
+      "avg_signed_return_pct": -0.554,
+      "max_adverse_pct": -28.941
+    },
+    "20d": {
+      "sample_count": 554,
+      "hit_rate": 0.4025,
+      "avg_signed_return_pct": -3.813,
+      "max_adverse_pct": -39.492
+    },
+    "60d": {
+      "sample_count": 525,
+      "hit_rate": 0.4095,
+      "avg_signed_return_pct": -4.614,
+      "max_adverse_pct": -46.479
+    }
+  },
+  "limitations": [
+    "listing_history_shorter_than_requested_window"
+  ]
+}

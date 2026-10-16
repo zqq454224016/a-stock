@@ -1,0 +1,32 @@
+{
+  "code": "600348",
+  "name": "华阳股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:36",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 874,
+      "hit_rate": 0.4451,
+      "avg_signed_return_pct": -0.292,
+      "max_adverse_pct": -25.814
+    },
+    "20d": {
+      "sample_count": 867,
+      "hit_rate": 0.4164,
+      "avg_signed_return_pct": -0.675,
+      "max_adverse_pct": -41.206
+    },
+    "60d": {
+      "sample_count": 838,
+      "hit_rate": 0.5012,
+      "avg_signed_return_pct": -0.953,
+      "max_adverse_pct": -132.979
+    }
+  },
+  "limitations": []
+}

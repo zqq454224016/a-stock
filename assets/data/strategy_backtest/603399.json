@@ -1,0 +1,32 @@
+{
+  "code": "603399",
+  "name": "永杉锂业",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 910,
+      "hit_rate": 0.4956,
+      "avg_signed_return_pct": 0.116,
+      "max_adverse_pct": -37.723
+    },
+    "20d": {
+      "sample_count": 895,
+      "hit_rate": 0.4626,
+      "avg_signed_return_pct": 0.935,
+      "max_adverse_pct": -51.407
+    },
+    "60d": {
+      "sample_count": 865,
+      "hit_rate": 0.5052,
+      "avg_signed_return_pct": 2.999,
+      "max_adverse_pct": -139.698
+    }
+  },
+  "limitations": []
+}

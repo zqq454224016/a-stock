@@ -1,0 +1,32 @@
+{
+  "code": "603379",
+  "name": "三美股份",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:52",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 913,
+      "hit_rate": 0.4995,
+      "avg_signed_return_pct": 0.062,
+      "max_adverse_pct": -30.795
+    },
+    "20d": {
+      "sample_count": 898,
+      "hit_rate": 0.4844,
+      "avg_signed_return_pct": -0.608,
+      "max_adverse_pct": -39.469
+    },
+    "60d": {
+      "sample_count": 880,
+      "hit_rate": 0.4523,
+      "avg_signed_return_pct": -1.86,
+      "max_adverse_pct": -60.303
+    }
+  },
+  "limitations": []
+}

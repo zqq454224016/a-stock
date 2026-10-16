@@ -1,0 +1,32 @@
+{
+  "code": "600403",
+  "name": "大有能源",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:37",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 888,
+      "hit_rate": 0.4696,
+      "avg_signed_return_pct": -0.378,
+      "max_adverse_pct": -61.188
+    },
+    "20d": {
+      "sample_count": 878,
+      "hit_rate": 0.4408,
+      "avg_signed_return_pct": -2.004,
+      "max_adverse_pct": -114.785
+    },
+    "60d": {
+      "sample_count": 841,
+      "hit_rate": 0.4269,
+      "avg_signed_return_pct": -3.996,
+      "max_adverse_pct": -170.4
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "003020",
+  "name": "立方制药",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:32",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 893,
+      "hit_rate": 0.4692,
+      "avg_signed_return_pct": -0.244,
+      "max_adverse_pct": -41.446
+    },
+    "20d": {
+      "sample_count": 889,
+      "hit_rate": 0.4511,
+      "avg_signed_return_pct": -0.151,
+      "max_adverse_pct": -42.643
+    },
+    "60d": {
+      "sample_count": 866,
+      "hit_rate": 0.4134,
+      "avg_signed_return_pct": -2.985,
+      "max_adverse_pct": -54.986
+    }
+  },
+  "limitations": []
+}

@@ -1,0 +1,32 @@
+{
+  "code": "603706",
+  "name": "东方环宇",
+  "strategy": "trend_development",
+  "strategy_version": "1.1.0",
+  "validation_version": "five_year_1250d",
+  "updated_at": "2026-10-16 17:27:54",
+  "window": "past_1250_trading_days",
+  "requested_window_days": 1250,
+  "evaluated_window_days": 1250,
+  "metrics": {
+    "5d": {
+      "sample_count": 797,
+      "hit_rate": 0.4417,
+      "avg_signed_return_pct": -0.413,
+      "max_adverse_pct": -19.436
+    },
+    "20d": {
+      "sample_count": 784,
+      "hit_rate": 0.3661,
+      "avg_signed_return_pct": -2.122,
+      "max_adverse_pct": -34.642
+    },
+    "60d": {
+      "sample_count": 767,
+      "hit_rate": 0.4342,
+      "avg_signed_return_pct": -3.173,
+      "max_adverse_pct": -57.275
+    }
+  },
+  "limitations": []
+}
