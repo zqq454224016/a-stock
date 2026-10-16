@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002518",
+  "name": "科士达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9a8d967ec1d074245658",
+  "metrics": {
+    "eps": 0.5,
+    "revenue": 2591327008.71,
+    "revenue_yoy_pct": 19.8127985336,
+    "revenue_qoq_pct": 8.9284,
+    "net_profit": 290096588.29,
+    "net_profit_yoy_pct": 13.61,
+    "net_profit_qoq_pct": 9.2401,
+    "book_value_per_share": 8.373245857624,
+    "roe_pct": 5.87,
+    "operating_cashflow_per_share": 0.30423397546,
+    "gross_margin_pct": 29.424542789,
+    "industry": "其他电源设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

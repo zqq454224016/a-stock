@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603456",
+  "name": "九洲药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-04T00:00:00+08:00",
+  "known_at": "2026-08-04T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5da97533f29c2000ff87",
+  "metrics": {
+    "eps": 0.44,
+    "revenue": 2575246576.12,
+    "revenue_yoy_pct": -10.2997625097,
+    "revenue_qoq_pct": 14.4856,
+    "net_profit": 387393043.36,
+    "net_profit_yoy_pct": -26.33,
+    "net_profit_qoq_pct": 25.1183,
+    "book_value_per_share": 10.006998725886,
+    "roe_pct": 4.35,
+    "operating_cashflow_per_share": 0.622228502166,
+    "gross_margin_pct": 36.8923740798,
+    "industry": "医疗服务"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

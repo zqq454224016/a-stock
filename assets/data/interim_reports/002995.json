@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002995",
+  "name": "天地在线",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0bd5c356c55eae8a7cd6",
+  "metrics": {
+    "eps": -0.0082,
+    "revenue": 505144941.22,
+    "revenue_yoy_pct": -22.751293118,
+    "revenue_qoq_pct": 31.7344,
+    "net_profit": -1454573.58,
+    "net_profit_yoy_pct": 95.65,
+    "net_profit_qoq_pct": -227.3091,
+    "book_value_per_share": 4.512600717209,
+    "roe_pct": -0.18,
+    "operating_cashflow_per_share": 0.121047773773,
+    "gross_margin_pct": 6.3908500503,
+    "industry": "广告营销"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603499",
+  "name": "翔港科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "14ccb6a3cc5084a4e25a",
+  "metrics": {
+    "eps": 0.1949,
+    "revenue": 538406436.53,
+    "revenue_yoy_pct": 4.4757485643,
+    "revenue_qoq_pct": 4.8097,
+    "net_profit": 82585479.06,
+    "net_profit_yoy_pct": 5.45,
+    "net_profit_qoq_pct": 69.7378,
+    "book_value_per_share": 2.250385476271,
+    "roe_pct": 8.82,
+    "operating_cashflow_per_share": 0.327066776656,
+    "gross_margin_pct": 24.4944165601,
+    "industry": "包装印刷"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605167",
+  "name": "利柏特",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3ee2dd2cc5468aa1609d",
+  "metrics": {
+    "eps": 0.19,
+    "revenue": 950537693.48,
+    "revenue_yoy_pct": -33.9966479964,
+    "revenue_qoq_pct": -2.2362,
+    "net_profit": 93649798.65,
+    "net_profit_yoy_pct": -22.97,
+    "net_profit_qoq_pct": 79.5505,
+    "book_value_per_share": 5.570786645825,
+    "roe_pct": 4.5,
+    "operating_cashflow_per_share": -0.068197336477,
+    "gross_margin_pct": 23.5843852872,
+    "industry": "专业工程"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

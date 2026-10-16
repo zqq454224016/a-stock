@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600509",
+  "name": "天富能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4e2ae917733b12bffe12",
+  "metrics": {
+    "eps": 0.2192,
+    "revenue": 4148583657.78,
+    "revenue_yoy_pct": 2.0397820495,
+    "revenue_qoq_pct": -5.0921,
+    "net_profit": 301319287.29,
+    "net_profit_yoy_pct": -0.81,
+    "net_profit_qoq_pct": -27.9509,
+    "book_value_per_share": 5.781395882537,
+    "roe_pct": 3.89,
+    "operating_cashflow_per_share": 0.669777567501,
+    "gross_margin_pct": 22.1480635736,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

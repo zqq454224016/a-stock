@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605117",
+  "name": "德业股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "731cc74cfd2c1d7fb496",
+  "metrics": {
+    "eps": 2.14,
+    "revenue": 10641096664.31,
+    "revenue_yoy_pct": 92.2349063882,
+    "revenue_qoq_pct": 38.6197,
+    "net_profit": 2717499513.52,
+    "net_profit_yoy_pct": 78.53,
+    "net_profit_qoq_pct": 28.7661,
+    "book_value_per_share": 9.020957548721,
+    "roe_pct": 24.31,
+    "operating_cashflow_per_share": 3.294748721488,
+    "gross_margin_pct": 37.6464869312,
+    "industry": "光伏设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

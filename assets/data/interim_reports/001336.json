@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001336",
+  "name": "楚环科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e8b613258873d4811d22",
+  "metrics": {
+    "eps": 0.21,
+    "revenue": 155727862.15,
+    "revenue_yoy_pct": 33.5744805586,
+    "revenue_qoq_pct": 115.6263,
+    "net_profit": 17077149.61,
+    "net_profit_yoy_pct": 28.59,
+    "net_profit_qoq_pct": -38.7529,
+    "book_value_per_share": 10.272834718035,
+    "roe_pct": 2.09,
+    "operating_cashflow_per_share": -0.0917796627,
+    "gross_margin_pct": 36.7331171508,
+    "industry": "环保设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

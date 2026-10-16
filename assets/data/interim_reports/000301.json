@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000301",
+  "name": "东方盛虹",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "077bd638f1b2c336f83a",
+  "metrics": {
+    "eps": 0.68,
+    "revenue": 69924386581.16,
+    "revenue_yoy_pct": 14.7874219032,
+    "revenue_qoq_pct": 18.3608,
+    "net_profit": 4500151589.93,
+    "net_profit_yoy_pct": 1065.1,
+    "net_profit_qoq_pct": 114.1623,
+    "book_value_per_share": 5.729842354832,
+    "roe_pct": 12.39,
+    "operating_cashflow_per_share": 2.743109473461,
+    "gross_margin_pct": 20.3029245888,
+    "industry": "炼化及贸易"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

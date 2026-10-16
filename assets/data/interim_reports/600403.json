@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600403",
+  "name": "大有能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "26dc8e9cadf4009c153d",
+  "metrics": {
+    "eps": -0.2689,
+    "revenue": 2160448387.57,
+    "revenue_yoy_pct": 12.5102924473,
+    "revenue_qoq_pct": 18.3457,
+    "net_profit": -642943071.61,
+    "net_profit_yoy_pct": 24.4912461228,
+    "net_profit_qoq_pct": 25.86,
+    "book_value_per_share": 1.290419928569,
+    "roe_pct": -18.87,
+    "operating_cashflow_per_share": -0.046484766503,
+    "gross_margin_pct": 7.3729421983,
+    "industry": "煤炭开采"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

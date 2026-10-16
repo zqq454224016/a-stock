@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603416",
+  "name": "信捷电气",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8c5969ff8925593a7a26",
+  "metrics": {
+    "eps": 0.99,
+    "revenue": 1101659608.04,
+    "revenue_yoy_pct": 25.5958669955,
+    "revenue_qoq_pct": 37.2706,
+    "net_profit": 155022114.61,
+    "net_profit_yoy_pct": 21.98,
+    "net_profit_qoq_pct": 85.1362,
+    "book_value_per_share": 17.136875901401,
+    "roe_pct": 5.63,
+    "operating_cashflow_per_share": 0.314578247253,
+    "gross_margin_pct": 36.2997442315,
+    "industry": "自动化设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

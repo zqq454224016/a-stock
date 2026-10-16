@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002916",
+  "name": "深南电路",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "87435a8cbae674221136",
+  "metrics": {
+    "eps": 3.32,
+    "revenue": 15296361440.43,
+    "revenue_yoy_pct": 46.3282888807,
+    "revenue_qoq_pct": 31.9181,
+    "net_profit": 2251458836.99,
+    "net_profit_yoy_pct": 65.55,
+    "net_profit_qoq_pct": 64.8056,
+    "book_value_per_share": 26.469542556032,
+    "roe_pct": 12.43,
+    "operating_cashflow_per_share": 2.204829037689,
+    "gross_margin_pct": 31.0149106719,
+    "industry": "元件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

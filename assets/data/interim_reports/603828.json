@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603828",
+  "name": "*ST利达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3cd199f8efead437d920",
+  "metrics": {
+    "eps": -0.08,
+    "revenue": 413556140.11,
+    "revenue_yoy_pct": -53.8637346608,
+    "revenue_qoq_pct": 30.8225,
+    "net_profit": -45510924.14,
+    "net_profit_yoy_pct": -552.57,
+    "net_profit_qoq_pct": -1693.8136,
+    "book_value_per_share": 0.777732075774,
+    "roe_pct": -9.36,
+    "operating_cashflow_per_share": -0.047758217371,
+    "gross_margin_pct": 7.1230995608,
+    "industry": "装修装饰Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

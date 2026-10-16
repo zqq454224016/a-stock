@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001896",
+  "name": "豫能控股",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "fa69e1661429e1cddf57",
+  "metrics": {
+    "eps": 0.0429,
+    "revenue": 4883198727.41,
+    "revenue_yoy_pct": -7.5789789013,
+    "revenue_qoq_pct": -10.6273,
+    "net_profit": 65464364.94,
+    "net_profit_yoy_pct": -36.57,
+    "net_profit_qoq_pct": 23.5857,
+    "book_value_per_share": 2.36844703164,
+    "roe_pct": 1.84,
+    "operating_cashflow_per_share": 0.328992352843,
+    "gross_margin_pct": 9.6735759489,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600726",
+  "name": "华电能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "2e1b7bee8e2aa10f2056",
+  "metrics": {
+    "eps": 0.07,
+    "revenue": 8033840944.11,
+    "revenue_yoy_pct": -3.0255203769,
+    "revenue_qoq_pct": -39.4985,
+    "net_profit": 591665272.62,
+    "net_profit_yoy_pct": 29.16,
+    "net_profit_qoq_pct": -101.6751,
+    "book_value_per_share": 0.665997844316,
+    "roe_pct": 12.6,
+    "operating_cashflow_per_share": 0.024268265801,
+    "gross_margin_pct": 23.5016495287,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

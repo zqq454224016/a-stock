@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603810",
+  "name": "丰山集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "649059aa3c618081c805",
+  "metrics": {
+    "eps": 0.11,
+    "revenue": 781669902.3,
+    "revenue_yoy_pct": 26.3290494443,
+    "revenue_qoq_pct": -10.8921,
+    "net_profit": 18771516.62,
+    "net_profit_yoy_pct": -38.08,
+    "net_profit_qoq_pct": -59.9317,
+    "book_value_per_share": 9.266837920105,
+    "roe_pct": 1.16,
+    "operating_cashflow_per_share": -0.591358893788,
+    "gross_margin_pct": 13.9521350226,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

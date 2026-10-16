@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603326",
+  "name": "我乐家居",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e1f28003635fe2c16736",
+  "metrics": {
+    "eps": 0.1567,
+    "revenue": 562432182.4,
+    "revenue_yoy_pct": -15.9514618827,
+    "revenue_qoq_pct": 41.2809,
+    "net_profit": 50024684.43,
+    "net_profit_yoy_pct": -45.81,
+    "net_profit_qoq_pct": 355.2758,
+    "book_value_per_share": 3.614746334549,
+    "roe_pct": 4.1,
+    "operating_cashflow_per_share": -0.031660811732,
+    "gross_margin_pct": 46.4327404231,
+    "industry": "家居用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002261",
+  "name": "拓维信息",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-10T00:00:00+08:00",
+  "known_at": "2026-08-10T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "489fd770327d5a52404d",
+  "metrics": {
+    "eps": 0.0549,
+    "revenue": 1311528190.92,
+    "revenue_yoy_pct": 0.3922742764,
+    "revenue_qoq_pct": 20.9517,
+    "net_profit": 69222033.16,
+    "net_profit_yoy_pct": -12.16,
+    "net_profit_qoq_pct": -87.3615,
+    "book_value_per_share": 2.073183057098,
+    "roe_pct": 2.69,
+    "operating_cashflow_per_share": 0.059699305603,
+    "gross_margin_pct": 18.7210386387,
+    "industry": "软件开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "003816",
+  "name": "中国广核",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "04fe48dff4c443dbe03d",
+  "metrics": {
+    "eps": 0.121,
+    "revenue": 31483287275.73,
+    "revenue_yoy_pct": -2.7578083082,
+    "revenue_qoq_pct": -7.0809,
+    "net_profit": 6105080689.9,
+    "net_profit_yoy_pct": 2.66,
+    "net_profit_qoq_pct": 22.7535,
+    "book_value_per_share": 2.449128737026,
+    "roe_pct": 4.6,
+    "operating_cashflow_per_share": 0.264003949268,
+    "gross_margin_pct": 45.5425165845,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

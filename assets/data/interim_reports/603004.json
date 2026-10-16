@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603004",
+  "name": "鼎龙科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "668683fda5075533ef4d",
+  "metrics": {
+    "eps": 0.22,
+    "revenue": 341148953.79,
+    "revenue_yoy_pct": -2.7850726401,
+    "revenue_qoq_pct": -15.5548,
+    "net_profit": 51477401.18,
+    "net_profit_yoy_pct": -40.38,
+    "net_profit_qoq_pct": -20.7922,
+    "book_value_per_share": 8.913170946799,
+    "roe_pct": 2.45,
+    "operating_cashflow_per_share": 0.279876837551,
+    "gross_margin_pct": 33.7601106146,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

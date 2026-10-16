@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600661",
+  "name": "昂立教育",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1c07b2825bee316e3c0e",
+  "metrics": {
+    "eps": 0.1121,
+    "revenue": 685475781.83,
+    "revenue_yoy_pct": 8.4026253095,
+    "revenue_qoq_pct": 5.0345,
+    "net_profit": 31115668.43,
+    "net_profit_yoy_pct": 977.3,
+    "net_profit_qoq_pct": -73.5384,
+    "book_value_per_share": 0.925357306467,
+    "roe_pct": 12.48,
+    "operating_cashflow_per_share": 0.543854020064,
+    "gross_margin_pct": 45.0618047811,
+    "industry": "教育"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

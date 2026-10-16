@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600719",
+  "name": "大连热电",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-14T00:00:00+08:00",
+  "known_at": "2026-08-14T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "bae17fa3fe45b196fc90",
+  "metrics": {
+    "eps": 0.124,
+    "revenue": 380083145.53,
+    "revenue_yoy_pct": 0.1745434464,
+    "revenue_qoq_pct": -93.2541,
+    "net_profit": 50134957.18,
+    "net_profit_yoy_pct": 223.2145896832,
+    "net_profit_qoq_pct": -147.1448,
+    "book_value_per_share": 0.888005577267,
+    "roe_pct": 15.11,
+    "operating_cashflow_per_share": -0.449612362642,
+    "gross_margin_pct": 18.3813425382,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000552",
+  "name": "甘肃能化",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e4b92d5a47e44d5c2d87",
+  "metrics": {
+    "eps": 0.03,
+    "revenue": 4697622710.99,
+    "revenue_yoy_pct": 24.6795235213,
+    "revenue_qoq_pct": -11.7434,
+    "net_profit": 174112083.17,
+    "net_profit_yoy_pct": 190.69,
+    "net_profit_qoq_pct": 66.9122,
+    "book_value_per_share": 3.099061028714,
+    "roe_pct": 1.05,
+    "operating_cashflow_per_share": 0.017247372616,
+    "gross_margin_pct": 21.4676322111,
+    "industry": "煤炭开采"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

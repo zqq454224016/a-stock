@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603486",
+  "name": "科沃斯",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "2f342ea2e6f42c80e6a7",
+  "metrics": {
+    "eps": 2.19,
+    "revenue": 10340875119.43,
+    "revenue_yoy_pct": 19.1843934239,
+    "revenue_qoq_pct": 10.9415,
+    "net_profit": 1247851012.57,
+    "net_profit_yoy_pct": 27.4,
+    "net_profit_qoq_pct": 108.2831,
+    "book_value_per_share": 17.397010315066,
+    "roe_pct": 12.91,
+    "operating_cashflow_per_share": 0.356637173154,
+    "gross_margin_pct": 48.5058317512,
+    "industry": "小家电"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002224",
+  "name": "三力士",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6f9b63c5552aa1b8e976",
+  "metrics": {
+    "eps": -0.01,
+    "revenue": 529077663.91,
+    "revenue_yoy_pct": 20.0410654589,
+    "revenue_qoq_pct": 37.4849,
+    "net_profit": -11566742.09,
+    "net_profit_yoy_pct": -160.9,
+    "net_profit_qoq_pct": 113.0712,
+    "book_value_per_share": 3.556646199509,
+    "roe_pct": -0.36,
+    "operating_cashflow_per_share": 0.056866436551,
+    "gross_margin_pct": 12.4388518018,
+    "industry": "橡胶"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

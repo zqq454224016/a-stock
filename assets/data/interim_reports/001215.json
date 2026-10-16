@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001215",
+  "name": "千味央厨",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4b4353cb6d8312c23d20",
+  "metrics": {
+    "eps": 0.33,
+    "revenue": 1046810112.89,
+    "revenue_yoy_pct": 18.171758013,
+    "revenue_qoq_pct": -20.3084,
+    "net_profit": 31963513.42,
+    "net_profit_yoy_pct": -10.69,
+    "net_profit_qoq_pct": -58.5868,
+    "book_value_per_share": 19.221158755797,
+    "roe_pct": 1.73,
+    "operating_cashflow_per_share": 0.779998174669,
+    "gross_margin_pct": 23.7367963349,
+    "industry": "食品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

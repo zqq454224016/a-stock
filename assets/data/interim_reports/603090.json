@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603090",
+  "name": "宏盛股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ed79d647baa39b9c4a16",
+  "metrics": {
+    "eps": 0.3,
+    "revenue": 439104683.07,
+    "revenue_yoy_pct": 22.695769956,
+    "revenue_qoq_pct": 18.5134,
+    "net_profit": 30357260.3,
+    "net_profit_yoy_pct": -33.7,
+    "net_profit_qoq_pct": -23.8681,
+    "book_value_per_share": 6.3484669856,
+    "roe_pct": 4.67,
+    "operating_cashflow_per_share": 0.3656244399,
+    "gross_margin_pct": 25.6964880427,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

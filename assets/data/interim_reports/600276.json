@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600276",
+  "name": "恒瑞医药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f24f18d4cb618e6a42b9",
+  "metrics": {
+    "eps": 0.68,
+    "revenue": 15455583728.11,
+    "revenue_yoy_pct": -1.9390022608,
+    "revenue_qoq_pct": -10.1411,
+    "net_profit": 4465439428.1,
+    "net_profit_yoy_pct": 0.34,
+    "net_profit_qoq_pct": -4.342,
+    "book_value_per_share": 9.712895713484,
+    "roe_pct": 8.04,
+    "operating_cashflow_per_share": 0.299373818788,
+    "gross_margin_pct": 86.3263460861,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

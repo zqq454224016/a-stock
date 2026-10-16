@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002552",
+  "name": "宝鼎科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1821757465137bac5e7a",
+  "metrics": {
+    "eps": 0.35,
+    "revenue": 2157233421.49,
+    "revenue_yoy_pct": 54.6913718828,
+    "revenue_qoq_pct": 22.454,
+    "net_profit": 135971566.97,
+    "net_profit_yoy_pct": 518.63,
+    "net_profit_qoq_pct": 5.8726,
+    "book_value_per_share": 4.221867164174,
+    "roe_pct": 8.68,
+    "operating_cashflow_per_share": 0.179357842294,
+    "gross_margin_pct": 20.8248970879,
+    "industry": "元件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

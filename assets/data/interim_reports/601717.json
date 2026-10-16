@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601717",
+  "name": "中创智领",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "64b3dcdafb55b9165228",
+  "metrics": {
+    "eps": 0.918,
+    "revenue": 18772086728.6,
+    "revenue_yoy_pct": -6.052859814,
+    "revenue_qoq_pct": -3.2158,
+    "net_profit": 1603388532.86,
+    "net_profit_yoy_pct": -36.25,
+    "net_profit_qoq_pct": -20.2687,
+    "book_value_per_share": 13.267060278254,
+    "roe_pct": 7.02,
+    "operating_cashflow_per_share": 1.161696205527,
+    "gross_margin_pct": 19.8126519852,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605050",
+  "name": "福然德",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "45182831c721b9998b5c",
+  "metrics": {
+    "eps": 0.33,
+    "revenue": 5356931268.02,
+    "revenue_yoy_pct": 2.7209693528,
+    "revenue_qoq_pct": 10.6007,
+    "net_profit": 160199143.76,
+    "net_profit_yoy_pct": 4.46,
+    "net_profit_qoq_pct": -14.9196,
+    "book_value_per_share": 9.078988348237,
+    "roe_pct": 3.6,
+    "operating_cashflow_per_share": -1.9413115852,
+    "gross_margin_pct": 6.0691075981,
+    "industry": "物流"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

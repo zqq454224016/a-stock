@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002174",
+  "name": "游族网络",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b7e81d346d436b63061a",
+  "metrics": {
+    "eps": 0.26,
+    "revenue": 696371260.31,
+    "revenue_yoy_pct": 1.2099950474,
+    "revenue_qoq_pct": -3.3084,
+    "net_profit": 252680601.4,
+    "net_profit_yoy_pct": 403.8,
+    "net_profit_qoq_pct": 43.5435,
+    "book_value_per_share": 4.761815184561,
+    "roe_pct": 5.54,
+    "operating_cashflow_per_share": 0.007079176957,
+    "gross_margin_pct": 34.4429219815,
+    "industry": "游戏Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

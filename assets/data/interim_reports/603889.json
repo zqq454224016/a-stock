@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603889",
+  "name": "新澳股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "42c099e4e3cbe603e3d1",
+  "metrics": {
+    "eps": 0.34,
+    "revenue": 3086707911.48,
+    "revenue_yoy_pct": 20.8369039222,
+    "revenue_qoq_pct": 40.1622,
+    "net_profit": 325399369.73,
+    "net_profit_yoy_pct": 20.23,
+    "net_profit_qoq_pct": 71.0343,
+    "book_value_per_share": 3.958957602175,
+    "roe_pct": 8.53,
+    "operating_cashflow_per_share": -0.054355865563,
+    "gross_margin_pct": 21.1863569273,
+    "industry": "纺织制造"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

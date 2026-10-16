@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600770",
+  "name": "综艺股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-07T00:00:00+08:00",
+  "known_at": "2026-08-07T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "55d8377816ae055c462c",
+  "metrics": {
+    "eps": 0.0363,
+    "revenue": 330774380.98,
+    "revenue_yoy_pct": 55.1841570789,
+    "revenue_qoq_pct": 51.8165,
+    "net_profit": 47137370.4,
+    "net_profit_yoy_pct": 136.92,
+    "net_profit_qoq_pct": 111.9181,
+    "book_value_per_share": 2.6176544139,
+    "roe_pct": 1.38,
+    "operating_cashflow_per_share": 0.029608166892,
+    "gross_margin_pct": 23.4184703696,
+    "industry": "综合Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002402",
+  "name": "和而泰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-19T00:00:00+08:00",
+  "known_at": "2026-08-19T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "77de5e32021b173b39f8",
+  "metrics": {
+    "eps": 0.2593,
+    "revenue": 5680682732.38,
+    "revenue_yoy_pct": 4.3081508785,
+    "revenue_qoq_pct": 1.8237,
+    "net_profit": 239710070.78,
+    "net_profit_yoy_pct": -32.23,
+    "net_profit_qoq_pct": -58.9737,
+    "book_value_per_share": 7.840738765722,
+    "roe_pct": 3.41,
+    "operating_cashflow_per_share": 0.238833844356,
+    "gross_margin_pct": 19.6773279697,
+    "industry": "家电零部件Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

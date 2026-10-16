@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002031",
+  "name": "巨轮智能",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1305f99aea7b36086ba3",
+  "metrics": {
+    "eps": -0.0338,
+    "revenue": 239394463.61,
+    "revenue_yoy_pct": -41.8700227712,
+    "revenue_qoq_pct": 3.5438,
+    "net_profit": -74265232.85,
+    "net_profit_yoy_pct": -32.03,
+    "net_profit_qoq_pct": -7.1925,
+    "book_value_per_share": 0.864578684253,
+    "roe_pct": -3.82,
+    "operating_cashflow_per_share": -0.05385068738,
+    "gross_margin_pct": 8.6765452412,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

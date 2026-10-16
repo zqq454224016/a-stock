@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002355",
+  "name": "兴民智通",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-24T00:00:00+08:00",
+  "known_at": "2026-08-24T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a4b6ec61567a5dde527a",
+  "metrics": {
+    "eps": -0.3452,
+    "revenue": 497250363.08,
+    "revenue_yoy_pct": 8.3876642872,
+    "revenue_qoq_pct": 2.0637,
+    "net_profit": -214201446.67,
+    "net_profit_yoy_pct": -7.95,
+    "net_profit_qoq_pct": 71.9066,
+    "book_value_per_share": 1.196766052902,
+    "roe_pct": -24.39,
+    "operating_cashflow_per_share": -0.112952727916,
+    "gross_margin_pct": 13.2864845147,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

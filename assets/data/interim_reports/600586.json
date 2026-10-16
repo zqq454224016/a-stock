@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600586",
+  "name": "金晶科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c15e3133d3e1c9046844",
+  "metrics": {
+    "eps": -0.223,
+    "revenue": 1810995920.4,
+    "revenue_yoy_pct": -24.3536585763,
+    "revenue_qoq_pct": -1.8253,
+    "net_profit": -313453039.32,
+    "net_profit_yoy_pct": -225.6,
+    "net_profit_qoq_pct": -0.8138,
+    "book_value_per_share": 3.4225578831,
+    "roe_pct": -6.2,
+    "operating_cashflow_per_share": 0.125764037865,
+    "gross_margin_pct": -3.2446262047,
+    "industry": "玻璃玻纤"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600988",
+  "name": "赤峰黄金",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "09a6d88a34f9ed6fc07b",
+  "metrics": {
+    "eps": 0.92,
+    "revenue": 7017772302.52,
+    "revenue_yoy_pct": 33.1130924648,
+    "revenue_qoq_pct": -2.5565,
+    "net_profit": 1732292421.21,
+    "net_profit_yoy_pct": 56.5,
+    "net_profit_qoq_pct": -24.7098,
+    "book_value_per_share": 7.538300926464,
+    "roe_pct": 12.31,
+    "operating_cashflow_per_share": 0.989462320117,
+    "gross_margin_pct": 57.546091123,
+    "industry": "贵金属"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

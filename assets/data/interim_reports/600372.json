@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600372",
+  "name": "中航机载",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "24cc2b51931a9268e4f6",
+  "metrics": {
+    "eps": 0.126,
+    "revenue": 10969584392.82,
+    "revenue_yoy_pct": -1.8847352589,
+    "revenue_qoq_pct": 36.3048,
+    "net_profit": 606892273.96,
+    "net_profit_yoy_pct": -5.26,
+    "net_profit_qoq_pct": 137.0548,
+    "book_value_per_share": 7.884127898056,
+    "roe_pct": 1.58,
+    "operating_cashflow_per_share": -0.242007307443,
+    "gross_margin_pct": 25.9746284249,
+    "industry": "航空装备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

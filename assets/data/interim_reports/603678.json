@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603678",
+  "name": "火炬电子",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f3ae108984f3852c830b",
+  "metrics": {
+    "eps": 0.51,
+    "revenue": 3107272198.53,
+    "revenue_yoy_pct": 75.3564707272,
+    "revenue_qoq_pct": 30.1579,
+    "net_profit": 242502817.94,
+    "net_profit_yoy_pct": -7.18,
+    "net_profit_qoq_pct": 411.4178,
+    "book_value_per_share": 13.537895309858,
+    "roe_pct": 3.86,
+    "operating_cashflow_per_share": -0.476056123143,
+    "gross_margin_pct": 18.7438303614,
+    "industry": "军工电子Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

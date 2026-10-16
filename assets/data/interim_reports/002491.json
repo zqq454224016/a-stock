@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002491",
+  "name": "通鼎互联",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "db5ba00e64e7fb6175d8",
+  "metrics": {
+    "eps": 0.1647,
+    "revenue": 2457536233.34,
+    "revenue_yoy_pct": 61.4560293732,
+    "revenue_qoq_pct": 31.055,
+    "net_profit": 202537933.47,
+    "net_profit_yoy_pct": 326.04,
+    "net_profit_qoq_pct": 195.0107,
+    "book_value_per_share": 2.172370632161,
+    "roe_pct": 7.88,
+    "operating_cashflow_per_share": 0.116317122792,
+    "gross_margin_pct": 27.8234609241,
+    "industry": "通信设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

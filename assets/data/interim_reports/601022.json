@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601022",
+  "name": "宁波远洋",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6a660638ab8d8d84b194",
+  "metrics": {
+    "eps": 0.26,
+    "revenue": 3445056025.38,
+    "revenue_yoy_pct": 17.6643054421,
+    "revenue_qoq_pct": 19.4387,
+    "net_profit": 342625793.0,
+    "net_profit_yoy_pct": -9.28,
+    "net_profit_qoq_pct": 45.4359,
+    "book_value_per_share": 4.89034857155,
+    "roe_pct": 5.43,
+    "operating_cashflow_per_share": 0.727483951865,
+    "gross_margin_pct": 16.2394402532,
+    "industry": "航运港口"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

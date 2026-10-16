@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603283",
+  "name": "赛腾股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "34c99f59d8b976acf7c5",
+  "metrics": {
+    "eps": 0.51,
+    "revenue": 1530331919.97,
+    "revenue_yoy_pct": 11.4347646614,
+    "revenue_qoq_pct": -2.4787,
+    "net_profit": 181057739.4,
+    "net_profit_yoy_pct": 47.79,
+    "net_profit_qoq_pct": -1.1752,
+    "book_value_per_share": 9.926264379217,
+    "roe_pct": 5.12,
+    "operating_cashflow_per_share": 0.027238655875,
+    "gross_margin_pct": 45.2874396604,
+    "industry": "自动化设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

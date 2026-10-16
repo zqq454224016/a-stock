@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600018",
+  "name": "上港集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4bedcba82ac507463d35",
+  "metrics": {
+    "eps": 0.3663,
+    "revenue": 21428784311.86,
+    "revenue_yoy_pct": 9.502463829,
+    "revenue_qoq_pct": 8.3742,
+    "net_profit": 8519408311.61,
+    "net_profit_yoy_pct": 5.97,
+    "net_profit_qoq_pct": 12.5638,
+    "book_value_per_share": 6.298424544063,
+    "roe_pct": 5.8701,
+    "operating_cashflow_per_share": 0.298386536471,
+    "gross_margin_pct": 36.7342141684,
+    "industry": "航运港口"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000505",
+  "name": "京粮控股",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "46dd4d31a2451e47d4c2",
+  "metrics": {
+    "eps": 0.01,
+    "revenue": 3114926721.51,
+    "revenue_yoy_pct": -25.9786487418,
+    "revenue_qoq_pct": -16.8922,
+    "net_profit": 8032416.0,
+    "net_profit_yoy_pct": -55.25,
+    "net_profit_qoq_pct": -101.2972,
+    "book_value_per_share": 3.948720456347,
+    "roe_pct": 0.28,
+    "operating_cashflow_per_share": 0.536527439592,
+    "gross_margin_pct": 5.6170439883,
+    "industry": "农产品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

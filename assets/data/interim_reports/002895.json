@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002895",
+  "name": "川恒股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-19T00:00:00+08:00",
+  "known_at": "2026-08-19T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "19fc77aa04439cf23b4a",
+  "metrics": {
+    "eps": 0.9244,
+    "revenue": 4058128441.28,
+    "revenue_yoy_pct": 20.7627425244,
+    "revenue_qoq_pct": 22.5273,
+    "net_profit": 560109836.24,
+    "net_profit_yoy_pct": 4.5,
+    "net_profit_qoq_pct": 96.9665,
+    "book_value_per_share": 12.211328434743,
+    "roe_pct": 7.14,
+    "operating_cashflow_per_share": 0.271051292622,
+    "gross_margin_pct": 28.5288189914,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

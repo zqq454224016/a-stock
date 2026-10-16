@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601975",
+  "name": "招商南油",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6487951cb44d07cf6d68",
+  "metrics": {
+    "eps": 0.1735,
+    "revenue": 3308541016.76,
+    "revenue_yoy_pct": 19.3666964857,
+    "revenue_qoq_pct": 10.9394,
+    "net_profit": 812039839.16,
+    "net_profit_yoy_pct": 42.41,
+    "net_profit_qoq_pct": -11.9672,
+    "book_value_per_share": 2.604738549702,
+    "roe_pct": 6.78,
+    "operating_cashflow_per_share": 0.201297944536,
+    "gross_margin_pct": 29.8499121225,
+    "industry": "航运港口"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

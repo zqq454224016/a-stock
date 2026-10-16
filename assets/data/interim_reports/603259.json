@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603259",
+  "name": "药明康德",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-04T00:00:00+08:00",
+  "known_at": "2026-08-04T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "08f564678749bf537aeb",
+  "metrics": {
+    "eps": 3.8,
+    "revenue": 28897478718.36,
+    "revenue_yoy_pct": 38.9349828598,
+    "revenue_qoq_pct": 32.3737,
+    "net_profit": 11080173661.42,
+    "net_profit_yoy_pct": 29.43,
+    "net_profit_qoq_pct": 38.2055,
+    "book_value_per_share": 27.929121857355,
+    "roe_pct": 13.19,
+    "operating_cashflow_per_share": 3.250647383225,
+    "gross_margin_pct": 53.9094753581,
+    "industry": "医疗服务"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

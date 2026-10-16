@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600903",
+  "name": "贵州燃气",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d0eb7ce8275665ebcf04",
+  "metrics": {
+    "eps": 0.06,
+    "revenue": 3275706913.29,
+    "revenue_yoy_pct": -10.7028013622,
+    "revenue_qoq_pct": -34.4267,
+    "net_profit": 65824613.45,
+    "net_profit_yoy_pct": -30.58,
+    "net_profit_qoq_pct": -135.0716,
+    "book_value_per_share": 2.674745056496,
+    "roe_pct": 2.08,
+    "operating_cashflow_per_share": 0.569050004325,
+    "gross_margin_pct": 15.6659191654,
+    "industry": "燃气Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

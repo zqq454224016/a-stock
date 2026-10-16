@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000901",
+  "name": "航天科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "dc104b7e4c22a1fcc687",
+  "metrics": {
+    "eps": 0.0439,
+    "revenue": 2256984302.41,
+    "revenue_yoy_pct": -23.5095911113,
+    "revenue_qoq_pct": 8.1037,
+    "net_profit": 35060370.54,
+    "net_profit_yoy_pct": -60.59,
+    "net_profit_qoq_pct": 33.2811,
+    "book_value_per_share": 5.297770653351,
+    "roe_pct": 0.82,
+    "operating_cashflow_per_share": -0.076598477653,
+    "gross_margin_pct": 22.2258871395,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

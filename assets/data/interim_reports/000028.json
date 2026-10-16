@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000028",
+  "name": "国药一致",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8b4d92fdcefbeadea97b",
+  "metrics": {
+    "eps": 0.99,
+    "revenue": 36266356011.93,
+    "revenue_yoy_pct": -1.441009247,
+    "revenue_qoq_pct": 3.476,
+    "net_profit": 606203553.4,
+    "net_profit_yoy_pct": -8.97,
+    "net_profit_qoq_pct": 10.8809,
+    "book_value_per_share": 30.827601434026,
+    "roe_pct": 3.21,
+    "operating_cashflow_per_share": -2.480669571166,
+    "gross_margin_pct": 10.0434541218,
+    "industry": "医药商业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

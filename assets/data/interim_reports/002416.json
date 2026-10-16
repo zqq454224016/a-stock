@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002416",
+  "name": "爱施德",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7808e110f84948793fbe",
+  "metrics": {
+    "eps": 0.0375,
+    "revenue": 30754561793.22,
+    "revenue_yoy_pct": 21.2226513627,
+    "revenue_qoq_pct": -1.2595,
+    "net_profit": 46462486.28,
+    "net_profit_yoy_pct": -79.03,
+    "net_profit_qoq_pct": -163.688,
+    "book_value_per_share": 4.259127882121,
+    "roe_pct": 0.8,
+    "operating_cashflow_per_share": -1.492665700532,
+    "gross_margin_pct": 5.3112996671,
+    "industry": "专业连锁Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

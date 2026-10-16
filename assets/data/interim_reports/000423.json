@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000423",
+  "name": "东阿阿胶",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "98b83ad89e5d7ee0532d",
+  "metrics": {
+    "eps": 1.34,
+    "revenue": 3155143496.5,
+    "revenue_yoy_pct": 3.3936375551,
+    "revenue_qoq_pct": -26.0886,
+    "net_profit": 860377588.81,
+    "net_profit_yoy_pct": 5.66,
+    "net_profit_qoq_pct": -10.8264,
+    "book_value_per_share": 15.877009486054,
+    "roe_pct": 8.12,
+    "operating_cashflow_per_share": 0.127483336944,
+    "gross_margin_pct": 74.8225662617,
+    "industry": "中药Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

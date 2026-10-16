@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002860",
+  "name": "星帅尔",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "300ddddd454d8c58ce40",
+  "metrics": {
+    "eps": 0.28,
+    "revenue": 1094029547.61,
+    "revenue_yoy_pct": -3.3883313773,
+    "revenue_qoq_pct": 15.0352,
+    "net_profit": 100266597.47,
+    "net_profit_yoy_pct": -17.6,
+    "net_profit_qoq_pct": -24.6337,
+    "book_value_per_share": 6.690808516083,
+    "roe_pct": 4.3,
+    "operating_cashflow_per_share": 0.373794883613,
+    "gross_margin_pct": 17.2740232915,
+    "industry": "家电零部件Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

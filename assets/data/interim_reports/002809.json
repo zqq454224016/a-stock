@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002809",
+  "name": "红墙股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "cb1c5974a97b6d7f9bd6",
+  "metrics": {
+    "eps": -0.06,
+    "revenue": 363968194.98,
+    "revenue_yoy_pct": 12.9545373166,
+    "revenue_qoq_pct": 9.9402,
+    "net_profit": -14501148.16,
+    "net_profit_yoy_pct": -300.81,
+    "net_profit_qoq_pct": 70.395,
+    "book_value_per_share": 7.538678082917,
+    "roe_pct": -0.85,
+    "operating_cashflow_per_share": 0.100804783187,
+    "gross_margin_pct": 16.910680463,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

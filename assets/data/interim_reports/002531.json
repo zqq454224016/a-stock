@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002531",
+  "name": "天顺风能",
+  "report_period": "2026-06-30",
+  "published_at": "2026-09-15T00:00:00+08:00",
+  "known_at": "2026-09-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "dd0c1328fbadf3ed1aa0",
+  "metrics": {
+    "eps": 0.0646,
+    "revenue": 2019555741.16,
+    "revenue_yoy_pct": -7.7587807875,
+    "revenue_qoq_pct": 107.1568,
+    "net_profit": 116027178.49,
+    "net_profit_yoy_pct": 115.57,
+    "net_profit_qoq_pct": 80.2283,
+    "book_value_per_share": 4.899036085268,
+    "roe_pct": 1.34,
+    "operating_cashflow_per_share": -0.194448079994,
+    "gross_margin_pct": 20.8330757481,
+    "industry": "风电设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

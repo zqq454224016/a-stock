@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002576",
+  "name": "通达动力",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-14T00:00:00+08:00",
+  "known_at": "2026-08-14T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5f3fbd0053c727ced791",
+  "metrics": {
+    "eps": 0.25,
+    "revenue": 888684010.96,
+    "revenue_yoy_pct": -8.4824346944,
+    "revenue_qoq_pct": -5.4039,
+    "net_profit": 41830410.96,
+    "net_profit_yoy_pct": -1.9,
+    "net_profit_qoq_pct": -9.1436,
+    "book_value_per_share": 7.905451373773,
+    "roe_pct": 3.18,
+    "operating_cashflow_per_share": 0.50840097123,
+    "gross_margin_pct": 14.5437560276,
+    "industry": "电机Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002218",
+  "name": "拓日新能",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6308f11a129340a8d6a3",
+  "metrics": {
+    "eps": -0.041,
+    "revenue": 473381823.2,
+    "revenue_yoy_pct": -6.9107089067,
+    "revenue_qoq_pct": 5.0953,
+    "net_profit": -57880839.95,
+    "net_profit_yoy_pct": 3.86,
+    "net_profit_qoq_pct": 56.386,
+    "book_value_per_share": 2.77901690773,
+    "roe_pct": -1.47,
+    "operating_cashflow_per_share": 0.090663836122,
+    "gross_margin_pct": 15.7892656809,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

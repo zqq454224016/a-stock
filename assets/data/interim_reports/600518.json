@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600518",
+  "name": "康美药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "47816d080cb6b5238a1d",
+  "metrics": {
+    "eps": 0.003,
+    "revenue": 2290489817.26,
+    "revenue_yoy_pct": -11.1316676928,
+    "revenue_qoq_pct": 12.1243,
+    "net_profit": 36034782.6,
+    "net_profit_yoy_pct": 113.21,
+    "net_profit_qoq_pct": 417.5503,
+    "book_value_per_share": 0.529737621232,
+    "roe_pct": 0.49,
+    "operating_cashflow_per_share": 0.002607065793,
+    "gross_margin_pct": 21.3007076789,
+    "industry": "中药Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000930",
+  "name": "中粮科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "02405b9c8c9222e69a13",
+  "metrics": {
+    "eps": -0.0912,
+    "revenue": 8194212671.23,
+    "revenue_yoy_pct": -7.013559323,
+    "revenue_qoq_pct": 11.2407,
+    "net_profit": -169290786.91,
+    "net_profit_yoy_pct": -257.85,
+    "net_profit_qoq_pct": 60.5997,
+    "book_value_per_share": 5.554883540626,
+    "roe_pct": -1.62,
+    "operating_cashflow_per_share": -0.471582734501,
+    "gross_margin_pct": 4.9970486066,
+    "industry": "农产品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

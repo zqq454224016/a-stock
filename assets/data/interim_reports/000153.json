@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000153",
+  "name": "丰原药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "77cdfe56c991467784cd",
+  "metrics": {
+    "eps": 0.1534,
+    "revenue": 1671360364.24,
+    "revenue_yoy_pct": -17.550978051,
+    "revenue_qoq_pct": -0.058,
+    "net_profit": 71286563.34,
+    "net_profit_yoy_pct": -6.54,
+    "net_profit_qoq_pct": -7.3688,
+    "book_value_per_share": 4.654693630179,
+    "roe_pct": 3.3,
+    "operating_cashflow_per_share": 0.180062243385,
+    "gross_margin_pct": 22.3782210696,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

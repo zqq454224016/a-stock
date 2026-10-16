@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "003031",
+  "name": "中瓷电子",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "93f101a49700d35e215a",
+  "metrics": {
+    "eps": 0.89,
+    "revenue": 2210800974.23,
+    "revenue_yoy_pct": 54.762730201,
+    "revenue_qoq_pct": 1.1569,
+    "net_profit": 402734141.25,
+    "net_profit_yoy_pct": 41.22,
+    "net_profit_qoq_pct": 8.343,
+    "book_value_per_share": 14.119890190498,
+    "roe_pct": 6.02,
+    "operating_cashflow_per_share": 0.960025399795,
+    "gross_margin_pct": 32.0661051733,
+    "industry": "通信设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

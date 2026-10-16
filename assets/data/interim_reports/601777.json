@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601777",
+  "name": "千里科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ccc43376d95a70c739b9",
+  "metrics": {
+    "eps": 0.0173,
+    "revenue": 5119574399.69,
+    "revenue_yoy_pct": 22.3596303447,
+    "revenue_qoq_pct": 16.8397,
+    "net_profit": 78318026.34,
+    "net_profit_yoy_pct": 151.25,
+    "net_profit_qoq_pct": -38.0862,
+    "book_value_per_share": 2.284092108783,
+    "roe_pct": 0.76,
+    "operating_cashflow_per_share": 0.168729532333,
+    "gross_margin_pct": 26.3645318367,
+    "industry": "摩托车及其他"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

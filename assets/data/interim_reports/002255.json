@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002255",
+  "name": "海陆重工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "43c12ffcb45d511aeda6",
+  "metrics": {
+    "eps": 0.1938,
+    "revenue": 1050885794.48,
+    "revenue_yoy_pct": 1.8469809741,
+    "revenue_qoq_pct": 10.8065,
+    "net_profit": 161032172.22,
+    "net_profit_yoy_pct": -15.87,
+    "net_profit_qoq_pct": -44.3991,
+    "book_value_per_share": 5.584998863357,
+    "roe_pct": 3.62,
+    "operating_cashflow_per_share": 0.204376622271,
+    "gross_margin_pct": 31.2752941487,
+    "industry": "其他电源设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

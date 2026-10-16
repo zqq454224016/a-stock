@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002947",
+  "name": "恒铭达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-24T00:00:00+08:00",
+  "known_at": "2026-08-24T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "148fd69f53e85a2c65ef",
+  "metrics": {
+    "eps": 0.99,
+    "revenue": 1376587517.15,
+    "revenue_yoy_pct": 10.6180054055,
+    "revenue_qoq_pct": -7.1789,
+    "net_profit": 253566625.72,
+    "net_profit_yoy_pct": 8.21,
+    "net_profit_qoq_pct": -32.5031,
+    "book_value_per_share": 12.655561937954,
+    "roe_pct": 7.94,
+    "operating_cashflow_per_share": 1.853911777594,
+    "gross_margin_pct": 35.1928419715,
+    "industry": "消费电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

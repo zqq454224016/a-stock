@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603997",
+  "name": "继峰股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c952ece2a533b469ab16",
+  "metrics": {
+    "eps": 0.29,
+    "revenue": 13077685438.39,
+    "revenue_yoy_pct": 24.2759603967,
+    "revenue_qoq_pct": 9.5182,
+    "net_profit": 365044111.29,
+    "net_profit_yoy_pct": 137.26,
+    "net_profit_qoq_pct": 77.3209,
+    "book_value_per_share": 4.322491794185,
+    "roe_pct": 6.7,
+    "operating_cashflow_per_share": 0.191127773792,
+    "gross_margin_pct": 15.583228042,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

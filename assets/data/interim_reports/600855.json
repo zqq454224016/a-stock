@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600855",
+  "name": "航天长峰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0ad7a27d42f9ba1f609b",
+  "metrics": {
+    "eps": -0.1114,
+    "revenue": 256645228.72,
+    "revenue_yoy_pct": -28.2750875576,
+    "revenue_qoq_pct": 130.0207,
+    "net_profit": -52189391.3,
+    "net_profit_yoy_pct": 6.1189280931,
+    "net_profit_qoq_pct": 59.9614,
+    "book_value_per_share": 2.950805598545,
+    "roe_pct": -3.7,
+    "operating_cashflow_per_share": -0.268194190307,
+    "gross_margin_pct": 24.7665664961,
+    "industry": "军工电子Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

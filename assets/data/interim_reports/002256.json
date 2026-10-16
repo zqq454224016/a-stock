@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002256",
+  "name": "兆新股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "107aafcb39e56f963e90",
+  "metrics": {
+    "eps": 0.0,
+    "revenue": 209355623.74,
+    "revenue_yoy_pct": 0.551773677,
+    "revenue_qoq_pct": 45.5146,
+    "net_profit": 3684910.27,
+    "net_profit_yoy_pct": 19.93,
+    "net_profit_qoq_pct": -165.6317,
+    "book_value_per_share": 0.667231197332,
+    "roe_pct": 0.3,
+    "operating_cashflow_per_share": -0.020012806001,
+    "gross_margin_pct": 28.1682902883,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

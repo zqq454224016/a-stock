@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001359",
+  "name": "平安电工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-31T00:00:00+08:00",
+  "known_at": "2026-07-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a11f48c921bd9ebed881",
+  "metrics": {
+    "eps": 0.5163,
+    "revenue": 686042802.81,
+    "revenue_yoy_pct": 20.2685401488,
+    "revenue_qoq_pct": 19.2396,
+    "net_profit": 124518738.07,
+    "net_profit_yoy_pct": -7.81,
+    "net_profit_qoq_pct": 25.343,
+    "book_value_per_share": 8.559849786266,
+    "roe_pct": 6.04,
+    "operating_cashflow_per_share": 0.534461203552,
+    "gross_margin_pct": 35.1895083049,
+    "industry": "塑料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

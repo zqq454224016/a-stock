@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603070",
+  "name": "万控智造",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "debc91d82f8964475d56",
+  "metrics": {
+    "eps": -0.05,
+    "revenue": 810932381.42,
+    "revenue_yoy_pct": -12.6042737349,
+    "revenue_qoq_pct": 30.8589,
+    "net_profit": -18735096.49,
+    "net_profit_yoy_pct": -142.26,
+    "net_profit_qoq_pct": 101.9586,
+    "book_value_per_share": 5.313899064115,
+    "roe_pct": -0.86,
+    "operating_cashflow_per_share": -0.037622836185,
+    "gross_margin_pct": 15.9796506415,
+    "industry": "电网设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

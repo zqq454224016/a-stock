@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601890",
+  "name": "亚星锚链",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8b983f737e49670ecfc4",
+  "metrics": {
+    "eps": 0.1592,
+    "revenue": 1113325698.69,
+    "revenue_yoy_pct": 12.2960559867,
+    "revenue_qoq_pct": 3.6693,
+    "net_profit": 152773219.9,
+    "net_profit_yoy_pct": 33.37,
+    "net_profit_qoq_pct": -18.9692,
+    "book_value_per_share": 4.069433383542,
+    "roe_pct": 3.93,
+    "operating_cashflow_per_share": -0.30232062488,
+    "gross_margin_pct": 27.0973636183,
+    "industry": "航海装备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

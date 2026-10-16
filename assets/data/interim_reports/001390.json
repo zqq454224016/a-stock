@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001390",
+  "name": "古麒绒材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b590cd0595eff7574252",
+  "metrics": {
+    "eps": 0.4649,
+    "revenue": 564188322.63,
+    "revenue_yoy_pct": 5.0726754364,
+    "revenue_qoq_pct": 46.0968,
+    "net_profit": 92978395.62,
+    "net_profit_yoy_pct": -5.51,
+    "net_profit_qoq_pct": 32.6032,
+    "book_value_per_share": 8.3803226977,
+    "roe_pct": 5.58,
+    "operating_cashflow_per_share": 0.53831730375,
+    "gross_margin_pct": 22.6211148212,
+    "industry": "纺织制造"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

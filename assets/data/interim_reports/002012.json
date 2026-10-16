@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002012",
+  "name": "凯恩股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a2b214b43338b7eac9dd",
+  "metrics": {
+    "eps": 0.03,
+    "revenue": 309922064.52,
+    "revenue_yoy_pct": 12.6005543983,
+    "revenue_qoq_pct": 1.2561,
+    "net_profit": 11924765.69,
+    "net_profit_yoy_pct": 5.71,
+    "net_profit_qoq_pct": 89.9461,
+    "book_value_per_share": 3.333567688261,
+    "roe_pct": 0.77,
+    "operating_cashflow_per_share": -0.096725199143,
+    "gross_margin_pct": 17.6401692905,
+    "industry": "造纸"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

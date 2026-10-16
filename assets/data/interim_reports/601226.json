@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601226",
+  "name": "华电科工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "83569420754d30210a1b",
+  "metrics": {
+    "eps": 0.0657,
+    "revenue": 4573075251.81,
+    "revenue_yoy_pct": 18.5447178532,
+    "revenue_qoq_pct": 81.5717,
+    "net_profit": 76394892.1,
+    "net_profit_yoy_pct": 41.23,
+    "net_profit_qoq_pct": 346.3234,
+    "book_value_per_share": 3.804533352004,
+    "roe_pct": 1.74,
+    "operating_cashflow_per_share": -0.316143347851,
+    "gross_margin_pct": 10.9384889886,
+    "industry": "专业工程"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601007",
+  "name": "金陵饭店",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b6a795f37152a1d26e0e",
+  "metrics": {
+    "eps": 0.069,
+    "revenue": 810679219.55,
+    "revenue_yoy_pct": -4.7286299584,
+    "revenue_qoq_pct": -3.5795,
+    "net_profit": 26767524.98,
+    "net_profit_yoy_pct": 15.12,
+    "net_profit_qoq_pct": 121.418,
+    "book_value_per_share": 4.055140646846,
+    "roe_pct": 1.68,
+    "operating_cashflow_per_share": 0.357924213436,
+    "gross_margin_pct": 23.2113942756,
+    "industry": "酒店餐饮"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

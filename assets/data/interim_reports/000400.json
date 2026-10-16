@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000400",
+  "name": "许继电气",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "83e2a96e3a1bc51d26f6",
+  "metrics": {
+    "eps": 0.4096,
+    "revenue": 6525206200.08,
+    "revenue_yoy_pct": 1.2099981405,
+    "revenue_qoq_pct": 74.4276,
+    "net_profit": 415877522.54,
+    "net_profit_yoy_pct": -34.4,
+    "net_profit_qoq_pct": 174.5085,
+    "book_value_per_share": 12.136703481557,
+    "roe_pct": 3.4,
+    "operating_cashflow_per_share": -0.305170636146,
+    "gross_margin_pct": 19.8958216746,
+    "industry": "电网设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

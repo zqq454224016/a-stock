@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603707",
+  "name": "健友股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0c16bf6442a9b7f8618c",
+  "metrics": {
+    "eps": 0.12,
+    "revenue": 1926260932.67,
+    "revenue_yoy_pct": -2.7065008704,
+    "revenue_qoq_pct": 7.4227,
+    "net_profit": 187550698.73,
+    "net_profit_yoy_pct": -34.48,
+    "net_profit_qoq_pct": 10.7029,
+    "book_value_per_share": 4.295313633986,
+    "roe_pct": 2.69,
+    "operating_cashflow_per_share": 0.454233524818,
+    "gross_margin_pct": 33.5877645887,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

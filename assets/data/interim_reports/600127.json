@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600127",
+  "name": "金健米业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "487c719eb50e20cce7fd",
+  "metrics": {
+    "eps": -0.0149,
+    "revenue": 1969947120.5,
+    "revenue_yoy_pct": 25.1895246544,
+    "revenue_qoq_pct": 42.2976,
+    "net_profit": -9579087.68,
+    "net_profit_yoy_pct": -182.13,
+    "net_profit_qoq_pct": -5672.9954,
+    "book_value_per_share": 1.030895686384,
+    "roe_pct": -1.44,
+    "operating_cashflow_per_share": 0.058879252542,
+    "gross_margin_pct": 5.9528210047,
+    "industry": "农产品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

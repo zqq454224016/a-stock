@@ -1,0 +1,19 @@
+{
+  "dataset": "financial.interim_report",
+  "schema_version": "2.0.0",
+  "period": "2026-06-30",
+  "as_of": "2026-10-16",
+  "source": "eastmoney_public_via_akshare",
+  "universe_scope": "ordinary_a_share_main_boards_v1",
+  "status": "partial",
+  "count": 3198,
+  "version_count": 3198,
+  "quarantined_future_count": 0,
+  "history_artifact": "point_in_time_financials/periods/20260630.json.gz",
+  "source_errors": {},
+  "limitations": [
+    "公开季度摘要主干",
+    "最终候选完整三表需另行补充并以巨潮公告核验"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

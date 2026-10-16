@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600230",
+  "name": "沧州大化",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b662b6f61e997587b6d4",
+  "metrics": {
+    "eps": 0.2433,
+    "revenue": 2152615667.91,
+    "revenue_yoy_pct": -4.1052202347,
+    "revenue_qoq_pct": 5.2877,
+    "net_profit": 100737314.05,
+    "net_profit_yoy_pct": 330.75,
+    "net_profit_qoq_pct": -25.7929,
+    "book_value_per_share": 9.926681254031,
+    "roe_pct": 2.4527,
+    "operating_cashflow_per_share": 0.812920733997,
+    "gross_margin_pct": 14.2333749864,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

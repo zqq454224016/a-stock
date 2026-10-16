@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002236",
+  "name": "大华股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7a4740a271e549014f7f",
+  "metrics": {
+    "eps": 0.73,
+    "revenue": 16703694265.38,
+    "revenue_yoy_pct": 10.027874035,
+    "revenue_qoq_pct": 42.0002,
+    "net_profit": 2382974277.66,
+    "net_profit_yoy_pct": -3.74,
+    "net_profit_qoq_pct": 141.5079,
+    "book_value_per_share": 11.959105403371,
+    "roe_pct": 6.15,
+    "operating_cashflow_per_share": -0.338690676727,
+    "gross_margin_pct": 43.0578199109,
+    "industry": "计算机设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603656",
+  "name": "泰禾智能",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "35e1a4a75a91566b6b1d",
+  "metrics": {
+    "eps": 0.08,
+    "revenue": 309253765.81,
+    "revenue_yoy_pct": 24.0955947585,
+    "revenue_qoq_pct": 29.4367,
+    "net_profit": 15202281.11,
+    "net_profit_yoy_pct": 43.73,
+    "net_profit_qoq_pct": 70.8802,
+    "book_value_per_share": 7.260513357109,
+    "roe_pct": 1.15,
+    "operating_cashflow_per_share": 0.291260784491,
+    "gross_margin_pct": 41.292581177,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

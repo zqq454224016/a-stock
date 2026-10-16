@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600926",
+  "name": "杭州银行",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a2e28c31bbee9b08e159",
+  "metrics": {
+    "eps": 1.7,
+    "revenue": 21047502000.0,
+    "revenue_yoy_pct": 4.7493361936,
+    "revenue_qoq_pct": 2.2716,
+    "net_profit": 12813493000.0,
+    "net_profit_yoy_pct": 9.87,
+    "net_profit_qoq_pct": -6.7024,
+    "book_value_per_share": 19.839021862731,
+    "roe_pct": 8.87,
+    "operating_cashflow_per_share": -4.767298896138,
+    "gross_margin_pct": null,
+    "industry": "银行Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

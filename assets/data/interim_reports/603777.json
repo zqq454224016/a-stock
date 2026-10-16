@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603777",
+  "name": "来伊份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8463160e162c817c3d12",
+  "metrics": {
+    "eps": -0.28,
+    "revenue": 1811703842.42,
+    "revenue_yoy_pct": -6.5992844273,
+    "revenue_qoq_pct": -25.1976,
+    "net_profit": -92130476.98,
+    "net_profit_yoy_pct": -81.77,
+    "net_profit_qoq_pct": -456.2301,
+    "book_value_per_share": 4.432722677912,
+    "roe_pct": -6.04,
+    "operating_cashflow_per_share": -0.248140584105,
+    "gross_margin_pct": 23.6609954857,
+    "industry": "休闲食品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

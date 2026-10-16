@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000798",
+  "name": "中水渔业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ffb3a7c3f055da74f77b",
+  "metrics": {
+    "eps": 0.2798,
+    "revenue": 2077972329.91,
+    "revenue_yoy_pct": 18.916748203,
+    "revenue_qoq_pct": 47.4664,
+    "net_profit": 102364433.97,
+    "net_profit_yoy_pct": 18.6,
+    "net_profit_qoq_pct": 591.3796,
+    "book_value_per_share": 1.491884611812,
+    "roe_pct": 20.91,
+    "operating_cashflow_per_share": -0.047765688849,
+    "gross_margin_pct": 5.4851608922,
+    "industry": "渔业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

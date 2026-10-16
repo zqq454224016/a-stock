@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603023",
+  "name": "威帝股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-19T00:00:00+08:00",
+  "known_at": "2026-08-19T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9d99b9a334d3dac79666",
+  "metrics": {
+    "eps": -0.014,
+    "revenue": 67852231.73,
+    "revenue_yoy_pct": -8.2507933099,
+    "revenue_qoq_pct": 16.9337,
+    "net_profit": -7664601.5,
+    "net_profit_yoy_pct": -1488.3,
+    "net_profit_qoq_pct": -42.7037,
+    "book_value_per_share": 1.371693414769,
+    "roe_pct": -0.996,
+    "operating_cashflow_per_share": -0.01102004912,
+    "gross_margin_pct": 10.869219526,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

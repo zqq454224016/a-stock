@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002091",
+  "name": "江苏国泰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4ce4d3a2fd2891b47022",
+  "metrics": {
+    "eps": 0.29,
+    "revenue": 19827758959.59,
+    "revenue_yoy_pct": 6.4574081664,
+    "revenue_qoq_pct": 5.1451,
+    "net_profit": 468814195.5,
+    "net_profit_yoy_pct": -13.93,
+    "net_profit_qoq_pct": 21.3182,
+    "book_value_per_share": 9.628256824584,
+    "roe_pct": 2.85,
+    "operating_cashflow_per_share": -0.161499703598,
+    "gross_margin_pct": 14.3821420317,
+    "industry": "贸易Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

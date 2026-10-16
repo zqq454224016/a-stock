@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600210",
+  "name": "紫江企业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0fd28a67fd240454b8ad",
+  "metrics": {
+    "eps": 0.359,
+    "revenue": 4838493216.91,
+    "revenue_yoy_pct": -7.8044864814,
+    "revenue_qoq_pct": 9.0121,
+    "net_profit": 544174572.02,
+    "net_profit_yoy_pct": 15.1,
+    "net_profit_qoq_pct": 49.1827,
+    "book_value_per_share": 4.420743773401,
+    "roe_pct": 7.82,
+    "operating_cashflow_per_share": -0.103369835309,
+    "gross_margin_pct": 24.6211244802,
+    "industry": "包装印刷"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

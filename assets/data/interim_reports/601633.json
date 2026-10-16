@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601633",
+  "name": "长城汽车",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4fd6cc767f7e4b05c73f",
+  "metrics": {
+    "eps": 0.29,
+    "revenue": 102101430542.57,
+    "revenue_yoy_pct": 10.58,
+    "revenue_qoq_pct": 26.3421,
+    "net_profit": 2464509236.1,
+    "net_profit_yoy_pct": -61.11,
+    "net_profit_qoq_pct": 60.6682,
+    "book_value_per_share": 10.178081082893,
+    "roe_pct": 2.76,
+    "operating_cashflow_per_share": 1.220109113128,
+    "gross_margin_pct": 18.3731738713,
+    "industry": "乘用车"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

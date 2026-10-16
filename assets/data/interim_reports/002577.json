@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002577",
+  "name": "雷柏科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-04T00:00:00+08:00",
+  "known_at": "2026-08-04T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5ba1edf77650b4f4e4e0",
+  "metrics": {
+    "eps": 0.05,
+    "revenue": 229339229.66,
+    "revenue_yoy_pct": 10.0819445774,
+    "revenue_qoq_pct": 13.2286,
+    "net_profit": 14915609.47,
+    "net_profit_yoy_pct": -2.52,
+    "net_profit_qoq_pct": 110.4397,
+    "book_value_per_share": 4.179551028544,
+    "roe_pct": 1.28,
+    "operating_cashflow_per_share": -0.007454621608,
+    "gross_margin_pct": 29.2603350894,
+    "industry": "计算机设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

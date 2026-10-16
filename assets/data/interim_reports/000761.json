@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000761",
+  "name": "本钢板材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e286c0010c665d120cd5",
+  "metrics": {
+    "eps": -0.464,
+    "revenue": 22335640944.4,
+    "revenue_yoy_pct": -9.5642504078,
+    "revenue_qoq_pct": 15.218,
+    "net_profit": -1907548241.52,
+    "net_profit_yoy_pct": -36.32,
+    "net_profit_qoq_pct": 21.9195,
+    "book_value_per_share": 1.240394102347,
+    "roe_pct": -27.29,
+    "operating_cashflow_per_share": 0.171982681291,
+    "gross_margin_pct": -4.8418876599,
+    "industry": "普钢"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

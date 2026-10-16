@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002414",
+  "name": "高德红外",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b11001474d7047c7998b",
+  "metrics": {
+    "eps": 0.3164,
+    "revenue": 4215505171.94,
+    "revenue_yoy_pct": 117.935374307,
+    "revenue_qoq_pct": 138.3385,
+    "net_profit": 1351196450.09,
+    "net_profit_yoy_pct": 646.81,
+    "net_profit_qoq_pct": 169.2787,
+    "book_value_per_share": 1.965989699889,
+    "roe_pct": 17.51,
+    "operating_cashflow_per_share": -0.015806113296,
+    "gross_margin_pct": 52.0900251426,
+    "industry": "军工电子Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

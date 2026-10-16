@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603897",
+  "name": "长城科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-12T00:00:00+08:00",
+  "known_at": "2026-08-12T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a65e9219c488c14c793a",
+  "metrics": {
+    "eps": 0.69,
+    "revenue": 7581575665.65,
+    "revenue_yoy_pct": 20.6780488467,
+    "revenue_qoq_pct": 11.5549,
+    "net_profit": 141752104.93,
+    "net_profit_yoy_pct": 3.25,
+    "net_profit_qoq_pct": 117.776,
+    "book_value_per_share": 11.513152525992,
+    "roe_pct": 5.64,
+    "operating_cashflow_per_share": 0.020947467507,
+    "gross_margin_pct": 4.3161994254,
+    "industry": "电网设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

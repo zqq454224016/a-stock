@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600621",
+  "name": "华鑫股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ce61ba8be3aa806743bb",
+  "metrics": {
+    "eps": 0.38,
+    "revenue": 1428621109.68,
+    "revenue_yoy_pct": 22.1016572119,
+    "revenue_qoq_pct": 26.9323,
+    "net_profit": 402260806.85,
+    "net_profit_yoy_pct": 79.47,
+    "net_profit_qoq_pct": 59.0678,
+    "book_value_per_share": 8.614903997636,
+    "roe_pct": 4.35,
+    "operating_cashflow_per_share": 4.683969640966,
+    "gross_margin_pct": null,
+    "industry": "证券Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

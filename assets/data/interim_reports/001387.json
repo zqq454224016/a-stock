@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001387",
+  "name": "雪祺电气",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6be85e75dcc97989ac9f",
+  "metrics": {
+    "eps": 0.0603,
+    "revenue": 1262931321.91,
+    "revenue_yoy_pct": 40.8618998281,
+    "revenue_qoq_pct": -9.349,
+    "net_profit": 11028297.2,
+    "net_profit_yoy_pct": -68.49,
+    "net_profit_qoq_pct": -106.2323,
+    "book_value_per_share": 7.130041444918,
+    "roe_pct": 0.84,
+    "operating_cashflow_per_share": 0.244012178032,
+    "gross_margin_pct": 11.8849794384,
+    "industry": "白色家电"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001914",
+  "name": "招商积余",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6e8b9a7cfe94e3137907",
+  "metrics": {
+    "eps": 0.4725,
+    "revenue": 9771385061.81,
+    "revenue_yoy_pct": 6.6429317215,
+    "revenue_qoq_pct": 4.8693,
+    "net_profit": 497867108.06,
+    "net_profit_yoy_pct": 0.15,
+    "net_profit_qoq_pct": 13.4702,
+    "book_value_per_share": 10.389605806309,
+    "roe_pct": 4.55,
+    "operating_cashflow_per_share": -1.458192170646,
+    "gross_margin_pct": 10.9819969624,
+    "industry": "房地产服务"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

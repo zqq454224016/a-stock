@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605011",
+  "name": "杭州热电",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "58a64ed2b851860ea534",
+  "metrics": {
+    "eps": 0.24,
+    "revenue": 1628803187.5,
+    "revenue_yoy_pct": 7.5059712483,
+    "revenue_qoq_pct": -0.4445,
+    "net_profit": 95660980.57,
+    "net_profit_yoy_pct": -13.25,
+    "net_profit_qoq_pct": 36.1057,
+    "book_value_per_share": 6.216219085779,
+    "roe_pct": 3.87,
+    "operating_cashflow_per_share": 0.082339046738,
+    "gross_margin_pct": 10.6895914648,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

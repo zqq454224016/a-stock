@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002193",
+  "name": "ST如意",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "94d7774d385c918181f6",
+  "metrics": {
+    "eps": -0.3592,
+    "revenue": 159680769.17,
+    "revenue_yoy_pct": 3.3681091809,
+    "revenue_qoq_pct": -5.8352,
+    "net_profit": -93998667.57,
+    "net_profit_yoy_pct": 1.8,
+    "net_profit_qoq_pct": -109.2717,
+    "book_value_per_share": 0.785871473667,
+    "roe_pct": -37.2,
+    "operating_cashflow_per_share": -0.000741989461,
+    "gross_margin_pct": 5.8458439914,
+    "industry": "服装家纺"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603706",
+  "name": "东方环宇",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6d8b39704238695831e8",
+  "metrics": {
+    "eps": 0.65,
+    "revenue": 638506495.66,
+    "revenue_yoy_pct": -9.1403116592,
+    "revenue_qoq_pct": -68.2685,
+    "net_profit": 122662416.07,
+    "net_profit_yoy_pct": -0.78,
+    "net_profit_qoq_pct": -80.5245,
+    "book_value_per_share": 8.952324909231,
+    "roe_pct": 6.99,
+    "operating_cashflow_per_share": -0.118235138398,
+    "gross_margin_pct": 30.1985042221,
+    "industry": "燃气Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

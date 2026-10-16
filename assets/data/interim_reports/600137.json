@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600137",
+  "name": "浪莎股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9380f7f02385799077fa",
+  "metrics": {
+    "eps": 0.089,
+    "revenue": 144600285.8,
+    "revenue_yoy_pct": 2.2323774789,
+    "revenue_qoq_pct": -3.5194,
+    "net_profit": 8689333.06,
+    "net_profit_yoy_pct": -17.54,
+    "net_profit_qoq_pct": -89.0373,
+    "book_value_per_share": 5.602417772801,
+    "roe_pct": 1.62,
+    "operating_cashflow_per_share": -0.357470390954,
+    "gross_margin_pct": 26.0758561723,
+    "industry": "服装家纺"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

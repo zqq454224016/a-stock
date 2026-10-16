@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600543",
+  "name": "*ST莫高",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f6f213ec59b141a21d5f",
+  "metrics": {
+    "eps": -0.089,
+    "revenue": 176156664.26,
+    "revenue_yoy_pct": 45.7991575632,
+    "revenue_qoq_pct": -27.2217,
+    "net_profit": -28570450.7,
+    "net_profit_yoy_pct": 10.3377070712,
+    "net_profit_qoq_pct": -118.6655,
+    "book_value_per_share": 2.098312252647,
+    "roe_pct": -4.15,
+    "operating_cashflow_per_share": -0.127595670061,
+    "gross_margin_pct": 11.4955823642,
+    "industry": "非白酒"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

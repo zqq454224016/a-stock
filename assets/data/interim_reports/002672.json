@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002672",
+  "name": "东江环保",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7bc1e76aec2b55bc59c1",
+  "metrics": {
+    "eps": -0.24,
+    "revenue": 1358184571.19,
+    "revenue_yoy_pct": -9.482742687,
+    "revenue_qoq_pct": 25.3741,
+    "net_profit": -268435348.23,
+    "net_profit_yoy_pct": 3.5,
+    "net_profit_qoq_pct": 21.311,
+    "book_value_per_share": 1.91093868484,
+    "roe_pct": -11.97,
+    "operating_cashflow_per_share": 0.081282332972,
+    "gross_margin_pct": 4.695751454,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600571",
+  "name": "信雅达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3eccfb96bf82adb4f701",
+  "metrics": {
+    "eps": -0.17,
+    "revenue": 877919005.82,
+    "revenue_yoy_pct": 1.9930333926,
+    "revenue_qoq_pct": 8.4362,
+    "net_profit": -77572079.31,
+    "net_profit_yoy_pct": -47.3774399276,
+    "net_profit_qoq_pct": 104.7403,
+    "book_value_per_share": 2.487371743514,
+    "roe_pct": -6.47,
+    "operating_cashflow_per_share": -0.727533180217,
+    "gross_margin_pct": 9.8629498696,
+    "industry": "IT服务Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

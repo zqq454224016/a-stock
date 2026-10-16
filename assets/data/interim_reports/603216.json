@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603216",
+  "name": "梦天家居",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b67d31575a72903d14a8",
+  "metrics": {
+    "eps": 0.14,
+    "revenue": 446143348.44,
+    "revenue_yoy_pct": -7.9339813442,
+    "revenue_qoq_pct": 46.3516,
+    "net_profit": 31476532.26,
+    "net_profit_yoy_pct": -10.67,
+    "net_profit_qoq_pct": 172.134,
+    "book_value_per_share": 8.024503882617,
+    "roe_pct": 1.73,
+    "operating_cashflow_per_share": -0.536818661233,
+    "gross_margin_pct": 26.4816312858,
+    "industry": "家居用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

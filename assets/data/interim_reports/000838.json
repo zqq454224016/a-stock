@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000838",
+  "name": "*ST发展",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b8552649445b452bf324",
+  "metrics": {
+    "eps": -0.0456,
+    "revenue": 64143377.8,
+    "revenue_yoy_pct": -64.2844844192,
+    "revenue_qoq_pct": -26.7993,
+    "net_profit": -50204683.89,
+    "net_profit_yoy_pct": -1028.81,
+    "net_profit_qoq_pct": -148.3567,
+    "book_value_per_share": -0.227482805765,
+    "roe_pct": null,
+    "operating_cashflow_per_share": -0.017478995193,
+    "gross_margin_pct": 1.7277227019,
+    "industry": "房地产开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

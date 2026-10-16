@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603557",
+  "name": "*ST起步",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "11c33041c7e6aa0906f1",
+  "metrics": {
+    "eps": -0.07,
+    "revenue": 603957224.97,
+    "revenue_yoy_pct": 603.6201292904,
+    "revenue_qoq_pct": 33.2531,
+    "net_profit": -42710558.73,
+    "net_profit_yoy_pct": -15.0133336235,
+    "net_profit_qoq_pct": 53.7523,
+    "book_value_per_share": 0.068095826325,
+    "roe_pct": -66.94,
+    "operating_cashflow_per_share": -0.073628849581,
+    "gross_margin_pct": 5.6448055277,
+    "industry": "服装家纺"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

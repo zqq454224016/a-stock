@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603328",
+  "name": "依顿电子",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "95171ba82ba4bc3ddd5d",
+  "metrics": {
+    "eps": 0.108,
+    "revenue": 2110807183.84,
+    "revenue_yoy_pct": 3.7247689384,
+    "revenue_qoq_pct": 25.6177,
+    "net_profit": 107781536.68,
+    "net_profit_yoy_pct": -58.65,
+    "net_profit_qoq_pct": 86.1126,
+    "book_value_per_share": 4.224506921169,
+    "roe_pct": 2.48,
+    "operating_cashflow_per_share": 0.426223481411,
+    "gross_margin_pct": 18.4537970323,
+    "industry": "元件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

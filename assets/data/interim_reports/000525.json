@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000525",
+  "name": "红太阳",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "46226d9f598ad4665dd7",
+  "metrics": {
+    "eps": 0.0768,
+    "revenue": 1562045738.41,
+    "revenue_yoy_pct": 6.9567667917,
+    "revenue_qoq_pct": 31.9918,
+    "net_profit": 100072073.01,
+    "net_profit_yoy_pct": 148.01,
+    "net_profit_qoq_pct": 2926.2596,
+    "book_value_per_share": 2.011970805884,
+    "roe_pct": 3.83,
+    "operating_cashflow_per_share": 0.113845073943,
+    "gross_margin_pct": 22.6967158984,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

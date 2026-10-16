@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603815",
+  "name": "交建股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4d9180fe9fd04f6c2292",
+  "metrics": {
+    "eps": 0.11,
+    "revenue": 1062846656.27,
+    "revenue_yoy_pct": -45.8395219052,
+    "revenue_qoq_pct": -32.4663,
+    "net_profit": 62206372.83,
+    "net_profit_yoy_pct": -44.73,
+    "net_profit_qoq_pct": -91.5391,
+    "book_value_per_share": 2.55085390707,
+    "roe_pct": 4.02,
+    "operating_cashflow_per_share": -0.106442730216,
+    "gross_margin_pct": 10.5832073664,
+    "industry": "基础建设"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

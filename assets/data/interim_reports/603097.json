@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603097",
+  "name": "江苏华辰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "79ba33875d73b962b63f",
+  "metrics": {
+    "eps": -0.02,
+    "revenue": 732873165.77,
+    "revenue_yoy_pct": -21.8903640147,
+    "revenue_qoq_pct": 92.5261,
+    "net_profit": -3190491.36,
+    "net_profit_yoy_pct": -106.75,
+    "net_profit_qoq_pct": -2645.8994,
+    "book_value_per_share": 6.458394306558,
+    "roe_pct": -0.28,
+    "operating_cashflow_per_share": 0.250365690419,
+    "gross_margin_pct": 17.152210856,
+    "industry": "电网设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

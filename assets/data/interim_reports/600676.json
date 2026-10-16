@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600676",
+  "name": "久事动娱",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "fe3394dc348124ca3b9c",
+  "metrics": {
+    "eps": 0.02,
+    "revenue": 2071475215.73,
+    "revenue_yoy_pct": -19.5534728591,
+    "revenue_qoq_pct": 40.027,
+    "net_profit": 22141747.18,
+    "net_profit_yoy_pct": 121.92,
+    "net_profit_qoq_pct": 235.8855,
+    "book_value_per_share": 4.748514035493,
+    "roe_pct": 0.41,
+    "operating_cashflow_per_share": 0.074801248593,
+    "gross_margin_pct": 6.2526071679,
+    "industry": "体育Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

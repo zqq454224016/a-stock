@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600616",
+  "name": "金枫酒业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c49b6c3bc573924f5484",
+  "metrics": {
+    "eps": -0.01,
+    "revenue": 188999886.92,
+    "revenue_yoy_pct": -12.4627688267,
+    "revenue_qoq_pct": -42.3602,
+    "net_profit": -5762011.54,
+    "net_profit_yoy_pct": 19.2542775549,
+    "net_profit_qoq_pct": -675.6856,
+    "book_value_per_share": 2.831023938209,
+    "roe_pct": -0.3,
+    "operating_cashflow_per_share": -0.136542659677,
+    "gross_margin_pct": 42.5018351963,
+    "industry": "非白酒"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

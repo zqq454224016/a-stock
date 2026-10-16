@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603029",
+  "name": "天鹅股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "2c4015dbd77c66da0bde",
+  "metrics": {
+    "eps": 0.16,
+    "revenue": 363971017.47,
+    "revenue_yoy_pct": 13.3536261232,
+    "revenue_qoq_pct": 8.4306,
+    "net_profit": 19417709.98,
+    "net_profit_yoy_pct": 7.3,
+    "net_profit_qoq_pct": 62.2348,
+    "book_value_per_share": 7.830246160934,
+    "roe_pct": 2.05,
+    "operating_cashflow_per_share": -1.126952147154,
+    "gross_margin_pct": 26.9635451202,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

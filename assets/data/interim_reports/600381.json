@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600381",
+  "name": "*ST春天",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "26765d9373c7d4201cd3",
+  "metrics": {
+    "eps": -0.06,
+    "revenue": 59099035.55,
+    "revenue_yoy_pct": -52.6733679673,
+    "revenue_qoq_pct": -65.0727,
+    "net_profit": -36095765.47,
+    "net_profit_yoy_pct": -2840.76,
+    "net_profit_qoq_pct": -21.7752,
+    "book_value_per_share": 1.633793057029,
+    "roe_pct": -3.69,
+    "operating_cashflow_per_share": -0.038574117342,
+    "gross_margin_pct": 42.0453507045,
+    "industry": "食品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

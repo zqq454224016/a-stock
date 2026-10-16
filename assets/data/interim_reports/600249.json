@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600249",
+  "name": "两面针",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3fc56d65fb7cdbd8fb8d",
+  "metrics": {
+    "eps": -0.0085,
+    "revenue": 474100972.28,
+    "revenue_yoy_pct": -9.2186869157,
+    "revenue_qoq_pct": 16.7487,
+    "net_profit": -4681164.69,
+    "net_profit_yoy_pct": 7.9268408837,
+    "net_profit_qoq_pct": 187.7703,
+    "book_value_per_share": 3.951116602327,
+    "roe_pct": -0.22,
+    "operating_cashflow_per_share": -0.039870695545,
+    "gross_margin_pct": 16.2368941704,
+    "industry": "个护用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

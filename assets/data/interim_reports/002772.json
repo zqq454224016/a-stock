@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002772",
+  "name": "众兴菌业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "fb26607386effa6e2ca0",
+  "metrics": {
+    "eps": 0.5093,
+    "revenue": 1085359564.86,
+    "revenue_yoy_pct": 19.5533571019,
+    "revenue_qoq_pct": -19.7002,
+    "net_profit": 190849287.14,
+    "net_profit_yoy_pct": 176.51,
+    "net_profit_qoq_pct": -82.6981,
+    "book_value_per_share": 9.50419529923,
+    "roe_pct": 5.34,
+    "operating_cashflow_per_share": 0.457920529,
+    "gross_margin_pct": 30.9341683706,
+    "industry": "种植业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

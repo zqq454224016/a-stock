@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601919",
+  "name": "中远海控",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f2b0b8b6e33cd5b2ba78",
+  "metrics": {
+    "eps": 0.88,
+    "revenue": 111921747568.76,
+    "revenue_yoy_pct": 2.5870029553,
+    "revenue_qoq_pct": 16.0782,
+    "net_profit": 13418920777.4,
+    "net_profit_yoy_pct": -23.48,
+    "net_profit_qoq_pct": 28.3318,
+    "book_value_per_share": 15.310474422392,
+    "roe_pct": 5.7,
+    "operating_cashflow_per_share": 1.528034964092,
+    "gross_margin_pct": 18.3392709861,
+    "industry": "航运港口"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

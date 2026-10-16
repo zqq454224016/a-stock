@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600549",
+  "name": "厦门钨业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9bf853c9db1b40e07881",
+  "metrics": {
+    "eps": 1.3862,
+    "revenue": 35014480428.15,
+    "revenue_yoy_pct": 81.6985110158,
+    "revenue_qoq_pct": 22.4106,
+    "net_profit": 2200748489.7,
+    "net_profit_yoy_pct": 127.04,
+    "net_profit_qoq_pct": -1.164,
+    "book_value_per_share": 11.773995846987,
+    "roe_pct": 12.15,
+    "operating_cashflow_per_share": -1.551198378021,
+    "gross_margin_pct": 21.8280630899,
+    "industry": "小金属"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

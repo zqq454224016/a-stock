@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600172",
+  "name": "黄河旋风",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "abe23b3257060207ea20",
+  "metrics": {
+    "eps": -0.1596,
+    "revenue": 807480328.48,
+    "revenue_yoy_pct": 15.4800187564,
+    "revenue_qoq_pct": 4.1729,
+    "net_profit": -222235451.8,
+    "net_profit_yoy_pct": 25.7385464348,
+    "net_profit_qoq_pct": -30.2329,
+    "book_value_per_share": 0.234336360503,
+    "roe_pct": -49.5,
+    "operating_cashflow_per_share": 0.068080168476,
+    "gross_margin_pct": 16.0179939607,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

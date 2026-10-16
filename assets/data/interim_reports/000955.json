@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000955",
+  "name": "欣龙控股",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "618874b7359143b54d86",
+  "metrics": {
+    "eps": -0.0057,
+    "revenue": 209602637.24,
+    "revenue_yoy_pct": -5.5694137898,
+    "revenue_qoq_pct": 14.6948,
+    "net_profit": -3082930.52,
+    "net_profit_yoy_pct": -265.58,
+    "net_profit_qoq_pct": -205.4264,
+    "book_value_per_share": 1.199354953148,
+    "roe_pct": -0.48,
+    "operating_cashflow_per_share": -0.014033885512,
+    "gross_margin_pct": 9.0751904749,
+    "industry": "纺织制造"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

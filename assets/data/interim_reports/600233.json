@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600233",
+  "name": "圆通速递",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "aa672c0030324e50fc71",
+  "metrics": {
+    "eps": 0.9276,
+    "revenue": 38893318775.44,
+    "revenue_yoy_pct": 8.3885031634,
+    "revenue_qoq_pct": 7.2246,
+    "net_profit": 3175039883.44,
+    "net_profit_yoy_pct": 73.44,
+    "net_profit_qoq_pct": 30.4833,
+    "book_value_per_share": 10.852221518917,
+    "roe_pct": 8.72,
+    "operating_cashflow_per_share": 1.156557510542,
+    "gross_margin_pct": 12.0387327621,
+    "industry": "物流"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

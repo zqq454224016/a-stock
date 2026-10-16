@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600547",
+  "name": "山东黄金",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "475eafc9db5558be240d",
+  "metrics": {
+    "eps": 0.72,
+    "revenue": 53587760376.93,
+    "revenue_yoy_pct": -5.5986696921,
+    "revenue_qoq_pct": -35.1956,
+    "net_profit": 3543114145.74,
+    "net_profit_yoy_pct": 26.17,
+    "net_profit_qoq_pct": 45.0867,
+    "book_value_per_share": 7.187036744021,
+    "roe_pct": 10.15,
+    "operating_cashflow_per_share": 1.685620005416,
+    "gross_margin_pct": 24.4331757468,
+    "industry": "贵金属"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

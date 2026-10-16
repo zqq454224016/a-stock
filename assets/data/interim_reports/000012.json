@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000012",
+  "name": "南玻A",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "26d9bb269f391e2a7a59",
+  "metrics": {
+    "eps": -0.14,
+    "revenue": 6118978774.0,
+    "revenue_yoy_pct": -5.6231950778,
+    "revenue_qoq_pct": 4.6312,
+    "net_profit": -421151211.0,
+    "net_profit_yoy_pct": -665.06,
+    "net_profit_qoq_pct": -226.945,
+    "book_value_per_share": 4.15632232228,
+    "roe_pct": -3.26,
+    "operating_cashflow_per_share": 0.067382213503,
+    "gross_margin_pct": 8.2230473676,
+    "industry": "玻璃玻纤"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

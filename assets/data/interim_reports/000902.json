@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000902",
+  "name": "新洋丰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7ec2eb8f7261c662606b",
+  "metrics": {
+    "eps": 0.7659,
+    "revenue": 11280693733.36,
+    "revenue_yoy_pct": 20.0339798211,
+    "revenue_qoq_pct": 5.1076,
+    "net_profit": 960995599.62,
+    "net_profit_yoy_pct": 1.01,
+    "net_profit_qoq_pct": -7.234,
+    "book_value_per_share": 9.98028418062,
+    "roe_pct": 7.81,
+    "operating_cashflow_per_share": 0.372052522204,
+    "gross_margin_pct": 17.1022688704,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

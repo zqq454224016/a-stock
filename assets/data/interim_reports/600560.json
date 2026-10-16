@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600560",
+  "name": "金自天正",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "79bc78641c20d786be21",
+  "metrics": {
+    "eps": 0.0794,
+    "revenue": 279499002.38,
+    "revenue_yoy_pct": 37.9633496131,
+    "revenue_qoq_pct": 17.6032,
+    "net_profit": 17763915.14,
+    "net_profit_yoy_pct": -17.97,
+    "net_profit_qoq_pct": 80.0566,
+    "book_value_per_share": 4.465115267108,
+    "roe_pct": 1.79,
+    "operating_cashflow_per_share": -0.292028834562,
+    "gross_margin_pct": 14.7065106101,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

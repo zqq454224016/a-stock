@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600295",
+  "name": "鄂尔多斯",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1ff87a4d7951db78bcf5",
+  "metrics": {
+    "eps": 0.51,
+    "revenue": 12520026592.56,
+    "revenue_yoy_pct": 5.8820324433,
+    "revenue_qoq_pct": 13.7001,
+    "net_profit": 1415710092.09,
+    "net_profit_yoy_pct": 43.19,
+    "net_profit_qoq_pct": 15.9857,
+    "book_value_per_share": 7.647470008701,
+    "roe_pct": 6.27,
+    "operating_cashflow_per_share": 0.669803741157,
+    "gross_margin_pct": 24.0524439343,
+    "industry": "冶钢原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

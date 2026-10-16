@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601858",
+  "name": "中国科传",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "496356f09a2912ca1ee3",
+  "metrics": {
+    "eps": 0.22,
+    "revenue": 1180066757.51,
+    "revenue_yoy_pct": -5.8039188066,
+    "revenue_qoq_pct": 129.8614,
+    "net_profit": 177716076.65,
+    "net_profit_yoy_pct": -6.36,
+    "net_profit_qoq_pct": 273.8173,
+    "book_value_per_share": 7.387492473017,
+    "roe_pct": 3.09,
+    "operating_cashflow_per_share": -0.069513763416,
+    "gross_margin_pct": 30.9657670547,
+    "industry": "出版"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

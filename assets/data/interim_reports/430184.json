@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "430184",
+  "name": "御华堂",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-17T00:00:00+08:00",
+  "known_at": "2026-07-17T23:59:59+08:00",
+  "fetched_at": "2026-07-25 13:56:37",
+  "version_id": "6d11934597a5b2d6c317",
+  "metrics": {
+    "eps": -0.02,
+    "revenue": 511835.74,
+    "revenue_yoy_pct": -18.1309287751,
+    "revenue_qoq_pct": null,
+    "net_profit": -1016726.64,
+    "net_profit_yoy_pct": -52.6238339883,
+    "net_profit_qoq_pct": null,
+    "book_value_per_share": 0.013998556617,
+    "roe_pct": -218.52,
+    "operating_cashflow_per_share": -0.034007551569,
+    "gross_margin_pct": 25.5878458194,
+    "industry": null
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-07-25 13:56:37"
+}

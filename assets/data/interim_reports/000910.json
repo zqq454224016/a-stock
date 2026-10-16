@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000910",
+  "name": "大亚圣象",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d2d3acf64979a925b312",
+  "metrics": {
+    "eps": -0.35,
+    "revenue": 2070913313.55,
+    "revenue_yoy_pct": -1.1735860536,
+    "revenue_qoq_pct": 69.8053,
+    "net_profit": -193831049.88,
+    "net_profit_yoy_pct": -643.59,
+    "net_profit_qoq_pct": -0.3693,
+    "book_value_per_share": 11.609220096511,
+    "roe_pct": -2.96,
+    "operating_cashflow_per_share": -1.283178675588,
+    "gross_margin_pct": 12.9765362752,
+    "industry": "家居用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601339",
+  "name": "百隆东方",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-07T00:00:00+08:00",
+  "known_at": "2026-08-07T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9ed11d678a973f35cea7",
+  "metrics": {
+    "eps": 0.37,
+    "revenue": 4273854834.64,
+    "revenue_yoy_pct": 19.0285411198,
+    "revenue_qoq_pct": 14.9894,
+    "net_profit": 559478151.29,
+    "net_profit_yoy_pct": 43.45,
+    "net_profit_qoq_pct": 30.6538,
+    "book_value_per_share": 6.141508507725,
+    "roe_pct": 5.96,
+    "operating_cashflow_per_share": 0.659336995017,
+    "gross_margin_pct": 16.4137280931,
+    "industry": "纺织制造"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600452",
+  "name": "涪陵电力",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f4d08e1a417ed6d822e7",
+  "metrics": {
+    "eps": 0.13,
+    "revenue": 1300600418.75,
+    "revenue_yoy_pct": -8.1721159131,
+    "revenue_qoq_pct": 1.4019,
+    "net_profit": 206694224.34,
+    "net_profit_yoy_pct": 23.91,
+    "net_profit_qoq_pct": -38.9169,
+    "book_value_per_share": 3.722306383137,
+    "roe_pct": 3.63,
+    "operating_cashflow_per_share": 0.259538760952,
+    "gross_margin_pct": 20.5584363826,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

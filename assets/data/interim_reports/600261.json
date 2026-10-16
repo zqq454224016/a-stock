@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600261",
+  "name": "阳光照明",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "53b859dc7808ee122f4b",
+  "metrics": {
+    "eps": 0.04,
+    "revenue": 1304455307.6,
+    "revenue_yoy_pct": -1.6704706506,
+    "revenue_qoq_pct": -2.2427,
+    "net_profit": 49394479.02,
+    "net_profit_yoy_pct": -48.84,
+    "net_profit_qoq_pct": 482.1157,
+    "book_value_per_share": 2.542481527126,
+    "roe_pct": 1.39,
+    "operating_cashflow_per_share": 0.01461146967,
+    "gross_margin_pct": 33.6842717148,
+    "industry": "照明设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

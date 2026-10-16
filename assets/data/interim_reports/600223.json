@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600223",
+  "name": "福瑞达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e371f47b8939c8dbfcd3",
+  "metrics": {
+    "eps": 0.08,
+    "revenue": 1909303409.71,
+    "revenue_yoy_pct": 6.6923136521,
+    "revenue_qoq_pct": 12.0414,
+    "net_profit": 81781510.32,
+    "net_profit_yoy_pct": -24.25,
+    "net_profit_qoq_pct": 56.3933,
+    "book_value_per_share": 4.18727908729,
+    "roe_pct": 1.91,
+    "operating_cashflow_per_share": 0.033871328342,
+    "gross_margin_pct": 57.1791682767,
+    "industry": "化妆品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

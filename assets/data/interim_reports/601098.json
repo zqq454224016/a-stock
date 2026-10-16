@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601098",
+  "name": "中南传媒",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "232226b8ab1779e809dd",
+  "metrics": {
+    "eps": 0.52,
+    "revenue": 5842857982.84,
+    "revenue_yoy_pct": -8.242495733,
+    "revenue_qoq_pct": 0.0186,
+    "net_profit": 932501186.09,
+    "net_profit_yoy_pct": -8.25,
+    "net_profit_qoq_pct": 45.6688,
+    "book_value_per_share": 9.072402962121,
+    "roe_pct": 5.65,
+    "operating_cashflow_per_share": -0.425995868831,
+    "gross_margin_pct": 47.8505976524,
+    "industry": "出版"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

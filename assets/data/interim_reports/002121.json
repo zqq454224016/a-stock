@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002121",
+  "name": "科陆电子",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0f740d15f53317e0b319",
+  "metrics": {
+    "eps": -0.1315,
+    "revenue": 2184783627.95,
+    "revenue_yoy_pct": -15.103144151,
+    "revenue_qoq_pct": -33.1195,
+    "net_profit": -219003964.63,
+    "net_profit_yoy_pct": -215.22,
+    "net_profit_qoq_pct": -342.3466,
+    "book_value_per_share": 0.116593200258,
+    "roe_pct": -81.5,
+    "operating_cashflow_per_share": -0.283297287068,
+    "gross_margin_pct": 22.2312854081,
+    "industry": "电网设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

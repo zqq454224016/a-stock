@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603500",
+  "name": "祥和实业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "58bf8ace0c53858b1725",
+  "metrics": {
+    "eps": 0.22,
+    "revenue": 386982744.4,
+    "revenue_yoy_pct": 1.6370113272,
+    "revenue_qoq_pct": 14.1985,
+    "net_profit": 72372515.42,
+    "net_profit_yoy_pct": 12.43,
+    "net_profit_qoq_pct": -15.9531,
+    "book_value_per_share": 3.130798678068,
+    "roe_pct": 6.65,
+    "operating_cashflow_per_share": 0.09418332379,
+    "gross_margin_pct": 33.4755273471,
+    "industry": "轨交设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

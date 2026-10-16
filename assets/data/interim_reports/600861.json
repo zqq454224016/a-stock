@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600861",
+  "name": "北京人力",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1dfba02d64b841b90c5a",
+  "metrics": {
+    "eps": 0.7245,
+    "revenue": 22511955988.07,
+    "revenue_yoy_pct": -0.7874874607,
+    "revenue_qoq_pct": -2.2183,
+    "net_profit": 410170480.26,
+    "net_profit_yoy_pct": -49.56,
+    "net_profit_qoq_pct": -43.8281,
+    "book_value_per_share": 12.599588289836,
+    "roe_pct": 5.53,
+    "operating_cashflow_per_share": -0.509284626971,
+    "gross_margin_pct": 4.6153386569,
+    "industry": "专业服务"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

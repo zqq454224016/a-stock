@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000151",
+  "name": "中成股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "cbcddbb991089e9c9bdd",
+  "metrics": {
+    "eps": 0.0535,
+    "revenue": 829850059.63,
+    "revenue_yoy_pct": 52.0859364588,
+    "revenue_qoq_pct": 9.6208,
+    "net_profit": 18762176.88,
+    "net_profit_yoy_pct": 137.08,
+    "net_profit_qoq_pct": -88.1599,
+    "book_value_per_share": 2.5146142883,
+    "roe_pct": 2.18,
+    "operating_cashflow_per_share": 1.127248585823,
+    "gross_margin_pct": 10.7135328808,
+    "industry": "贸易Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

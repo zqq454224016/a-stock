@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600138",
+  "name": "中青旅",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6f1a4af38276c2919d4b",
+  "metrics": {
+    "eps": 0.0306,
+    "revenue": 5385392632.56,
+    "revenue_yoy_pct": 10.679999778,
+    "revenue_qoq_pct": 28.3095,
+    "net_profit": 22129262.54,
+    "net_profit_yoy_pct": -66.9,
+    "net_profit_qoq_pct": 259.9629,
+    "book_value_per_share": 8.744582915354,
+    "roe_pct": 0.35,
+    "operating_cashflow_per_share": 0.20747913655,
+    "gross_margin_pct": 18.4605384372,
+    "industry": "旅游及景区"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

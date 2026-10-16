@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603099",
+  "name": "长白山",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9439ba2044c1f2c020ba",
+  "metrics": {
+    "eps": 0.0047,
+    "revenue": 277259936.98,
+    "revenue_yoy_pct": 17.744162661,
+    "revenue_qoq_pct": -22.6803,
+    "net_profit": 1268509.54,
+    "net_profit_yoy_pct": 161.84,
+    "net_profit_qoq_pct": -184.3325,
+    "book_value_per_share": 5.509874514395,
+    "roe_pct": 0.08,
+    "operating_cashflow_per_share": 0.111616045493,
+    "gross_margin_pct": 19.4394335716,
+    "industry": "旅游及景区"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002589",
+  "name": "瑞康医药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "72cd199140e6e5016e39",
+  "metrics": {
+    "eps": 0.0074,
+    "revenue": 3414747352.56,
+    "revenue_yoy_pct": -3.6340372127,
+    "revenue_qoq_pct": -0.0128,
+    "net_profit": 11135298.13,
+    "net_profit_yoy_pct": -38.7,
+    "net_profit_qoq_pct": -92.643,
+    "book_value_per_share": 3.527989497443,
+    "roe_pct": 0.21,
+    "operating_cashflow_per_share": 0.032376935137,
+    "gross_margin_pct": 11.3729947417,
+    "industry": "医药商业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

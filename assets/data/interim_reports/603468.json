@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603468",
+  "name": "津富士达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-05T00:00:00+08:00",
+  "known_at": "2026-08-05T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f6885e2c530f823d70ce",
+  "metrics": {
+    "eps": 0.51,
+    "revenue": 3087591778.24,
+    "revenue_yoy_pct": 19.1265776408,
+    "revenue_qoq_pct": 26.863,
+    "net_profit": 188525905.55,
+    "net_profit_yoy_pct": -3.482446293,
+    "net_profit_qoq_pct": 26.9086,
+    "book_value_per_share": 7.989700033074,
+    "roe_pct": 6.54,
+    "operating_cashflow_per_share": 1.042850678977,
+    "gross_margin_pct": 13.2746563535,
+    "industry": "摩托车及其他"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605507",
+  "name": "国邦医药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-01T00:00:00+08:00",
+  "known_at": "2026-08-01T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "31b19f5bac478fb71c50",
+  "metrics": {
+    "eps": 0.44,
+    "revenue": 3142428542.07,
+    "revenue_yoy_pct": 3.8378674034,
+    "revenue_qoq_pct": 6.6191,
+    "net_profit": 341348063.99,
+    "net_profit_yoy_pct": -25.07,
+    "net_profit_qoq_pct": 12.5062,
+    "book_value_per_share": 10.735911355336,
+    "roe_pct": 3.96,
+    "operating_cashflow_per_share": 0.58151447219,
+    "gross_margin_pct": 23.7739178536,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

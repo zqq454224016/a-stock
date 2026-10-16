@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601886",
+  "name": "江河集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-12T00:00:00+08:00",
+  "known_at": "2026-08-12T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "606bf63cc7239015401f",
+  "metrics": {
+    "eps": 0.39,
+    "revenue": 10823926419.36,
+    "revenue_yoy_pct": 15.9048327179,
+    "revenue_qoq_pct": 39.0055,
+    "net_profit": 440534741.57,
+    "net_profit_yoy_pct": 34.34,
+    "net_profit_qoq_pct": 88.4816,
+    "book_value_per_share": 6.384193734961,
+    "roe_pct": 6.0,
+    "operating_cashflow_per_share": -0.618331053908,
+    "gross_margin_pct": 16.4274246959,
+    "industry": "装修装饰Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600299",
+  "name": "安迪苏",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5b6288430b7c702abace",
+  "metrics": {
+    "eps": 0.29,
+    "revenue": 9707078578.0,
+    "revenue_yoy_pct": 14.0390163729,
+    "revenue_qoq_pct": 20.4704,
+    "net_profit": 904848549.0,
+    "net_profit_yoy_pct": 22.25,
+    "net_profit_qoq_pct": 96.1746,
+    "book_value_per_share": 6.40196112341,
+    "roe_pct": 4.55,
+    "operating_cashflow_per_share": 0.389542495058,
+    "gross_margin_pct": 28.3767869279,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

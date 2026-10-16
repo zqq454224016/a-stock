@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002080",
+  "name": "中材科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3b91008b7aedc5bd0fcf",
+  "metrics": {
+    "eps": 0.7197,
+    "revenue": 16257366084.37,
+    "revenue_yoy_pct": 21.9475501368,
+    "revenue_qoq_pct": 37.1832,
+    "net_profit": 1207702748.73,
+    "net_profit_yoy_pct": 20.93,
+    "net_profit_qoq_pct": 37.9839,
+    "book_value_per_share": 12.162529738227,
+    "roe_pct": 5.92,
+    "operating_cashflow_per_share": -0.119183811941,
+    "gross_margin_pct": 21.2934516755,
+    "industry": "玻璃玻纤"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

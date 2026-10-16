@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601568",
+  "name": "北元化工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "34c295086039f1199cc3",
+  "metrics": {
+    "eps": 0.02,
+    "revenue": 4366755162.59,
+    "revenue_yoy_pct": -4.3608395811,
+    "revenue_qoq_pct": 19.1124,
+    "net_profit": 72907229.0,
+    "net_profit_yoy_pct": -47.27,
+    "net_profit_qoq_pct": 155.9122,
+    "book_value_per_share": 2.828334717479,
+    "roe_pct": 0.64,
+    "operating_cashflow_per_share": 0.055966266778,
+    "gross_margin_pct": 10.9589440404,
+    "industry": "化学原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

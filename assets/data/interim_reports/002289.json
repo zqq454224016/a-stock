@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002289",
+  "name": "宇顺电子",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "06e4f065750c7e34cc5d",
+  "metrics": {
+    "eps": 1.0006,
+    "revenue": 547123597.77,
+    "revenue_yoy_pct": 306.7871065301,
+    "revenue_qoq_pct": 6.1351,
+    "net_profit": 280426240.27,
+    "net_profit_yoy_pct": 6380.84,
+    "net_profit_qoq_pct": 369.3263,
+    "book_value_per_share": 1.771587268884,
+    "roe_pct": 78.71,
+    "operating_cashflow_per_share": 0.543119322874,
+    "gross_margin_pct": 39.3012887721,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600386",
+  "name": "北巴传媒",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4b88cb7d49491cf2e1be",
+  "metrics": {
+    "eps": -0.032,
+    "revenue": 1299464640.55,
+    "revenue_yoy_pct": -32.4542970936,
+    "revenue_qoq_pct": 12.0204,
+    "net_profit": -25622294.1,
+    "net_profit_yoy_pct": -500.06,
+    "net_profit_qoq_pct": -73.842,
+    "book_value_per_share": 2.031878316716,
+    "roe_pct": -1.54,
+    "operating_cashflow_per_share": 0.180686558569,
+    "gross_margin_pct": 14.921934105,
+    "industry": "汽车服务"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

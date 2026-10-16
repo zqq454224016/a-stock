@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600916",
+  "name": "中国黄金",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "91baa1ce910ec679ae8c",
+  "metrics": {
+    "eps": 0.17,
+    "revenue": 24899581778.93,
+    "revenue_yoy_pct": -19.9330176722,
+    "revenue_qoq_pct": -37.7315,
+    "net_profit": 279409578.39,
+    "net_profit_yoy_pct": -12.35,
+    "net_profit_qoq_pct": -29.3615,
+    "book_value_per_share": 4.263768911792,
+    "roe_pct": 3.84,
+    "operating_cashflow_per_share": -0.55714810356,
+    "gross_margin_pct": 2.5663683254,
+    "industry": "饰品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

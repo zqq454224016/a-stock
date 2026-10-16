@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603636",
+  "name": "南威软件",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b3b531ca6c49774d3f03",
+  "metrics": {
+    "eps": -0.29,
+    "revenue": 214586108.28,
+    "revenue_yoy_pct": -31.6059058401,
+    "revenue_qoq_pct": -16.2107,
+    "net_profit": -170139961.77,
+    "net_profit_yoy_pct": -136.16,
+    "net_profit_qoq_pct": -141.5365,
+    "book_value_per_share": 2.981015949546,
+    "roe_pct": -9.37,
+    "operating_cashflow_per_share": -0.250748784614,
+    "gross_margin_pct": 33.1585007624,
+    "industry": "IT服务Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

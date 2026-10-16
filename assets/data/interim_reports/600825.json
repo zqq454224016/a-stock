@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600825",
+  "name": "新华传媒",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "698191355edbac59df94",
+  "metrics": {
+    "eps": 0.031,
+    "revenue": 630917802.85,
+    "revenue_yoy_pct": 0.0343173351,
+    "revenue_qoq_pct": 160.2911,
+    "net_profit": 32764940.56,
+    "net_profit_yoy_pct": 1.29,
+    "net_profit_qoq_pct": 2285.5106,
+    "book_value_per_share": 2.406541889046,
+    "roe_pct": 1.31,
+    "operating_cashflow_per_share": 0.069457810644,
+    "gross_margin_pct": 30.1688241321,
+    "industry": "出版"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

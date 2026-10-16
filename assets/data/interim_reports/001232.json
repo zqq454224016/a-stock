@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001232",
+  "name": "嘉立创",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "92d0d573f5baea29507a",
+  "metrics": {
+    "eps": 2.06,
+    "revenue": 7172851108.95,
+    "revenue_yoy_pct": 54.1252523113,
+    "revenue_qoq_pct": 36.806,
+    "net_profit": 1030348906.94,
+    "net_profit_yoy_pct": 73.54,
+    "net_profit_qoq_pct": 73.6716,
+    "book_value_per_share": 16.4707325298,
+    "roe_pct": 13.37,
+    "operating_cashflow_per_share": 2.53020248774,
+    "gross_margin_pct": 28.4073364889,
+    "industry": "元件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

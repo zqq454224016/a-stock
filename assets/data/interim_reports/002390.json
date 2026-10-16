@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002390",
+  "name": "信邦制药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c132b989cb19f338bd7d",
+  "metrics": {
+    "eps": 0.0525,
+    "revenue": 2466968985.57,
+    "revenue_yoy_pct": -13.2883278709,
+    "revenue_qoq_pct": -4.7283,
+    "net_profit": 99586277.81,
+    "net_profit_yoy_pct": -7.1,
+    "net_profit_qoq_pct": 4.6721,
+    "book_value_per_share": 3.473257314796,
+    "roe_pct": 1.46,
+    "operating_cashflow_per_share": 0.206440350325,
+    "gross_margin_pct": 16.1938441361,
+    "industry": "医药商业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

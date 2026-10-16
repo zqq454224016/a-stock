@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002092",
+  "name": "中泰化学",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "11df8c212016f061a5a8",
+  "metrics": {
+    "eps": 0.0291,
+    "revenue": 15365559032.29,
+    "revenue_yoy_pct": 10.1073834304,
+    "revenue_qoq_pct": 11.1258,
+    "net_profit": 74844825.51,
+    "net_profit_yoy_pct": 138.55,
+    "net_profit_qoq_pct": 252.4793,
+    "book_value_per_share": 8.339185358575,
+    "roe_pct": 0.35,
+    "operating_cashflow_per_share": 0.105437998852,
+    "gross_margin_pct": 17.6680375728,
+    "industry": "化学原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002026",
+  "name": "山东威达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "890c95e4259222449600",
+  "metrics": {
+    "eps": 0.27,
+    "revenue": 1018397378.47,
+    "revenue_yoy_pct": 11.4030432973,
+    "revenue_qoq_pct": 21.6346,
+    "net_profit": 119677104.31,
+    "net_profit_yoy_pct": -24.19,
+    "net_profit_qoq_pct": -13.3397,
+    "book_value_per_share": 8.83953390846,
+    "roe_pct": 3.07,
+    "operating_cashflow_per_share": 0.108647356077,
+    "gross_margin_pct": 25.4318584931,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002111",
+  "name": "威海广泰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9e694750c2b9c0ef75d8",
+  "metrics": {
+    "eps": 0.3111,
+    "revenue": 1697016837.57,
+    "revenue_yoy_pct": 19.1305767464,
+    "revenue_qoq_pct": 0.6205,
+    "net_profit": 158827408.95,
+    "net_profit_yoy_pct": 90.62,
+    "net_profit_qoq_pct": 5.6003,
+    "book_value_per_share": 5.745368649748,
+    "roe_pct": 4.98,
+    "operating_cashflow_per_share": 0.464561339771,
+    "gross_margin_pct": 28.2310063697,
+    "industry": "航空装备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

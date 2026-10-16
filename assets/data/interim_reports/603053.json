@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603053",
+  "name": "成都燃气",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4c4ed48d2c98c749da21",
+  "metrics": {
+    "eps": 0.2823,
+    "revenue": 2697933968.16,
+    "revenue_yoy_pct": -4.4850792978,
+    "revenue_qoq_pct": -32.7455,
+    "net_profit": 250902896.98,
+    "net_profit_yoy_pct": -9.24,
+    "net_profit_qoq_pct": -49.7165,
+    "book_value_per_share": 5.478755792505,
+    "roe_pct": 5.01,
+    "operating_cashflow_per_share": 0.324305869703,
+    "gross_margin_pct": 20.5720590874,
+    "industry": "燃气Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

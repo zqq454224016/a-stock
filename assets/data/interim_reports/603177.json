@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603177",
+  "name": "德创环保",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b89e6afe6a56919714bc",
+  "metrics": {
+    "eps": -0.17,
+    "revenue": 417163985.91,
+    "revenue_yoy_pct": -15.255565587,
+    "revenue_qoq_pct": 8.3157,
+    "net_profit": -33801057.57,
+    "net_profit_yoy_pct": -293.9,
+    "net_profit_qoq_pct": -92.1724,
+    "book_value_per_share": 1.468712660584,
+    "roe_pct": -10.61,
+    "operating_cashflow_per_share": 0.193162228932,
+    "gross_margin_pct": 17.7536451567,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

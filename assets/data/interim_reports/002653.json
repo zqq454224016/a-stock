@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002653",
+  "name": "海思科",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6a77e7222d8fa9b8681f",
+  "metrics": {
+    "eps": 0.7601,
+    "revenue": 3095595953.82,
+    "revenue_yoy_pct": 54.7144719025,
+    "revenue_qoq_pct": -2.0701,
+    "net_profit": 851228456.58,
+    "net_profit_yoy_pct": 426.98,
+    "net_profit_qoq_pct": -46.5177,
+    "book_value_per_share": 4.300191499901,
+    "roe_pct": 18.3,
+    "operating_cashflow_per_share": 0.679176502008,
+    "gross_margin_pct": 80.2428883555,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

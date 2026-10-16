@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603179",
+  "name": "新泉股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-04T00:00:00+08:00",
+  "known_at": "2026-08-04T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "cc13b92e6f6f14c26208",
+  "metrics": {
+    "eps": 0.58,
+    "revenue": 8014533544.08,
+    "revenue_yoy_pct": 7.445266489,
+    "revenue_qoq_pct": 20.2326,
+    "net_profit": 414166694.69,
+    "net_profit_yoy_pct": -1.9,
+    "net_profit_qoq_pct": 3.5229,
+    "book_value_per_share": 10.646362354787,
+    "roe_pct": 5.46,
+    "operating_cashflow_per_share": 0.287032324648,
+    "gross_margin_pct": 20.0822112039,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

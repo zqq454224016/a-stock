@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "300750",
+  "name": "宁德时代",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-25T00:00:00+08:00",
+  "known_at": "2026-07-25T23:59:59+08:00",
+  "fetched_at": "2026-07-25 13:56:37",
+  "version_id": "72b7f3a1abd3714afa22",
+  "metrics": {
+    "eps": 9.51,
+    "revenue": 276916580000.0,
+    "revenue_yoy_pct": 54.8003691485,
+    "revenue_qoq_pct": 14.4462,
+    "net_profit": 43284002000.0,
+    "net_profit_yoy_pct": 41.98,
+    "net_profit_qoq_pct": 8.7212,
+    "book_value_per_share": 81.993154443679,
+    "roe_pct": 12.08,
+    "operating_cashflow_per_share": 13.015213596184,
+    "gross_margin_pct": 23.9283938867,
+    "industry": "电池"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-07-25 13:56:37"
+}

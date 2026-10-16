@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000652",
+  "name": "泰达股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "24a0c196dddf25c74322",
+  "metrics": {
+    "eps": 0.0379,
+    "revenue": 1965341054.34,
+    "revenue_yoy_pct": -77.619273233,
+    "revenue_qoq_pct": -1.3704,
+    "net_profit": 55564545.62,
+    "net_profit_yoy_pct": -15.08,
+    "net_profit_qoq_pct": 334.9282,
+    "book_value_per_share": 3.713718495243,
+    "roe_pct": 1.02,
+    "operating_cashflow_per_share": 0.096095445323,
+    "gross_margin_pct": 12.2816930434,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603093",
+  "name": "南华期货",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "58dcfd9fd68a33bf0be0",
+  "metrics": {
+    "eps": 0.55,
+    "revenue": 879141903.95,
+    "revenue_yoy_pct": 48.1764200269,
+    "revenue_qoq_pct": 2.9735,
+    "net_profit": 388309024.43,
+    "net_profit_yoy_pct": 67.91,
+    "net_profit_qoq_pct": -10.3617,
+    "book_value_per_share": 8.133648430416,
+    "roe_pct": 6.76,
+    "operating_cashflow_per_share": 7.542075952269,
+    "gross_margin_pct": null,
+    "industry": "多元金融"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002293",
+  "name": "罗莱生活",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "53f80dace6c9e77eb14a",
+  "metrics": {
+    "eps": 0.299,
+    "revenue": 2301909972.75,
+    "revenue_yoy_pct": 5.5328512417,
+    "revenue_qoq_pct": -1.2549,
+    "net_profit": 249337125.59,
+    "net_profit_yoy_pct": 34.42,
+    "net_profit_qoq_pct": -31.0202,
+    "book_value_per_share": 4.896354223946,
+    "roe_pct": 5.77,
+    "operating_cashflow_per_share": 0.135314663625,
+    "gross_margin_pct": 49.9778941978,
+    "industry": "服装家纺"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

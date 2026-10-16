@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000683",
+  "name": "博源化工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-31T00:00:00+08:00",
+  "known_at": "2026-07-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8b025b610a99d74f1b80",
+  "metrics": {
+    "eps": 0.22,
+    "revenue": 6031130596.81,
+    "revenue_yoy_pct": 1.9385397709,
+    "revenue_qoq_pct": 21.9008,
+    "net_profit": 833852270.63,
+    "net_profit_yoy_pct": 12.27,
+    "net_profit_qoq_pct": -1.5069,
+    "book_value_per_share": 3.318970601396,
+    "roe_pct": 6.41,
+    "operating_cashflow_per_share": 0.212816797853,
+    "gross_margin_pct": 29.212699088,
+    "industry": "化学原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

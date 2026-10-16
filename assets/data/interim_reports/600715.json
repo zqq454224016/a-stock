@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600715",
+  "name": "文投控股",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "dc0252874ccffc6fe193",
+  "metrics": {
+    "eps": -0.0052,
+    "revenue": 109629115.72,
+    "revenue_yoy_pct": -38.4150392049,
+    "revenue_qoq_pct": -36.2311,
+    "net_profit": -19839905.79,
+    "net_profit_yoy_pct": -538.19,
+    "net_profit_qoq_pct": -412.6209,
+    "book_value_per_share": 0.262982552846,
+    "roe_pct": -1.84,
+    "operating_cashflow_per_share": 0.05943097616,
+    "gross_margin_pct": 13.7785225584,
+    "industry": "游戏Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

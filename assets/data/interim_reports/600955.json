@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600955",
+  "name": "维远股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c89dd09fcb549e1014c4",
+  "metrics": {
+    "eps": -0.04,
+    "revenue": 5601413530.56,
+    "revenue_yoy_pct": 21.7499980727,
+    "revenue_qoq_pct": 8.9564,
+    "net_profit": -22400266.41,
+    "net_profit_yoy_pct": 86.6298050929,
+    "net_profit_qoq_pct": -231.4065,
+    "book_value_per_share": 13.735314024182,
+    "roe_pct": -0.3,
+    "operating_cashflow_per_share": 1.767728177873,
+    "gross_margin_pct": 3.1899749104,
+    "industry": "化学原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

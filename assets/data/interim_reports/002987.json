@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002987",
+  "name": "京北方",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ac8598447e2c62b124ed",
+  "metrics": {
+    "eps": 0.09,
+    "revenue": 2336287000.98,
+    "revenue_yoy_pct": -1.0452667806,
+    "revenue_qoq_pct": 3.7427,
+    "net_profit": 98820825.34,
+    "net_profit_yoy_pct": -16.85,
+    "net_profit_qoq_pct": 192.7524,
+    "book_value_per_share": 2.782441053608,
+    "roe_pct": 3.3,
+    "operating_cashflow_per_share": -0.531882676768,
+    "gross_margin_pct": 21.0897678754,
+    "industry": "软件开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

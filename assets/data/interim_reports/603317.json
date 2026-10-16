@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603317",
+  "name": "天味食品",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "76186653eaaf04f5e23b",
+  "metrics": {
+    "eps": 0.3602,
+    "revenue": 2027725694.93,
+    "revenue_yoy_pct": 45.7950635917,
+    "revenue_qoq_pct": -20.6302,
+    "net_profit": 380802200.01,
+    "net_profit_yoy_pct": 100.4,
+    "net_profit_qoq_pct": -47.7458,
+    "book_value_per_share": 3.995869207359,
+    "roe_pct": 8.42,
+    "operating_cashflow_per_share": 0.354210162261,
+    "gross_margin_pct": 42.3160789527,
+    "industry": "调味发酵品Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

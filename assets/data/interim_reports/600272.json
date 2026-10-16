@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600272",
+  "name": "开开实业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0f0f9bcdef64af6519a5",
+  "metrics": {
+    "eps": 0.085,
+    "revenue": 574609027.97,
+    "revenue_yoy_pct": 5.7932524193,
+    "revenue_qoq_pct": 13.2162,
+    "net_profit": 22225004.25,
+    "net_profit_yoy_pct": 88.33,
+    "net_profit_qoq_pct": -76.8553,
+    "book_value_per_share": 3.026363781353,
+    "roe_pct": 2.82,
+    "operating_cashflow_per_share": 0.114823728794,
+    "gross_margin_pct": 14.5808533649,
+    "industry": "医药商业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

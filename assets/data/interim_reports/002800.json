@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002800",
+  "name": "天顺股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "2e9fe66b6db9d07684a7",
+  "metrics": {
+    "eps": -0.05,
+    "revenue": 524262668.15,
+    "revenue_yoy_pct": 3.6838209085,
+    "revenue_qoq_pct": 25.0207,
+    "net_profit": -7617405.63,
+    "net_profit_yoy_pct": -19.98,
+    "net_profit_qoq_pct": -631.0246,
+    "book_value_per_share": 3.183364458464,
+    "roe_pct": -1.56,
+    "operating_cashflow_per_share": -0.099869451957,
+    "gross_margin_pct": 6.4789311911,
+    "industry": "物流"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

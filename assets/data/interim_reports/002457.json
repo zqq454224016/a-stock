@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002457",
+  "name": "青龙管业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "788386cb2d5b886e4b56",
+  "metrics": {
+    "eps": 0.0439,
+    "revenue": 951469051.55,
+    "revenue_yoy_pct": 1.9325396056,
+    "revenue_qoq_pct": 178.2496,
+    "net_profit": 14505375.34,
+    "net_profit_yoy_pct": 7.65,
+    "net_profit_qoq_pct": 428.7516,
+    "book_value_per_share": 7.559126250064,
+    "roe_pct": 0.57,
+    "operating_cashflow_per_share": -1.109244023302,
+    "gross_margin_pct": 27.9761970135,
+    "industry": "装修建材"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

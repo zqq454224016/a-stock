@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002745",
+  "name": "木林森",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "941274a6c3eeaae6097e",
+  "metrics": {
+    "eps": 0.45,
+    "revenue": 9794845559.3,
+    "revenue_yoy_pct": 23.6835503406,
+    "revenue_qoq_pct": 7.5179,
+    "net_profit": 661545102.0,
+    "net_profit_yoy_pct": 330.68,
+    "net_profit_qoq_pct": -42.0146,
+    "book_value_per_share": 8.121443621646,
+    "roe_pct": 5.6,
+    "operating_cashflow_per_share": 0.735611282,
+    "gross_margin_pct": 27.7954661522,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

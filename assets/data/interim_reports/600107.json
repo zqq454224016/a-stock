@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600107",
+  "name": "*ST尔雅",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "118a5c2ee98ddda48f74",
+  "metrics": {
+    "eps": -0.03,
+    "revenue": 144028196.14,
+    "revenue_yoy_pct": 11.5432404734,
+    "revenue_qoq_pct": -22.2956,
+    "net_profit": -12505210.49,
+    "net_profit_yoy_pct": 42.7905797338,
+    "net_profit_qoq_pct": -534.6541,
+    "book_value_per_share": 1.081049785639,
+    "roe_pct": -3.16,
+    "operating_cashflow_per_share": -0.178797090222,
+    "gross_margin_pct": 35.186787003,
+    "industry": "服装家纺"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600629",
+  "name": "华建集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1c341133e254ad34933f",
+  "metrics": {
+    "eps": 0.01,
+    "revenue": 2358788696.58,
+    "revenue_yoy_pct": -20.7624470958,
+    "revenue_qoq_pct": -1.9838,
+    "net_profit": 11833680.03,
+    "net_profit_yoy_pct": -91.37,
+    "net_profit_qoq_pct": 88.213,
+    "book_value_per_share": 4.572027096566,
+    "roe_pct": 0.22,
+    "operating_cashflow_per_share": -0.660813223468,
+    "gross_margin_pct": 21.5390413697,
+    "industry": "工程咨询服务Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

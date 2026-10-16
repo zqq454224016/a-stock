@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001233",
+  "name": "海安集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ca8849c02f4f756f73a5",
+  "metrics": {
+    "eps": 0.99,
+    "revenue": 1116923730.51,
+    "revenue_yoy_pct": 3.4657132657,
+    "revenue_qoq_pct": 35.5211,
+    "net_profit": 183742299.53,
+    "net_profit_yoy_pct": -46.09,
+    "net_profit_qoq_pct": 145.8383,
+    "book_value_per_share": 26.084834257098,
+    "roe_pct": 3.86,
+    "operating_cashflow_per_share": 0.976388801848,
+    "gross_margin_pct": 40.7405692081,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

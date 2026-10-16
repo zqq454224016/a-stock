@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603065",
+  "name": "宿迁联盛",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d92f7bd6aafb152a0d3f",
+  "metrics": {
+    "eps": 0.0232,
+    "revenue": 713397475.82,
+    "revenue_yoy_pct": 13.7067882983,
+    "revenue_qoq_pct": 20.9545,
+    "net_profit": 9645170.83,
+    "net_profit_yoy_pct": -37.58,
+    "net_profit_qoq_pct": -22.667,
+    "book_value_per_share": 4.580870650724,
+    "roe_pct": 0.49,
+    "operating_cashflow_per_share": 0.211325868604,
+    "gross_margin_pct": 14.4357354141,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

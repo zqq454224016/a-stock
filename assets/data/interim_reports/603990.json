@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603990",
+  "name": "麦迪科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7abc5733d33ee0bee2e4",
+  "metrics": {
+    "eps": 0.02,
+    "revenue": 123164433.52,
+    "revenue_yoy_pct": -8.9045895807,
+    "revenue_qoq_pct": -0.3451,
+    "net_profit": 6633170.15,
+    "net_profit_yoy_pct": -76.58,
+    "net_profit_qoq_pct": -27.5446,
+    "book_value_per_share": 2.757036988934,
+    "roe_pct": 0.79,
+    "operating_cashflow_per_share": -0.001129782349,
+    "gross_margin_pct": 60.1384507712,
+    "industry": "软件开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

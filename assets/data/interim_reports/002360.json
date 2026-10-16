@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002360",
+  "name": "ST同德",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c5fcc869d1d96170b00d",
+  "metrics": {
+    "eps": -0.12,
+    "revenue": 184063788.29,
+    "revenue_yoy_pct": -27.9976342653,
+    "revenue_qoq_pct": 12.9777,
+    "net_profit": -48474323.82,
+    "net_profit_yoy_pct": -537.02,
+    "net_profit_qoq_pct": -236.7479,
+    "book_value_per_share": 2.199825213611,
+    "roe_pct": -5.34,
+    "operating_cashflow_per_share": 0.151875334106,
+    "gross_margin_pct": 44.6648351606,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

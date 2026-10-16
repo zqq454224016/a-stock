@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002669",
+  "name": "康达新材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-24T00:00:00+08:00",
+  "known_at": "2026-08-24T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "14a6a9c40cc474fbfae8",
+  "metrics": {
+    "eps": 0.099,
+    "revenue": 2766851077.72,
+    "revenue_yoy_pct": 22.5298547991,
+    "revenue_qoq_pct": 39.4075,
+    "net_profit": 28677905.63,
+    "net_profit_yoy_pct": -43.96,
+    "net_profit_qoq_pct": 217.7781,
+    "book_value_per_share": 9.021306470336,
+    "roe_pct": 1.03,
+    "operating_cashflow_per_share": -1.237417200066,
+    "gross_margin_pct": 12.6026198962,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

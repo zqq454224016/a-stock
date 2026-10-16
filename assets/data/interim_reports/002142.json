@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002142",
+  "name": "宁波银行",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1ed2140f378b80948bea",
+  "metrics": {
+    "eps": 2.51,
+    "revenue": 41450000000.0,
+    "revenue_yoy_pct": 11.54467169,
+    "revenue_qoq_pct": 3.3458,
+    "net_profit": 16562000000.0,
+    "net_profit_yoy_pct": 12.12,
+    "net_profit_qoq_pct": 2.4447,
+    "book_value_per_share": 36.760751059964,
+    "roe_pct": 7.12,
+    "operating_cashflow_per_share": 5.032404603271,
+    "gross_margin_pct": null,
+    "industry": "银行Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

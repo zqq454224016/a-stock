@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600184",
+  "name": "光电股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "104257204bc352eae119",
+  "metrics": {
+    "eps": 0.0273,
+    "revenue": 768108573.27,
+    "revenue_yoy_pct": -10.5609408561,
+    "revenue_qoq_pct": 44.0676,
+    "net_profit": 15895422.84,
+    "net_profit_yoy_pct": 28.39,
+    "net_profit_qoq_pct": 1217.1692,
+    "book_value_per_share": 5.862783454649,
+    "roe_pct": 0.46,
+    "operating_cashflow_per_share": 0.153128437786,
+    "gross_margin_pct": 24.5058069732,
+    "industry": "地面兵装Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

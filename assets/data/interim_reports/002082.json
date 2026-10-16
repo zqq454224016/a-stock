@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002082",
+  "name": "ST万邦",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "55053a1f78c03b3b85de",
+  "metrics": {
+    "eps": 0.1035,
+    "revenue": 588813806.84,
+    "revenue_yoy_pct": 1.773697397,
+    "revenue_qoq_pct": -42.6526,
+    "net_profit": 63277183.04,
+    "net_profit_yoy_pct": 369.99,
+    "net_profit_qoq_pct": -138.5363,
+    "book_value_per_share": 4.212052279552,
+    "roe_pct": 2.49,
+    "operating_cashflow_per_share": 0.100481623445,
+    "gross_margin_pct": 44.8459216908,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

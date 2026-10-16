@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601686",
+  "name": "友发集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5556057c602f3c72caad",
+  "metrics": {
+    "eps": 0.2,
+    "revenue": 25023615428.16,
+    "revenue_yoy_pct": 0.5444149373,
+    "revenue_qoq_pct": 35.0802,
+    "net_profit": 278467306.38,
+    "net_profit_yoy_pct": -2.88,
+    "net_profit_qoq_pct": 15.6066,
+    "book_value_per_share": 4.664015969986,
+    "roe_pct": 4.04,
+    "operating_cashflow_per_share": 0.45119150916,
+    "gross_margin_pct": 2.8287715266,
+    "industry": "普钢"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

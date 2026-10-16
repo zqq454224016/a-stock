@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002247",
+  "name": "聚力文化",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "bb5aeeaff389bc8b4e89",
+  "metrics": {
+    "eps": 0.0181,
+    "revenue": 366566737.66,
+    "revenue_yoy_pct": 0.5465629461,
+    "revenue_qoq_pct": 21.8729,
+    "net_profit": 15392965.8,
+    "net_profit_yoy_pct": -34.92,
+    "net_profit_qoq_pct": 1594.8819,
+    "book_value_per_share": 0.807345755638,
+    "roe_pct": 2.27,
+    "operating_cashflow_per_share": -0.021539444832,
+    "gross_margin_pct": 21.6541342476,
+    "industry": "装修建材"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

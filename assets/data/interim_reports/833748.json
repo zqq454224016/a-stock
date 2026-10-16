@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "833748",
+  "name": "奥图股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-21T00:00:00+08:00",
+  "known_at": "2026-07-21T23:59:59+08:00",
+  "fetched_at": "2026-07-25 13:56:37",
+  "version_id": "a8a1b532d0f923a1e647",
+  "metrics": {
+    "eps": 0.41,
+    "revenue": 254626832.33,
+    "revenue_yoy_pct": 25.6940939489,
+    "revenue_qoq_pct": 29.7981,
+    "net_profit": 30805252.54,
+    "net_profit_yoy_pct": -3.72,
+    "net_profit_qoq_pct": -5.8131,
+    "book_value_per_share": 4.28386422841,
+    "roe_pct": 9.97,
+    "operating_cashflow_per_share": 0.455409395143,
+    "gross_margin_pct": 28.4781360065,
+    "industry": null
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-07-25 13:56:37"
+}

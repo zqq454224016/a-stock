@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603293",
+  "name": "埃泰克",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "12485d845d284942f146",
+  "metrics": {
+    "eps": 0.63,
+    "revenue": 1778973695.74,
+    "revenue_yoy_pct": 16.9216650709,
+    "revenue_qoq_pct": 19.0159,
+    "net_profit": 93408728.97,
+    "net_profit_yoy_pct": 1.03,
+    "net_profit_qoq_pct": -39.0572,
+    "book_value_per_share": 16.452404248579,
+    "roe_pct": 4.68,
+    "operating_cashflow_per_share": 0.970030701099,
+    "gross_margin_pct": 18.0723772431,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

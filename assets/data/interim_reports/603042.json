@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603042",
+  "name": "华脉科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5002fe6906d84fea82c6",
+  "metrics": {
+    "eps": 0.0888,
+    "revenue": 394057097.6,
+    "revenue_yoy_pct": 5.0382693561,
+    "revenue_qoq_pct": 36.1448,
+    "net_profit": 18543338.79,
+    "net_profit_yoy_pct": 185.0595994219,
+    "net_profit_qoq_pct": 1046.1751,
+    "book_value_per_share": 4.082292576158,
+    "roe_pct": 2.19,
+    "operating_cashflow_per_share": -0.199187369369,
+    "gross_margin_pct": 35.7897414611,
+    "industry": "通信设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

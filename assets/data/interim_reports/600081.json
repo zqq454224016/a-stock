@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600081",
+  "name": "东风科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1e3508b66f7a69d296cb",
+  "metrics": {
+    "eps": 0.1616,
+    "revenue": 2856107835.53,
+    "revenue_yoy_pct": -7.9595588176,
+    "revenue_qoq_pct": 11.4944,
+    "net_profit": 89341383.8,
+    "net_profit_yoy_pct": 107.49,
+    "net_profit_qoq_pct": 23.9486,
+    "book_value_per_share": 8.441835222138,
+    "roe_pct": 1.93,
+    "operating_cashflow_per_share": 0.086227128836,
+    "gross_margin_pct": 16.8847818136,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

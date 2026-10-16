@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002817",
+  "name": "黄山胶囊",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "749ff55e6e30ea54d964",
+  "metrics": {
+    "eps": 0.1,
+    "revenue": 190559219.49,
+    "revenue_yoy_pct": -21.864012954,
+    "revenue_qoq_pct": -1.0607,
+    "net_profit": 30137790.1,
+    "net_profit_yoy_pct": -15.23,
+    "net_profit_qoq_pct": -26.4176,
+    "book_value_per_share": 3.257303867456,
+    "roe_pct": 3.11,
+    "operating_cashflow_per_share": 0.225973157442,
+    "gross_margin_pct": 33.2960280378,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

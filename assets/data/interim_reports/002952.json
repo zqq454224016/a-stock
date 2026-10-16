@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002952",
+  "name": "亚世光电",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4c66e3ed61925bd7d36b",
+  "metrics": {
+    "eps": 0.0891,
+    "revenue": 471765158.07,
+    "revenue_yoy_pct": 9.0853636467,
+    "revenue_qoq_pct": -0.1214,
+    "net_profit": 14549496.32,
+    "net_profit_yoy_pct": 170.42,
+    "net_profit_qoq_pct": -37.0899,
+    "book_value_per_share": 5.35499483668,
+    "roe_pct": 1.66,
+    "operating_cashflow_per_share": 0.261104758854,
+    "gross_margin_pct": 14.9644875342,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

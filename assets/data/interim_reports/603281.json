@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603281",
+  "name": "江瀚新材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "96ca1d35752e3be1b583",
+  "metrics": {
+    "eps": 0.49,
+    "revenue": 1091780753.58,
+    "revenue_yoy_pct": 15.5353334859,
+    "revenue_qoq_pct": 11.688,
+    "net_profit": 178094586.64,
+    "net_profit_yoy_pct": -15.35,
+    "net_profit_qoq_pct": -27.708,
+    "book_value_per_share": 13.320847946302,
+    "roe_pct": 3.65,
+    "operating_cashflow_per_share": 0.28279870187,
+    "gross_margin_pct": 25.4167312411,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

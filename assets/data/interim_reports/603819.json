@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603819",
+  "name": "神力股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1de2f572fe4a857b03ba",
+  "metrics": {
+    "eps": 0.0923,
+    "revenue": 765098597.3,
+    "revenue_yoy_pct": 5.3166292796,
+    "revenue_qoq_pct": 24.5163,
+    "net_profit": 20088694.15,
+    "net_profit_yoy_pct": 155.03,
+    "net_profit_qoq_pct": 91.5455,
+    "book_value_per_share": 3.750742451758,
+    "roe_pct": 2.47,
+    "operating_cashflow_per_share": 0.572055929985,
+    "gross_margin_pct": 9.052403913,
+    "industry": "电机Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

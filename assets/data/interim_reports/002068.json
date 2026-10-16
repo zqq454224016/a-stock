@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002068",
+  "name": "黑猫股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "553717681dc3b97d2d24",
+  "metrics": {
+    "eps": -0.1447,
+    "revenue": 4425228797.07,
+    "revenue_yoy_pct": 3.009175649,
+    "revenue_qoq_pct": 33.1478,
+    "net_profit": -106374903.72,
+    "net_profit_yoy_pct": 7.46,
+    "net_profit_qoq_pct": 88.1172,
+    "book_value_per_share": 3.35695362303,
+    "roe_pct": -4.35,
+    "operating_cashflow_per_share": 0.086200549286,
+    "gross_margin_pct": 3.8923979134,
+    "industry": "橡胶"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

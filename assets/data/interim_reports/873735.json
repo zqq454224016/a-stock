@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "873735",
+  "name": "弘森药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-09T00:00:00+08:00",
+  "known_at": "2026-07-09T23:59:59+08:00",
+  "fetched_at": "2026-07-25 13:56:37",
+  "version_id": "dd90d5ccf377ebf2d7b0",
+  "metrics": {
+    "eps": 0.19,
+    "revenue": 119796569.21,
+    "revenue_yoy_pct": -14.0290374062,
+    "revenue_qoq_pct": null,
+    "net_profit": 18562971.75,
+    "net_profit_yoy_pct": -39.27,
+    "net_profit_qoq_pct": null,
+    "book_value_per_share": 1.772077917551,
+    "roe_pct": 11.29,
+    "operating_cashflow_per_share": 0.287068739694,
+    "gross_margin_pct": 39.0333595264,
+    "industry": null
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-07-25 13:56:37"
+}

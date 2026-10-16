@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605009",
+  "name": "豪悦护理",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e1c4c7d925bcc0d4bc1c",
+  "metrics": {
+    "eps": 0.72,
+    "revenue": 1961064786.96,
+    "revenue_yoy_pct": 11.4264999626,
+    "revenue_qoq_pct": 1.2001,
+    "net_profit": 153853625.93,
+    "net_profit_yoy_pct": 3.62,
+    "net_profit_qoq_pct": -15.7681,
+    "book_value_per_share": 15.685190149637,
+    "roe_pct": 4.51,
+    "operating_cashflow_per_share": 1.803200962425,
+    "gross_margin_pct": 30.0127321409,
+    "industry": "个护用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

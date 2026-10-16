@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002179",
+  "name": "中航光电",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "121b7a84c6b782eb073c",
+  "metrics": {
+    "eps": 0.5338,
+    "revenue": 11239609545.51,
+    "revenue_yoy_pct": 0.5018792499,
+    "revenue_qoq_pct": 30.6865,
+    "net_profit": 1118877253.31,
+    "net_profit_yoy_pct": -22.13,
+    "net_profit_qoq_pct": 80.9192,
+    "book_value_per_share": 11.554389163925,
+    "roe_pct": 4.51,
+    "operating_cashflow_per_share": 0.130012524222,
+    "gross_margin_pct": 28.7688673418,
+    "industry": "军工电子Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

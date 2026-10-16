@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600665",
+  "name": "天地源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b8921eb28bf37b1df3c2",
+  "metrics": {
+    "eps": -0.6152,
+    "revenue": 1630368442.27,
+    "revenue_yoy_pct": -33.7543319599,
+    "revenue_qoq_pct": -22.7133,
+    "net_profit": -531612069.6,
+    "net_profit_yoy_pct": -327.5382344686,
+    "net_profit_qoq_pct": -138.4166,
+    "book_value_per_share": 1.206800786934,
+    "roe_pct": -40.62,
+    "operating_cashflow_per_share": 0.773555337519,
+    "gross_margin_pct": 0.7917275541,
+    "industry": "房地产开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

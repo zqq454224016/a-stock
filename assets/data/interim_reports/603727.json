@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603727",
+  "name": "博迈科",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-25T00:00:00+08:00",
+  "known_at": "2026-07-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "55e65a9fe0a112f24aa9",
+  "metrics": {
+    "eps": -0.25,
+    "revenue": 764310152.21,
+    "revenue_yoy_pct": -26.715844062,
+    "revenue_qoq_pct": 96.6926,
+    "net_profit": -70440288.38,
+    "net_profit_yoy_pct": -668.72,
+    "net_profit_qoq_pct": 80.3993,
+    "book_value_per_share": 10.962334681485,
+    "roe_pct": -2.2155,
+    "operating_cashflow_per_share": 0.940668228713,
+    "gross_margin_pct": 5.8025181547,
+    "industry": "油服工程"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

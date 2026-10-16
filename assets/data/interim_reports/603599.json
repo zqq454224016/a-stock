@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603599",
+  "name": "广信股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c8fac3836cf6830e7b2b",
+  "metrics": {
+    "eps": 0.39,
+    "revenue": 1617139455.16,
+    "revenue_yoy_pct": -14.4303052991,
+    "revenue_qoq_pct": -22.6277,
+    "net_profit": 357022611.51,
+    "net_profit_yoy_pct": 1.84,
+    "net_profit_qoq_pct": 26.9304,
+    "book_value_per_share": 11.225886372698,
+    "roe_pct": 3.52,
+    "operating_cashflow_per_share": 0.296717541268,
+    "gross_margin_pct": 41.2313470779,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

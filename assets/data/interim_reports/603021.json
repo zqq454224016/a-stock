@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603021",
+  "name": "*ST华鹏",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c3275b3446d61c5aefb9",
+  "metrics": {
+    "eps": -0.23,
+    "revenue": 179325461.73,
+    "revenue_yoy_pct": -1.098895486,
+    "revenue_qoq_pct": -12.0417,
+    "net_profit": -74706717.92,
+    "net_profit_yoy_pct": -25.61,
+    "net_profit_qoq_pct": 9.5515,
+    "book_value_per_share": -0.756634257272,
+    "roe_pct": null,
+    "operating_cashflow_per_share": 0.031596887739,
+    "gross_margin_pct": 12.49769831,
+    "industry": "家居用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603568",
+  "name": "伟明环保",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8e490b3d1c7edff7994e",
+  "metrics": {
+    "eps": 0.45,
+    "revenue": 3068797068.05,
+    "revenue_yoy_pct": -21.3884539765,
+    "revenue_qoq_pct": 10.8064,
+    "net_profit": 929541087.65,
+    "net_profit_yoy_pct": -34.76,
+    "net_profit_qoq_pct": 11.5459,
+    "book_value_per_share": 7.127763520643,
+    "roe_pct": 6.08,
+    "operating_cashflow_per_share": 0.562089926894,
+    "gross_margin_pct": 46.9249001716,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

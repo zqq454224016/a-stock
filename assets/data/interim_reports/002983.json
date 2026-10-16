@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002983",
+  "name": "芯瑞达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "42ed78fe9034628bd276",
+  "metrics": {
+    "eps": 0.23,
+    "revenue": 510006882.0,
+    "revenue_yoy_pct": 3.8365043502,
+    "revenue_qoq_pct": 25.5667,
+    "net_profit": 50818610.3,
+    "net_profit_yoy_pct": -23.61,
+    "net_profit_qoq_pct": -33.17,
+    "book_value_per_share": 6.059827139232,
+    "roe_pct": 3.68,
+    "operating_cashflow_per_share": 0.322379496505,
+    "gross_margin_pct": 21.5796806777,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605077",
+  "name": "华康股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5aa48d81892b016aff47",
+  "metrics": {
+    "eps": 0.14,
+    "revenue": 2481144512.5,
+    "revenue_yoy_pct": 32.9757986554,
+    "revenue_qoq_pct": 9.0585,
+    "net_profit": 41964049.18,
+    "net_profit_yoy_pct": -68.61,
+    "net_profit_qoq_pct": -10.7293,
+    "book_value_per_share": 9.841285199772,
+    "roe_pct": 1.3,
+    "operating_cashflow_per_share": 0.353779567733,
+    "gross_margin_pct": 12.1548763396,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

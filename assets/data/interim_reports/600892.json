@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600892",
+  "name": "大晟文化",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f44d2f66b094f7583b66",
+  "metrics": {
+    "eps": -0.07,
+    "revenue": 153886970.15,
+    "revenue_yoy_pct": 41.4680289571,
+    "revenue_qoq_pct": 2.5843,
+    "net_profit": -38851448.96,
+    "net_profit_yoy_pct": -15.1924794262,
+    "net_profit_qoq_pct": -27.7743,
+    "book_value_per_share": -0.024314744825,
+    "roe_pct": null,
+    "operating_cashflow_per_share": -0.116400039353,
+    "gross_margin_pct": 74.4572315176,
+    "industry": "游戏Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

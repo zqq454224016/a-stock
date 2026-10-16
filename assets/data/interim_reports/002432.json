@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002432",
+  "name": "九安医疗",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f488bac9ba1710f322a1",
+  "metrics": {
+    "eps": 7.3329,
+    "revenue": 531269303.32,
+    "revenue_yoy_pct": -30.5770974191,
+    "revenue_qoq_pct": -23.7812,
+    "net_profit": 3070222755.5,
+    "net_profit_yoy_pct": 233.66,
+    "net_profit_qoq_pct": 845.954,
+    "book_value_per_share": 49.654157132887,
+    "roe_pct": 13.65,
+    "operating_cashflow_per_share": -0.243994391733,
+    "gross_margin_pct": 67.878072811,
+    "industry": "医疗器械"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

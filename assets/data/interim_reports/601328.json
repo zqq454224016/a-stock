@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601328",
+  "name": "交通银行",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "79916f8594f8c39a86c4",
+  "metrics": {
+    "eps": 0.52,
+    "revenue": 142343000000.0,
+    "revenue_yoy_pct": 6.7295003299,
+    "revenue_qoq_pct": 4.4629,
+    "net_profit": 47874000000.0,
+    "net_profit_yoy_pct": 4.04,
+    "net_profit_qoq_pct": -17.0094,
+    "book_value_per_share": 13.21624190847,
+    "roe_pct": 4.045,
+    "operating_cashflow_per_share": 1.074453397311,
+    "gross_margin_pct": null,
+    "industry": "银行Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603929",
+  "name": "亚翔集成",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-31T00:00:00+08:00",
+  "known_at": "2026-07-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "842a3f6fef191e676264",
+  "metrics": {
+    "eps": 2.3,
+    "revenue": 2547729187.94,
+    "revenue_yoy_pct": 51.3555104102,
+    "revenue_qoq_pct": 25.3754,
+    "net_profit": 490416194.97,
+    "net_profit_yoy_pct": 204.8,
+    "net_profit_qoq_pct": -2.2134,
+    "book_value_per_share": 11.190829495079,
+    "roe_pct": 20.91,
+    "operating_cashflow_per_share": -0.613837782387,
+    "gross_margin_pct": 24.2492882778,
+    "industry": "专业工程"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

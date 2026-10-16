@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600592",
+  "name": "龙溪股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f37626a353d57858c83f",
+  "metrics": {
+    "eps": 0.13,
+    "revenue": 604320191.82,
+    "revenue_yoy_pct": -18.8528293575,
+    "revenue_qoq_pct": 2.4042,
+    "net_profit": 53128445.71,
+    "net_profit_yoy_pct": -17.96,
+    "net_profit_qoq_pct": 22104.1626,
+    "book_value_per_share": 6.521818822363,
+    "roe_pct": 2.03,
+    "operating_cashflow_per_share": 0.169962044063,
+    "gross_margin_pct": 39.6085261588,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600885",
+  "name": "宏发股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-30T00:00:00+08:00",
+  "known_at": "2026-07-30T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "67b52e7e1fd0a165f3e8",
+  "metrics": {
+    "eps": 0.7469,
+    "revenue": 11022043268.08,
+    "revenue_yoy_pct": 32.0470131211,
+    "revenue_qoq_pct": 15.7931,
+    "net_profit": 1155954728.38,
+    "net_profit_yoy_pct": 19.89,
+    "net_profit_qoq_pct": 38.6919,
+    "book_value_per_share": 8.537374393505,
+    "roe_pct": 8.82,
+    "operating_cashflow_per_share": 0.073762193219,
+    "gross_margin_pct": 32.6768165247,
+    "industry": "电网设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

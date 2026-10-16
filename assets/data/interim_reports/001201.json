@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001201",
+  "name": "东瑞股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7abb6a57d75aa75684c4",
+  "metrics": {
+    "eps": -1.67,
+    "revenue": 1038915109.83,
+    "revenue_yoy_pct": -5.0851668087,
+    "revenue_qoq_pct": -33.1781,
+    "net_profit": -425039308.53,
+    "net_profit_yoy_pct": -12899.45,
+    "net_profit_qoq_pct": -25.4172,
+    "book_value_per_share": 10.690953501067,
+    "roe_pct": -14.32,
+    "operating_cashflow_per_share": -0.536761321894,
+    "gross_margin_pct": -6.6115341263,
+    "industry": "养殖业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

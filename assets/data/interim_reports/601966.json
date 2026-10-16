@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601966",
+  "name": "玲珑轮胎",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "bed2f14c2c552ec99988",
+  "metrics": {
+    "eps": 0.07,
+    "revenue": 12733281882.0,
+    "revenue_yoy_pct": 7.8005854383,
+    "revenue_qoq_pct": 10.21,
+    "net_profit": 101441026.0,
+    "net_profit_yoy_pct": -88.13,
+    "net_profit_qoq_pct": 400.4746,
+    "book_value_per_share": 15.397063412831,
+    "roe_pct": 0.44,
+    "operating_cashflow_per_share": 0.899475926003,
+    "gross_margin_pct": 15.7880991926,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

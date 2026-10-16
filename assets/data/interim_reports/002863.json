@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002863",
+  "name": "今飞凯达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "caa9fd17ca078d8f239a",
+  "metrics": {
+    "eps": 0.08,
+    "revenue": 3056753357.72,
+    "revenue_yoy_pct": 18.2511999438,
+    "revenue_qoq_pct": 18.8531,
+    "net_profit": 49552138.92,
+    "net_profit_yoy_pct": 9.36,
+    "net_profit_qoq_pct": -31.4586,
+    "book_value_per_share": 4.713581790919,
+    "roe_pct": 1.75,
+    "operating_cashflow_per_share": 0.026199417074,
+    "gross_margin_pct": 13.5859312787,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

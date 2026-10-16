@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000523",
+  "name": "红棉股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "83306a14c19def6d7335",
+  "metrics": {
+    "eps": 0.0419,
+    "revenue": 1065045758.79,
+    "revenue_yoy_pct": -0.7300338097,
+    "revenue_qoq_pct": 9.2209,
+    "net_profit": 76082258.96,
+    "net_profit_yoy_pct": 127.05,
+    "net_profit_qoq_pct": -39.7484,
+    "book_value_per_share": 1.086879538357,
+    "roe_pct": 3.89,
+    "operating_cashflow_per_share": 0.112849961626,
+    "gross_margin_pct": 14.3836191859,
+    "industry": "综合Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

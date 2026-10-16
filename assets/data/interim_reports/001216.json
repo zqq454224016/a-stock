@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001216",
+  "name": "华瓷股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "99ba431c0d0eea3e8afe",
+  "metrics": {
+    "eps": 0.39,
+    "revenue": 575564782.35,
+    "revenue_yoy_pct": -20.7659448354,
+    "revenue_qoq_pct": -9.22,
+    "net_profit": 102837131.89,
+    "net_profit_yoy_pct": -14.18,
+    "net_profit_qoq_pct": 35.241,
+    "book_value_per_share": 8.589403807916,
+    "roe_pct": 4.87,
+    "operating_cashflow_per_share": 0.301404100506,
+    "gross_margin_pct": 33.2914337562,
+    "industry": "家居用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

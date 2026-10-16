@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600265",
+  "name": "*ST景谷",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5a46beb037d0582d621c",
+  "metrics": {
+    "eps": -0.002,
+    "revenue": 55931688.02,
+    "revenue_yoy_pct": -54.6472078409,
+    "revenue_qoq_pct": -13.798,
+    "net_profit": -209327.84,
+    "net_profit_yoy_pct": 99.8311820008,
+    "net_profit_qoq_pct": 180.0357,
+    "book_value_per_share": 2.543363578351,
+    "roe_pct": -0.1,
+    "operating_cashflow_per_share": 0.22216216379,
+    "gross_margin_pct": 32.8995161623,
+    "industry": "林业Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601991",
+  "name": "大唐发电",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d8250da9e7edf1e29221",
+  "metrics": {
+    "eps": 0.2679,
+    "revenue": 58418195000.0,
+    "revenue_yoy_pct": 2.1427061621,
+    "revenue_qoq_pct": -7.0184,
+    "net_profit": 5509444000.0,
+    "net_profit_yoy_pct": 20.31,
+    "net_profit_qoq_pct": -9.5923,
+    "book_value_per_share": 2.036764825473,
+    "roe_pct": 13.82,
+    "operating_cashflow_per_share": 0.825177904383,
+    "gross_margin_pct": 19.2863798685,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

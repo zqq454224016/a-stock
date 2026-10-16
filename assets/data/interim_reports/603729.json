@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603729",
+  "name": "ST龙韵",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "eb87885000d912ca73be",
+  "metrics": {
+    "eps": 0.05,
+    "revenue": 128015052.45,
+    "revenue_yoy_pct": -23.8866367196,
+    "revenue_qoq_pct": -44.3649,
+    "net_profit": 4860176.11,
+    "net_profit_yoy_pct": 230.3051640114,
+    "net_profit_qoq_pct": 1.9347,
+    "book_value_per_share": 3.024574351246,
+    "roe_pct": 1.76,
+    "operating_cashflow_per_share": 0.357510182813,
+    "gross_margin_pct": 21.383433148,
+    "industry": "广告营销"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

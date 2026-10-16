@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000519",
+  "name": "中兵红箭",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c6ba03c4f7f3b3bf1de3",
+  "metrics": {
+    "eps": 0.0267,
+    "revenue": 3029821180.45,
+    "revenue_yoy_pct": 38.1509084566,
+    "revenue_qoq_pct": -26.1426,
+    "net_profit": 37197974.55,
+    "net_profit_yoy_pct": 191.36,
+    "net_profit_qoq_pct": -131.9093,
+    "book_value_per_share": 7.454740456968,
+    "roe_pct": 0.36,
+    "operating_cashflow_per_share": -0.400551950495,
+    "gross_margin_pct": 18.4813424153,
+    "industry": "地面兵装Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

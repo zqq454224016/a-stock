@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002788",
+  "name": "鹭燕医药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "51b49c9110dd9dafb62c",
+  "metrics": {
+    "eps": 0.37,
+    "revenue": 10582518010.94,
+    "revenue_yoy_pct": 1.7541757001,
+    "revenue_qoq_pct": -2.2335,
+    "net_profit": 143007304.14,
+    "net_profit_yoy_pct": -7.46,
+    "net_profit_qoq_pct": 10.5016,
+    "book_value_per_share": 8.528062141035,
+    "roe_pct": 4.26,
+    "operating_cashflow_per_share": -0.260243702629,
+    "gross_margin_pct": 6.8405704693,
+    "industry": "医药商业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

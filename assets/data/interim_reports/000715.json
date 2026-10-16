@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000715",
+  "name": "中兴商业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4144bcf1009ba79b74fd",
+  "metrics": {
+    "eps": 0.09,
+    "revenue": 375722006.51,
+    "revenue_yoy_pct": -6.6479055969,
+    "revenue_qoq_pct": -8.215,
+    "net_profit": 45961713.44,
+    "net_profit_yoy_pct": -5.87,
+    "net_profit_qoq_pct": 22.6643,
+    "book_value_per_share": 3.746981530525,
+    "roe_pct": 2.26,
+    "operating_cashflow_per_share": 0.048834334581,
+    "gross_margin_pct": 54.0829502742,
+    "industry": "一般零售"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002643",
+  "name": "万润股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "69f7b6930bb656e84bcb",
+  "metrics": {
+    "eps": 0.19,
+    "revenue": 1983410944.25,
+    "revenue_yoy_pct": 6.0689526497,
+    "revenue_qoq_pct": -4.6415,
+    "net_profit": 177428166.65,
+    "net_profit_yoy_pct": -18.67,
+    "net_profit_qoq_pct": 2.0211,
+    "book_value_per_share": 7.751999686516,
+    "roe_pct": 2.48,
+    "operating_cashflow_per_share": 0.407209195534,
+    "gross_margin_pct": 36.7766474887,
+    "industry": "电子化学品Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "003043",
+  "name": "华亚智能",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7f83790ef63975567707",
+  "metrics": {
+    "eps": 0.27,
+    "revenue": 469857388.13,
+    "revenue_yoy_pct": 8.3223648583,
+    "revenue_qoq_pct": 71.2974,
+    "net_profit": 36201859.68,
+    "net_profit_yoy_pct": 35.88,
+    "net_profit_qoq_pct": 264.0394,
+    "book_value_per_share": 13.978986419004,
+    "roe_pct": 1.97,
+    "operating_cashflow_per_share": 0.600892849042,
+    "gross_margin_pct": 28.7690279146,
+    "industry": "半导体"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

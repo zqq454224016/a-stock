@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600906",
+  "name": "财达证券",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9502537a1ff725eeac57",
+  "metrics": {
+    "eps": 0.24,
+    "revenue": 2074130186.97,
+    "revenue_yoy_pct": 67.9216834493,
+    "revenue_qoq_pct": 82.378,
+    "net_profit": 766194871.25,
+    "net_profit_yoy_pct": 104.59,
+    "net_profit_qoq_pct": 102.3804,
+    "book_value_per_share": 3.931791273045,
+    "roe_pct": 6.06,
+    "operating_cashflow_per_share": 0.264978193772,
+    "gross_margin_pct": null,
+    "industry": "证券Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

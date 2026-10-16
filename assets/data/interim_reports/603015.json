@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603015",
+  "name": "弘讯科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "dad3ef15b8ed2f5c96b1",
+  "metrics": {
+    "eps": 0.05,
+    "revenue": 441525796.79,
+    "revenue_yoy_pct": 1.2708769041,
+    "revenue_qoq_pct": 31.0028,
+    "net_profit": 25116596.22,
+    "net_profit_yoy_pct": -11.03,
+    "net_profit_qoq_pct": 171.241,
+    "book_value_per_share": 3.425870239202,
+    "roe_pct": 1.34,
+    "operating_cashflow_per_share": 0.004880684926,
+    "gross_margin_pct": 31.0200974769,
+    "industry": "自动化设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

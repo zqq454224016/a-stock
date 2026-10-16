@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002212",
+  "name": "天融信",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8bc72ad0d758883e93d8",
+  "metrics": {
+    "eps": -0.24,
+    "revenue": 545392593.6,
+    "revenue_yoy_pct": -33.991958992,
+    "revenue_qoq_pct": 42.2313,
+    "net_profit": -272876449.04,
+    "net_profit_yoy_pct": -321.8,
+    "net_profit_qoq_pct": -70.8636,
+    "book_value_per_share": 7.867782841799,
+    "roe_pct": -2.88,
+    "operating_cashflow_per_share": -0.396676159001,
+    "gross_margin_pct": 59.3468815855,
+    "industry": "软件开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

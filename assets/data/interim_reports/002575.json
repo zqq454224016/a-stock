@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002575",
+  "name": "群兴玩具",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-24T00:00:00+08:00",
+  "known_at": "2026-08-24T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "464e9c8bf3fbaa6863f4",
+  "metrics": {
+    "eps": -0.079,
+    "revenue": 223461975.75,
+    "revenue_yoy_pct": 27.3043974214,
+    "revenue_qoq_pct": 147.0788,
+    "net_profit": -48593390.33,
+    "net_profit_yoy_pct": -184.81,
+    "net_profit_qoq_pct": -5257.6677,
+    "book_value_per_share": 1.295962694355,
+    "roe_pct": -5.95,
+    "operating_cashflow_per_share": 0.024371553155,
+    "gross_margin_pct": 4.6693087828,
+    "industry": "综合Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

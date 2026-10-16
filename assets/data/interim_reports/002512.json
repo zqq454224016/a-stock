@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002512",
+  "name": "ST达华",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "43d2b8938d0c6db5863b",
+  "metrics": {
+    "eps": 0.0304,
+    "revenue": 1149143246.55,
+    "revenue_yoy_pct": 51.0060471356,
+    "revenue_qoq_pct": 39.8043,
+    "net_profit": 33283402.08,
+    "net_profit_yoy_pct": 163.29,
+    "net_profit_qoq_pct": -108.6402,
+    "book_value_per_share": 0.292239833624,
+    "roe_pct": 10.89,
+    "operating_cashflow_per_share": 0.033325034949,
+    "gross_margin_pct": 13.0289410523,
+    "industry": "计算机设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

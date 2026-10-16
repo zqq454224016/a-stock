@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603516",
+  "name": "淳中科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "46c7fb9d65f0610e9da4",
+  "metrics": {
+    "eps": 0.65,
+    "revenue": 117521142.14,
+    "revenue_yoy_pct": -8.7791170417,
+    "revenue_qoq_pct": 63.6455,
+    "net_profit": 131556010.44,
+    "net_profit_yoy_pct": 428.7371494364,
+    "net_profit_qoq_pct": 7494.0533,
+    "book_value_per_share": 8.920363241822,
+    "roe_pct": 7.44,
+    "operating_cashflow_per_share": -0.276118730016,
+    "gross_margin_pct": 32.9637207098,
+    "industry": "计算机设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

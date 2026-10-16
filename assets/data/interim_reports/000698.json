@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000698",
+  "name": "ST沈化",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "dd7f6126f7f1d8f419a2",
+  "metrics": {
+    "eps": 0.0949,
+    "revenue": 3128172663.1,
+    "revenue_yoy_pct": 21.7480363713,
+    "revenue_qoq_pct": 20.0223,
+    "net_profit": 77807589.19,
+    "net_profit_yoy_pct": 24.66,
+    "net_profit_qoq_pct": 744.8792,
+    "book_value_per_share": 1.783709758326,
+    "roe_pct": 5.48,
+    "operating_cashflow_per_share": 0.217309237466,
+    "gross_margin_pct": 8.6183944831,
+    "industry": "炼化及贸易"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

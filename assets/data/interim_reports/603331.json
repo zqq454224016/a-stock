@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603331",
+  "name": "百达精工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3fb0473eb01021fcf5d9",
+  "metrics": {
+    "eps": 0.5,
+    "revenue": 688266181.62,
+    "revenue_yoy_pct": -11.1533515877,
+    "revenue_qoq_pct": 8.0258,
+    "net_profit": 102018535.39,
+    "net_profit_yoy_pct": 130.66,
+    "net_profit_qoq_pct": 16618.82,
+    "book_value_per_share": 5.654761297598,
+    "roe_pct": 9.34,
+    "operating_cashflow_per_share": 0.17632000668,
+    "gross_margin_pct": 19.6347516061,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

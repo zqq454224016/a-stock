@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000635",
+  "name": "英力特",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4844915dd1ebd8c0ec75",
+  "metrics": {
+    "eps": -0.63,
+    "revenue": 804918668.88,
+    "revenue_yoy_pct": -7.1577464446,
+    "revenue_qoq_pct": 10.2726,
+    "net_profit": -246806972.09,
+    "net_profit_yoy_pct": -58.64,
+    "net_profit_qoq_pct": 8.7866,
+    "book_value_per_share": 2.496913904704,
+    "roe_pct": -22.38,
+    "operating_cashflow_per_share": -0.45740828625,
+    "gross_margin_pct": -17.2888239185,
+    "industry": "化学原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

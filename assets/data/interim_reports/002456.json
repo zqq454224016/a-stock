@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002456",
+  "name": "欧菲光",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f9df2b1291d83d8e84f8",
+  "metrics": {
+    "eps": -0.133,
+    "revenue": 7840793352.98,
+    "revenue_yoy_pct": -20.2911678887,
+    "revenue_qoq_pct": 10.2407,
+    "net_profit": -443503022.7,
+    "net_profit_yoy_pct": -307.36,
+    "net_profit_qoq_pct": 20.7656,
+    "book_value_per_share": 1.278383067933,
+    "roe_pct": -11.71,
+    "operating_cashflow_per_share": 0.199180794103,
+    "gross_margin_pct": 7.7699585217,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600115",
+  "name": "中国东航",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e1411d8517021452f69b",
+  "metrics": {
+    "eps": -0.11,
+    "revenue": 74234000000.0,
+    "revenue_yoy_pct": 11.0921552782,
+    "revenue_qoq_pct": 0.3076,
+    "net_profit": -2179000000.0,
+    "net_profit_yoy_pct": -52.2711390636,
+    "net_profit_qoq_pct": -333.4354,
+    "book_value_per_share": 0.452236508511,
+    "roe_pct": -21.89,
+    "operating_cashflow_per_share": 0.484290112278,
+    "gross_margin_pct": 0.0377185656,
+    "industry": "航空机场"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

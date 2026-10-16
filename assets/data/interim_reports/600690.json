@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600690",
+  "name": "海尔智家",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f50ae96a6cb85b406482",
+  "metrics": {
+    "eps": 1.12,
+    "revenue": 152115050237.63,
+    "revenue_yoy_pct": -2.7981796409,
+    "revenue_qoq_pct": 6.4348,
+    "net_profit": 10316254946.26,
+    "net_profit_yoy_pct": -14.27,
+    "net_profit_qoq_pct": 21.778,
+    "book_value_per_share": 12.762111483283,
+    "roe_pct": 8.36,
+    "operating_cashflow_per_share": 1.039925262746,
+    "gross_margin_pct": 27.2293255339,
+    "industry": "白色家电"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

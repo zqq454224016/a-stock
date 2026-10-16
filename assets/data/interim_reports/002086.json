@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002086",
+  "name": "东方海洋",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "26d32d89caa7a56294f3",
+  "metrics": {
+    "eps": -0.02,
+    "revenue": 157397250.94,
+    "revenue_yoy_pct": 0.8687706205,
+    "revenue_qoq_pct": 0.8384,
+    "net_profit": -48251681.43,
+    "net_profit_yoy_pct": 32.05,
+    "net_profit_qoq_pct": -228.1884,
+    "book_value_per_share": 0.628607815359,
+    "roe_pct": -3.84,
+    "operating_cashflow_per_share": 0.004330988508,
+    "gross_margin_pct": 0.24779016,
+    "industry": "农产品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

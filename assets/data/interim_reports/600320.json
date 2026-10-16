@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600320",
+  "name": "振华重工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b0f5219286d572431174",
+  "metrics": {
+    "eps": 0.095,
+    "revenue": 17627429728.0,
+    "revenue_yoy_pct": 1.3320704559,
+    "revenue_qoq_pct": 5.1336,
+    "net_profit": 502616926.0,
+    "net_profit_yoy_pct": 45.94,
+    "net_profit_qoq_pct": -66.4464,
+    "book_value_per_share": 3.013315086453,
+    "roe_pct": 3.13,
+    "operating_cashflow_per_share": 0.300469639171,
+    "gross_margin_pct": 13.3857355803,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

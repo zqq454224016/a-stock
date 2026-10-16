@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002014",
+  "name": "永新股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "037f54560214bbcce278",
+  "metrics": {
+    "eps": 0.3,
+    "revenue": 1937443224.39,
+    "revenue_yoy_pct": 10.9517997998,
+    "revenue_qoq_pct": 6.146,
+    "net_profit": 184053225.0,
+    "net_profit_yoy_pct": 0.43,
+    "net_profit_qoq_pct": 2.8186,
+    "book_value_per_share": 4.073837307139,
+    "roe_pct": 7.24,
+    "operating_cashflow_per_share": 0.164666040904,
+    "gross_margin_pct": 21.1746571902,
+    "industry": "包装印刷"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

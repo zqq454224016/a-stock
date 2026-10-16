@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601816",
+  "name": "京沪高铁",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1a5b671bb4b86a18bd64",
+  "metrics": {
+    "eps": 0.1384,
+    "revenue": 21841588472.02,
+    "revenue_yoy_pct": 3.9425045373,
+    "revenue_qoq_pct": 6.8453,
+    "net_profit": 6771322401.85,
+    "net_profit_yoy_pct": 7.21,
+    "net_profit_qoq_pct": 15.4666,
+    "book_value_per_share": 4.281653981423,
+    "roe_pct": 3.21,
+    "operating_cashflow_per_share": 0.218395222395,
+    "gross_margin_pct": 45.360774803,
+    "industry": "铁路公路"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

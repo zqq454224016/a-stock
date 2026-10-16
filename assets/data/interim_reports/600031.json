@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600031",
+  "name": "三一重工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1dc91b6a76884143c30a",
+  "metrics": {
+    "eps": 0.6217,
+    "revenue": 53506463000.0,
+    "revenue_yoy_pct": 19.4868647877,
+    "revenue_qoq_pct": 21.5866,
+    "net_profit": 5690229000.0,
+    "net_profit_yoy_pct": 9.13,
+    "net_profit_qoq_pct": 29.376,
+    "book_value_per_share": 10.014593468366,
+    "roe_pct": 6.16,
+    "operating_cashflow_per_share": 1.062270663504,
+    "gross_margin_pct": 27.7819043049,
+    "industry": "工程机械"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

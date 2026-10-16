@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603392",
+  "name": "万泰生物",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-20T00:00:00+08:00",
+  "known_at": "2026-08-20T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c9918056a43fc2fa1712",
+  "metrics": {
+    "eps": -0.1,
+    "revenue": 1048467239.17,
+    "revenue_yoy_pct": 24.2904982757,
+    "revenue_qoq_pct": 0.3396,
+    "net_profit": -128316086.16,
+    "net_profit_yoy_pct": 10.9151939041,
+    "net_profit_qoq_pct": -98.5218,
+    "book_value_per_share": 9.28215673056,
+    "roe_pct": -1.09,
+    "operating_cashflow_per_share": -0.064319120943,
+    "gross_margin_pct": 63.9116973555,
+    "industry": "医疗器械"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

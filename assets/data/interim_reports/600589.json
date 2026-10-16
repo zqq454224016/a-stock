@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600589",
+  "name": "大位科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3d3f789b77fa03e237f6",
+  "metrics": {
+    "eps": -0.05,
+    "revenue": 259319014.76,
+    "revenue_yoy_pct": 26.056755276,
+    "revenue_qoq_pct": 8.2314,
+    "net_profit": -69744050.26,
+    "net_profit_yoy_pct": -202.31,
+    "net_profit_qoq_pct": -18.8884,
+    "book_value_per_share": 0.393754653002,
+    "roe_pct": -11.28,
+    "operating_cashflow_per_share": 0.027059394341,
+    "gross_margin_pct": 15.8089068547,
+    "industry": "IT服务Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002010",
+  "name": "传化智联",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "84b274b62f902d372ffd",
+  "metrics": {
+    "eps": 0.1621,
+    "revenue": 7899455750.29,
+    "revenue_yoy_pct": -35.4971568103,
+    "revenue_qoq_pct": -0.2294,
+    "net_profit": 447993998.62,
+    "net_profit_yoy_pct": -11.92,
+    "net_profit_qoq_pct": -31.271,
+    "book_value_per_share": 6.528724400458,
+    "roe_pct": 2.48,
+    "operating_cashflow_per_share": -0.176996015922,
+    "gross_margin_pct": 24.1229602221,
+    "industry": "物流"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

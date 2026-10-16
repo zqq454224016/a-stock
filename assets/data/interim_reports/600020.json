@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600020",
+  "name": "中原高速",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "25d833e9826775ce961c",
+  "metrics": {
+    "eps": 0.2857,
+    "revenue": 2923216105.08,
+    "revenue_yoy_pct": -5.8556715495,
+    "revenue_qoq_pct": 3.2042,
+    "net_profit": 686817918.93,
+    "net_profit_yoy_pct": 3.57,
+    "net_profit_qoq_pct": -12.8731,
+    "book_value_per_share": 5.297911817629,
+    "roe_pct": 5.4,
+    "operating_cashflow_per_share": 0.457511554603,
+    "gross_margin_pct": 45.8757190722,
+    "industry": "铁路公路"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

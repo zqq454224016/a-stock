@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601133",
+  "name": "柏诚股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "fbf7e97557b1902606fc",
+  "metrics": {
+    "eps": 0.16,
+    "revenue": 2651686909.08,
+    "revenue_yoy_pct": 9.399874297,
+    "revenue_qoq_pct": 108.4444,
+    "net_profit": 86008923.39,
+    "net_profit_yoy_pct": 3.01,
+    "net_profit_qoq_pct": 76.7239,
+    "book_value_per_share": 5.803611725258,
+    "roe_pct": 2.83,
+    "operating_cashflow_per_share": -1.151122334399,
+    "gross_margin_pct": 10.7244389089,
+    "industry": "专业工程"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

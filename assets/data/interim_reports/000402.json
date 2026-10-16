@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000402",
+  "name": "金融街",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1c869bce91e099597be1",
+  "metrics": {
+    "eps": -0.03,
+    "revenue": 4613302213.63,
+    "revenue_yoy_pct": -0.8899703309,
+    "revenue_qoq_pct": -33.0721,
+    "net_profit": -86540011.02,
+    "net_profit_yoy_pct": 91.41,
+    "net_profit_qoq_pct": -225.0835,
+    "book_value_per_share": 6.497948458495,
+    "roe_pct": -0.45,
+    "operating_cashflow_per_share": 0.196510799348,
+    "gross_margin_pct": 25.9199661032,
+    "industry": "房地产开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

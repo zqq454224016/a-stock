@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603528",
+  "name": "多伦科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b547bee54dbac1071dd5",
+  "metrics": {
+    "eps": -0.0537,
+    "revenue": 224136474.83,
+    "revenue_yoy_pct": 11.8730595584,
+    "revenue_qoq_pct": 85.6839,
+    "net_profit": -36260264.86,
+    "net_profit_yoy_pct": -577.76,
+    "net_profit_qoq_pct": 20.2509,
+    "book_value_per_share": 2.63951837888,
+    "roe_pct": -1.93,
+    "operating_cashflow_per_share": -0.003414287993,
+    "gross_margin_pct": 32.1404858378,
+    "industry": "软件开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

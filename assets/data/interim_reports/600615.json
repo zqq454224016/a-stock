@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600615",
+  "name": "鑫源智造",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "744bec90357baa833e2a",
+  "metrics": {
+    "eps": -0.038,
+    "revenue": 320927563.4,
+    "revenue_yoy_pct": -2.3802025459,
+    "revenue_qoq_pct": 13.6805,
+    "net_profit": -8673086.32,
+    "net_profit_yoy_pct": -195.5,
+    "net_profit_qoq_pct": -7.4879,
+    "book_value_per_share": 3.178993264786,
+    "roe_pct": -1.202,
+    "operating_cashflow_per_share": -0.040911548434,
+    "gross_margin_pct": 9.7989956384,
+    "industry": "工业金属"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

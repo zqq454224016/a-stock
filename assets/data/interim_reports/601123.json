@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601123",
+  "name": "马矿股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-13T00:00:00+08:00",
+  "known_at": "2026-08-13T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "18848345186cf7b0b89a",
+  "metrics": {
+    "eps": 0.38,
+    "revenue": 1112052061.47,
+    "revenue_yoy_pct": 6.4214589778,
+    "revenue_qoq_pct": null,
+    "net_profit": 418799880.32,
+    "net_profit_yoy_pct": 15.7,
+    "net_profit_qoq_pct": 0.0225,
+    "book_value_per_share": 3.755674892518,
+    "roe_pct": 10.59,
+    "operating_cashflow_per_share": 0.457644966238,
+    "gross_margin_pct": 59.7166092954,
+    "industry": "冶钢原料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

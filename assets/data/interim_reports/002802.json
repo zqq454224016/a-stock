@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002802",
+  "name": "洪汇新材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ab9a95060f9cf4719f45",
+  "metrics": {
+    "eps": 0.16,
+    "revenue": 222615513.39,
+    "revenue_yoy_pct": 13.1707024403,
+    "revenue_qoq_pct": 37.8216,
+    "net_profit": 28700138.11,
+    "net_profit_yoy_pct": 34.45,
+    "net_profit_qoq_pct": 24.5016,
+    "book_value_per_share": 3.594131049703,
+    "roe_pct": 4.4,
+    "operating_cashflow_per_share": 0.090027312564,
+    "gross_margin_pct": 26.1607436711,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

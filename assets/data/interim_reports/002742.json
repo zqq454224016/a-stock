@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002742",
+  "name": "冀衡医药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "8b84d3ded559f65923f1",
+  "metrics": {
+    "eps": -0.0294,
+    "revenue": 240714752.19,
+    "revenue_yoy_pct": -50.5056144945,
+    "revenue_qoq_pct": -30.3619,
+    "net_profit": -20138456.92,
+    "net_profit_yoy_pct": 84.62,
+    "net_profit_qoq_pct": -49.4459,
+    "book_value_per_share": 0.216695870492,
+    "roe_pct": -12.72,
+    "operating_cashflow_per_share": -0.097829688963,
+    "gross_margin_pct": 12.0997690939,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

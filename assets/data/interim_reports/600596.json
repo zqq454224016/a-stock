@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600596",
+  "name": "新安股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "88941481dc5d723a616a",
+  "metrics": {
+    "eps": 0.19,
+    "revenue": 8562644216.24,
+    "revenue_yoy_pct": 6.260098681,
+    "revenue_qoq_pct": 9.74,
+    "net_profit": 254207476.66,
+    "net_profit_yoy_pct": 268.03,
+    "net_profit_qoq_pct": 64.0276,
+    "book_value_per_share": 9.315696862375,
+    "roe_pct": 2.02,
+    "operating_cashflow_per_share": 0.114377103347,
+    "gross_margin_pct": 14.3728655171,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

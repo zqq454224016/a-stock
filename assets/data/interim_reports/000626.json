@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000626",
+  "name": "远大控股",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0f5e0e0ac32acef95da6",
+  "metrics": {
+    "eps": 0.4246,
+    "revenue": 45938834193.86,
+    "revenue_yoy_pct": 10.2209467673,
+    "revenue_qoq_pct": 8.3041,
+    "net_profit": 215129097.24,
+    "net_profit_yoy_pct": 640.14,
+    "net_profit_qoq_pct": 168.486,
+    "book_value_per_share": 4.635401394585,
+    "roe_pct": 9.57,
+    "operating_cashflow_per_share": -1.835187217135,
+    "gross_margin_pct": 1.2975287477,
+    "industry": "物流"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

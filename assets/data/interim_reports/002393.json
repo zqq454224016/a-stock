@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002393",
+  "name": "力生制药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4366eabfff6bb6a5df3c",
+  "metrics": {
+    "eps": 0.25,
+    "revenue": 641633361.63,
+    "revenue_yoy_pct": -12.2862239226,
+    "revenue_qoq_pct": -6.9014,
+    "net_profit": 78326032.27,
+    "net_profit_yoy_pct": -77.16,
+    "net_profit_qoq_pct": -49.0333,
+    "book_value_per_share": 14.555868717924,
+    "roe_pct": 1.74,
+    "operating_cashflow_per_share": -0.143342620752,
+    "gross_margin_pct": 55.6900743709,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

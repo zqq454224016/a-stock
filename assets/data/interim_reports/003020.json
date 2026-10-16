@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "003020",
+  "name": "立方制药",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3e17a1b973418eaf126c",
+  "metrics": {
+    "eps": 0.3865,
+    "revenue": 684259649.21,
+    "revenue_yoy_pct": -6.5776115891,
+    "revenue_qoq_pct": -8.3823,
+    "net_profit": 88205125.09,
+    "net_profit_yoy_pct": -2.24,
+    "net_profit_qoq_pct": 49.9377,
+    "book_value_per_share": 8.062858652838,
+    "roe_pct": 4.78,
+    "operating_cashflow_per_share": 0.711912367334,
+    "gross_margin_pct": 66.4388197616,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

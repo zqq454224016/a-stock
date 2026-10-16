@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002367",
+  "name": "康力电梯",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "417b0035acb40d1f3e14",
+  "metrics": {
+    "eps": 0.1203,
+    "revenue": 1841892762.16,
+    "revenue_yoy_pct": -0.8712408128,
+    "revenue_qoq_pct": 32.099,
+    "net_profit": 95949841.99,
+    "net_profit_yoy_pct": -46.65,
+    "net_profit_qoq_pct": 60.6488,
+    "book_value_per_share": 4.498169129991,
+    "roe_pct": 2.63,
+    "operating_cashflow_per_share": -0.119605656908,
+    "gross_margin_pct": 24.7550797005,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

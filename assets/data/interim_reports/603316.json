@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603316",
+  "name": "诚邦股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3105906a0effdc51cd68",
+  "metrics": {
+    "eps": 0.08,
+    "revenue": 341625228.86,
+    "revenue_yoy_pct": 65.1564335356,
+    "revenue_qoq_pct": -24.3376,
+    "net_profit": 22399553.73,
+    "net_profit_yoy_pct": 314.61,
+    "net_profit_qoq_pct": -104.6528,
+    "book_value_per_share": 2.08713367481,
+    "roe_pct": 4.15,
+    "operating_cashflow_per_share": -0.12683182715,
+    "gross_margin_pct": 9.2210869891,
+    "industry": "半导体"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

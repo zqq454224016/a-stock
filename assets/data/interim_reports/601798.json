@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601798",
+  "name": "蓝科高新",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "03a2953ce62c2f873bd3",
+  "metrics": {
+    "eps": 0.1496,
+    "revenue": 407123462.75,
+    "revenue_yoy_pct": -1.2473896823,
+    "revenue_qoq_pct": 145.5163,
+    "net_profit": 53043877.46,
+    "net_profit_yoy_pct": 153.24,
+    "net_profit_qoq_pct": 231.2454,
+    "book_value_per_share": 3.763876799865,
+    "roe_pct": 4.06,
+    "operating_cashflow_per_share": -0.377741790203,
+    "gross_margin_pct": 29.6930560163,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

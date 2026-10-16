@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603517",
+  "name": "ST绝味",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "12487fbe4787492c94dd",
+  "metrics": {
+    "eps": 0.22,
+    "revenue": 2514530142.15,
+    "revenue_yoy_pct": -10.822064967,
+    "revenue_qoq_pct": -1.224,
+    "net_profit": 134786284.95,
+    "net_profit_yoy_pct": -23.16,
+    "net_profit_qoq_pct": -11.1086,
+    "book_value_per_share": 10.019315188145,
+    "roe_pct": 2.24,
+    "operating_cashflow_per_share": -0.300035880496,
+    "gross_margin_pct": 26.3585264829,
+    "industry": "休闲食品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

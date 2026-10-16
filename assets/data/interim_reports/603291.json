@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603291",
+  "name": "联合水务",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "42c88c93dcec8a6a4ac7",
+  "metrics": {
+    "eps": 0.06783,
+    "revenue": 465767748.1,
+    "revenue_yoy_pct": -15.4759815002,
+    "revenue_qoq_pct": 16.6484,
+    "net_profit": 28704992.49,
+    "net_profit_yoy_pct": -19.8,
+    "net_profit_qoq_pct": -7.104,
+    "book_value_per_share": 4.146712207022,
+    "roe_pct": 1.58,
+    "operating_cashflow_per_share": 0.307172177893,
+    "gross_margin_pct": 34.7074993555,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

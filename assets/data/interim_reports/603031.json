@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603031",
+  "name": "安孚科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1c33340562b5bd7ab245",
+  "metrics": {
+    "eps": 0.64,
+    "revenue": 2378115865.79,
+    "revenue_yoy_pct": -2.0413899304,
+    "revenue_qoq_pct": -21.2654,
+    "net_profit": 196448171.54,
+    "net_profit_yoy_pct": 84.38,
+    "net_profit_qoq_pct": -53.0127,
+    "book_value_per_share": 7.703113125152,
+    "roe_pct": 6.96,
+    "operating_cashflow_per_share": 1.237314014315,
+    "gross_margin_pct": 50.5032529469,
+    "industry": "电池"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

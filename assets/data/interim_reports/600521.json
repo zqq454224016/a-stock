@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600521",
+  "name": "华海药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "6598634e741813c016ba",
+  "metrics": {
+    "eps": 0.52,
+    "revenue": 4912824963.41,
+    "revenue_yoy_pct": 8.778567689,
+    "revenue_qoq_pct": 10.3642,
+    "net_profit": 770910153.52,
+    "net_profit_yoy_pct": 88.26,
+    "net_profit_qoq_pct": -9.2635,
+    "book_value_per_share": 6.370639726208,
+    "roe_pct": 7.92,
+    "operating_cashflow_per_share": 0.733376821222,
+    "gross_margin_pct": 58.4060269202,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002970",
+  "name": "锐明技术",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a534b3bd6128aad2193f",
+  "metrics": {
+    "eps": 0.61,
+    "revenue": 1237520256.91,
+    "revenue_yoy_pct": 7.0860969842,
+    "revenue_qoq_pct": 21.8975,
+    "net_profit": 111012651.03,
+    "net_profit_yoy_pct": -45.33,
+    "net_profit_qoq_pct": 55.4171,
+    "book_value_per_share": 11.955922893861,
+    "roe_pct": 5.25,
+    "operating_cashflow_per_share": -2.074843630912,
+    "gross_margin_pct": 42.0954363277,
+    "industry": "计算机设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

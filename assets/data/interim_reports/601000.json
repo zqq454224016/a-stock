@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601000",
+  "name": "唐山港",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "942a6376d117bfe8b2a9",
+  "metrics": {
+    "eps": 0.1702,
+    "revenue": 2986533488.26,
+    "revenue_yoy_pct": 15.1831236839,
+    "revenue_qoq_pct": -2.9048,
+    "net_profit": 1008407923.09,
+    "net_profit_yoy_pct": 13.97,
+    "net_profit_qoq_pct": 14.1595,
+    "book_value_per_share": 3.597990476847,
+    "roe_pct": 4.63,
+    "operating_cashflow_per_share": 0.186509076847,
+    "gross_margin_pct": 49.7525572883,
+    "industry": "航运港口"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

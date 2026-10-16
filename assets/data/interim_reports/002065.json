@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002065",
+  "name": "东华软件",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "40d44a517654514e63d8",
+  "metrics": {
+    "eps": 0.0695,
+    "revenue": 5269493370.11,
+    "revenue_yoy_pct": -6.2727644717,
+    "revenue_qoq_pct": -16.9007,
+    "net_profit": 222670473.3,
+    "net_profit_yoy_pct": -8.66,
+    "net_profit_qoq_pct": 159.3792,
+    "book_value_per_share": 3.912491785175,
+    "roe_pct": 1.79,
+    "operating_cashflow_per_share": 0.137343219717,
+    "gross_margin_pct": 21.16523977,
+    "industry": "IT服务Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

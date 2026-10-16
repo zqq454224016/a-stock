@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600874",
+  "name": "创业环保",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "507e6dfdf7979fae5888",
+  "metrics": {
+    "eps": 0.31,
+    "revenue": 2249367192.71,
+    "revenue_yoy_pct": 3.2807377558,
+    "revenue_qoq_pct": -4.2166,
+    "net_profit": 488426915.39,
+    "net_profit_yoy_pct": 3.28,
+    "net_profit_qoq_pct": -23.2757,
+    "book_value_per_share": 6.634875081835,
+    "roe_pct": 4.65,
+    "operating_cashflow_per_share": 0.583335162993,
+    "gross_margin_pct": 39.9716085006,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000027",
+  "name": "深圳能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "77361065dc96cad5b723",
+  "metrics": {
+    "eps": 0.37,
+    "revenue": 21741101028.76,
+    "revenue_yoy_pct": 2.8475873707,
+    "revenue_qoq_pct": 18.5057,
+    "net_profit": 1902740083.22,
+    "net_profit_yoy_pct": 11.61,
+    "net_profit_qoq_pct": -47.7028,
+    "book_value_per_share": 7.037427951443,
+    "roe_pct": 5.35,
+    "operating_cashflow_per_share": 0.630555166471,
+    "gross_margin_pct": 23.7328736997,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

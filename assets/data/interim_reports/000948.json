@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000948",
+  "name": "南天信息",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1b3d759b544ad0651441",
+  "metrics": {
+    "eps": 0.0337,
+    "revenue": 4205790713.32,
+    "revenue_yoy_pct": -8.1690496358,
+    "revenue_qoq_pct": 57.4305,
+    "net_profit": 13120565.93,
+    "net_profit_yoy_pct": 362.26,
+    "net_profit_qoq_pct": 255.0779,
+    "book_value_per_share": 7.012953401372,
+    "roe_pct": 0.48,
+    "operating_cashflow_per_share": -4.006113901397,
+    "gross_margin_pct": 9.7688521478,
+    "industry": "软件开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

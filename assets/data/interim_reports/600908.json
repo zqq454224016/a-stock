@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600908",
+  "name": "无锡银行",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "37d4fd9f455d92d3305a",
+  "metrics": {
+    "eps": 0.64,
+    "revenue": 2724707000.0,
+    "revenue_yoy_pct": 3.0070713925,
+    "revenue_qoq_pct": -3.3309,
+    "net_profit": 1418413000.0,
+    "net_profit_yoy_pct": 2.84,
+    "net_profit_qoq_pct": 23.5334,
+    "book_value_per_share": 10.904657713509,
+    "roe_pct": 6.01,
+    "operating_cashflow_per_share": 3.500246960608,
+    "gross_margin_pct": null,
+    "industry": "银行Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

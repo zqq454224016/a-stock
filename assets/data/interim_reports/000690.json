@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000690",
+  "name": "宝新能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d7af541a420c46d40c95",
+  "metrics": {
+    "eps": 0.29,
+    "revenue": 4172581925.91,
+    "revenue_yoy_pct": -4.2264974131,
+    "revenue_qoq_pct": -1.1183,
+    "net_profit": 632790464.94,
+    "net_profit_yoy_pct": 13.28,
+    "net_profit_qoq_pct": 4.2896,
+    "book_value_per_share": 5.969117597968,
+    "roe_pct": 4.86,
+    "operating_cashflow_per_share": 0.704998876054,
+    "gross_margin_pct": 21.2036763366,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

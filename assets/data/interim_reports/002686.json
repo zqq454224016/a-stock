@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002686",
+  "name": "亿利达",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5f9b4642c7913549a61d",
+  "metrics": {
+    "eps": 0.0023,
+    "revenue": 596704194.59,
+    "revenue_yoy_pct": -21.242846219,
+    "revenue_qoq_pct": 49.9631,
+    "net_profit": 1282486.32,
+    "net_profit_yoy_pct": -96.8,
+    "net_profit_qoq_pct": -121.3053,
+    "book_value_per_share": 2.850475374986,
+    "roe_pct": 0.08,
+    "operating_cashflow_per_share": 0.033045052946,
+    "gross_margin_pct": 23.4073247224,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

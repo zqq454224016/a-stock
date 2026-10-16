@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000600",
+  "name": "建投能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "198e96b39817d36c0bb0",
+  "metrics": {
+    "eps": 0.425,
+    "revenue": 10230544350.55,
+    "revenue_yoy_pct": -7.9448670357,
+    "revenue_qoq_pct": -36.6883,
+    "net_profit": 776719524.53,
+    "net_profit_yoy_pct": -13.41,
+    "net_profit_qoq_pct": -70.4332,
+    "book_value_per_share": 6.811929995205,
+    "roe_pct": 6.28,
+    "operating_cashflow_per_share": 0.615942296965,
+    "gross_margin_pct": 23.2240032929,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002850",
+  "name": "科达利",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-15T00:00:00+08:00",
+  "known_at": "2026-08-15T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "798bc2bf3659e4522a11",
+  "metrics": {
+    "eps": 3.41,
+    "revenue": 9208476646.42,
+    "revenue_yoy_pct": 38.584142277,
+    "revenue_qoq_pct": 22.3004,
+    "net_profit": 943018605.91,
+    "net_profit_yoy_pct": 22.57,
+    "net_profit_qoq_pct": 4.4993,
+    "book_value_per_share": 52.807076556216,
+    "roe_pct": 6.84,
+    "operating_cashflow_per_share": 2.926991655761,
+    "gross_margin_pct": 20.7221995894,
+    "industry": "电池"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

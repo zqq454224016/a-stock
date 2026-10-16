@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000628",
+  "name": "高新发展",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-24T00:00:00+08:00",
+  "known_at": "2026-08-24T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4bb8df7747b6cd76680d",
+  "metrics": {
+    "eps": 0.138,
+    "revenue": 1635611880.39,
+    "revenue_yoy_pct": -34.4015642585,
+    "revenue_qoq_pct": 93.2493,
+    "net_profit": 48536133.95,
+    "net_profit_yoy_pct": -27.47,
+    "net_profit_qoq_pct": 2511.619,
+    "book_value_per_share": 6.299348497644,
+    "roe_pct": 2.18,
+    "operating_cashflow_per_share": 0.236905877881,
+    "gross_margin_pct": 13.4806196503,
+    "industry": "房屋建设Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

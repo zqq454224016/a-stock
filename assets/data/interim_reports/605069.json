@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605069",
+  "name": "正和生态",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e64e21dfda79c3066a07",
+  "metrics": {
+    "eps": -0.33,
+    "revenue": 87127889.65,
+    "revenue_yoy_pct": -49.0911463301,
+    "revenue_qoq_pct": -70.1687,
+    "net_profit": -69408825.43,
+    "net_profit_yoy_pct": -387.54,
+    "net_profit_qoq_pct": -337.9287,
+    "book_value_per_share": 2.979467648687,
+    "roe_pct": -10.21,
+    "operating_cashflow_per_share": -0.266337356408,
+    "gross_margin_pct": -6.4798468466,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

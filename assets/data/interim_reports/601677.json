@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601677",
+  "name": "明泰铝业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9a70319a83a4471ed170",
+  "metrics": {
+    "eps": 1.13,
+    "revenue": 21118578561.28,
+    "revenue_yoy_pct": 24.231694841,
+    "revenue_qoq_pct": 16.2285,
+    "net_profit": 1406755848.47,
+    "net_profit_yoy_pct": 49.61,
+    "net_profit_qoq_pct": 0.3794,
+    "book_value_per_share": 16.352954451351,
+    "roe_pct": 7.09,
+    "operating_cashflow_per_share": 0.467314596934,
+    "gross_margin_pct": 9.7521340104,
+    "industry": "工业金属"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600022",
+  "name": "山东钢铁",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d11b0fc5021e1ca8123d",
+  "metrics": {
+    "eps": -0.0028,
+    "revenue": 31805223773.57,
+    "revenue_yoy_pct": -8.2246856215,
+    "revenue_qoq_pct": 15.9744,
+    "net_profit": -29595668.15,
+    "net_profit_yoy_pct": 14.2950564949,
+    "net_profit_qoq_pct": 186.4251,
+    "book_value_per_share": 1.776157446313,
+    "roe_pct": -0.16,
+    "operating_cashflow_per_share": 0.102460349073,
+    "gross_margin_pct": 8.2159555799,
+    "industry": "普钢"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

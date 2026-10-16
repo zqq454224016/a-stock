@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002571",
+  "name": "德力股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0404dd5b45a928cf8c95",
+  "metrics": {
+    "eps": -0.1464,
+    "revenue": 707986529.61,
+    "revenue_yoy_pct": -8.1209455195,
+    "revenue_qoq_pct": -13.7709,
+    "net_profit": -57384498.08,
+    "net_profit_yoy_pct": -26.63,
+    "net_profit_qoq_pct": -117.6137,
+    "book_value_per_share": 1.909995319105,
+    "roe_pct": -7.34,
+    "operating_cashflow_per_share": 0.063815107563,
+    "gross_margin_pct": 19.099825962,
+    "industry": "家居用品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

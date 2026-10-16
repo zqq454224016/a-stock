@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600984",
+  "name": "建设机械",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a25feaa9a30541b4aaf2",
+  "metrics": {
+    "eps": -0.3974,
+    "revenue": 1097912618.01,
+    "revenue_yoy_pct": -2.1188323216,
+    "revenue_qoq_pct": 44.5701,
+    "net_profit": -499604220.03,
+    "net_profit_yoy_pct": -11.66,
+    "net_profit_qoq_pct": 20.9882,
+    "book_value_per_share": 1.244014304146,
+    "roe_pct": -17.6701,
+    "operating_cashflow_per_share": 0.064425070317,
+    "gross_margin_pct": -10.9407361833,
+    "industry": "工程机械"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600997",
+  "name": "开滦股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1b01ab9afc817f98abed",
+  "metrics": {
+    "eps": -0.09,
+    "revenue": 9461895313.49,
+    "revenue_yoy_pct": 7.2460956218,
+    "revenue_qoq_pct": 13.8073,
+    "net_profit": -138153681.64,
+    "net_profit_yoy_pct": -138.3,
+    "net_profit_qoq_pct": 73.5784,
+    "book_value_per_share": 8.493908360664,
+    "roe_pct": -1.02,
+    "operating_cashflow_per_share": 0.089083862346,
+    "gross_margin_pct": 7.0961411942,
+    "industry": "焦炭Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

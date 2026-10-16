@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603176",
+  "name": "汇通集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f9238b540276ea734e10",
+  "metrics": {
+    "eps": -0.13,
+    "revenue": 960271026.35,
+    "revenue_yoy_pct": -7.6488975988,
+    "revenue_qoq_pct": 86.3512,
+    "net_profit": -63094418.65,
+    "net_profit_yoy_pct": -358.96,
+    "net_profit_qoq_pct": 95.9805,
+    "book_value_per_share": 2.214200621294,
+    "roe_pct": -5.48,
+    "operating_cashflow_per_share": -0.663181124598,
+    "gross_margin_pct": 15.0662771655,
+    "industry": "基础建设"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

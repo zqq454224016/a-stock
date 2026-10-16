@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603057",
+  "name": "紫燕食品",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "158c929fc2ad6df8be29",
+  "metrics": {
+    "eps": 0.1626,
+    "revenue": 1663206697.22,
+    "revenue_yoy_pct": 12.9436718828,
+    "revenue_qoq_pct": 36.7353,
+    "net_profit": 66992980.54,
+    "net_profit_yoy_pct": -35.94,
+    "net_profit_qoq_pct": -119.5651,
+    "book_value_per_share": 5.089702830926,
+    "roe_pct": 3.27,
+    "operating_cashflow_per_share": -0.092290430411,
+    "gross_margin_pct": 20.4238976718,
+    "industry": "休闲食品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

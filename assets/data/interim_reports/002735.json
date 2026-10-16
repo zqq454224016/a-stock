@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002735",
+  "name": "王子新材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "85dd7e967960193229ff",
+  "metrics": {
+    "eps": 0.03,
+    "revenue": 1021503381.21,
+    "revenue_yoy_pct": 2.2086799874,
+    "revenue_qoq_pct": -6.251,
+    "net_profit": 11161898.76,
+    "net_profit_yoy_pct": -28.91,
+    "net_profit_qoq_pct": -89.2996,
+    "book_value_per_share": 4.1627763586,
+    "roe_pct": 0.71,
+    "operating_cashflow_per_share": -0.117392623024,
+    "gross_margin_pct": 12.734823158,
+    "industry": "包装印刷"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

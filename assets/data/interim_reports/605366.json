@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605366",
+  "name": "宏柏新材",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "425d218d24b0d3353963",
+  "metrics": {
+    "eps": -0.04,
+    "revenue": 847028130.11,
+    "revenue_yoy_pct": 15.8515098724,
+    "revenue_qoq_pct": 16.7909,
+    "net_profit": -30485497.03,
+    "net_profit_yoy_pct": -14.5834361817,
+    "net_profit_qoq_pct": 91.2144,
+    "book_value_per_share": 3.464404936896,
+    "roe_pct": -1.28,
+    "operating_cashflow_per_share": -0.035078679051,
+    "gross_margin_pct": 6.4500647036,
+    "industry": "化学制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

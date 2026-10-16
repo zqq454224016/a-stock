@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000839",
+  "name": "国安股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "2a13e389f498d8ecbb43",
+  "metrics": {
+    "eps": -0.0378,
+    "revenue": 1743638429.38,
+    "revenue_yoy_pct": 8.2908204085,
+    "revenue_qoq_pct": 3.2908,
+    "net_profit": -148216111.37,
+    "net_profit_yoy_pct": -386.8074484771,
+    "net_profit_qoq_pct": -4410.0022,
+    "book_value_per_share": 0.311275616964,
+    "roe_pct": -10.35,
+    "operating_cashflow_per_share": -0.017408185109,
+    "gross_margin_pct": 14.0361031798,
+    "industry": "通信服务"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

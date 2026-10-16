@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002965",
+  "name": "祥鑫科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "822897ccb70e9f847bd8",
+  "metrics": {
+    "eps": -0.0734,
+    "revenue": 4284526386.58,
+    "revenue_yoy_pct": 19.9358923345,
+    "revenue_qoq_pct": 23.5055,
+    "net_profit": -19481002.95,
+    "net_profit_yoy_pct": -117.33,
+    "net_profit_qoq_pct": 85.8504,
+    "book_value_per_share": 15.783795187872,
+    "roe_pct": -0.46,
+    "operating_cashflow_per_share": -0.37590870879,
+    "gross_margin_pct": 9.817058757,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

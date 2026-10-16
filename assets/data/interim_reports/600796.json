@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600796",
+  "name": "钱江生化",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "644bdf9578b6b77e82df",
+  "metrics": {
+    "eps": 0.09,
+    "revenue": 733118961.25,
+    "revenue_yoy_pct": -5.9545145103,
+    "revenue_qoq_pct": 30.1246,
+    "net_profit": 77764798.05,
+    "net_profit_yoy_pct": -27.4,
+    "net_profit_qoq_pct": 12.6364,
+    "book_value_per_share": 4.026485705951,
+    "roe_pct": 2.25,
+    "operating_cashflow_per_share": 0.006086700148,
+    "gross_margin_pct": 27.8619399793,
+    "industry": "环境治理"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

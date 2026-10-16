@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002008",
+  "name": "大族激光",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3741ff05c8114c8474f2",
+  "metrics": {
+    "eps": 1.25,
+    "revenue": 13412802390.25,
+    "revenue_yoy_pct": 76.1864078,
+    "revenue_qoq_pct": 61.2091,
+    "net_profit": 1287969666.61,
+    "net_profit_yoy_pct": 163.84,
+    "net_profit_qoq_pct": 163.7639,
+    "book_value_per_share": 20.84431169109,
+    "roe_pct": 6.28,
+    "operating_cashflow_per_share": -0.663247488969,
+    "gross_margin_pct": 34.9445902574,
+    "industry": "自动化设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

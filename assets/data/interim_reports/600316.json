@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600316",
+  "name": "洪都航空",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "883c4e16035a67bd78d3",
+  "metrics": {
+    "eps": 0.0169,
+    "revenue": 2742439101.59,
+    "revenue_yoy_pct": 79.9664136229,
+    "revenue_qoq_pct": 110.1343,
+    "net_profit": 12094703.1,
+    "net_profit_yoy_pct": 171.93,
+    "net_profit_qoq_pct": 9.1312,
+    "book_value_per_share": 7.502249421233,
+    "roe_pct": 0.22,
+    "operating_cashflow_per_share": 1.352830605219,
+    "gross_margin_pct": 2.2768520141,
+    "industry": "航空装备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

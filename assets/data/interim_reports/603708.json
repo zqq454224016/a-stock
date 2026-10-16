@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603708",
+  "name": "家家悦",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "64003df695b09cbd110e",
+  "metrics": {
+    "eps": 0.3,
+    "revenue": 8965739036.24,
+    "revenue_yoy_pct": -0.4611568377,
+    "revenue_qoq_pct": -22.4284,
+    "net_profit": 186141974.1,
+    "net_profit_yoy_pct": 1.77,
+    "net_profit_qoq_pct": -77.3514,
+    "book_value_per_share": 3.826141105206,
+    "roe_pct": 7.73,
+    "operating_cashflow_per_share": 1.747488056634,
+    "gross_margin_pct": 24.1818906933,
+    "industry": "一般零售"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

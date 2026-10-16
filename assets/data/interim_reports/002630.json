@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002630",
+  "name": "*ST华西",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "cd84dd5565b7f292c3f1",
+  "metrics": {
+    "eps": -0.0484,
+    "revenue": 472882120.75,
+    "revenue_yoy_pct": -53.736018153,
+    "revenue_qoq_pct": 19.7074,
+    "net_profit": -57099557.03,
+    "net_profit_yoy_pct": -257.85,
+    "net_profit_qoq_pct": -110.7665,
+    "book_value_per_share": -0.094846236958,
+    "roe_pct": null,
+    "operating_cashflow_per_share": 0.064312754963,
+    "gross_margin_pct": 32.2301172834,
+    "industry": "其他电源设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

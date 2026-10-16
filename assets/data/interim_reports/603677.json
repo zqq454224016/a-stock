@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603677",
+  "name": "奇精机械",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "65345e1c30f9293171eb",
+  "metrics": {
+    "eps": 0.028,
+    "revenue": 1030197901.25,
+    "revenue_yoy_pct": -2.5213018233,
+    "revenue_qoq_pct": 11.4112,
+    "net_profit": 5384638.44,
+    "net_profit_yoy_pct": -86.7,
+    "net_profit_qoq_pct": -153.8648,
+    "book_value_per_share": 5.794371953158,
+    "roe_pct": 0.47,
+    "operating_cashflow_per_share": 0.185530064,
+    "gross_margin_pct": 10.1635251667,
+    "industry": "家电零部件Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

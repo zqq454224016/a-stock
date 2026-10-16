@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "003019",
+  "name": "宸展光电",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b7923346f4f7d0741a15",
+  "metrics": {
+    "eps": 0.52,
+    "revenue": 1272814507.36,
+    "revenue_yoy_pct": 6.4219450419,
+    "revenue_qoq_pct": 17.8287,
+    "net_profit": 92616489.7,
+    "net_profit_yoy_pct": -17.56,
+    "net_profit_qoq_pct": 134.3118,
+    "book_value_per_share": 9.609976226822,
+    "roe_pct": 5.34,
+    "operating_cashflow_per_share": -0.032419320728,
+    "gross_margin_pct": 24.7945600333,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

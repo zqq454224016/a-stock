@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600558",
+  "name": "大西洋",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "a34a6fc5ab13232254b8",
+  "metrics": {
+    "eps": 0.1196,
+    "revenue": 2030086148.79,
+    "revenue_yoy_pct": 6.3396589017,
+    "revenue_qoq_pct": 5.1309,
+    "net_profit": 107377306.67,
+    "net_profit_yoy_pct": 19.53,
+    "net_profit_qoq_pct": -7.3165,
+    "book_value_per_share": 2.703213729484,
+    "roe_pct": 4.53,
+    "operating_cashflow_per_share": 0.135437322663,
+    "gross_margin_pct": 16.2763276306,
+    "industry": "通用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

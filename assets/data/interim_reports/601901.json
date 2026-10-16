@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601901",
+  "name": "方正证券",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "31be2ec08e2f7dca5fb0",
+  "metrics": {
+    "eps": 0.36,
+    "revenue": 7340596869.45,
+    "revenue_yoy_pct": 29.622393724,
+    "revenue_qoq_pct": 15.9068,
+    "net_profit": 2957339533.61,
+    "net_profit_yoy_pct": 24.06,
+    "net_profit_qoq_pct": -0.9904,
+    "book_value_per_share": 6.41286087333,
+    "roe_pct": 5.68,
+    "operating_cashflow_per_share": 0.396752913474,
+    "gross_margin_pct": null,
+    "industry": "证券Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

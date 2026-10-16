@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002703",
+  "name": "浙江世宝",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-24T00:00:00+08:00",
+  "known_at": "2026-08-24T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0160484b76bab76e117c",
+  "metrics": {
+    "eps": 0.1261,
+    "revenue": 1720713225.78,
+    "revenue_yoy_pct": 12.8958299806,
+    "revenue_qoq_pct": 28.561,
+    "net_profit": 103717594.73,
+    "net_profit_yoy_pct": 11.48,
+    "net_profit_qoq_pct": 47.7255,
+    "book_value_per_share": 2.647545074715,
+    "roe_pct": 4.88,
+    "operating_cashflow_per_share": 0.252402713069,
+    "gross_margin_pct": 18.8951465886,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000926",
+  "name": "福星股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "3fc4a3ce320dee94ae36",
+  "metrics": {
+    "eps": -1.4654,
+    "revenue": 748689748.73,
+    "revenue_yoy_pct": 2.1821701654,
+    "revenue_qoq_pct": -13.4511,
+    "net_profit": -2334401772.23,
+    "net_profit_yoy_pct": -254.92,
+    "net_profit_qoq_pct": -1554.2362,
+    "book_value_per_share": 1.902280757076,
+    "roe_pct": -55.6,
+    "operating_cashflow_per_share": 0.359528462122,
+    "gross_margin_pct": 8.4307213111,
+    "industry": "房地产开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

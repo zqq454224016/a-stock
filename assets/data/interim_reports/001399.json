@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "001399",
+  "name": "惠科股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-25T00:00:00+08:00",
+  "known_at": "2026-08-25T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "be8d314692617dc7daf7",
+  "metrics": {
+    "eps": 0.28,
+    "revenue": 20515793823.17,
+    "revenue_yoy_pct": 7.9937777547,
+    "revenue_qoq_pct": -0.1063,
+    "net_profit": 1857494828.26,
+    "net_profit_yoy_pct": -14.07,
+    "net_profit_qoq_pct": -13.4042,
+    "book_value_per_share": 4.712009887172,
+    "roe_pct": 7.08,
+    "operating_cashflow_per_share": 0.690742387625,
+    "gross_margin_pct": 19.5335633645,
+    "industry": "光学光电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

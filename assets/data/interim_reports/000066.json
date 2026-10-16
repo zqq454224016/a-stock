@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000066",
+  "name": "中国长城",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "0265c204809427ddf521",
+  "metrics": {
+    "eps": 0.097,
+    "revenue": 7958051684.14,
+    "revenue_yoy_pct": 25.0039290227,
+    "revenue_qoq_pct": 47.1291,
+    "net_profit": 312048408.51,
+    "net_profit_yoy_pct": 125.71,
+    "net_profit_qoq_pct": 573.1878,
+    "book_value_per_share": 3.512314628117,
+    "roe_pct": 2.79,
+    "operating_cashflow_per_share": -0.268248248249,
+    "gross_margin_pct": 16.9123587186,
+    "industry": "计算机设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

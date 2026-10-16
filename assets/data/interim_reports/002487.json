@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002487",
+  "name": "大金重工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "f02a101a6e776c232057",
+  "metrics": {
+    "eps": 0.94,
+    "revenue": 3252515191.59,
+    "revenue_yoy_pct": 14.479259591,
+    "revenue_qoq_pct": -29.439,
+    "net_profit": 600567001.92,
+    "net_profit_yoy_pct": 9.89,
+    "net_profit_qoq_pct": -61.8236,
+    "book_value_per_share": 19.568923184593,
+    "roe_pct": 7.02,
+    "operating_cashflow_per_share": 2.077488835925,
+    "gross_margin_pct": 37.5254806411,
+    "industry": "风电设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

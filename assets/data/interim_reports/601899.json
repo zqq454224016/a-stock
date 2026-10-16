@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601899",
+  "name": "紫金矿业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "bd6779bd22e76c8655a1",
+  "metrics": {
+    "eps": 1.473,
+    "revenue": 194178458630.0,
+    "revenue_yoy_pct": 15.7816890732,
+    "revenue_qoq_pct": -2.8597,
+    "net_profit": 39169807243.0,
+    "net_profit_yoy_pct": 68.17,
+    "net_profit_qoq_pct": -4.9253,
+    "book_value_per_share": 7.595431142723,
+    "roe_pct": 19.6,
+    "operating_cashflow_per_share": 2.086130204725,
+    "gross_margin_pct": 37.7472369593,
+    "industry": "工业金属"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

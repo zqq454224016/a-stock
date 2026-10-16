@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603327",
+  "name": "福蓉科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "e7b59a847ff4052311db",
+  "metrics": {
+    "eps": 0.0657,
+    "revenue": 1456942650.93,
+    "revenue_yoy_pct": 23.533055794,
+    "revenue_qoq_pct": -8.6784,
+    "net_profit": 68164020.42,
+    "net_profit_yoy_pct": 64.39,
+    "net_profit_qoq_pct": -58.7824,
+    "book_value_per_share": 2.307356301569,
+    "roe_pct": 2.81,
+    "operating_cashflow_per_share": 0.014597680679,
+    "gross_margin_pct": 10.603299644,
+    "industry": "消费电子"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

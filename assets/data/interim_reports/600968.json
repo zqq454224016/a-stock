@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600968",
+  "name": "海油发展",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "af8034c7f910778d9d4d",
+  "metrics": {
+    "eps": 0.1838,
+    "revenue": 23079096284.86,
+    "revenue_yoy_pct": 2.1356121503,
+    "revenue_qoq_pct": 36.7652,
+    "net_profit": 1867991136.02,
+    "net_profit_yoy_pct": 2.11,
+    "net_profit_qoq_pct": 93.0523,
+    "book_value_per_share": 2.933219551801,
+    "roe_pct": 6.14,
+    "operating_cashflow_per_share": -0.245922999437,
+    "gross_margin_pct": 15.5641850577,
+    "industry": "油服工程"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

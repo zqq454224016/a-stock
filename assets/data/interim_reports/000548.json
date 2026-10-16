@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000548",
+  "name": "湖南投资",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1644f88fc32b7ad558cc",
+  "metrics": {
+    "eps": 0.05,
+    "revenue": 167596063.34,
+    "revenue_yoy_pct": -36.182373547,
+    "revenue_qoq_pct": 5.2283,
+    "net_profit": 22644640.99,
+    "net_profit_yoy_pct": -37.04,
+    "net_profit_qoq_pct": -53.3962,
+    "book_value_per_share": 4.129147046687,
+    "roe_pct": 1.1,
+    "operating_cashflow_per_share": 0.034178053788,
+    "gross_margin_pct": 51.8606339838,
+    "industry": "铁路公路"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

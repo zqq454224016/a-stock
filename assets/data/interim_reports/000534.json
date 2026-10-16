@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000534",
+  "name": "万泽股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "917f3f7dac9809995c7b",
+  "metrics": {
+    "eps": 0.251,
+    "revenue": 666595211.43,
+    "revenue_yoy_pct": 6.5823550859,
+    "revenue_qoq_pct": -14.722,
+    "net_profit": 125378811.25,
+    "net_profit_yoy_pct": 5.0,
+    "net_profit_qoq_pct": -38.1546,
+    "book_value_per_share": 3.669910639343,
+    "roe_pct": 7.47,
+    "operating_cashflow_per_share": -0.063962493966,
+    "gross_margin_pct": 71.0690616174,
+    "industry": "生物制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

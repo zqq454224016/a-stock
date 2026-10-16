@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600064",
+  "name": "南京高科",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "7f4eaee7fe3e6d07c3c4",
+  "metrics": {
+    "eps": 0.726,
+    "revenue": 1408208446.73,
+    "revenue_yoy_pct": -28.1519676625,
+    "revenue_qoq_pct": 32.0721,
+    "net_profit": 1255756416.58,
+    "net_profit_yoy_pct": -9.07,
+    "net_profit_qoq_pct": 0.2903,
+    "book_value_per_share": 11.499087670686,
+    "roe_pct": 6.38,
+    "operating_cashflow_per_share": 0.528083602297,
+    "gross_margin_pct": 17.7979943824,
+    "industry": "房地产开发"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

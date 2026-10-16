@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002545",
+  "name": "东方铁塔",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "cdcbc94a56a04de111ad",
+  "metrics": {
+    "eps": 0.7846,
+    "revenue": 3050680328.78,
+    "revenue_yoy_pct": 42.0267778035,
+    "revenue_qoq_pct": 15.0956,
+    "net_profit": 976039815.97,
+    "net_profit_yoy_pct": 97.84,
+    "net_profit_qoq_pct": 42.8779,
+    "book_value_per_share": 8.332709929726,
+    "roe_pct": 9.52,
+    "operating_cashflow_per_share": 0.920886302263,
+    "gross_margin_pct": 47.4758309154,
+    "industry": "农化制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

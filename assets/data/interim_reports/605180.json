@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "605180",
+  "name": "华生科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "918754820ac867803d33",
+  "metrics": {
+    "eps": -0.02,
+    "revenue": 202799517.1,
+    "revenue_yoy_pct": 18.8020600709,
+    "revenue_qoq_pct": -11.4149,
+    "net_profit": -2771368.92,
+    "net_profit_yoy_pct": -112.12,
+    "net_profit_qoq_pct": -276.0395,
+    "book_value_per_share": 6.687895190237,
+    "roe_pct": -0.24,
+    "operating_cashflow_per_share": -0.252360678521,
+    "gross_margin_pct": 19.062255632,
+    "industry": "纺织制造"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

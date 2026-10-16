@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000895",
+  "name": "双汇发展",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "ec331fafd4af3b7a543d",
+  "metrics": {
+    "eps": 0.6655,
+    "revenue": 28184350360.58,
+    "revenue_yoy_pct": -1.1182617783,
+    "revenue_qoq_pct": -6.9351,
+    "net_profit": 2305589624.18,
+    "net_profit_yoy_pct": -0.76,
+    "net_profit_qoq_pct": -21.5172,
+    "book_value_per_share": 6.032222196679,
+    "roe_pct": 10.68,
+    "operating_cashflow_per_share": 0.466693826826,
+    "gross_margin_pct": 19.1455843899,
+    "industry": "食品加工"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

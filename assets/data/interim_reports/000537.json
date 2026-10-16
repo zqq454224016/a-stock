@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000537",
+  "name": "绿发电力",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "177c5384355e43acd6d3",
+  "metrics": {
+    "eps": 0.1427,
+    "revenue": 2665150131.73,
+    "revenue_yoy_pct": 14.2183575817,
+    "revenue_qoq_pct": 26.3958,
+    "net_profit": 293564908.5,
+    "net_profit_yoy_pct": -52.53,
+    "net_profit_qoq_pct": 129.9862,
+    "book_value_per_share": 9.665333038008,
+    "roe_pct": 1.47,
+    "operating_cashflow_per_share": 0.894504942446,
+    "gross_margin_pct": 41.7394419675,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603087",
+  "name": "甘李药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-26T00:00:00+08:00",
+  "known_at": "2026-08-26T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "4a7760eeb8b1255b79a9",
+  "metrics": {
+    "eps": 1.03,
+    "revenue": 2223021840.47,
+    "revenue_yoy_pct": 7.558860415,
+    "revenue_qoq_pct": 53.1601,
+    "net_profit": 609780530.35,
+    "net_profit_yoy_pct": 1.01,
+    "net_profit_qoq_pct": 116.7924,
+    "book_value_per_share": 19.603556348097,
+    "roe_pct": 5.15,
+    "operating_cashflow_per_share": 0.723788016018,
+    "gross_margin_pct": 74.1256123463,
+    "industry": "生物制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

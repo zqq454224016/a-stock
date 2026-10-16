@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000518",
+  "name": "四环生物",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "9d9d5b7cdc6c2b8930ce",
+  "metrics": {
+    "eps": -0.0251,
+    "revenue": 110742539.5,
+    "revenue_yoy_pct": -39.1180468908,
+    "revenue_qoq_pct": -63.5677,
+    "net_profit": -25833217.42,
+    "net_profit_yoy_pct": -155.8,
+    "net_profit_qoq_pct": -28.3343,
+    "book_value_per_share": 0.299923201173,
+    "roe_pct": -8.03,
+    "operating_cashflow_per_share": -0.016773579957,
+    "gross_margin_pct": 20.5701109915,
+    "industry": "生物制品"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

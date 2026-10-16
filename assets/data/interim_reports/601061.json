@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601061",
+  "name": "中信金属",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1d025ea3111e5b8ac594",
+  "metrics": {
+    "eps": 0.55,
+    "revenue": 86911353875.51,
+    "revenue_yoy_pct": 36.5315429456,
+    "revenue_qoq_pct": 1.2041,
+    "net_profit": 2672895212.64,
+    "net_profit_yoy_pct": 84.55,
+    "net_profit_qoq_pct": -5.8221,
+    "book_value_per_share": 5.054498506727,
+    "roe_pct": 11.02,
+    "operating_cashflow_per_share": 2.035024540843,
+    "gross_margin_pct": 1.8044048733,
+    "industry": "贸易Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

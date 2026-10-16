@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600176",
+  "name": "中国巨石",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "489e9ebe77e6bb6ebdad",
+  "metrics": {
+    "eps": 0.7391,
+    "revenue": 11158886608.98,
+    "revenue_yoy_pct": 22.50258137,
+    "revenue_qoq_pct": 11.265,
+    "net_profit": 2933304204.75,
+    "net_profit_yoy_pct": 73.87,
+    "net_profit_qoq_pct": 31.488,
+    "book_value_per_share": 8.282254105706,
+    "roe_pct": 9.06,
+    "operating_cashflow_per_share": 0.605467616606,
+    "gross_margin_pct": 42.1382635808,
+    "industry": "玻璃玻纤"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

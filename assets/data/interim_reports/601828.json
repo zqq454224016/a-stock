@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601828",
+  "name": "美凯龙",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "da1b423337c0b2dea8a8",
+  "metrics": {
+    "eps": 0.02,
+    "revenue": 3094685324.34,
+    "revenue_yoy_pct": -7.2635700655,
+    "revenue_qoq_pct": -0.1447,
+    "net_profit": 74859903.32,
+    "net_profit_yoy_pct": 103.9398932032,
+    "net_profit_qoq_pct": -42.9873,
+    "book_value_per_share": 5.163120902078,
+    "roe_pct": 0.33,
+    "operating_cashflow_per_share": 0.202801230303,
+    "gross_margin_pct": 65.5441763929,
+    "industry": "一般零售"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

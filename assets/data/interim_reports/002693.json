@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002693",
+  "name": "双成药业",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c67fa3f94bd78d07c1ad",
+  "metrics": {
+    "eps": 0.0329,
+    "revenue": 117157787.26,
+    "revenue_yoy_pct": 39.2711362765,
+    "revenue_qoq_pct": 41.8623,
+    "net_profit": 13627788.39,
+    "net_profit_yoy_pct": 173.8,
+    "net_profit_qoq_pct": 195.2132,
+    "book_value_per_share": 1.027474122883,
+    "roe_pct": 3.25,
+    "operating_cashflow_per_share": 0.049464159194,
+    "gross_margin_pct": 55.605756829,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

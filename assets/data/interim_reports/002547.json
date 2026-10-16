@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002547",
+  "name": "*ST春兴",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "44c6d311e4a6a8990f71",
+  "metrics": {
+    "eps": -0.1387,
+    "revenue": 955512740.87,
+    "revenue_yoy_pct": -2.2343959038,
+    "revenue_qoq_pct": 10.4701,
+    "net_profit": -156456721.55,
+    "net_profit_yoy_pct": -21.3,
+    "net_profit_qoq_pct": -112.5063,
+    "book_value_per_share": -0.468294446297,
+    "roe_pct": null,
+    "operating_cashflow_per_share": 0.049973071657,
+    "gross_margin_pct": 5.5196034311,
+    "industry": "汽车零部件"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

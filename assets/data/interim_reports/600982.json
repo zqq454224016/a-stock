@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600982",
+  "name": "宁波能源",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "87002cb04415899c587c",
+  "metrics": {
+    "eps": 0.13,
+    "revenue": 2084771445.55,
+    "revenue_yoy_pct": 11.2700762535,
+    "revenue_qoq_pct": -5.1681,
+    "net_profit": 158619869.11,
+    "net_profit_yoy_pct": 12.87,
+    "net_profit_qoq_pct": 18.7315,
+    "book_value_per_share": 3.982250892586,
+    "roe_pct": 3.2,
+    "operating_cashflow_per_share": 0.272139334565,
+    "gross_margin_pct": 21.085802517,
+    "industry": "电力"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

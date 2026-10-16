@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603988",
+  "name": "中电电机",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "5b350e96015ffca104a5",
+  "metrics": {
+    "eps": 0.02,
+    "revenue": 252936574.22,
+    "revenue_yoy_pct": -17.9508682291,
+    "revenue_qoq_pct": 15.5262,
+    "net_profit": 4701476.6,
+    "net_profit_yoy_pct": -86.56,
+    "net_profit_qoq_pct": -95.5514,
+    "book_value_per_share": 2.789396005315,
+    "roe_pct": 0.71,
+    "operating_cashflow_per_share": 0.293296021599,
+    "gross_margin_pct": 25.5635663049,
+    "industry": "电机Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

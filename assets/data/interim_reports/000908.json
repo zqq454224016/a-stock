@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000908",
+  "name": "石药景峰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-21T00:00:00+08:00",
+  "known_at": "2026-08-21T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "c99cadb4c3bbb8d5b7b7",
+  "metrics": {
+    "eps": 0.0042,
+    "revenue": 202394681.3,
+    "revenue_yoy_pct": 10.3642724247,
+    "revenue_qoq_pct": -11.8004,
+    "net_profit": 5868878.59,
+    "net_profit_yoy_pct": 118.02,
+    "net_profit_qoq_pct": -40.0921,
+    "book_value_per_share": 1.18751278943,
+    "roe_pct": 0.56,
+    "operating_cashflow_per_share": -0.071136627874,
+    "gross_margin_pct": 65.168190272,
+    "industry": "化学制药"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

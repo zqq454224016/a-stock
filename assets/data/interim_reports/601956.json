@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "601956",
+  "name": "东贝集团",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-22T00:00:00+08:00",
+  "known_at": "2026-08-22T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "d23d8c381803b8a91fde",
+  "metrics": {
+    "eps": -0.0804,
+    "revenue": 3304062915.33,
+    "revenue_yoy_pct": 3.6698900514,
+    "revenue_qoq_pct": -4.4326,
+    "net_profit": -49615601.46,
+    "net_profit_yoy_pct": -172.73,
+    "net_profit_qoq_pct": -95.4696,
+    "book_value_per_share": 3.788584832541,
+    "roe_pct": -2.01,
+    "operating_cashflow_per_share": 0.220128243215,
+    "gross_margin_pct": 8.2114148696,
+    "industry": "家电零部件Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002611",
+  "name": "东方精工",
+  "report_period": "2026-06-30",
+  "published_at": "2026-07-28T00:00:00+08:00",
+  "known_at": "2026-07-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "110922dc58e48b6bbcfe",
+  "metrics": {
+    "eps": 3.22,
+    "revenue": 1690857649.54,
+    "revenue_yoy_pct": -21.6817305372,
+    "revenue_qoq_pct": -38.5706,
+    "net_profit": 3846229995.51,
+    "net_profit_yoy_pct": 867.75,
+    "net_profit_qoq_pct": 41018.88,
+    "book_value_per_share": 7.784470947634,
+    "roe_pct": 50.88,
+    "operating_cashflow_per_share": 0.211922350037,
+    "gross_margin_pct": 23.4565950131,
+    "industry": "专用设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

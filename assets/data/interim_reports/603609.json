@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "603609",
+  "name": "禾丰股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1744af1c618a9891b2f0",
+  "metrics": {
+    "eps": -0.01,
+    "revenue": 18962827693.7,
+    "revenue_yoy_pct": 8.9402033598,
+    "revenue_qoq_pct": 12.3378,
+    "net_profit": -8479319.07,
+    "net_profit_yoy_pct": -103.64,
+    "net_profit_qoq_pct": -297.9034,
+    "book_value_per_share": 6.999250034207,
+    "roe_pct": -0.13,
+    "operating_cashflow_per_share": -0.386761729645,
+    "gross_margin_pct": 6.3320158633,
+    "industry": "饲料"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

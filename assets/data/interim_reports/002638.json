@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002638",
+  "name": "勤上股份",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "b0c51f6be2a076d77def",
+  "metrics": {
+    "eps": -0.0284,
+    "revenue": 182572558.86,
+    "revenue_yoy_pct": -30.6738394287,
+    "revenue_qoq_pct": -39.1146,
+    "net_profit": -40317912.9,
+    "net_profit_yoy_pct": -43.36,
+    "net_profit_qoq_pct": 27.4427,
+    "book_value_per_share": 1.304624063484,
+    "roe_pct": -2.13,
+    "operating_cashflow_per_share": -0.047472932577,
+    "gross_margin_pct": 12.4429236638,
+    "industry": "照明设备Ⅱ"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

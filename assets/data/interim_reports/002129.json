@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002129",
+  "name": "TCL中环",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-27T00:00:00+08:00",
+  "known_at": "2026-08-27T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "2fe407a944c41d090e84",
+  "metrics": {
+    "eps": -0.7925,
+    "revenue": 14314939540.6,
+    "revenue_yoy_pct": 6.84287239,
+    "revenue_qoq_pct": 18.5788,
+    "net_profit": -3204119422.64,
+    "net_profit_yoy_pct": 24.47,
+    "net_profit_qoq_pct": 5.4218,
+    "book_value_per_share": 4.547278974156,
+    "roe_pct": -15.93,
+    "operating_cashflow_per_share": 0.079337378559,
+    "gross_margin_pct": -9.6612874038,
+    "industry": "光伏设备"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "600975",
+  "name": "新五丰",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-31T00:00:00+08:00",
+  "known_at": "2026-08-31T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "304d961ae14d9f1aef9e",
+  "metrics": {
+    "eps": -0.59,
+    "revenue": 2833223715.97,
+    "revenue_yoy_pct": -23.1771786837,
+    "revenue_qoq_pct": -18.9453,
+    "net_profit": -736116498.79,
+    "net_profit_yoy_pct": -1727.34,
+    "net_profit_qoq_pct": 4.7156,
+    "book_value_per_share": 1.142200839485,
+    "roe_pct": -41.0,
+    "operating_cashflow_per_share": -0.277079084841,
+    "gross_margin_pct": -5.3714488596,
+    "industry": "养殖业"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000949",
+  "name": "新乡化纤",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-29T00:00:00+08:00",
+  "known_at": "2026-08-29T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1d066f0008e1b3674a67",
+  "metrics": {
+    "eps": 0.2079,
+    "revenue": 4578364550.59,
+    "revenue_yoy_pct": 22.490768673,
+    "revenue_qoq_pct": 6.5284,
+    "net_profit": 344510554.5,
+    "net_profit_yoy_pct": 449.05,
+    "net_profit_qoq_pct": 96.9986,
+    "book_value_per_share": 4.227298999915,
+    "roe_pct": 5.02,
+    "operating_cashflow_per_share": 0.493804727863,
+    "gross_margin_pct": 16.4060538249,
+    "industry": "化学纤维"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

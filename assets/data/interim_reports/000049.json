@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "000049",
+  "name": "德赛电池",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-18T00:00:00+08:00",
+  "known_at": "2026-08-18T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "136289746b9638576b47",
+  "metrics": {
+    "eps": 0.5337,
+    "revenue": 10716334708.34,
+    "revenue_yoy_pct": 9.7787183907,
+    "revenue_qoq_pct": 13.997,
+    "net_profit": 205277265.25,
+    "net_profit_yoy_pct": 110.44,
+    "net_profit_qoq_pct": 56.8647,
+    "book_value_per_share": 17.759816799557,
+    "roe_pct": 3.02,
+    "operating_cashflow_per_share": 0.949553875562,
+    "gross_margin_pct": 9.709592472,
+    "industry": "电池"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}

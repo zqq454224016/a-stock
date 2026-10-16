@@ -1,0 +1,33 @@
+{
+  "dataset": "financial.quarterly_summary",
+  "schema_version": "1.0.0",
+  "source": "eastmoney_public_via_akshare",
+  "code": "002442",
+  "name": "龙星科技",
+  "report_period": "2026-06-30",
+  "published_at": "2026-08-28T00:00:00+08:00",
+  "known_at": "2026-08-28T23:59:59+08:00",
+  "fetched_at": "2026-10-16 15:49:39",
+  "version_id": "1fcea75de93c1637a662",
+  "metrics": {
+    "eps": 0.0717,
+    "revenue": 2402231132.8,
+    "revenue_yoy_pct": 13.2098095898,
+    "revenue_qoq_pct": 32.0432,
+    "net_profit": 35523183.27,
+    "net_profit_yoy_pct": -26.52,
+    "net_profit_qoq_pct": 202.1657,
+    "book_value_per_share": 3.71230887075,
+    "roe_pct": 1.91,
+    "operating_cashflow_per_share": -0.396835773871,
+    "gross_margin_pct": 7.8958209716,
+    "industry": "橡胶"
+  },
+  "status": "available",
+  "versions_in_period": 1,
+  "limitations": [
+    "季度摘要，不替代完整财务三表",
+    "公告日当日不参与交易信号"
+  ],
+  "updated_at": "2026-10-16 15:49:39"
+}
