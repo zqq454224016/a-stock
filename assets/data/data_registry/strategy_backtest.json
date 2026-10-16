@@ -1,23 +1,26 @@
 {
   "registry_version": "1.0.0",
   "module": "strategy_backtest",
-  "label": "一年离线策略验证",
+  "label": "五年离线策略验证",
   "path": "strategy_backtest/status.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/strategy_backtest/status.json",
   "exists": true,
-  "size": 124,
-  "file_mtime": "2026-07-24 01:55:18",
-  "updated_at": "2026-07-24 01:55:18",
-  "record_count": 1,
+  "size": 139,
+  "file_mtime": "2026-10-16 15:48:07",
+  "updated_at": "2026-10-16 15:48:07",
+  "record_count": 0,
   "field_summary": {
     "top_level_fields": [
       "completed",
-      "started_at",
+      "items",
       "status",
       "total",
-      "updated_at"
+      "updated_at",
+      "validated"
     ],
-    "list_fields": {},
+    "list_fields": {
+      "items": 0
+    },
     "dict_fields": []
   },
   "data_quality": {
@@ -37,5 +40,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

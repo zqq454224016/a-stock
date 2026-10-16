@@ -1,0 +1,80 @@
+{
+  "recorded_at": "2026-07-30 10:52:34",
+  "trade_date": "2026-07-30",
+  "strategy_version": "13.0.0",
+  "strategy_run_id": "20260730T103711",
+  "source_updated_at": "2026-07-30 10:52:34",
+  "signals": [
+    {
+      "horizon": "short",
+      "code": "002379",
+      "name": "宏桥控股",
+      "score": 84.49,
+      "status": "recommended"
+    },
+    {
+      "horizon": "short",
+      "code": "000838",
+      "name": "*ST发展",
+      "score": 83.66,
+      "status": "recommended"
+    },
+    {
+      "horizon": "short",
+      "code": "603871",
+      "name": "嘉友国际",
+      "score": 83.46,
+      "status": "recommended"
+    },
+    {
+      "horizon": "short",
+      "code": "600882",
+      "name": "妙可蓝多",
+      "score": 82.58,
+      "status": "recommended"
+    },
+    {
+      "horizon": "short",
+      "code": "000423",
+      "name": "东阿阿胶",
+      "score": 82.11,
+      "status": "recommended"
+    },
+    {
+      "horizon": "medium",
+      "code": "000838",
+      "name": "*ST发展",
+      "score": 80.79,
+      "status": "recommended"
+    },
+    {
+      "horizon": "medium",
+      "code": "002379",
+      "name": "宏桥控股",
+      "score": 77.13,
+      "status": "recommended"
+    },
+    {
+      "horizon": "medium",
+      "code": "600066",
+      "name": "宇通客车",
+      "score": 72.69,
+      "status": "recommended"
+    },
+    {
+      "horizon": "medium",
+      "code": "000423",
+      "name": "东阿阿胶",
+      "score": 72.28,
+      "status": "recommended"
+    },
+    {
+      "horizon": "medium",
+      "code": "600422",
+      "name": "昆药集团",
+      "score": 71.56,
+      "status": "recommended"
+    }
+  ],
+  "immutable": true
+}

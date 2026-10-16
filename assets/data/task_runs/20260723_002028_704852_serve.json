@@ -1,0 +1,13 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260723_002028_704852_serve",
+  "command": "serve",
+  "argv": [
+    "serve"
+  ],
+  "status": "success",
+  "started_at": "2026-07-23 00:20:28",
+  "ended_at": "2026-07-23 00:21:54",
+  "duration_sec": 85.5674,
+  "artifacts": []
+}

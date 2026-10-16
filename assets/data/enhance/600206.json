@@ -1,0 +1,154 @@
+{
+  "code": "600206",
+  "name": "",
+  "trade_date": "2026-09-01",
+  "updated_at": "2026-09-01 21:15:44",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-09-01",
+    "close": 48.87,
+    "market_cap_yi": 413.71,
+    "float_cap_yi": 413.71,
+    "pe_ttm": 130.09938014,
+    "pe_static": 156.24127278,
+    "pb": 9.4891977,
+    "ps": 3.56511168,
+    "peg": 1.725622757773
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-08-15",
+        "ex_date": "2026-08-21",
+        "record_date": "2026-08-20",
+        "cash_div": 0.43,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2026-06-03",
+        "ex_date": "2026-06-09",
+        "record_date": "2026-06-08",
+        "cash_div": 0.96,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2025-06-20",
+        "ex_date": "2025-06-27",
+        "record_date": "2025-06-26",
+        "cash_div": 1.09,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2024-05-29",
+        "ex_date": "2024-06-06",
+        "record_date": "2024-06-05",
+        "cash_div": 1.38,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2023-06-17",
+        "ex_date": "2023-06-27",
+        "record_date": "2023-06-26",
+        "cash_div": 0.96,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2022-01-19",
+        "unlock_shares": 2475200.0,
+        "unlock_value_yi": 0.37,
+        "pct_total": 0.002923715044,
+        "pct_float": 0.002923855954,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2021-01-27",
+        "unlock_shares": 2600400.0,
+        "unlock_value_yi": 0.33,
+        "pct_total": 0.003071504497,
+        "pct_float": 0.003080757458,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2020-02-12",
+        "unlock_shares": 2699400.0,
+        "unlock_value_yi": 0.37,
+        "pct_total": 0.003188212493,
+        "pct_float": 0.003207928026,
+        "holder_type": "股权激励限售股份"
+      }
+    ],
+    "earnings_forecast": {
+      "indicator": "预测年报每股收益",
+      "forecast_type": "机构预测",
+      "forecast_value": "1.0",
+      "announce_date": "2026-09-01",
+      "report_period": "行业平均",
+      "source": "ths_profit_forecast"
+    }
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-08-27",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3956.571,
+        "change_pct": 1.126
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "close": 14048.876,
+        "change_pct": 1.499
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3473.355,
+        "change_pct": 1.712
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1693.4796,
+        "change_pct": 3.766
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": 755.39,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": 35.13
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 100.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "margin_sse",
+    "northbound"
+  ]
+}

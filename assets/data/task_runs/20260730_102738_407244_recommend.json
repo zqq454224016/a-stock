@@ -1,0 +1,22 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260730_102738_407244_recommend",
+  "command": "recommend",
+  "argv": [
+    "recommend",
+    "--limit",
+    "5"
+  ],
+  "status": "success",
+  "started_at": "2026-07-30 10:27:38",
+  "ended_at": "2026-07-30 10:27:43",
+  "duration_sec": 5.0626,
+  "artifacts": [
+    {
+      "path": "recommendations/summary.json",
+      "exists": true,
+      "size": 11513236,
+      "mtime": "2026-07-30 10:27:43"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260724_013346_935363_all",
+  "command": "all",
+  "argv": [
+    "all"
+  ],
+  "status": "success",
+  "started_at": "2026-07-24 01:33:46",
+  "ended_at": "2026-07-24 01:39:52",
+  "duration_sec": 365.4933,
+  "artifacts": [
+    {
+      "path": "manifests/phase1_market_data.json",
+      "exists": true,
+      "size": 1757,
+      "mtime": "2026-07-24 01:33:54"
+    },
+    {
+      "path": "normalized/market.instruments/security_master.json",
+      "exists": true,
+      "size": 1878152,
+      "mtime": "2026-07-24 01:33:49"
+    },
+    {
+      "path": "normalized/market.trading_status/events.json",
+      "exists": true,
+      "size": 612,
+      "mtime": "2026-07-24 01:33:49"
+    },
+    {
+      "path": "normalized/market.corporate_actions/ex_factors.json",
+      "exists": true,
+      "size": 409,
+      "mtime": "2026-07-24 01:33:54"
+    },
+    {
+      "path": "monitoring/snapshot.json",
+      "exists": true,
+      "size": 19555,
+      "mtime": "2026-07-24 01:39:52"
+    }
+  ]
+}

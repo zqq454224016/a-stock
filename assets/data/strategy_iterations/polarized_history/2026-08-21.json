@@ -1,0 +1,555 @@
+{
+  "strategy": "polarized",
+  "experimental": true,
+  "allow_overfit": true,
+  "updated_at": "2026-08-21T11:53:03",
+  "market_trade_date": "2026-08-21",
+  "expected_trade_date": "2026-08-21",
+  "freshness_status": "fresh",
+  "forward_review": {
+    "signal_date": "2026-08-20",
+    "evaluation_date": "2026-08-21",
+    "sample_count": 10,
+    "positive_rate": 0.4,
+    "continued_limit_rate": 0.1,
+    "average_return_pct": -0.886,
+    "items": [
+      {
+        "code": "603882",
+        "name": "金域医学",
+        "change_pct": 1.85
+      },
+      {
+        "code": "600211",
+        "name": "西藏药业",
+        "change_pct": -6.12
+      },
+      {
+        "code": "000710",
+        "name": "贝瑞基因",
+        "change_pct": 10.03
+      },
+      {
+        "code": "603392",
+        "name": "万泰生物",
+        "change_pct": 1.85
+      },
+      {
+        "code": "002030",
+        "name": "达安基因",
+        "change_pct": -5.19
+      },
+      {
+        "code": "603590",
+        "name": "康辰药业",
+        "change_pct": -3.29
+      },
+      {
+        "code": "600327",
+        "name": "大东方",
+        "change_pct": -3.3
+      },
+      {
+        "code": "002880",
+        "name": "卫光生物",
+        "change_pct": -3.7
+      },
+      {
+        "code": "002172",
+        "name": "澳洋健康",
+        "change_pct": -7.88
+      },
+      {
+        "code": "600613",
+        "name": "神奇制药",
+        "change_pct": 6.89
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "sector": "有色金属",
+      "polarized_score": 69.23,
+      "trend_score": 100.0,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "600988",
+      "name": "赤峰黄金",
+      "sector": "有色金属",
+      "polarized_score": 69.23,
+      "trend_score": 100.0,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "000975",
+      "name": "山金国际",
+      "sector": "有色金属",
+      "polarized_score": 67.93,
+      "trend_score": 95.65,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "600489",
+      "name": "中金黄金",
+      "sector": "有色金属",
+      "polarized_score": 65.29,
+      "trend_score": 86.85,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "002828",
+      "name": "贝肯能源",
+      "sector": "石油石化",
+      "polarized_score": 63.88,
+      "trend_score": 99.98,
+      "sector_change_pct": 1.98,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "002379",
+      "name": "宏桥控股",
+      "sector": "有色金属",
+      "polarized_score": 63.38,
+      "trend_score": 100.0,
+      "sector_change_pct": 1.8,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "601168",
+      "name": "西部矿业",
+      "sector": "有色金属",
+      "polarized_score": 63.38,
+      "trend_score": 100.0,
+      "sector_change_pct": 1.8,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603979",
+      "name": "金诚信",
+      "sector": "有色金属",
+      "polarized_score": 63.38,
+      "trend_score": 100.0,
+      "sector_change_pct": 1.8,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "600547",
+      "name": "山东黄金",
+      "sector": "有色金属",
+      "polarized_score": 62.54,
+      "trend_score": 77.68,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "000506",
+      "name": "招金黄金",
+      "sector": "有色金属",
+      "polarized_score": 61.72,
+      "trend_score": 74.96,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": null,
+      "robot_chain_evidence": null,
+      "risk": "高波动实验，不作为正式买入信号"
+    }
+  ],
+  "limit_up_candidates": [
+    {
+      "code": "002716",
+      "name": "湖南白银",
+      "trade_date": "2026-08-21",
+      "sector": "有色金属",
+      "continuation_score": 58.77,
+      "change_pct": 10.03,
+      "gap_pct": 1.9,
+      "intraday_pct": 7.98,
+      "amplitude_pct": 10.77,
+      "volume_ratio_5d": null,
+      "amount_yi": 38.29,
+      "sector_change_pct": 3.89,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "002536",
+      "name": "飞龙股份",
+      "trade_date": "2026-08-21",
+      "sector": "汽车",
+      "continuation_score": 56.07,
+      "change_pct": 10.0,
+      "gap_pct": 4.99,
+      "intraday_pct": 4.77,
+      "amplitude_pct": 5.32,
+      "volume_ratio_5d": null,
+      "amount_yi": 15.94,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "603626",
+      "name": "科森科技",
+      "trade_date": "2026-08-21",
+      "sector": "电子",
+      "continuation_score": 51.92,
+      "change_pct": 10.03,
+      "gap_pct": 3.24,
+      "intraday_pct": 6.57,
+      "amplitude_pct": 6.84,
+      "volume_ratio_5d": null,
+      "amount_yi": 7.65,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "002192",
+      "name": "融捷股份",
+      "trade_date": "2026-08-21",
+      "sector": "有色金属",
+      "continuation_score": 51.61,
+      "change_pct": 10.0,
+      "gap_pct": 0.0,
+      "intraday_pct": 10.0,
+      "amplitude_pct": 10.89,
+      "volume_ratio_5d": null,
+      "amount_yi": 13.11,
+      "sector_change_pct": 4.32,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "600353",
+      "name": "旭光电子",
+      "trade_date": "2026-08-21",
+      "sector": "电子",
+      "continuation_score": 47.1,
+      "change_pct": 10.0,
+      "gap_pct": 0.0,
+      "intraday_pct": 10.0,
+      "amplitude_pct": 13.74,
+      "volume_ratio_5d": null,
+      "amount_yi": 36.25,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "002396",
+      "name": "星网锐捷",
+      "trade_date": "2026-08-21",
+      "sector": "通信",
+      "continuation_score": 43.72,
+      "change_pct": 10.02,
+      "gap_pct": 1.49,
+      "intraday_pct": 8.4,
+      "amplitude_pct": 9.35,
+      "volume_ratio_5d": null,
+      "amount_yi": 23.25,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "002903",
+      "name": "宇环数控",
+      "trade_date": "2026-08-21",
+      "sector": "机械设备",
+      "continuation_score": 36.28,
+      "change_pct": 10.01,
+      "gap_pct": 3.36,
+      "intraday_pct": 6.44,
+      "amplitude_pct": 9.72,
+      "volume_ratio_5d": null,
+      "amount_yi": 8.37,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "000628",
+      "name": "高新发展",
+      "trade_date": "2026-08-21",
+      "sector": "建筑装饰",
+      "continuation_score": 35.48,
+      "change_pct": 9.99,
+      "gap_pct": 0.02,
+      "intraday_pct": 9.97,
+      "amplitude_pct": 11.04,
+      "volume_ratio_5d": null,
+      "amount_yi": 6.76,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "002017",
+      "name": "东信和平",
+      "trade_date": "2026-08-21",
+      "sector": "通信",
+      "continuation_score": 34.32,
+      "change_pct": 9.99,
+      "gap_pct": 1.59,
+      "intraday_pct": 8.27,
+      "amplitude_pct": 8.4,
+      "volume_ratio_5d": null,
+      "amount_yi": 4.44,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    },
+    {
+      "code": "603318",
+      "name": "水发燃气",
+      "trade_date": "2026-08-21",
+      "sector": "公用事业",
+      "continuation_score": 33.76,
+      "change_pct": 10.04,
+      "gap_pct": 0.58,
+      "intraday_pct": 9.4,
+      "amplitude_pct": 10.03,
+      "volume_ratio_5d": null,
+      "amount_yi": 3.33,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "verification_status": "pending_intraday_evidence",
+      "executable": false,
+      "missing_intraday_evidence": [
+        "limit_up_time",
+        "seal_amount",
+        "open_board_count",
+        "auction_volume"
+      ],
+      "risk": "次日接力高风险；盘口证据补齐前不可作为买入信号"
+    }
+  ],
+  "robot_theme_candidates": [
+    {
+      "code": "600143",
+      "name": "金发科技",
+      "sector": "基础化工",
+      "polarized_score": 51.67,
+      "trend_score": 51.09,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "轻量化材料",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "600580",
+      "name": "卧龙电驱",
+      "sector": "电力设备",
+      "polarized_score": 51.4,
+      "trend_score": 50.2,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "伺服/关节电机",
+      "robot_chain_evidence": "公开披露关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "002896",
+      "name": "中大力德",
+      "sector": "机械设备",
+      "polarized_score": 48.79,
+      "trend_score": 41.49,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "减速器",
+      "robot_chain_evidence": "公开披露关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "002472",
+      "name": "双环传动",
+      "sector": "汽车",
+      "polarized_score": 44.37,
+      "trend_score": 26.75,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "精密传动",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "003021",
+      "name": "兆威机电",
+      "sector": "电力设备",
+      "polarized_score": 42.53,
+      "trend_score": 20.62,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "微型传动/灵巧手",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "sector": "汽车",
+      "polarized_score": 39.76,
+      "trend_score": 11.4,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "结构件/底盘",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603728",
+      "name": "鸣志电器",
+      "sector": "电力设备",
+      "polarized_score": 38.61,
+      "trend_score": 7.57,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "电机/控制",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603009",
+      "name": "北特科技",
+      "sector": "汽车",
+      "polarized_score": 36.34,
+      "trend_score": 0.0,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "丝杠/传动",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603662",
+      "name": "柯力传感",
+      "sector": "机械设备",
+      "polarized_score": 36.34,
+      "trend_score": 0.0,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.3098,
+      "robot_chain": "力矩传感器",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    }
+  ],
+  "event_context": {
+    "name": "宇树科技上市产业链",
+    "status": "待交易所发行日/上市公告确认",
+    "source_policy": "公开公告优先，媒体供应链名单仅作候选线索"
+  },
+  "limitations": [
+    "sector_data_may_be_stale",
+    "not_in_formal_score",
+    "requires_next_day_confirmation",
+    "intraday_limit_up_evidence_missing",
+    "robot_event_date_unverified"
+  ]
+}

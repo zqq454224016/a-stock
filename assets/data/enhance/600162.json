@@ -1,0 +1,155 @@
+{
+  "code": "600162",
+  "name": "香江控股",
+  "trade_date": "2026-08-10",
+  "updated_at": "2026-08-11 12:07:14",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-08-10",
+    "close": 3.9,
+    "market_cap_yi": 127.47,
+    "float_cap_yi": 127.47,
+    "pe_ttm": -145.46700616,
+    "pe_static": -144.35611222,
+    "pb": 2.2262104,
+    "ps": 9.57079694,
+    "peg": 0.397880148865
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-07-22",
+        "ex_date": "2026-07-28",
+        "record_date": "2026-07-27",
+        "cash_div": 0.05,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2025-07-12",
+        "ex_date": "2025-07-18",
+        "record_date": "2025-07-17",
+        "cash_div": 0.11,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2024-05-31",
+        "ex_date": "2024-06-06",
+        "record_date": "2024-06-05",
+        "cash_div": 1.6,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2023-06-29",
+        "ex_date": "2023-07-05",
+        "record_date": "2023-07-04",
+        "cash_div": 1.2,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2022-12-16",
+        "ex_date": "2022-12-22",
+        "record_date": "2022-12-21",
+        "cash_div": 0.9,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2020-04-14",
+        "unlock_shares": 414572865.0,
+        "unlock_value_yi": 8.46,
+        "pct_total": 0.12208467308,
+        "pct_float": 0.12208467308,
+        "holder_type": "定向增发机构配售股份"
+      },
+      {
+        "unlock_date": "2020-01-06",
+        "unlock_shares": 954000.0,
+        "unlock_value_yi": 0.02,
+        "pct_total": 0.00028093681,
+        "pct_float": 0.000320004448,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2019-04-25",
+        "unlock_shares": 5499000.0,
+        "unlock_value_yi": 0.14,
+        "pct_total": 0.001617672944,
+        "pct_float": 0.001845144397,
+        "holder_type": "股权激励限售股份"
+      }
+    ],
+    "earnings_forecast": {
+      "indicator": "归属于上市公司股东的净利润",
+      "forecast_type": "续亏",
+      "change_pct": -8.335,
+      "forecast_value": "-21500000.0",
+      "reason": "报告期内,受市场、项目竣工验收时间等因素影响,公司2026年半年度营业收入及净利润较上年同期减少。对此公司已制定并实施一系列措施,提高项目推进和交付效率,改变销售策略,积极推动公司房产库存去化。",
+      "announce_date": "2026-07-15",
+      "report_period": "20260630"
+    }
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3900.3523,
+        "change_pct": 0.565
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "close": 14110.121,
+        "change_pct": -0.241
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3515.56,
+        "change_pct": -0.554
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1701.2916,
+        "change_pct": 0.45
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -755.77,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": 47.6
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 95.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "margin",
+    "northbound"
+  ]
+}

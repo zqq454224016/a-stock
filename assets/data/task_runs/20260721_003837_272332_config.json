@@ -1,0 +1,15 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260721_003837_272332_config",
+  "command": "config",
+  "argv": [
+    "config",
+    "--tushare-token",
+    "***"
+  ],
+  "status": "success",
+  "started_at": "2026-07-21 00:38:37",
+  "ended_at": "2026-07-21 00:38:37",
+  "duration_sec": 0.0008,
+  "artifacts": []
+}

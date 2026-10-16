@@ -1,0 +1,360 @@
+{
+  "dataset": "market.candidate_capital_events",
+  "schema_version": "1.0.0",
+  "code": "001328",
+  "trade_date": "2026-07-27",
+  "known_at": "2026-07-27 15:04:53",
+  "sources": [
+    "eastmoney_datacenter"
+  ],
+  "data": {
+    "margin_trading": [
+      {
+        "date": "2026-07-24",
+        "financing_balance": 34266894.0,
+        "financing_buy": 1289769.0,
+        "financing_repay": 893691.0,
+        "securities_lending_balance": 125664.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 3600.0,
+        "margin_balance": 34392558.0
+      },
+      {
+        "date": "2026-07-23",
+        "financing_balance": 33870816.0,
+        "financing_buy": 3038263.0,
+        "financing_repay": 2440166.0,
+        "securities_lending_balance": 231549.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 34102365.0
+      },
+      {
+        "date": "2026-07-22",
+        "financing_balance": 33272719.0,
+        "financing_buy": 4339823.0,
+        "financing_repay": 3233281.0,
+        "securities_lending_balance": 233524.0,
+        "securities_lending_sell_volume": 1700.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 33506243.0
+      },
+      {
+        "date": "2026-07-21",
+        "financing_balance": 32166177.0,
+        "financing_buy": 2914806.0,
+        "financing_repay": 4811714.0,
+        "securities_lending_balance": 171740.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 900.0,
+        "margin_balance": 32337917.0
+      },
+      {
+        "date": "2026-07-20",
+        "financing_balance": 34063085.0,
+        "financing_buy": 3097129.0,
+        "financing_repay": 2115471.0,
+        "securities_lending_balance": 197238.0,
+        "securities_lending_sell_volume": 4600.0,
+        "securities_lending_repay_volume": 200.0,
+        "margin_balance": 34260323.0
+      },
+      {
+        "date": "2026-07-17",
+        "financing_balance": 33081427.0,
+        "financing_buy": 2639621.0,
+        "financing_repay": 2170310.0,
+        "securities_lending_balance": 75600.0,
+        "securities_lending_sell_volume": 500.0,
+        "securities_lending_repay_volume": 5500.0,
+        "margin_balance": 33157027.0
+      },
+      {
+        "date": "2026-07-16",
+        "financing_balance": 32612116.0,
+        "financing_buy": 2141194.0,
+        "financing_repay": 3179557.0,
+        "securities_lending_balance": 220682.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 500.0,
+        "margin_balance": 32832798.0
+      },
+      {
+        "date": "2026-07-15",
+        "financing_balance": 33650479.0,
+        "financing_buy": 1852702.0,
+        "financing_repay": 1923686.0,
+        "securities_lending_balance": 226894.0,
+        "securities_lending_sell_volume": 800.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 33877373.0
+      },
+      {
+        "date": "2026-07-14",
+        "financing_balance": 33721463.0,
+        "financing_buy": 1184801.0,
+        "financing_repay": 2057540.0,
+        "securities_lending_balance": 196248.0,
+        "securities_lending_sell_volume": 1300.0,
+        "securities_lending_repay_volume": 800.0,
+        "margin_balance": 33917711.0
+      },
+      {
+        "date": "2026-07-13",
+        "financing_balance": 34594202.0,
+        "financing_buy": 1960270.0,
+        "financing_repay": 1493811.0,
+        "securities_lending_balance": 178503.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 1300.0,
+        "margin_balance": 34772705.0
+      },
+      {
+        "date": "2026-07-10",
+        "financing_balance": 34127743.0,
+        "financing_buy": 1876884.0,
+        "financing_repay": 2207005.0,
+        "securities_lending_balance": 216726.0,
+        "securities_lending_sell_volume": 1000.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 34344469.0
+      },
+      {
+        "date": "2026-07-09",
+        "financing_balance": 34457864.0,
+        "financing_buy": 2992523.0,
+        "financing_repay": 3177681.0,
+        "securities_lending_balance": 187200.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 34645064.0
+      },
+      {
+        "date": "2026-07-08",
+        "financing_balance": 34643022.0,
+        "financing_buy": 2500273.0,
+        "financing_repay": 1797375.0,
+        "securities_lending_balance": 191304.0,
+        "securities_lending_sell_volume": 5700.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 34834326.0
+      },
+      {
+        "date": "2026-07-07",
+        "financing_balance": 33940124.0,
+        "financing_buy": 1603551.0,
+        "financing_repay": 2103242.0,
+        "securities_lending_balance": 40260.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 5700.0,
+        "margin_balance": 33980384.0
+      },
+      {
+        "date": "2026-07-06",
+        "financing_balance": 34439815.0,
+        "financing_buy": 2737686.0,
+        "financing_repay": 2013654.0,
+        "securities_lending_balance": 193546.0,
+        "securities_lending_sell_volume": 500.0,
+        "securities_lending_repay_volume": 1100.0,
+        "margin_balance": 34633361.0
+      },
+      {
+        "date": "2026-07-03",
+        "financing_balance": 33715783.0,
+        "financing_buy": 1273733.0,
+        "financing_repay": 1260384.0,
+        "securities_lending_balance": 209363.0,
+        "securities_lending_sell_volume": 2100.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 33925146.0
+      },
+      {
+        "date": "2026-07-02",
+        "financing_balance": 33702434.0,
+        "financing_buy": 2087436.0,
+        "financing_repay": 3020193.0,
+        "securities_lending_balance": 151144.0,
+        "securities_lending_sell_volume": 900.0,
+        "securities_lending_repay_volume": 2600.0,
+        "margin_balance": 33853578.0
+      },
+      {
+        "date": "2026-07-01",
+        "financing_balance": 34635191.0,
+        "financing_buy": 3067406.0,
+        "financing_repay": 2773115.0,
+        "securities_lending_balance": 196078.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 900.0,
+        "margin_balance": 34831269.0
+      },
+      {
+        "date": "2026-06-30",
+        "financing_balance": 34340900.0,
+        "financing_buy": 2926915.0,
+        "financing_repay": 3563227.0,
+        "securities_lending_balance": 212462.0,
+        "securities_lending_sell_volume": 800.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 34553362.0
+      },
+      {
+        "date": "2026-06-29",
+        "financing_balance": 34977212.0,
+        "financing_buy": 3502545.0,
+        "financing_repay": 5694522.0,
+        "securities_lending_balance": 196396.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 800.0,
+        "margin_balance": 35173608.0
+      },
+      {
+        "date": "2026-06-26",
+        "financing_balance": 37169189.0,
+        "financing_buy": 3378421.0,
+        "financing_repay": 3328135.0,
+        "securities_lending_balance": 203148.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 37372337.0
+      },
+      {
+        "date": "2026-06-25",
+        "financing_balance": 37118903.0,
+        "financing_buy": 5498699.0,
+        "financing_repay": 4226997.0,
+        "securities_lending_balance": 204560.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 100.0,
+        "margin_balance": 37323463.0
+      },
+      {
+        "date": "2026-06-24",
+        "financing_balance": 35847201.0,
+        "financing_buy": 2517895.0,
+        "financing_repay": 3509036.0,
+        "securities_lending_balance": 215622.0,
+        "securities_lending_sell_volume": 200.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 36062823.0
+      },
+      {
+        "date": "2026-06-23",
+        "financing_balance": 36838342.0,
+        "financing_buy": 4630111.0,
+        "financing_repay": 5475069.0,
+        "securities_lending_balance": 214090.0,
+        "securities_lending_sell_volume": 300.0,
+        "securities_lending_repay_volume": 200.0,
+        "margin_balance": 37052432.0
+      },
+      {
+        "date": "2026-06-22",
+        "financing_balance": 37683300.0,
+        "financing_buy": 6831846.0,
+        "financing_repay": 4351591.0,
+        "securities_lending_balance": 206700.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 200.0,
+        "margin_balance": 37890000.0
+      },
+      {
+        "date": "2026-06-18",
+        "financing_balance": 35203045.0,
+        "financing_buy": 3252653.0,
+        "financing_repay": 3595956.0,
+        "securities_lending_balance": 215907.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 200.0,
+        "margin_balance": 35418952.0
+      },
+      {
+        "date": "2026-06-17",
+        "financing_balance": 35546348.0,
+        "financing_buy": 2201513.0,
+        "financing_repay": 2925455.0,
+        "securities_lending_balance": 229149.0,
+        "securities_lending_sell_volume": 2300.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 35775497.0
+      },
+      {
+        "date": "2026-06-16",
+        "financing_balance": 36270290.0,
+        "financing_buy": 5178415.0,
+        "financing_repay": 2678017.0,
+        "securities_lending_balance": 170230.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 2100.0,
+        "margin_balance": 36440520.0
+      },
+      {
+        "date": "2026-06-15",
+        "financing_balance": 33769892.0,
+        "financing_buy": 4794788.0,
+        "financing_repay": 4915105.0,
+        "securities_lending_balance": 240397.0,
+        "securities_lending_sell_volume": 700.0,
+        "securities_lending_repay_volume": 100.0,
+        "margin_balance": 34010289.0
+      },
+      {
+        "date": "2026-06-12",
+        "financing_balance": 33890209.0,
+        "financing_buy": 3808146.0,
+        "financing_repay": 3717671.0,
+        "securities_lending_balance": 223380.0,
+        "securities_lending_sell_volume": 500.0,
+        "securities_lending_repay_volume": 500.0,
+        "margin_balance": 34113589.0
+      }
+    ],
+    "block_trades": [
+      {
+        "date": "2024-06-06",
+        "price": 24.14,
+        "close": 23.05,
+        "premium_pct": 4.7289,
+        "volume": 420000.0,
+        "amount": 10138800.0,
+        "buyer": "红塔证券股份有限公司北京万泉庄路证券营业部",
+        "seller": "红塔证券股份有限公司北京万泉庄路证券营业部"
+      }
+    ],
+    "lockup_expiry": {
+      "history": [
+        {
+          "date": "2028-01-19",
+          "type": "首发原股东限售股份",
+          "shares_wan": 17217.38,
+          "tradable_shares_wan": 1045.69,
+          "total_share_ratio": 0.06466176386
+        },
+        {
+          "date": "2026-04-10",
+          "type": "首发原股东限售股份",
+          "shares_wan": 16171.69,
+          "tradable_shares_wan": 11568.57,
+          "total_share_ratio": 0.715359371841
+        },
+        {
+          "date": "2026-02-06",
+          "type": "首发原股东限售股份",
+          "shares_wan": 4603.12,
+          "tradable_shares_wan": 298.77,
+          "total_share_ratio": 0.064905976816
+        },
+        {
+          "date": "2023-10-10",
+          "type": "首发机构配售股份",
+          "shares_wan": 4304.35,
+          "tradable_shares_wan": 86.4053,
+          "total_share_ratio": 0.020073948448
+        }
+      ],
+      "upcoming": []
+    }
+  },
+  "usage": "candidate_evidence_only_not_automatic_score"
+}

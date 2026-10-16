@@ -1,0 +1,49 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260903_144905_767983_all",
+  "command": "all",
+  "argv": [
+    "all"
+  ],
+  "status": "failed",
+  "started_at": "2026-09-03 14:49:05",
+  "ended_at": "2026-09-03 14:49:13",
+  "duration_sec": 7.7062,
+  "artifacts": [
+    {
+      "path": "manifests/phase1_market_data.json",
+      "exists": true,
+      "size": 896,
+      "mtime": "2026-08-27 23:37:32"
+    },
+    {
+      "path": "normalized/market.instruments/security_master.json",
+      "exists": true,
+      "size": 1885638,
+      "mtime": "2026-08-27 23:37:26"
+    },
+    {
+      "path": "normalized/market.trading_status/events.json",
+      "exists": true,
+      "size": 612,
+      "mtime": "2026-07-24 01:50:55"
+    },
+    {
+      "path": "normalized/market.corporate_actions/ex_factors.json",
+      "exists": true,
+      "size": 409,
+      "mtime": "2026-08-27 23:37:32"
+    },
+    {
+      "path": "monitoring/snapshot.json",
+      "exists": true,
+      "size": 16197,
+      "mtime": "2026-08-27 23:41:27"
+    }
+  ],
+  "error": {
+    "type": "ConnectionError",
+    "message": "Failed to connect to https://api.tickflow.org/v1/exchanges/SH/instruments: [Errno 8] nodename nor servname provided, or not known",
+    "traceback": "tickflow._exceptions.ConnectionError: Failed to connect to https://api.tickflow.org/v1/exchanges/SH/instruments: [Errno 8] nodename nor servname provided, or not known"
+  }
+}

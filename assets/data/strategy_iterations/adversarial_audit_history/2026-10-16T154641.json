@@ -1,0 +1,770 @@
+{
+  "status": "complete",
+  "audit_version": "1.1.0",
+  "updated_at": "2026-10-16 15:46:41",
+  "source_run_id": "20261016T152708",
+  "research_version": "15.1.0",
+  "selected_candidate": "tf_pullback_rising_regime",
+  "selected_horizon": "swing",
+  "reported_promotion_passed": false,
+  "reported_decision": "research_diagnostic_wait_forward_shadow",
+  "diagnostic_passed_horizons": [
+    "swing"
+  ],
+  "passed_horizons": [],
+  "verdict": "strategy_defect_and_policy_hold",
+  "summary": "对抗校验：既有策略层面缺陷（组合/容量/状态依赖或晋级条款失败），也被历史OOS污染政策阻断正式晋级；即使政策放开，当前证据仍不足以晋级。 训练段信号均收益为正但组合总收益为-14.3147%，边在容量约束下消失。 正式推荐分时管线存在系统性缺失，需先修复量价通过后再拉分时，避免空推荐被误读为策略失效。 当日大涨未荐属于反追涨设计（如远东），不是晋级门槛误杀。",
+  "promotion_clauses": [
+    {
+      "id": "stability_segment_count",
+      "required": ">=2 development segments",
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "id": "stability_early_trades",
+      "required": ">=100",
+      "actual": 624,
+      "passed": true
+    },
+    {
+      "id": "stability_early_avg_net_return",
+      "required": ">0",
+      "actual": 2.0489,
+      "passed": true
+    },
+    {
+      "id": "stability_early_median_net_return",
+      "required": ">0",
+      "actual": 1.0397,
+      "passed": true
+    },
+    {
+      "id": "stability_late_trades",
+      "required": ">=100",
+      "actual": 2255,
+      "passed": true
+    },
+    {
+      "id": "stability_late_avg_net_return",
+      "required": ">0",
+      "actual": 2.4599,
+      "passed": true
+    },
+    {
+      "id": "stability_late_median_net_return",
+      "required": ">0",
+      "actual": 1.5618,
+      "passed": true
+    },
+    {
+      "id": "oos_trades",
+      "required": ">=300",
+      "actual": 318,
+      "passed": true
+    },
+    {
+      "id": "oos_hit_rate_vs_baseline",
+      "required": ">=0.5400",
+      "actual": 0.5535,
+      "passed": true
+    },
+    {
+      "id": "oos_avg_net_return_vs_baseline",
+      "required": ">0.0000",
+      "actual": 0.7091,
+      "passed": true
+    },
+    {
+      "id": "oos_median_net_return",
+      "required": ">0",
+      "actual": 0.6467,
+      "passed": true
+    },
+    {
+      "id": "oos_drawdown_not_worse_than_baseline",
+      "required": ">=-65.7445",
+      "actual": -2.9813,
+      "passed": true
+    },
+    {
+      "id": "portfolio_accepted_trades",
+      "required": ">=30",
+      "actual": 13,
+      "passed": false
+    },
+    {
+      "id": "portfolio_not_capacity_starved",
+      "required": "rejected_capacity <= 5 * accepted_trades",
+      "actual": {
+        "accepted": 13,
+        "rejected_capacity": 305
+      },
+      "passed": false
+    },
+    {
+      "id": "portfolio_total_return_positive",
+      "required": ">0",
+      "actual": 2.7742,
+      "passed": true
+    },
+    {
+      "id": "portfolio_beats_baseline",
+      "required": ">-53.5420",
+      "actual": 2.7742,
+      "passed": true
+    },
+    {
+      "id": "portfolio_hit_rate",
+      "required": ">=0.50",
+      "actual": 0.6154,
+      "passed": true
+    },
+    {
+      "id": "promotion_passed_recomputed",
+      "required": true,
+      "actual": false,
+      "passed": false
+    }
+  ],
+  "failed_promotion_clauses": [
+    {
+      "id": "portfolio_accepted_trades",
+      "required": ">=30",
+      "actual": 13,
+      "passed": false
+    },
+    {
+      "id": "portfolio_not_capacity_starved",
+      "required": "rejected_capacity <= 5 * accepted_trades",
+      "actual": {
+        "accepted": 13,
+        "rejected_capacity": 305
+      },
+      "passed": false
+    },
+    {
+      "id": "promotion_passed_recomputed",
+      "required": true,
+      "actual": false,
+      "passed": false
+    }
+  ],
+  "eligibility": {
+    "eligible": true,
+    "checks": [
+      {
+        "id": "train_trades",
+        "passed": true,
+        "actual": 3013,
+        "required": 200
+      },
+      {
+        "id": "train_avg_net_return",
+        "passed": true,
+        "actual": 2.1259,
+        "required": ">0"
+      },
+      {
+        "id": "dev_segment_0_avg_net_return",
+        "passed": true,
+        "actual": 2.0489,
+        "required": ">0"
+      },
+      {
+        "id": "dev_segment_1_avg_net_return",
+        "passed": true,
+        "actual": 2.4599,
+        "required": ">0"
+      }
+    ]
+  },
+  "signal_vs_portfolio": {
+    "train": {
+      "signal_trades": 3013,
+      "signal_hit_rate": 0.5675,
+      "signal_avg_net_return_pct": 2.1259,
+      "signal_median_net_return_pct": 1.2598,
+      "portfolio_accepted_trades": 122,
+      "portfolio_rejected_capacity": 2891,
+      "portfolio_acceptance_rate": 0.0405,
+      "portfolio_hit_rate": 0.4754,
+      "portfolio_total_return_pct": -14.3147,
+      "portfolio_max_drawdown_pct": -29.2718,
+      "signal_positive_portfolio_negative": true,
+      "capacity_starved": true
+    },
+    "oos": {
+      "signal_trades": 318,
+      "signal_hit_rate": 0.5535,
+      "signal_avg_net_return_pct": 0.7091,
+      "signal_median_net_return_pct": 0.6467,
+      "portfolio_accepted_trades": 13,
+      "portfolio_rejected_capacity": 305,
+      "portfolio_acceptance_rate": 0.0409,
+      "portfolio_hit_rate": 0.6154,
+      "portfolio_total_return_pct": 2.7742,
+      "portfolio_max_drawdown_pct": -2.9813,
+      "signal_positive_portfolio_negative": false,
+      "capacity_starved": true
+    }
+  },
+  "adversarial_attacks": [
+    {
+      "id": "policy_historical_oos_block",
+      "question": "正式晋级是否被历史OOS污染策略硬阻断？",
+      "finding": true,
+      "detail": "diagnostic_passed=['swing'], passed_horizons=[], historical_oos_can_promote_new_candidates=false",
+      "implies": "policy_hold"
+    },
+    {
+      "id": "metric_clause_failure",
+      "question": "忽略政策阻断后，晋级公式本身是否仍失败？",
+      "finding": true,
+      "detail": [
+        "portfolio_accepted_trades",
+        "portfolio_not_capacity_starved",
+        "promotion_passed_recomputed"
+      ],
+      "implies": "strategy_defect"
+    },
+    {
+      "id": "signal_portfolio_divergence",
+      "question": "信号级赚钱但组合级亏损？",
+      "finding": true,
+      "detail": {
+        "train": {
+          "signal_trades": 3013,
+          "signal_hit_rate": 0.5675,
+          "signal_avg_net_return_pct": 2.1259,
+          "signal_median_net_return_pct": 1.2598,
+          "portfolio_accepted_trades": 122,
+          "portfolio_rejected_capacity": 2891,
+          "portfolio_acceptance_rate": 0.0405,
+          "portfolio_hit_rate": 0.4754,
+          "portfolio_total_return_pct": -14.3147,
+          "portfolio_max_drawdown_pct": -29.2718,
+          "signal_positive_portfolio_negative": true,
+          "capacity_starved": true
+        },
+        "oos": {
+          "signal_trades": 318,
+          "signal_hit_rate": 0.5535,
+          "signal_avg_net_return_pct": 0.7091,
+          "signal_median_net_return_pct": 0.6467,
+          "portfolio_accepted_trades": 13,
+          "portfolio_rejected_capacity": 305,
+          "portfolio_acceptance_rate": 0.0409,
+          "portfolio_hit_rate": 0.6154,
+          "portfolio_total_return_pct": 2.7742,
+          "portfolio_max_drawdown_pct": -2.9813,
+          "signal_positive_portfolio_negative": false,
+          "capacity_starved": true
+        }
+      },
+      "implies": "strategy_untradeable_edge"
+    },
+    {
+      "id": "capacity_starvation",
+      "question": "容量拒单是否吃掉绝大部分信号？",
+      "finding": true,
+      "detail": {
+        "train_acceptance": 0.0405,
+        "oos_acceptance": 0.0409
+      },
+      "implies": "strategy_capacity_fragile"
+    },
+    {
+      "id": "regime_concentration",
+      "question": "候选是否只允许单一市场状态？",
+      "finding": true,
+      "detail": {
+        "allowed_regimes": [
+          "rising"
+        ]
+      },
+      "implies": "strategy_regime_dependent"
+    },
+    {
+      "id": "family_wide_weakness",
+      "question": "候选族是否整体信号OOS偏弱？",
+      "finding": true,
+      "detail": {
+        "positive_signal_oos_count": 2,
+        "positive_signal_oos": [
+          "tf_pullback_rising_regime",
+          "study_pa_range_edge_reversal"
+        ],
+        "candidate_count": 28,
+        "negative_portfolio_train_count": 16
+      },
+      "implies": "strategy_hypothesis_space_weak"
+    },
+    {
+      "id": "contamination_scope",
+      "question": "当前horizon评估是否声明为污染诊断窗？",
+      "finding": true,
+      "detail": [
+        {
+          "horizon": "short",
+          "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+          "promotion_passed_reported": false,
+          "contaminated": true
+        },
+        {
+          "horizon": "swing",
+          "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+          "promotion_passed_reported": true,
+          "contaminated": true
+        },
+        {
+          "horizon": "medium",
+          "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+          "promotion_passed_reported": false,
+          "contaminated": true
+        }
+      ],
+      "implies": "policy_hold"
+    },
+    {
+      "id": "eligibility_vs_promotion",
+      "question": "候选能进eligible但最终无法正式晋级？",
+      "finding": true,
+      "detail": {
+        "eligible": true,
+        "checks": [
+          {
+            "id": "train_trades",
+            "passed": true,
+            "actual": 3013,
+            "required": 200
+          },
+          {
+            "id": "train_avg_net_return",
+            "passed": true,
+            "actual": 2.1259,
+            "required": ">0"
+          },
+          {
+            "id": "dev_segment_0_avg_net_return",
+            "passed": true,
+            "actual": 2.0489,
+            "required": ">0"
+          },
+          {
+            "id": "dev_segment_1_avg_net_return",
+            "passed": true,
+            "actual": 2.4599,
+            "required": ">0"
+          }
+        ]
+      },
+      "implies": null
+    },
+    {
+      "id": "recommendation_intraday_pipeline",
+      "question": "正式推荐是否因分时管线缺陷被系统性清零？",
+      "finding": true,
+      "detail": {
+        "numerical_ready_count": 1,
+        "intraday_missing_count": 3455,
+        "evaluated_count": 3456
+      },
+      "implies": "recommendation_pipeline_defect"
+    },
+    {
+      "id": "same_day_chase_not_promotion_target",
+      "question": "当日大涨未荐是否属于反追涨设计（非晋级误杀）？",
+      "finding": true,
+      "detail": {
+        "anti_chase_exclusion_count": 3265,
+        "examples": [
+          {
+            "code": "600869",
+            "name": "远东股份",
+            "change_pct": 6.42,
+            "float_cap_yi": 427.0,
+            "limits": {
+              "change": [
+                3.0,
+                5.0
+              ],
+              "float_cap": [
+                50.0,
+                300.0
+              ],
+              "turnover": [
+                4.0,
+                12.0
+              ],
+              "volume_ratio": [
+                1.2,
+                2.0
+              ]
+            },
+            "exclusion_classes": [
+              "anti_chase_change_band",
+              "size_band",
+              "structure_ma",
+              "intraday_missing"
+            ],
+            "numerical_blockers": [
+              "涨幅未满足3<涨幅<5",
+              "流通市值未满足50<流通市值<300",
+              "5/10/20日均线未形成多头排列",
+              "股价未站稳5/10/20日均线上方"
+            ],
+            "verdict": "design_anti_chase_exclusion",
+            "why_not_recommended": "弱势板要求温和涨幅带内确认，不追当日已大幅冲高的票；另需市值/均线/量能与分时同时通过。"
+          },
+          {
+            "code": "002406",
+            "name": "远东传动",
+            "change_pct": 2.26,
+            "float_cap_yi": 35.64,
+            "limits": {
+              "change": [
+                3.0,
+                5.0
+              ],
+              "float_cap": [
+                50.0,
+                300.0
+              ],
+              "turnover": [
+                4.0,
+                12.0
+              ],
+              "volume_ratio": [
+                1.2,
+                2.0
+              ]
+            },
+            "exclusion_classes": [
+              "anti_chase_change_band",
+              "size_band",
+              "liquidity_band",
+              "structure_ma",
+              "volume_shape",
+              "intraday_missing"
+            ],
+            "numerical_blockers": [
+              "涨幅未满足3<涨幅<5",
+              "流通市值未满足50<流通市值<300",
+              "换手率未满足4<换手率<12",
+              "量比未满足1.2≤量比≤2",
+              "5/10/20日均线未形成多头排列",
+              "股价未站稳5/10/20日均线上方",
+              "成交量未呈连续3日台阶式温和放量"
+            ],
+            "verdict": "design_anti_chase_exclusion",
+            "why_not_recommended": "弱势板要求温和涨幅带内确认，不追当日已大幅冲高的票；另需市值/均线/量能与分时同时通过。"
+          }
+        ],
+        "promotion_alignment": {
+          "same_day_chase_is_not_promotion_target": true,
+          "research_entry": "prior_signal_then_t1_open",
+          "note": "远东这类当日大涨票被排除，是正式推荐反追涨设计，不是晋级门槛误杀；研究侧应抓先验信号日，而非收盘后追涨。"
+        }
+      },
+      "implies": "design_anti_chase_ok"
+    }
+  ],
+  "policy": {
+    "historical_promotion_blocked": true,
+    "historical_oos_already_observed": true,
+    "recent_60d_diagnostic_cannot_select_or_tune": true,
+    "oos_used_for_selection": false
+  },
+  "next_actions": [
+    "升 research_version，预登记新假设族；禁止在同一OOS上调参",
+    "优先改持仓/容量/相关性规则，再测组合级收益是否仍为正",
+    "增加非 rising 状态的对照候选，检验边是否仅为单状态过拟合",
+    "继续不可覆盖前向影子记账；满窗只评估一次，不把诊断窗当晋级证据",
+    "先跑量价筛选→只对 numerical_passed 拉分时→再生成正式推荐",
+    "对外保持空正式推荐，直到组合级与政策双重通过；不因远东类大涨放宽反追涨带"
+  ],
+  "recommendation_miss_audit": {
+    "regime": "偏弱",
+    "evaluated_count": 3456,
+    "recommendation_count": 0,
+    "numerical_ready_count": 1,
+    "intraday_missing_count": 3455,
+    "anti_chase_exclusion_count": 3265,
+    "exclusion_class_counts": {
+      "intraday_missing": 3455,
+      "liquidity_band": 3367,
+      "anti_chase_change_band": 3265,
+      "structure_ma": 3223,
+      "volume_shape": 2521,
+      "size_band": 1958,
+      "relative_strength": 1401,
+      "intraday_fail": 1
+    },
+    "pipeline_intraday_defect": true,
+    "top_gainers_excluded": [
+      {
+        "code": "002076",
+        "name": "星光股份",
+        "change_pct": 10.15,
+        "float_cap_yi": 22.63,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "liquidity_band",
+          "structure_ma",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "量比未满足1.2≤量比≤2",
+          "5/10/20日均线未形成多头排列"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "000573",
+        "name": "粤宏远Ａ",
+        "change_pct": 10.1,
+        "float_cap_yi": 28.28,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "liquidity_band",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "换手率未满足4<换手率<12",
+          "量比未满足1.2≤量比≤2",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "002724",
+        "name": "海洋王",
+        "change_pct": 10.07,
+        "float_cap_yi": 43.34,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "structure_ma",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "5/10/20日均线未形成多头排列",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "600802",
+        "name": "福建水泥",
+        "change_pct": 10.06,
+        "float_cap_yi": 31.07,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "liquidity_band",
+          "structure_ma",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "换手率未满足4<换手率<12",
+          "量比未满足1.2≤量比≤2",
+          "5/10/20日均线未形成多头排列",
+          "股价未站稳5/10/20日均线上方",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "000701",
+        "name": "厦门信达",
+        "change_pct": 10.06,
+        "float_cap_yi": 35.79,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "liquidity_band",
+          "structure_ma",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "量比未满足1.2≤量比≤2",
+          "5/10/20日均线未形成多头排列",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "603668",
+        "name": "天马科技",
+        "change_pct": 10.06,
+        "float_cap_yi": 38.19,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "structure_ma",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "5/10/20日均线未形成多头排列",
+          "股价未站稳5/10/20日均线上方",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "603168",
+        "name": "莎普爱思",
+        "change_pct": 10.05,
+        "float_cap_yi": 23.24,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "liquidity_band",
+          "structure_ma",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "量比未满足1.2≤量比≤2",
+          "5/10/20日均线未形成多头排列"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      },
+      {
+        "code": "600319",
+        "name": "亚星化学",
+        "change_pct": 10.05,
+        "float_cap_yi": 26.75,
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "design_anti_chase": true,
+        "numerical_passed": false
+      }
+    ],
+    "examples": [
+      {
+        "code": "600869",
+        "name": "远东股份",
+        "change_pct": 6.42,
+        "float_cap_yi": 427.0,
+        "limits": {
+          "change": [
+            3.0,
+            5.0
+          ],
+          "float_cap": [
+            50.0,
+            300.0
+          ],
+          "turnover": [
+            4.0,
+            12.0
+          ],
+          "volume_ratio": [
+            1.2,
+            2.0
+          ]
+        },
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "structure_ma",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "5/10/20日均线未形成多头排列",
+          "股价未站稳5/10/20日均线上方"
+        ],
+        "verdict": "design_anti_chase_exclusion",
+        "why_not_recommended": "弱势板要求温和涨幅带内确认，不追当日已大幅冲高的票；另需市值/均线/量能与分时同时通过。"
+      },
+      {
+        "code": "002406",
+        "name": "远东传动",
+        "change_pct": 2.26,
+        "float_cap_yi": 35.64,
+        "limits": {
+          "change": [
+            3.0,
+            5.0
+          ],
+          "float_cap": [
+            50.0,
+            300.0
+          ],
+          "turnover": [
+            4.0,
+            12.0
+          ],
+          "volume_ratio": [
+            1.2,
+            2.0
+          ]
+        },
+        "exclusion_classes": [
+          "anti_chase_change_band",
+          "size_band",
+          "liquidity_band",
+          "structure_ma",
+          "volume_shape",
+          "intraday_missing"
+        ],
+        "numerical_blockers": [
+          "涨幅未满足3<涨幅<5",
+          "流通市值未满足50<流通市值<300",
+          "换手率未满足4<换手率<12",
+          "量比未满足1.2≤量比≤2",
+          "5/10/20日均线未形成多头排列",
+          "股价未站稳5/10/20日均线上方",
+          "成交量未呈连续3日台阶式温和放量"
+        ],
+        "verdict": "design_anti_chase_exclusion",
+        "why_not_recommended": "弱势板要求温和涨幅带内确认，不追当日已大幅冲高的票；另需市值/均线/量能与分时同时通过。"
+      }
+    ],
+    "promotion_alignment": {
+      "same_day_chase_is_not_promotion_target": true,
+      "research_entry": "prior_signal_then_t1_open",
+      "note": "远东这类当日大涨票被排除，是正式推荐反追涨设计，不是晋级门槛误杀；研究侧应抓先验信号日，而非收盘后追涨。"
+    }
+  }
+}

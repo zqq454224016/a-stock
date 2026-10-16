@@ -1,0 +1,7 @@
+{
+  "updated_at": "2026-10-16 15:39:36",
+  "fingerprint": "2a5da4c0ce465ab8",
+  "status": "failed",
+  "scope": "data_acquisition_methods_only",
+  "error": "` not found. Defaulting to fallback metadata; this can degrade performance and cause issues.\nERROR: {\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-6-astra' model requires a newer version of Codex. Please upgrade to the latest app or CLI and try again.\"}}\nERROR: {\"type\":\"error\",\"status\":400,\"error\":{\"type\":\"invalid_request_error\",\"message\":\"The 'gpt-6-astra' model requires a newer version of Codex. Please upgrade to the latest app or CLI and try again.\"}}"
+}

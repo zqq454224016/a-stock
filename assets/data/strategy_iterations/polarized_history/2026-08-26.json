@@ -1,0 +1,144 @@
+{
+  "strategy": "polarized",
+  "experimental": true,
+  "allow_overfit": true,
+  "updated_at": "2026-08-27T15:36:34",
+  "market_trade_date": "2026-08-26",
+  "expected_trade_date": "2026-08-27",
+  "freshness_status": "stale",
+  "forward_review": {},
+  "candidates": [],
+  "limit_up_candidates": [],
+  "actionable_candidates": [],
+  "decision": "no_trade",
+  "decision_reason": "未同时满足75分、盘口核验和可执行性门槛",
+  "promotion_gate": {
+    "min_score": 75,
+    "requires_intraday_evidence": true,
+    "min_forward_sessions": 20,
+    "min_forward_samples": 100
+  },
+  "robot_theme_candidates": [
+    {
+      "code": "600143",
+      "name": "金发科技",
+      "sector": "基础化工",
+      "polarized_score": 62.79,
+      "trend_score": 51.09,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "轻量化材料",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "600580",
+      "name": "卧龙电驱",
+      "sector": "电力设备",
+      "polarized_score": 62.52,
+      "trend_score": 50.2,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "伺服/关节电机",
+      "robot_chain_evidence": "公开披露关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "002896",
+      "name": "中大力德",
+      "sector": "机械设备",
+      "polarized_score": 59.91,
+      "trend_score": 41.49,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "减速器",
+      "robot_chain_evidence": "公开披露关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "002472",
+      "name": "双环传动",
+      "sector": "底盘与发动机系统",
+      "polarized_score": 55.48,
+      "trend_score": 26.75,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "精密传动",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "003021",
+      "name": "兆威机电",
+      "sector": "电力设备",
+      "polarized_score": 53.64,
+      "trend_score": 20.62,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "微型传动/灵巧手",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "sector": "底盘与发动机系统",
+      "polarized_score": 50.88,
+      "trend_score": 11.4,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "结构件/底盘",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603728",
+      "name": "鸣志电器",
+      "sector": "电力设备",
+      "polarized_score": 49.73,
+      "trend_score": 7.57,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "电机/控制",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603009",
+      "name": "北特科技",
+      "sector": "底盘与发动机系统",
+      "polarized_score": 47.46,
+      "trend_score": 0.0,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "丝杠/传动",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    },
+    {
+      "code": "603662",
+      "name": "柯力传感",
+      "sector": "仪器仪表",
+      "polarized_score": 47.46,
+      "trend_score": 0.0,
+      "sector_change_pct": 0.0,
+      "market_advance_ratio": 0.6274,
+      "robot_chain": "力矩传感器",
+      "robot_chain_evidence": "产业链关联",
+      "risk": "高波动实验，不作为正式买入信号"
+    }
+  ],
+  "event_context": {
+    "name": "宇树科技上市产业链",
+    "status": "待交易所发行日/上市公告确认",
+    "source_policy": "公开公告优先，媒体供应链名单仅作候选线索"
+  },
+  "limitations": [
+    "market_data_stale_candidates_suppressed",
+    "sector_data_may_be_stale",
+    "not_in_formal_score",
+    "requires_next_day_confirmation",
+    "intraday_limit_up_evidence_missing",
+    "robot_event_date_unverified"
+  ]
+}

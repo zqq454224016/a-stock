@@ -5,9 +5,9 @@
   "path": "iteration/status.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/iteration/status.json",
   "exists": true,
-  "size": 4657,
-  "file_mtime": "2026-07-24 01:55:18",
-  "updated_at": "2026-07-24 01:55:18",
+  "size": 4595,
+  "file_mtime": "2026-10-16 15:55:22",
+  "updated_at": "2026-10-16 15:55:22",
   "record_count": 1,
   "field_summary": {
     "top_level_fields": [
@@ -28,8 +28,8 @@
     ],
     "list_fields": {
       "gates": 8,
-      "failed_gates": 3,
-      "next_actions": 3,
+      "failed_gates": 4,
+      "next_actions": 2,
       "cleanup_candidates": 6,
       "limitations": 3
     },
@@ -61,5 +61,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

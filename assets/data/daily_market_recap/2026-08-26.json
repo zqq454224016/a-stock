@@ -1,0 +1,36 @@
+{
+  "dataset": "market.daily_recap",
+  "schema_version": "1.0.0",
+  "status": "insufficient",
+  "trade_date": "2026-08-26",
+  "updated_at": "2026-08-27 10:39:40",
+  "headline": "2026-08-26 市场偏强：上涨1854只、下跌1101只，涨跌中位数0.39%。",
+  "market_structure": {
+    "state": "偏强",
+    "advance_ratio": 0.6274,
+    "median_change_pct": 0.39,
+    "index_average_change_pct": 1.36,
+    "index_stock_divergence": false,
+    "limit_up_count": 48,
+    "broken_count": 11,
+    "limit_down_count": 0,
+    "broken_rate": 0.1864
+  },
+  "sector_attribution": {
+    "method": "industry_turnover_share_x_industry_amount_weighted_change",
+    "covered_stocks": 0,
+    "total_amount_yi": 0.0,
+    "positive_contributors": [],
+    "negative_contributors": [],
+    "all": []
+  },
+  "conclusions": [
+    "主要正向板块：暂无；主要负向板块：暂无",
+    "涨停48家、炸板11家、跌停0家，炸板率18.6%"
+  ],
+  "limitations": [
+    "板块归因是价格与成交额的算术分解，不证明政策、新闻或资金行为的真实因果",
+    "同一公司按一级行业唯一归属，暂不重复计入概念板块",
+    "盘中总结会随行情刷新，收盘后版本才可用于日度归档"
+  ]
+}

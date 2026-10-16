@@ -1,0 +1,36 @@
+{
+  "dataset": "market.daily_recap",
+  "schema_version": "1.0.0",
+  "status": "insufficient",
+  "trade_date": "2026-10-10",
+  "updated_at": "2026-10-10 17:10:38",
+  "headline": "2026-10-10 市场普涨：上涨1956只、下跌1015只，涨跌中位数0.73%。",
+  "market_structure": {
+    "state": "普涨",
+    "advance_ratio": 0.6584,
+    "median_change_pct": 0.73,
+    "index_average_change_pct": 0.13,
+    "index_stock_divergence": false,
+    "limit_up_count": 69,
+    "broken_count": 14,
+    "limit_down_count": 8,
+    "broken_rate": 0.1687
+  },
+  "sector_attribution": {
+    "method": "industry_turnover_share_x_industry_amount_weighted_change",
+    "covered_stocks": 0,
+    "total_amount_yi": 0.0,
+    "positive_contributors": [],
+    "negative_contributors": [],
+    "all": []
+  },
+  "conclusions": [
+    "主要正向板块：暂无；主要负向板块：暂无",
+    "涨停69家、炸板14家、跌停8家，炸板率16.9%"
+  ],
+  "limitations": [
+    "板块归因是价格与成交额的算术分解，不证明政策、新闻或资金行为的真实因果",
+    "同一公司按一级行业唯一归属，暂不重复计入概念板块",
+    "盘中总结会随行情刷新，收盘后版本才可用于日度归档"
+  ]
+}

@@ -5,22 +5,30 @@
   "path": "interim_reports/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/interim_reports/index.json",
   "exists": true,
-  "size": 920,
-  "file_mtime": "2026-07-24 01:51:01",
-  "updated_at": "2026-07-24 01:51:01",
+  "size": 583,
+  "file_mtime": "2026-10-16 15:49:40",
+  "updated_at": "2026-10-16 15:49:39",
   "record_count": 1,
   "field_summary": {
     "top_level_fields": [
+      "as_of",
       "count",
       "dataset",
+      "history_artifact",
+      "limitations",
       "period",
+      "quarantined_future_count",
       "schema_version",
       "source",
       "source_errors",
       "status",
-      "updated_at"
+      "universe_scope",
+      "updated_at",
+      "version_count"
     ],
-    "list_fields": {},
+    "list_fields": {
+      "limitations": 2
+    },
     "dict_fields": [
       "source_errors"
     ]
@@ -30,7 +38,10 @@
     "degraded": true,
     "quality_status": "",
     "quality_score": null,
-    "limitations": []
+    "limitations": [
+      "公开季度摘要主干",
+      "最终候选完整三表需另行补充并以巨潮公告核验"
+    ]
   },
   "dependencies": [],
   "generated_by": {},
@@ -40,5 +51,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

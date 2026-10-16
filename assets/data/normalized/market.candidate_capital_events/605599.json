@@ -1,0 +1,115 @@
+{
+  "dataset": "market.candidate_capital_events",
+  "schema_version": "1.0.0",
+  "code": "605599",
+  "trade_date": "2026-08-05",
+  "known_at": "2026-08-06 00:23:17",
+  "sources": [
+    "eastmoney_datacenter"
+  ],
+  "data": {
+    "margin_trading": [],
+    "block_trades": [
+      {
+        "date": "2023-05-31",
+        "price": 11.0,
+        "close": 11.58,
+        "premium_pct": -5.0086,
+        "volume": 242800.0,
+        "amount": 2670800.0,
+        "buyer": "东北证券股份有限公司济南经十东路证券营业部",
+        "seller": "中泰证券股份有限公司济南泺源大街证券营业部"
+      },
+      {
+        "date": "2023-05-09",
+        "price": 11.3,
+        "close": 12.21,
+        "premium_pct": -7.4529,
+        "volume": 180000.0,
+        "amount": 2034000.0,
+        "buyer": "中泰证券股份有限公司济南泺源大街证券营业部",
+        "seller": "中泰证券股份有限公司济南泺源大街证券营业部"
+      },
+      {
+        "date": "2022-12-22",
+        "price": 8.55,
+        "close": 9.48,
+        "premium_pct": -9.8101,
+        "volume": 350000.0,
+        "amount": 2992500.0,
+        "buyer": "机构专用",
+        "seller": "中信证券股份有限公司北京紫竹院路证券营业部"
+      },
+      {
+        "date": "2022-12-22",
+        "price": 8.55,
+        "close": 9.48,
+        "premium_pct": -9.8101,
+        "volume": 300000.0,
+        "amount": 2565000.0,
+        "buyer": "国泰君安证券股份有限公司深圳福田中心区华融大厦证券营业部",
+        "seller": "中信证券股份有限公司北京紫竹院路证券营业部"
+      },
+      {
+        "date": "2022-12-22",
+        "price": 8.55,
+        "close": 9.48,
+        "premium_pct": -9.8101,
+        "volume": 350000.0,
+        "amount": 2992500.0,
+        "buyer": "长江证券股份有限公司北京百万庄大街证券营业部",
+        "seller": "中信证券股份有限公司北京紫竹院路证券营业部"
+      },
+      {
+        "date": "2022-12-22",
+        "price": 8.55,
+        "close": 9.48,
+        "premium_pct": -9.8101,
+        "volume": 450000.0,
+        "amount": 3847500.0,
+        "buyer": "国都证券股份有限公司江苏分公司",
+        "seller": "中信证券股份有限公司北京紫竹院路证券营业部"
+      },
+      {
+        "date": "2022-12-22",
+        "price": 8.55,
+        "close": 9.48,
+        "premium_pct": -9.8101,
+        "volume": 450000.0,
+        "amount": 3847500.0,
+        "buyer": "广发证券股份有限公司佛山灯湖东路证券营业部",
+        "seller": "中信证券股份有限公司北京紫竹院路证券营业部"
+      },
+      {
+        "date": "2022-12-22",
+        "price": 8.55,
+        "close": 9.48,
+        "premium_pct": -9.8101,
+        "volume": 600000.0,
+        "amount": 5130000.0,
+        "buyer": "中信证券股份有限公司南京洪武北路证券营业部",
+        "seller": "中信证券股份有限公司北京紫竹院路证券营业部"
+      }
+    ],
+    "lockup_expiry": {
+      "history": [
+        {
+          "date": "2024-09-09",
+          "type": "首发原股东限售股份",
+          "shares_wan": 77777.78,
+          "tradable_shares_wan": 19110.0,
+          "total_share_ratio": 0.24569999298
+        },
+        {
+          "date": "2022-09-09",
+          "type": "首发原股东限售股份",
+          "shares_wan": 58667.78,
+          "tradable_shares_wan": 50890.0,
+          "total_share_ratio": 0.867426720425
+        }
+      ],
+      "upcoming": []
+    }
+  },
+  "usage": "candidate_evidence_only_not_automatic_score"
+}

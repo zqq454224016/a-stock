@@ -1,0 +1,20 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20261016_151303_660593_factor",
+  "command": "factor",
+  "argv": [
+    "factor"
+  ],
+  "status": "success",
+  "started_at": "2026-10-16 15:13:03",
+  "ended_at": "2026-10-16 15:13:05",
+  "duration_sec": 2.24,
+  "artifacts": [
+    {
+      "path": "factors/index.json",
+      "exists": true,
+      "size": 55757,
+      "mtime": "2026-10-16 15:13:05"
+    }
+  ]
+}

@@ -1,25 +1,39 @@
 {
-  "updated_at": "2026-07-23 00:06:20",
-  "trade_date": "2026-07-22",
+  "updated_at": "2026-09-01 21:15:44",
+  "trade_date": "2026-08-27",
   "indices": [
     {
       "name": "上证指数",
       "code": "000001",
-      "close": 3867.03,
-      "change": 2.66,
-      "change_pct": 0.07
+      "close": 3956.571,
+      "change": 44.048,
+      "change_pct": 1.126
+    },
+    {
+      "name": "深证成指",
+      "code": "399001",
+      "close": 14048.876,
+      "change": 207.549,
+      "change_pct": 1.499
+    },
+    {
+      "name": "创业板指",
+      "code": "399006",
+      "close": 3473.355,
+      "change": 58.472,
+      "change_pct": 1.712
     },
     {
       "name": "科创50参考",
       "code": "000688",
-      "close": 1860.08,
-      "change": -43.08,
-      "change_pct": -2.26
+      "close": 1693.4796,
+      "change": 61.46,
+      "change_pct": 3.766
     }
   ],
   "fund_flow": {
     "north_net": 0.0,
-    "main_net": -690.83,
+    "main_net": 755.39,
     "retail_net": 0.0
   }
 }

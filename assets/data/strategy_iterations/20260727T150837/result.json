@@ -1,0 +1,2049 @@
+{
+  "status": "complete",
+  "run_id": "20260727T150837",
+  "updated_at": "2026-07-27 15:11:39",
+  "data_fingerprint": "ca564e4021cc21e7",
+  "research_version": "9.1.0",
+  "universe_scope": "ordinary_a_share_main_boards_v1",
+  "history_bars": 1250,
+  "universe": 3190,
+  "usable_stocks": 2983,
+  "market_regime_days": 1260,
+  "execution_constraints": "raw_vs_qfq_with_sh_sz_historical_st_v3",
+  "method": {
+    "train_ratio": 0.7,
+    "development_segments": 2,
+    "embargo_bars": 60,
+    "entry": "next_open_T+1",
+    "exit": "candidate_specific_next_open_or_stop_or_max_hold",
+    "transaction_fee_one_way_pct": 0.008,
+    "round_trip_cost_pct": 0.016,
+    "initial_cash": 50000,
+    "signals": "non_overlapping",
+    "feature_calculation": "once_per_stock_shared_by_fixed_candidates",
+    "portfolio": "cash_constrained_max10_single10pct_gross95pct_event_day_marking",
+    "selection": "fixed_candidates_train_only_then_single_frozen_oos"
+  },
+  "root_cause": [
+    "旧策略把同一持有期内每日信号重复计样，样本不独立",
+    "旧推荐使用同一五年结果筛选并展示，存在样本内挑选偏差",
+    "旧策略包含做空方向，但普通A股系统并未实现可交易的融券约束",
+    "旧回测未扣费用，且 max_adverse 实际是期末最差收益而非持有期不利波动"
+  ],
+  "selected_candidate": "baseline_long_only",
+  "promotion_passed": false,
+  "decision": "reject_keep_current_research_only",
+  "baseline_oos": {
+    "trades": 24299,
+    "hit_rate": 0.4804,
+    "avg_net_return_pct": 1.375,
+    "median_net_return_pct": -0.4254,
+    "max_drawdown_pct": -32.144,
+    "avg_mae_pct": -8.7492,
+    "portfolio": {
+      "accepted_trades": 188,
+      "rejected_capacity": 24111,
+      "acceptance_rate": 0.0077,
+      "hit_rate": 0.4202,
+      "total_return_pct": -15.3221,
+      "max_drawdown_pct": -32.144,
+      "max_concurrent_positions": 10,
+      "ending_equity": 42338.93,
+      "limits": {
+        "max_positions": 10,
+        "max_single_weight": 0.1,
+        "max_gross_exposure": 0.95
+      },
+      "model": "event_day_marking_v1",
+      "limitations": [
+        "持有期内尚未逐日盯市",
+        "行业集中度待行业点时映射"
+      ]
+    }
+  },
+  "selected_oos": {
+    "trades": 24299,
+    "hit_rate": 0.4804,
+    "avg_net_return_pct": 1.375,
+    "median_net_return_pct": -0.4254,
+    "max_drawdown_pct": -32.144,
+    "avg_mae_pct": -8.7492,
+    "portfolio": {
+      "accepted_trades": 188,
+      "rejected_capacity": 24111,
+      "acceptance_rate": 0.0077,
+      "hit_rate": 0.4202,
+      "total_return_pct": -15.3221,
+      "max_drawdown_pct": -32.144,
+      "max_concurrent_positions": 10,
+      "ending_equity": 42338.93,
+      "limits": {
+        "max_positions": 10,
+        "max_single_weight": 0.1,
+        "max_gross_exposure": 0.95
+      },
+      "model": "event_day_marking_v1",
+      "limitations": [
+        "持有期内尚未逐日盯市",
+        "行业集中度待行业点时映射"
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "name": "baseline_long_only",
+      "parameters": {
+        "name": "baseline_long_only",
+        "score_floor": 65,
+        "volatility_cap": 1000,
+        "mode": "baseline",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 42697,
+        "hit_rate": 0.3956,
+        "avg_net_return_pct": -1.2456,
+        "median_net_return_pct": -2.4265,
+        "max_drawdown_pct": -50.5925,
+        "avg_mae_pct": -9.4826,
+        "portfolio": {
+          "accepted_trades": 488,
+          "rejected_capacity": 42209,
+          "acceptance_rate": 0.0114,
+          "hit_rate": 0.4201,
+          "total_return_pct": -10.2468,
+          "max_drawdown_pct": -50.5925,
+          "max_concurrent_positions": 10,
+          "ending_equity": 44876.61,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 18482,
+          "hit_rate": 0.4136,
+          "avg_net_return_pct": -0.6219,
+          "median_net_return_pct": -2.3198,
+          "max_drawdown_pct": -62.501,
+          "avg_mae_pct": -10.2389,
+          "portfolio": {
+            "accepted_trades": 326,
+            "rejected_capacity": 18156,
+            "acceptance_rate": 0.0176,
+            "hit_rate": 0.3221,
+            "total_return_pct": -55.6934,
+            "max_drawdown_pct": -62.501,
+            "max_concurrent_positions": 10,
+            "ending_equity": 22153.32,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 17584,
+          "hit_rate": 0.369,
+          "avg_net_return_pct": -2.2606,
+          "median_net_return_pct": -2.8987,
+          "max_drawdown_pct": -44.7495,
+          "avg_mae_pct": -9.6147,
+          "portfolio": {
+            "accepted_trades": 285,
+            "rejected_capacity": 17299,
+            "acceptance_rate": 0.0162,
+            "hit_rate": 0.393,
+            "total_return_pct": -17.3125,
+            "max_drawdown_pct": -44.7495,
+            "max_concurrent_positions": 10,
+            "ending_equity": 41343.73,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 24299,
+        "hit_rate": 0.4804,
+        "avg_net_return_pct": 1.375,
+        "median_net_return_pct": -0.4254,
+        "max_drawdown_pct": -32.144,
+        "avg_mae_pct": -8.7492,
+        "portfolio": {
+          "accepted_trades": 188,
+          "rejected_capacity": 24111,
+          "acceptance_rate": 0.0077,
+          "hit_rate": 0.4202,
+          "total_return_pct": -15.3221,
+          "max_drawdown_pct": -32.144,
+          "max_concurrent_positions": 10,
+          "ending_equity": 42338.93,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.492759
+    },
+    {
+      "name": "strict_trend_65",
+      "parameters": {
+        "name": "strict_trend_65",
+        "score_floor": 65,
+        "volatility_cap": 65,
+        "mode": "strict",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 34497,
+        "hit_rate": 0.4043,
+        "avg_net_return_pct": -0.9336,
+        "median_net_return_pct": -2.1511,
+        "max_drawdown_pct": -40.3101,
+        "avg_mae_pct": -8.833,
+        "portfolio": {
+          "accepted_trades": 479,
+          "rejected_capacity": 34018,
+          "acceptance_rate": 0.0139,
+          "hit_rate": 0.4489,
+          "total_return_pct": -11.1428,
+          "max_drawdown_pct": -40.3101,
+          "max_concurrent_positions": 10,
+          "ending_equity": 44428.6,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 14293,
+          "hit_rate": 0.4216,
+          "avg_net_return_pct": -0.2641,
+          "median_net_return_pct": -1.9878,
+          "max_drawdown_pct": -60.7642,
+          "avg_mae_pct": -9.4648,
+          "portfolio": {
+            "accepted_trades": 304,
+            "rejected_capacity": 13989,
+            "acceptance_rate": 0.0213,
+            "hit_rate": 0.3651,
+            "total_return_pct": -53.623,
+            "max_drawdown_pct": -60.7642,
+            "max_concurrent_positions": 10,
+            "ending_equity": 23188.49,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 14490,
+          "hit_rate": 0.383,
+          "avg_net_return_pct": -1.8244,
+          "median_net_return_pct": -2.4783,
+          "max_drawdown_pct": -31.7994,
+          "avg_mae_pct": -9.0374,
+          "portfolio": {
+            "accepted_trades": 281,
+            "rejected_capacity": 14209,
+            "acceptance_rate": 0.0194,
+            "hit_rate": 0.4235,
+            "total_return_pct": -12.0023,
+            "max_drawdown_pct": -31.7994,
+            "max_concurrent_positions": 10,
+            "ending_equity": 43998.85,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 19255,
+        "hit_rate": 0.4929,
+        "avg_net_return_pct": 1.66,
+        "median_net_return_pct": -0.138,
+        "max_drawdown_pct": -25.5192,
+        "avg_mae_pct": -8.0024,
+        "portfolio": {
+          "accepted_trades": 188,
+          "rejected_capacity": 19067,
+          "acceptance_rate": 0.0098,
+          "hit_rate": 0.4468,
+          "total_return_pct": -10.8161,
+          "max_drawdown_pct": -25.5192,
+          "max_concurrent_positions": 10,
+          "ending_equity": 44591.93,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.377454
+    },
+    {
+      "name": "strict_trend_70",
+      "parameters": {
+        "name": "strict_trend_70",
+        "score_floor": 70,
+        "volatility_cap": 55,
+        "mode": "strict",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 30176,
+        "hit_rate": 0.4078,
+        "avg_net_return_pct": -0.7725,
+        "median_net_return_pct": -1.9803,
+        "max_drawdown_pct": -28.0181,
+        "avg_mae_pct": -8.4954,
+        "portfolio": {
+          "accepted_trades": 474,
+          "rejected_capacity": 29702,
+          "acceptance_rate": 0.0157,
+          "hit_rate": 0.4578,
+          "total_return_pct": 33.0969,
+          "max_drawdown_pct": -28.0181,
+          "max_concurrent_positions": 10,
+          "ending_equity": 66548.44,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 12127,
+          "hit_rate": 0.4285,
+          "avg_net_return_pct": -0.0266,
+          "median_net_return_pct": -1.7188,
+          "max_drawdown_pct": -42.7909,
+          "avg_mae_pct": -9.0737,
+          "portfolio": {
+            "accepted_trades": 285,
+            "rejected_capacity": 11842,
+            "acceptance_rate": 0.0235,
+            "hit_rate": 0.3825,
+            "total_return_pct": -29.5844,
+            "max_drawdown_pct": -42.7909,
+            "max_concurrent_positions": 10,
+            "ending_equity": 35207.79,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 12864,
+          "hit_rate": 0.3815,
+          "avg_net_return_pct": -1.7145,
+          "median_net_return_pct": -2.4248,
+          "max_drawdown_pct": -19.411,
+          "avg_mae_pct": -8.738,
+          "portfolio": {
+            "accepted_trades": 278,
+            "rejected_capacity": 12586,
+            "acceptance_rate": 0.0216,
+            "hit_rate": 0.4604,
+            "total_return_pct": 19.558,
+            "max_drawdown_pct": -19.411,
+            "max_concurrent_positions": 10,
+            "ending_equity": 59779.01,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 16763,
+        "hit_rate": 0.4987,
+        "avg_net_return_pct": 1.8654,
+        "median_net_return_pct": -0.016,
+        "max_drawdown_pct": -14.1518,
+        "avg_mae_pct": -7.6755,
+        "portfolio": {
+          "accepted_trades": 187,
+          "rejected_capacity": 16576,
+          "acceptance_rate": 0.0112,
+          "hit_rate": 0.4706,
+          "total_return_pct": 10.8886,
+          "max_drawdown_pct": -14.1518,
+          "max_concurrent_positions": 10,
+          "ending_equity": 55444.28,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.315025
+    },
+    {
+      "name": "pullback_trend",
+      "parameters": {
+        "name": "pullback_trend",
+        "score_floor": 58,
+        "volatility_cap": 60,
+        "mode": "pullback",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 29016,
+        "hit_rate": 0.4051,
+        "avg_net_return_pct": -0.8922,
+        "median_net_return_pct": -2.1211,
+        "max_drawdown_pct": -20.4229,
+        "avg_mae_pct": -8.1846,
+        "portfolio": {
+          "accepted_trades": 467,
+          "rejected_capacity": 28549,
+          "acceptance_rate": 0.0161,
+          "hit_rate": 0.4561,
+          "total_return_pct": 83.6093,
+          "max_drawdown_pct": -20.4229,
+          "max_concurrent_positions": 10,
+          "ending_equity": 91804.66,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 11109,
+          "hit_rate": 0.4158,
+          "avg_net_return_pct": -0.3932,
+          "median_net_return_pct": -2.164,
+          "max_drawdown_pct": -34.9762,
+          "avg_mae_pct": -8.9252,
+          "portfolio": {
+            "accepted_trades": 288,
+            "rejected_capacity": 10821,
+            "acceptance_rate": 0.0259,
+            "hit_rate": 0.3576,
+            "total_return_pct": -16.3424,
+            "max_drawdown_pct": -34.9762,
+            "max_concurrent_positions": 10,
+            "ending_equity": 41828.78,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 12881,
+          "hit_rate": 0.3803,
+          "avg_net_return_pct": -1.7735,
+          "median_net_return_pct": -2.5025,
+          "max_drawdown_pct": -31.3988,
+          "avg_mae_pct": -8.2677,
+          "portfolio": {
+            "accepted_trades": 272,
+            "rejected_capacity": 12609,
+            "acceptance_rate": 0.0211,
+            "hit_rate": 0.4522,
+            "total_return_pct": 11.976,
+            "max_drawdown_pct": -31.3988,
+            "max_concurrent_positions": 10,
+            "ending_equity": 55987.98,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 16761,
+        "hit_rate": 0.5116,
+        "avg_net_return_pct": 1.8826,
+        "median_net_return_pct": 0.2803,
+        "max_drawdown_pct": -15.0801,
+        "avg_mae_pct": -7.228,
+        "portfolio": {
+          "accepted_trades": 188,
+          "rejected_capacity": 16573,
+          "acceptance_rate": 0.0112,
+          "hit_rate": 0.484,
+          "total_return_pct": 29.3507,
+          "max_drawdown_pct": -15.0801,
+          "max_concurrent_positions": 10,
+          "ending_equity": 64675.36,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.36143
+    },
+    {
+      "name": "recovery_confirmed",
+      "parameters": {
+        "name": "recovery_confirmed",
+        "score_floor": 58,
+        "volatility_cap": 65,
+        "mode": "recovery",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 38930,
+        "hit_rate": 0.4189,
+        "avg_net_return_pct": -0.7876,
+        "median_net_return_pct": -1.8777,
+        "max_drawdown_pct": -27.2699,
+        "avg_mae_pct": -8.7568,
+        "portfolio": {
+          "accepted_trades": 463,
+          "rejected_capacity": 38467,
+          "acceptance_rate": 0.0119,
+          "hit_rate": 0.4255,
+          "total_return_pct": 16.1682,
+          "max_drawdown_pct": -27.2699,
+          "max_concurrent_positions": 10,
+          "ending_equity": 58084.1,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 16426,
+          "hit_rate": 0.4378,
+          "avg_net_return_pct": -0.0248,
+          "median_net_return_pct": -1.5607,
+          "max_drawdown_pct": -41.9462,
+          "avg_mae_pct": -9.2891,
+          "portfolio": {
+            "accepted_trades": 298,
+            "rejected_capacity": 16128,
+            "acceptance_rate": 0.0181,
+            "hit_rate": 0.3523,
+            "total_return_pct": -27.8057,
+            "max_drawdown_pct": -41.9462,
+            "max_concurrent_positions": 10,
+            "ending_equity": 36097.17,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 16255,
+          "hit_rate": 0.3819,
+          "avg_net_return_pct": -1.9726,
+          "median_net_return_pct": -2.6036,
+          "max_drawdown_pct": -32.0544,
+          "avg_mae_pct": -9.0892,
+          "portfolio": {
+            "accepted_trades": 279,
+            "rejected_capacity": 15976,
+            "acceptance_rate": 0.0172,
+            "hit_rate": 0.4158,
+            "total_return_pct": 8.3333,
+            "max_drawdown_pct": -32.0544,
+            "max_concurrent_positions": 10,
+            "ending_equity": 54166.64,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 21904,
+        "hit_rate": 0.5021,
+        "avg_net_return_pct": 1.7826,
+        "median_net_return_pct": 0.0938,
+        "max_drawdown_pct": -22.8447,
+        "avg_mae_pct": -7.9258,
+        "portfolio": {
+          "accepted_trades": 190,
+          "rejected_capacity": 21714,
+          "acceptance_rate": 0.0087,
+          "hit_rate": 0.4474,
+          "total_return_pct": -4.5518,
+          "max_drawdown_pct": -22.8447,
+          "max_concurrent_positions": 10,
+          "ending_equity": 47724.09,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.329926
+    },
+    {
+      "name": "tf_trend_breakout",
+      "parameters": {
+        "name": "tf_trend_breakout",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_trend_breakout",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 3135,
+        "hit_rate": 0.2944,
+        "avg_net_return_pct": -4.4299,
+        "median_net_return_pct": -6.9959,
+        "max_drawdown_pct": -86.7812,
+        "avg_mae_pct": -14.308,
+        "portfolio": {
+          "accepted_trades": 401,
+          "rejected_capacity": 2734,
+          "acceptance_rate": 0.1279,
+          "hit_rate": 0.2993,
+          "total_return_pct": -81.9603,
+          "max_drawdown_pct": -86.7812,
+          "max_concurrent_positions": 10,
+          "ending_equity": 9019.83,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 1538,
+          "hit_rate": 0.3231,
+          "avg_net_return_pct": -3.1876,
+          "median_net_return_pct": -6.3901,
+          "max_drawdown_pct": -59.2661,
+          "avg_mae_pct": -14.4315,
+          "portfolio": {
+            "accepted_trades": 190,
+            "rejected_capacity": 1348,
+            "acceptance_rate": 0.1235,
+            "hit_rate": 0.3211,
+            "total_return_pct": -42.2347,
+            "max_drawdown_pct": -59.2661,
+            "max_concurrent_positions": 10,
+            "ending_equity": 28882.67,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 1185,
+          "hit_rate": 0.2489,
+          "avg_net_return_pct": -6.6567,
+          "median_net_return_pct": -7.973,
+          "max_drawdown_pct": -74.9813,
+          "avg_mae_pct": -15.1977,
+          "portfolio": {
+            "accepted_trades": 207,
+            "rejected_capacity": 978,
+            "acceptance_rate": 0.1747,
+            "hit_rate": 0.2609,
+            "total_return_pct": -71.5746,
+            "max_drawdown_pct": -74.9813,
+            "max_concurrent_positions": 10,
+            "ending_equity": 14212.7,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 1690,
+        "hit_rate": 0.342,
+        "avg_net_return_pct": -1.3909,
+        "median_net_return_pct": -5.2016,
+        "max_drawdown_pct": -40.6254,
+        "avg_mae_pct": -12.6054,
+        "portfolio": {
+          "accepted_trades": 180,
+          "rejected_capacity": 1510,
+          "acceptance_rate": 0.1065,
+          "hit_rate": 0.3722,
+          "total_return_pct": -35.7879,
+          "max_drawdown_pct": -40.6254,
+          "max_concurrent_positions": 10,
+          "ending_equity": 32106.07,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -1.304163
+    },
+    {
+      "name": "tf_bullish_alignment",
+      "parameters": {
+        "name": "tf_bullish_alignment",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_bullish_alignment",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 35058,
+        "hit_rate": 0.3933,
+        "avg_net_return_pct": -1.4196,
+        "median_net_return_pct": -2.497,
+        "max_drawdown_pct": -39.7292,
+        "avg_mae_pct": -9.5817,
+        "portfolio": {
+          "accepted_trades": 481,
+          "rejected_capacity": 34577,
+          "acceptance_rate": 0.0137,
+          "hit_rate": 0.4324,
+          "total_return_pct": 10.4743,
+          "max_drawdown_pct": -39.7292,
+          "max_concurrent_positions": 10,
+          "ending_equity": 55237.16,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 15110,
+          "hit_rate": 0.4089,
+          "avg_net_return_pct": -0.7629,
+          "median_net_return_pct": -2.3847,
+          "max_drawdown_pct": -61.7854,
+          "avg_mae_pct": -10.34,
+          "portfolio": {
+            "accepted_trades": 314,
+            "rejected_capacity": 14796,
+            "acceptance_rate": 0.0208,
+            "hit_rate": 0.3631,
+            "total_return_pct": -51.7736,
+            "max_drawdown_pct": -61.7854,
+            "max_concurrent_positions": 10,
+            "ending_equity": 24113.2,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 14383,
+          "hit_rate": 0.3697,
+          "avg_net_return_pct": -2.4353,
+          "median_net_return_pct": -2.9086,
+          "max_drawdown_pct": -24.7956,
+          "avg_mae_pct": -9.7201,
+          "portfolio": {
+            "accepted_trades": 282,
+            "rejected_capacity": 14101,
+            "acceptance_rate": 0.0196,
+            "hit_rate": 0.4433,
+            "total_return_pct": 21.8793,
+            "max_drawdown_pct": -24.7956,
+            "max_concurrent_positions": 10,
+            "ending_equity": 60939.63,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 20405,
+        "hit_rate": 0.4758,
+        "avg_net_return_pct": 1.2089,
+        "median_net_return_pct": -0.5731,
+        "max_drawdown_pct": -25.7547,
+        "avg_mae_pct": -8.9553,
+        "portfolio": {
+          "accepted_trades": 188,
+          "rejected_capacity": 20217,
+          "acceptance_rate": 0.0092,
+          "hit_rate": 0.3936,
+          "total_return_pct": -20.6373,
+          "max_drawdown_pct": -25.7547,
+          "max_concurrent_positions": 10,
+          "ending_equity": 39681.37,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.558329
+    },
+    {
+      "name": "tf_macd_golden_volume",
+      "parameters": {
+        "name": "tf_macd_golden_volume",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_macd_golden",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 21053,
+        "hit_rate": 0.4347,
+        "avg_net_return_pct": -0.0945,
+        "median_net_return_pct": -1.6827,
+        "max_drawdown_pct": -56.2814,
+        "avg_mae_pct": -9.3575,
+        "portfolio": {
+          "accepted_trades": 480,
+          "rejected_capacity": 20573,
+          "acceptance_rate": 0.0228,
+          "hit_rate": 0.425,
+          "total_return_pct": -46.1162,
+          "max_drawdown_pct": -56.2814,
+          "max_concurrent_positions": 10,
+          "ending_equity": 26941.89,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 9961,
+          "hit_rate": 0.457,
+          "avg_net_return_pct": 0.578,
+          "median_net_return_pct": -1.1563,
+          "max_drawdown_pct": -61.0473,
+          "avg_mae_pct": -9.6699,
+          "portfolio": {
+            "accepted_trades": 349,
+            "rejected_capacity": 9612,
+            "acceptance_rate": 0.035,
+            "hit_rate": 0.3754,
+            "total_return_pct": -60.1609,
+            "max_drawdown_pct": -61.0473,
+            "max_concurrent_positions": 10,
+            "ending_equity": 19919.53,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 8752,
+          "hit_rate": 0.3931,
+          "avg_net_return_pct": -1.1325,
+          "median_net_return_pct": -2.5439,
+          "max_drawdown_pct": -20.2938,
+          "avg_mae_pct": -9.5455,
+          "portfolio": {
+            "accepted_trades": 255,
+            "rejected_capacity": 8497,
+            "acceptance_rate": 0.0291,
+            "hit_rate": 0.4784,
+            "total_return_pct": 12.8713,
+            "max_drawdown_pct": -20.2938,
+            "max_concurrent_positions": 10,
+            "ending_equity": 56435.65,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 10040,
+        "hit_rate": 0.4743,
+        "avg_net_return_pct": 1.0367,
+        "median_net_return_pct": -0.5915,
+        "max_drawdown_pct": -27.1276,
+        "avg_mae_pct": -8.7151,
+        "portfolio": {
+          "accepted_trades": 182,
+          "rejected_capacity": 9858,
+          "acceptance_rate": 0.0181,
+          "hit_rate": 0.4396,
+          "total_return_pct": 6.9611,
+          "max_drawdown_pct": -27.1276,
+          "max_concurrent_positions": 10,
+          "ending_equity": 53480.53,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.041079
+    },
+    {
+      "name": "tf_volume_price_surge",
+      "parameters": {
+        "name": "tf_volume_price_surge",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_volume_price",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 10984,
+        "hit_rate": 0.4309,
+        "avg_net_return_pct": -0.161,
+        "median_net_return_pct": -1.7052,
+        "max_drawdown_pct": -42.8954,
+        "avg_mae_pct": -9.2933,
+        "portfolio": {
+          "accepted_trades": 442,
+          "rejected_capacity": 10542,
+          "acceptance_rate": 0.0402,
+          "hit_rate": 0.4027,
+          "total_return_pct": -41.2712,
+          "max_drawdown_pct": -42.8954,
+          "max_concurrent_positions": 10,
+          "ending_equity": 29364.4,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 5030,
+          "hit_rate": 0.4519,
+          "avg_net_return_pct": 0.638,
+          "median_net_return_pct": -1.1612,
+          "max_drawdown_pct": -44.1767,
+          "avg_mae_pct": -9.4209,
+          "portfolio": {
+            "accepted_trades": 315,
+            "rejected_capacity": 4715,
+            "acceptance_rate": 0.0626,
+            "hit_rate": 0.3556,
+            "total_return_pct": -42.3244,
+            "max_drawdown_pct": -44.1767,
+            "max_concurrent_positions": 10,
+            "ending_equity": 28837.81,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 4727,
+          "hit_rate": 0.3903,
+          "avg_net_return_pct": -1.428,
+          "median_net_return_pct": -2.6568,
+          "max_drawdown_pct": -37.7822,
+          "avg_mae_pct": -9.7239,
+          "portfolio": {
+            "accepted_trades": 233,
+            "rejected_capacity": 4494,
+            "acceptance_rate": 0.0493,
+            "hit_rate": 0.4249,
+            "total_return_pct": -22.2581,
+            "max_drawdown_pct": -37.7822,
+            "max_concurrent_positions": 10,
+            "ending_equity": 38870.96,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 4880,
+        "hit_rate": 0.4756,
+        "avg_net_return_pct": 1.0669,
+        "median_net_return_pct": -0.5708,
+        "max_drawdown_pct": -30.3584,
+        "avg_mae_pct": -8.1761,
+        "portfolio": {
+          "accepted_trades": 181,
+          "rejected_capacity": 4699,
+          "acceptance_rate": 0.0371,
+          "hit_rate": 0.4751,
+          "total_return_pct": -4.7119,
+          "max_drawdown_pct": -30.3584,
+          "max_concurrent_positions": 10,
+          "ending_equity": 47644.07,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.069375
+    },
+    {
+      "name": "tf_low_volatility_leader",
+      "parameters": {
+        "name": "tf_low_volatility_leader",
+        "score_floor": 0,
+        "volatility_cap": 30,
+        "mode": "tf_low_volatility",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 33243,
+        "hit_rate": 0.4729,
+        "avg_net_return_pct": 0.362,
+        "median_net_return_pct": -0.4415,
+        "max_drawdown_pct": -22.2245,
+        "avg_mae_pct": -6.6931,
+        "portfolio": {
+          "accepted_trades": 476,
+          "rejected_capacity": 32767,
+          "acceptance_rate": 0.0143,
+          "hit_rate": 0.4832,
+          "total_return_pct": 49.8292,
+          "max_drawdown_pct": -22.2245,
+          "max_concurrent_positions": 10,
+          "ending_equity": 74914.58,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 12004,
+          "hit_rate": 0.5357,
+          "avg_net_return_pct": 1.8825,
+          "median_net_return_pct": 0.7733,
+          "max_drawdown_pct": -24.934,
+          "avg_mae_pct": -6.5122,
+          "portfolio": {
+            "accepted_trades": 298,
+            "rejected_capacity": 11706,
+            "acceptance_rate": 0.0248,
+            "hit_rate": 0.453,
+            "total_return_pct": 13.1956,
+            "max_drawdown_pct": -24.934,
+            "max_concurrent_positions": 10,
+            "ending_equity": 56597.81,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 16135,
+          "hit_rate": 0.4178,
+          "avg_net_return_pct": -0.9983,
+          "median_net_return_pct": -1.4378,
+          "max_drawdown_pct": -18.0218,
+          "avg_mae_pct": -7.3549,
+          "portfolio": {
+            "accepted_trades": 269,
+            "rejected_capacity": 15866,
+            "acceptance_rate": 0.0167,
+            "hit_rate": 0.4944,
+            "total_return_pct": 8.9893,
+            "max_drawdown_pct": -18.0218,
+            "max_concurrent_positions": 10,
+            "ending_equity": 54494.65,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 17659,
+        "hit_rate": 0.5501,
+        "avg_net_return_pct": 1.997,
+        "median_net_return_pct": 0.924,
+        "max_drawdown_pct": -26.3425,
+        "avg_mae_pct": -5.7737,
+        "portfolio": {
+          "accepted_trades": 183,
+          "rejected_capacity": 17476,
+          "acceptance_rate": 0.0104,
+          "hit_rate": 0.4863,
+          "total_return_pct": -5.8172,
+          "max_drawdown_pct": -26.3425,
+          "max_concurrent_positions": 10,
+          "ending_equity": 47091.41,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": 0.17119
+    },
+    {
+      "name": "tf_pullback_ma20_bounce",
+      "parameters": {
+        "name": "tf_pullback_ma20_bounce",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_pullback_ma20",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 22205,
+        "hit_rate": 0.3771,
+        "avg_net_return_pct": -1.4711,
+        "median_net_return_pct": -2.6589,
+        "max_drawdown_pct": -37.2689,
+        "avg_mae_pct": -8.7827,
+        "portfolio": {
+          "accepted_trades": 457,
+          "rejected_capacity": 21748,
+          "acceptance_rate": 0.0206,
+          "hit_rate": 0.4223,
+          "total_return_pct": -17.5837,
+          "max_drawdown_pct": -37.2689,
+          "max_concurrent_positions": 10,
+          "ending_equity": 41208.15,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 8679,
+          "hit_rate": 0.3961,
+          "avg_net_return_pct": -0.917,
+          "median_net_return_pct": -2.6134,
+          "max_drawdown_pct": -31.7482,
+          "avg_mae_pct": -9.4256,
+          "portfolio": {
+            "accepted_trades": 274,
+            "rejected_capacity": 8405,
+            "acceptance_rate": 0.0316,
+            "hit_rate": 0.3759,
+            "total_return_pct": -24.6486,
+            "max_drawdown_pct": -31.7482,
+            "max_concurrent_positions": 10,
+            "ending_equity": 37675.71,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 9603,
+          "hit_rate": 0.3601,
+          "avg_net_return_pct": -2.3237,
+          "median_net_return_pct": -2.859,
+          "max_drawdown_pct": -19.0643,
+          "avg_mae_pct": -9.0659,
+          "portfolio": {
+            "accepted_trades": 267,
+            "rejected_capacity": 9336,
+            "acceptance_rate": 0.0278,
+            "hit_rate": 0.4532,
+            "total_return_pct": 1.3431,
+            "max_drawdown_pct": -19.0643,
+            "max_concurrent_positions": 10,
+            "ending_equity": 50671.57,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 12503,
+        "hit_rate": 0.5168,
+        "avg_net_return_pct": 1.7412,
+        "median_net_return_pct": 0.3694,
+        "max_drawdown_pct": -11.7889,
+        "avg_mae_pct": -7.5008,
+        "portfolio": {
+          "accepted_trades": 187,
+          "rejected_capacity": 12316,
+          "acceptance_rate": 0.015,
+          "hit_rate": 0.4866,
+          "total_return_pct": 22.5119,
+          "max_drawdown_pct": -11.7889,
+          "max_concurrent_positions": 10,
+          "ending_equity": 61255.93,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.554752
+    },
+    {
+      "name": "tf_low_volatility_regime",
+      "parameters": {
+        "name": "tf_low_volatility_regime",
+        "score_floor": 0,
+        "volatility_cap": 30,
+        "mode": "tf_low_volatility",
+        "allowed_regimes": [
+          "rising",
+          "range"
+        ],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 30332,
+        "hit_rate": 0.4669,
+        "avg_net_return_pct": 0.3536,
+        "median_net_return_pct": -0.5399,
+        "max_drawdown_pct": -31.5737,
+        "avg_mae_pct": -6.5147,
+        "portfolio": {
+          "accepted_trades": 432,
+          "rejected_capacity": 29900,
+          "acceptance_rate": 0.0142,
+          "hit_rate": 0.456,
+          "total_return_pct": 22.7093,
+          "max_drawdown_pct": -31.5737,
+          "max_concurrent_positions": 10,
+          "ending_equity": 61354.64,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 11688,
+          "hit_rate": 0.54,
+          "avg_net_return_pct": 1.9776,
+          "median_net_return_pct": 0.862,
+          "max_drawdown_pct": -20.5736,
+          "avg_mae_pct": -6.4322,
+          "portfolio": {
+            "accepted_trades": 271,
+            "rejected_capacity": 11417,
+            "acceptance_rate": 0.0232,
+            "hit_rate": 0.4539,
+            "total_return_pct": 14.1466,
+            "max_drawdown_pct": -20.5736,
+            "max_concurrent_positions": 10,
+            "ending_equity": 57073.28,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 13828,
+          "hit_rate": 0.3951,
+          "avg_net_return_pct": -1.2791,
+          "median_net_return_pct": -1.8072,
+          "max_drawdown_pct": -24.1683,
+          "avg_mae_pct": -7.1257,
+          "portfolio": {
+            "accepted_trades": 231,
+            "rejected_capacity": 13597,
+            "acceptance_rate": 0.0167,
+            "hit_rate": 0.4459,
+            "total_return_pct": -1.0492,
+            "max_drawdown_pct": -24.1683,
+            "max_concurrent_positions": 10,
+            "ending_equity": 49475.41,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 17339,
+        "hit_rate": 0.5528,
+        "avg_net_return_pct": 2.0626,
+        "median_net_return_pct": 0.9583,
+        "max_drawdown_pct": -9.709,
+        "avg_mae_pct": -5.7248,
+        "portfolio": {
+          "accepted_trades": 166,
+          "rejected_capacity": 17173,
+          "acceptance_rate": 0.0096,
+          "hit_rate": 0.5301,
+          "total_return_pct": 28.8016,
+          "max_drawdown_pct": -9.709,
+          "max_concurrent_positions": 10,
+          "ending_equity": 64400.79,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": 0.165096
+    },
+    {
+      "name": "tf_pullback_rising_regime",
+      "parameters": {
+        "name": "tf_pullback_rising_regime",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_pullback_ma20",
+        "allowed_regimes": [
+          "rising"
+        ],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 1484,
+        "hit_rate": 0.5013,
+        "avg_net_return_pct": 0.8321,
+        "median_net_return_pct": 0.0898,
+        "max_drawdown_pct": -10.3809,
+        "avg_mae_pct": -6.1268,
+        "portfolio": {
+          "accepted_trades": 73,
+          "rejected_capacity": 1411,
+          "acceptance_rate": 0.0492,
+          "hit_rate": 0.4658,
+          "total_return_pct": -7.1407,
+          "max_drawdown_pct": -10.3809,
+          "max_concurrent_positions": 10,
+          "ending_equity": 46429.67,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 346,
+          "hit_rate": 0.659,
+          "avg_net_return_pct": 4.3798,
+          "median_net_return_pct": 2.8276,
+          "max_drawdown_pct": -4.4864,
+          "avg_mae_pct": -5.1363,
+          "portfolio": {
+            "accepted_trades": 31,
+            "rejected_capacity": 315,
+            "acceptance_rate": 0.0896,
+            "hit_rate": 0.5806,
+            "total_return_pct": 6.1726,
+            "max_drawdown_pct": -4.4864,
+            "max_concurrent_positions": 10,
+            "ending_equity": 53086.31,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 555,
+          "hit_rate": 0.4541,
+          "avg_net_return_pct": -0.2239,
+          "median_net_return_pct": -0.9391,
+          "max_drawdown_pct": -9.9539,
+          "avg_mae_pct": -6.9707,
+          "portfolio": {
+            "accepted_trades": 44,
+            "rejected_capacity": 511,
+            "acceptance_rate": 0.0793,
+            "hit_rate": 0.4318,
+            "total_return_pct": -6.6719,
+            "max_drawdown_pct": -9.9539,
+            "max_concurrent_positions": 10,
+            "ending_equity": 46664.06,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 510,
+        "hit_rate": 0.751,
+        "avg_net_return_pct": 4.7804,
+        "median_net_return_pct": 2.6989,
+        "max_drawdown_pct": -0.5339,
+        "avg_mae_pct": -2.8514,
+        "portfolio": {
+          "accepted_trades": 20,
+          "rejected_capacity": 490,
+          "acceptance_rate": 0.0392,
+          "hit_rate": 0.85,
+          "total_return_pct": 11.7717,
+          "max_drawdown_pct": -0.5339,
+          "max_concurrent_positions": 10,
+          "ending_equity": 55885.87,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": 0.417132
+    },
+    {
+      "name": "tf_low_volatility_regime_exit",
+      "parameters": {
+        "name": "tf_low_volatility_regime_exit",
+        "score_floor": 0,
+        "volatility_cap": 30,
+        "mode": "tf_low_volatility",
+        "allowed_regimes": [
+          "rising",
+          "range"
+        ],
+        "max_hold_days": 30,
+        "stop_loss": -0.05,
+        "exit_mode": "ma20"
+      },
+      "train": {
+        "trades": 39983,
+        "hit_rate": 0.2808,
+        "avg_net_return_pct": 0.1086,
+        "median_net_return_pct": -1.268,
+        "max_drawdown_pct": -31.8227,
+        "avg_mae_pct": -2.9459,
+        "portfolio": {
+          "accepted_trades": 912,
+          "rejected_capacity": 39071,
+          "acceptance_rate": 0.0228,
+          "hit_rate": 0.2708,
+          "total_return_pct": -2.0746,
+          "max_drawdown_pct": -31.8227,
+          "max_concurrent_positions": 10,
+          "ending_equity": 48962.71,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 16492,
+          "hit_rate": 0.2953,
+          "avg_net_return_pct": 0.3979,
+          "median_net_return_pct": -1.2687,
+          "max_drawdown_pct": -41.9764,
+          "avg_mae_pct": -3.0915,
+          "portfolio": {
+            "accepted_trades": 608,
+            "rejected_capacity": 15884,
+            "acceptance_rate": 0.0369,
+            "hit_rate": 0.2368,
+            "total_return_pct": -20.3754,
+            "max_drawdown_pct": -41.9764,
+            "max_concurrent_positions": 10,
+            "ending_equity": 39812.31,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 18385,
+          "hit_rate": 0.2275,
+          "avg_net_return_pct": -0.5735,
+          "median_net_return_pct": -1.4446,
+          "max_drawdown_pct": -18.916,
+          "avg_mae_pct": -2.9981,
+          "portfolio": {
+            "accepted_trades": 492,
+            "rejected_capacity": 17893,
+            "acceptance_rate": 0.0268,
+            "hit_rate": 0.2541,
+            "total_return_pct": -8.1417,
+            "max_drawdown_pct": -18.916,
+            "max_concurrent_positions": 10,
+            "ending_equity": 45929.15,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 25129,
+        "hit_rate": 0.2934,
+        "avg_net_return_pct": 0.5479,
+        "median_net_return_pct": -1.0896,
+        "max_drawdown_pct": -15.1354,
+        "avg_mae_pct": -2.8166,
+        "portfolio": {
+          "accepted_trades": 386,
+          "rejected_capacity": 24743,
+          "acceptance_rate": 0.0154,
+          "hit_rate": 0.2746,
+          "total_return_pct": 12.6007,
+          "max_drawdown_pct": -15.1354,
+          "max_concurrent_positions": 10,
+          "ending_equity": 56300.33,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": 0.030495
+    },
+    {
+      "name": "tf_pullback_rising_exit",
+      "parameters": {
+        "name": "tf_pullback_rising_exit",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_pullback_ma20",
+        "allowed_regimes": [
+          "rising"
+        ],
+        "max_hold_days": 15,
+        "stop_loss": -0.05,
+        "exit_mode": "ma20_or_ma5_dead"
+      },
+      "train": {
+        "trades": 1637,
+        "hit_rate": 0.2621,
+        "avg_net_return_pct": -0.4358,
+        "median_net_return_pct": -0.921,
+        "max_drawdown_pct": -6.0823,
+        "avg_mae_pct": -2.5137,
+        "portfolio": {
+          "accepted_trades": 173,
+          "rejected_capacity": 1464,
+          "acceptance_rate": 0.1057,
+          "hit_rate": 0.3295,
+          "total_return_pct": 0.4679,
+          "max_drawdown_pct": -6.0823,
+          "max_concurrent_positions": 10,
+          "ending_equity": 50233.97,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "development_stability": [
+        {
+          "trades": 389,
+          "hit_rate": 0.3368,
+          "avg_net_return_pct": 0.3945,
+          "median_net_return_pct": -0.7279,
+          "max_drawdown_pct": -2.6426,
+          "avg_mae_pct": -2.7577,
+          "portfolio": {
+            "accepted_trades": 64,
+            "rejected_capacity": 325,
+            "acceptance_rate": 0.1645,
+            "hit_rate": 0.375,
+            "total_return_pct": 2.6252,
+            "max_drawdown_pct": -2.6426,
+            "max_concurrent_positions": 10,
+            "ending_equity": 51312.58,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        },
+        {
+          "trades": 643,
+          "hit_rate": 0.2068,
+          "avg_net_return_pct": -0.9383,
+          "median_net_return_pct": -1.2676,
+          "max_drawdown_pct": -5.8353,
+          "avg_mae_pct": -2.6411,
+          "portfolio": {
+            "accepted_trades": 99,
+            "rejected_capacity": 544,
+            "acceptance_rate": 0.154,
+            "hit_rate": 0.2626,
+            "total_return_pct": -0.809,
+            "max_drawdown_pct": -5.8353,
+            "max_concurrent_positions": 10,
+            "ending_equity": 49595.49,
+            "limits": {
+              "max_positions": 10,
+              "max_single_weight": 0.1,
+              "max_gross_exposure": 0.95
+            },
+            "model": "event_day_marking_v1",
+            "limitations": [
+              "持有期内尚未逐日盯市",
+              "行业集中度待行业点时映射"
+            ]
+          }
+        }
+      ],
+      "oos": {
+        "trades": 511,
+        "hit_rate": 0.3346,
+        "avg_net_return_pct": 0.8263,
+        "median_net_return_pct": -0.7046,
+        "max_drawdown_pct": -1.5477,
+        "avg_mae_pct": -1.7862,
+        "portfolio": {
+          "accepted_trades": 24,
+          "rejected_capacity": 487,
+          "acceptance_rate": 0.047,
+          "hit_rate": 0.3333,
+          "total_return_pct": 0.7589,
+          "max_drawdown_pct": -1.5477,
+          "max_concurrent_positions": 10,
+          "ending_equity": 50379.44,
+          "limits": {
+            "max_positions": 10,
+            "max_single_weight": 0.1,
+            "max_gross_exposure": 0.95
+          },
+          "model": "event_day_marking_v1",
+          "limitations": [
+            "持有期内尚未逐日盯市",
+            "行业集中度待行业点时映射"
+          ]
+        }
+      },
+      "train_score": -0.114223
+    }
+  ],
+  "anti_overfit": {
+    "candidate_space_frozen": true,
+    "development_period_consistency_required": true,
+    "purge_and_embargo": true,
+    "oos_used_for_selection": false,
+    "positive_median_required": true,
+    "failed_candidate_is_not_retuned_on_same_oos": true,
+    "multiple_candidate_hit_rate_floor": 0.54
+  },
+  "strategy_sources": {
+    "tickflow_stock_panel": [
+      "trend_breakout",
+      "bullish_alignment",
+      "macd_golden",
+      "volume_price_surge",
+      "low_volatility_leader",
+      "pullback_ma20_bounce"
+    ],
+    "adaptation": "仅迁移信号思想；统一使用本系统的T+1、成本、非重叠和冻结样本外协议"
+  },
+  "limitations": [
+    "未模拟逐股涨跌停无法成交",
+    "未模拟冲击成本和分红税",
+    "本轮只允许预先声明的有限候选，防止无限调参过拟合"
+  ]
+}

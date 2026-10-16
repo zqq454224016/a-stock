@@ -1,0 +1,189 @@
+{
+  "updated_at": "2026-07-31 16:30:11",
+  "trade_date": "2026-07-30",
+  "mode": "paper_a_share_t1",
+  "same_session_mark_only": true,
+  "summary": {
+    "updated_at": "2026-07-31 16:30:11",
+    "initial_cash": 50000.0,
+    "cash": 17103.15,
+    "market_value": 32844.0,
+    "total_equity": 49947.15,
+    "total_return_pct": -0.11,
+    "position_count": 4,
+    "order_count": 4,
+    "trade_count": 4,
+    "realized_pnl": 0.0,
+    "unrealized_pnl": -52.83,
+    "total_pnl": -52.85,
+    "total_fees": 36.42,
+    "closed_trade_count": 0,
+    "win_rate_pct": null
+  },
+  "decisions": [
+    {
+      "code": "002379",
+      "name": "宏桥控股",
+      "action": "marked_only",
+      "source": "formal_short_recommendation",
+      "decision_action": "buy_or_hold",
+      "position_suggestion": 0.2,
+      "price": 21.61,
+      "direction": "up",
+      "probability": 0.8349,
+      "confidence": "high"
+    },
+    {
+      "code": "603871",
+      "name": "嘉友国际",
+      "action": "marked_only",
+      "source": "formal_short_recommendation",
+      "decision_action": "buy_or_hold",
+      "position_suggestion": 0.2,
+      "price": 13.35,
+      "direction": "up",
+      "probability": 0.8345,
+      "confidence": "high"
+    },
+    {
+      "code": "601058",
+      "name": "赛轮轮胎",
+      "action": "marked_only",
+      "source": "formal_short_recommendation",
+      "decision_action": "buy_or_hold",
+      "position_suggestion": 0.2,
+      "price": 14.27,
+      "direction": "up",
+      "probability": 0.83,
+      "confidence": "high"
+    },
+    {
+      "code": "600882",
+      "name": "妙可蓝多",
+      "action": "marked_only",
+      "source": "formal_short_recommendation",
+      "decision_action": "buy_or_hold",
+      "position_suggestion": 0.2,
+      "price": 23.44,
+      "direction": "up",
+      "probability": 0.8256999999999999,
+      "confidence": "high"
+    },
+    {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "action": "marked_only",
+      "source": "formal_short_recommendation",
+      "decision_action": "buy_or_hold",
+      "position_suggestion": 0.2,
+      "price": 54.79,
+      "direction": "up",
+      "probability": 0.8210999999999999,
+      "confidence": "high"
+    }
+  ],
+  "positions": [
+    {
+      "code": "002379",
+      "name": "宏桥控股",
+      "shares": 400,
+      "avg_cost": 21.6441,
+      "last_price": 21.61,
+      "market_value": 8644.0,
+      "unrealized_pnl": -13.64,
+      "unrealized_pnl_pct": -0.16
+    },
+    {
+      "code": "603871",
+      "name": "嘉友国际",
+      "shares": 700,
+      "avg_cost": 13.3705,
+      "last_price": 13.35,
+      "market_value": 9345.0,
+      "unrealized_pnl": -14.35,
+      "unrealized_pnl_pct": -0.15
+    },
+    {
+      "code": "600882",
+      "name": "妙可蓝多",
+      "shares": 400,
+      "avg_cost": 23.4759,
+      "last_price": 23.44,
+      "market_value": 9376.0,
+      "unrealized_pnl": -14.36,
+      "unrealized_pnl_pct": -0.15
+    },
+    {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "shares": 100,
+      "avg_cost": 54.8948,
+      "last_price": 54.79,
+      "market_value": 5479.0,
+      "unrealized_pnl": -10.48,
+      "unrealized_pnl_pct": -0.19
+    }
+  ],
+  "recent_trades": [
+    {
+      "code": "002379",
+      "name": "宏桥控股",
+      "side": "buy",
+      "shares": 400,
+      "price": 21.6208,
+      "amount": 8648.32,
+      "fee": 9.32,
+      "status": "filled",
+      "reason": "prediction_up_high",
+      "target_position_pct": 0.2,
+      "prediction_probability": 0.8449,
+      "created_at": "2026-07-31 15:45:02",
+      "realized_pnl": 0.0
+    },
+    {
+      "code": "603871",
+      "name": "嘉友国际",
+      "side": "buy",
+      "shares": 700,
+      "price": 13.3567,
+      "amount": 9349.69,
+      "fee": 9.67,
+      "status": "filled",
+      "reason": "prediction_up_high",
+      "target_position_pct": 0.2,
+      "prediction_probability": 0.8345,
+      "created_at": "2026-07-31 15:45:02",
+      "realized_pnl": 0.0
+    },
+    {
+      "code": "600882",
+      "name": "妙可蓝多",
+      "side": "buy",
+      "shares": 400,
+      "price": 23.4517,
+      "amount": 9380.68,
+      "fee": 9.69,
+      "status": "filled",
+      "reason": "prediction_up_high",
+      "target_position_pct": 0.2,
+      "prediction_probability": 0.8256999999999999,
+      "created_at": "2026-07-31 15:45:02",
+      "realized_pnl": 0.0
+    },
+    {
+      "code": "000423",
+      "name": "东阿阿胶",
+      "side": "buy",
+      "shares": 100,
+      "price": 54.8174,
+      "amount": 5481.74,
+      "fee": 7.74,
+      "status": "filled",
+      "reason": "prediction_up_high",
+      "target_position_pct": 0.2,
+      "prediction_probability": 0.8210999999999999,
+      "created_at": "2026-07-31 15:45:02",
+      "realized_pnl": 0.0
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "updated_at": "2026-10-16 18:22:37",
+  "next_iteration_check_at": "2026-10-16 18:27:37",
+  "current_iteration_expected_at": "2026-10-16 18:52:37",
+  "stages": [
+    {
+      "name": "当前后台迭代轮次",
+      "status": "running",
+      "expected_at": "2026-10-16 18:52:37",
+      "confidence": "low",
+      "basis": "全量采集 0/3459"
+    },
+    {
+      "name": "数据层补齐",
+      "status": "complete",
+      "expected_at": "2026-10-17 18:00:00",
+      "confidence": "medium",
+      "basis": "快车道并行：公开源、候选三表、公告时点核验分开执行"
+    },
+    {
+      "name": "本地执行与风控基础设施",
+      "status": "pending",
+      "expected_at": "2026-10-18 18:00:00",
+      "confidence": "medium",
+      "basis": "快车道并行：执行模拟器、组合风控、指令契约、订单状态机独立实现"
+    },
+    {
+      "name": "稳定策略与前向观察",
+      "status": "evaluation_due",
+      "expected_at": "2026-10-16",
+      "confidence": "conditional",
+      "basis": "不可覆盖前向账本尚余 0 个交易日"
+    }
+  ],
+  "fast_track": {
+    "mode": "parallel_simulation_first",
+    "simulation_ready_expected_at": "2026-10-18 18:00:00",
+    "scope": [
+      "实时行情",
+      "候选与交易区间",
+      "执行模拟器",
+      "组合风险检查",
+      "实时操作指令",
+      "订单状态机沙盒"
+    ],
+    "excludes": [
+      "真实券商报单",
+      "未满60交易日的策略正式晋级"
+    ],
+    "reason": "先交付可运行模拟闭环，正式自动交易证据门槛保持不变"
+  },
+  "final_completion": {
+    "earliest_at": "2026-10-23",
+    "expected_at": null,
+    "display": "条件性最早 2026-10-23；正式完成日期待稳定策略晋级和券商/合规授权后确定",
+    "confidence": "conditional",
+    "blocking_conditions": [
+      "券商网关和运维合规需要人工授权"
+    ]
+  },
+  "policy": [
+    "ETA是基于当前依赖和吞吐量的估计，不用于放宽策略门禁",
+    "每轮后台迭代后重算并同步页面与飞书",
+    "外部授权或尚未出现合格策略时只给条件性最早日期"
+  ]
+}

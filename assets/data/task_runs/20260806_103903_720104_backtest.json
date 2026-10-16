@@ -1,0 +1,25 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260806_103903_720104_backtest",
+  "command": "backtest",
+  "argv": [
+    "backtest",
+    "002827",
+    "000820",
+    "--strategy",
+    "reversal_hunter",
+    "--allow-warn"
+  ],
+  "status": "success",
+  "started_at": "2026-08-06 10:39:03",
+  "ended_at": "2026-08-06 10:39:03",
+  "duration_sec": 0.2243,
+  "artifacts": [
+    {
+      "path": "backtest/index.json",
+      "exists": true,
+      "size": 586,
+      "mtime": "2026-08-06 10:39:03"
+    }
+  ]
+}

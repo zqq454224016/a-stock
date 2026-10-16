@@ -1,0 +1,72 @@
+{
+  "dataset": "market.dragon_tiger.official",
+  "schema_version": "1.0.0",
+  "known_at": "2026-07-31 16:29:18",
+  "source": "sse+szse",
+  "trade_date": "2026-07-31",
+  "szse": [
+    {
+      "code": "000009",
+      "name": "中国宝安",
+      "amount": 14.95,
+      "reason": "异常期间价格涨幅偏离值累计达到21.27%"
+    },
+    {
+      "code": "000506",
+      "name": "招金黄金",
+      "amount": 18.04,
+      "reason": "日价格涨幅偏离值达到7.68%"
+    },
+    {
+      "code": "000566",
+      "name": "海南海药",
+      "amount": 19.1,
+      "reason": "日换手率达到25.55%"
+    },
+    {
+      "code": "000683",
+      "name": "博源化工",
+      "amount": 10.15,
+      "reason": "日价格跌幅偏离值达到-7.55%"
+    },
+    {
+      "code": "000786",
+      "name": "北新建材",
+      "amount": 7.17,
+      "reason": "日价格跌幅偏离值达到-7.86%"
+    },
+    {
+      "code": "000820",
+      "name": "神雾节能",
+      "amount": 0.29,
+      "reason": "异常期间价格涨幅偏离值累计达到21.16%"
+    },
+    {
+      "code": "000826",
+      "name": "*ST启环",
+      "amount": 2.56,
+      "reason": "异常期间价格涨幅偏离值累计达到23.74%"
+    },
+    {
+      "code": "001258",
+      "name": "立新能源",
+      "amount": 19.87,
+      "reason": "日价格振幅达到16.64%"
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "amount": 173.54,
+      "reason": "日换手率达到25.61%"
+    },
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "amount": 14.45,
+      "reason": "日价格涨幅偏离值达到7.68%"
+    }
+  ],
+  "sse_raw": "",
+  "errors": {},
+  "usage": "official_evidence_and_fallback_not_automatic_score"
+}

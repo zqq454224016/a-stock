@@ -5,17 +5,17 @@
   "path": "task_runs/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/task_runs/index.json",
   "exists": true,
-  "size": 47275,
-  "file_mtime": "2026-07-24 01:55:04",
-  "updated_at": "2026-07-24 01:55:04",
-  "record_count": 62,
+  "size": 68716,
+  "file_mtime": "2026-10-16 15:42:48",
+  "updated_at": "2026-10-16 15:42:48",
+  "record_count": 100,
   "field_summary": {
     "top_level_fields": [
       "runs",
       "updated_at"
     ],
     "list_fields": {
-      "runs": 62
+      "runs": 100
     },
     "dict_fields": []
   },
@@ -34,5 +34,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

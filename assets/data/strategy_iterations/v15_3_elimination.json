@@ -1,0 +1,110 @@
+{
+  "updated_at": "2026-10-16 14:50:10",
+  "research_version": "15.3.0",
+  "run_id": "20261016T143503",
+  "rule": "thresholds_frozen_before_rerun_no_same_oos_tuning",
+  "eliminated_count": 6,
+  "surviving_count": 0,
+  "eliminated": [
+    {
+      "id": "v153_pullback_quiet_rising",
+      "claim": "低波回踩在上升市减少同日相关洪水，组合路径更稳",
+      "eliminate_if": "组合OOS收益<=0或命中率<0.50或接受笔数<30",
+      "train_port_ret": -5.5293,
+      "oos_port_ret": -1.9387,
+      "oos_port_hit": 0.0,
+      "oos_accepted": 8,
+      "oos_trades": 180,
+      "oos_sig_ret": -0.3361,
+      "eliminated": true,
+      "eliminate_reasons": [
+        "oos_portfolio_return<=0",
+        "oos_portfolio_hit<0.50",
+        "accepted_trades<30"
+      ]
+    },
+    {
+      "id": "v153_pullback_volume_rising",
+      "claim": "回踩加量能确认降低假弹，提高组合接受单质量",
+      "eliminate_if": "信号或组合OOS均收益<=0",
+      "train_port_ret": 11.3883,
+      "oos_port_ret": 0.9055,
+      "oos_port_hit": 0.375,
+      "oos_accepted": 8,
+      "oos_trades": 35,
+      "oos_sig_ret": 0.4233,
+      "eliminated": true,
+      "eliminate_reasons": [
+        "oos_portfolio_hit<0.50",
+        "accepted_trades<30"
+      ]
+    },
+    {
+      "id": "v153_lowvol_pullback_multi",
+      "claim": "低波领涨失败因缺少回踩纪律；回踩+多状态可修复OOS组合",
+      "eliminate_if": "range+rising下组合OOS仍<=0",
+      "train_port_ret": -21.5962,
+      "oos_port_ret": -4.096,
+      "oos_port_hit": 0.2642,
+      "oos_accepted": 53,
+      "oos_trades": 1502,
+      "oos_sig_ret": -0.8542,
+      "eliminated": true,
+      "eliminate_reasons": [
+        "oos_portfolio_return<=0",
+        "oos_portfolio_hit<0.50"
+      ]
+    },
+    {
+      "id": "v153_pullback_rising_fast_exit",
+      "claim": "更快退出释放容量，降低组合路径回撤",
+      "eliminate_if": "组合OOS回撤差于同族慢退出且收益不更高",
+      "train_port_ret": 7.3282,
+      "oos_port_ret": -1.364,
+      "oos_port_hit": 0.2308,
+      "oos_accepted": 13,
+      "oos_trades": 340,
+      "oos_sig_ret": -0.6304,
+      "eliminated": true,
+      "eliminate_reasons": [
+        "oos_portfolio_return<=0",
+        "oos_portfolio_hit<0.50",
+        "accepted_trades<30"
+      ]
+    },
+    {
+      "id": "v153_tsmom_quiet",
+      "claim": "TSMOM信号边被高波噪声吞没；限波后组合可存活",
+      "eliminate_if": "组合OOS<=0或打不过baseline组合",
+      "train_port_ret": 144.5422,
+      "oos_port_ret": -37.978,
+      "oos_port_hit": 0.4493,
+      "oos_accepted": 69,
+      "oos_trades": 717,
+      "oos_sig_ret": -0.5138,
+      "eliminated": true,
+      "eliminate_reasons": [
+        "oos_portfolio_return<=0",
+        "oos_portfolio_hit<0.50"
+      ]
+    },
+    {
+      "id": "v153_pullback_quiet_short",
+      "claim": "短持有低波回踩提高换手，适配日限流组合",
+      "eliminate_if": "短线组合OOS命中率<0.50",
+      "train_port_ret": -27.1399,
+      "oos_port_ret": -4.6621,
+      "oos_port_hit": 0.2857,
+      "oos_accepted": 98,
+      "oos_trades": 1202,
+      "oos_sig_ret": -0.6461,
+      "eliminated": true,
+      "eliminate_reasons": [
+        "oos_portfolio_return<=0",
+        "oos_portfolio_hit<0.50"
+      ]
+    }
+  ],
+  "surviving": [],
+  "conclusion": "v15.3稀疏假设族按预登记淘汰标准全部淘汰；保持空正式推荐；禁止在同一OOS继续调参；等待新交易日/新研究方向或前向影子证据"
+}

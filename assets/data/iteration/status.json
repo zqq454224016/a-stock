@@ -1,0 +1,158 @@
+{
+  "policy_version": "1.0.0",
+  "updated_at": "2026-10-16 18:22:36",
+  "mode": "non_destructive_auto_iteration",
+  "phase": "offline_validation",
+  "strategy_status": "research_only",
+  "promotion_allowed": false,
+  "data": {
+    "max_history_bars": 1251,
+    "universe_count": 3459,
+    "quality_total": 3459,
+    "quality_summary": {
+      "ok": 3169,
+      "warning": 8,
+      "error": 282,
+      "factor_blocked": 282
+    },
+    "point_in_time_financial_status": "partial"
+  },
+  "validation": {
+    "evaluated_stocks": 3205,
+    "sample_count": 2736103,
+    "weighted_hit_rate": 0.4533,
+    "weighted_avg_signed_return_pct": -0.6325,
+    "weighted_avg_max_adverse_pct": -54.2113,
+    "eligible_stocks": 104,
+    "eligible_coverage": 0.0324
+  },
+  "gates": [
+    {
+      "name": "history_length",
+      "actual": 1251,
+      "required": 1250,
+      "passed": true,
+      "detail": "至少五年交易日"
+    },
+    {
+      "name": "universe_count",
+      "actual": 3459,
+      "required": 2000,
+      "passed": true,
+      "detail": "普通研究池必须具备足够横截面"
+    },
+    {
+      "name": "point_in_time_financials",
+      "actual": "partial",
+      "required": "complete_or_partial",
+      "passed": true,
+      "detail": "财务数据必须带发布时间和可知时间"
+    },
+    {
+      "name": "oos_sample_count",
+      "actual": 2736103,
+      "required": 100,
+      "passed": true,
+      "detail": "20日样本外聚合样本"
+    },
+    {
+      "name": "weighted_hit_rate",
+      "actual": 0.4533,
+      "required": 0.55,
+      "passed": false,
+      "detail": "不能只报告最佳股票"
+    },
+    {
+      "name": "avg_signed_return",
+      "actual": -0.6325,
+      "required": ">0.0",
+      "passed": false,
+      "detail": "当前仍为成本前指标"
+    },
+    {
+      "name": "eligible_coverage",
+      "actual": 0.0324,
+      "required": 0.1,
+      "passed": false,
+      "detail": "防止靠极少数信号抬高命中率"
+    },
+    {
+      "name": "avg_max_adverse",
+      "actual": -54.2113,
+      "required": -15.0,
+      "passed": false,
+      "detail": "后续替换为成本后组合回撤"
+    }
+  ],
+  "failed_gates": [
+    "weighted_hit_rate",
+    "avg_signed_return",
+    "eligible_coverage",
+    "avg_max_adverse"
+  ],
+  "next_actions": [
+    "实现 purged walk-forward、embargo、成本与市场状态分层后重新验证",
+    "按退役 Wave B 逐项解除旧模块消费者；自动流程只标记，不自动删除"
+  ],
+  "cleanup_candidates": [
+    {
+      "wave": "B",
+      "module": "quant_system/tasks/replay_job.py",
+      "replacement": "strategy_backtest + purged walk-forward",
+      "remove_after": "purged/embargo validation is active",
+      "exists": true,
+      "status": "retain_until_replacement_gate"
+    },
+    {
+      "wave": "B",
+      "module": "quant_system/tasks/predict_job.py",
+      "replacement": "calibrated multi-horizon probability",
+      "remove_after": "probability calibration passes Brier and bucket checks",
+      "exists": true,
+      "status": "retain_until_replacement_gate"
+    },
+    {
+      "wave": "B",
+      "module": "quant_system/tasks/selector_job.py",
+      "replacement": "market-gated recommendation pipeline",
+      "remove_after": "frozen candidate hindsight review is active",
+      "exists": true,
+      "status": "retain_until_replacement_gate"
+    },
+    {
+      "wave": "B",
+      "module": "quant_system/tasks/decision_job.py",
+      "replacement": "structured research conclusion",
+      "remove_after": "web and AI no longer consume decisions",
+      "exists": true,
+      "status": "retain_until_replacement_gate"
+    },
+    {
+      "wave": "B",
+      "module": "quant_system/tasks/agent_job.py",
+      "replacement": "Codex evidence review",
+      "remove_after": "audit metadata is migrated",
+      "exists": true,
+      "status": "retain_until_replacement_gate"
+    },
+    {
+      "wave": "B",
+      "module": "quant_system/tasks/sim_trade_job.py",
+      "replacement": "cost-aware shadow portfolio",
+      "remove_after": "T+1, price limits and costs are enforced",
+      "exists": true,
+      "status": "retain_until_replacement_gate"
+    }
+  ],
+  "safety": {
+    "auto_parameter_tuning": false,
+    "auto_code_deletion": false,
+    "auto_trading": false,
+    "human_review_required": true
+  },
+  "limitations": [
+    "当前一年验证尚不能替代五年以上多市场状态样本外验证",
+    "当前平均方向收益尚未扣除全部交易费用、滑点与冲击成本",
+    "晋级门槛修改必须提升 policy_version，不能覆盖旧状态"
+  ]
+}

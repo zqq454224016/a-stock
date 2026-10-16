@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "updated_at": "2026-10-16 16:06:16",
+  "source": "local_full_market_history",
+  "stocks_used": 3457,
+  "days": 1928,
+  "latest_trade_date": "2026-10-16",
+  "limitations": [
+    "涨跌停数量为按收益率计算的代理值，精确历史池仍需交易所/公开源逐日归档",
+    "炸板历史无法由日线精确还原",
+    "成交额字段覆盖取决于本地历史源"
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "dataset": "market.daily_recap",
+  "schema_version": "1.0.0",
+  "status": "complete",
+  "trade_date": "2026-09-03",
+  "updated_at": "2026-09-08 18:30:31",
+  "headline": "2026-09-03 市场偏弱：上涨1071只、下跌1882只，涨跌中位数-0.5%。",
+  "market_structure": {
+    "state": "偏弱",
+    "advance_ratio": 0.3627,
+    "median_change_pct": -0.5,
+    "index_average_change_pct": -0.07,
+    "index_stock_divergence": false,
+    "limit_up_count": 43,
+    "broken_count": 34,
+    "limit_down_count": 19,
+    "broken_rate": 0.4416
+  },
+  "sector_attribution": {
+    "method": "industry_turnover_share_x_industry_amount_weighted_change",
+    "covered_stocks": 3193,
+    "total_amount_yi": 21019.44,
+    "positive_contributors": [
+      {
+        "name": "机械设备",
+        "stock_count": 248,
+        "average_change_pct": 0.02,
+        "amount_weighted_change_pct": 0.5,
+        "advance_ratio": 0.4091,
+        "amount_yi": 4287.11,
+        "turnover_share": 0.204,
+        "market_attribution_points": 0.1021
+      },
+      {
+        "name": "电力设备",
+        "stock_count": 189,
+        "average_change_pct": 0.25,
+        "amount_weighted_change_pct": 2.65,
+        "advance_ratio": 0.4811,
+        "amount_yi": 679.36,
+        "turnover_share": 0.0323,
+        "market_attribution_points": 0.0856
+      },
+      {
+        "name": "交通运输",
+        "stock_count": 125,
+        "average_change_pct": 0.44,
+        "amount_weighted_change_pct": 0.56,
+        "advance_ratio": 0.5128,
+        "amount_yi": 3104.52,
+        "turnover_share": 0.1477,
+        "market_attribution_points": 0.0822
+      },
+      {
+        "name": "有色金属",
+        "stock_count": 110,
+        "average_change_pct": 0.95,
+        "amount_weighted_change_pct": 1.17,
+        "advance_ratio": 0.6542,
+        "amount_yi": 1459.85,
+        "turnover_share": 0.0695,
+        "market_attribution_points": 0.0814
+      },
+      {
+        "name": "汽车",
+        "stock_count": 203,
+        "average_change_pct": -0.07,
+        "amount_weighted_change_pct": 2.08,
+        "advance_ratio": 0.3673,
+        "amount_yi": 441.31,
+        "turnover_share": 0.021,
+        "market_attribution_points": 0.0437
+      },
+      {
+        "name": "非银金融",
+        "stock_count": 79,
+        "average_change_pct": 0.28,
+        "amount_weighted_change_pct": 1.29,
+        "advance_ratio": 0.6,
+        "amount_yi": 463.49,
+        "turnover_share": 0.0221,
+        "market_attribution_points": 0.0285
+      },
+      {
+        "name": "建筑装饰",
+        "stock_count": 103,
+        "average_change_pct": -0.11,
+        "amount_weighted_change_pct": 0.21,
+        "advance_ratio": 0.3958,
+        "amount_yi": 2455.9,
+        "turnover_share": 0.1168,
+        "market_attribution_points": 0.025
+      },
+      {
+        "name": "商贸零售",
+        "stock_count": 89,
+        "average_change_pct": -0.06,
+        "amount_weighted_change_pct": 1.74,
+        "advance_ratio": 0.3452,
+        "amount_yi": 184.05,
+        "turnover_share": 0.0088,
+        "market_attribution_points": 0.0153
+      }
+    ],
+    "negative_contributors": [
+      {
+        "name": "基础化工",
+        "stock_count": 267,
+        "average_change_pct": -0.86,
+        "amount_weighted_change_pct": -0.97,
+        "advance_ratio": 0.2973,
+        "amount_yi": 778.77,
+        "turnover_share": 0.0371,
+        "market_attribution_points": -0.036
+      },
+      {
+        "name": "通信",
+        "stock_count": 55,
+        "average_change_pct": -0.79,
+        "amount_weighted_change_pct": -1.11,
+        "advance_ratio": 0.2727,
+        "amount_yi": 595.24,
+        "turnover_share": 0.0283,
+        "market_attribution_points": -0.0313
+      },
+      {
+        "name": "医药生物",
+        "stock_count": 225,
+        "average_change_pct": -0.61,
+        "amount_weighted_change_pct": -1.01,
+        "advance_ratio": 0.3484,
+        "amount_yi": 479.74,
+        "turnover_share": 0.0228,
+        "market_attribution_points": -0.0231
+      },
+      {
+        "name": "农林牧渔",
+        "stock_count": 80,
+        "average_change_pct": -1.63,
+        "amount_weighted_change_pct": -1.68,
+        "advance_ratio": 0.2405,
+        "amount_yi": 217.28,
+        "turnover_share": 0.0103,
+        "market_attribution_points": -0.0174
+      },
+      {
+        "name": "建筑材料",
+        "stock_count": 57,
+        "average_change_pct": -0.43,
+        "amount_weighted_change_pct": -1.59,
+        "advance_ratio": 0.3571,
+        "amount_yi": 185.39,
+        "turnover_share": 0.0088,
+        "market_attribution_points": -0.014
+      },
+      {
+        "name": "银行",
+        "stock_count": 42,
+        "average_change_pct": -0.37,
+        "amount_weighted_change_pct": -0.69,
+        "advance_ratio": 0.3333,
+        "amount_yi": 327.36,
+        "turnover_share": 0.0156,
+        "market_attribution_points": -0.0107
+      },
+      {
+        "name": "社会服务",
+        "stock_count": 57,
+        "average_change_pct": -1.33,
+        "amount_weighted_change_pct": -1.66,
+        "advance_ratio": 0.1754,
+        "amount_yi": 96.7,
+        "turnover_share": 0.0046,
+        "market_attribution_points": -0.0077
+      },
+      {
+        "name": "公用事业",
+        "stock_count": 129,
+        "average_change_pct": -0.17,
+        "amount_weighted_change_pct": -0.42,
+        "advance_ratio": 0.3952,
+        "amount_yi": 292.66,
+        "turnover_share": 0.0139,
+        "market_attribution_points": -0.0058
+      }
+    ],
+    "all": [
+      {
+        "name": "机械设备",
+        "stock_count": 248,
+        "average_change_pct": 0.02,
+        "amount_weighted_change_pct": 0.5,
+        "advance_ratio": 0.4091,
+        "amount_yi": 4287.11,
+        "turnover_share": 0.204,
+        "market_attribution_points": 0.1021
+      },
+      {
+        "name": "电力设备",
+        "stock_count": 189,
+        "average_change_pct": 0.25,
+        "amount_weighted_change_pct": 2.65,
+        "advance_ratio": 0.4811,
+        "amount_yi": 679.36,
+        "turnover_share": 0.0323,
+        "market_attribution_points": 0.0856
+      },
+      {
+        "name": "交通运输",
+        "stock_count": 125,
+        "average_change_pct": 0.44,
+        "amount_weighted_change_pct": 0.56,
+        "advance_ratio": 0.5128,
+        "amount_yi": 3104.52,
+        "turnover_share": 0.1477,
+        "market_attribution_points": 0.0822
+      },
+      {
+        "name": "有色金属",
+        "stock_count": 110,
+        "average_change_pct": 0.95,
+        "amount_weighted_change_pct": 1.17,
+        "advance_ratio": 0.6542,
+        "amount_yi": 1459.85,
+        "turnover_share": 0.0695,
+        "market_attribution_points": 0.0814
+      },
+      {
+        "name": "汽车",
+        "stock_count": 203,
+        "average_change_pct": -0.07,
+        "amount_weighted_change_pct": 2.08,
+        "advance_ratio": 0.3673,
+        "amount_yi": 441.31,
+        "turnover_share": 0.021,
+        "market_attribution_points": 0.0437
+      },
+      {
+        "name": "非银金融",
+        "stock_count": 79,
+        "average_change_pct": 0.28,
+        "amount_weighted_change_pct": 1.29,
+        "advance_ratio": 0.6,
+        "amount_yi": 463.49,
+        "turnover_share": 0.0221,
+        "market_attribution_points": 0.0285
+      },
+      {
+        "name": "建筑装饰",
+        "stock_count": 103,
+        "average_change_pct": -0.11,
+        "amount_weighted_change_pct": 0.21,
+        "advance_ratio": 0.3958,
+        "amount_yi": 2455.9,
+        "turnover_share": 0.1168,
+        "market_attribution_points": 0.025
+      },
+      {
+        "name": "商贸零售",
+        "stock_count": 89,
+        "average_change_pct": -0.06,
+        "amount_weighted_change_pct": 1.74,
+        "advance_ratio": 0.3452,
+        "amount_yi": 184.05,
+        "turnover_share": 0.0088,
+        "market_attribution_points": 0.0153
+      },
+      {
+        "name": "国防军工",
+        "stock_count": 62,
+        "average_change_pct": -0.34,
+        "amount_weighted_change_pct": 0.69,
+        "advance_ratio": 0.3387,
+        "amount_yi": 329.6,
+        "turnover_share": 0.0157,
+        "market_attribution_points": 0.0109
+      },
+      {
+        "name": "家用电器",
+        "stock_count": 60,
+        "average_change_pct": 0.09,
+        "amount_weighted_change_pct": 0.18,
+        "advance_ratio": 0.4167,
+        "amount_yi": 1264.17,
+        "turnover_share": 0.0601,
+        "market_attribution_points": 0.0107
+      },
+      {
+        "name": "轻工制造",
+        "stock_count": 123,
+        "average_change_pct": -0.49,
+        "amount_weighted_change_pct": 0.84,
+        "advance_ratio": 0.2869,
+        "amount_yi": 155.13,
+        "turnover_share": 0.0074,
+        "market_attribution_points": 0.0062
+      },
+      {
+        "name": "食品饮料",
+        "stock_count": 116,
+        "average_change_pct": -0.58,
+        "amount_weighted_change_pct": 0.47,
+        "advance_ratio": 0.2566,
+        "amount_yi": 212.12,
+        "turnover_share": 0.0101,
+        "market_attribution_points": 0.0048
+      },
+      {
+        "name": "石油石化",
+        "stock_count": 39,
+        "average_change_pct": -0.09,
+        "amount_weighted_change_pct": 0.64,
+        "advance_ratio": 0.3421,
+        "amount_yi": 114.76,
+        "turnover_share": 0.0055,
+        "market_attribution_points": 0.0035
+      },
+      {
+        "name": "煤炭",
+        "stock_count": 34,
+        "average_change_pct": -0.43,
+        "amount_weighted_change_pct": 0.33,
+        "advance_ratio": 0.3438,
+        "amount_yi": 150.81,
+        "turnover_share": 0.0072,
+        "market_attribution_points": 0.0023
+      },
+      {
+        "name": "电子",
+        "stock_count": 185,
+        "average_change_pct": -0.23,
+        "amount_weighted_change_pct": 0.01,
+        "advance_ratio": 0.3481,
+        "amount_yi": 1564.65,
+        "turnover_share": 0.0744,
+        "market_attribution_points": 0.0008
+      },
+      {
+        "name": "综合",
+        "stock_count": 18,
+        "average_change_pct": -0.89,
+        "amount_weighted_change_pct": 0.31,
+        "advance_ratio": 0.3333,
+        "amount_yi": 25.41,
+        "turnover_share": 0.0012,
+        "market_attribution_points": 0.0004
+      },
+      {
+        "name": "钢铁",
+        "stock_count": 42,
+        "average_change_pct": -0.36,
+        "amount_weighted_change_pct": 0.16,
+        "advance_ratio": 0.2632,
+        "amount_yi": 55.44,
+        "turnover_share": 0.0026,
+        "market_attribution_points": 0.0004
+      },
+      {
+        "name": "美容护理",
+        "stock_count": 16,
+        "average_change_pct": -0.9,
+        "amount_weighted_change_pct": 0.09,
+        "advance_ratio": 0.125,
+        "amount_yi": 15.72,
+        "turnover_share": 0.0007,
+        "market_attribution_points": 0.0001
+      },
+      {
+        "name": "传媒",
+        "stock_count": 83,
+        "average_change_pct": -0.69,
+        "amount_weighted_change_pct": -0.04,
+        "advance_ratio": 0.2805,
+        "amount_yi": 316.85,
+        "turnover_share": 0.0151,
+        "market_attribution_points": -0.0006
+      },
+      {
+        "name": "房地产",
+        "stock_count": 87,
+        "average_change_pct": -0.51,
+        "amount_weighted_change_pct": -0.13,
+        "advance_ratio": 0.2963,
+        "amount_yi": 158.37,
+        "turnover_share": 0.0075,
+        "market_attribution_points": -0.001
+      },
+      {
+        "name": "环保",
+        "stock_count": 68,
+        "average_change_pct": -0.56,
+        "amount_weighted_change_pct": -0.29,
+        "advance_ratio": 0.3226,
+        "amount_yi": 81.15,
+        "turnover_share": 0.0039,
+        "market_attribution_points": -0.0011
+      },
+      {
+        "name": "纺织服饰",
+        "stock_count": 91,
+        "average_change_pct": -1.13,
+        "amount_weighted_change_pct": -0.92,
+        "advance_ratio": 0.2614,
+        "amount_yi": 87.12,
+        "turnover_share": 0.0041,
+        "market_attribution_points": -0.0038
+      },
+      {
+        "name": "计算机",
+        "stock_count": 111,
+        "average_change_pct": -0.55,
+        "amount_weighted_change_pct": -0.26,
+        "advance_ratio": 0.2294,
+        "amount_yi": 439.41,
+        "turnover_share": 0.0209,
+        "market_attribution_points": -0.0055
+      },
+      {
+        "name": "公用事业",
+        "stock_count": 129,
+        "average_change_pct": -0.17,
+        "amount_weighted_change_pct": -0.42,
+        "advance_ratio": 0.3952,
+        "amount_yi": 292.66,
+        "turnover_share": 0.0139,
+        "market_attribution_points": -0.0058
+      },
+      {
+        "name": "社会服务",
+        "stock_count": 57,
+        "average_change_pct": -1.33,
+        "amount_weighted_change_pct": -1.66,
+        "advance_ratio": 0.1754,
+        "amount_yi": 96.7,
+        "turnover_share": 0.0046,
+        "market_attribution_points": -0.0077
+      },
+      {
+        "name": "银行",
+        "stock_count": 42,
+        "average_change_pct": -0.37,
+        "amount_weighted_change_pct": -0.69,
+        "advance_ratio": 0.3333,
+        "amount_yi": 327.36,
+        "turnover_share": 0.0156,
+        "market_attribution_points": -0.0107
+      },
+      {
+        "name": "建筑材料",
+        "stock_count": 57,
+        "average_change_pct": -0.43,
+        "amount_weighted_change_pct": -1.59,
+        "advance_ratio": 0.3571,
+        "amount_yi": 185.39,
+        "turnover_share": 0.0088,
+        "market_attribution_points": -0.014
+      },
+      {
+        "name": "农林牧渔",
+        "stock_count": 80,
+        "average_change_pct": -1.63,
+        "amount_weighted_change_pct": -1.68,
+        "advance_ratio": 0.2405,
+        "amount_yi": 217.28,
+        "turnover_share": 0.0103,
+        "market_attribution_points": -0.0174
+      },
+      {
+        "name": "医药生物",
+        "stock_count": 225,
+        "average_change_pct": -0.61,
+        "amount_weighted_change_pct": -1.01,
+        "advance_ratio": 0.3484,
+        "amount_yi": 479.74,
+        "turnover_share": 0.0228,
+        "market_attribution_points": -0.0231
+      },
+      {
+        "name": "通信",
+        "stock_count": 55,
+        "average_change_pct": -0.79,
+        "amount_weighted_change_pct": -1.11,
+        "advance_ratio": 0.2727,
+        "amount_yi": 595.24,
+        "turnover_share": 0.0283,
+        "market_attribution_points": -0.0313
+      },
+      {
+        "name": "基础化工",
+        "stock_count": 267,
+        "average_change_pct": -0.86,
+        "amount_weighted_change_pct": -0.97,
+        "advance_ratio": 0.2973,
+        "amount_yi": 778.77,
+        "turnover_share": 0.0371,
+        "market_attribution_points": -0.036
+      }
+    ]
+  },
+  "conclusions": [
+    "主要正向板块：机械设备、电力设备、交通运输；主要负向板块：基础化工、通信、医药生物",
+    "涨停43家、炸板34家、跌停19家，炸板率44.2%"
+  ],
+  "limitations": [
+    "板块归因是价格与成交额的算术分解，不证明政策、新闻或资金行为的真实因果",
+    "同一公司按一级行业唯一归属，暂不重复计入概念板块",
+    "盘中总结会随行情刷新，收盘后版本才可用于日度归档"
+  ]
+}

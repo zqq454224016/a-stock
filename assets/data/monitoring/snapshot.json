@@ -1,6 +1,6 @@
 {
   "monitoring_version": "1.0.0",
-  "updated_at": "2026-07-24 01:55:19",
+  "updated_at": "2026-10-16 15:55:23",
   "summary": {
     "module_count": 11,
     "ok_count": 11,
@@ -8,14 +8,14 @@
     "stale_count": 0,
     "critical_alerts": 1,
     "warning_alerts": 4,
-    "info_alerts": 1,
+    "info_alerts": 2,
     "recent_task_count": 10,
-    "failed_task_runs": 2,
-    "last_task_command": "serve",
+    "failed_task_runs": 3,
+    "last_task_command": "all",
     "last_task_status": "success",
-    "last_success_at": "2026-07-24 01:55:04",
+    "last_success_at": "2026-10-16 15:42:48",
     "registry_artifact_count": 10,
-    "registry_with_task_lineage_count": 2,
+    "registry_with_task_lineage_count": 4,
     "registry_degraded_count": 1
   },
   "modules": [
@@ -25,9 +25,9 @@
       "path": "latest.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.02,
+      "age_hours": 0.05,
       "item_count": 1,
-      "updated_at": "2026-07-24 01:54:14",
+      "updated_at": "2026-10-16 15:52:27",
       "dependencies": []
     },
     {
@@ -36,9 +36,9 @@
       "path": "stocks/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.03,
-      "item_count": 5520,
-      "updated_at": "2026-07-24 01:53:38",
+      "age_hours": 0.0,
+      "item_count": 5786,
+      "updated_at": "2026-10-16 15:55:21",
       "dependencies": [
         "market"
       ]
@@ -49,9 +49,9 @@
       "path": "interim_reports/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.07,
+      "age_hours": 0.1,
       "item_count": 1,
-      "updated_at": "2026-07-24 01:51:01",
+      "updated_at": "2026-10-16 15:49:39",
       "dependencies": []
     },
     {
@@ -60,9 +60,9 @@
       "path": "factors/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.01,
-      "item_count": 3172,
-      "updated_at": "2026-07-24 01:54:45",
+      "age_hours": 0.02,
+      "item_count": 3177,
+      "updated_at": "2026-10-16 15:54:22",
       "dependencies": [
         "stocks"
       ]
@@ -73,9 +73,9 @@
       "path": "strategy/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.0,
-      "item_count": 3048,
-      "updated_at": "2026-07-24 01:55:14",
+      "age_hours": 0.01,
+      "item_count": 3217,
+      "updated_at": "2026-10-16 15:54:59",
       "dependencies": [
         "stocks",
         "factors"
@@ -83,13 +83,13 @@
     },
     {
       "name": "strategy_backtest",
-      "label": "一年离线策略验证",
+      "label": "五年离线策略验证",
       "path": "strategy_backtest/status.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.0,
-      "item_count": 1,
-      "updated_at": "2026-07-24 01:55:18",
+      "age_hours": 0.12,
+      "item_count": 0,
+      "updated_at": "2026-10-16 15:48:07",
       "dependencies": [
         "strategy"
       ]
@@ -102,7 +102,7 @@
       "status": "ok",
       "age_hours": 0.0,
       "item_count": 1,
-      "updated_at": "2026-07-24 01:55:18",
+      "updated_at": "2026-10-16 15:55:22",
       "dependencies": [
         "strategy",
         "strategy_backtest"
@@ -114,9 +114,9 @@
       "path": "iteration/worker_status.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.15,
+      "age_hours": 0.18,
       "item_count": 1,
-      "updated_at": "2026-07-24 01:46:22",
+      "updated_at": "2026-10-16 15:44:37",
       "dependencies": [
         "iteration"
       ]
@@ -128,8 +128,8 @@
       "exists": true,
       "status": "ok",
       "age_hours": 0.0,
-      "item_count": 9573,
-      "updated_at": "2026-07-24 01:55:18",
+      "item_count": 6912,
+      "updated_at": "2026-10-16 15:55:14",
       "dependencies": [
         "market",
         "interim_reports",
@@ -144,9 +144,9 @@
       "path": "task_runs/index.json",
       "exists": true,
       "status": "ok",
-      "age_hours": 0.0,
-      "item_count": 62,
-      "updated_at": "2026-07-24 01:55:04",
+      "age_hours": 0.21,
+      "item_count": 100,
+      "updated_at": "2026-10-16 15:42:48",
       "dependencies": []
     },
     {
@@ -157,7 +157,7 @@
       "status": "ok",
       "age_hours": 0.0,
       "item_count": 10,
-      "updated_at": "2026-07-24 01:55:19",
+      "updated_at": "2026-10-16 15:55:22",
       "dependencies": [
         "task_runs"
       ]
@@ -167,357 +167,420 @@
     {
       "level": "critical",
       "module": "quality",
-      "message": "20只股票质量错误",
+      "message": "282只股票质量错误",
       "source": "quality/latest.json"
     },
     {
       "level": "warning",
       "module": "quality",
-      "message": "1只股票质量警告",
+      "message": "8只股票质量警告",
       "source": "quality/latest.json"
     },
     {
       "level": "warning",
       "module": "quality",
-      "message": "20只股票被阻断因子计算",
+      "message": "282只股票被阻断因子计算",
       "source": "quality/latest.json"
     },
     {
       "level": "warning",
       "module": "interim_reports",
-      "message": "中报数据不可用，失败接口 4 个",
+      "message": "中报数据仅部分可用",
       "source": "interim_reports/index.json"
     },
     {
       "level": "warning",
       "module": "task_runs",
-      "message": "最近10次任务有2次失败",
+      "message": "最近10次任务有3次失败",
       "source": "task_runs/index.json"
     },
     {
       "level": "info",
       "module": "recommendations",
-      "message": "长线推荐缺额4只",
+      "message": "每日筛选推荐推荐缺额5只",
+      "source": "recommendations/summary.json"
+    },
+    {
+      "level": "info",
+      "module": "recommendations",
+      "message": "激进板筛选推荐推荐缺额5只",
       "source": "recommendations/summary.json"
     }
   ],
   "recent_task_runs": [
     {
-      "run_id": "20260724_013848_922817_serve",
-      "command": "serve",
-      "argv": [
-        "serve"
-      ],
-      "status": "success",
-      "started_at": "2026-07-24 01:38:48",
-      "ended_at": "2026-07-24 01:55:04",
-      "duration_sec": 976.0089,
-      "error": {},
-      "skip_reason": "",
-      "artifacts": [],
-      "path": "task_runs/20260724_013848_922817_serve.json"
-    },
-    {
-      "run_id": "20260724_014613_767574_all",
+      "run_id": "20261016_153609_194731_all",
       "command": "all",
       "argv": [
         "all"
       ],
       "status": "success",
-      "started_at": "2026-07-24 01:46:13",
-      "ended_at": "2026-07-24 01:48:06",
-      "duration_sec": 112.3233,
+      "started_at": "2026-10-16 15:36:09",
+      "ended_at": "2026-10-16 15:42:48",
+      "duration_sec": 399.0281,
       "error": {},
       "skip_reason": "",
       "artifacts": [
         {
           "path": "manifests/phase1_market_data.json",
           "exists": true,
-          "size": 1757,
-          "mtime": "2026-07-24 01:46:20"
+          "size": 896,
+          "mtime": "2026-10-16 15:36:52"
         },
         {
           "path": "normalized/market.instruments/security_master.json",
           "exists": true,
-          "size": 1878152,
-          "mtime": "2026-07-24 01:46:16"
+          "size": 1998193,
+          "mtime": "2026-10-16 15:36:09"
         },
         {
           "path": "normalized/market.trading_status/events.json",
           "exists": true,
           "size": 612,
-          "mtime": "2026-07-24 01:46:16"
+          "mtime": "2026-07-24 01:50:55"
         },
         {
           "path": "normalized/market.corporate_actions/ex_factors.json",
           "exists": true,
-          "size": 409,
-          "mtime": "2026-07-24 01:46:20"
+          "size": 433,
+          "mtime": "2026-10-16 15:36:52"
         },
         {
           "path": "monitoring/snapshot.json",
           "exists": true,
-          "size": 20048,
-          "mtime": "2026-07-24 01:48:06"
+          "size": 21243,
+          "mtime": "2026-10-16 15:42:48"
         }
       ],
-      "path": "task_runs/20260724_014613_767574_all.json"
+      "path": "task_runs/20261016_153609_194731_all.json"
     },
     {
-      "run_id": "20260724_013346_935363_all",
-      "command": "all",
+      "run_id": "20261016_151320_760966_recommend",
+      "command": "recommend",
       "argv": [
-        "all"
+        "recommend",
+        "--limit",
+        "20"
       ],
       "status": "success",
-      "started_at": "2026-07-24 01:33:46",
-      "ended_at": "2026-07-24 01:39:52",
-      "duration_sec": 365.4933,
+      "started_at": "2026-10-16 15:13:20",
+      "ended_at": "2026-10-16 15:13:26",
+      "duration_sec": 5.967,
       "error": {},
       "skip_reason": "",
       "artifacts": [
         {
-          "path": "manifests/phase1_market_data.json",
+          "path": "recommendations/summary.json",
           "exists": true,
-          "size": 1757,
-          "mtime": "2026-07-24 01:33:54"
-        },
-        {
-          "path": "normalized/market.instruments/security_master.json",
-          "exists": true,
-          "size": 1878152,
-          "mtime": "2026-07-24 01:33:49"
-        },
-        {
-          "path": "normalized/market.trading_status/events.json",
-          "exists": true,
-          "size": 612,
-          "mtime": "2026-07-24 01:33:49"
-        },
-        {
-          "path": "normalized/market.corporate_actions/ex_factors.json",
-          "exists": true,
-          "size": 409,
-          "mtime": "2026-07-24 01:33:54"
-        },
-        {
-          "path": "monitoring/snapshot.json",
-          "exists": true,
-          "size": 19555,
-          "mtime": "2026-07-24 01:39:52"
+          "size": 29851893,
+          "mtime": "2026-10-16 15:13:26"
         }
       ],
-      "path": "task_runs/20260724_013346_935363_all.json"
+      "path": "task_runs/20261016_151320_760966_recommend.json"
     },
     {
-      "run_id": "20260724_012239_485963_all",
+      "run_id": "20261016_151303_660593_factor",
+      "command": "factor",
+      "argv": [
+        "factor"
+      ],
+      "status": "success",
+      "started_at": "2026-10-16 15:13:03",
+      "ended_at": "2026-10-16 15:13:05",
+      "duration_sec": 2.24,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "factors/index.json",
+          "exists": true,
+          "size": 55757,
+          "mtime": "2026-10-16 15:13:05"
+        }
+      ],
+      "path": "task_runs/20261016_151303_660593_factor.json"
+    },
+    {
+      "run_id": "20261016_151236_202201_all",
       "command": "all",
       "argv": [
         "all"
       ],
       "status": "failed",
-      "started_at": "2026-07-24 01:22:39",
-      "ended_at": "2026-07-24 01:27:57",
-      "duration_sec": 317.6601,
+      "started_at": "2026-10-16 15:12:36",
+      "ended_at": "2026-10-16 15:12:42",
+      "duration_sec": 6.6102,
       "error": {
-        "type": "KeyboardInterrupt",
-        "message": ""
+        "type": "ConnectionError",
+        "message": "Failed to connect to https://api.tickflow.org/v1/exchanges/SH/instruments: [Errno 8] nodename nor servname provided, or not known"
       },
       "skip_reason": "",
       "artifacts": [
         {
           "path": "manifests/phase1_market_data.json",
           "exists": true,
-          "size": 1757,
-          "mtime": "2026-07-24 01:22:46"
+          "size": 896,
+          "mtime": "2026-10-15 14:55:34"
         },
         {
           "path": "normalized/market.instruments/security_master.json",
           "exists": true,
-          "size": 1878152,
-          "mtime": "2026-07-24 01:22:42"
+          "size": 1997851,
+          "mtime": "2026-10-15 14:55:23"
         },
         {
           "path": "normalized/market.trading_status/events.json",
           "exists": true,
           "size": 612,
-          "mtime": "2026-07-24 01:22:42"
+          "mtime": "2026-07-24 01:50:55"
         },
         {
           "path": "normalized/market.corporate_actions/ex_factors.json",
           "exists": true,
           "size": 409,
-          "mtime": "2026-07-24 01:22:46"
+          "mtime": "2026-10-15 14:55:34"
         },
         {
           "path": "monitoring/snapshot.json",
           "exists": true,
-          "size": 16706,
-          "mtime": "2026-07-24 00:57:55"
+          "size": 19767,
+          "mtime": "2026-10-15 15:54:40"
         }
       ],
-      "path": "task_runs/20260724_012239_485963_all.json"
+      "path": "task_runs/20261016_151236_202201_all.json"
     },
     {
-      "run_id": "20260724_012046_838644_serve",
-      "command": "serve",
-      "argv": [
-        "serve",
-        "--port",
-        "8080"
-      ],
-      "status": "success",
-      "started_at": "2026-07-24 01:20:46",
-      "ended_at": "2026-07-24 01:21:08",
-      "duration_sec": 21.3216,
-      "error": {},
-      "skip_reason": "",
-      "artifacts": [],
-      "path": "task_runs/20260724_012046_838644_serve.json"
-    },
-    {
-      "run_id": "20260724_010643_230832_serve",
-      "command": "serve",
-      "argv": [
-        "serve",
-        "--port",
-        "8080"
-      ],
-      "status": "success",
-      "started_at": "2026-07-24 01:06:43",
-      "ended_at": "2026-07-24 01:07:15",
-      "duration_sec": 32.44,
-      "error": {},
-      "skip_reason": "",
-      "artifacts": [],
-      "path": "task_runs/20260724_010643_230832_serve.json"
-    },
-    {
-      "run_id": "20260724_005103_962968_all",
+      "run_id": "20261015_145521_078042_all",
       "command": "all",
       "argv": [
         "all"
       ],
       "status": "success",
-      "started_at": "2026-07-24 00:51:03",
-      "ended_at": "2026-07-24 00:57:55",
-      "duration_sec": 411.4221,
+      "started_at": "2026-10-15 14:55:21",
+      "ended_at": "2026-10-15 15:54:40",
+      "duration_sec": 3559.3786,
       "error": {},
       "skip_reason": "",
       "artifacts": [
         {
           "path": "manifests/phase1_market_data.json",
           "exists": true,
-          "size": 1757,
-          "mtime": "2026-07-24 00:51:11"
+          "size": 896,
+          "mtime": "2026-10-15 14:55:34"
         },
         {
           "path": "normalized/market.instruments/security_master.json",
           "exists": true,
-          "size": 1878152,
-          "mtime": "2026-07-24 00:51:06"
+          "size": 1997851,
+          "mtime": "2026-10-15 14:55:23"
         },
         {
           "path": "normalized/market.trading_status/events.json",
           "exists": true,
           "size": 612,
-          "mtime": "2026-07-24 00:51:06"
+          "mtime": "2026-07-24 01:50:55"
         },
         {
           "path": "normalized/market.corporate_actions/ex_factors.json",
           "exists": true,
           "size": 409,
-          "mtime": "2026-07-24 00:51:11"
+          "mtime": "2026-10-15 14:55:34"
         },
         {
           "path": "monitoring/snapshot.json",
           "exists": true,
-          "size": 16706,
-          "mtime": "2026-07-24 00:57:55"
+          "size": 19767,
+          "mtime": "2026-10-15 15:54:40"
         }
       ],
-      "path": "task_runs/20260724_005103_962968_all.json"
+      "path": "task_runs/20261015_145521_078042_all.json"
     },
     {
-      "run_id": "20260724_005345_060067_serve",
-      "command": "serve",
+      "run_id": "20260903_144925_489217_all",
+      "command": "all",
       "argv": [
-        "serve"
+        "all"
       ],
       "status": "success",
-      "started_at": "2026-07-24 00:53:45",
-      "ended_at": "2026-07-24 00:57:14",
-      "duration_sec": 209.1837,
+      "started_at": "2026-09-03 14:49:25",
+      "ended_at": "2026-09-03 14:53:24",
+      "duration_sec": 239.3068,
       "error": {},
       "skip_reason": "",
-      "artifacts": [],
-      "path": "task_runs/20260724_005345_060067_serve.json"
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 896,
+          "mtime": "2026-09-03 14:49:33"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1887000,
+          "mtime": "2026-09-03 14:49:28"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 01:50:55"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-09-03 14:49:33"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 19084,
+          "mtime": "2026-09-03 14:53:24"
+        }
+      ],
+      "path": "task_runs/20260903_144925_489217_all.json"
     },
     {
-      "run_id": "20260724_004418_546907_all",
+      "run_id": "20260903_144905_767983_all",
       "command": "all",
       "argv": [
         "all"
       ],
       "status": "failed",
-      "started_at": "2026-07-24 00:44:18",
-      "ended_at": "2026-07-24 00:51:01",
-      "duration_sec": 402.9881,
+      "started_at": "2026-09-03 14:49:05",
+      "ended_at": "2026-09-03 14:49:13",
+      "duration_sec": 7.7062,
       "error": {
-        "type": "KeyboardInterrupt",
-        "message": ""
+        "type": "ConnectionError",
+        "message": "Failed to connect to https://api.tickflow.org/v1/exchanges/SH/instruments: [Errno 8] nodename nor servname provided, or not known"
       },
       "skip_reason": "",
       "artifacts": [
         {
           "path": "manifests/phase1_market_data.json",
           "exists": true,
-          "size": 1757,
-          "mtime": "2026-07-24 00:44:27"
+          "size": 896,
+          "mtime": "2026-08-27 23:37:32"
         },
         {
           "path": "normalized/market.instruments/security_master.json",
           "exists": true,
-          "size": 1878152,
-          "mtime": "2026-07-24 00:44:23"
+          "size": 1885638,
+          "mtime": "2026-08-27 23:37:26"
         },
         {
           "path": "normalized/market.trading_status/events.json",
           "exists": true,
           "size": 612,
-          "mtime": "2026-07-24 00:44:23"
+          "mtime": "2026-07-24 01:50:55"
         },
         {
           "path": "normalized/market.corporate_actions/ex_factors.json",
           "exists": true,
           "size": 409,
-          "mtime": "2026-07-24 00:44:27"
+          "mtime": "2026-08-27 23:37:32"
         },
         {
           "path": "monitoring/snapshot.json",
           "exists": true,
-          "size": 15425,
-          "mtime": "2026-07-23 00:56:42"
+          "size": 16197,
+          "mtime": "2026-08-27 23:41:27"
         }
       ],
-      "path": "task_runs/20260724_004418_546907_all.json"
+      "path": "task_runs/20260903_144905_767983_all.json"
     },
     {
-      "run_id": "20260724_004838_606440_serve",
+      "run_id": "20260901_211518_011756_serve",
       "command": "serve",
       "argv": [
         "serve",
+        "--host",
+        "127.0.0.1",
         "--port",
         "8080"
       ],
-      "status": "success",
-      "started_at": "2026-07-24 00:48:38",
-      "ended_at": "2026-07-24 00:49:47",
-      "duration_sec": 69.258,
-      "error": {},
+      "status": "failed",
+      "started_at": "2026-09-01 21:15:18",
+      "ended_at": "2026-09-01 21:15:18",
+      "duration_sec": 0.0058,
+      "error": {
+        "type": "PermissionError",
+        "message": "[Errno 1] Operation not permitted"
+      },
       "skip_reason": "",
       "artifacts": [],
-      "path": "task_runs/20260724_004838_606440_serve.json"
+      "path": "task_runs/20260901_211518_011756_serve.json"
+    },
+    {
+      "run_id": "20260901_211501_199846_recommend",
+      "command": "recommend",
+      "argv": [
+        "recommend",
+        "--limit",
+        "5"
+      ],
+      "status": "success",
+      "started_at": "2026-09-01 21:15:01",
+      "ended_at": "2026-09-01 21:15:07",
+      "duration_sec": 6.0093,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "recommendations/summary.json",
+          "exists": true,
+          "size": 27372837,
+          "mtime": "2026-09-01 21:15:07"
+        }
+      ],
+      "path": "task_runs/20260901_211501_199846_recommend.json"
+    },
+    {
+      "run_id": "20260827_233723_033932_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-08-27 23:37:23",
+      "ended_at": "2026-08-27 23:41:28",
+      "duration_sec": 245.22,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 896,
+          "mtime": "2026-08-27 23:37:32"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1885638,
+          "mtime": "2026-08-27 23:37:26"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 01:50:55"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-08-27 23:37:32"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 16197,
+          "mtime": "2026-08-27 23:41:27"
+        }
+      ],
+      "path": "task_runs/20260827_233723_033932_all.json"
     }
   ],
   "data_registry": {
@@ -526,7 +589,7 @@
       "existing_count": 10,
       "missing_count": 0,
       "degraded_count": 1,
-      "with_task_lineage_count": 2
+      "with_task_lineage_count": 4
     },
     "lineage": [
       {
@@ -534,7 +597,7 @@
         "label": "大盘行情",
         "inputs": [],
         "output": "latest.json",
-        "generated_by": "",
+        "generated_by": "market",
         "input_status": {}
       },
       {
@@ -564,7 +627,7 @@
           "stocks"
         ],
         "output": "factors/index.json",
-        "generated_by": "",
+        "generated_by": "factor",
         "input_status": {
           "stocks": "ok"
         }
@@ -585,7 +648,7 @@
       },
       {
         "module": "strategy_backtest",
-        "label": "一年离线策略验证",
+        "label": "五年离线策略验证",
         "inputs": [
           "strategy"
         ],
@@ -703,7 +766,7 @@
     },
     {
       "module": "strategy_backtest",
-      "label": "一年离线策略验证",
+      "label": "五年离线策略验证",
       "inputs": [
         "strategy"
       ],

@@ -1,0 +1,140 @@
+{
+  "code": "603580",
+  "name": "艾艾精工",
+  "trade_date": "2026-08-10",
+  "updated_at": "2026-08-11 12:07:10",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-08-10",
+    "close": 59.21,
+    "market_cap_yi": 77.37,
+    "float_cap_yi": 77.37,
+    "pe_ttm": 187.70575166,
+    "pe_static": 176.48688554,
+    "pb": 17.00200752,
+    "ps": 20.11386165,
+    "peg": -0.009977112333
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-08-08",
+        "ex_date": "2026-08-14",
+        "record_date": "2026-08-13",
+        "cash_div": 0.82,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2025-08-02",
+        "ex_date": "2025-08-08",
+        "record_date": "2025-08-07",
+        "cash_div": 0.82,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2024-07-27",
+        "ex_date": "2024-08-02",
+        "record_date": "2024-08-01",
+        "cash_div": 0.82,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2023-04-29",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      },
+      {
+        "announce_date": "2022-08-17",
+        "ex_date": "2022-08-25",
+        "record_date": "2022-08-24",
+        "cash_div": 1.64,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2020-05-26",
+        "unlock_shares": 88445000.0,
+        "unlock_value_yi": 10.44,
+        "pct_total": 0.676841157942,
+        "pct_float": 0.676841157942,
+        "holder_type": "首发原股东限售股份"
+      },
+      {
+        "unlock_date": "2018-05-31",
+        "unlock_shares": 6825000.0,
+        "unlock_value_yi": 1.43,
+        "pct_total": 0.073121343933,
+        "pct_float": 0.226270596426,
+        "holder_type": "首发原股东限售股份"
+      }
+    ],
+    "earnings_forecast": null
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3900.3523,
+        "change_pct": 0.565
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "close": 14110.121,
+        "change_pct": -0.241
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3515.56,
+        "change_pct": -0.554
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1701.2916,
+        "change_pct": 0.45
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -755.77,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": 125.78
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "error",
+    "quality_score": 55.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "earnings_forecast",
+    "margin_sse",
+    "northbound"
+  ]
+}

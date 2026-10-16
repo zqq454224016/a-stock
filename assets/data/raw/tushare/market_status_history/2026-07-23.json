@@ -1,0 +1,11 @@
+{
+  "source": "tushare",
+  "start_date": "2026-06-23",
+  "end_date": "2026-07-23",
+  "errors": {
+    "suspension_events": "Tushare suspend_d 失败: 抱歉，您没有接口(suspend_d)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
+    "st_daily": "Tushare stock_st 失败: 抱歉，您没有接口(stock_st)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。"
+  },
+  "suspension_events": [],
+  "st_daily": []
+}

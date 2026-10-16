@@ -1,0 +1,384 @@
+{
+  "status": "complete",
+  "audit_version": "1.0.0",
+  "updated_at": "2026-10-16 14:49:44",
+  "source_run_id": "20261016T143503",
+  "research_version": "15.3.0",
+  "selected_candidate": "tf_low_volatility_leader",
+  "selected_horizon": "swing",
+  "reported_promotion_passed": false,
+  "reported_decision": "research_diagnostic_wait_forward_shadow",
+  "diagnostic_passed_horizons": [],
+  "passed_horizons": [],
+  "verdict": "strategy_defect_and_policy_hold",
+  "summary": "对抗校验：既有策略层面缺陷（组合/容量/状态依赖或晋级条款失败），也被历史OOS污染政策阻断正式晋级；即使政策放开，当前证据仍不足以晋级。",
+  "promotion_clauses": [
+    {
+      "id": "stability_segment_count",
+      "required": ">=2 development segments",
+      "actual": 2,
+      "passed": true
+    },
+    {
+      "id": "stability_early_trades",
+      "required": ">=100",
+      "actual": 23222,
+      "passed": true
+    },
+    {
+      "id": "stability_early_avg_net_return",
+      "required": ">0",
+      "actual": 0.4429,
+      "passed": true
+    },
+    {
+      "id": "stability_early_median_net_return",
+      "required": ">0",
+      "actual": -0.5626,
+      "passed": false
+    },
+    {
+      "id": "stability_late_trades",
+      "required": ">=100",
+      "actual": 26462,
+      "passed": true
+    },
+    {
+      "id": "stability_late_avg_net_return",
+      "required": ">0",
+      "actual": 1.881,
+      "passed": true
+    },
+    {
+      "id": "stability_late_median_net_return",
+      "required": ">0",
+      "actual": 0.5838,
+      "passed": true
+    },
+    {
+      "id": "oos_trades",
+      "required": ">=300",
+      "actual": 1771,
+      "passed": true
+    },
+    {
+      "id": "oos_hit_rate_vs_baseline",
+      "required": ">=0.5400",
+      "actual": 0.4952,
+      "passed": false
+    },
+    {
+      "id": "oos_avg_net_return_vs_baseline",
+      "required": ">0.0000",
+      "actual": 0.6469,
+      "passed": true
+    },
+    {
+      "id": "oos_median_net_return",
+      "required": ">0",
+      "actual": -0.0731,
+      "passed": false
+    },
+    {
+      "id": "oos_drawdown_not_worse_than_baseline",
+      "required": ">=-66.4193",
+      "actual": -28.6813,
+      "passed": true
+    },
+    {
+      "id": "portfolio_accepted_trades",
+      "required": ">=30",
+      "actual": 54,
+      "passed": true
+    },
+    {
+      "id": "portfolio_total_return_positive",
+      "required": ">0",
+      "actual": -13.1721,
+      "passed": false
+    },
+    {
+      "id": "portfolio_beats_baseline",
+      "required": ">-53.3511",
+      "actual": -13.1721,
+      "passed": true
+    },
+    {
+      "id": "portfolio_hit_rate",
+      "required": ">=0.50",
+      "actual": 0.4815,
+      "passed": false
+    },
+    {
+      "id": "promotion_passed_recomputed",
+      "required": true,
+      "actual": false,
+      "passed": false
+    }
+  ],
+  "failed_promotion_clauses": [
+    {
+      "id": "stability_early_median_net_return",
+      "required": ">0",
+      "actual": -0.5626,
+      "passed": false
+    },
+    {
+      "id": "oos_hit_rate_vs_baseline",
+      "required": ">=0.5400",
+      "actual": 0.4952,
+      "passed": false
+    },
+    {
+      "id": "oos_median_net_return",
+      "required": ">0",
+      "actual": -0.0731,
+      "passed": false
+    },
+    {
+      "id": "portfolio_total_return_positive",
+      "required": ">0",
+      "actual": -13.1721,
+      "passed": false
+    },
+    {
+      "id": "portfolio_hit_rate",
+      "required": ">=0.50",
+      "actual": 0.4815,
+      "passed": false
+    },
+    {
+      "id": "promotion_passed_recomputed",
+      "required": true,
+      "actual": false,
+      "passed": false
+    }
+  ],
+  "eligibility": {
+    "eligible": true,
+    "checks": [
+      {
+        "id": "train_trades",
+        "passed": true,
+        "actual": 54278,
+        "required": 200
+      },
+      {
+        "id": "train_avg_net_return",
+        "passed": true,
+        "actual": 0.9102,
+        "required": ">0"
+      },
+      {
+        "id": "dev_segment_0_avg_net_return",
+        "passed": true,
+        "actual": 0.4429,
+        "required": ">0"
+      },
+      {
+        "id": "dev_segment_1_avg_net_return",
+        "passed": true,
+        "actual": 1.881,
+        "required": ">0"
+      }
+    ]
+  },
+  "signal_vs_portfolio": {
+    "train": {
+      "signal_trades": 54278,
+      "signal_hit_rate": 0.4931,
+      "signal_avg_net_return_pct": 0.9102,
+      "signal_median_net_return_pct": -0.1213,
+      "portfolio_accepted_trades": 1600,
+      "portfolio_rejected_capacity": 52678,
+      "portfolio_acceptance_rate": 0.0295,
+      "portfolio_hit_rate": 0.4519,
+      "portfolio_total_return_pct": 175.1222,
+      "portfolio_max_drawdown_pct": -53.8372,
+      "signal_positive_portfolio_negative": false,
+      "capacity_starved": true
+    },
+    "oos": {
+      "signal_trades": 1771,
+      "signal_hit_rate": 0.4952,
+      "signal_avg_net_return_pct": 0.6469,
+      "signal_median_net_return_pct": -0.0731,
+      "portfolio_accepted_trades": 54,
+      "portfolio_rejected_capacity": 1717,
+      "portfolio_acceptance_rate": 0.0305,
+      "portfolio_hit_rate": 0.4815,
+      "portfolio_total_return_pct": -13.1721,
+      "portfolio_max_drawdown_pct": -28.6813,
+      "signal_positive_portfolio_negative": true,
+      "capacity_starved": true
+    }
+  },
+  "adversarial_attacks": [
+    {
+      "id": "policy_historical_oos_block",
+      "question": "正式晋级是否被历史OOS污染策略硬阻断？",
+      "finding": false,
+      "detail": "diagnostic_passed=[], passed_horizons=[], historical_oos_can_promote_new_candidates=false",
+      "implies": null
+    },
+    {
+      "id": "metric_clause_failure",
+      "question": "忽略政策阻断后，晋级公式本身是否仍失败？",
+      "finding": true,
+      "detail": [
+        "stability_early_median_net_return",
+        "oos_hit_rate_vs_baseline",
+        "oos_median_net_return",
+        "portfolio_total_return_positive",
+        "portfolio_hit_rate",
+        "promotion_passed_recomputed"
+      ],
+      "implies": "strategy_defect"
+    },
+    {
+      "id": "signal_portfolio_divergence",
+      "question": "信号级赚钱但组合级亏损？",
+      "finding": true,
+      "detail": {
+        "train": {
+          "signal_trades": 54278,
+          "signal_hit_rate": 0.4931,
+          "signal_avg_net_return_pct": 0.9102,
+          "signal_median_net_return_pct": -0.1213,
+          "portfolio_accepted_trades": 1600,
+          "portfolio_rejected_capacity": 52678,
+          "portfolio_acceptance_rate": 0.0295,
+          "portfolio_hit_rate": 0.4519,
+          "portfolio_total_return_pct": 175.1222,
+          "portfolio_max_drawdown_pct": -53.8372,
+          "signal_positive_portfolio_negative": false,
+          "capacity_starved": true
+        },
+        "oos": {
+          "signal_trades": 1771,
+          "signal_hit_rate": 0.4952,
+          "signal_avg_net_return_pct": 0.6469,
+          "signal_median_net_return_pct": -0.0731,
+          "portfolio_accepted_trades": 54,
+          "portfolio_rejected_capacity": 1717,
+          "portfolio_acceptance_rate": 0.0305,
+          "portfolio_hit_rate": 0.4815,
+          "portfolio_total_return_pct": -13.1721,
+          "portfolio_max_drawdown_pct": -28.6813,
+          "signal_positive_portfolio_negative": true,
+          "capacity_starved": true
+        }
+      },
+      "implies": "strategy_untradeable_edge"
+    },
+    {
+      "id": "capacity_starvation",
+      "question": "容量拒单是否吃掉绝大部分信号？",
+      "finding": true,
+      "detail": {
+        "train_acceptance": 0.0295,
+        "oos_acceptance": 0.0305
+      },
+      "implies": "strategy_capacity_fragile"
+    },
+    {
+      "id": "regime_concentration",
+      "question": "候选是否只允许单一市场状态？",
+      "finding": false,
+      "detail": {
+        "allowed_regimes": []
+      },
+      "implies": null
+    },
+    {
+      "id": "family_wide_weakness",
+      "question": "候选族是否整体信号OOS偏弱？",
+      "finding": false,
+      "detail": {
+        "positive_signal_oos_count": 4,
+        "positive_signal_oos": [
+          "tf_pullback_rising_regime",
+          "tf_pullback_rising_strict",
+          "paper_tsmom_12_1_monthly",
+          "study_pa_range_edge_reversal"
+        ],
+        "candidate_count": 37,
+        "negative_portfolio_train_count": 19
+      },
+      "implies": null
+    },
+    {
+      "id": "contamination_scope",
+      "question": "当前horizon评估是否声明为污染诊断窗？",
+      "finding": true,
+      "detail": [
+        {
+          "horizon": "short",
+          "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+          "promotion_passed_reported": false,
+          "contaminated": true
+        },
+        {
+          "horizon": "swing",
+          "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+          "promotion_passed_reported": false,
+          "contaminated": true
+        },
+        {
+          "horizon": "medium",
+          "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+          "promotion_passed_reported": false,
+          "contaminated": true
+        }
+      ],
+      "implies": "policy_hold"
+    },
+    {
+      "id": "eligibility_vs_promotion",
+      "question": "候选能进eligible但最终无法正式晋级？",
+      "finding": true,
+      "detail": {
+        "eligible": true,
+        "checks": [
+          {
+            "id": "train_trades",
+            "passed": true,
+            "actual": 54278,
+            "required": 200
+          },
+          {
+            "id": "train_avg_net_return",
+            "passed": true,
+            "actual": 0.9102,
+            "required": ">0"
+          },
+          {
+            "id": "dev_segment_0_avg_net_return",
+            "passed": true,
+            "actual": 0.4429,
+            "required": ">0"
+          },
+          {
+            "id": "dev_segment_1_avg_net_return",
+            "passed": true,
+            "actual": 1.881,
+            "required": ">0"
+          }
+        ]
+      },
+      "implies": null
+    }
+  ],
+  "policy": {
+    "historical_promotion_blocked": true,
+    "historical_oos_already_observed": true,
+    "recent_60d_diagnostic_cannot_select_or_tune": true,
+    "oos_used_for_selection": false
+  },
+  "next_actions": [
+    "升 research_version，预登记新假设族；禁止在同一OOS上调参",
+    "优先改持仓/容量/相关性规则，再测组合级收益是否仍为正",
+    "继续不可覆盖前向影子记账；满窗只评估一次，不把诊断窗当晋级证据",
+    "对外保持空正式推荐，直到组合级与政策双重通过"
+  ]
+}

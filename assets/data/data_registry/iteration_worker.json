@@ -5,23 +5,21 @@
   "path": "iteration/worker_status.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/iteration/worker_status.json",
   "exists": true,
-  "size": 1066,
-  "file_mtime": "2026-07-24 01:46:22",
-  "updated_at": "2026-07-24 01:46:22",
+  "size": 173,
+  "file_mtime": "2026-10-16 15:44:37",
+  "updated_at": "2026-10-16 15:44:37",
   "record_count": 1,
   "field_summary": {
     "top_level_fields": [
       "actions",
       "ai_scope",
-      "execution_mode",
       "interval_sec",
-      "next_run_after",
       "pid",
       "status",
       "updated_at"
     ],
     "list_fields": {
-      "actions": 3
+      "actions": 0
     },
     "dict_fields": []
   },
@@ -42,5 +40,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

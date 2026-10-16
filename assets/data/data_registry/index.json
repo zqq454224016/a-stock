@@ -1,12 +1,12 @@
 {
   "registry_version": "1.0.0",
-  "updated_at": "2026-07-24 01:55:19",
+  "updated_at": "2026-10-16 15:55:22",
   "summary": {
     "artifact_count": 10,
     "existing_count": 10,
     "missing_count": 0,
     "degraded_count": 1,
-    "with_task_lineage_count": 2
+    "with_task_lineage_count": 4
   },
   "items": [
     {
@@ -16,12 +16,13 @@
       "path": "latest.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/latest.json",
       "exists": true,
-      "size": 7023,
-      "file_mtime": "2026-07-24 01:54:14",
-      "updated_at": "2026-07-24 01:54:14",
+      "size": 6865,
+      "file_mtime": "2026-10-16 15:52:27",
+      "updated_at": "2026-10-16 15:52:27",
       "record_count": 1,
       "field_summary": {
         "top_level_fields": [
+          "component_trade_dates",
           "degraded",
           "fund_flow",
           "indices",
@@ -29,6 +30,7 @@
           "limitations",
           "market_distribution",
           "spot_scope",
+          "stock_cache_date_coverage",
           "top_gainers",
           "top_losers",
           "top_volume",
@@ -36,7 +38,7 @@
           "updated_at"
         ],
         "list_fields": {
-          "indices": 4,
+          "indices": 2,
           "market_distribution": 7,
           "top_gainers": 10,
           "top_losers": 10,
@@ -45,7 +47,9 @@
           "limitations": 0
         },
         "dict_fields": [
-          "fund_flow"
+          "component_trade_dates",
+          "fund_flow",
+          "stock_cache_date_coverage"
         ]
       },
       "data_quality": {
@@ -56,14 +60,21 @@
         "limitations": []
       },
       "dependencies": [],
-      "generated_by": {},
+      "generated_by": {
+        "run_id": "20260805_000516_601443_market",
+        "command": "market",
+        "status": "success",
+        "ended_at": "2026-08-05 00:05:39",
+        "duration_sec": 22.7302,
+        "artifact_exists_at_finish": true
+      },
       "source": {
         "declared_output": "latest.json",
         "expected_command": "market",
-        "payload_trade_date": "2026-07-22",
+        "payload_trade_date": "2026-10-16",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:18"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -72,17 +83,17 @@
       "path": "stocks/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/stocks/index.json",
       "exists": true,
-      "size": 1590127,
-      "file_mtime": "2026-07-24 01:53:38",
-      "updated_at": "2026-07-24 01:53:38",
-      "record_count": 5520,
+      "size": 1670624,
+      "file_mtime": "2026-10-16 15:55:21",
+      "updated_at": "2026-10-16 15:55:21",
+      "record_count": 5786,
       "field_summary": {
         "top_level_fields": [
           "stocks",
           "updated_at"
         ],
         "list_fields": {
-          "stocks": 5520
+          "stocks": 5786
         },
         "dict_fields": []
       },
@@ -97,11 +108,11 @@
         "market"
       ],
       "generated_by": {
-        "run_id": "20260720_235854_034919_stock",
+        "run_id": "20260817_163538_513193_stock",
         "command": "stock",
         "status": "success",
-        "ended_at": "2026-07-20 23:58:55",
-        "duration_sec": 1.8683,
+        "ended_at": "2026-08-17 16:35:52",
+        "duration_sec": 14.1605,
         "artifact_exists_at_finish": true
       },
       "source": {
@@ -110,7 +121,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -119,22 +130,30 @@
       "path": "interim_reports/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/interim_reports/index.json",
       "exists": true,
-      "size": 920,
-      "file_mtime": "2026-07-24 01:51:01",
-      "updated_at": "2026-07-24 01:51:01",
+      "size": 583,
+      "file_mtime": "2026-10-16 15:49:40",
+      "updated_at": "2026-10-16 15:49:39",
       "record_count": 1,
       "field_summary": {
         "top_level_fields": [
+          "as_of",
           "count",
           "dataset",
+          "history_artifact",
+          "limitations",
           "period",
+          "quarantined_future_count",
           "schema_version",
           "source",
           "source_errors",
           "status",
-          "updated_at"
+          "universe_scope",
+          "updated_at",
+          "version_count"
         ],
-        "list_fields": {},
+        "list_fields": {
+          "limitations": 2
+        },
         "dict_fields": [
           "source_errors"
         ]
@@ -144,7 +163,10 @@
         "degraded": true,
         "quality_status": "",
         "quality_score": null,
-        "limitations": []
+        "limitations": [
+          "公开季度摘要主干",
+          "最终候选完整三表需另行补充并以巨潮公告核验"
+        ]
       },
       "dependencies": [],
       "generated_by": {},
@@ -154,7 +176,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -163,17 +185,17 @@
       "path": "factors/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/factors/index.json",
       "exists": true,
-      "size": 1267731,
-      "file_mtime": "2026-07-24 01:54:45",
-      "updated_at": "2026-07-24 01:54:45",
-      "record_count": 3172,
+      "size": 1448895,
+      "file_mtime": "2026-10-16 15:54:22",
+      "updated_at": "2026-10-16 15:54:22",
+      "record_count": 3177,
       "field_summary": {
         "top_level_fields": [
           "stocks",
           "updated_at"
         ],
         "list_fields": {
-          "stocks": 3172
+          "stocks": 3177
         },
         "dict_fields": []
       },
@@ -187,14 +209,21 @@
       "dependencies": [
         "stocks"
       ],
-      "generated_by": {},
+      "generated_by": {
+        "run_id": "20261016_151303_660593_factor",
+        "command": "factor",
+        "status": "success",
+        "ended_at": "2026-10-16 15:13:05",
+        "duration_sec": 2.24,
+        "artifact_exists_at_finish": true
+      },
       "source": {
         "declared_output": "factors/index.json",
         "expected_command": "factor",
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -203,10 +232,10 @@
       "path": "strategy/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/strategy/index.json",
       "exists": true,
-      "size": 657126,
-      "file_mtime": "2026-07-24 01:55:14",
-      "updated_at": "2026-07-24 01:55:14",
-      "record_count": 3048,
+      "size": 694941,
+      "file_mtime": "2026-10-16 15:54:59",
+      "updated_at": "2026-10-16 15:54:59",
+      "record_count": 3217,
       "field_summary": {
         "top_level_fields": [
           "count",
@@ -215,7 +244,7 @@
           "updated_at"
         ],
         "list_fields": {
-          "items": 3048
+          "items": 3217
         },
         "dict_fields": []
       },
@@ -237,28 +266,31 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
       "module": "strategy_backtest",
-      "label": "一年离线策略验证",
+      "label": "五年离线策略验证",
       "path": "strategy_backtest/status.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/strategy_backtest/status.json",
       "exists": true,
-      "size": 124,
-      "file_mtime": "2026-07-24 01:55:18",
-      "updated_at": "2026-07-24 01:55:18",
-      "record_count": 1,
+      "size": 139,
+      "file_mtime": "2026-10-16 15:48:07",
+      "updated_at": "2026-10-16 15:48:07",
+      "record_count": 0,
       "field_summary": {
         "top_level_fields": [
           "completed",
-          "started_at",
+          "items",
           "status",
           "total",
-          "updated_at"
+          "updated_at",
+          "validated"
         ],
-        "list_fields": {},
+        "list_fields": {
+          "items": 0
+        },
         "dict_fields": []
       },
       "data_quality": {
@@ -278,7 +310,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -287,9 +319,9 @@
       "path": "iteration/status.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/iteration/status.json",
       "exists": true,
-      "size": 4657,
-      "file_mtime": "2026-07-24 01:55:18",
-      "updated_at": "2026-07-24 01:55:18",
+      "size": 4595,
+      "file_mtime": "2026-10-16 15:55:22",
+      "updated_at": "2026-10-16 15:55:22",
       "record_count": 1,
       "field_summary": {
         "top_level_fields": [
@@ -310,8 +342,8 @@
         ],
         "list_fields": {
           "gates": 8,
-          "failed_gates": 3,
-          "next_actions": 3,
+          "failed_gates": 4,
+          "next_actions": 2,
           "cleanup_candidates": 6,
           "limitations": 3
         },
@@ -343,7 +375,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -352,23 +384,21 @@
       "path": "iteration/worker_status.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/iteration/worker_status.json",
       "exists": true,
-      "size": 1066,
-      "file_mtime": "2026-07-24 01:46:22",
-      "updated_at": "2026-07-24 01:46:22",
+      "size": 173,
+      "file_mtime": "2026-10-16 15:44:37",
+      "updated_at": "2026-10-16 15:44:37",
       "record_count": 1,
       "field_summary": {
         "top_level_fields": [
           "actions",
           "ai_scope",
-          "execution_mode",
           "interval_sec",
-          "next_run_after",
           "pid",
           "status",
           "updated_at"
         ],
         "list_fields": {
-          "actions": 3
+          "actions": 0
         },
         "dict_fields": []
       },
@@ -389,7 +419,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -398,23 +428,28 @@
       "path": "recommendations/summary.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/recommendations/summary.json",
       "exists": true,
-      "size": 9941304,
-      "file_mtime": "2026-07-24 01:55:18",
-      "updated_at": "2026-07-24 01:55:18",
-      "record_count": 9573,
+      "size": 38898925,
+      "file_mtime": "2026-10-16 15:55:15",
+      "updated_at": "2026-10-16 15:55:14",
+      "record_count": 6912,
       "field_summary": {
         "top_level_fields": [
+          "anti_chase_policy",
           "limitations",
           "market_context",
+          "miss_audit",
           "periods",
           "recommendation_version",
+          "selection_policy",
           "updated_at"
         ],
         "list_fields": {
-          "limitations": 3
+          "limitations": 4
         },
         "dict_fields": [
+          "anti_chase_policy",
           "market_context",
+          "miss_audit",
           "periods"
         ]
       },
@@ -426,7 +461,8 @@
         "limitations": [
           "additional_permission_boards_excluded_from_all_candidate_periods",
           "recommendation_universe_limited_to_locally_available_stock_artifacts",
-          "long_horizon_lacks_dedicated_prediction_model"
+          "legacy_scores_are_ranking_only_and_do_not_gate_daily_recommendations",
+          "same_day_large_gainers_excluded_by_anti_chase_design"
         ]
       },
       "dependencies": [
@@ -437,11 +473,11 @@
         "factors"
       ],
       "generated_by": {
-        "run_id": "20260723_003344_628955_recommend",
+        "run_id": "20261016_151320_760966_recommend",
         "command": "recommend",
         "status": "success",
-        "ended_at": "2026-07-23 00:33:48",
-        "duration_sec": 4.2977,
+        "ended_at": "2026-10-16 15:13:26",
+        "duration_sec": 5.967,
         "artifact_exists_at_finish": true
       },
       "source": {
@@ -450,7 +486,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     },
     {
       "registry_version": "1.0.0",
@@ -459,17 +495,17 @@
       "path": "task_runs/index.json",
       "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/task_runs/index.json",
       "exists": true,
-      "size": 47275,
-      "file_mtime": "2026-07-24 01:55:04",
-      "updated_at": "2026-07-24 01:55:04",
-      "record_count": 62,
+      "size": 68716,
+      "file_mtime": "2026-10-16 15:42:48",
+      "updated_at": "2026-10-16 15:42:48",
+      "record_count": 100,
       "field_summary": {
         "top_level_fields": [
           "runs",
           "updated_at"
         ],
         "list_fields": {
-          "runs": 62
+          "runs": 100
         },
         "dict_fields": []
       },
@@ -488,7 +524,7 @@
         "payload_trade_date": "",
         "payload_version": ""
       },
-      "registered_at": "2026-07-24 01:55:19"
+      "registered_at": "2026-10-16 15:55:22"
     }
   ],
   "lineage": [
@@ -497,7 +533,7 @@
       "label": "大盘行情",
       "inputs": [],
       "output": "latest.json",
-      "generated_by": "",
+      "generated_by": "market",
       "input_status": {}
     },
     {
@@ -527,7 +563,7 @@
         "stocks"
       ],
       "output": "factors/index.json",
-      "generated_by": "",
+      "generated_by": "factor",
       "input_status": {
         "stocks": "ok"
       }
@@ -548,7 +584,7 @@
     },
     {
       "module": "strategy_backtest",
-      "label": "一年离线策略验证",
+      "label": "五年离线策略验证",
       "inputs": [
         "strategy"
       ],

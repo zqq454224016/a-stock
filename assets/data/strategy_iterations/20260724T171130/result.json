@@ -1,0 +1,805 @@
+{
+  "status": "complete",
+  "run_id": "20260724T171130",
+  "updated_at": "2026-07-24 17:15:52",
+  "data_fingerprint": "4b9837d69a915116",
+  "research_version": "6.0.0",
+  "history_bars": 1250,
+  "universe": 3191,
+  "usable_stocks": 2983,
+  "market_regime_days": 1260,
+  "execution_constraints": "raw_vs_qfq_inferred_v1",
+  "method": {
+    "train_ratio": 0.7,
+    "development_segments": 2,
+    "embargo_bars": 60,
+    "entry": "next_open_T+1",
+    "exit": "candidate_specific_next_open_or_stop_or_max_hold",
+    "round_trip_cost_pct": 0.18,
+    "signals": "non_overlapping",
+    "portfolio": "equal_weight_by_exit_date",
+    "selection": "fixed_candidates_train_only_then_single_frozen_oos"
+  },
+  "root_cause": [
+    "旧策略把同一持有期内每日信号重复计样，样本不独立",
+    "旧推荐使用同一五年结果筛选并展示，存在样本内挑选偏差",
+    "旧策略包含做空方向，但普通A股系统并未实现可交易的融券约束",
+    "旧回测未扣费用，且 max_adverse 实际是期末最差收益而非持有期不利波动"
+  ],
+  "selected_candidate": "baseline_long_only",
+  "promotion_passed": false,
+  "decision": "reject_keep_current_research_only",
+  "baseline_oos": {
+    "trades": 24325,
+    "hit_rate": 0.4757,
+    "avg_net_return_pct": 1.273,
+    "median_net_return_pct": -0.5722,
+    "max_drawdown_pct": -94.8519,
+    "avg_mae_pct": -8.7036
+  },
+  "selected_oos": {
+    "trades": 24325,
+    "hit_rate": 0.4757,
+    "avg_net_return_pct": 1.273,
+    "median_net_return_pct": -0.5722,
+    "max_drawdown_pct": -94.8519,
+    "avg_mae_pct": -8.7036
+  },
+  "candidates": [
+    {
+      "name": "baseline_long_only",
+      "parameters": {
+        "name": "baseline_long_only",
+        "score_floor": 65,
+        "volatility_cap": 1000,
+        "mode": "baseline",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 42761,
+        "hit_rate": 0.3907,
+        "avg_net_return_pct": -1.3964,
+        "median_net_return_pct": -2.6072,
+        "max_drawdown_pct": -99.9999,
+        "avg_mae_pct": -9.4963
+      },
+      "development_stability": [
+        {
+          "trades": 18467,
+          "hit_rate": 0.4112,
+          "avg_net_return_pct": -0.6992,
+          "median_net_return_pct": -2.4979,
+          "max_drawdown_pct": -99.9998,
+          "avg_mae_pct": -10.2817
+        },
+        {
+          "trades": 17631,
+          "hit_rate": 0.3628,
+          "avg_net_return_pct": -2.46,
+          "median_net_return_pct": -3.0742,
+          "max_drawdown_pct": -99.9946,
+          "avg_mae_pct": -9.601
+        }
+      ],
+      "oos": {
+        "trades": 24325,
+        "hit_rate": 0.4757,
+        "avg_net_return_pct": 1.273,
+        "median_net_return_pct": -0.5722,
+        "max_drawdown_pct": -94.8519,
+        "avg_mae_pct": -8.7036
+      },
+      "train_score": -0.545573
+    },
+    {
+      "name": "strict_trend_65",
+      "parameters": {
+        "name": "strict_trend_65",
+        "score_floor": 65,
+        "volatility_cap": 65,
+        "mode": "strict",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 34545,
+        "hit_rate": 0.399,
+        "avg_net_return_pct": -1.0849,
+        "median_net_return_pct": -2.3229,
+        "max_drawdown_pct": -99.9989,
+        "avg_mae_pct": -8.843
+      },
+      "development_stability": [
+        {
+          "trades": 14276,
+          "hit_rate": 0.4185,
+          "avg_net_return_pct": -0.3499,
+          "median_net_return_pct": -2.1482,
+          "max_drawdown_pct": -99.9991,
+          "avg_mae_pct": -9.4956
+        },
+        {
+          "trades": 14523,
+          "hit_rate": 0.3764,
+          "avg_net_return_pct": -2.0125,
+          "median_net_return_pct": -2.6662,
+          "max_drawdown_pct": -99.9693,
+          "avg_mae_pct": -9.0311
+        }
+      ],
+      "oos": {
+        "trades": 19266,
+        "hit_rate": 0.4876,
+        "avg_net_return_pct": 1.5271,
+        "median_net_return_pct": -0.2937,
+        "max_drawdown_pct": -96.947,
+        "avg_mae_pct": -7.9791
+      },
+      "train_score": -0.432875
+    },
+    {
+      "name": "strict_trend_70",
+      "parameters": {
+        "name": "strict_trend_70",
+        "score_floor": 70,
+        "volatility_cap": 55,
+        "mode": "strict",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 30195,
+        "hit_rate": 0.4023,
+        "avg_net_return_pct": -0.9326,
+        "median_net_return_pct": -2.1518,
+        "max_drawdown_pct": -99.9954,
+        "avg_mae_pct": -8.5005
+      },
+      "development_stability": [
+        {
+          "trades": 12092,
+          "hit_rate": 0.4253,
+          "avg_net_return_pct": -0.1252,
+          "median_net_return_pct": -1.874,
+          "max_drawdown_pct": -99.9867,
+          "avg_mae_pct": -9.0986
+        },
+        {
+          "trades": 12891,
+          "hit_rate": 0.3749,
+          "avg_net_return_pct": -1.9225,
+          "median_net_return_pct": -2.6029,
+          "max_drawdown_pct": -99.9175,
+          "avg_mae_pct": -8.7287
+        }
+      ],
+      "oos": {
+        "trades": 16778,
+        "hit_rate": 0.4927,
+        "avg_net_return_pct": 1.7245,
+        "median_net_return_pct": -0.18,
+        "max_drawdown_pct": -96.5303,
+        "avg_mae_pct": -7.6604
+      },
+      "train_score": -0.375185
+    },
+    {
+      "name": "pullback_trend",
+      "parameters": {
+        "name": "pullback_trend",
+        "score_floor": 58,
+        "volatility_cap": 60,
+        "mode": "pullback",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 29052,
+        "hit_rate": 0.4001,
+        "avg_net_return_pct": -1.041,
+        "median_net_return_pct": -2.2749,
+        "max_drawdown_pct": -99.937,
+        "avg_mae_pct": -8.1797
+      },
+      "development_stability": [
+        {
+          "trades": 11158,
+          "hit_rate": 0.4146,
+          "avg_net_return_pct": -0.4186,
+          "median_net_return_pct": -2.2481,
+          "max_drawdown_pct": -99.9021,
+          "avg_mae_pct": -8.9016
+        },
+        {
+          "trades": 12931,
+          "hit_rate": 0.374,
+          "avg_net_return_pct": -2.0027,
+          "median_net_return_pct": -2.6769,
+          "max_drawdown_pct": -99.863,
+          "avg_mae_pct": -8.2614
+        }
+      ],
+      "oos": {
+        "trades": 16796,
+        "hit_rate": 0.5057,
+        "avg_net_return_pct": 1.7393,
+        "median_net_return_pct": 0.126,
+        "max_drawdown_pct": -96.6814,
+        "avg_mae_pct": -7.2134
+      },
+      "train_score": -0.416504
+    },
+    {
+      "name": "recovery_confirmed",
+      "parameters": {
+        "name": "recovery_confirmed",
+        "score_floor": 58,
+        "volatility_cap": 65,
+        "mode": "recovery",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 39046,
+        "hit_rate": 0.4163,
+        "avg_net_return_pct": -0.8915,
+        "median_net_return_pct": -2.0027,
+        "max_drawdown_pct": -99.9981,
+        "avg_mae_pct": -8.7633
+      },
+      "development_stability": [
+        {
+          "trades": 16469,
+          "hit_rate": 0.438,
+          "avg_net_return_pct": -0.0137,
+          "median_net_return_pct": -1.6399,
+          "max_drawdown_pct": -99.9993,
+          "avg_mae_pct": -9.3142
+        },
+        {
+          "trades": 16238,
+          "hit_rate": 0.3757,
+          "avg_net_return_pct": -2.1751,
+          "median_net_return_pct": -2.7921,
+          "max_drawdown_pct": -99.9599,
+          "avg_mae_pct": -9.0901
+        }
+      ],
+      "oos": {
+        "trades": 21903,
+        "hit_rate": 0.4982,
+        "avg_net_return_pct": 1.6508,
+        "median_net_return_pct": -0.0607,
+        "max_drawdown_pct": -95.7041,
+        "avg_mae_pct": -7.9013
+      },
+      "train_score": -0.371131
+    },
+    {
+      "name": "tf_trend_breakout",
+      "parameters": {
+        "name": "tf_trend_breakout",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_trend_breakout",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 3142,
+        "hit_rate": 0.2925,
+        "avg_net_return_pct": -4.5276,
+        "median_net_return_pct": -7.1158,
+        "max_drawdown_pct": -100.0,
+        "avg_mae_pct": -14.2787
+      },
+      "development_stability": [
+        {
+          "trades": 1537,
+          "hit_rate": 0.3253,
+          "avg_net_return_pct": -3.2113,
+          "median_net_return_pct": -6.5065,
+          "max_drawdown_pct": -100.0,
+          "avg_mae_pct": -14.3927
+        },
+        {
+          "trades": 1186,
+          "hit_rate": 0.2462,
+          "avg_net_return_pct": -6.872,
+          "median_net_return_pct": -8.2053,
+          "max_drawdown_pct": -100.0,
+          "avg_mae_pct": -15.2003
+        }
+      ],
+      "oos": {
+        "trades": 1699,
+        "hit_rate": 0.3408,
+        "avg_net_return_pct": -1.501,
+        "median_net_return_pct": -5.23,
+        "max_drawdown_pct": -99.9919,
+        "avg_mae_pct": -12.5808
+      },
+      "train_score": -1.324323
+    },
+    {
+      "name": "tf_bullish_alignment",
+      "parameters": {
+        "name": "tf_bullish_alignment",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_bullish_alignment",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 35079,
+        "hit_rate": 0.3887,
+        "avg_net_return_pct": -1.5785,
+        "median_net_return_pct": -2.6776,
+        "max_drawdown_pct": -100.0,
+        "avg_mae_pct": -9.5915
+      },
+      "development_stability": [
+        {
+          "trades": 15079,
+          "hit_rate": 0.4063,
+          "avg_net_return_pct": -0.8609,
+          "median_net_return_pct": -2.561,
+          "max_drawdown_pct": -99.9999,
+          "avg_mae_pct": -10.3739
+        },
+        {
+          "trades": 14403,
+          "hit_rate": 0.3641,
+          "avg_net_return_pct": -2.6552,
+          "median_net_return_pct": -3.0742,
+          "max_drawdown_pct": -99.997,
+          "avg_mae_pct": -9.7147
+        }
+      ],
+      "oos": {
+        "trades": 20372,
+        "hit_rate": 0.4713,
+        "avg_net_return_pct": 1.1366,
+        "median_net_return_pct": -0.7042,
+        "max_drawdown_pct": -96.2049,
+        "avg_mae_pct": -8.8787
+      },
+      "train_score": -0.613563
+    },
+    {
+      "name": "tf_macd_golden_volume",
+      "parameters": {
+        "name": "tf_macd_golden_volume",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_macd_golden",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 21051,
+        "hit_rate": 0.4282,
+        "avg_net_return_pct": -0.3308,
+        "median_net_return_pct": -1.9252,
+        "max_drawdown_pct": -99.9994,
+        "avg_mae_pct": -9.3785
+      },
+      "development_stability": [
+        {
+          "trades": 9990,
+          "hit_rate": 0.4517,
+          "avg_net_return_pct": 0.3596,
+          "median_net_return_pct": -1.4048,
+          "max_drawdown_pct": -99.9907,
+          "avg_mae_pct": -9.6968
+        },
+        {
+          "trades": 8752,
+          "hit_rate": 0.3852,
+          "avg_net_return_pct": -1.4014,
+          "median_net_return_pct": -2.772,
+          "max_drawdown_pct": -99.9893,
+          "avg_mae_pct": -9.554
+        }
+      ],
+      "oos": {
+        "trades": 10055,
+        "hit_rate": 0.469,
+        "avg_net_return_pct": 0.8842,
+        "median_net_return_pct": -0.7508,
+        "max_drawdown_pct": -98.4867,
+        "avg_mae_pct": -8.7044
+      },
+      "train_score": -0.141649
+    },
+    {
+      "name": "tf_volume_price_surge",
+      "parameters": {
+        "name": "tf_volume_price_surge",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_volume_price",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 11000,
+        "hit_rate": 0.4245,
+        "avg_net_return_pct": -0.3692,
+        "median_net_return_pct": -1.9276,
+        "max_drawdown_pct": -99.9999,
+        "avg_mae_pct": -9.2985
+      },
+      "development_stability": [
+        {
+          "trades": 5056,
+          "hit_rate": 0.448,
+          "avg_net_return_pct": 0.4586,
+          "median_net_return_pct": -1.3496,
+          "max_drawdown_pct": -99.9344,
+          "avg_mae_pct": -9.4307
+        },
+        {
+          "trades": 4733,
+          "hit_rate": 0.3837,
+          "avg_net_return_pct": -1.6354,
+          "median_net_return_pct": -2.8332,
+          "max_drawdown_pct": -99.9988,
+          "avg_mae_pct": -9.7095
+        }
+      ],
+      "oos": {
+        "trades": 4898,
+        "hit_rate": 0.4702,
+        "avg_net_return_pct": 0.9107,
+        "median_net_return_pct": -0.7348,
+        "max_drawdown_pct": -99.6536,
+        "avg_mae_pct": -8.1745
+      },
+      "train_score": -0.156725
+    },
+    {
+      "name": "tf_low_volatility_leader",
+      "parameters": {
+        "name": "tf_low_volatility_leader",
+        "score_floor": 0,
+        "volatility_cap": 30,
+        "mode": "tf_low_volatility",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 33241,
+        "hit_rate": 0.4663,
+        "avg_net_return_pct": 0.1416,
+        "median_net_return_pct": -0.63,
+        "max_drawdown_pct": -99.4091,
+        "avg_mae_pct": -6.6887
+      },
+      "development_stability": [
+        {
+          "trades": 12034,
+          "hit_rate": 0.5286,
+          "avg_net_return_pct": 1.6691,
+          "median_net_return_pct": 0.591,
+          "max_drawdown_pct": -98.1296,
+          "avg_mae_pct": -6.5153
+        },
+        {
+          "trades": 16073,
+          "hit_rate": 0.4094,
+          "avg_net_return_pct": -1.2723,
+          "median_net_return_pct": -1.647,
+          "max_drawdown_pct": -99.1401,
+          "avg_mae_pct": -7.3629
+        }
+      ],
+      "oos": {
+        "trades": 17674,
+        "hit_rate": 0.5441,
+        "avg_net_return_pct": 1.8352,
+        "median_net_return_pct": 0.758,
+        "max_drawdown_pct": -96.7593,
+        "avg_mae_pct": -5.7756
+      },
+      "train_score": 0.066028
+    },
+    {
+      "name": "tf_pullback_ma20_bounce",
+      "parameters": {
+        "name": "tf_pullback_ma20_bounce",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_pullback_ma20",
+        "allowed_regimes": [],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 22228,
+        "hit_rate": 0.3731,
+        "avg_net_return_pct": -1.5826,
+        "median_net_return_pct": -2.8116,
+        "max_drawdown_pct": -99.9954,
+        "avg_mae_pct": -8.7638
+      },
+      "development_stability": [
+        {
+          "trades": 8693,
+          "hit_rate": 0.3954,
+          "avg_net_return_pct": -0.8995,
+          "median_net_return_pct": -2.7032,
+          "max_drawdown_pct": -99.8769,
+          "avg_mae_pct": -9.3776
+        },
+        {
+          "trades": 9596,
+          "hit_rate": 0.3541,
+          "avg_net_return_pct": -2.5276,
+          "median_net_return_pct": -3.0377,
+          "max_drawdown_pct": -99.9042,
+          "avg_mae_pct": -9.0719
+        }
+      ],
+      "oos": {
+        "trades": 12533,
+        "hit_rate": 0.5108,
+        "avg_net_return_pct": 1.6076,
+        "median_net_return_pct": 0.2137,
+        "max_drawdown_pct": -96.9552,
+        "avg_mae_pct": -7.4804
+      },
+      "train_score": -0.590468
+    },
+    {
+      "name": "tf_low_volatility_regime",
+      "parameters": {
+        "name": "tf_low_volatility_regime",
+        "score_floor": 0,
+        "volatility_cap": 30,
+        "mode": "tf_low_volatility",
+        "allowed_regimes": [
+          "rising",
+          "range"
+        ],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 30413,
+        "hit_rate": 0.4615,
+        "avg_net_return_pct": 0.173,
+        "median_net_return_pct": -0.7126,
+        "max_drawdown_pct": -90.2707,
+        "avg_mae_pct": -6.5086
+      },
+      "development_stability": [
+        {
+          "trades": 11706,
+          "hit_rate": 0.5325,
+          "avg_net_return_pct": 1.7485,
+          "median_net_return_pct": 0.6577,
+          "max_drawdown_pct": -90.1512,
+          "avg_mae_pct": -6.4352
+        },
+        {
+          "trades": 13835,
+          "hit_rate": 0.3897,
+          "avg_net_return_pct": -1.4536,
+          "median_net_return_pct": -1.9781,
+          "max_drawdown_pct": -85.3644,
+          "avg_mae_pct": -7.129
+        }
+      ],
+      "oos": {
+        "trades": 17352,
+        "hit_rate": 0.547,
+        "avg_net_return_pct": 1.9015,
+        "median_net_return_pct": 0.7935,
+        "max_drawdown_pct": -87.7659,
+        "avg_mae_pct": -5.7268
+      },
+      "train_score": 0.079839
+    },
+    {
+      "name": "tf_pullback_rising_regime",
+      "parameters": {
+        "name": "tf_pullback_rising_regime",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_pullback_ma20",
+        "allowed_regimes": [
+          "rising"
+        ],
+        "max_hold_days": 20,
+        "stop_loss": null,
+        "exit_mode": "fixed"
+      },
+      "train": {
+        "trades": 1484,
+        "hit_rate": 0.4953,
+        "avg_net_return_pct": 0.6576,
+        "median_net_return_pct": -0.092,
+        "max_drawdown_pct": -23.4163,
+        "avg_mae_pct": -6.1295
+      },
+      "development_stability": [
+        {
+          "trades": 345,
+          "hit_rate": 0.6522,
+          "avg_net_return_pct": 4.2205,
+          "median_net_return_pct": 2.7339,
+          "max_drawdown_pct": -9.6472,
+          "avg_mae_pct": -5.1441
+        },
+        {
+          "trades": 555,
+          "hit_rate": 0.4468,
+          "avg_net_return_pct": -0.4159,
+          "median_net_return_pct": -1.1363,
+          "max_drawdown_pct": -22.9129,
+          "avg_mae_pct": -6.9779
+        }
+      ],
+      "oos": {
+        "trades": 511,
+        "hit_rate": 0.7397,
+        "avg_net_return_pct": 4.6234,
+        "median_net_return_pct": 2.5509,
+        "max_drawdown_pct": 0.0,
+        "avg_mae_pct": -2.849
+      },
+      "train_score": 0.325709
+    },
+    {
+      "name": "tf_low_volatility_regime_exit",
+      "parameters": {
+        "name": "tf_low_volatility_regime_exit",
+        "score_floor": 0,
+        "volatility_cap": 30,
+        "mode": "tf_low_volatility",
+        "allowed_regimes": [
+          "rising",
+          "range"
+        ],
+        "max_hold_days": 30,
+        "stop_loss": -0.05,
+        "exit_mode": "ma20"
+      },
+      "train": {
+        "trades": 40152,
+        "hit_rate": 0.2705,
+        "avg_net_return_pct": -0.0599,
+        "median_net_return_pct": -1.4355,
+        "max_drawdown_pct": -55.097,
+        "avg_mae_pct": -2.9449
+      },
+      "development_stability": [
+        {
+          "trades": 16468,
+          "hit_rate": 0.2835,
+          "avg_net_return_pct": 0.1996,
+          "median_net_return_pct": -1.4536,
+          "max_drawdown_pct": -65.5845,
+          "avg_mae_pct": -3.1011
+        },
+        {
+          "trades": 18393,
+          "hit_rate": 0.2175,
+          "avg_net_return_pct": -0.7382,
+          "median_net_return_pct": -1.6086,
+          "max_drawdown_pct": -73.6613,
+          "avg_mae_pct": -2.9971
+        }
+      ],
+      "oos": {
+        "trades": 25146,
+        "hit_rate": 0.2822,
+        "avg_net_return_pct": 0.3862,
+        "median_net_return_pct": -1.2535,
+        "max_drawdown_pct": -49.1578,
+        "avg_mae_pct": -2.8161
+      },
+      "train_score": -0.016203
+    },
+    {
+      "name": "tf_pullback_rising_exit",
+      "parameters": {
+        "name": "tf_pullback_rising_exit",
+        "score_floor": 0,
+        "volatility_cap": 1000,
+        "mode": "tf_pullback_ma20",
+        "allowed_regimes": [
+          "rising"
+        ],
+        "max_hold_days": 15,
+        "stop_loss": -0.05,
+        "exit_mode": "ma20_or_ma5_dead"
+      },
+      "train": {
+        "trades": 1637,
+        "hit_rate": 0.2413,
+        "avg_net_return_pct": -0.5975,
+        "median_net_return_pct": -1.085,
+        "max_drawdown_pct": -36.4425,
+        "avg_mae_pct": -2.5107
+      },
+      "development_stability": [
+        {
+          "trades": 389,
+          "hit_rate": 0.3213,
+          "avg_net_return_pct": 0.2362,
+          "median_net_return_pct": -0.8649,
+          "max_drawdown_pct": -15.1238,
+          "avg_mae_pct": -2.7527
+        },
+        {
+          "trades": 642,
+          "hit_rate": 0.1916,
+          "avg_net_return_pct": -1.0973,
+          "median_net_return_pct": -1.4353,
+          "max_drawdown_pct": -21.1549,
+          "avg_mae_pct": -2.6365
+        }
+      ],
+      "oos": {
+        "trades": 512,
+        "hit_rate": 0.3203,
+        "avg_net_return_pct": 0.6582,
+        "median_net_return_pct": -0.8717,
+        "max_drawdown_pct": -17.6373,
+        "avg_mae_pct": -1.7859
+      },
+      "train_score": -0.144177
+    }
+  ],
+  "anti_overfit": {
+    "candidate_space_frozen": true,
+    "development_period_consistency_required": true,
+    "purge_and_embargo": true,
+    "oos_used_for_selection": false,
+    "positive_median_required": true,
+    "failed_candidate_is_not_retuned_on_same_oos": true,
+    "multiple_candidate_hit_rate_floor": 0.54
+  },
+  "strategy_sources": {
+    "tickflow_stock_panel": [
+      "trend_breakout",
+      "bullish_alignment",
+      "macd_golden",
+      "volume_price_surge",
+      "low_volatility_leader",
+      "pullback_ma20_bounce"
+    ],
+    "adaptation": "仅迁移信号思想；统一使用本系统的T+1、成本、非重叠和冻结样本外协议"
+  },
+  "limitations": [
+    "未模拟逐股涨跌停无法成交",
+    "未模拟冲击成本和分红税",
+    "本轮只允许预先声明的有限候选，防止无限调参过拟合"
+  ]
+}

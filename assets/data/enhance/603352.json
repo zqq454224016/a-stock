@@ -1,0 +1,112 @@
+{
+  "code": "603352",
+  "name": "至信股份",
+  "trade_date": "2026-08-10",
+  "updated_at": "2026-08-11 12:07:11",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-08-10",
+    "close": 27.83,
+    "market_cap_yi": 63.08,
+    "float_cap_yi": 12.62,
+    "pe_ttm": 30.76081574,
+    "pe_static": 27.73314915,
+    "pb": 2.13390134,
+    "ps": 1.59957079,
+    "peg": 0.0
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-07-21",
+        "ex_date": "2026-07-28",
+        "record_date": "2026-07-27",
+        "cash_div": 1.1,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2029-01-15",
+        "unlock_shares": 142372217.0,
+        "unlock_value_yi": 39.62,
+        "pct_total": 0.628112721135,
+        "pct_float": 3.140563564109,
+        "holder_type": "首发原股东限售股份"
+      },
+      {
+        "unlock_date": "2027-01-15",
+        "unlock_shares": 38961116.0,
+        "unlock_value_yi": 10.84,
+        "pct_total": 0.171887276218,
+        "pct_float": 0.859436369714,
+        "holder_type": "首发原股东限售股份,首发战略配售股份"
+      },
+      {
+        "unlock_date": "2026-07-15",
+        "unlock_shares": 910962.0,
+        "unlock_value_yi": 0.23,
+        "pct_total": 0.004018949994,
+        "pct_float": 0.020094749704,
+        "holder_type": "首发机构配售股份"
+      }
+    ],
+    "earnings_forecast": null
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3900.3523,
+        "change_pct": 0.565
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "close": 14110.121,
+        "change_pct": -0.241
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3515.56,
+        "change_pct": -0.554
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1701.2916,
+        "change_pct": 0.45
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -755.77,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": 8.48
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 95.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "earnings_forecast",
+    "margin_sse",
+    "northbound"
+  ]
+}

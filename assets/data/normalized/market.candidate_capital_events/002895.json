@@ -1,0 +1,620 @@
+{
+  "dataset": "market.candidate_capital_events",
+  "schema_version": "1.0.0",
+  "code": "002895",
+  "trade_date": "2026-07-30",
+  "known_at": "2026-07-30 10:51:48",
+  "sources": [
+    "eastmoney_datacenter"
+  ],
+  "data": {
+    "margin_trading": [
+      {
+        "date": "2026-07-29",
+        "financing_balance": 255391943.0,
+        "financing_buy": 34974474.0,
+        "financing_repay": 31802362.0,
+        "securities_lending_balance": 5214228.0,
+        "securities_lending_sell_volume": 1500.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 260606171.0
+      },
+      {
+        "date": "2026-07-28",
+        "financing_balance": 252219831.0,
+        "financing_buy": 36656720.0,
+        "financing_repay": 36767956.0,
+        "securities_lending_balance": 5164424.0,
+        "securities_lending_sell_volume": 10700.0,
+        "securities_lending_repay_volume": 1600.0,
+        "margin_balance": 257384255.0
+      },
+      {
+        "date": "2026-07-27",
+        "financing_balance": 252331067.0,
+        "financing_buy": 14435701.0,
+        "financing_repay": 23416880.0,
+        "securities_lending_balance": 4757535.0,
+        "securities_lending_sell_volume": 19400.0,
+        "securities_lending_repay_volume": 1000.0,
+        "margin_balance": 257088602.0
+      },
+      {
+        "date": "2026-07-24",
+        "financing_balance": 261312246.0,
+        "financing_buy": 47588573.0,
+        "financing_repay": 44362567.0,
+        "securities_lending_balance": 3991778.0,
+        "securities_lending_sell_volume": 7100.0,
+        "securities_lending_repay_volume": 7600.0,
+        "margin_balance": 265304024.0
+      },
+      {
+        "date": "2026-07-23",
+        "financing_balance": 258086240.0,
+        "financing_buy": 26356218.0,
+        "financing_repay": 31420083.0,
+        "securities_lending_balance": 4062418.0,
+        "securities_lending_sell_volume": 8300.0,
+        "securities_lending_repay_volume": 1200.0,
+        "margin_balance": 262148658.0
+      },
+      {
+        "date": "2026-07-22",
+        "financing_balance": 263150105.0,
+        "financing_buy": 37628272.0,
+        "financing_repay": 64404495.0,
+        "securities_lending_balance": 3772069.0,
+        "securities_lending_sell_volume": 5100.0,
+        "securities_lending_repay_volume": 4500.0,
+        "margin_balance": 266922174.0
+      },
+      {
+        "date": "2026-07-21",
+        "financing_balance": 289926328.0,
+        "financing_buy": 38588605.0,
+        "financing_repay": 66595772.0,
+        "securities_lending_balance": 3665670.0,
+        "securities_lending_sell_volume": 7200.0,
+        "securities_lending_repay_volume": 9700.0,
+        "margin_balance": 293591998.0
+      },
+      {
+        "date": "2026-07-20",
+        "financing_balance": 317933495.0,
+        "financing_buy": 44287389.0,
+        "financing_repay": 47306452.0,
+        "securities_lending_balance": 3567498.0,
+        "securities_lending_sell_volume": 4900.0,
+        "securities_lending_repay_volume": 14900.0,
+        "margin_balance": 321500993.0
+      },
+      {
+        "date": "2026-07-17",
+        "financing_balance": 320952558.0,
+        "financing_buy": 52992471.0,
+        "financing_repay": 112175928.0,
+        "securities_lending_balance": 3812760.0,
+        "securities_lending_sell_volume": 1600.0,
+        "securities_lending_repay_volume": 2600.0,
+        "margin_balance": 324765318.0
+      },
+      {
+        "date": "2026-07-16",
+        "financing_balance": 380136015.0,
+        "financing_buy": 28664807.0,
+        "financing_repay": 22996464.0,
+        "securities_lending_balance": 3818240.0,
+        "securities_lending_sell_volume": 8700.0,
+        "securities_lending_repay_volume": 2100.0,
+        "margin_balance": 383954255.0
+      },
+      {
+        "date": "2026-07-15",
+        "financing_balance": 374467672.0,
+        "financing_buy": 75070326.0,
+        "financing_repay": 59720742.0,
+        "securities_lending_balance": 3702090.0,
+        "securities_lending_sell_volume": 16900.0,
+        "securities_lending_repay_volume": 2800.0,
+        "margin_balance": 378169762.0
+      },
+      {
+        "date": "2026-07-14",
+        "financing_balance": 359118088.0,
+        "financing_buy": 35954280.0,
+        "financing_repay": 39700538.0,
+        "securities_lending_balance": 3087207.0,
+        "securities_lending_sell_volume": 4800.0,
+        "securities_lending_repay_volume": 300.0,
+        "margin_balance": 362205295.0
+      },
+      {
+        "date": "2026-07-13",
+        "financing_balance": 362864346.0,
+        "financing_buy": 23370116.0,
+        "financing_repay": 17388374.0,
+        "securities_lending_balance": 2829272.0,
+        "securities_lending_sell_volume": 3700.0,
+        "securities_lending_repay_volume": 7800.0,
+        "margin_balance": 365693618.0
+      },
+      {
+        "date": "2026-07-10",
+        "financing_balance": 356882604.0,
+        "financing_buy": 26587712.0,
+        "financing_repay": 24725623.0,
+        "securities_lending_balance": 2983475.0,
+        "securities_lending_sell_volume": 2700.0,
+        "securities_lending_repay_volume": 5500.0,
+        "margin_balance": 359866079.0
+      },
+      {
+        "date": "2026-07-09",
+        "financing_balance": 355020515.0,
+        "financing_buy": 38220710.0,
+        "financing_repay": 25319300.0,
+        "securities_lending_balance": 3090240.0,
+        "securities_lending_sell_volume": 3700.0,
+        "securities_lending_repay_volume": 7300.0,
+        "margin_balance": 358110755.0
+      },
+      {
+        "date": "2026-07-08",
+        "financing_balance": 342119105.0,
+        "financing_buy": 30462386.0,
+        "financing_repay": 15483450.0,
+        "securities_lending_balance": 3266005.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 3900.0,
+        "margin_balance": 345385110.0
+      },
+      {
+        "date": "2026-07-07",
+        "financing_balance": 327140169.0,
+        "financing_buy": 56345231.0,
+        "financing_repay": 15728101.0,
+        "securities_lending_balance": 3500644.0,
+        "securities_lending_sell_volume": 14600.0,
+        "securities_lending_repay_volume": 1300.0,
+        "margin_balance": 330640813.0
+      },
+      {
+        "date": "2026-07-06",
+        "financing_balance": 286523039.0,
+        "financing_buy": 27650119.0,
+        "financing_repay": 30598553.0,
+        "securities_lending_balance": 3200184.0,
+        "securities_lending_sell_volume": 41800.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 289723223.0
+      },
+      {
+        "date": "2026-07-03",
+        "financing_balance": 289471473.0,
+        "financing_buy": 22480843.0,
+        "financing_repay": 53155638.0,
+        "securities_lending_balance": 1889320.0,
+        "securities_lending_sell_volume": 30000.0,
+        "securities_lending_repay_volume": 300.0,
+        "margin_balance": 291360793.0
+      },
+      {
+        "date": "2026-07-02",
+        "financing_balance": 320146268.0,
+        "financing_buy": 56563163.0,
+        "financing_repay": 51092490.0,
+        "securities_lending_balance": 920322.0,
+        "securities_lending_sell_volume": 2400.0,
+        "securities_lending_repay_volume": 1800.0,
+        "margin_balance": 321066590.0
+      },
+      {
+        "date": "2026-07-01",
+        "financing_balance": 314675595.0,
+        "financing_buy": 35809867.0,
+        "financing_repay": 101478603.0,
+        "securities_lending_balance": 896580.0,
+        "securities_lending_sell_volume": 2500.0,
+        "securities_lending_repay_volume": 100.0,
+        "margin_balance": 315572175.0
+      },
+      {
+        "date": "2026-06-30",
+        "financing_balance": 380344331.0,
+        "financing_buy": 78861508.0,
+        "financing_repay": 34308862.0,
+        "securities_lending_balance": 785480.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 100.0,
+        "margin_balance": 381129811.0
+      },
+      {
+        "date": "2026-06-29",
+        "financing_balance": 335791685.0,
+        "financing_buy": 31062610.0,
+        "financing_repay": 29323171.0,
+        "securities_lending_balance": 806490.0,
+        "securities_lending_sell_volume": 14400.0,
+        "securities_lending_repay_volume": 300.0,
+        "margin_balance": 336598175.0
+      },
+      {
+        "date": "2026-06-26",
+        "financing_balance": 334052246.0,
+        "financing_buy": 70760575.0,
+        "financing_repay": 41187776.0,
+        "securities_lending_balance": 392934.0,
+        "securities_lending_sell_volume": 100.0,
+        "securities_lending_repay_volume": 3700.0,
+        "margin_balance": 334445180.0
+      },
+      {
+        "date": "2026-06-25",
+        "financing_balance": 304479447.0,
+        "financing_buy": 44925913.0,
+        "financing_repay": 43765332.0,
+        "securities_lending_balance": 510840.0,
+        "securities_lending_sell_volume": 3700.0,
+        "securities_lending_repay_volume": 1900.0,
+        "margin_balance": 304990287.0
+      },
+      {
+        "date": "2026-06-24",
+        "financing_balance": 303318866.0,
+        "financing_buy": 40461554.0,
+        "financing_repay": 60996526.0,
+        "securities_lending_balance": 468195.0,
+        "securities_lending_sell_volume": 2200.0,
+        "securities_lending_repay_volume": 0.0,
+        "margin_balance": 303787061.0
+      },
+      {
+        "date": "2026-06-23",
+        "financing_balance": 323853838.0,
+        "financing_buy": 48041528.0,
+        "financing_repay": 33914254.0,
+        "securities_lending_balance": 373125.0,
+        "securities_lending_sell_volume": 0.0,
+        "securities_lending_repay_volume": 10700.0,
+        "margin_balance": 324226963.0
+      },
+      {
+        "date": "2026-06-22",
+        "financing_balance": 309726564.0,
+        "financing_buy": 41351209.0,
+        "financing_repay": 100243188.0,
+        "securities_lending_balance": 737064.0,
+        "securities_lending_sell_volume": 10900.0,
+        "securities_lending_repay_volume": 2100.0,
+        "margin_balance": 310463628.0
+      },
+      {
+        "date": "2026-06-18",
+        "financing_balance": 368618543.0,
+        "financing_buy": 41030726.0,
+        "financing_repay": 43401455.0,
+        "securities_lending_balance": 420048.0,
+        "securities_lending_sell_volume": 1000.0,
+        "securities_lending_repay_volume": 1700.0,
+        "margin_balance": 369038591.0
+      },
+      {
+        "date": "2026-06-17",
+        "financing_balance": 370989272.0,
+        "financing_buy": 39720112.0,
+        "financing_repay": 49628421.0,
+        "securities_lending_balance": 456322.0,
+        "securities_lending_sell_volume": 1200.0,
+        "securities_lending_repay_volume": 6300.0,
+        "margin_balance": 371445594.0
+      }
+    ],
+    "block_trades": [
+      {
+        "date": "2026-06-30",
+        "price": 29.2,
+        "close": 29.2,
+        "premium_pct": 0.0,
+        "volume": 220000.0,
+        "amount": 6424000.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 26.28,
+        "close": 31.77,
+        "premium_pct": -17.2805,
+        "volume": 373900.0,
+        "amount": 9826100.0,
+        "buyer": "招商证券股份有限公司成都人民南路证券营业部",
+        "seller": "国泰海通证券股份有限公司成都顺城大街证券营业部"
+      },
+      {
+        "date": "2026-06-22",
+        "price": 26.28,
+        "close": 31.77,
+        "premium_pct": -17.2805,
+        "volume": 500000.0,
+        "amount": 13140000.0,
+        "buyer": "招商证券股份有限公司成都人民中路证券营业部",
+        "seller": "国泰海通证券股份有限公司成都顺城大街证券营业部"
+      },
+      {
+        "date": "2026-06-17",
+        "price": 30.22,
+        "close": 30.22,
+        "premium_pct": 0.0,
+        "volume": 130000.0,
+        "amount": 3928600.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2026-06-09",
+        "price": 30.18,
+        "close": 30.18,
+        "premium_pct": 0.0,
+        "volume": 166000.0,
+        "amount": 5009900.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2026-01-06",
+        "price": 39.44,
+        "close": 39.44,
+        "premium_pct": 0.0,
+        "volume": 182000.0,
+        "amount": 7178100.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2026-01-05",
+        "price": 37.5,
+        "close": 37.5,
+        "premium_pct": 0.0,
+        "volume": 180000.0,
+        "amount": 6750000.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-12-05",
+        "price": 37.29,
+        "close": 37.29,
+        "premium_pct": 0.0,
+        "volume": 289000.0,
+        "amount": 10776800.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-12-05",
+        "price": 37.29,
+        "close": 37.29,
+        "premium_pct": 0.0,
+        "volume": 362000.0,
+        "amount": 13499000.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-09-12",
+        "price": 27.59,
+        "close": 27.59,
+        "premium_pct": 0.0,
+        "volume": 328300.0,
+        "amount": 9057800.0,
+        "buyer": "浙商证券股份有限公司杭州杭大路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-06-27",
+        "price": 22.33,
+        "close": 22.33,
+        "premium_pct": 0.0,
+        "volume": 150000.0,
+        "amount": 3349500.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-23",
+        "price": 25.25,
+        "close": 25.25,
+        "premium_pct": 0.0,
+        "volume": 150000.0,
+        "amount": 3787500.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-22",
+        "price": 25.03,
+        "close": 25.03,
+        "premium_pct": 0.0,
+        "volume": 350000.0,
+        "amount": 8760500.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-21",
+        "price": 25.02,
+        "close": 25.02,
+        "premium_pct": 0.0,
+        "volume": 500000.0,
+        "amount": 12510000.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-21",
+        "price": 25.02,
+        "close": 25.02,
+        "premium_pct": 0.0,
+        "volume": 310000.0,
+        "amount": 7756200.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-20",
+        "price": 24.92,
+        "close": 24.92,
+        "premium_pct": 0.0,
+        "volume": 260000.0,
+        "amount": 6479200.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-20",
+        "price": 24.92,
+        "close": 24.92,
+        "premium_pct": 0.0,
+        "volume": 380000.0,
+        "amount": 9469600.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-20",
+        "price": 24.92,
+        "close": 24.92,
+        "premium_pct": 0.0,
+        "volume": 150000.0,
+        "amount": 3738000.0,
+        "buyer": "机构专用",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-19",
+        "price": 25.0,
+        "close": 25.0,
+        "premium_pct": 0.0,
+        "volume": 550000.0,
+        "amount": 13750000.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      },
+      {
+        "date": "2025-05-19",
+        "price": 25.0,
+        "close": 25.0,
+        "premium_pct": 0.0,
+        "volume": 260000.0,
+        "amount": 6500000.0,
+        "buyer": "广发证券股份有限公司云浮兴云西路证券营业部",
+        "seller": "机构专用"
+      }
+    ],
+    "lockup_expiry": {
+      "history": [
+        {
+          "date": "2027-06-14",
+          "type": "股权激励限售股份",
+          "shares_wan": 60419.3883,
+          "tradable_shares_wan": 463.52,
+          "total_share_ratio": 0.007731019717
+        },
+        {
+          "date": "2026-06-15",
+          "type": "股权激励限售股份",
+          "shares_wan": 59955.8683,
+          "tradable_shares_wan": 459.72,
+          "total_share_ratio": 0.007667639766
+        },
+        {
+          "date": "2024-11-25",
+          "type": "股权激励限售股份",
+          "shares_wan": 54016.7705,
+          "tradable_shares_wan": 46.35,
+          "total_share_ratio": 0.000858066848
+        },
+        {
+          "date": "2024-07-12",
+          "type": "定向增发机构配售股份",
+          "shares_wan": 54151.249,
+          "tradable_shares_wan": 4025.0,
+          "total_share_ratio": 0.074328848814
+        },
+        {
+          "date": "2024-05-16",
+          "type": "股权激励限售股份",
+          "shares_wan": 49994.8658,
+          "tradable_shares_wan": 336.55,
+          "total_share_ratio": 0.006731691237
+        },
+        {
+          "date": "2023-11-27",
+          "type": "股权激励限售股份",
+          "shares_wan": 49658.1385,
+          "tradable_shares_wan": 48.85,
+          "total_share_ratio": 0.000983725961
+        },
+        {
+          "date": "2023-05-05",
+          "type": "股权激励限售股份",
+          "shares_wan": 49621.8758,
+          "tradable_shares_wan": 340.3,
+          "total_share_ratio": 0.006857862475
+        },
+        {
+          "date": "2022-12-05",
+          "type": "股权激励限售股份",
+          "shares_wan": 49280.7781,
+          "tradable_shares_wan": 38.95,
+          "total_share_ratio": 0.000790369014
+        },
+        {
+          "date": "2021-12-20",
+          "type": "股权激励限售股份",
+          "shares_wan": 48801.75,
+          "tradable_shares_wan": 380.8,
+          "total_share_ratio": 0.007802998868
+        },
+        {
+          "date": "2021-12-03",
+          "type": "股权激励限售股份",
+          "shares_wan": 48420.95,
+          "tradable_shares_wan": 38.95,
+          "total_share_ratio": 0.000804403879
+        },
+        {
+          "date": "2021-04-12",
+          "type": "定向增发机构配售股份",
+          "shares_wan": 48382.0,
+          "tradable_shares_wan": 8000.2,
+          "total_share_ratio": 0.165354884048
+        },
+        {
+          "date": "2020-12-21",
+          "type": "股权激励限售股份",
+          "shares_wan": 40381.8,
+          "tradable_shares_wan": 380.8,
+          "total_share_ratio": 0.009429990738
+        },
+        {
+          "date": "2020-08-25",
+          "type": "首发原股东限售股份",
+          "shares_wan": 40001.0,
+          "tradable_shares_wan": 31096.8,
+          "total_share_ratio": 0.777400564986
+        },
+        {
+          "date": "2018-08-27",
+          "type": "首发原股东限售股份",
+          "shares_wan": 8904.2,
+          "tradable_shares_wan": 4903.2,
+          "total_share_ratio": 0.550661485591
+        }
+      ],
+      "upcoming": []
+    }
+  },
+  "usage": "candidate_evidence_only_not_automatic_score"
+}

@@ -1,0 +1,18 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260724_022212_466803_serve",
+  "command": "serve",
+  "argv": [
+    "serve"
+  ],
+  "status": "failed",
+  "started_at": "2026-07-24 02:22:12",
+  "ended_at": "2026-07-24 02:22:12",
+  "duration_sec": 0.002,
+  "artifacts": [],
+  "error": {
+    "type": "PermissionError",
+    "message": "[Errno 1] Operation not permitted",
+    "traceback": "PermissionError: [Errno 1] Operation not permitted"
+  }
+}

@@ -5,17 +5,17 @@
   "path": "stocks/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/stocks/index.json",
   "exists": true,
-  "size": 1590127,
-  "file_mtime": "2026-07-24 01:53:38",
-  "updated_at": "2026-07-24 01:53:38",
-  "record_count": 5520,
+  "size": 1670624,
+  "file_mtime": "2026-10-16 15:55:21",
+  "updated_at": "2026-10-16 15:55:21",
+  "record_count": 5786,
   "field_summary": {
     "top_level_fields": [
       "stocks",
       "updated_at"
     ],
     "list_fields": {
-      "stocks": 5520
+      "stocks": 5786
     },
     "dict_fields": []
   },
@@ -30,11 +30,11 @@
     "market"
   ],
   "generated_by": {
-    "run_id": "20260720_235854_034919_stock",
+    "run_id": "20260817_163538_513193_stock",
     "command": "stock",
     "status": "success",
-    "ended_at": "2026-07-20 23:58:55",
-    "duration_sec": 1.8683,
+    "ended_at": "2026-08-17 16:35:52",
+    "duration_sec": 14.1605,
     "artifact_exists_at_finish": true
   },
   "source": {
@@ -43,5 +43,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

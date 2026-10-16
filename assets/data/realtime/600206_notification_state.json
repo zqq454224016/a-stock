@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-16",
+  "daily_count": 2,
+  "pending_state": "strong_downtrend",
+  "pending_count": 1,
+  "last_confirmed_bar": "2026-10-16 15:00",
+  "last_notified_at": "2026-10-16T14:00:26",
+  "last_notified_state": "strong_downtrend",
+  "last_notified_price": 38.38
+}

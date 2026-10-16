@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "updated_at": "2026-10-16 17:26:14",
+  "trade_date": "2026-10-16",
+  "target_trade_date": "2026-10-16",
+  "quote_count": 3455,
+  "merged": 0,
+  "already_current": 3452,
+  "failed": 3,
+  "method": "previous_qfq_close / tencent_previous_raw_close",
+  "limitations": [
+    "latest_bar_only",
+    "requires_valid_previous_close",
+    "not_used_before_provider_close_timestamp"
+  ],
+  "merged_codes": []
+}

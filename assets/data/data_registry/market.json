@@ -5,12 +5,13 @@
   "path": "latest.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/latest.json",
   "exists": true,
-  "size": 7023,
-  "file_mtime": "2026-07-24 01:54:14",
-  "updated_at": "2026-07-24 01:54:14",
+  "size": 6865,
+  "file_mtime": "2026-10-16 15:52:27",
+  "updated_at": "2026-10-16 15:52:27",
   "record_count": 1,
   "field_summary": {
     "top_level_fields": [
+      "component_trade_dates",
       "degraded",
       "fund_flow",
       "indices",
@@ -18,6 +19,7 @@
       "limitations",
       "market_distribution",
       "spot_scope",
+      "stock_cache_date_coverage",
       "top_gainers",
       "top_losers",
       "top_volume",
@@ -25,7 +27,7 @@
       "updated_at"
     ],
     "list_fields": {
-      "indices": 4,
+      "indices": 2,
       "market_distribution": 7,
       "top_gainers": 10,
       "top_losers": 10,
@@ -34,7 +36,9 @@
       "limitations": 0
     },
     "dict_fields": [
-      "fund_flow"
+      "component_trade_dates",
+      "fund_flow",
+      "stock_cache_date_coverage"
     ]
   },
   "data_quality": {
@@ -45,12 +49,19 @@
     "limitations": []
   },
   "dependencies": [],
-  "generated_by": {},
+  "generated_by": {
+    "run_id": "20260805_000516_601443_market",
+    "command": "market",
+    "status": "success",
+    "ended_at": "2026-08-05 00:05:39",
+    "duration_sec": 22.7302,
+    "artifact_exists_at_finish": true
+  },
   "source": {
     "declared_output": "latest.json",
     "expected_command": "market",
-    "payload_trade_date": "2026-07-22",
+    "payload_trade_date": "2026-10-16",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:18"
+  "registered_at": "2026-10-16 15:55:22"
 }

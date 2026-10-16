@@ -1,0 +1,27 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260720_235825_437874_stock",
+  "command": "stock",
+  "argv": [
+    "stock",
+    "600378"
+  ],
+  "status": "success",
+  "started_at": "2026-07-20 23:58:25",
+  "ended_at": "2026-07-20 23:58:27",
+  "duration_sec": 1.9218,
+  "artifacts": [
+    {
+      "path": "stocks/index.json",
+      "exists": true,
+      "size": 338,
+      "mtime": "2026-07-20 23:58:27"
+    },
+    {
+      "path": "stocks/live/index.json",
+      "exists": true,
+      "size": 941,
+      "mtime": "2026-07-14 00:10:54"
+    }
+  ]
+}

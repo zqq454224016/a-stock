@@ -1,0 +1,49 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260721_005458_300705_all",
+  "command": "all",
+  "argv": [
+    "all"
+  ],
+  "status": "failed",
+  "started_at": "2026-07-21 00:54:58",
+  "ended_at": "2026-07-21 00:55:42",
+  "duration_sec": 44.4012,
+  "artifacts": [
+    {
+      "path": "manifests/phase1_market_data.json",
+      "exists": true,
+      "size": 1757,
+      "mtime": "2026-07-21 00:55:06"
+    },
+    {
+      "path": "normalized/market.instruments/security_master.json",
+      "exists": true,
+      "size": 1877474,
+      "mtime": "2026-07-21 00:55:02"
+    },
+    {
+      "path": "normalized/market.trading_status/events.json",
+      "exists": true,
+      "size": 612,
+      "mtime": "2026-07-21 00:55:02"
+    },
+    {
+      "path": "normalized/market.corporate_actions/ex_factors.json",
+      "exists": true,
+      "size": 409,
+      "mtime": "2026-07-21 00:55:06"
+    },
+    {
+      "path": "monitoring/snapshot.json",
+      "exists": true,
+      "size": 28621,
+      "mtime": "2026-07-14 00:10:55"
+    }
+  ],
+  "error": {
+    "type": "RuntimeError",
+    "message": "TickFlow 批量日 K 不可用: 无日/周/月K线查询批量查询权限",
+    "traceback": "RuntimeError: TickFlow 批量日 K 不可用: 无日/周/月K线查询批量查询权限"
+  }
+}

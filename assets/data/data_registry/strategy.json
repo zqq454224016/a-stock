@@ -5,10 +5,10 @@
   "path": "strategy/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/strategy/index.json",
   "exists": true,
-  "size": 657126,
-  "file_mtime": "2026-07-24 01:55:14",
-  "updated_at": "2026-07-24 01:55:14",
-  "record_count": 3048,
+  "size": 694941,
+  "file_mtime": "2026-10-16 15:54:59",
+  "updated_at": "2026-10-16 15:54:59",
+  "record_count": 3217,
   "field_summary": {
     "top_level_fields": [
       "count",
@@ -17,7 +17,7 @@
       "updated_at"
     ],
     "list_fields": {
-      "items": 3048
+      "items": 3217
     },
     "dict_fields": []
   },
@@ -39,5 +39,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-24 01:55:19"
+  "registered_at": "2026-10-16 15:55:22"
 }

@@ -1,0 +1,155 @@
+{
+  "code": "002348",
+  "name": "高乐股份",
+  "trade_date": "2026-08-10",
+  "updated_at": "2026-08-11 12:07:13",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-08-10",
+    "close": 12.57,
+    "market_cap_yi": 124.84,
+    "float_cap_yi": 113.57,
+    "pe_ttm": -294.46328892,
+    "pe_static": -288.75692601,
+    "pb": 31.37895853,
+    "ps": 37.35101245,
+    "peg": -9.636086305117
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-04-29",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      },
+      {
+        "announce_date": "2025-04-28",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      },
+      {
+        "announce_date": "2024-04-26",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      },
+      {
+        "announce_date": "2023-04-29",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      },
+      {
+        "announce_date": "2022-04-29",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2028-05-22",
+        "unlock_shares": 22969600.0,
+        "unlock_value_yi": 2.89,
+        "pct_total": 0.023128278493,
+        "pct_float": 0.025421982402,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2027-05-24",
+        "unlock_shares": 22969600.0,
+        "unlock_value_yi": 2.89,
+        "pct_total": 0.023128278493,
+        "pct_float": 0.025421982402,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2020-08-11",
+        "unlock_shares": 111147760.0,
+        "unlock_value_yi": 3.12,
+        "pct_total": 0.117343496622,
+        "pct_float": 0.131640057269,
+        "holder_type": "首发原股东限售股份,追加承诺限售股份上市流通"
+      }
+    ],
+    "earnings_forecast": {
+      "indicator": "归属于上市公司股东的净利润",
+      "forecast_type": "续亏",
+      "change_pct": 6.98,
+      "forecast_value": "-26000000.0",
+      "reason": "公司预计2026年半年度营业收入较上年同期增长,归属于上市公司股东的净利润持续亏损。公司营业收入较上年同期增长,主要因国内业务拓展力度持续加强玩具内销及相关业务增长所致。",
+      "announce_date": "2026-07-16",
+      "report_period": "20260630"
+    }
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3900.3523,
+        "change_pct": 0.565
+      },
+      {
+        "name": "深证成指",
+        "code": "399001",
+        "close": 14110.121,
+        "change_pct": -0.241
+      },
+      {
+        "name": "创业板指",
+        "code": "399006",
+        "close": 3515.56,
+        "change_pct": -0.554
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1701.2916,
+        "change_pct": 0.45
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -755.77,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": 10.28
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 95.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "margin",
+    "northbound"
+  ]
+}

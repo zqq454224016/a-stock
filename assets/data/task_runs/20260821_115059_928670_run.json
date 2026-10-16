@@ -1,0 +1,14 @@
+{
+  "task_run_version": "1.0.0",
+  "run_id": "20260821_115059_928670_run",
+  "command": "run",
+  "argv": [
+    "run",
+    "daily_market"
+  ],
+  "status": "success",
+  "started_at": "2026-08-21 11:50:59",
+  "ended_at": "2026-08-21 11:51:28",
+  "duration_sec": 28.1174,
+  "artifacts": []
+}

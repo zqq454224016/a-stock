@@ -1,0 +1,72 @@
+{
+  "dataset": "market.dragon_tiger.official",
+  "schema_version": "1.0.0",
+  "known_at": "2026-08-03 16:57:59",
+  "source": "sse+szse",
+  "trade_date": "2026-08-03",
+  "szse": [
+    {
+      "code": "000533",
+      "name": "顺钠股份",
+      "amount": 12.6,
+      "reason": "日价格涨幅偏离值达到10.33%"
+    },
+    {
+      "code": "000815",
+      "name": "美利云",
+      "amount": 15.25,
+      "reason": "日价格涨幅偏离值达到10.33%"
+    },
+    {
+      "code": "000820",
+      "name": "神雾节能",
+      "amount": 2.59,
+      "reason": "日换手率达到22.72%"
+    },
+    {
+      "code": "000967",
+      "name": "盈峰环境",
+      "amount": 7.24,
+      "reason": "日价格涨幅偏离值达到10.33%"
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "amount": 97.75,
+      "reason": "日价格跌幅偏离值达到-9.24%"
+    },
+    {
+      "code": "002131",
+      "name": "利欧股份",
+      "amount": 70.01,
+      "reason": "日价格涨幅偏离值达到10.33%"
+    },
+    {
+      "code": "002131",
+      "name": "利欧股份",
+      "amount": 70.01,
+      "reason": "日换手率达到24.00%"
+    },
+    {
+      "code": "002131",
+      "name": "利欧股份",
+      "amount": 147.36,
+      "reason": "异常期间价格涨幅偏离值累计达到25.95%"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "amount": 85.27,
+      "reason": "日价格跌幅偏离值达到-9.18%"
+    },
+    {
+      "code": "002199",
+      "name": "东晶电子",
+      "amount": 2.57,
+      "reason": "日价格跌幅偏离值达到-9.68%"
+    }
+  ],
+  "sse_raw": "",
+  "errors": {},
+  "usage": "official_evidence_and_fallback_not_automatic_score"
+}
