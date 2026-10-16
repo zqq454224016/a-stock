@@ -1,0 +1,46 @@
+{
+  "code": "600840",
+  "trade_date": "2009-07-31",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_600840_20090731",
+  "factors": {
+    "ma20_bias": -0.52,
+    "rsi14": 54.03,
+    "macd": 0.91,
+    "macd_signal": 1.2247,
+    "macd_hist": -0.3148,
+    "atr14": 1.4257,
+    "momentum_20": 0.89,
+    "volume_ratio_20": 1.33,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "price_volume_trust": {
+      "price_trust": true,
+      "volume_trust": false,
+      "price_trust_recent": true,
+      "volume_trust_recent": false,
+      "trust_signal": "price_or_volume_trust",
+      "price_month_trust": false,
+      "price_quarter_trust": true,
+      "volume_month_trust": false,
+      "volume_quarter_trust": false
+    },
+    "technical_score": 49.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 49.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-10-16 15:59:42"
+}

@@ -1,0 +1,46 @@
+{
+  "code": "600991",
+  "trade_date": "2012-03-06",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_600991_20120306",
+  "factors": {
+    "ma20_bias": 7.01,
+    "rsi14": 75.61,
+    "macd": 0.4947,
+    "macd_signal": 0.3781,
+    "macd_hist": 0.1166,
+    "atr14": 0.41,
+    "momentum_20": 10.68,
+    "volume_ratio_20": 3.47,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "price_volume_trust": {
+      "price_trust": true,
+      "volume_trust": true,
+      "price_trust_recent": true,
+      "volume_trust_recent": true,
+      "trust_signal": "price_volume_trust",
+      "price_month_trust": true,
+      "price_quarter_trust": true,
+      "volume_month_trust": true,
+      "volume_quarter_trust": true
+    },
+    "technical_score": 92.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 92.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-10-16 16:00:04"
+}

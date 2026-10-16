@@ -1,22 +1,33 @@
 {
   "code": "605167",
-  "trade_date": "2026-07-23",
+  "trade_date": "2026-10-16",
   "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": null,
   "enhance_version": "1.0.0",
-  "data_version": "daily_kline_605167_20260723",
+  "data_version": "daily_kline_605167_20261016",
   "factors": {
-    "ma20_bias": -16.51,
-    "rsi14": 8.91,
-    "macd": -0.714,
-    "macd_signal": -0.384,
-    "macd_hist": -0.3301,
-    "atr14": 0.8814,
-    "momentum_20": -17.2,
-    "volume_ratio_20": 0.46,
+    "ma20_bias": -7.88,
+    "rsi14": 26.93,
+    "macd": -0.273,
+    "macd_signal": -0.0343,
+    "macd_hist": -0.2387,
+    "atr14": 0.6257,
+    "momentum_20": -10.28,
+    "volume_ratio_20": 0.77,
     "above_ma20": false,
     "ma_cross": "none",
+    "price_volume_trust": {
+      "price_trust": true,
+      "volume_trust": false,
+      "price_trust_recent": true,
+      "volume_trust_recent": false,
+      "trust_signal": "price_or_volume_trust",
+      "price_month_trust": false,
+      "price_quarter_trust": true,
+      "volume_month_trust": false,
+      "volume_quarter_trust": false
+    },
     "technical_score": 23.0,
     "sentiment_score": null,
     "fundamental_score": null,
@@ -31,5 +42,5 @@
     "fundamental_detail": {},
     "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-24 01:54:44"
+  "updated_at": "2026-10-16 16:02:05"
 }

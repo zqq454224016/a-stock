@@ -1,35 +1,54 @@
 {
   "code": "601138",
-  "trade_date": "2026-07-23",
+  "trade_date": "2026-10-16",
   "factor_version": "1.2.0",
   "technical_version": "1.0.0",
   "sentiment_version": null,
   "enhance_version": "1.0.0",
-  "data_version": "daily_kline_601138_20260723",
+  "data_version": "daily_kline_601138_20261016",
   "factors": {
-    "ma20_bias": -2.8,
-    "rsi14": 47.13,
-    "macd": -2.7163,
-    "macd_signal": -2.3829,
-    "macd_hist": -0.3335,
-    "atr14": 4.0486,
-    "momentum_20": -18.33,
-    "volume_ratio_20": 1.01,
+    "ma20_bias": -17.53,
+    "rsi14": 12.13,
+    "macd": -3.7623,
+    "macd_signal": -2.3969,
+    "macd_hist": -1.3654,
+    "atr14": 2.5721,
+    "momentum_20": -25.24,
+    "volume_ratio_20": 1.25,
     "above_ma20": false,
     "ma_cross": "none",
-    "technical_score": 36.0,
+    "price_volume_trust": {
+      "price_trust": false,
+      "volume_trust": true,
+      "price_trust_recent": false,
+      "volume_trust_recent": true,
+      "trust_signal": "price_or_volume_trust",
+      "price_month_trust": false,
+      "price_quarter_trust": false,
+      "volume_month_trust": true,
+      "volume_quarter_trust": false
+    },
+    "technical_score": 28.0,
     "sentiment_score": null,
-    "fundamental_score": null,
+    "fundamental_score": 57.0,
     "fund_flow_score": null,
-    "multi_factor_score": 36.0,
+    "multi_factor_score": 34.7,
     "has_sentiment": false,
-    "has_fundamental": false,
+    "has_fundamental": true,
     "has_fund_flow": false,
     "factor_weights": {
-      "technical": 1.0
+      "technical": 0.769,
+      "fundamental": 0.231
     },
-    "fundamental_detail": {},
+    "fundamental_detail": {
+      "pe_ttm": 27.7488507,
+      "pb": 7.40681922,
+      "market_cap_yi": 13017.72,
+      "valuation_source": "eastmoney_value",
+      "next_lockup": "2025-01-27",
+      "forecast_type": "预增"
+    },
     "fund_flow_detail": {}
   },
-  "updated_at": "2026-07-24 01:54:36"
+  "updated_at": "2026-10-16 16:00:12"
 }
