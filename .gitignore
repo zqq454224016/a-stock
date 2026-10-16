@@ -3,3 +3,9 @@ __pycache__/
 *.pyc
 .DS_Store
 config/local.json
+tmp/
+**/worker.pid
+**/worker.lock
+**/worker.log
+**/worker.stop
+**/manual_refresh.log
