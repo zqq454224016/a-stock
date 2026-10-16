@@ -30,7 +30,7 @@ def _bid_ask_df():
     ])
 
 
-def test_fetch_spot_map_skips_bulk_for_small_watchlist():
+def test_fetch_spot_map_uses_bulk_for_explicit_codes():
     api = AkShareAPI(CrawlerConfig())
     with patch.object(api, "fetch_spot_all", side_effect=AssertionError("should not call bulk")):
         with patch.object(api, "fetch_spot_quote", return_value={"close": 69.91, "change_pct": -8.0, "name": ""}):
@@ -38,9 +38,8 @@ def test_fetch_spot_map_skips_bulk_for_small_watchlist():
     assert spot["600378"]["close"] == 69.91
 
 
-def test_fetch_spot_map_bulk_fail_watchlist_fallback():
+def test_fetch_spot_map_bulk_fail_explicit_codes_fallback():
     cfg = CrawlerConfig()
-    cfg.watchlist_spot_threshold = 0  # 强制走全市场路径
     api = AkShareAPI(cfg)
     with patch.object(api, "fetch_spot_all", side_effect=RuntimeError("sina html")):
         with patch.object(api, "fetch_spot_quote", return_value={"close": 69.91, "change_pct": -8.0, "name": ""}):

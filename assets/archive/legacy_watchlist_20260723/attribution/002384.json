@@ -1,0 +1,300 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "daily_attribution_version": "1.0.0",
+  "status": "ok",
+  "trade_date": "2026-07-22",
+  "previous_trade_date": "2026-07-21",
+  "pattern": "yesterday_up_today_down",
+  "items": [
+    {
+      "label": "昨日",
+      "date": "2026-07-21",
+      "fact": {
+        "date": "2026-07-21",
+        "open": 217.73,
+        "high": 237.65,
+        "low": 195.96,
+        "close": 231.0,
+        "prev_close": 217.73,
+        "return_pct": 6.09,
+        "intraday_pct": 6.09,
+        "amplitude_pct": 21.27,
+        "volume": 1526580.0,
+        "volume_ratio_20": 1.65,
+        "ma5": 244.39,
+        "ma10": 246.02,
+        "ma20": 246.37,
+        "ma60": 227.16,
+        "direction": "up"
+      },
+      "direction": "up",
+      "cause_scores": {
+        "bullish": 2.1,
+        "bearish": 5.9,
+        "neutral": 0.0
+      },
+      "dominant_causes": [
+        {
+          "category": "price_action",
+          "label": "单日涨幅较强",
+          "effect": "bullish",
+          "evidence": "收盘涨幅 6.09%",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "volume",
+          "label": "放量上涨",
+          "effect": "bullish",
+          "evidence": "20日量比 1.65",
+          "source": "stock.kline",
+          "weight": 1.0
+        }
+      ],
+      "all_causes": [
+        {
+          "category": "price_action",
+          "label": "单日涨幅较强",
+          "effect": "bullish",
+          "evidence": "收盘涨幅 6.09%",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 231.00，MA20 246.37",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "short_trend",
+          "label": "收盘低于 MA5",
+          "effect": "bearish",
+          "evidence": "收盘 231.00，MA5 244.39",
+          "source": "stock.kline",
+          "weight": 0.8
+        },
+        {
+          "category": "volume",
+          "label": "放量上涨",
+          "effect": "bullish",
+          "evidence": "20日量比 1.65",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "科创50参考 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "fund_flow",
+          "label": "市场主力资金净流出",
+          "effect": "bearish",
+          "evidence": "主力净流出 -690.83 亿",
+          "source": "latest.fund_flow",
+          "weight": 1.0
+        },
+        {
+          "category": "event",
+          "label": "估值压力",
+          "effect": "bearish",
+          "evidence": "PE(TTM)=195.27；PB=17.60",
+          "source": "impact.valuation_pressure",
+          "weight": 1.0
+        },
+        {
+          "category": "event",
+          "label": "解禁压力",
+          "effect": "bearish",
+          "evidence": "最近解禁 2028-06-28，规模 273.38 亿元",
+          "source": "impact.lockup_pressure",
+          "weight": 1.0
+        }
+      ],
+      "conclusion": "上涨主要由量价/趋势强化、市场或事件正向因素共同解释"
+    },
+    {
+      "label": "今日",
+      "date": "2026-07-22",
+      "fact": {
+        "date": "2026-07-22",
+        "open": 230.65,
+        "high": 239.77,
+        "low": 215.6,
+        "close": 217.5,
+        "prev_close": 231.0,
+        "return_pct": -5.84,
+        "intraday_pct": -5.7,
+        "amplitude_pct": 11.21,
+        "volume": 1274903.0,
+        "volume_ratio_20": 1.32,
+        "ma5": 235.39,
+        "ma10": 244.01,
+        "ma20": 244.39,
+        "ma60": 227.67,
+        "direction": "down"
+      },
+      "direction": "down",
+      "cause_scores": {
+        "bullish": 0.0,
+        "bearish": 10.1,
+        "neutral": 0.0
+      },
+      "dominant_causes": [
+        {
+          "category": "price_action",
+          "label": "单日跌幅较深",
+          "effect": "bearish",
+          "evidence": "收盘跌幅 -5.84%",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "volume",
+          "label": "放量下跌",
+          "effect": "bearish",
+          "evidence": "20日量比 1.32",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "科创50参考 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 217.50，MA20 244.39",
+          "source": "stock.kline",
+          "weight": 1.0
+        }
+      ],
+      "all_causes": [
+        {
+          "category": "price_action",
+          "label": "单日跌幅较深",
+          "effect": "bearish",
+          "evidence": "收盘跌幅 -5.84%",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "trend",
+          "label": "收盘跌破 MA20",
+          "effect": "bearish",
+          "evidence": "收盘 217.50，MA20 244.39",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "short_trend",
+          "label": "收盘低于 MA5",
+          "effect": "bearish",
+          "evidence": "收盘 217.50，MA5 235.39",
+          "source": "stock.kline",
+          "weight": 0.8
+        },
+        {
+          "category": "volume",
+          "label": "放量下跌",
+          "effect": "bearish",
+          "evidence": "20日量比 1.32",
+          "source": "stock.kline",
+          "weight": 1.1
+        },
+        {
+          "category": "intraday",
+          "label": "冲高回落或日内承接弱",
+          "effect": "bearish",
+          "evidence": "日内涨跌 -5.70%，振幅 11.21%",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "reversal",
+          "label": "回吐前一交易日收盘",
+          "effect": "bearish",
+          "evidence": "收盘 217.50 低于前日 231.00",
+          "source": "stock.kline",
+          "weight": 1.0
+        },
+        {
+          "category": "market",
+          "label": "大盘走弱",
+          "effect": "bearish",
+          "evidence": "科创50参考 跌幅超过1%",
+          "source": "latest.indices",
+          "weight": 1.1
+        },
+        {
+          "category": "fund_flow",
+          "label": "市场主力资金净流出",
+          "effect": "bearish",
+          "evidence": "主力净流出 -690.83 亿",
+          "source": "latest.fund_flow",
+          "weight": 1.0
+        },
+        {
+          "category": "event",
+          "label": "估值压力",
+          "effect": "bearish",
+          "evidence": "PE(TTM)=195.27；PB=17.60",
+          "source": "impact.valuation_pressure",
+          "weight": 1.0
+        },
+        {
+          "category": "event",
+          "label": "解禁压力",
+          "effect": "bearish",
+          "evidence": "最近解禁 2028-06-28，规模 273.38 亿元",
+          "source": "impact.lockup_pressure",
+          "weight": 1.0
+        }
+      ],
+      "conclusion": "下跌主要由技术走弱、资金/大盘压力或事件风险共同解释"
+    }
+  ],
+  "logic_review": {
+    "logic_broken": true,
+    "broken_reasons": [
+      "昨日上涨后今日转跌，短线延续性不足",
+      "今日收盘低于昨日收盘，昨日上涨被回吐",
+      "今日收盘低于 MA20，中期趋势支撑转弱",
+      "今日量价或日内结构显示承接不足"
+    ],
+    "next_watch": {
+      "recover_price": 235.39,
+      "risk_price": 195.96,
+      "pressure_price": 239.77,
+      "note": "重新站上恢复价且资金/成交同步改善，才视为上涨逻辑修复；跌破风险价则昨日上涨确认失败。"
+    }
+  },
+  "summary": {
+    "yesterday_return_pct": 6.09,
+    "today_return_pct": -5.84,
+    "logic_broken": true,
+    "primary_today_causes": [
+      "单日跌幅较深",
+      "放量下跌",
+      "大盘走弱",
+      "收盘跌破 MA20"
+    ]
+  },
+  "limitations": [
+    "market_data_degraded",
+    "replay_missing"
+  ],
+  "updated_at": "2026-07-23 00:06:28"
+}

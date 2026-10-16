@@ -9,7 +9,6 @@ from quant_system.pipeline.adjuster import apply_adjustment
 from quant_system.pipeline.cleaner import clean_kline_df
 from quant_system.pipeline.normalizer import normalize_code, normalize_kline_df, to_symbol
 from quant_system.storage.json_store import JsonStore
-from quant_system.storage.mysql_client import MySQLClient
 from quant_system.utils.logger import get_logger
 from quant_system.utils.time_utils import now_str
 
@@ -26,8 +25,6 @@ def run_backfill(codes: list[str], days: int = 250, refresh_stocks: bool = True)
     cfg.stock_hist_days = days
     api = AkShareAPI(cfg)
     store = JsonStore(DBConfig())
-    mysql = MySQLClient(DBConfig())
-    mysql.connect()
 
     ok_codes: list[str] = []
 
@@ -57,7 +54,6 @@ def run_backfill(codes: list[str], days: int = 250, refresh_stocks: bool = True)
                 "fetched_at": now_str(),
                 "klines": klines,
             })
-            mysql.save_klines(code, klines)
             ok_codes.append(code)
             logger.info("backfill %s: %s 条", code, len(klines))
         except Exception as e:

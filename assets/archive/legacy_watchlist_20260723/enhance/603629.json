@@ -1,0 +1,136 @@
+{
+  "code": "603629",
+  "name": "利通电子",
+  "trade_date": "2026-07-22",
+  "updated_at": "2026-07-23 00:06:19",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-07-22",
+    "close": 118.34,
+    "market_cap_yi": 433.99,
+    "float_cap_yi": 426.88,
+    "pe_ttm": 81.20833743,
+    "pe_static": 148.32607269,
+    "pb": 19.3333073,
+    "ps": 12.05350341,
+    "peg": 0.047898191387
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-07-01",
+        "ex_date": "2026-07-07",
+        "record_date": "2026-07-06",
+        "cash_div": 3.7,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 4.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2025-09-24",
+        "ex_date": "2025-09-30",
+        "record_date": "2025-09-29",
+        "cash_div": 0.8,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2025-06-14",
+        "ex_date": "2025-06-20",
+        "record_date": "2025-06-19",
+        "cash_div": 0.5,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2024-06-07",
+        "ex_date": "2024-06-14",
+        "record_date": "2024-06-13",
+        "cash_div": 0.9,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2023-06-02",
+        "ex_date": "2023-06-08",
+        "record_date": "2023-06-07",
+        "cash_div": 2.4,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 4.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2028-12-08",
+        "unlock_shares": 126000.0,
+        "unlock_value_yi": 0.15,
+        "pct_total": 0.000343578892,
+        "pct_float": 0.000349298105,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2028-11-06",
+        "unlock_shares": 903000.0,
+        "unlock_value_yi": 1.07,
+        "pct_total": 0.002462315395,
+        "pct_float": 0.002503303085,
+        "holder_type": "股权激励限售股份"
+      },
+      {
+        "unlock_date": "2028-01-18",
+        "unlock_shares": 462000.0,
+        "unlock_value_yi": 0.55,
+        "pct_total": 0.001259789272,
+        "pct_float": 0.001280759718,
+        "holder_type": "股权激励限售股份"
+      }
+    ],
+    "earnings_forecast": null
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3867.03,
+        "change_pct": 0.07
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1860.08,
+        "change_pct": -2.26
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -690.83,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": -24.18
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 95.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "earnings_forecast_20260930",
+    "margin_sse",
+    "northbound"
+  ]
+}

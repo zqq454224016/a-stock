@@ -41,7 +41,9 @@ def _load_map(store: JsonStore, folder: str, index_key: str, fallback_glob: bool
         for path in sorted(base.glob("*.json")):
             if path.stem == "index":
                 continue
-            out.setdefault(path.stem, store.read(path))
+            payload = _read_optional(store, f"{folder}/{path.name}")
+            if payload:
+                out.setdefault(path.stem, payload)
     return out
 
 

@@ -10,7 +10,8 @@ from quant_system.data_source.akshare_api import AkShareAPI
 from quant_system.factors.signal import compute_primary_signal
 from quant_system.factors.technical import compute_technical_factors
 from quant_system.pipeline.kline_loader import load_kline_df, load_stock_context
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.pipeline.quality_gate import factor_block_reason, load_quality_map
 from quant_system.pipeline.quality_inspector import inspect_kline_df
 from quant_system.storage.json_store import JsonStore
@@ -37,7 +38,7 @@ def run_factor_compute(
     if codes:
         stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
     else:
-        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="因子计算")
+        stocks = filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="因子计算")
 
     if not stocks:
         logger.error("未配置自选股")
@@ -88,6 +89,8 @@ def run_factor_compute(
                 "fundamental_score": f.get("fundamental_score"),
                 "fund_flow_score": f.get("fund_flow_score"),
                 "primary_signal": signal_payload.get("signal"),
+                "price_trust": (f.get("price_volume_trust") or {}).get("price_trust"),
+                "volume_trust": (f.get("price_volume_trust") or {}).get("volume_trust"),
             })
             logger.info(
                 "因子 %s: multi=%s tech=%s sent=%s fund=%s flow=%s",

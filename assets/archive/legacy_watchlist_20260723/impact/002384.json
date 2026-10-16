@@ -1,0 +1,79 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-22",
+  "version": "1.1.0",
+  "impact_score": -53,
+  "impact_direction": "negative",
+  "events": [
+    {
+      "event_type": "valuation_pressure",
+      "title": "估值压力",
+      "period": "2026-07-22",
+      "announce_date": "2026-07-22",
+      "impact_score": -33,
+      "impact_direction": "negative",
+      "confidence": "medium",
+      "metrics": {
+        "pe_ttm": 195.27237878,
+        "pb": 17.59784078
+      },
+      "evidence": [
+        "PE(TTM)=195.27",
+        "PB=17.60"
+      ],
+      "source": "eastmoney_value",
+      "limitations": [],
+      "evidence_quality": {
+        "score": 95,
+        "level": "high",
+        "missing_evidence": []
+      }
+    },
+    {
+      "event_type": "lockup_pressure",
+      "title": "解禁压力",
+      "period": "2028-06-28",
+      "announce_date": "2028-06-28",
+      "impact_score": -20,
+      "impact_direction": "negative",
+      "confidence": "medium",
+      "metrics": {
+        "unlock_value_yi": 273.38,
+        "pct_float": 0.090667137299,
+        "holder_type": "定向增发机构配售股份"
+      },
+      "evidence": [
+        "最近解禁 2028-06-28，规模 273.38 亿元"
+      ],
+      "source": "enhance.lockups",
+      "limitations": [],
+      "evidence_quality": {
+        "score": 95,
+        "level": "high",
+        "missing_evidence": []
+      }
+    }
+  ],
+  "evidence_quality": {
+    "avg_score": 95.0,
+    "low_quality_event_count": 0,
+    "missing_evidence": []
+  },
+  "post_event_review": {
+    "status": "pending",
+    "evaluated_count": 0,
+    "pending_count": 9,
+    "hit_rate": null,
+    "avg_return_pct": null,
+    "worst_adverse_pct": null,
+    "failure_reasons": [],
+    "limitations": [
+      "impact_review_requires_future_kline",
+      "review_requires_future_kline_after_signal_date",
+      "watch_action_hit_rule_uses_abs_return_below_1pct"
+    ]
+  },
+  "limitations": [],
+  "updated_at": "2026-07-23 00:06:22"
+}

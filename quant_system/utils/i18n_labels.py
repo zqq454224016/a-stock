@@ -9,7 +9,6 @@ LIMITATION_LABELS: dict[str, str] = {
     "dividend_missing": "分红数据缺失",
     "bulk_spot_skipped": "已跳过全市场行情",
     "bulk_spot_failed": "全市场行情失败",
-    "spot_watchlist_only": "仅自选股行情",
     "spot_stock_cache": "使用个股缓存行情",
     "spot_unavailable": "行情不可用",
     "market_fetch_failed": "大盘采集失败",

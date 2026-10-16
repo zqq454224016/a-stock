@@ -1,0 +1,35 @@
+{
+  "code": "300988",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_300988_20260723",
+  "factors": {
+    "ma20_bias": 0.43,
+    "rsi14": 40.78,
+    "macd": -0.743,
+    "macd_signal": -0.8827,
+    "macd_hist": 0.1396,
+    "atr14": 1.0121,
+    "momentum_20": -6.62,
+    "volume_ratio_20": 2.21,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 63.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 63.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:20"
+}

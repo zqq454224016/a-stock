@@ -1,0 +1,35 @@
+{
+  "code": "000596",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_000596_20260723",
+  "factors": {
+    "ma20_bias": 12.09,
+    "rsi14": 67.94,
+    "macd": 2.8508,
+    "macd_signal": 0.3858,
+    "macd_hist": 2.4649,
+    "atr14": 4.6907,
+    "momentum_20": 16.55,
+    "volume_ratio_20": 1.67,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 92.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 92.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:15"
+}

@@ -6,7 +6,7 @@ from typing import Any
 
 import pandas as pd
 
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
 from quant_system.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -16,31 +16,13 @@ class SnapshotProviderMixin:
     def _resolve_market_spot_df(self, store: Any, limitations: list[str]) -> tuple[pd.DataFrame, str]:
         from quant_system.pipeline.cleaner import clean_spot_df
 
-        codes = [normalize_code(x["code"]) for x in load_watchlist(self.config)]
-        if codes and self._should_skip_bulk_spot(set(codes)):
-            logger.info("自选股 %s 只，跳过全市场行情，逐只拉取", len(codes))
-            limitations.append("bulk_spot_skipped")
-            spot_map = self._fetch_spot_map_per_code(codes)
-            if spot_map:
-                df = clean_spot_df(self._quotes_to_spot_df(spot_map))
-                if not df.empty:
-                    limitations.append("spot_watchlist_only")
-                    return df, "watchlist"
-
         try:
             df = clean_spot_df(self.fetch_spot_all())
             if not df.empty:
                 return df, "full_market"
         except Exception as e:
             limitations.append("bulk_spot_failed")
-            logger.warning("全市场行情失败，降级自选股: %s", e)
-
-        if codes:
-            spot_map = self._fetch_spot_map_per_code(codes)
-            df = clean_spot_df(self._quotes_to_spot_df(spot_map))
-            if not df.empty:
-                limitations.append("spot_watchlist_only")
-                return df, "watchlist"
+            logger.warning("全市场行情失败，降级本地全市场缓存: %s", e)
 
         df = self._spot_df_from_stocks_cache(store)
         if not df.empty:
@@ -104,6 +86,7 @@ class SnapshotProviderMixin:
         ]
 
     def fetch_market_snapshot(self, store: Any | None = None) -> dict[str, Any]:
+        import json
         from quant_system.config.db_config import DBConfig
         from quant_system.storage.json_store import JsonStore
         from quant_system.utils.time_utils import now_str, today_str
@@ -114,7 +97,29 @@ class SnapshotProviderMixin:
 
         stock_df, spot_scope = self._resolve_market_spot_df(store, limitations)
         fund_flow, hsgt_date = self.fetch_fund_flow()
-        trade_date = hsgt_date or cached.get("trade_date") or today_str()
+        # 北向资金接口的日期可能滞后一到数个交易日，不能用它覆盖刚获取的
+        # 全市场快照日期。快照成功时以本地当前日期为观测日；仅在完全降级
+        # 到缓存时才沿用缓存日期，避免出现“已抓到新行情但仍写旧交易日”。
+        if spot_scope == "full_market" and not stock_df.empty:
+            trade_date = today_str()
+        elif spot_scope == "stock_cache":
+            # The cache files themselves are the only valid date evidence for
+            # rankings derived from their quotes.  Never inherit today's date
+            # from a summary that may itself have been built from this cache.
+            trade_date = str(stock_df.attrs.get("trade_date") or "")
+            if not trade_date:
+                trade_date = cached.get("trade_date") or hsgt_date or today_str()
+            if trade_date != today_str():
+                limitations.append("spot_stock_cache_stale")
+        else:
+            trade_date = hsgt_date or cached.get("trade_date") or today_str()
+
+        if spot_scope == "full_market" and not stock_df.empty:
+            # 持久化完整快照，后续当日分析无需再次联网抓取。
+            records = json.loads(stock_df.to_json(orient="records", force_ascii=False))
+            store.write(store.config.json_data_dir / "market_spot/latest.json", {
+                "trade_date": trade_date, "updated_at": now_str(), "source": "full_market", "items": records,
+            })
 
         indices = self._safe_indices(cached, limitations)
         industries = self._safe_industries(cached, limitations)
@@ -146,6 +151,11 @@ class SnapshotProviderMixin:
             "industries": industries,
             "fund_flow": fund_flow,
             "spot_scope": spot_scope,
+            "component_trade_dates": {
+                "stock_rankings": trade_date if not stock_df.empty else None,
+                "indices": today_str() if indices and "indices_failed" not in limitations else cached.get("trade_date"),
+            },
+            "stock_cache_date_coverage": stock_df.attrs.get("date_coverage", {}) if spot_scope == "stock_cache" else {},
             "degraded": bool(limitations),
             "limitations": limitations,
         }

@@ -1,0 +1,35 @@
+{
+  "code": "301531",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_301531_20260723",
+  "factors": {
+    "ma20_bias": -14.54,
+    "rsi14": 24.96,
+    "macd": -7.3551,
+    "macd_signal": -7.0392,
+    "macd_hist": -0.3159,
+    "atr14": 4.2529,
+    "momentum_20": -33.33,
+    "volume_ratio_20": 0.98,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:28"
+}

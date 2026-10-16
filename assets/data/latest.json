@@ -1,275 +1,377 @@
 {
-  "trade_date": "2026-07-07",
-  "updated_at": "2026-07-14 00:08:11",
+  "trade_date": "2026-07-22",
+  "updated_at": "2026-07-24 01:54:14",
   "indices": [
     {
       "name": "上证指数",
       "code": "000001",
-      "close": 3913.794,
-      "change": -82.368,
-      "change_pct": -2.061
+      "close": 3876.7774,
+      "change": 9.744,
+      "change_pct": 0.252
     },
     {
       "name": "深证成指",
       "code": "399001",
-      "close": 14522.854,
-      "change": -523.816,
-      "change_pct": -3.481
+      "close": 14123.307,
+      "change": 61.871,
+      "change_pct": 0.44
     },
     {
       "name": "创业板指",
       "code": "399006",
-      "close": 3723.517,
-      "change": -119.214,
-      "change_pct": -3.102
+      "close": 3575.52,
+      "change": 8.788,
+      "change_pct": 0.246
     },
     {
       "name": "科创50参考",
       "code": "000688",
-      "close": 1994.3192,
-      "change": -70.656,
-      "change_pct": -3.422
+      "close": 1789.6941,
+      "change": -70.391,
+      "change_pct": -3.784
     }
   ],
   "market_distribution": [
     {
       "label": "涨停",
-      "count": 0,
+      "count": 153,
       "color": "#dc2626"
     },
     {
       "label": "涨幅>5%",
-      "count": 0,
+      "count": 434,
       "color": "#ef4444"
     },
     {
       "label": "涨幅0~5%",
-      "count": 0,
+      "count": 3672,
       "color": "#f87171"
     },
     {
       "label": "平盘",
-      "count": 0,
+      "count": 59,
       "color": "#6b7280"
     },
     {
       "label": "跌幅0~5%",
-      "count": 2,
+      "count": 1092,
       "color": "#4ade80"
     },
     {
       "label": "跌幅>5%",
-      "count": 2,
+      "count": 108,
       "color": "#22c55e"
     },
     {
       "label": "跌停",
-      "count": 1,
+      "count": 8,
       "color": "#16a34a"
     }
   ],
   "top_gainers": [
     {
-      "code": "002384",
-      "name": "002384",
-      "close": 236.7,
-      "change_pct": -2.311,
-      "amount": 0.0
+      "code": "920222",
+      "name": "益坤电气",
+      "close": 28.6,
+      "change_pct": 30.0,
+      "amount": 1.51
     },
     {
-      "code": "000988",
-      "name": "000988",
-      "close": 154.24,
-      "change_pct": -2.423,
-      "amount": 0.0
+      "code": "920305",
+      "name": "云创退",
+      "close": 1.63,
+      "change_pct": 25.385,
+      "amount": 0.32
     },
     {
-      "code": "603629",
-      "name": "603629",
-      "close": 108.15,
-      "change_pct": -7.247,
-      "amount": 0.0
+      "code": "920018",
+      "name": "宏远股份",
+      "close": 16.24,
+      "change_pct": 25.019,
+      "amount": 1.21
     },
     {
-      "code": "600378",
-      "name": "600378",
-      "close": 54.59,
-      "change_pct": -9.888,
-      "amount": 0.0
+      "code": "300062",
+      "name": "中能电气",
+      "close": 6.35,
+      "change_pct": 20.038,
+      "amount": 3.19
     },
     {
-      "code": "000636",
-      "name": "000636",
-      "close": 54.01,
-      "change_pct": -9.998,
-      "amount": 0.0
+      "code": "301587",
+      "name": "中瑞股份",
+      "close": 21.58,
+      "change_pct": 20.022,
+      "amount": 2.1
+    },
+    {
+      "code": "301292",
+      "name": "海科新源",
+      "close": 62.69,
+      "change_pct": 20.004,
+      "amount": 11.52
+    },
+    {
+      "code": "301357",
+      "name": "北方长龙",
+      "close": 86.33,
+      "change_pct": 20.003,
+      "amount": 5.65
+    },
+    {
+      "code": "300214",
+      "name": "日科化学",
+      "close": 10.26,
+      "change_pct": 20.0,
+      "amount": 4.82
+    },
+    {
+      "code": "300444",
+      "name": "双杰电气",
+      "close": 9.54,
+      "change_pct": 20.0,
+      "amount": 9.44
+    },
+    {
+      "code": "300510",
+      "name": "金冠股份",
+      "close": 3.66,
+      "change_pct": 20.0,
+      "amount": 3.44
     }
   ],
   "top_losers": [
     {
-      "code": "000636",
-      "name": "000636",
-      "close": 54.01,
-      "change_pct": -9.998,
-      "amount": 0.0
+      "code": "920079",
+      "name": "乔路铭",
+      "close": 15.81,
+      "change_pct": -15.949,
+      "amount": 4.06
     },
     {
-      "code": "600378",
-      "name": "600378",
-      "close": 54.59,
-      "change_pct": -9.888,
-      "amount": 0.0
+      "code": "688347",
+      "name": "华虹宏力",
+      "close": 341.0,
+      "change_pct": -12.578,
+      "amount": 133.64
     },
     {
-      "code": "603629",
-      "name": "603629",
-      "close": 108.15,
-      "change_pct": -7.247,
-      "amount": 0.0
+      "code": "688806",
+      "name": "C泰诺",
+      "close": 29.15,
+      "change_pct": -11.88,
+      "amount": 7.65
     },
     {
-      "code": "000988",
-      "name": "000988",
-      "close": 154.24,
-      "change_pct": -2.423,
-      "amount": 0.0
+      "code": "688172",
+      "name": "燕东微",
+      "close": 56.92,
+      "change_pct": -10.545,
+      "amount": 14.33
     },
     {
-      "code": "002384",
-      "name": "002384",
-      "close": 236.7,
-      "change_pct": -2.311,
-      "amount": 0.0
+      "code": "300795",
+      "name": "米奥会展",
+      "close": 12.84,
+      "change_pct": -10.46,
+      "amount": 5.57
+    },
+    {
+      "code": "688078",
+      "name": "龙软科技",
+      "close": 20.44,
+      "change_pct": -10.193,
+      "amount": 0.59
+    },
+    {
+      "code": "603823",
+      "name": "百合花",
+      "close": 73.74,
+      "change_pct": -9.996,
+      "amount": 14.38
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "close": 73.48,
+      "change_pct": -9.995,
+      "amount": 37.88
+    },
+    {
+      "code": "002558",
+      "name": "巨人网络",
+      "close": 25.26,
+      "change_pct": -9.85,
+      "amount": 40.5
+    },
+    {
+      "code": "301310",
+      "name": "鑫宏业",
+      "close": 60.69,
+      "change_pct": -9.526,
+      "amount": 7.17
     }
   ],
   "top_volume": [
     {
-      "code": "000636",
-      "name": "000636",
-      "close": 54.01,
-      "change_pct": -9.998,
-      "amount": 0.0
-    },
-    {
-      "code": "000988",
-      "name": "000988",
-      "close": 154.24,
-      "change_pct": -2.423,
-      "amount": 0.0
+      "code": "300308",
+      "name": "中际旭创",
+      "close": 1072.52,
+      "change_pct": 1.105,
+      "amount": 295.58
     },
     {
       "code": "002384",
-      "name": "002384",
-      "close": 236.7,
-      "change_pct": -2.311,
-      "amount": 0.0
+      "name": "东山精密",
+      "close": 206.65,
+      "change_pct": -4.989,
+      "amount": 259.23
     },
     {
-      "code": "600378",
-      "name": "600378",
-      "close": 54.59,
-      "change_pct": -9.888,
-      "amount": 0.0
+      "code": "000938",
+      "name": "紫光股份",
+      "close": 42.45,
+      "change_pct": -5.457,
+      "amount": 226.6
     },
     {
-      "code": "603629",
-      "name": "603629",
-      "close": 108.15,
-      "change_pct": -7.247,
-      "amount": 0.0
+      "code": "300502",
+      "name": "新易盛",
+      "close": 497.3,
+      "change_pct": -2.26,
+      "amount": 224.29
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "close": 451.96,
+      "change_pct": -3.838,
+      "amount": 216.7
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "close": 69.82,
+      "change_pct": -6.782,
+      "amount": 149.83
+    },
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "close": 87.96,
+      "change_pct": -2.774,
+      "amount": 145.67
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "close": 33.06,
+      "change_pct": 2.671,
+      "amount": 144.97
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "close": 80.81,
+      "change_pct": -5.794,
+      "amount": 139.53
+    },
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "close": 1249.0,
+      "change_pct": -4.656,
+      "amount": 137.58
     }
   ],
   "industries": [
     {
-      "name": "中药",
-      "change_pct": 2.88
+      "name": "电网设备",
+      "change_pct": 6.65
     },
     {
-      "name": "银行",
-      "change_pct": 2.07
+      "name": "能源金属",
+      "change_pct": 6.53
     },
     {
       "name": "油气开采及服务",
-      "change_pct": 0.71
+      "change_pct": 4.35
     },
     {
-      "name": "医药商业",
-      "change_pct": 0.5
+      "name": "电池",
+      "change_pct": 4.22
     },
     {
-      "name": "燃气",
-      "change_pct": 0.2
+      "name": "工业金属",
+      "change_pct": 4.21
     },
     {
-      "name": "保险",
-      "change_pct": -0.12
+      "name": "贸易",
+      "change_pct": 4.01
     },
     {
-      "name": "港口航运",
-      "change_pct": -0.23
+      "name": "风电设备",
+      "change_pct": 3.78
     },
     {
-      "name": "公路铁路运输",
-      "change_pct": -0.4
+      "name": "综合",
+      "change_pct": 3.67
     },
     {
-      "name": "化学制药",
-      "change_pct": -0.42
+      "name": "环境治理",
+      "change_pct": 3.67
     },
     {
-      "name": "食品加工制造",
-      "change_pct": -0.74
+      "name": "军工装备",
+      "change_pct": 3.45
     },
     {
-      "name": "证券",
-      "change_pct": -0.86
+      "name": "化学原料",
+      "change_pct": 3.44
     },
     {
-      "name": "煤炭开采加工",
-      "change_pct": -0.87
+      "name": "纺织制造",
+      "change_pct": 3.41
     },
     {
-      "name": "养殖业",
-      "change_pct": -0.92
-    },
-    {
-      "name": "饮料制造",
-      "change_pct": -1.09
-    },
-    {
-      "name": "生物制品",
-      "change_pct": -1.36
-    },
-    {
-      "name": "白酒",
-      "change_pct": -1.52
-    },
-    {
-      "name": "医疗服务",
-      "change_pct": -1.55
+      "name": "环保设备",
+      "change_pct": 3.39
     },
     {
       "name": "种植业与林业",
-      "change_pct": -1.57
+      "change_pct": 3.39
     },
     {
-      "name": "钢铁",
-      "change_pct": -1.76
+      "name": "工程机械",
+      "change_pct": 3.31
     },
     {
-      "name": "物流",
-      "change_pct": -1.93
+      "name": "农化制品",
+      "change_pct": 3.3
+    },
+    {
+      "name": "光伏设备",
+      "change_pct": 3.22
+    },
+    {
+      "name": "轨交设备",
+      "change_pct": 3.19
+    },
+    {
+      "name": "石油加工贸易",
+      "change_pct": 3.18
+    },
+    {
+      "name": "燃气",
+      "change_pct": 3.13
     }
   ],
   "fund_flow": {
     "north_net": 0.0,
-    "main_net": -1216.1,
+    "main_net": -28.31,
     "retail_net": 0.0
   },
-  "spot_scope": "watchlist",
-  "degraded": true,
-  "limitations": [
-    "bulk_spot_skipped",
-    "spot_watchlist_only"
-  ]
+  "spot_scope": "full_market",
+  "degraded": false,
+  "limitations": []
 }

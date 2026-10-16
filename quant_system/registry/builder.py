@@ -16,6 +16,9 @@ EXPECTED_COMMANDS = {
     "market": "market",
     "stocks": "stock",
     "enhance": "enhance",
+    "interim_reports": "all",
+    "strategy": "all",
+    "strategy_backtest": "all（后台）",
     "factors": "factor",
     "backtest": "backtest",
     "predictions": "predict",
@@ -30,7 +33,6 @@ EXPECTED_COMMANDS = {
     "portfolio": "portfolio",
     "recommendations": "recommend",
     "framework": "framework",
-    "console": "console",
     "quality": "inspect",
     "task_runs": "任意 CLI 命令",
 }
@@ -94,7 +96,7 @@ def _field_summary(payload: dict[str, Any]) -> dict[str, Any]:
 
 def _data_quality(payload: dict[str, Any], exists: bool) -> dict[str, Any]:
     limitations = list(payload.get("limitations") or [])
-    degraded = bool(payload.get("degraded")) or "degraded" in limitations
+    degraded = bool(payload.get("degraded")) or "degraded" in limitations or payload.get("status") in {"partial", "unavailable"}
     quality = payload.get("quality") if isinstance(payload.get("quality"), dict) else {}
     return {
         "exists": exists,

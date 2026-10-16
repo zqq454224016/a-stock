@@ -1,0 +1,1075 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_policy": {
+    "deterministic": true,
+    "ai_may_not_recalculate_scores": true,
+    "ai_may_not_add_symbols": true,
+    "fixed_sections": [
+      "required_background",
+      "market_context",
+      "periods",
+      "candidate_metrics"
+    ]
+  },
+  "required_background": {
+    "hard_required": true,
+    "sections": [
+      "market_rules_and_tradeability",
+      "market_sentiment",
+      "interim_report_and_fundamentals",
+      "technical_and_fund_flow",
+      "events_and_knowledge_cutoff",
+      "quant_validation",
+      "risk_management"
+    ],
+    "analysis_rule": "每一项必须分析；数据缺失时必须写明 missing，不得推测或省略。",
+    "market_rules_and_tradeability": {
+      "t_plus_one": true,
+      "excluded_boards": [
+        "STAR",
+        "ChiNext",
+        "BSE"
+      ],
+      "must_check": [
+        "ST",
+        "suspension",
+        "price_limit",
+        "ex_rights",
+        "fees",
+        "liquidity"
+      ]
+    },
+    "knowledge_cutoff_rule": "公告、中报和事件只能使用 published_at/known_at 不晚于决策时点的事实。"
+  },
+  "recommendation_version": "1.2.0",
+  "updated_at": "2026-07-22 23:53:21",
+  "market_context": {
+    "trade_date": "2026-07-07",
+    "regime": "震荡",
+    "index_avg_change_pct": 0.19,
+    "main_net_yi": 368.76,
+    "score_adjustment": 0.0,
+    "degraded": true,
+    "sentiment": {
+      "score": 51.14,
+      "label": "中性",
+      "advancing_count": 1,
+      "declining_count": 4,
+      "breadth": -0.6,
+      "index_avg_change_pct": 0.19,
+      "main_net_yi": 368.76,
+      "status": "degraded",
+      "limitations": [
+        "market_breadth_sample_incomplete"
+      ]
+    }
+  },
+  "limitations": [
+    "additional_permission_boards_excluded_from_all_candidate_periods",
+    "recommendation_universe_limited_to_locally_available_stock_artifacts",
+    "long_horizon_lacks_dedicated_prediction_model",
+    "degraded_market_or_fund_flow_data_may_reduce_confidence"
+  ],
+  "periods": {
+    "short": {
+      "label": "短线",
+      "horizon": "1-5个交易日",
+      "recommended": [],
+      "watchlist": [
+        {
+          "code": "000722",
+          "name": "湖南发展",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 49.64,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "5日历史涨跌 41.62%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "001258",
+          "name": "立新能源",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 49.43,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "5日历史涨跌 40.22%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "600644",
+          "name": "乐山电力",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 49.41,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 100.0",
+            "5日历史涨跌 29.37%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "600227",
+          "name": "赤天化",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 49.37,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "5日历史涨跌 39.83%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "001388",
+          "name": "信通电子",
+          "period": "短线",
+          "horizon": "1-5个交易日",
+          "score": 48.8,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "5日历史涨跌 36.01%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破58分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        }
+      ],
+      "evaluated_count": 3190,
+      "shortage_count": 5,
+      "shortage_reason": "仅有0只通过阈值和硬性风险门禁，不为凑满5只而降低标准"
+    },
+    "medium": {
+      "label": "中线",
+      "horizon": "1-3个月",
+      "recommended": [
+        {
+          "code": "600664",
+          "name": "哈药股份",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 64.14,
+          "status": "recommended",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "20日历史涨跌 63.95%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "000838",
+          "name": "*ST发展",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 61.38,
+          "status": "recommended",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 87.0",
+            "20日历史涨跌 57.64%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "002396",
+          "name": "星网锐捷",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 60.06,
+          "status": "recommended",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "20日历史涨跌 43.56%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        }
+      ],
+      "watchlist": [
+        {
+          "code": "001206",
+          "name": "依依股份",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 59.78,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "20日历史涨跌 42.14%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "600428",
+          "name": "中远海特",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 58.76,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "20日历史涨跌 37.06%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "000779",
+          "name": "甘咨询",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 58.45,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 87.0",
+            "20日历史涨跌 42.99%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "000938",
+          "name": "紫光股份",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 58.38,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "20日历史涨跌 35.14%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "002541",
+          "name": "鸿路钢构",
+          "period": "中线",
+          "horizon": "1-3个月",
+          "score": 58.24,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 92.0",
+            "20日历史涨跌 34.47%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破60分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        }
+      ],
+      "evaluated_count": 3190,
+      "shortage_count": 2,
+      "shortage_reason": "仅有3只通过阈值和硬性风险门禁，不为凑满5只而降低标准"
+    },
+    "long": {
+      "label": "长线",
+      "horizon": "6-12个月",
+      "recommended": [
+        {
+          "code": "603823",
+          "name": "百合花",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 62.5,
+          "status": "recommended",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 80.0",
+            "60日历史涨跌 375.03%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        }
+      ],
+      "watchlist": [
+        {
+          "code": "000703",
+          "name": "恒逸石化",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 56.25,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 100.0",
+            "60日历史涨跌 0.01%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "001289",
+          "name": "龙源电力",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 56.21,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 99.0",
+            "60日历史涨跌 7.06%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "000899",
+          "name": "赣能股份",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 56.05,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 100.0",
+            "60日历史涨跌 -6.83%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "600982",
+          "name": "宁波能源",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 55.98,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 100.0",
+            "60日历史涨跌 -9.02%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        },
+        {
+          "code": "000601",
+          "name": "韶能股份",
+          "period": "长线",
+          "horizon": "6-12个月",
+          "score": 55.97,
+          "status": "watch",
+          "evidence": [
+            "候选评分 0.0",
+            "多因子评分 99.0",
+            "60日历史涨跌 -0.84%",
+            "实际影响评分 0"
+          ],
+          "risks": [],
+          "invalidation_conditions": [
+            "综合评分跌破62分",
+            "数据质量低于70分",
+            "实际影响转为显著负面"
+          ],
+          "reevaluation_conditions": [
+            "数据或趋势发生显著变化时重新评估"
+          ],
+          "replay_summary": {}
+        }
+      ],
+      "evaluated_count": 3190,
+      "shortage_count": 4,
+      "shortage_reason": "仅有1只通过阈值和硬性风险门禁，不为凑满5只而降低标准"
+    }
+  },
+  "candidate_metrics": {
+    "000722": {
+      "code": "000722",
+      "name": "湖南发展",
+      "trade_date": "2026-07-20",
+      "quote": {
+        "close": 15.21,
+        "change_pct": 9.98,
+        "volume": 753556.0,
+        "amount_yi": 11.01
+      },
+      "trend": "偏多",
+      "returns_pct": {
+        "d5": 41.62,
+        "d20": 14.02,
+        "d60": 9.57
+      },
+      "ma": {
+        "ma5": 12.9,
+        "ma10": 11.89,
+        "ma20": 11.95,
+        "ma60": 13.8
+      },
+      "range_60d": {
+        "high": 19.62,
+        "low": 10.49,
+        "position_pct": 51.7
+      },
+      "quality": {
+        "status": "ok",
+        "quality_score": 95.0,
+        "missing_rate": 0.0,
+        "issues": [
+          "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+        ]
+      },
+      "factors": {
+        "multi_factor_score": 92.0,
+        "technical_score": 92.0,
+        "rsi14": 76.26,
+        "macd_hist": 0.4582,
+        "atr14": 0.775,
+        "momentum_20": 14.02,
+        "volume_ratio_20": 3.45,
+        "above_ma20": true,
+        "has_sentiment": false,
+        "has_fundamental": false,
+        "has_fund_flow": false
+      },
+      "prediction": {
+        "horizon": null,
+        "direction": null,
+        "probability": null,
+        "confidence": null,
+        "status": null
+      },
+      "selector": {
+        "upside_score": null,
+        "status": null,
+        "risks": null,
+        "reasons": null
+      },
+      "impact": {
+        "impact_score": null,
+        "direction": null,
+        "risks": null,
+        "limitations": null
+      },
+      "interim_report_context": {
+        "status": "missing",
+        "report_period": null,
+        "announced_at": null,
+        "revenue": null,
+        "revenue_growth_pct": null,
+        "net_profit": null,
+        "net_profit_growth_pct": null,
+        "pe_ttm": null,
+        "pb": null,
+        "forecast": null,
+        "limitations": [
+          "interim_report_or_forecast_missing"
+        ]
+      },
+      "stock_sentiment_context": {
+        "status": "missing",
+        "trade_date": null,
+        "label": null,
+        "desire_score": null,
+        "desire_change": null,
+        "heat_index": null,
+        "sentiment_accel": null,
+        "long_short_ratio": null,
+        "limitations": [
+          "stock_sentiment_missing"
+        ]
+      },
+      "missing_data": [
+        "fundamental",
+        "fund_flow",
+        "sentiment",
+        "prediction"
+      ]
+    },
+    "001258": {
+      "code": "001258",
+      "name": "立新能源",
+      "trade_date": "2026-07-20",
+      "quote": {
+        "close": 9.1,
+        "change_pct": 10.04,
+        "volume": 821361.0,
+        "amount_yi": 7.34
+      },
+      "trend": "偏多",
+      "returns_pct": {
+        "d5": 40.22,
+        "d20": 22.84,
+        "d60": -2.67
+      },
+      "ma": {
+        "ma5": 7.66,
+        "ma10": 7.13,
+        "ma20": 7.09,
+        "ma60": 8.6
+      },
+      "range_60d": {
+        "high": 12.28,
+        "low": 6.37,
+        "position_pct": 46.2
+      },
+      "quality": {
+        "status": "ok",
+        "quality_score": 95.0,
+        "missing_rate": 0.0,
+        "issues": [
+          "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+        ]
+      },
+      "factors": {
+        "multi_factor_score": 92.0,
+        "technical_score": 92.0,
+        "rsi14": 77.11,
+        "macd_hist": 0.3112,
+        "atr14": 0.3907,
+        "momentum_20": 22.84,
+        "volume_ratio_20": 3.69,
+        "above_ma20": true,
+        "has_sentiment": false,
+        "has_fundamental": false,
+        "has_fund_flow": false
+      },
+      "prediction": {
+        "horizon": null,
+        "direction": null,
+        "probability": null,
+        "confidence": null,
+        "status": null
+      },
+      "selector": {
+        "upside_score": null,
+        "status": null,
+        "risks": null,
+        "reasons": null
+      },
+      "impact": {
+        "impact_score": null,
+        "direction": null,
+        "risks": null,
+        "limitations": null
+      },
+      "interim_report_context": {
+        "status": "missing",
+        "report_period": null,
+        "announced_at": null,
+        "revenue": null,
+        "revenue_growth_pct": null,
+        "net_profit": null,
+        "net_profit_growth_pct": null,
+        "pe_ttm": null,
+        "pb": null,
+        "forecast": null,
+        "limitations": [
+          "interim_report_or_forecast_missing"
+        ]
+      },
+      "stock_sentiment_context": {
+        "status": "missing",
+        "trade_date": null,
+        "label": null,
+        "desire_score": null,
+        "desire_change": null,
+        "heat_index": null,
+        "sentiment_accel": null,
+        "long_short_ratio": null,
+        "limitations": [
+          "stock_sentiment_missing"
+        ]
+      },
+      "missing_data": [
+        "fundamental",
+        "fund_flow",
+        "sentiment",
+        "prediction"
+      ]
+    },
+    "600644": {
+      "code": "600644",
+      "name": "乐山电力",
+      "trade_date": "2026-07-20",
+      "quote": {
+        "close": 9.91,
+        "change_pct": 9.99,
+        "volume": 692105.0,
+        "amount_yi": 6.71
+      },
+      "trend": "偏多",
+      "returns_pct": {
+        "d5": 29.37,
+        "d20": 8.43,
+        "d60": -21.82
+      },
+      "ma": {
+        "ma5": 8.62,
+        "ma10": 8.2,
+        "ma20": 8.24,
+        "ma60": 10.26
+      },
+      "range_60d": {
+        "high": 17.23,
+        "low": 7.51,
+        "position_pct": 24.7
+      },
+      "quality": {
+        "status": "ok",
+        "quality_score": 95.0,
+        "missing_rate": 0.0,
+        "issues": [
+          "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+        ]
+      },
+      "factors": {
+        "multi_factor_score": 100.0,
+        "technical_score": 100.0,
+        "rsi14": 70.64,
+        "macd_hist": 0.2779,
+        "atr14": 0.4764,
+        "momentum_20": 8.43,
+        "volume_ratio_20": 3.27,
+        "above_ma20": true,
+        "has_sentiment": false,
+        "has_fundamental": false,
+        "has_fund_flow": false
+      },
+      "prediction": {
+        "horizon": null,
+        "direction": null,
+        "probability": null,
+        "confidence": null,
+        "status": null
+      },
+      "selector": {
+        "upside_score": null,
+        "status": null,
+        "risks": null,
+        "reasons": null
+      },
+      "impact": {
+        "impact_score": null,
+        "direction": null,
+        "risks": null,
+        "limitations": null
+      },
+      "interim_report_context": {
+        "status": "missing",
+        "report_period": null,
+        "announced_at": null,
+        "revenue": null,
+        "revenue_growth_pct": null,
+        "net_profit": null,
+        "net_profit_growth_pct": null,
+        "pe_ttm": null,
+        "pb": null,
+        "forecast": null,
+        "limitations": [
+          "interim_report_or_forecast_missing"
+        ]
+      },
+      "stock_sentiment_context": {
+        "status": "missing",
+        "trade_date": null,
+        "label": null,
+        "desire_score": null,
+        "desire_change": null,
+        "heat_index": null,
+        "sentiment_accel": null,
+        "long_short_ratio": null,
+        "limitations": [
+          "stock_sentiment_missing"
+        ]
+      },
+      "missing_data": [
+        "fundamental",
+        "fund_flow",
+        "sentiment",
+        "prediction"
+      ]
+    },
+    "600227": {
+      "code": "600227",
+      "name": "赤天化",
+      "trade_date": "2026-07-20",
+      "quote": {
+        "close": 3.37,
+        "change_pct": 10.13,
+        "volume": 2934019.0,
+        "amount_yi": 9.4
+      },
+      "trend": "偏多",
+      "returns_pct": {
+        "d5": 39.83,
+        "d20": 22.99,
+        "d60": -4.8
+      },
+      "ma": {
+        "ma5": 2.96,
+        "ma10": 2.7,
+        "ma20": 2.62,
+        "ma60": 3.09
+      },
+      "range_60d": {
+        "high": 5.4,
+        "low": 2.26,
+        "position_pct": 35.4
+      },
+      "quality": {
+        "status": "ok",
+        "quality_score": 95.0,
+        "missing_rate": 0.0,
+        "issues": [
+          "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+        ]
+      },
+      "factors": {
+        "multi_factor_score": 92.0,
+        "technical_score": 92.0,
+        "rsi14": 75.41,
+        "macd_hist": 0.114,
+        "atr14": 0.2129,
+        "momentum_20": 22.99,
+        "volume_ratio_20": 2.85,
+        "above_ma20": true,
+        "has_sentiment": false,
+        "has_fundamental": false,
+        "has_fund_flow": false
+      },
+      "prediction": {
+        "horizon": null,
+        "direction": null,
+        "probability": null,
+        "confidence": null,
+        "status": null
+      },
+      "selector": {
+        "upside_score": null,
+        "status": null,
+        "risks": null,
+        "reasons": null
+      },
+      "impact": {
+        "impact_score": null,
+        "direction": null,
+        "risks": null,
+        "limitations": null
+      },
+      "interim_report_context": {
+        "status": "missing",
+        "report_period": null,
+        "announced_at": null,
+        "revenue": null,
+        "revenue_growth_pct": null,
+        "net_profit": null,
+        "net_profit_growth_pct": null,
+        "pe_ttm": null,
+        "pb": null,
+        "forecast": null,
+        "limitations": [
+          "interim_report_or_forecast_missing"
+        ]
+      },
+      "stock_sentiment_context": {
+        "status": "missing",
+        "trade_date": null,
+        "label": null,
+        "desire_score": null,
+        "desire_change": null,
+        "heat_index": null,
+        "sentiment_accel": null,
+        "long_short_ratio": null,
+        "limitations": [
+          "stock_sentiment_missing"
+        ]
+      },
+      "missing_data": [
+        "fundamental",
+        "fund_flow",
+        "sentiment",
+        "prediction"
+      ]
+    },
+    "001388": {
+      "code": "001388",
+      "name": "信通电子",
+      "trade_date": "2026-07-20",
+      "quote": {
+        "close": 26.72,
+        "change_pct": 8.0,
+        "volume": 223548.0,
+        "amount_yi": 5.7
+      },
+      "trend": "偏多",
+      "returns_pct": {
+        "d5": 36.01,
+        "d20": 34.14,
+        "d60": 1.33
+      },
+      "ma": {
+        "ma5": 23.87,
+        "ma10": 20.87,
+        "ma20": 19.79,
+        "ma60": 22.16
+      },
+      "range_60d": {
+        "high": 35.28,
+        "low": 16.73,
+        "position_pct": 53.8
+      },
+      "quality": {
+        "status": "ok",
+        "quality_score": 95.0,
+        "missing_rate": 0.0,
+        "issues": [
+          "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+        ]
+      },
+      "factors": {
+        "multi_factor_score": 92.0,
+        "technical_score": 92.0,
+        "rsi14": 75.5,
+        "macd_hist": 1.0691,
+        "atr14": 1.7175,
+        "momentum_20": 34.14,
+        "volume_ratio_20": 4.79,
+        "above_ma20": true,
+        "has_sentiment": false,
+        "has_fundamental": false,
+        "has_fund_flow": false
+      },
+      "prediction": {
+        "horizon": null,
+        "direction": null,
+        "probability": null,
+        "confidence": null,
+        "status": null
+      },
+      "selector": {
+        "upside_score": null,
+        "status": null,
+        "risks": null,
+        "reasons": null
+      },
+      "impact": {
+        "impact_score": null,
+        "direction": null,
+        "risks": null,
+        "limitations": null
+      },
+      "interim_report_context": {
+        "status": "missing",
+        "report_period": null,
+        "announced_at": null,
+        "revenue": null,
+        "revenue_growth_pct": null,
+        "net_profit": null,
+        "net_profit_growth_pct": null,
+        "pe_ttm": null,
+        "pb": null,
+        "forecast": null,
+        "limitations": [
+          "interim_report_or_forecast_missing"
+        ]
+      },
+      "stock_sentiment_context": {
+        "status": "missing",
+        "trade_date": null,
+        "label": null,
+        "desire_score": null,
+        "desire_change": null,
+        "heat_index": null,
+        "sentiment_accel": null,
+        "long_short_ratio": null,
+        "limitations": [
+          "stock_sentiment_missing"
+        ]
+      },
+      "missing_data": [
+        "fundamental",
+        "fund_flow",
+        "sentiment",
+        "prediction"
+      ]
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import gzip
+import json
 import pandas as pd
 
 from quant_system.config.crawler_config import CrawlerConfig
@@ -21,7 +23,7 @@ def make_data_version(code: str, df: pd.DataFrame) -> str:
 
 def _rows_to_df(rows: list[dict]) -> pd.DataFrame:
     df = pd.DataFrame(rows)
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(df["date"], format="mixed")
     return df.sort_values("date").reset_index(drop=True)
 
 
@@ -43,6 +45,18 @@ def load_kline_df(
     meta: dict = {"code": code, "source": "api", "fetched_at": now_str()}
 
     if not prefer_api:
+        history_path = store.config.json_data_dir / "history" / f"{code}.json.gz"
+        if history_path.exists():
+            with gzip.open(history_path, "rt", encoding="utf-8") as stream:
+                rows = json.load(stream)
+            if rows:
+                meta.update({"source": "history_json_gz", "fetched_at": now_str()})
+                df = _rows_to_df(rows)
+                if days:
+                    df = df.tail(days).reset_index(drop=True)
+                meta["data_version"] = make_data_version(code, df)
+                return df, meta
+
         stock_path = store.config.json_data_dir / "stocks" / f"{code}.json"
         if stock_path.exists():
             data = store.read(stock_path)

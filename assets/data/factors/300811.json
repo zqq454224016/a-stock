@@ -1,0 +1,35 @@
+{
+  "code": "300811",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_300811_20260723",
+  "factors": {
+    "ma20_bias": -20.55,
+    "rsi14": 28.61,
+    "macd": -6.617,
+    "macd_signal": -4.0382,
+    "macd_hist": -2.5789,
+    "atr14": 7.3486,
+    "momentum_20": -34.93,
+    "volume_ratio_20": 0.65,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:16"
+}

@@ -1,6 +1,1441 @@
 {
-  "updated_at": "2026-07-14 00:10:55",
+  "updated_at": "2026-07-24 10:34:42",
   "runs": [
+    {
+      "run_id": "20260724_022251_074192_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 02:22:51",
+      "ended_at": "2026-07-24 10:34:42",
+      "duration_sec": 29511.8125,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_022251_074192_serve.json"
+    },
+    {
+      "run_id": "20260724_022222_665563_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-24 02:22:22",
+      "ended_at": "2026-07-24 02:22:22",
+      "duration_sec": 0.0017,
+      "error": {
+        "type": "OSError",
+        "message": "[Errno 48] Address already in use"
+      },
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_022222_665563_serve.json"
+    },
+    {
+      "run_id": "20260724_022212_466803_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-24 02:22:12",
+      "ended_at": "2026-07-24 02:22:12",
+      "duration_sec": 0.002,
+      "error": {
+        "type": "PermissionError",
+        "message": "[Errno 1] Operation not permitted"
+      },
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_022212_466803_serve.json"
+    },
+    {
+      "run_id": "20260724_015053_603542_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 01:50:53",
+      "ended_at": "2026-07-24 01:55:19",
+      "duration_sec": 265.6344,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-24 01:51:00"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878152,
+          "mtime": "2026-07-24 01:50:56"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 01:50:55"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-24 01:51:00"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 19921,
+          "mtime": "2026-07-24 01:55:19"
+        }
+      ],
+      "path": "task_runs/20260724_015053_603542_all.json"
+    },
+    {
+      "run_id": "20260724_013848_922817_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 01:38:48",
+      "ended_at": "2026-07-24 01:55:04",
+      "duration_sec": 976.0089,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_013848_922817_serve.json"
+    },
+    {
+      "run_id": "20260724_014613_767574_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 01:46:13",
+      "ended_at": "2026-07-24 01:48:06",
+      "duration_sec": 112.3233,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-24 01:46:20"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878152,
+          "mtime": "2026-07-24 01:46:16"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 01:46:16"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-24 01:46:20"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 20048,
+          "mtime": "2026-07-24 01:48:06"
+        }
+      ],
+      "path": "task_runs/20260724_014613_767574_all.json"
+    },
+    {
+      "run_id": "20260724_013346_935363_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 01:33:46",
+      "ended_at": "2026-07-24 01:39:52",
+      "duration_sec": 365.4933,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-24 01:33:54"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878152,
+          "mtime": "2026-07-24 01:33:49"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 01:33:49"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-24 01:33:54"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 19555,
+          "mtime": "2026-07-24 01:39:52"
+        }
+      ],
+      "path": "task_runs/20260724_013346_935363_all.json"
+    },
+    {
+      "run_id": "20260724_012239_485963_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-24 01:22:39",
+      "ended_at": "2026-07-24 01:27:57",
+      "duration_sec": 317.6601,
+      "error": {
+        "type": "KeyboardInterrupt",
+        "message": ""
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-24 01:22:46"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878152,
+          "mtime": "2026-07-24 01:22:42"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 01:22:42"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-24 01:22:46"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 16706,
+          "mtime": "2026-07-24 00:57:55"
+        }
+      ],
+      "path": "task_runs/20260724_012239_485963_all.json"
+    },
+    {
+      "run_id": "20260724_012046_838644_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "8080"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 01:20:46",
+      "ended_at": "2026-07-24 01:21:08",
+      "duration_sec": 21.3216,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_012046_838644_serve.json"
+    },
+    {
+      "run_id": "20260724_010643_230832_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "8080"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 01:06:43",
+      "ended_at": "2026-07-24 01:07:15",
+      "duration_sec": 32.44,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_010643_230832_serve.json"
+    },
+    {
+      "run_id": "20260724_005103_962968_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 00:51:03",
+      "ended_at": "2026-07-24 00:57:55",
+      "duration_sec": 411.4221,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-24 00:51:11"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878152,
+          "mtime": "2026-07-24 00:51:06"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 00:51:06"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-24 00:51:11"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 16706,
+          "mtime": "2026-07-24 00:57:55"
+        }
+      ],
+      "path": "task_runs/20260724_005103_962968_all.json"
+    },
+    {
+      "run_id": "20260724_005345_060067_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 00:53:45",
+      "ended_at": "2026-07-24 00:57:14",
+      "duration_sec": 209.1837,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_005345_060067_serve.json"
+    },
+    {
+      "run_id": "20260724_004418_546907_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-24 00:44:18",
+      "ended_at": "2026-07-24 00:51:01",
+      "duration_sec": 402.9881,
+      "error": {
+        "type": "KeyboardInterrupt",
+        "message": ""
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-24 00:44:27"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878152,
+          "mtime": "2026-07-24 00:44:23"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-24 00:44:23"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-24 00:44:27"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 15425,
+          "mtime": "2026-07-23 00:56:42"
+        }
+      ],
+      "path": "task_runs/20260724_004418_546907_all.json"
+    },
+    {
+      "run_id": "20260724_004838_606440_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "8080"
+      ],
+      "status": "success",
+      "started_at": "2026-07-24 00:48:38",
+      "ended_at": "2026-07-24 00:49:47",
+      "duration_sec": 69.258,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_004838_606440_serve.json"
+    },
+    {
+      "run_id": "20260724_004759_565237_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "8080"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-24 00:47:59",
+      "ended_at": "2026-07-24 00:47:59",
+      "duration_sec": 0.0043,
+      "error": {
+        "type": "PermissionError",
+        "message": "[Errno 1] Operation not permitted"
+      },
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260724_004759_565237_serve.json"
+    },
+    {
+      "run_id": "20260723_004936_183183_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-23 00:49:36",
+      "ended_at": "2026-07-23 00:56:42",
+      "duration_sec": 426.2836,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-23 00:49:44"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878143,
+          "mtime": "2026-07-23 00:49:40"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-23 00:49:39"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-23 00:49:44"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 15425,
+          "mtime": "2026-07-23 00:56:42"
+        }
+      ],
+      "path": "task_runs/20260723_004936_183183_all.json"
+    },
+    {
+      "run_id": "20260723_003344_628955_recommend",
+      "command": "recommend",
+      "argv": [
+        "recommend"
+      ],
+      "status": "success",
+      "started_at": "2026-07-23 00:33:44",
+      "ended_at": "2026-07-23 00:33:48",
+      "duration_sec": 4.2977,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "recommendations/summary.json",
+          "exists": true,
+          "size": 9943046,
+          "mtime": "2026-07-23 00:33:48"
+        }
+      ],
+      "path": "task_runs/20260723_003344_628955_recommend.json"
+    },
+    {
+      "run_id": "20260723_002439_497652_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "8080"
+      ],
+      "status": "success",
+      "started_at": "2026-07-23 00:24:39",
+      "ended_at": "2026-07-23 00:27:01",
+      "duration_sec": 141.6336,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260723_002439_497652_serve.json"
+    },
+    {
+      "run_id": "20260723_002158_922094_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-23 00:21:58",
+      "ended_at": "2026-07-23 00:26:47",
+      "duration_sec": 288.1116,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-23 00:22:06"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878143,
+          "mtime": "2026-07-23 00:22:01"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-23 00:22:01"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-23 00:22:06"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 14321,
+          "mtime": "2026-07-23 00:26:47"
+        }
+      ],
+      "path": "task_runs/20260723_002158_922094_all.json"
+    },
+    {
+      "run_id": "20260723_002410_295993_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "8080"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-23 00:24:10",
+      "ended_at": "2026-07-23 00:24:10",
+      "duration_sec": 0.003,
+      "error": {
+        "type": "PermissionError",
+        "message": "[Errno 1] Operation not permitted"
+      },
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260723_002410_295993_serve.json"
+    },
+    {
+      "run_id": "20260723_002028_704852_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-23 00:20:28",
+      "ended_at": "2026-07-23 00:21:54",
+      "duration_sec": 85.5674,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260723_002028_704852_serve.json"
+    },
+    {
+      "run_id": "20260722_235314_221626_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-22 23:53:14",
+      "ended_at": "2026-07-23 00:20:26",
+      "duration_sec": 1632.5275,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260722_235314_221626_serve.json"
+    },
+    {
+      "run_id": "20260722_235945_449563_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-22 23:59:45",
+      "ended_at": "2026-07-23 00:06:32",
+      "duration_sec": 407.1593,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-22 23:59:52"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1878143,
+          "mtime": "2026-07-22 23:59:48"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-22 23:59:48"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-22 23:59:52"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28975,
+          "mtime": "2026-07-23 00:06:32"
+        }
+      ],
+      "path": "task_runs/20260722_235945_449563_all.json"
+    },
+    {
+      "run_id": "20260722_235232_763170_help",
+      "command": "help",
+      "argv": [],
+      "status": "skipped",
+      "started_at": "2026-07-22 23:52:32",
+      "ended_at": "2026-07-22 23:52:32",
+      "duration_sec": 0.0032,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260722_235232_763170_help.json"
+    },
+    {
+      "run_id": "20260721_011644_065879_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 01:16:44",
+      "ended_at": "2026-07-21 01:22:20",
+      "duration_sec": 336.3452,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_011644_065879_serve.json"
+    },
+    {
+      "run_id": "20260721_011259_170422_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 01:12:59",
+      "ended_at": "2026-07-21 01:16:41",
+      "duration_sec": 222.5008,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_011259_170422_serve.json"
+    },
+    {
+      "run_id": "20260721_010700_292037_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 01:07:00",
+      "ended_at": "2026-07-21 01:12:56",
+      "duration_sec": 355.9085,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_010700_292037_serve.json"
+    },
+    {
+      "run_id": "20260721_005531_852512_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 00:55:31",
+      "ended_at": "2026-07-21 01:06:58",
+      "duration_sec": 686.3638,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_005531_852512_serve.json"
+    },
+    {
+      "run_id": "20260721_010642_100902_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 01:06:42",
+      "ended_at": "2026-07-21 01:06:42",
+      "duration_sec": 0.0025,
+      "error": {
+        "type": "OSError",
+        "message": "[Errno 48] Address already in use"
+      },
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_010642_100902_serve.json"
+    },
+    {
+      "run_id": "20260721_005917_286601_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 00:59:17",
+      "ended_at": "2026-07-21 01:06:02",
+      "duration_sec": 405.5311,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-21 00:59:24"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1877474,
+          "mtime": "2026-07-21 00:59:19"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-21 00:59:19"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-21 00:59:24"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 31367,
+          "mtime": "2026-07-21 01:06:02"
+        }
+      ],
+      "path": "task_runs/20260721_005917_286601_all.json"
+    },
+    {
+      "run_id": "20260721_005643_119823_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 00:56:43",
+      "ended_at": "2026-07-21 01:03:50",
+      "duration_sec": 427.167,
+      "error": {
+        "type": "JSONDecodeError",
+        "message": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-21 00:59:24"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1877474,
+          "mtime": "2026-07-21 00:59:19"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-21 00:59:19"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-21 00:59:24"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28621,
+          "mtime": "2026-07-14 00:10:55"
+        }
+      ],
+      "path": "task_runs/20260721_005643_119823_all.json"
+    },
+    {
+      "run_id": "20260721_005458_300705_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 00:54:58",
+      "ended_at": "2026-07-21 00:55:42",
+      "duration_sec": 44.4012,
+      "error": {
+        "type": "RuntimeError",
+        "message": "TickFlow 批量日 K 不可用: 无日/周/月K线查询批量查询权限"
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-21 00:55:06"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1877474,
+          "mtime": "2026-07-21 00:55:02"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-21 00:55:02"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-21 00:55:06"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28621,
+          "mtime": "2026-07-14 00:10:55"
+        }
+      ],
+      "path": "task_runs/20260721_005458_300705_all.json"
+    },
+    {
+      "run_id": "20260721_005150_287433_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 00:51:50",
+      "ended_at": "2026-07-21 00:53:17",
+      "duration_sec": 86.7826,
+      "error": {
+        "type": "KeyboardInterrupt",
+        "message": ""
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-21 00:51:57"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1877474,
+          "mtime": "2026-07-21 00:51:53"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-21 00:51:53"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-21 00:51:57"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28621,
+          "mtime": "2026-07-14 00:10:55"
+        }
+      ],
+      "path": "task_runs/20260721_005150_287433_all.json"
+    },
+    {
+      "run_id": "20260721_004653_031322_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 00:46:53",
+      "ended_at": "2026-07-21 00:49:49",
+      "duration_sec": 176.5939,
+      "error": {
+        "type": "KeyboardInterrupt",
+        "message": ""
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 1757,
+          "mtime": "2026-07-21 00:48:01"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": true,
+          "size": 1877474,
+          "mtime": "2026-07-21 00:47:55"
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": true,
+          "size": 612,
+          "mtime": "2026-07-21 00:47:55"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 409,
+          "mtime": "2026-07-21 00:48:01"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28621,
+          "mtime": "2026-07-14 00:10:55"
+        }
+      ],
+      "path": "task_runs/20260721_004653_031322_all.json"
+    },
+    {
+      "run_id": "20260721_004633_889603_all",
+      "command": "all",
+      "argv": [
+        "all"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 00:46:33",
+      "ended_at": "2026-07-21 00:46:40",
+      "duration_sec": 6.5168,
+      "error": {
+        "type": "ConnectionError",
+        "message": "Failed to connect to https://api.tickflow.org/v1/exchanges/SH/instruments: [Errno 8] nodename nor servname provided, or not known"
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 553,
+          "mtime": "2026-07-21 00:21:54"
+        },
+        {
+          "path": "normalized/market.instruments/security_master.json",
+          "exists": false,
+          "size": null,
+          "mtime": ""
+        },
+        {
+          "path": "normalized/market.trading_status/events.json",
+          "exists": false,
+          "size": null,
+          "mtime": ""
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 233,
+          "mtime": "2026-07-21 00:21:54"
+        },
+        {
+          "path": "monitoring/snapshot.json",
+          "exists": true,
+          "size": 28621,
+          "mtime": "2026-07-14 00:10:55"
+        }
+      ],
+      "path": "task_runs/20260721_004633_889603_all.json"
+    },
+    {
+      "run_id": "20260721_003837_272332_config",
+      "command": "config",
+      "argv": [
+        "config",
+        "--tushare-token",
+        "***"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 00:38:37",
+      "ended_at": "2026-07-21 00:38:37",
+      "duration_sec": 0.0008,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_003837_272332_config.json"
+    },
+    {
+      "run_id": "20260721_000528_381983_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 00:05:28",
+      "ended_at": "2026-07-21 00:38:20",
+      "duration_sec": 1972.1571,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260721_000528_381983_serve.json"
+    },
+    {
+      "run_id": "20260721_002152_242294_phase1-data",
+      "command": "phase1-data",
+      "argv": [
+        "phase1-data",
+        "600378"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 00:21:52",
+      "ended_at": "2026-07-21 00:21:54",
+      "duration_sec": 2.5827,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 553,
+          "mtime": "2026-07-21 00:21:54"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 233,
+          "mtime": "2026-07-21 00:21:54"
+        }
+      ],
+      "path": "task_runs/20260721_002152_242294_phase1-data.json"
+    },
+    {
+      "run_id": "20260721_002040_199413_phase1-data",
+      "command": "phase1-data",
+      "argv": [
+        "phase1-data",
+        "600378"
+      ],
+      "status": "success",
+      "started_at": "2026-07-21 00:20:40",
+      "ended_at": "2026-07-21 00:20:43",
+      "duration_sec": 3.0642,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": true,
+          "size": 391,
+          "mtime": "2026-07-21 00:20:43"
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": true,
+          "size": 233,
+          "mtime": "2026-07-21 00:20:43"
+        }
+      ],
+      "path": "task_runs/20260721_002040_199413_phase1-data.json"
+    },
+    {
+      "run_id": "20260721_002020_931086_phase1-data",
+      "command": "phase1-data",
+      "argv": [
+        "phase1-data",
+        "600378"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-21 00:20:20",
+      "ended_at": "2026-07-21 00:20:22",
+      "duration_sec": 1.8257,
+      "error": {
+        "type": "AttributeError",
+        "message": "'TickFlowAPI' object has no attribute 'name'"
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "manifests/phase1_market_data.json",
+          "exists": false,
+          "size": null,
+          "mtime": ""
+        },
+        {
+          "path": "normalized/market.corporate_actions/ex_factors.json",
+          "exists": false,
+          "size": null,
+          "mtime": ""
+        }
+      ],
+      "path": "task_runs/20260721_002020_931086_phase1-data.json"
+    },
+    {
+      "run_id": "20260720_235943_643166_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:59:43",
+      "ended_at": "2026-07-21 00:05:26",
+      "duration_sec": 343.2704,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260720_235943_643166_serve.json"
+    },
+    {
+      "run_id": "20260720_235402_481525_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:54:02",
+      "ended_at": "2026-07-20 23:59:41",
+      "duration_sec": 339.0878,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260720_235402_481525_serve.json"
+    },
+    {
+      "run_id": "20260720_235854_034919_stock",
+      "command": "stock",
+      "argv": [
+        "stock"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:58:54",
+      "ended_at": "2026-07-20 23:58:55",
+      "duration_sec": 1.8683,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "stocks/index.json",
+          "exists": true,
+          "size": 1454,
+          "mtime": "2026-07-20 23:58:55"
+        },
+        {
+          "path": "stocks/live/index.json",
+          "exists": true,
+          "size": 941,
+          "mtime": "2026-07-14 00:10:54"
+        }
+      ],
+      "path": "task_runs/20260720_235854_034919_stock.json"
+    },
+    {
+      "run_id": "20260720_235825_437874_stock",
+      "command": "stock",
+      "argv": [
+        "stock",
+        "600378"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:58:25",
+      "ended_at": "2026-07-20 23:58:27",
+      "duration_sec": 1.9218,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "stocks/index.json",
+          "exists": true,
+          "size": 338,
+          "mtime": "2026-07-20 23:58:27"
+        },
+        {
+          "path": "stocks/live/index.json",
+          "exists": true,
+          "size": 941,
+          "mtime": "2026-07-14 00:10:54"
+        }
+      ],
+      "path": "task_runs/20260720_235825_437874_stock.json"
+    },
+    {
+      "run_id": "20260720_235728_230134_stock",
+      "command": "stock",
+      "argv": [
+        "stock",
+        "600378"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:57:28",
+      "ended_at": "2026-07-20 23:57:29",
+      "duration_sec": 1.0643,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "stocks/index.json",
+          "exists": true,
+          "size": 57,
+          "mtime": "2026-07-20 23:56:56"
+        },
+        {
+          "path": "stocks/live/index.json",
+          "exists": true,
+          "size": 941,
+          "mtime": "2026-07-14 00:10:54"
+        }
+      ],
+      "path": "task_runs/20260720_235728_230134_stock.json"
+    },
+    {
+      "run_id": "20260720_235654_586465_stock",
+      "command": "stock",
+      "argv": [
+        "stock",
+        "600378"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:56:54",
+      "ended_at": "2026-07-20 23:56:56",
+      "duration_sec": 2.1601,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "stocks/index.json",
+          "exists": true,
+          "size": 57,
+          "mtime": "2026-07-20 23:56:56"
+        },
+        {
+          "path": "stocks/live/index.json",
+          "exists": true,
+          "size": 941,
+          "mtime": "2026-07-14 00:10:54"
+        }
+      ],
+      "path": "task_runs/20260720_235654_586465_stock.json"
+    },
+    {
+      "run_id": "20260720_234935_425534_serve",
+      "command": "serve",
+      "argv": [
+        "serve"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:49:35",
+      "ended_at": "2026-07-20 23:54:01",
+      "duration_sec": 265.9661,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260720_234935_425534_serve.json"
+    },
+    {
+      "run_id": "20260720_235154_910426_diagnose",
+      "command": "diagnose",
+      "argv": [
+        "diagnose",
+        "600378",
+        "--focus",
+        "验证 Codex 接入与数据上下文"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-20 23:51:54",
+      "ended_at": "2026-07-20 23:52:30",
+      "duration_sec": 35.1126,
+      "error": {
+        "type": "RuntimeError",
+        "message": "\nERROR: Reconnecting... 5/5\nERROR: stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)\nERROR: stream disconnected before completion: error sending request for url (https://chatgpt.com/backend-api/codex/responses)\n2026-07-20T15:52:29.997245Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)\n2026-07-20T15:52:30.000797Z  WARN codex_mcp::rmcp_client: failed to initialize MCP client during shutdown: MCP startup failed: handshaking with MCP server failed: Send message error Transport [rmcp::transport::worker::WorkerTransport<rmcp::transport::streamable_http_client::StreamableHttpClientWorker<codex_rmcp_client::http_client_adapter::StreamableHttpClientAdapter>>] error: Client error: HTTP request failed: http/request failed: error sending request for url (https://chatgpt.com/backend-api/ps/mcp), when send initialize request"
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "ai_diagnosis",
+          "exists": true,
+          "size": null,
+          "mtime": "2026-07-20 23:49:57"
+        }
+      ],
+      "path": "task_runs/20260720_235154_910426_diagnose.json"
+    },
+    {
+      "run_id": "20260720_235130_580549_diagnose",
+      "command": "diagnose",
+      "argv": [
+        "diagnose",
+        "600378",
+        "--focus",
+        "验证 Codex 接入与数据上下文"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-20 23:51:30",
+      "ended_at": "2026-07-20 23:51:30",
+      "duration_sec": 0.0424,
+      "error": {
+        "type": "RuntimeError",
+        "message": "WARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)\n2026-07-20T15:51:30.619294Z  WARN codex_state::runtime: failed to open state db at /Users/zhangqiqi/.codex/state_5.sqlite: failed to open state DB at /Users/zhangqiqi/.codex/state_5.sqlite: error returned from database: (code: 8) attempt to write a readonly database\n2026-07-20T15:51:30.619322Z  WARN codex_rollout::state_db: failed to initialize state runtime: failed to initialize state runtime at /Users/zhangqiqi/.codex: failed to open state DB at /Users/zhangqiqi/.codex/state_5.sqlite: error returned from database: (code: 8) attempt to write a readonly database: error returned from database: (code: 8) attempt to write a readonly database: (code: 8) attempt to write a readonly database\nError: failed to initialize in-process app-server client: Operation not permitted (os error 1)"
+      },
+      "skip_reason": "",
+      "artifacts": [
+        {
+          "path": "ai_diagnosis",
+          "exists": true,
+          "size": null,
+          "mtime": "2026-07-20 23:49:57"
+        }
+      ],
+      "path": "task_runs/20260720_235130_580549_diagnose.json"
+    },
+    {
+      "run_id": "20260720_234836_529777_config",
+      "command": "config",
+      "argv": [
+        "config",
+        "--tickflow-key",
+        "***"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 23:48:36",
+      "ended_at": "2026-07-20 23:48:36",
+      "duration_sec": 0.0005,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260720_234836_529777_config.json"
+    },
+    {
+      "run_id": "20260720_211824_062044_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "18080"
+      ],
+      "status": "success",
+      "started_at": "2026-07-20 21:18:24",
+      "ended_at": "2026-07-20 21:18:51",
+      "duration_sec": 27.1125,
+      "error": {},
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260720_211824_062044_serve.json"
+    },
+    {
+      "run_id": "20260720_211807_647990_serve",
+      "command": "serve",
+      "argv": [
+        "serve",
+        "--port",
+        "18080"
+      ],
+      "status": "failed",
+      "started_at": "2026-07-20 21:18:07",
+      "ended_at": "2026-07-20 21:18:07",
+      "duration_sec": 0.0029,
+      "error": {
+        "type": "PermissionError",
+        "message": "[Errno 1] Operation not permitted"
+      },
+      "skip_reason": "",
+      "artifacts": [],
+      "path": "task_runs/20260720_211807_647990_serve.json"
+    },
     {
       "run_id": "20260714_000732_930667_all",
       "command": "all",

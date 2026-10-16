@@ -2,12 +2,7 @@
 
 from __future__ import annotations
 
-import json
-from pathlib import Path
-
 import pandas as pd
-
-from quant_system.config.crawler_config import CrawlerConfig
 
 
 def normalize_code(code: str) -> str:
@@ -45,7 +40,7 @@ def normalize_kline_df(df: pd.DataFrame, code: str, days: int = 120) -> pd.DataF
     if "turnover" not in df.columns:
         df["turnover"] = 0.0
 
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(df["date"], format="mixed")
     df = df.sort_values("date").drop_duplicates(subset=["date"], keep="last")
     df = df.tail(days).reset_index(drop=True)
     for col in ["open", "high", "low", "close", "volume", "amount", "turnover"]:
@@ -53,11 +48,3 @@ def normalize_kline_df(df: pd.DataFrame, code: str, days: int = 120) -> pd.DataF
             df[col] = pd.to_numeric(df[col], errors="coerce")
     df["code"] = normalize_code(code)
     return df
-
-
-def load_watchlist(config: CrawlerConfig | None = None) -> list[dict]:
-    cfg = config or CrawlerConfig()
-    if not cfg.watchlist_file.exists():
-        return []
-    data = json.loads(cfg.watchlist_file.read_text(encoding="utf-8"))
-    return data.get("stocks", [])

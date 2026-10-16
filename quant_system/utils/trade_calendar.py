@@ -89,6 +89,14 @@ class TradeCalendar:
             raise ValueError(f"交易日历中无 <= {target} 的日期")
         return dates[-1]
 
+    def latest_completed_trade_day(self, now: datetime | None = None) -> str:
+        """返回已经收盘的最近交易日，避免开盘前要求存在当日日 K。"""
+        current = now or datetime.now()
+        target = self.latest_trade_day(current.date())
+        if target == current.date().isoformat() and current.hour < 15:
+            return self.prev_trade_day(target) or target
+        return target
+
     def trade_days_between(self, start: str, end: str) -> list[str]:
         start, end = start[:10], end[:10]
         return [d for d in self.fetch_dates() if start <= d <= end]

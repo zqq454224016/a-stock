@@ -1,0 +1,35 @@
+{
+  "code": "300171",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_300171_20260723",
+  "factors": {
+    "ma20_bias": 1.06,
+    "rsi14": 49.86,
+    "macd": 0.0724,
+    "macd_signal": 0.044,
+    "macd_hist": 0.0284,
+    "atr14": 0.5493,
+    "momentum_20": 4.89,
+    "volume_ratio_20": 0.81,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 66.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 66.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:04"
+}

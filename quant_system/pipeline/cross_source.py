@@ -16,7 +16,7 @@ logger = get_logger(__name__)
 
 def _close_series(df: pd.DataFrame) -> pd.DataFrame:
     work = df.copy()
-    work["date"] = pd.to_datetime(work["date"]).dt.strftime("%Y-%m-%d")
+    work["date"] = pd.to_datetime(work["date"], format="mixed").dt.strftime("%Y-%m-%d")
     work["close"] = pd.to_numeric(work["close"], errors="coerce")
     return work.dropna(subset=["close"]).drop_duplicates("date", keep="last")[["date", "close"]]
 
@@ -89,6 +89,8 @@ def run_cross_source_check(
     """拉取备用源并与主源对比。"""
     if not getattr(cfg, "cross_source_check", True):
         return {"status": "disabled"}
+    if not hasattr(api, "fetch_daily_hist_source"):
+        return {"status": "unsupported", "primary_source": daily_source}
 
     alt = "sina" if daily_source == "eastmoney" else "eastmoney"
     try:

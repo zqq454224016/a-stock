@@ -12,7 +12,7 @@ class UniverseMember:
     name: str
     trade_date: str = ""
     quality_score: float = 100.0
-    market_scope: str = "watchlist"
+    market_scope: str = "full_market"
     is_tradeable: bool = True
     data_version: str | None = None
     notes: list[str] = field(default_factory=list)

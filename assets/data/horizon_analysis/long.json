@@ -1,0 +1,246 @@
+{
+  "track": "long",
+  "spec": {
+    "label": "长线",
+    "holding_days": "约20-60个交易日及以上",
+    "product_outputs": [
+      "长线研究诊断（非正式推荐）",
+      "质量门点时财务"
+    ],
+    "research_horizons": [
+      "long",
+      "medium"
+    ],
+    "entry_model": "基本面准入 + 中线趋势择时 → 次日开盘",
+    "design_constraints": [
+      "点时财务字段缺失则失败关闭，禁止 AI 补值",
+      "质量恶化退出与均线/止损并行",
+      "不与短线反追涨门禁混用同一评分"
+    ],
+    "success_criteria": [
+      "fundamental_quality 点时连接可用且质量门有真实信号",
+      "medium/long 候选组合路径打赢对应 baseline",
+      "回撤与持有期稳定性优于短线洪水策略"
+    ],
+    "not_success": [
+      "用短线涨幅榜解释长线是否有效",
+      "财务未 join 时把空信号当成策略失败以外的「可调参」空间"
+    ]
+  },
+  "leader": {
+    "status": "selected",
+    "selected_candidate": "baseline_medium",
+    "horizon": "medium",
+    "promotion_passed_diagnostic": false,
+    "evaluation_scope": "contaminated_recent_60d_diagnostic_only",
+    "baseline_candidate": "baseline_medium",
+    "profile": {
+      "name": "baseline_medium",
+      "horizon": "medium",
+      "mode": null,
+      "source_id": null,
+      "train_score": 0.569198,
+      "train": {
+        "signal_avg_net_return_pct": 1.3073,
+        "signal_hit_rate": 0.4354,
+        "signal_trades": 69790,
+        "portfolio_total_return_pct": 34.7716,
+        "portfolio_hit_rate": 0.4195,
+        "portfolio_accepted_trades": 987,
+        "portfolio_rejected_capacity": 68803,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": true
+      },
+      "oos": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      }
+    },
+    "oos": {
+      "trades": 0,
+      "hit_rate": null,
+      "avg_net_return_pct": null,
+      "median_net_return_pct": null,
+      "max_drawdown_pct": null,
+      "avg_mae_pct": null
+    },
+    "baseline_oos": {
+      "trades": 0,
+      "hit_rate": null,
+      "avg_net_return_pct": null,
+      "median_net_return_pct": null,
+      "max_drawdown_pct": null,
+      "avg_mae_pct": null
+    }
+  },
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "name": "baseline_medium",
+      "horizon": "medium",
+      "mode": null,
+      "source_id": null,
+      "train_score": 0.569198,
+      "train": {
+        "signal_avg_net_return_pct": 1.3073,
+        "signal_hit_rate": 0.4354,
+        "signal_trades": 69790,
+        "portfolio_total_return_pct": 34.7716,
+        "portfolio_hit_rate": 0.4195,
+        "portfolio_accepted_trades": 987,
+        "portfolio_rejected_capacity": 68803,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": true
+      },
+      "oos": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      }
+    },
+    {
+      "name": "baseline_long",
+      "horizon": "long",
+      "mode": null,
+      "source_id": null,
+      "train_score": 0.569198,
+      "train": {
+        "signal_avg_net_return_pct": 1.3073,
+        "signal_hit_rate": 0.4354,
+        "signal_trades": 69790,
+        "portfolio_total_return_pct": 34.7716,
+        "portfolio_hit_rate": 0.4195,
+        "portfolio_accepted_trades": 987,
+        "portfolio_rejected_capacity": 68803,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": true
+      },
+      "oos": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      }
+    },
+    {
+      "name": "tf_low_volatility_medium",
+      "horizon": "medium",
+      "mode": null,
+      "source_id": null,
+      "train_score": 0.147485,
+      "train": {
+        "signal_avg_net_return_pct": 0.5121,
+        "signal_hit_rate": 0.288,
+        "signal_trades": 90815,
+        "portfolio_total_return_pct": 8.0802,
+        "portfolio_hit_rate": 0.2761,
+        "portfolio_accepted_trades": 1206,
+        "portfolio_rejected_capacity": 89609,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": true
+      },
+      "oos": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      }
+    },
+    {
+      "name": "tf_bullish_alignment_medium",
+      "horizon": "medium",
+      "mode": null,
+      "source_id": null,
+      "train_score": 0.108743,
+      "train": {
+        "signal_avg_net_return_pct": 0.3411,
+        "signal_hit_rate": 0.3188,
+        "signal_trades": 21674,
+        "portfolio_total_return_pct": -19.6393,
+        "portfolio_hit_rate": 0.2519,
+        "portfolio_accepted_trades": 131,
+        "portfolio_rejected_capacity": 21543,
+        "signal_positive_portfolio_negative": true,
+        "capacity_starved": true
+      },
+      "oos": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      }
+    },
+    {
+      "name": "long_quality_trend_gate",
+      "horizon": "long",
+      "mode": null,
+      "source_id": null,
+      "train_score": 0,
+      "train": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      },
+      "oos": {
+        "signal_avg_net_return_pct": null,
+        "signal_hit_rate": null,
+        "signal_trades": 0,
+        "portfolio_total_return_pct": null,
+        "portfolio_hit_rate": null,
+        "portfolio_accepted_trades": 0,
+        "portfolio_rejected_capacity": 0,
+        "signal_positive_portfolio_negative": false,
+        "capacity_starved": false
+      }
+    }
+  ],
+  "quality_gate": {
+    "status": "present",
+    "ready": false,
+    "train_trades": 0,
+    "oos_trades": 0,
+    "note": "点时财务未 join 或质量门全关，长线质量候选当前为空信号（失败关闭）"
+  },
+  "analysis": {
+    "verdict": "long_track_not_ready",
+    "summary": "长线轨未就绪：长线质量门缺少点时财务信号；medium/long 诊断窗未过晋级条款。",
+    "issues": [
+      "长线质量门缺少点时财务信号",
+      "medium/long 诊断窗未过晋级条款"
+    ]
+  }
+}

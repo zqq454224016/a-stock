@@ -71,6 +71,28 @@ def _ma_cross(df: pd.DataFrame) -> str:
     return "none"
 
 
+def _trust_patterns(df: pd.DataFrame) -> dict[str, Any]:
+    """价托/量托（仅使用当前及历史已完成K线，不使用未来数据）。"""
+    if len(df) < 65 or "volume" not in df.columns:
+        return {"price_trust": False, "volume_trust": False, "trust_signal": "insufficient_history"}
+    close = df["close"].astype(float)
+    vol = df["volume"].astype(float)
+    mas = {n: close.rolling(n).mean() for n in (5, 10, 20, 40, 60)}
+    vmas = {n: vol.rolling(n).mean() for n in (5, 10, 20, 40, 60)}
+    price_month = (mas[5] > mas[10]) & (mas[10] > mas[20])
+    price_quarter = (mas[20] > mas[40]) & (mas[40] > mas[60])
+    volume_month = (vmas[5] > vmas[10]) & (vmas[10] > vmas[20])
+    volume_quarter = (vmas[20] > vmas[40]) & (vmas[40] > vmas[60])
+    price = bool(price_month.iloc[-1] or price_quarter.iloc[-1])
+    volume = bool(volume_month.iloc[-1] or volume_quarter.iloc[-1])
+    price_recent = bool(price_month.tail(10).any() or price_quarter.tail(10).any())
+    volume_recent = bool(volume_month.tail(10).any() or volume_quarter.tail(10).any())
+    return {"price_trust": price, "volume_trust": volume, "price_trust_recent": price_recent,
+            "volume_trust_recent": volume_recent, "trust_signal": "price_volume_trust" if price and volume else "price_or_volume_trust" if price or volume else "none",
+            "price_month_trust": bool(price_month.iloc[-1]), "price_quarter_trust": bool(price_quarter.iloc[-1]),
+            "volume_month_trust": bool(volume_month.iloc[-1]), "volume_quarter_trust": bool(volume_quarter.iloc[-1])}
+
+
 def compute_technical_factors(
     df: pd.DataFrame,
     code: str,
@@ -121,6 +143,7 @@ def compute_technical_factors(
         "volume_ratio_20": volume_ratio_20,
         "above_ma20": bool(ma20 and close >= ma20),
         "ma_cross": _ma_cross(work),
+        "price_volume_trust": _trust_patterns(work),
     }
 
     return {

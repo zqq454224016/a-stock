@@ -27,7 +27,7 @@ def test_data_registry_summarizes_artifact_fields_and_quality(tmp_path: Path) ->
         "trade_date": "2026-07-10",
         "indices": [],
         "degraded": True,
-        "limitations": ["spot_watchlist_only"],
+        "limitations": ["spot_stock_cache"],
     })
 
     payload = build_data_registry(store)
@@ -38,13 +38,13 @@ def test_data_registry_summarizes_artifact_fields_and_quality(tmp_path: Path) ->
     assert market["record_count"] == 1
     assert "indices" in market["field_summary"]["top_level_fields"]
     assert market["data_quality"]["degraded"] is True
-    assert "spot_watchlist_only" in market["data_quality"]["limitations"]
+    assert "spot_stock_cache" in market["data_quality"]["limitations"]
     assert market["source"]["expected_command"] == "market"
 
 
 def test_data_registry_links_latest_task_run_to_artifact(tmp_path: Path) -> None:
     store = _store(tmp_path)
-    _write(tmp_path, "selector/index.json", {
+    _write(tmp_path, "strategy/index.json", {
         "updated_at": "2026-07-10 10:00:00",
         "items": [{"code": "600001"}],
     })
@@ -52,18 +52,18 @@ def test_data_registry_links_latest_task_run_to_artifact(tmp_path: Path) -> None
         "updated_at": "2026-07-10 10:01:00",
         "runs": [{
             "run_id": "run_001",
-            "command": "selector",
+            "command": "all",
             "status": "success",
             "ended_at": "2026-07-10 10:01:00",
             "duration_sec": 1.2,
-            "artifacts": [{"path": "selector/index.json", "exists": True}],
+            "artifacts": [{"path": "strategy/index.json", "exists": True}],
         }],
     })
 
     payload = build_data_registry(store)
-    selector = next(item for item in payload["items"] if item["module"] == "selector")
+    strategy = next(item for item in payload["items"] if item["module"] == "strategy")
 
-    assert selector["generated_by"]["run_id"] == "run_001"
-    assert selector["generated_by"]["command"] == "selector"
-    assert selector["record_count"] == 1
-    assert any(row["module"] == "selector" and row["generated_by"] == "selector" for row in payload["lineage"])
+    assert strategy["generated_by"]["run_id"] == "run_001"
+    assert strategy["generated_by"]["command"] == "all"
+    assert strategy["record_count"] == 1
+    assert any(row["module"] == "strategy" and row["generated_by"] == "all" for row in payload["lineage"])

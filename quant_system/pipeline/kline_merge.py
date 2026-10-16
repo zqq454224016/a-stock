@@ -34,7 +34,7 @@ def merge_spot_into_daily_kline(
         return df, meta
 
     df = df.copy()
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(df["date"], format="mixed")
     df = df.sort_values("date").reset_index(drop=True)
     last_date = df["date"].iloc[-1]
     target_dt = pd.to_datetime(target)

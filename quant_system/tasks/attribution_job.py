@@ -7,7 +7,8 @@ from typing import Any
 from quant_system.attribution import build_daily_attribution_payload
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.storage.json_store import JsonStore
 from quant_system.utils.logger import get_logger
 from quant_system.utils.market_scope import filter_research_stocks
@@ -32,7 +33,7 @@ def run_attribution_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
     store = JsonStore(DBConfig())
     stocks = (
         [{"code": normalize_code(c), "name": ""} for c in codes]
-        if codes else filter_research_stocks(load_watchlist(cfg), cfg, reason="每日归因")
+        if codes else filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="每日归因")
     )
     if not stocks:
         logger.error("未配置自选股")

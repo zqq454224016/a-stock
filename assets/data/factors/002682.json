@@ -1,0 +1,35 @@
+{
+  "code": "002682",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_002682_20260723",
+  "factors": {
+    "ma20_bias": -2.22,
+    "rsi14": 37.88,
+    "macd": -0.206,
+    "macd_signal": -0.2224,
+    "macd_hist": 0.0163,
+    "atr14": 0.2621,
+    "momentum_20": -5.31,
+    "volume_ratio_20": 1.31,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 45.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 45.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:25"
+}

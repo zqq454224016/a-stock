@@ -47,6 +47,19 @@ def test_monitoring_snapshot_reads_quality_and_recommendation_alerts(tmp_path: P
     assert any("推荐缺额" in x for x in messages)
 
 
+def test_monitoring_reports_unavailable_interim_data(tmp_path: Path) -> None:
+    store = JsonStore(DBConfig())
+    store.config.json_data_dir = tmp_path
+    _write(tmp_path, "interim_reports/index.json", {
+        "updated_at": "2026-07-22 10:00:00", "status": "unavailable",
+        "source_errors": {"income": "permission denied"},
+    })
+
+    payload = build_monitoring_snapshot(store)
+
+    assert any(item["module"] == "interim_reports" and item["level"] == "warning" for item in payload["alerts"])
+
+
 def test_monitoring_snapshot_reads_recent_task_failures(tmp_path: Path) -> None:
     store = JsonStore(DBConfig())
     store.config.json_data_dir = tmp_path

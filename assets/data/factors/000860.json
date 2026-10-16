@@ -1,0 +1,35 @@
+{
+  "code": "000860",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_000860_20260723",
+  "factors": {
+    "ma20_bias": 4.78,
+    "rsi14": 62.23,
+    "macd": 0.1102,
+    "macd_signal": -0.022,
+    "macd_hist": 0.1321,
+    "atr14": 0.3736,
+    "momentum_20": 10.15,
+    "volume_ratio_20": 0.61,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 87.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 87.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:17"
+}

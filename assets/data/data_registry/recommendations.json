@@ -5,10 +5,10 @@
   "path": "recommendations/summary.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/recommendations/summary.json",
   "exists": true,
-  "size": 21983,
-  "file_mtime": "2026-07-09 17:18:16",
-  "updated_at": "2026-07-09 17:18:16",
-  "record_count": 12,
+  "size": 9941304,
+  "file_mtime": "2026-07-24 01:55:18",
+  "updated_at": "2026-07-24 01:55:18",
+  "record_count": 9573,
   "field_summary": {
     "top_level_fields": [
       "limitations",
@@ -31,24 +31,31 @@
     "quality_status": "",
     "quality_score": null,
     "limitations": [
-      "recommendation_universe_limited_to_local_watchlist",
-      "long_horizon_lacks_dedicated_prediction_model",
-      "degraded_market_or_fund_flow_data_may_reduce_confidence"
+      "additional_permission_boards_excluded_from_all_candidate_periods",
+      "recommendation_universe_limited_to_locally_available_stock_artifacts",
+      "long_horizon_lacks_dedicated_prediction_model"
     ]
   },
   "dependencies": [
     "market",
-    "selector",
-    "predictions",
-    "impact",
-    "replay"
+    "interim_reports",
+    "strategy",
+    "strategy_backtest",
+    "factors"
   ],
-  "generated_by": {},
+  "generated_by": {
+    "run_id": "20260723_003344_628955_recommend",
+    "command": "recommend",
+    "status": "success",
+    "ended_at": "2026-07-23 00:33:48",
+    "duration_sec": 4.2977,
+    "artifact_exists_at_finish": true
+  },
   "source": {
     "declared_output": "recommendations/summary.json",
     "expected_command": "recommend",
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-14 00:10:55"
+  "registered_at": "2026-07-24 01:55:19"
 }

@@ -1,0 +1,35 @@
+{
+  "code": "300398",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_300398_20260723",
+  "factors": {
+    "ma20_bias": -27.9,
+    "rsi14": 22.22,
+    "macd": -3.5034,
+    "macd_signal": -1.4267,
+    "macd_hist": -2.0767,
+    "atr14": 4.185,
+    "momentum_20": -40.37,
+    "volume_ratio_20": 0.58,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:08"
+}

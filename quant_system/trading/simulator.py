@@ -6,6 +6,7 @@ from copy import deepcopy
 from typing import Any
 
 from quant_system.config.trading_config import SIM_TRADING_VERSION, TradingConfig
+from quant_system.trading.order_state import resolve_fill_status
 from quant_system.utils.time_utils import now_str
 
 
@@ -70,6 +71,8 @@ def _apply_target_rebalance(
     reason: str,
     prediction_probability: Any = None,
     decision_action: str | None = None,
+    trade_date: str = "",
+    tradability: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     account = mark_to_market(account, {code: price})
     positions = account.setdefault("positions", {})
@@ -84,9 +87,28 @@ def _apply_target_rebalance(
         return account
 
     side = "buy" if delta_value > 0 else "sell"
+    tradability = tradability or {}
+    reject_reason = str(tradability.get(f"{side}_reject_reason") or "")
+    if side == "sell" and trade_date and pos.get("entry_trade_date") == trade_date:
+        reject_reason = "t_plus_1_locked"
+    if reject_reason:
+        account.setdefault("orders", []).append({
+            "code": code, "name": name or pos.get("name", ""), "side": side,
+            "shares": 0, "requested_shares": 0, "filled_shares": 0,
+            "price": price, "amount": 0.0, "fee": 0.0,
+            "status": "rejected", "reason": reason,
+            "reject_reason": reject_reason, "created_at": now_str(),
+            "trade_date": trade_date,
+            "client_order_id": f"{trade_date}:{code}:{side}:{reason}:rejected",
+        })
+        return account
     exec_px = execution_price(price, side, cfg)
     raw_shares = abs(delta_value) / exec_px if exec_px > 0 else 0
-    shares = _round_lot(raw_shares, cfg.lot_size)
+    requested = _round_lot(raw_shares, cfg.lot_size)
+    shares = requested
+    max_shares = int(tradability.get("max_executable_shares") or 0)
+    if max_shares > 0:
+        shares = min(shares, _round_lot(max_shares, cfg.lot_size))
 
     if side == "sell":
         shares = min(shares, int(pos.get("shares") or 0))
@@ -113,6 +135,9 @@ def _apply_target_rebalance(
         pos["avg_cost"] = round((old_cost + total_cost) / new_shares, 4)
         pos["shares"] = new_shares
         pos["name"] = name or pos.get("name", "")
+        if old_shares == 0:
+            pos["entry_trade_date"] = trade_date
+            pos["holding_sessions"] = 0
         account["cash"] = round(float(account["cash"]) - total_cost, 2)
         realized = 0.0
     else:
@@ -124,19 +149,24 @@ def _apply_target_rebalance(
         account["cash"] = round(float(account["cash"]) + proceeds, 2)
         account["realized_pnl"] = round(float(account.get("realized_pnl") or 0) + realized, 2)
 
+    fill_status = resolve_fill_status(requested_shares=requested, filled_shares=shares)
     order = {
         "code": code,
         "name": name or pos.get("name", ""),
         "side": side,
         "shares": shares,
+        "requested_shares": requested,
+        "filled_shares": shares,
         "price": exec_px,
         "amount": amount,
         "fee": fee,
-        "status": "filled",
+        "status": fill_status,
         "reason": reason,
         "target_position_pct": round(target_pct, 4),
         "prediction_probability": prediction_probability,
         "created_at": now_str(),
+        "trade_date": trade_date,
+        "client_order_id": f"{trade_date}:{code}:{side}:{reason}:{requested}",
     }
     if decision_action:
         order["decision_action"] = decision_action
@@ -185,6 +215,9 @@ def apply_prediction_rebalance(
     price: float,
     name: str = "",
     cfg: TradingConfig | None = None,
+    trade_date: str = "",
+    tradability: dict[str, Any] | None = None,
+    reason: str | None = None,
 ) -> dict[str, Any]:
     """根据单只股票预测调整虚拟仓位。"""
     cfg = cfg or TradingConfig()
@@ -197,8 +230,10 @@ def apply_prediction_rebalance(
         target_pct=target_pct,
         name=name,
         cfg=cfg,
-        reason=f"prediction_{prediction.get('direction')}_{prediction.get('confidence')}",
+        reason=reason or f"prediction_{prediction.get('direction')}_{prediction.get('confidence')}",
         prediction_probability=prediction.get("probability"),
+        trade_date=trade_date,
+        tradability=tradability,
     )
 
 
@@ -241,6 +276,14 @@ def apply_decision_rebalance(
 def account_summary(account: dict[str, Any]) -> dict[str, Any]:
     initial = float(account.get("initial_cash") or 0)
     equity = float(account.get("total_equity") or 0)
+    trades = list(account.get("trades") or [])
+    sell_trades = [row for row in trades if row.get("side") == "sell"]
+    wins = [row for row in sell_trades if float(row.get("realized_pnl") or 0) > 0]
+    total_fees = sum(float(row.get("fee") or 0) for row in trades)
+    unrealized = sum(
+        float(pos.get("unrealized_pnl") or 0)
+        for pos in (account.get("positions") or {}).values()
+    )
     return {
         "updated_at": account.get("updated_at"),
         "initial_cash": round(initial, 2),
@@ -252,4 +295,12 @@ def account_summary(account: dict[str, Any]) -> dict[str, Any]:
         "order_count": len(account.get("orders") or []),
         "trade_count": len(account.get("trades") or []),
         "realized_pnl": account.get("realized_pnl", 0),
+        "unrealized_pnl": round(unrealized, 2),
+        "total_pnl": round(equity - initial, 2),
+        "total_fees": round(total_fees, 2),
+        "closed_trade_count": len(sell_trades),
+        "win_rate_pct": round(len(wins) / len(sell_trades) * 100, 2) if sell_trades else None,
+        "rejected_order_count": len([
+            row for row in (account.get("orders") or []) if row.get("status") == "rejected"
+        ]),
     }

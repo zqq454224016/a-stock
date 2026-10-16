@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from types import SimpleNamespace
+
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.tasks import runtime
 
@@ -12,7 +14,7 @@ def test_resolve_stock_items_prefers_explicit_codes() -> None:
     assert items == [{"code": "600378", "name": ""}, {"code": "000636", "name": ""}]
 
 
-def test_run_for_watchlist_filters_failed_results(monkeypatch) -> None:
+def test_run_for_items_filters_failed_results(monkeypatch) -> None:
     cfg = CrawlerConfig()
     captured = {}
     saved = {}
@@ -24,7 +26,7 @@ def test_run_for_watchlist_filters_failed_results(monkeypatch) -> None:
 
     monkeypatch.setattr(runtime, "run_parallel_map", fake_parallel_map)
 
-    rows = runtime.run_for_watchlist(
+    rows = runtime.run_for_items(
         cfg=cfg,
         items=[{"code": "1"}, {"code": "2"}],
         worker=lambda item: item if item["code"] == "1" else None,
@@ -38,8 +40,8 @@ def test_run_for_watchlist_filters_failed_results(monkeypatch) -> None:
     assert saved["ts"]
 
 
-def test_run_for_watchlist_empty_returns_empty() -> None:
-    rows = runtime.run_for_watchlist(
+def test_run_for_items_empty_returns_empty() -> None:
+    rows = runtime.run_for_items(
         cfg=CrawlerConfig(),
         items=[],
         worker=lambda item: item,
@@ -47,3 +49,13 @@ def test_run_for_watchlist_empty_returns_empty() -> None:
     )
 
     assert rows == []
+
+
+def test_run_for_items_is_the_generic_execution_boundary() -> None:
+    rows = runtime.run_for_items(
+        cfg=SimpleNamespace(fetch_workers=1),
+        items=[{"code": "1"}],
+        worker=lambda item: item["code"],
+        label="universe",
+    )
+    assert rows == ["1"]

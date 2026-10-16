@@ -1,0 +1,122 @@
+{
+  "updated_at": "2026-07-21 00:59:24",
+  "total": 5,
+  "summary": {
+    "ok": 5,
+    "warning": 0,
+    "error": 0,
+    "factor_blocked": 0
+  },
+  "stocks": [
+    {
+      "code": "600378",
+      "trade_date": "2026-07-21",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-07-09",
+        "2026-07-20"
+      ],
+      "latest_expected": "2026-07-21",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-21 00:59:24"
+    },
+    {
+      "code": "603629",
+      "trade_date": "2026-07-21",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-07-09",
+        "2026-07-20"
+      ],
+      "latest_expected": "2026-07-21",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-21 00:59:24"
+    },
+    {
+      "code": "000636",
+      "trade_date": "2026-07-21",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-07-09",
+        "2026-07-20"
+      ],
+      "latest_expected": "2026-07-21",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-21 00:59:24"
+    },
+    {
+      "code": "000988",
+      "trade_date": "2026-07-21",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-07-09",
+        "2026-07-20"
+      ],
+      "latest_expected": "2026-07-21",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-21 00:59:24"
+    },
+    {
+      "code": "002384",
+      "trade_date": "2026-07-21",
+      "status": "ok",
+      "quality_score": 95.0,
+      "missing_rate": 0.0,
+      "duplicate_count": 0,
+      "cross_source_diff": null,
+      "cross_source": null,
+      "rows": 250,
+      "date_range": [
+        "2025-07-09",
+        "2026-07-20"
+      ],
+      "latest_expected": "2026-07-21",
+      "missing_dates": [],
+      "issues": [
+        "K 线末日期 2026-07-20 落后于最近交易日 2026-07-21"
+      ],
+      "factor_eligible": true,
+      "checked_at": "2026-07-21 00:59:24"
+    }
+  ]
+}

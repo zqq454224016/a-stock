@@ -1,0 +1,35 @@
+{
+  "code": "603528",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_603528_20260723",
+  "factors": {
+    "ma20_bias": -2.59,
+    "rsi14": 37.78,
+    "macd": -0.2764,
+    "macd_signal": -0.3105,
+    "macd_hist": 0.0342,
+    "atr14": 0.3079,
+    "momentum_20": -7.86,
+    "volume_ratio_20": 0.79,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 40.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 40.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:41"
+}

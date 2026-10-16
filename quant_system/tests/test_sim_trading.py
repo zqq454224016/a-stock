@@ -79,3 +79,30 @@ def test_apply_decision_rebalance_uses_position_suggestion_directly():
     assert pos["shares"] == 200
     assert account["orders"][0]["reason"] == "decision_buy_medium"
     assert account["orders"][0]["decision_action"] == "buy"
+
+
+def test_t_plus_one_rejects_same_day_exit():
+    cfg = TradingConfig(initial_cash=100_000)
+    account = new_account(cfg.initial_cash)
+    buy = {"code": "600378", "direction": "up", "probability": 0.75, "confidence": "high"}
+    sell = {"code": "600378", "direction": "neutral", "probability": 0, "confidence": "low"}
+    account = apply_prediction_rebalance(
+        account, buy, price=50, cfg=cfg, trade_date="2026-07-31"
+    )
+    account = apply_prediction_rebalance(
+        account, sell, price=45, cfg=cfg, trade_date="2026-07-31", reason="stop_loss"
+    )
+    assert "600378" in account["positions"]
+    assert account["orders"][-1]["status"] == "rejected"
+    assert account["orders"][-1]["reject_reason"] == "t_plus_1_locked"
+
+
+def test_liquidity_caps_filled_shares():
+    cfg = TradingConfig(initial_cash=100_000, max_position_pct=0.2)
+    account = new_account(cfg.initial_cash)
+    pred = {"code": "600378", "direction": "up", "probability": 0.75, "confidence": "high"}
+    account = apply_prediction_rebalance(
+        account, pred, price=10, cfg=cfg,
+        trade_date="2026-07-31", tradability={"max_executable_shares": 500},
+    )
+    assert account["positions"]["600378"]["shares"] == 500

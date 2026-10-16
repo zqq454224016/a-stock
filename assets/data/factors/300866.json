@@ -1,0 +1,35 @@
+{
+  "code": "300866",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_300866_20260723",
+  "factors": {
+    "ma20_bias": 6.61,
+    "rsi14": 61.03,
+    "macd": 1.2657,
+    "macd_signal": -0.3186,
+    "macd_hist": 1.5843,
+    "atr14": 6.1764,
+    "momentum_20": 7.0,
+    "volume_ratio_20": 0.56,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 87.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 87.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:18"
+}

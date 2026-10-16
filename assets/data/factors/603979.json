@@ -1,0 +1,35 @@
+{
+  "code": "603979",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_603979_20260723",
+  "factors": {
+    "ma20_bias": 15.52,
+    "rsi14": 68.34,
+    "macd": 0.6845,
+    "macd_signal": -0.4447,
+    "macd_hist": 1.1292,
+    "atr14": 4.5301,
+    "momentum_20": 18.65,
+    "volume_ratio_20": 1.31,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 92.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 92.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:43"
+}

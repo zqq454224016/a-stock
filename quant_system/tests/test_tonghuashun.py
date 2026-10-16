@@ -4,21 +4,7 @@ from unittest.mock import MagicMock, patch
 
 import pandas as pd
 
-from quant_system.data_source.broker_registry import DATA_SOURCES, parse_enabled_data_sources
 from quant_system.data_source.tonghuashun import TonghuashunCrawler
-
-
-def test_broker_registry_has_changjiang_planned():
-    cj = DATA_SOURCES["changjiang"]
-    assert cj.name == "长江e号"
-    assert cj.status == "planned"
-
-
-def test_parse_enabled_data_sources():
-    sources = parse_enabled_data_sources()
-    assert "ths" in sources
-    assert "xueqiu" in sources
-    assert "changjiang" not in sources
 
 
 def test_ths_fetch_industries():

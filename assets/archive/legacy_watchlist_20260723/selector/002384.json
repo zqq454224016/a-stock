@@ -1,0 +1,65 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-22",
+  "selector_version": "1.1.0",
+  "upside_score": 0.0,
+  "status": "rejected",
+  "rank_bucket": "排除",
+  "reasons": [
+    "回测夏普 1.56",
+    "回测胜率 50.00%"
+  ],
+  "risks": [
+    "因子分偏低 44.9",
+    "预测方向向下，概率 0.42",
+    "预测标记高波动",
+    "未站上 MA20",
+    "5日跌幅较大",
+    "实际影响偏负面，impact_score=-53",
+    "阈值校准：后验复盘样本不足，selector 阈值保持默认"
+  ],
+  "reject_reasons": [
+    "预测方向为偏空",
+    "因子分过低 44.9",
+    "实际影响数据显著偏负面"
+  ],
+  "candidate_blockers": [
+    "预测尚未形成向上确认",
+    "因子分未达到观察线",
+    "趋势未站上 MA20",
+    "实际影响分为负"
+  ],
+  "next_triggers": [
+    "预测方向从偏空修复为震荡或偏多",
+    "预测概率提升到 0.55 以上",
+    "因子分提升到 55 以上",
+    "收盘价重新站上 MA20",
+    "实际影响分修复到非负"
+  ],
+  "metrics": {
+    "quality_score": 90.0,
+    "factor_score": 44.9,
+    "candidate_score_threshold": 70.0,
+    "watch_score_threshold": 55.0,
+    "probability_floor": 0.55,
+    "prediction_direction": "down",
+    "prediction_probability": 0.4151,
+    "impact_score": -53.0,
+    "impact_direction": "negative"
+  },
+  "calibration": {
+    "calibration_version": "1.0.0",
+    "mode": "neutral",
+    "score_adjustment": 0.0,
+    "candidate_score_delta": 0.0,
+    "watch_score_delta": 0.0,
+    "probability_floor_delta": 0.0,
+    "reasons": [],
+    "risk_notes": [
+      "后验复盘样本不足，selector 阈值保持默认"
+    ],
+    "evidence": {}
+  },
+  "updated_at": "2026-07-23 00:06:22"
+}

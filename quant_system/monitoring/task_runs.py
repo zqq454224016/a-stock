@@ -29,14 +29,27 @@ ARTIFACT_HINTS = {
     "review": ["review/index.json"],
     "replay": ["replay/index.json"],
     "impact": ["impact/index.json"],
-    "attribution": ["attribution/index.json", "../../reports/attribution/index.html"],
+    "attribution": ["attribution/index.json"],
     "agent": ["agent/index.json"],
     "recommend": ["recommendations/summary.json"],
     "framework": ["framework/snapshot.json"],
-    "console": ["../../reports/console/index.html"],
-    "monitor": ["monitoring/snapshot.json", "../../reports/monitoring/index.html"],
+    "monitor": ["monitoring/snapshot.json"],
     "registry": ["data_registry/index.json"],
-    "v3-plan": ["planning/v3_roadmap.json", "../../reports/planning/v3.html"],
+    "diagnose": ["ai_diagnosis"],
+    "all": [
+        "manifests/phase1_market_data.json",
+        "normalized/market.instruments/security_master.json",
+        "normalized/market.trading_status/events.json",
+        "normalized/market.corporate_actions/ex_factors.json",
+        "monitoring/snapshot.json",
+    ],
+    "mvp": [
+        "manifests/phase1_market_data.json",
+        "normalized/market.instruments/security_master.json",
+        "normalized/market.trading_status/events.json",
+        "normalized/market.corporate_actions/ex_factors.json",
+        "monitoring/snapshot.json",
+    ],
 }
 
 

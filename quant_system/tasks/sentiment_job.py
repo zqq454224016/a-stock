@@ -11,7 +11,7 @@ from quant_system.factors.sentiment import compute_sentiment_factors
 from quant_system.pipeline.normalizer import normalize_code
 from quant_system.storage.json_store import JsonStore
 from quant_system.utils.logger import get_logger
-from quant_system.tasks.runtime import resolve_stock_items, run_for_watchlist
+from quant_system.tasks.runtime import resolve_stock_items, run_for_items
 
 logger = get_logger(__name__)
 
@@ -52,7 +52,7 @@ def run_sentiment_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
     stocks = resolve_stock_items(cfg, codes=codes, reason="舆情采集")
 
     worker = lambda item: _process_sentiment(item, api, store)
-    index = run_for_watchlist(
+    index = run_for_items(
         cfg=cfg,
         items=stocks,
         worker=worker,

@@ -15,10 +15,18 @@ from quant_system.apps.cli import build_parser, execute_command
 from quant_system.monitoring.task_runs import TaskRunRecorder
 
 
+def _redacted_argv(argv: list[str]) -> list[str]:
+    redacted = list(argv)
+    for index, value in enumerate(redacted[:-1]):
+        if value in {"--tickflow-key", "--tushare-token", "--feishu-webhook"}:
+            redacted[index + 1] = "***"
+    return redacted
+
+
 def main() -> None:
     args = build_parser().parse_args()
     command = args.command or "help"
-    recorder = TaskRunRecorder(command=command, argv=sys.argv[1:])
+    recorder = TaskRunRecorder(command=command, argv=_redacted_argv(sys.argv[1:]))
     recorder.start()
     try:
         execute_command(args)

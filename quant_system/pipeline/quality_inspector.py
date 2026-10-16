@@ -80,6 +80,7 @@ def inspect_kline_df(
     calendar: TradeCalendar | None = None,
     lookback_days: int = 60,
     cross_source: dict[str, Any] | None = None,
+    allowed_missing_dates: set[str] | None = None,
 ) -> dict[str, Any]:
     """巡检单只股票 K 线质量，输出 Quantification.md §2.3 结构。"""
     cal = calendar or get_calendar()
@@ -103,12 +104,15 @@ def inspect_kline_df(
         }
 
     df = df.copy()
-    df["date"] = pd.to_datetime(df["date"])
+    df["date"] = pd.to_datetime(df["date"], format="mixed")
     df = df.sort_values("date")
     start = df["date"].iloc[0].strftime("%Y-%m-%d")
     end = df["date"].iloc[-1].strftime("%Y-%m-%d")
-    latest_expected = cal.latest_trade_day()
+    latest_expected = cal.latest_completed_trade_day()
     missing = find_missing_trade_dates(df, start, end, cal)
+    allowed = allowed_missing_dates or set()
+    explained_missing = sorted(set(missing) & allowed)
+    missing = sorted(set(missing) - allowed)
 
     window_start = (df["date"].iloc[-1] - pd.Timedelta(days=lookback_days)).strftime("%Y-%m-%d")
     recent_missing = [d for d in missing if d >= window_start]
@@ -116,13 +120,18 @@ def inspect_kline_df(
 
     if recent_missing:
         issues.append(f"近 {lookback_days} 日缺失 {len(recent_missing)} 个交易日")
+    recent_explained = [d for d in explained_missing if d >= window_start]
+    if recent_explained:
+        issues.append(f"近 {lookback_days} 日另有 {len(recent_explained)} 个合法停牌日")
 
     last_date = end
     lag_trade_days = 0
     if last_date < latest_expected:
         lag_days_list = [d for d in cal.trade_days_between(last_date, latest_expected) if d > last_date]
-        lag_trade_days = len(lag_days_list)
-        issues.append(f"K 线末日期 {last_date} 落后于最近交易日 {latest_expected}")
+        unexplained_lag = [d for d in lag_days_list if d not in allowed]
+        lag_trade_days = len(unexplained_lag)
+        if unexplained_lag:
+            issues.append(f"K 线末日期 {last_date} 落后于最近交易日 {latest_expected}")
 
     zero_vol = int((df["volume"].fillna(0) == 0).sum()) if "volume" in df.columns else 0
     zero_vol_ratio = zero_vol / len(df) if len(df) else 0.0
@@ -174,6 +183,7 @@ def inspect_kline_df(
         "date_range": [start, end],
         "latest_expected": latest_expected,
         "missing_dates": recent_missing,
+        "explained_suspension_dates": recent_explained,
         "issues": issues,
         "factor_eligible": is_factor_eligible({
             "quality_score": quality_score,

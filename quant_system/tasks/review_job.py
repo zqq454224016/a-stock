@@ -7,7 +7,8 @@ from typing import Any
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
 from quant_system.evaluation.review import build_review_payload
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.storage.json_store import JsonStore
 from quant_system.utils.logger import get_logger
 from quant_system.utils.market_scope import filter_research_stocks
@@ -29,7 +30,7 @@ def _read_optional(store: JsonStore, rel: str) -> dict[str, Any] | None:
 def _resolve_items(codes: list[str] | None, cfg: CrawlerConfig) -> list[dict[str, str]]:
     if codes:
         return [{"code": normalize_code(c), "name": ""} for c in codes]
-    return filter_research_stocks(load_watchlist(cfg), cfg, reason="后验复盘")
+    return filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="后验复盘")
 
 
 def run_review_job(codes: list[str] | None = None) -> list[dict[str, Any]]:

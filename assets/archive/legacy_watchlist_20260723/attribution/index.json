@@ -1,0 +1,103 @@
+{
+  "updated_at": "2026-07-23 00:06:28",
+  "items": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "status": "ok",
+      "trade_date": "2026-07-22",
+      "previous_trade_date": "2026-07-21",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 6.61,
+      "today_return_pct": -1.58,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "大盘走弱",
+        "收盘跌破 MA20",
+        "回吐前一交易日收盘",
+        "市场主力资金净流出"
+      ],
+      "limitations": [
+        "market_data_degraded"
+      ]
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "status": "ok",
+      "trade_date": "2026-07-22",
+      "previous_trade_date": "2026-07-21",
+      "pattern": "up_then_up",
+      "yesterday_return_pct": 10.0,
+      "today_return_pct": 10.0,
+      "logic_broken": false,
+      "primary_today_causes": [
+        "单日涨幅较强",
+        "收盘站上 MA20"
+      ],
+      "limitations": [
+        "market_data_degraded"
+      ]
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "status": "ok",
+      "trade_date": "2026-07-22",
+      "previous_trade_date": "2026-07-21",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 5.83,
+      "today_return_pct": -6.81,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "单日跌幅较深",
+        "放量下跌",
+        "大盘走弱",
+        "收盘跌破 MA20"
+      ],
+      "limitations": [
+        "market_data_degraded"
+      ]
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "status": "ok",
+      "trade_date": "2026-07-22",
+      "previous_trade_date": "2026-07-21",
+      "pattern": "up_then_up",
+      "yesterday_return_pct": 6.89,
+      "today_return_pct": 0.32,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "收盘跌破 MA20",
+        "收盘低于 MA5",
+        "大盘走弱"
+      ],
+      "limitations": [
+        "market_data_degraded"
+      ]
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "status": "ok",
+      "trade_date": "2026-07-22",
+      "previous_trade_date": "2026-07-21",
+      "pattern": "yesterday_up_today_down",
+      "yesterday_return_pct": 6.09,
+      "today_return_pct": -5.84,
+      "logic_broken": true,
+      "primary_today_causes": [
+        "单日跌幅较深",
+        "放量下跌",
+        "大盘走弱",
+        "收盘跌破 MA20"
+      ],
+      "limitations": [
+        "market_data_degraded",
+        "replay_missing"
+      ]
+    }
+  ]
+}

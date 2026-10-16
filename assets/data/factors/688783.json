@@ -1,0 +1,35 @@
+{
+  "code": "688783",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_688783_20260723",
+  "factors": {
+    "ma20_bias": -27.99,
+    "rsi14": 24.68,
+    "macd": -2.7665,
+    "macd_signal": -0.2972,
+    "macd_hist": -2.4693,
+    "atr14": 5.5664,
+    "momentum_20": -31.65,
+    "volume_ratio_20": 0.62,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:39:16"
+}

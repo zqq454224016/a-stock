@@ -11,7 +11,7 @@ from quant_system.pipeline.enhance_builder import build_enhance_payload, summari
 from quant_system.pipeline.normalizer import normalize_code
 from quant_system.storage.json_store import JsonStore
 from quant_system.utils.logger import get_logger
-from quant_system.tasks.runtime import resolve_stock_items, run_for_watchlist
+from quant_system.tasks.runtime import resolve_stock_items, run_for_items
 
 logger = get_logger(__name__)
 
@@ -91,7 +91,7 @@ def run_enhance_job(codes: list[str] | None = None) -> list[dict[str, Any]]:
         store.save_enhance_index(rows, ts)
         store.save_index_benchmarks(market or {}, ts)
 
-    index = run_for_watchlist(
+    index = run_for_items(
         cfg=cfg,
         items=stocks,
         worker=worker,

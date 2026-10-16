@@ -1,4 +1,4 @@
-"""Shared task runtime helpers for watchlist-based jobs."""
+"""Shared task runtime helpers using explicit codes or the full TickFlow Universe."""
 
 from __future__ import annotations
 
@@ -6,7 +6,8 @@ from collections.abc import Callable, Iterable
 from typing import Any, TypeVar
 
 from quant_system.config.crawler_config import CrawlerConfig
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.utils.concurrent_fetch import run_parallel_map
 from quant_system.utils.logger import get_logger
 from quant_system.utils.market_scope import filter_research_stocks
@@ -25,19 +26,19 @@ def resolve_stock_items(
 ) -> list[dict[str, Any]]:
     if codes:
         return [{"code": normalize_code(c), "name": ""} for c in codes]
-    items = load_watchlist(cfg)
+    items = load_tickflow_universe(cfg)
     if research_only:
         return filter_research_stocks(items, cfg, reason=reason)
     return items
 
 
-def run_for_watchlist(
+def run_for_items(
     *,
     cfg: CrawlerConfig,
     items: list[dict[str, Any]],
     worker: Callable[[dict[str, Any]], T | None],
     label: str,
-    empty_message: str = "未配置自选股",
+    empty_message: str = "股票范围为空",
     on_success: Callable[[list[T], str], None] | None = None,
     save_when_empty: bool = False,
 ) -> list[T]:

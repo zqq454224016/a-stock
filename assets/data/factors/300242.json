@@ -1,0 +1,35 @@
+{
+  "code": "300242",
+  "trade_date": "2026-07-22",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_300242_20260722",
+  "factors": {
+    "ma20_bias": 0.23,
+    "rsi14": 42.18,
+    "macd": -0.1268,
+    "macd_signal": -0.1358,
+    "macd_hist": 0.009,
+    "atr14": 0.29,
+    "momentum_20": -7.05,
+    "volume_ratio_20": 1.29,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 63.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 63.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:38:05"
+}

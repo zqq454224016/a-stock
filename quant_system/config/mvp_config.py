@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-# 回测与历史补录最少 K 线根数（约 3 年交易日）
-MVP_HIST_DAYS = 750
+# 回测与历史补录目标 K 线根数（约 5 年交易日）
+MVP_HIST_DAYS = 1250
 
-# 个股页日 K 展示根数（控制 JSON/HTML 体积）
+# 个股分析保留的日 K 根数（控制 JSON 体积）
 MVP_DISPLAY_DAYS = 250

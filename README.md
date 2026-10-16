@@ -1,237 +1,88 @@
-# A股全景 · a-stock-panorama
+# a-stock
 
-自动采集 A 股市场数据，生成可视化 HTML 报表，支持 GitHub Pages 静态部署。
+面向 A 股的本地数据、研究与**推荐策略**内核。当前阶段默认使用 TickFlow 获取日 K、公开源获取实时行情，并可复用当前机器已经登录的 Codex CLI 处理研究数据。
 
-## 目录结构
+最终目标是：策略完成全市场选股后，输出带证据、价格区间、有效期、风险检查和失效条件的推荐与操作信息，供人工决策参考。本地纸面执行模拟仅用于校验 T+1、涨跌停、费用与部分成交等约束。**当前方案不接入券商、不自动报单。** AI 只处理数据，不生成评分或交易指令。
 
-```
-a-stock/
-├── quant_system/           # 量化数据采集核心（重构后）
-│   ├── config/             # 配置中心
-│   ├── data_source/        # 数据源层（爬虫/API）
-│   ├── pipeline/           # 清洗/校验/标准化/复权/巡检
-│   ├── factors/            # 技术因子计算
-│   ├── strategy/           # 策略（MA 金叉等）
-│   ├── backtest/           # 回测引擎与绩效
-│   ├── prediction/         # 可验证走势预测
-│   ├── replay/             # 历史视角滚动推演
-│   ├── selector/           # 上涨候选池筛选与排名
-│   ├── decision/           # 单股操作建议
-│   ├── impact/             # 实际影响数据提取（业绩/估值/解禁/材料价格）
-│   ├── risk/               # 风控规则
-│   ├── trading/            # 模拟交易
-│   ├── storage/            # MySQL/Redis/JSON 存储
-│   ├── models/             # 数据模型
-│   ├── tasks/              # 任务层
-│   ├── scheduler/          # 调度器
-│   ├── utils/
-│   ├── tests/
-│   └── main.py             # 启动入口
-├── index.html              # 站点首页
-├── reports/                # HTML 报表输出
-├── assets/data/            # JSON 数据
-└── script/                 # 兼容入口 + 报表生成
-```
-
-## 本地运行（macOS）
-
-使用 **Homebrew Python + 虚拟环境（venv）**，全程用 `python` / `pip`，避免 `externally-managed-environment` 报错。
-
-### 0. 配置 PATH（只需一次）
-
-Homebrew 安装的 `python` 在 libexec 目录，加入 `~/.zshrc`：
+## 安装
 
 ```bash
-echo 'export PATH="/opt/homebrew/opt/python@3.12/libexec/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-验证：`python --version` 应显示 Python 3.12.x
-
-### 一键初始化
-
-```bash
-cd a-stock
-chmod +x setup.sh
 ./setup.sh
 ```
 
-### 推荐启动方式（避免 zsh `python` alias 问题）
-
-若 `~/.zshrc` 里有 `alias python=...`，激活 venv 后 `python` 仍可能指向 Homebrew，导致 `No module named 'pandas'`。**请用项目脚本：**
+TickFlow Key 保存在本机配置文件 `config/local.json`。可直接编辑，也可通过命令安全写入：
 
 ```bash
-cd a-stock
-chmod +x run.sh setup.sh
-./run.sh all              # 全链路（推荐）：750日补录→行情→因子→增强→回测→预测→看板
-./run.sh mvp              # all 的兼容别名（MVP 已归档，仅保留命令）
-./run.sh stock
-./run.sh enhance          # 数据增强（P1-3）
-./run.sh agent            # Agent 看板（P4-1）
-./run.sh impact           # 实际影响数据（业绩/估值/解禁/材料价格）
-./run.sh selector         # 上涨候选池排名
-./run.sh decision         # 单股操作建议（指导性优先）
-./run.sh simtrade         # 模拟交易（P3-1）
-./run.sh predict
-./run.sh replay           # 十日前视角滚动推演
+./run.sh config --tickflow-key "你的 Key"
+./run.sh config --tickflow-key "你的 Key" --tickflow-base-url "自定义地址"
 ```
 
-或显式使用 venv 解释器：
+配置使用仅当前用户可读写的 `0600` 权限，任务日志会隐藏密钥。TickFlow 是全市场历史日 K 主源；公开 HTTP 数据源补充财务、事件和情绪。Tushare 当前无可用免费额度，自动流程默认禁用。
+
+飞书机器人 Webhook 同样保存在 `config/local.json`，后台迭代仅在状态或执行动作发生变化时同步进度，避免每五分钟重复刷屏。通知只包含任务名、成功/失败状态和下一次检查时间，不包含任何密钥或完整异常请求。
+
+统一流水线还会使用无需密钥的公开备用源：
+
+- 腾讯财经：批量实时行情、PE/PB、市值、换手率和涨跌停价，用于行情新鲜度检查与跨源核验。
+- 东方财富 `push2ex`：涨停、炸板、跌停和昨日涨停池，串行限流后生成确定性的市场情绪数据。
+- 新浪财经：仅为最终推荐候选补充资产负债表、利润表和现金流量表。
+- 东方财富数据中心：仅为最终候选补充融资融券、限售解禁和大宗交易。
+- 上交所、深交所：保存每日官方龙虎榜证据，作为第三方龙虎榜的备用核验源。
+
+公开源补充默认开启。可用 `PUBLIC_SUPPLEMENT_ENABLED=0` 关闭；`EASTMONEY_MIN_INTERVAL_SEC` 控制东财请求最小间隔，默认 1.2 秒；`CANDIDATE_FINANCIAL_LIMIT` 控制补全三表的候选上限，默认 10。公开端点失败不会阻断主流水线，而会在 `assets/data/public_supplement/status.json` 留下明确状态。
+
+## 使用
 
 ```bash
-.venv/bin/python quant_system/main.py all
+./run.sh stock 600519                    # TickFlow 同步并生成结构化分析数据
+./run.sh diagnose 600519                 # 使用当前 Codex 登录态进行 AI 诊股
+./run.sh diagnose 600519 --focus "关注趋势持续性"
+./run.sh serve                          # 打开 http://127.0.0.1:8080
+./run.sh all                             # 唯一数据流水线：基础数据、研究与 AI 产物
 ```
 
-若坚持用 `source .venv/bin/activate`，当前终端需先取消 alias：
+未指定股票代码时，`stock` 从 TickFlow 全市场股票池同步；页面也支持直接输入任意六位股票代码或按名称搜索，不再依赖自选股。主要输出：
 
-```bash
-unalias python 2>/dev/null
-source .venv/bin/activate
-python quant_system/main.py all
-```
+- 个股数据：`assets/data/stocks/{code}.json`
+- AI 诊股：`assets/data/ai_diagnosis/{code}.md`
+- AI 股票研究候选：`assets/data/ai_recommendations/latest.md`
+- AI 候选固定计算证据：`assets/data/ai_recommendations/evidence.json`
+- 全市场半自动趋势策略：`assets/data/strategy/index.json`
+- 过去五年后台策略验证：`assets/data/strategy_backtest/status.json`
+- 自动迭代门禁：`assets/data/iteration/status.json`
+- 后台迭代心跳：`assets/data/iteration/worker_status.json`
+- AI 数据获取方案：`assets/data/iteration/data_acquisition_advice.md`
+- 其他任务：继续写入 `assets/data/` 下对应 JSON
+- 上市/暂停/退市证券主数据：`assets/data/normalized/market.instruments/security_master.json`
+- 腾讯批量行情：`assets/data/normalized/market.quotes.tencent/latest.json`
+- 涨跌停市场情绪：`assets/data/normalized/market.limit_pool.sentiment/latest.json`
+- 候选完整三表：`assets/data/normalized/financial.candidate_statements/{code}.json`
+- 候选资金与筹码事件：`assets/data/normalized/market.candidate_capital_events/{code}.json`
+- 官方龙虎榜：`assets/data/normalized/market.dragon_tiger.official/{trade_date}.json`
 
-### 手动步骤
+内部页面提供全市场同步、单股诊断和“AI 股票研究候选”入口。荐股流程先由本地脚本完成全市场筛选、评分和指标计算，只把有限候选的结构化证据交给当前 Codex 解释；Codex 不得重算分数或新增标的。报告末尾附带不可由 AI 改写的“固定计算附录”，完整结构化证据同时写入 `evidence.json`。数据不足时允许不推荐，不会为凑数降低门槛。
 
-```bash
-cd a-stock
+`diagnose` 直接调用 `codex exec`，无需额外 API Key，但要求本机已安装并登录 Codex CLI。调用运行在临时只读沙箱中，不授予 Codex 修改项目文件的能力。
 
-# 1. 创建并激活虚拟环境
-python -m venv .venv
-source .venv/bin/activate    # 激活后终端提示符前会出现 (.venv)
+旧 `reports/` HTML 页面不再生成；原静态视图模块及报表生成脚本已移除。
 
-# 2. 安装依赖（必须在 venv 内，不要全局 pip install）
-python -m pip install --upgrade pip
-pip install -r quant_system/requirements.txt
+## 后台迭代与日志
 
-# 3. 采集数据（推荐 quant_system 入口）
-python quant_system/main.py market          # 大盘行情
-python quant_system/main.py stock           # 自选股分析
-python quant_system/main.py all             # watchlist 全量：巡检→行情→个股→回测→预测→看板→报表
+`./run.sh all` 完成后自动启动单实例后台工作器。默认每 5 分钟检查一次依赖；发现本地全市场数据落后于最近交易日时，会自动启动一次可断点续跑的全量刷新。新交易日数据完成后，再按依赖顺序执行趋势计算、五年离线验证、稳健策略候选赛和推荐。AI 只生成数据获取方式。
 
-> **全链路**：`./run.sh all`（`mvp` 为兼容别名）执行完整研究闭环。需求文档：`Quantification.md`（能力说明）、`Quantification-Optimization.md`（代码/功能优化）、`Quantification-Module-Split.md`（模块拆分清单）、`Quantification-Roadmap-v3.md`（能力扩展）。
+若 TickFlow 免费历史域名不可用，后台会优先使用腾讯收盘快照补齐最新一根日线：根据“本地前复权上一收盘 / 腾讯原始上一收盘”推导当期缩放比例，再合并 OHLCV。该路径只处理已收盘交易日，并保留来源与缩放比例供审计。
 
-> **watchlist 约定**：`assets/data/watchlist.json` 中的股票为默认执行范围。新增代码后运行 `stock` / `all` / `gen_stock_report` 会自动补采集缺失数据，无需手动传代码参数。
+巡检日志默认只输出异常、每 250 只的进度和最终汇总，不再逐只打印正常股票。额外权限板块（科创板、创业板、北交所）不会进入重型巡检与研究链路。
 
-> **科创板参考模式**：`688xxx` / `689xxx` 个股默认只作为参考，不进入补录、增强、因子、回测、预测、selector、decision、模拟交易、Agent 等重型链路；显式传入代码可手动分析。关闭该策略：`STAR_BOARD_REFERENCE_ONLY=0 ./run.sh all`。
+后台文件：
 
-# 或使用兼容脚本
-python script/fetch_data.py
-python script/fetch_stock.py
+- PID：`assets/data/iteration/worker.pid`
+- 状态：`assets/data/iteration/worker_status.json`
+- 日志：`assets/data/iteration/worker.log`
+- 停止：创建 `assets/data/iteration/worker.stop`
 
-# 4. 生成报表
-python script/gen_report.py
+新版架构与逐步执行路线：
 
-# 5. 个股分析
-python quant_system/main.py stock 600519 300308
-
-# 6. 盘中实时（交易时段轮询分钟线 + 前端自动刷新）
-python quant_system/main.py live              # 单次采集
-python quant_system/main.py live --loop       # 循环采集（默认 60s）
-python quant_system/main.py live --loop --interval 30
-# 盘中看板：reports/live/index.html（mvp/all/stock 后自动生成）
-
-# 7. 技术因子 & 数据巡检（Phase 0 下一阶段）
-python quant_system/main.py factor            # 计算 RSI/MACD/ATR 等因子 + 初级走势信号
-python quant_system/main.py inspect           # K 线质量巡检（含东财/新浪跨源 diff）
-python quant_system/main.py inspect --fix     # 巡检 + 自动 backfill
-
-# 8. 回测（MA 金叉 / 多因子策略，含 P2-4 容量约束 + 收益归因 + 滚动验证）
-python quant_system/main.py backtest              # 自选股回测 ~3 年
-python quant_system/main.py backtest --strategy multi_factor --allow-warn
-python quant_system/main.py backtest --no-rolling # 跳过滚动 OOS 验证
-# 报告：reports/backtest/{code}_ma_cross.html
-
-# 9. 多因子排名（技术 + 情绪 + 基本面 + 资金）
-python script/gen_factor_report.py
-# 页面：reports/factors/index.html
-
-# 9. 走势预测（5d 可验证预测，需回测证据）
-python quant_system/main.py predict
-python quant_system/main.py predict 600378 --horizon 5d
-# 汇总页：reports/predict/index.html
-
-# 10. 历史视角滚动推演（默认最近 10 个交易日）
-python quant_system/main.py replay
-python quant_system/main.py replay --days 10
-python quant_system/main.py replay 600378 --days 10
-# 汇总页：reports/replay/index.html · 数据：assets/data/replay/{code}.json
-
-# 11. 舆情采集（东财评论 + 雪球热榜，P1-2）
-python quant_system/main.py sentiment
-
-# 12. 数据增强（估值/分红解禁/北向两融/指数，P1-3）
-python quant_system/main.py enhance
-# 汇总页：reports/enhance/index.html · 数据：assets/data/enhance/{code}.json
-
-# 13. Agent 分析与统一看板（P4-1）
-python quant_system/main.py agent
-# 看板：reports/agent/index.html · 报表列表自动收录 Agent 入口
-
-# 14. 单股操作建议（Decision Engine，指导性优先）
-python quant_system/main.py decision
-python quant_system/main.py decision 600378 --strategy ma_cross
-# 看板：reports/decision/index.html · 数据：assets/data/decisions/{code}.json
-
-# 15. 上涨候选池筛选（预测 + 因子 + 趋势 + 回测 + 实际影响）
-python quant_system/main.py selector
-python quant_system/main.py selector 600378 000988
-# 看板：reports/selector/index.html · 数据：assets/data/selector/{code}.json
-
-# 16. 实际影响数据（业绩预告/估值/解禁/生产材料或产品价格）
-python quant_system/main.py impact
-python quant_system/main.py impact 603629 600378
-python script/gen_impact_report.py
-# 看板：reports/impact/index.html · 数据：assets/data/impact/{code}.json
-# decision 默认自动补齐 impact，可用 --no-impact 关闭。
-
-# 17. 模拟交易（P3-1，基于决策/预测虚拟调仓）
-python quant_system/main.py simtrade
-python quant_system/main.py simtrade --reset --cash 100000
-# 看板：reports/trading/index.html · 数据：assets/data/trading/account.json
-
-# 18. 报表列表同步（Agent / 因子 / 预测 / 推演 / 候选 / 决策 / 影响 / 增强 / 回测 / 模拟交易）
-python script/report_index_utils.py
-
-# 19. 定时调度（可选）
-python quant_system/main.py scheduler
-
-# 20. 预览
-python -m http.server 8080
-```
-
-浏览器访问 `http://localhost:8080`
-
-盘中实时数据写入 `assets/data/stocks/live/{code}.json`。`stock` / `all` 会自动刷新一次现价；**交易时段真正连续更新**需另开终端：
-
-```bash
-./run.sh live --loop --interval 15
-```
-
-> 每次新开终端都需要先 `source .venv/bin/activate` 再运行脚本。退出虚拟环境：`deactivate`
-
-### 未安装 Python？
-
-```bash
-brew install python@3.12
-```
-
-## GitHub Pages 部署
-
-1. 将仓库推送到 GitHub
-2. 在 **Settings → Pages** 中选择 **GitHub Actions** 作为 Source
-3. `.github/workflows/auto-build.yml` 会在每个工作日自动：
-   - 拉取 A 股数据
-   - 生成 HTML 报表
-   - 部署到 GitHub Pages
-
-也可在 Actions 页面手动触发 **workflow_dispatch**。
-
-## 技术栈
-
-- 前端：原生 HTML / CSS / JavaScript + [ECharts](https://echarts.apache.org/)
-- 数据：[akshare](https://github.com/akfamily/akshare)
-- 部署：GitHub Actions + GitHub Pages
-
-## 免责声明
-
-本项目数据仅供参考，不构成任何投资建议。股市有风险，投资需谨慎。
+- [Architecture v2](docs/Architecture-v2.md)
+- [A股推荐策略迭代计划](docs/Automated-Trading-Iteration-Plan.md)（已放弃券商自动交易）
+- [数据获取 Prompt v1](docs/prompts/Data-Acquisition-Prompt-v1.md)

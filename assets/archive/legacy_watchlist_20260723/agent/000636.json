@@ -1,0 +1,212 @@
+{
+  "code": "000636",
+  "name": "风华高科",
+  "trade_date": "2026-07-22",
+  "version": "1.1.0",
+  "updated_at": "2026-07-23 00:06:32",
+  "summary": "信号分歧，宜观望",
+  "confidence": "low",
+  "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
+  "stock_selection": {
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 42.3,
+    "evidence": [
+      "技术分 28.0",
+      "情绪分 71.2",
+      "基本面分 42.0",
+      "趋势 偏空",
+      "舆情 看多"
+    ],
+    "drivers": [
+      "rsi14_weak",
+      "macd_hist_negative",
+      "momentum_20_down",
+      "volume_expansion",
+      "ma20_breakdown"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高"
+    ],
+    "primary_signal": "bearish",
+    "trend": "偏空"
+  },
+  "strategy_diagnosis": {
+    "available": true,
+    "strategy": "ma_cross",
+    "verdict": "ok",
+    "findings": [
+      "回测指标处于可接受区间"
+    ],
+    "suggestions": [
+      "维持现有参数，持续滚动验证"
+    ],
+    "metrics": {
+      "annual_return_pct": 293.41,
+      "max_drawdown_pct": -28.1,
+      "sharpe_ratio": 2.66,
+      "win_rate_pct": 100.0,
+      "closed_trades": 2
+    },
+    "attribution_top": [
+      {
+        "reason": "MA20死叉",
+        "count": 2,
+        "total_pnl": 287048.58,
+        "avg_pnl": 143524.29,
+        "win_rate_pct": 100.0
+      }
+    ],
+    "rolling_summary": null
+  },
+  "prediction_review": {
+    "available": true,
+    "horizon": "5d",
+    "direction": "up",
+    "probability": 0.6842,
+    "confidence": "high",
+    "expected_return": 0.0085,
+    "alignment": "divergent",
+    "drivers": [],
+    "notes": [
+      "5d 预测 偏多，概率 68.4%，置信度 high",
+      "历史样本 57，回测胜率 100.0%",
+      "初级技术信号与预测方向分歧，需人工复核",
+      "多因子分 42.3 与看多预测不完全匹配",
+      "风险标记: rsi_oversold",
+      "风险标记: high_volatility"
+    ],
+    "failure_conditions": [
+      "signal_prediction_divergence",
+      "low_factor_score_vs_bullish_pred",
+      "rsi_oversold",
+      "high_volatility"
+    ],
+    "disclaimer": "统计倾向，非确定性预测，不构成投资建议"
+  },
+  "data_health": {
+    "status": "ok",
+    "quality_score": 90.0,
+    "factor_eligible": true,
+    "issues": [
+      "K 线末日期 2026-07-20 落后于最近交易日 2026-07-22"
+    ]
+  },
+  "limitations": [
+    "rule_based_only",
+    "no_auto_trade"
+  ],
+  "audit": {
+    "inputs_used": [
+      "backtest/000636_ma_cross.json",
+      "factors/000636.json",
+      "predictions/000636.json",
+      "quality/latest.json",
+      "sentiment/000636.json",
+      "signals/000636.json",
+      "stocks/000636.json"
+    ],
+    "strategy_ref": "ma_cross",
+    "schema_version": "1.0.0",
+    "provider": "rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "policy_passed": true,
+    "audit_path": "agent/audit/000636.json"
+  },
+  "provider": {
+    "requested": "rule",
+    "active": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "fallback_reason": ""
+  },
+  "evidence_package": {
+    "schema_version": "1.0.0",
+    "task": "stock_review",
+    "allowed_actions": [
+      "analyze",
+      "summarize",
+      "suggest"
+    ],
+    "missing_inputs": [],
+    "inputs_used": [
+      "backtest/000636_ma_cross.json",
+      "decisions/000636.json",
+      "enhance/000636.json",
+      "factors/000636.json",
+      "framework/snapshot.json",
+      "impact/000636.json",
+      "predictions/000636.json",
+      "quality/latest.json",
+      "sentiment/000636.json",
+      "signals/000636.json",
+      "stocks/000636.json"
+    ]
+  },
+  "provider_output": {
+    "provider": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "summary": "信号分歧，宜观望",
+    "direction_view": "neutral",
+    "confidence": "low",
+    "evidence": [
+      "技术分 28.0",
+      "情绪分 71.2",
+      "基本面分 42.0",
+      "趋势 偏空",
+      "舆情 看多",
+      "rsi14_weak",
+      "macd_hist_negative",
+      "momentum_20_down",
+      "volume_expansion",
+      "ma20_breakdown",
+      "回测指标处于可接受区间",
+      "5d 预测 偏多，概率 68.4%，置信度 high",
+      "历史样本 57，回测胜率 100.0%",
+      "初级技术信号与预测方向分歧，需人工复核"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高",
+      "signal_prediction_divergence",
+      "low_factor_score_vs_bullish_pred",
+      "rsi_oversold",
+      "high_volatility",
+      "rule_based_only",
+      "no_auto_trade"
+    ],
+    "failure_conditions": [
+      "signal_prediction_divergence",
+      "low_factor_score_vs_bullish_pred",
+      "rsi_oversold",
+      "high_volatility"
+    ],
+    "suggested_actions": [
+      "仅用于研究解释",
+      "进入人工复核后再考虑操作"
+    ],
+    "forbidden_actions": [
+      "不得自动下单",
+      "不得绕过风控",
+      "不得修改生产参数"
+    ],
+    "requires_human_review": true,
+    "raw_output": {
+      "source": "rule_report",
+      "missing_inputs": []
+    }
+  },
+  "policy": {
+    "passed": true,
+    "violations": [],
+    "allowed_actions": [
+      "analyze",
+      "suggest",
+      "summarize"
+    ]
+  }
+}

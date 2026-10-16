@@ -1,0 +1,143 @@
+{
+  "code": "600378",
+  "name": "昊华科技",
+  "trade_date": "2026-07-22",
+  "updated_at": "2026-07-23 00:06:20",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-07-22",
+    "close": 44.27,
+    "market_cap_yi": 571.08,
+    "float_cap_yi": 474.82,
+    "pe_ttm": 36.42702704,
+    "pe_static": 39.53588526,
+    "pb": 3.0734153,
+    "ps": 3.21499933,
+    "peg": 0.975117977183
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-06-05",
+        "ex_date": "2026-06-12",
+        "record_date": "2026-06-11",
+        "cash_div": 3.92,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2025-06-21",
+        "ex_date": "2025-06-30",
+        "record_date": "2025-06-27",
+        "cash_div": 2.8601,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2024-06-06",
+        "ex_date": "2024-06-14",
+        "record_date": "2024-06-13",
+        "cash_div": 3.46,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2023-07-06",
+        "ex_date": "2023-07-13",
+        "record_date": "2023-07-12",
+        "cash_div": 6.4,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2022-07-06",
+        "ex_date": "2022-07-13",
+        "record_date": "2022-07-12",
+        "cash_div": 2.911,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2028-01-10",
+        "unlock_shares": 20161290.0,
+        "unlock_value_yi": 8.93,
+        "pct_total": 0.015628911581,
+        "pct_float": 0.018797260004,
+        "holder_type": "定向增发机构配售股份"
+      },
+      {
+        "unlock_date": "2027-07-26",
+        "unlock_shares": 197272967.0,
+        "unlock_value_yi": 87.33,
+        "pct_total": 0.152924825668,
+        "pct_float": 0.183926289069,
+        "holder_type": "定向增发机构配售股份"
+      },
+      {
+        "unlock_date": "2025-07-08",
+        "unlock_shares": 161290322.0,
+        "unlock_value_yi": 40.73,
+        "pct_total": 0.125031294195,
+        "pct_float": 0.1503780819,
+        "holder_type": "定向增发机构配售股份"
+      }
+    ],
+    "earnings_forecast": {
+      "indicator": "预测年报每股收益",
+      "forecast_type": "机构预测",
+      "forecast_value": "10.0",
+      "announce_date": "2026-07-23",
+      "report_period": "行业平均",
+      "source": "ths_profit_forecast"
+    }
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3867.03,
+        "change_pct": 0.07
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1860.08,
+        "change_pct": -2.26
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -690.83,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": -34.07
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 95.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "earnings_forecast_20260930",
+    "margin_sse",
+    "northbound"
+  ]
+}

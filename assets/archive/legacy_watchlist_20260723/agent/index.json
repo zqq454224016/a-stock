@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-07-23 00:06:32",
+  "reports": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "trade_date": "2026-07-22",
+      "summary": "谨慎",
+      "confidence": "low",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "negative",
+      "strategy_verdict": "ok",
+      "prediction_alignment": "divergent"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "trade_date": "2026-07-22",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "neutral",
+      "strategy_verdict": "mixed",
+      "prediction_alignment": "partial"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "trade_date": "2026-07-22",
+      "summary": "信号分歧，宜观望",
+      "confidence": "low",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "neutral",
+      "strategy_verdict": "ok",
+      "prediction_alignment": "divergent"
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "trade_date": "2026-07-22",
+      "summary": "谨慎",
+      "confidence": "low",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "negative",
+      "strategy_verdict": "ok",
+      "prediction_alignment": "partial"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "trade_date": "2026-07-22",
+      "summary": "综合因子中性，等待更清晰信号",
+      "confidence": "medium",
+      "provider": "rule",
+      "policy_passed": true,
+      "selection_verdict": "neutral",
+      "strategy_verdict": "ok",
+      "prediction_alignment": "aligned"
+    }
+  ]
+}

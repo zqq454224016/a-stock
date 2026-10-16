@@ -1,0 +1,35 @@
+{
+  "code": "002859",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_002859_20260723",
+  "factors": {
+    "ma20_bias": -25.72,
+    "rsi14": 22.04,
+    "macd": -6.5705,
+    "macd_signal": -3.2555,
+    "macd_hist": -3.315,
+    "atr14": 7.4993,
+    "momentum_20": -37.37,
+    "volume_ratio_20": 0.88,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:26"
+}

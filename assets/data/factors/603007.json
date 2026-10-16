@@ -1,0 +1,35 @@
+{
+  "code": "603007",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_603007_20260723",
+  "factors": {
+    "ma20_bias": -15.75,
+    "rsi14": 17.08,
+    "macd": -0.416,
+    "macd_signal": -0.3391,
+    "macd_hist": -0.0768,
+    "atr14": 0.2979,
+    "momentum_20": -27.54,
+    "volume_ratio_20": 0.65,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:37"
+}

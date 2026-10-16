@@ -8,7 +8,8 @@ from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
 from quant_system.data_source.akshare_api import AkShareAPI
 from quant_system.pipeline.kline_loader import load_kline_df
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.replay.walk_forward import build_replay_payload
 from quant_system.storage.json_store import JsonStore
 from quant_system.utils.logger import get_logger
@@ -52,7 +53,7 @@ def run_replay_job(codes: list[str] | None = None, *, days: int = 10) -> list[di
     store = JsonStore(DBConfig())
     stocks = (
         [{"code": normalize_code(c), "name": ""} for c in codes]
-        if codes else filter_research_stocks(load_watchlist(cfg), cfg, reason="历史推演")
+        if codes else filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="历史推演")
     )
     if not stocks:
         logger.error("未配置自选股")

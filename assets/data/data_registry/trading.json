@@ -5,9 +5,9 @@
   "path": "trading/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/trading/index.json",
   "exists": true,
-  "size": 1846,
-  "file_mtime": "2026-07-14 00:10:54",
-  "updated_at": "2026-07-14 00:10:54",
+  "size": 1827,
+  "file_mtime": "2026-07-23 00:06:22",
+  "updated_at": "2026-07-23 00:06:22",
   "record_count": 5,
   "field_summary": {
     "top_level_fields": [
@@ -42,5 +42,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-14 00:10:55"
+  "registered_at": "2026-07-23 00:06:32"
 }

@@ -16,6 +16,9 @@ class _MockCalendar(TradeCalendar):
     def latest_trade_day(self, on_or_before=None) -> str:
         return "2026-01-10"
 
+    def latest_completed_trade_day(self, now=None) -> str:
+        return "2026-01-10"
+
 
 def _sample_kline(dates: list[str]) -> pd.DataFrame:
     return pd.DataFrame({

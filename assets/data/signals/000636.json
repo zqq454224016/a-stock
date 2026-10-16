@@ -1,13 +1,14 @@
 {
   "code": "000636",
-  "trade_date": "2026-07-14",
+  "trade_date": "2026-07-23",
   "horizon": "5d",
   "signal": "bearish",
-  "signal_score": 23.0,
+  "signal_score": 28.0,
   "drivers": [
     "rsi14_weak",
     "macd_hist_negative",
     "momentum_20_down",
+    "volume_expansion",
     "ma20_breakdown"
   ],
   "limitations": [
@@ -15,5 +16,5 @@
     "technical_only"
   ],
   "signal_version": "1.0.0",
-  "updated_at": "2026-07-14 00:10:19"
+  "updated_at": "2026-07-24 01:54:16"
 }

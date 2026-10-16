@@ -36,7 +36,7 @@ def run_backtest(
     cfg = cfg or BacktestConfig()
     work = prepare_backtest_df(df, cfg)
     work = strategy.generate_signals(work)
-    work["date"] = pd.to_datetime(work["date"])
+    work["date"] = pd.to_datetime(work["date"], format="mixed")
     work = work.sort_values("date").reset_index(drop=True)
 
     cash = cfg.initial_cash

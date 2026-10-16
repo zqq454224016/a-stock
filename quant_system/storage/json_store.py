@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import threading
 from pathlib import Path
 from typing import Any
 
@@ -18,7 +19,9 @@ class JsonStore:
 
     def write(self, path: Path, data: Any) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        temporary = path.with_name(f".{path.name}.{threading.get_ident()}.tmp")
+        temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        temporary.replace(path)
         logger.info("JSON 已写入 %s", path)
 
     def read(self, path: Path) -> Any:
@@ -151,14 +154,6 @@ class JsonStore:
         runs = runs[:max(1, max_runs)]
         from quant_system.utils.time_utils import now_str
         self.write(index_path, {"updated_at": now_str(), "runs": runs})
-        return path
-
-    def planning_dir(self) -> Path:
-        return self.config.json_data_dir / "planning"
-
-    def save_v3_roadmap(self, data: dict[str, Any]) -> Path:
-        path = self.planning_dir() / "v3_roadmap.json"
-        self.write(path, data)
         return path
 
     def signals_dir(self) -> Path:
@@ -352,6 +347,12 @@ class JsonStore:
 
     def save_trading_index(self, data: dict[str, Any]) -> Path:
         path = self.trading_dir() / "index.json"
+        self.write(path, data)
+        return path
+
+    def save_trading_daily(self, trade_date: str, data: dict[str, Any]) -> Path:
+        safe_date = str(trade_date or "unknown").replace("-", "")
+        path = self.trading_dir() / "history" / f"{safe_date}.json"
         self.write(path, data)
         return path
 

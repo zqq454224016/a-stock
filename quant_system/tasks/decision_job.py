@@ -9,7 +9,8 @@ from quant_system.agent.orchestrator import build_agent_report
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
 from quant_system.decision.engine import build_stock_decision
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.storage.json_store import JsonStore
 from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.predict_job import run_predict_job
@@ -50,7 +51,7 @@ def run_decision_job(
     if codes:
         stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
     else:
-        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="操作决策")
+        stocks = filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="操作决策")
 
     if not stocks:
         logger.error("未配置自选股")

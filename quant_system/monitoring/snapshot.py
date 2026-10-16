@@ -15,23 +15,13 @@ MONITORING_VERSION = "1.0.0"
 MODULE_SPECS = [
     {"name": "market", "label": "大盘行情", "path": "latest.json", "max_age_hours": 96, "deps": []},
     {"name": "stocks", "label": "个股分析", "path": "stocks/index.json", "max_age_hours": 96, "deps": ["market"]},
-    {"name": "enhance", "label": "数据增强", "path": "enhance/index.json", "max_age_hours": 240, "deps": ["stocks", "market"]},
+    {"name": "interim_reports", "label": "中报财务", "path": "interim_reports/index.json", "max_age_hours": 720, "deps": []},
     {"name": "factors", "label": "因子", "path": "factors/index.json", "max_age_hours": 120, "deps": ["stocks"]},
-    {"name": "backtest", "label": "策略回测", "path": "backtest/index.json", "max_age_hours": 240, "deps": ["stocks", "factors"]},
-    {"name": "predictions", "label": "走势预测", "path": "predictions/index.json", "max_age_hours": 120, "deps": ["stocks", "factors", "backtest"]},
-    {"name": "selector", "label": "上涨候选", "path": "selector/index.json", "max_age_hours": 120, "deps": ["predictions", "factors", "impact"]},
-    {"name": "decisions", "label": "操作建议", "path": "decisions/index.json", "max_age_hours": 120, "deps": ["predictions", "selector", "agent", "impact"]},
-    {"name": "review", "label": "后验复盘", "path": "review/index.json", "max_age_hours": 240, "deps": ["predictions", "selector", "decisions"]},
-    {"name": "replay", "label": "十日推演", "path": "replay/index.json", "max_age_hours": 240, "deps": ["stocks", "impact"]},
-    {"name": "impact", "label": "实际影响", "path": "impact/index.json", "max_age_hours": 240, "deps": ["enhance", "review"]},
-    {"name": "attribution", "label": "每日归因", "path": "attribution/index.json", "max_age_hours": 120, "deps": ["stocks", "market", "impact", "replay"]},
-    {"name": "agent", "label": "Agent", "path": "agent/index.json", "max_age_hours": 120, "deps": ["stocks", "predictions", "factors"]},
-    {"name": "trading", "label": "模拟交易", "path": "trading/index.json", "max_age_hours": 240, "deps": ["decisions", "predictions"]},
-    {"name": "portfolio", "label": "组合管理", "path": "portfolio/summary.json", "max_age_hours": 240, "deps": ["decisions", "trading"]},
-    {"name": "recommendations", "label": "多周期推荐", "path": "recommendations/summary.json", "max_age_hours": 240, "deps": ["market", "selector", "predictions", "impact", "replay"]},
-    {"name": "framework", "label": "模块框架", "path": "framework/snapshot.json", "max_age_hours": 240, "deps": ["stocks", "predictions", "selector", "decisions"]},
-    {"name": "console", "label": "统一控制台", "path": "../../reports/console/index.html", "max_age_hours": 240, "deps": ["stocks", "selector", "decisions", "agent", "framework"]},
-    {"name": "quality", "label": "质量巡检", "path": "quality/latest.json", "max_age_hours": 240, "deps": ["stocks"]},
+    {"name": "strategy", "label": "趋势策略", "path": "strategy/index.json", "max_age_hours": 120, "deps": ["stocks", "factors"]},
+    {"name": "strategy_backtest", "label": "五年离线策略验证", "path": "strategy_backtest/status.json", "max_age_hours": 720, "deps": ["strategy"]},
+    {"name": "iteration", "label": "自动策略迭代", "path": "iteration/status.json", "max_age_hours": 240, "deps": ["strategy", "strategy_backtest"]},
+    {"name": "iteration_worker", "label": "后台迭代工作器", "path": "iteration/worker_status.json", "max_age_hours": 24, "deps": ["iteration"]},
+    {"name": "recommendations", "label": "多周期推荐", "path": "recommendations/summary.json", "max_age_hours": 240, "deps": ["market", "interim_reports", "strategy", "strategy_backtest", "factors"]},
     {"name": "task_runs", "label": "任务运行", "path": "task_runs/index.json", "max_age_hours": 240, "deps": []},
     {"name": "data_registry", "label": "数据注册表", "path": "data_registry/index.json", "max_age_hours": 120, "deps": ["task_runs"]},
 ]
@@ -136,6 +126,16 @@ def _recommendation_alerts(store: JsonStore) -> list[dict[str, Any]]:
     return alerts
 
 
+def _interim_report_alerts(store: JsonStore) -> list[dict[str, Any]]:
+    payload = _read(store, "interim_reports/index.json")
+    if payload.get("status") == "unavailable":
+        errors = payload.get("source_errors") or {}
+        return [_alert("warning", "interim_reports", f"中报数据不可用，失败接口 {len(errors)} 个", "interim_reports/index.json")]
+    if payload.get("status") == "partial":
+        return [_alert("warning", "interim_reports", "中报数据仅部分可用", "interim_reports/index.json")]
+    return []
+
+
 def _agent_alerts(store: JsonStore) -> list[dict[str, Any]]:
     payload = _read(store, "agent/index.json")
     alerts: list[dict[str, Any]] = []
@@ -220,6 +220,7 @@ def build_monitoring_snapshot(store: JsonStore | None = None) -> dict[str, Any]:
         alerts.extend(module_alerts)
     alerts.extend(_quality_alerts(store))
     alerts.extend(_recommendation_alerts(store))
+    alerts.extend(_interim_report_alerts(store))
     alerts.extend(_agent_alerts(store))
     alerts.extend(_framework_alerts(store))
     alerts.extend(_task_run_alerts(store))

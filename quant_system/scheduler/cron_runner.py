@@ -5,13 +5,9 @@ from __future__ import annotations
 import signal
 import sys
 
-from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.schedule_config import ScheduleConfig
-from quant_system.pipeline.normalizer import load_watchlist
-from quant_system.tasks.backfill_job import run_backfill
 from quant_system.tasks.daily_job import run_daily_market
 from quant_system.tasks.factor_job import run_factor_compute
-from quant_system.tasks.intraday_job import run_intraday_snapshot
 from quant_system.tasks.inspect_job import run_data_inspect
 from quant_system.tasks.stock_job import run_daily_stock
 from quant_system.utils.logger import get_logger
@@ -19,25 +15,14 @@ from quant_system.utils.trade_calendar import get_calendar
 
 logger = get_logger(__name__)
 
-TRADE_DAY_JOBS = frozenset({"daily_market", "daily_stock", "intraday_snapshot"})
-
-
-def _run_backfill_weekly() -> None:
-    stocks = load_watchlist(CrawlerConfig())
-    codes = [s["code"] for s in stocks]
-    if not codes:
-        logger.info("backfill_weekly: watchlist 为空，跳过")
-        return
-    run_backfill(codes, days=250, refresh_stocks=True)
+TRADE_DAY_JOBS = frozenset({"daily_market", "daily_stock"})
 
 
 JOB_MAP = {
     "daily_market": lambda: run_daily_market(mock=False),
     "daily_stock": lambda: run_daily_stock(),
-    "intraday_snapshot": run_intraday_snapshot,
     "data_inspect": lambda: run_data_inspect(auto_fix=True),
     "factor_compute": lambda: run_factor_compute(),
-    "backfill_weekly": _run_backfill_weekly,
 }
 
 
@@ -72,9 +57,7 @@ def start_scheduler() -> None:
     cron_jobs = {
         "daily_market": cfg.daily_market,
         "daily_stock": cfg.daily_stock,
-        "intraday_snapshot": cfg.intraday_snapshot,
         "data_inspect": cfg.data_inspect,
-        "backfill_weekly": cfg.backfill_weekly,
     }
 
     for name, cron_expr in cron_jobs.items():

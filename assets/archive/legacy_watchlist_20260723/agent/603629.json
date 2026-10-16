@@ -1,0 +1,210 @@
+{
+  "code": "603629",
+  "name": "利通电子",
+  "trade_date": "2026-07-22",
+  "version": "1.1.0",
+  "updated_at": "2026-07-23 00:06:32",
+  "summary": "综合因子中性，等待更清晰信号",
+  "confidence": "medium",
+  "disclaimer": "Agent 解释输出，不构成投资建议，不触发任何交易；涉及操作必须经过风控与人工确认。",
+  "stock_selection": {
+    "verdict": "neutral",
+    "headline": "综合因子中性，等待更清晰信号",
+    "composite_score": 43.6,
+    "evidence": [
+      "技术分 46.0",
+      "情绪分 43.3",
+      "基本面分 36.0",
+      "趋势 震荡",
+      "舆情 看空"
+    ],
+    "drivers": [
+      "above_ma20",
+      "macd_hist_negative",
+      "momentum_20_down"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高"
+    ],
+    "primary_signal": "neutral",
+    "trend": "震荡"
+  },
+  "strategy_diagnosis": {
+    "available": true,
+    "strategy": "ma_cross",
+    "verdict": "mixed",
+    "findings": [
+      "历史最大回撤较大（-51.75%）",
+      "单笔最大亏损 -146674.66（MA20死叉）"
+    ],
+    "suggestions": [
+      "设置账户级回撤熔断，避免单边行情重仓"
+    ],
+    "metrics": {
+      "annual_return_pct": 306.81,
+      "max_drawdown_pct": -51.75,
+      "sharpe_ratio": 2.4,
+      "win_rate_pct": 50.0,
+      "closed_trades": 2
+    },
+    "attribution_top": [
+      {
+        "reason": "MA20死叉",
+        "count": 2,
+        "total_pnl": 300066.43,
+        "avg_pnl": 150033.22,
+        "win_rate_pct": 50.0
+      }
+    ],
+    "rolling_summary": null
+  },
+  "prediction_review": {
+    "available": true,
+    "horizon": "5d",
+    "direction": "up",
+    "probability": 0.5641,
+    "confidence": "high",
+    "expected_return": 0.0534,
+    "alignment": "partial",
+    "drivers": [
+      "站上MA20"
+    ],
+    "notes": [
+      "5d 预测 偏多，概率 56.4%，置信度 high",
+      "历史样本 145，回测胜率 50.0%",
+      "信号与预测部分一致，存在中性分歧",
+      "多因子分 43.6 与看多预测不完全匹配",
+      "风险标记: high_volatility",
+      "风险标记: high_historical_drawdown",
+      "策略历史回撤 -51.75% 偏高"
+    ],
+    "failure_conditions": [
+      "low_factor_score_vs_bullish_pred",
+      "high_volatility",
+      "high_historical_drawdown"
+    ],
+    "disclaimer": "统计倾向，非确定性预测，不构成投资建议"
+  },
+  "data_health": {
+    "status": "ok",
+    "quality_score": 90.0,
+    "factor_eligible": true,
+    "issues": [
+      "K 线末日期 2026-07-20 落后于最近交易日 2026-07-22"
+    ]
+  },
+  "limitations": [
+    "rule_based_only",
+    "no_auto_trade"
+  ],
+  "audit": {
+    "inputs_used": [
+      "backtest/603629_ma_cross.json",
+      "factors/603629.json",
+      "predictions/603629.json",
+      "quality/latest.json",
+      "sentiment/603629.json",
+      "signals/603629.json",
+      "stocks/603629.json"
+    ],
+    "strategy_ref": "ma_cross",
+    "schema_version": "1.0.0",
+    "provider": "rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "policy_passed": true,
+    "audit_path": "agent/audit/603629.json"
+  },
+  "provider": {
+    "requested": "rule",
+    "active": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "fallback_reason": ""
+  },
+  "evidence_package": {
+    "schema_version": "1.0.0",
+    "task": "stock_review",
+    "allowed_actions": [
+      "analyze",
+      "summarize",
+      "suggest"
+    ],
+    "missing_inputs": [],
+    "inputs_used": [
+      "backtest/603629_ma_cross.json",
+      "decisions/603629.json",
+      "enhance/603629.json",
+      "factors/603629.json",
+      "framework/snapshot.json",
+      "impact/603629.json",
+      "predictions/603629.json",
+      "quality/latest.json",
+      "sentiment/603629.json",
+      "signals/603629.json",
+      "stocks/603629.json"
+    ]
+  },
+  "provider_output": {
+    "provider": "rule",
+    "model": "local-rule",
+    "prompt_version": "stock_review_v1.0.0",
+    "summary": "综合因子中性，等待更清晰信号",
+    "direction_view": "neutral",
+    "confidence": "medium",
+    "evidence": [
+      "技术分 46.0",
+      "情绪分 43.3",
+      "基本面分 36.0",
+      "趋势 震荡",
+      "舆情 看空",
+      "above_ma20",
+      "macd_hist_negative",
+      "momentum_20_down",
+      "历史最大回撤较大（-51.75%）",
+      "单笔最大亏损 -146674.66（MA20死叉）",
+      "5d 预测 偏多，概率 56.4%，置信度 high",
+      "历史样本 145，回测胜率 50.0%",
+      "信号与预测部分一致，存在中性分歧"
+    ],
+    "risks": [
+      "not_backtested",
+      "technical_only",
+      "估值偏高",
+      "low_factor_score_vs_bullish_pred",
+      "high_volatility",
+      "high_historical_drawdown",
+      "rule_based_only",
+      "no_auto_trade"
+    ],
+    "failure_conditions": [
+      "low_factor_score_vs_bullish_pred",
+      "high_volatility",
+      "high_historical_drawdown"
+    ],
+    "suggested_actions": [
+      "仅用于研究解释",
+      "进入人工复核后再考虑操作"
+    ],
+    "forbidden_actions": [
+      "不得自动下单",
+      "不得绕过风控",
+      "不得修改生产参数"
+    ],
+    "requires_human_review": true,
+    "raw_output": {
+      "source": "rule_report",
+      "missing_inputs": []
+    }
+  },
+  "policy": {
+    "passed": true,
+    "violations": [],
+    "allowed_actions": [
+      "analyze",
+      "suggest",
+      "summarize"
+    ]
+  }
+}

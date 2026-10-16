@@ -1,0 +1,35 @@
+{
+  "code": "600368",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_600368_20260723",
+  "factors": {
+    "ma20_bias": 5.25,
+    "rsi14": 72.6,
+    "macd": 0.0592,
+    "macd_signal": 0.0363,
+    "macd_hist": 0.0229,
+    "atr14": 0.1057,
+    "momentum_20": 12.81,
+    "volume_ratio_20": 1.06,
+    "above_ma20": true,
+    "ma_cross": "none",
+    "technical_score": 87.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 87.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:31"
+}

@@ -1,0 +1,78 @@
+{
+  "updated_at": "2026-07-23 00:06:22",
+  "summary": {
+    "updated_at": "2026-07-23 00:06:22",
+    "initial_cash": 100000.0,
+    "cash": 100000.0,
+    "market_value": 0.0,
+    "total_equity": 100000.0,
+    "total_return_pct": 0.0,
+    "position_count": 0,
+    "order_count": 0,
+    "trade_count": 0,
+    "realized_pnl": 0.0
+  },
+  "decisions": [
+    {
+      "code": "600378",
+      "name": "昊华科技",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 44.27,
+      "direction": "up",
+      "probability": 0.5895,
+      "confidence": "low"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 118.34,
+      "direction": "up",
+      "probability": 0.5641,
+      "confidence": "low"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 41.3,
+      "direction": "up",
+      "probability": 0.6842,
+      "confidence": "low"
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 113.51,
+      "direction": "neutral",
+      "probability": 0.5467,
+      "confidence": "medium"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "action": "hold",
+      "source": "decision",
+      "decision_action": "watch",
+      "position_suggestion": 0.0,
+      "price": 217.5,
+      "direction": "down",
+      "probability": 0.4151,
+      "confidence": "low"
+    }
+  ],
+  "positions": []
+}

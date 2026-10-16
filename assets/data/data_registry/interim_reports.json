@@ -1,0 +1,44 @@
+{
+  "registry_version": "1.0.0",
+  "module": "interim_reports",
+  "label": "中报财务",
+  "path": "interim_reports/index.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/interim_reports/index.json",
+  "exists": true,
+  "size": 920,
+  "file_mtime": "2026-07-24 01:51:01",
+  "updated_at": "2026-07-24 01:51:01",
+  "record_count": 1,
+  "field_summary": {
+    "top_level_fields": [
+      "count",
+      "dataset",
+      "period",
+      "schema_version",
+      "source",
+      "source_errors",
+      "status",
+      "updated_at"
+    ],
+    "list_fields": {},
+    "dict_fields": [
+      "source_errors"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": true,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [],
+  "generated_by": {},
+  "source": {
+    "declared_output": "interim_reports/index.json",
+    "expected_command": "all",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-24 01:55:19"
+}

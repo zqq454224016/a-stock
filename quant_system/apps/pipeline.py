@@ -2,94 +2,64 @@
 
 from __future__ import annotations
 
-from quant_system.apps.reports import (
-    generate_agent_dashboard,
-    generate_attribution_report,
-    generate_backtest_reports,
-    generate_console_report,
-    generate_decision_report,
-    generate_enhance_reports,
-    generate_factor_reports,
-    generate_impact_report,
-    generate_live_dashboard,
-    generate_monitoring_report,
-    generate_portfolio_report,
-    generate_predict_reports,
-    generate_reports,
-    generate_review_report,
-    generate_selector_report,
-    generate_trading_report,
-    sync_report_index_hubs,
-)
-from quant_system.tasks.agent_job import run_agent_job
-from quant_system.tasks.attribution_job import run_attribution_job
-from quant_system.tasks.backtest_job import run_backtest_job
 from quant_system.tasks.daily_job import run_daily_market
-from quant_system.tasks.decision_job import run_decision_job
-from quant_system.tasks.enhance_job import run_enhance_job
 from quant_system.tasks.factor_job import run_factor_compute
-from quant_system.tasks.impact_job import run_impact_job
-from quant_system.tasks.intraday_job import run_intraday_live
+from quant_system.tasks.full_acquisition_job import launch_full_acquisition
+from quant_system.tasks.interim_financial_job import run_interim_financial_job
 from quant_system.tasks.inspect_job import run_data_inspect
+from quant_system.tasks.iteration_job import run_auto_iteration
 from quant_system.tasks.monitoring_job import run_monitoring_job
-from quant_system.tasks.predict_job import run_predict_job
-from quant_system.tasks.portfolio_job import run_portfolio_job
-from quant_system.tasks.review_job import run_review_job
-from quant_system.tasks.selector_job import run_selector_job
-from quant_system.tasks.sentiment_job import run_sentiment_job
-from quant_system.tasks.sim_trade_job import run_sim_trade_job
+from quant_system.tasks.phase1_market_data_job import run_phase1_market_data
+from quant_system.tasks.public_supplement_job import run_public_supplement_job
+from quant_system.tasks.recommendation_job import run_recommendation_job
 from quant_system.tasks.stock_job import run_daily_stock
+from quant_system.tasks.strategy_job import launch_offline_validation, run_trend_strategy_job
+from quant_system.tasks.today_change_job import run_today_change_job
+from quant_system.tasks.daily_market_recap_job import run_daily_market_recap_job
+from quant_system.tasks.daily_filter_intraday_job import run_daily_filter_intraday_job
+from quant_system.tasks.sector_data_job import launch_sector_data_job
+from quant_system.tasks.sim_trade_job import run_sim_trade_job
+from quant_system.tasks.portfolio_job import run_portfolio_job
+from quant_system.tasks.realtime_worker import launch_realtime_worker
+from quant_system.tasks.polarized_strategy_job import run_polarized_strategy
+from quant_system.iteration.worker import launch_iteration_worker
 from quant_system.utils.logger import get_logger
-from quant_system.utils.watchlist_utils import ensure_watchlist_history
 
 logger = get_logger("apps.pipeline")
 
 
 def run_mvp_pipeline(*, skip_inspect: bool = False, skip_sentiment: bool = False) -> None:
-    """MVP 闭环：数据 → 因子 → 回测 → 预测 → 报表（Quantification.md §1.3）。"""
+    """MVP 闭环：数据 → 因子 → 回测 → 预测 → 结构化产物。"""
     from quant_system.config.crawler_config import CrawlerConfig
 
     cfg = CrawlerConfig()
     logger.info("=== MVP 闭环开始（历史窗口 %s 日）===", cfg.mvp_hist_days)
 
+    run_phase1_market_data()
+    run_interim_financial_job()
     if not skip_inspect:
-        run_data_inspect(auto_fix=True)
-    ensure_watchlist_history(min_days=cfg.mvp_hist_days)
+        # Full-universe repairs are heavy and belong to the resumable background
+        # acquisition worker. The one-command foreground path only audits.
+        run_data_inspect(auto_fix=False)
     run_daily_market(mock=False)
-    run_daily_stock()
-    if not skip_sentiment:
-        run_sentiment_job()
-    run_enhance_job()
+    run_public_supplement_job()
+    launch_full_acquisition()
     run_factor_compute()
-    run_intraday_live()
-    run_backtest_job(days=cfg.mvp_hist_days, allow_warn_quality=True)
-    generate_backtest_reports()
-    run_predict_job(allow_warn_quality=True, auto_backtest=True)
-    generate_predict_reports()
-    run_impact_job()
-    generate_impact_report()
-    run_selector_job(auto_predict=False)
-    generate_selector_report()
-    run_decision_job(auto_predict=False)
-    generate_decision_report()
-    run_sim_trade_job(auto_predict=False)
-    generate_trading_report()
+    run_today_change_job()
+    run_daily_market_recap_job()
+    launch_sector_data_job()
+    run_trend_strategy_job()
+    run_recommendation_job()
+    run_daily_filter_intraday_job()
+    run_recommendation_job()
+    run_polarized_strategy()
+    run_sim_trade_job(auto_predict=False, auto_decision=False)
     run_portfolio_job()
-    generate_portfolio_report()
-    run_review_job()
-    generate_review_report()
-    run_attribution_job()
-    generate_attribution_report()
-    generate_reports()
-    generate_factor_reports()
-    generate_enhance_reports()
-    generate_live_dashboard()
-    run_agent_job()
-    generate_agent_dashboard()
-    generate_console_report()
+    run_auto_iteration()
     run_monitoring_job()
-    generate_monitoring_report()
-    sync_report_index_hubs()
+    launch_offline_validation()
+    launch_iteration_worker()
+    launch_realtime_worker()
     logger.info("=== MVP 闭环完成 ===")
 
 
@@ -104,44 +74,32 @@ def run_all_pipeline(
     """执行 all 主链路，保留 CLI skip 参数语义。"""
     from quant_system.config.crawler_config import CrawlerConfig
 
+    logger.info("=== 统一流水线开始：基础数据 → 研究 → AI 产物 ===")
+    run_phase1_market_data()
+    run_interim_financial_job()
     if not skip_inspect:
-        run_data_inspect(auto_fix=True)
-    ensure_watchlist_history(min_days=CrawlerConfig().mvp_hist_days)
+        # Keep ./run.sh all responsive; launch_full_acquisition below performs
+        # resumable repairs in a single background worker.
+        run_data_inspect(auto_fix=False)
     run_daily_market(mock=False)
-    run_daily_stock()
-    if not skip_sentiment:
-        run_sentiment_job()
-    if not skip_enhance:
-        run_enhance_job()
+    run_public_supplement_job()
+    launch_full_acquisition()
     run_factor_compute()
-    run_intraday_live()
-    if not skip_backtest:
-        run_backtest_job(allow_warn_quality=True)
-        generate_backtest_reports()
+    run_today_change_job()
+    run_daily_market_recap_job()
+    launch_sector_data_job()
+    run_trend_strategy_job()
     if not skip_predict:
-        run_predict_job(allow_warn_quality=True, auto_backtest=not skip_backtest)
-        generate_predict_reports()
-        run_impact_job()
-        generate_impact_report()
-        run_selector_job(auto_predict=False)
-        generate_selector_report()
-        run_decision_job(auto_predict=False)
-        generate_decision_report()
-        run_sim_trade_job(auto_predict=False)
-        generate_trading_report()
+        run_recommendation_job()
+        run_daily_filter_intraday_job()
+        run_recommendation_job()
+        run_polarized_strategy()
+        run_sim_trade_job(auto_predict=False, auto_decision=False)
         run_portfolio_job()
-        generate_portfolio_report()
-        run_review_job()
-        generate_review_report()
-        run_attribution_job()
-        generate_attribution_report()
-    generate_reports()
-    generate_factor_reports()
-    generate_enhance_reports()
-    generate_live_dashboard()
-    run_agent_job()
-    generate_agent_dashboard()
-    generate_console_report()
+    run_auto_iteration()
     run_monitoring_job()
-    generate_monitoring_report()
-    sync_report_index_hubs()
+    if not skip_backtest:
+        launch_offline_validation()
+    launch_iteration_worker()
+    launch_realtime_worker()
+    logger.info("=== 统一流水线完成 ===")

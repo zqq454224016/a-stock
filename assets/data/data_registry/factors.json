@@ -5,17 +5,17 @@
   "path": "factors/index.json",
   "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/factors/index.json",
   "exists": true,
-  "size": 2061,
-  "file_mtime": "2026-07-14 00:10:19",
-  "updated_at": "2026-07-14 00:10:19",
-  "record_count": 5,
+  "size": 1267731,
+  "file_mtime": "2026-07-24 01:54:45",
+  "updated_at": "2026-07-24 01:54:45",
+  "record_count": 3172,
   "field_summary": {
     "top_level_fields": [
       "stocks",
       "updated_at"
     ],
     "list_fields": {
-      "stocks": 5
+      "stocks": 3172
     },
     "dict_fields": []
   },
@@ -36,5 +36,5 @@
     "payload_trade_date": "",
     "payload_version": ""
   },
-  "registered_at": "2026-07-14 00:10:55"
+  "registered_at": "2026-07-24 01:55:19"
 }

@@ -12,12 +12,14 @@ from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
 from quant_system.data_source.akshare_api import AkShareAPI
 from quant_system.pipeline.kline_loader import load_kline_df
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.pipeline.quality_gate import is_backtest_eligible, load_quality_map
 from quant_system.pipeline.quality_inspector import inspect_kline_df
 from quant_system.storage.json_store import JsonStore
 from quant_system.strategy.ma_cross import MACrossStrategy
 from quant_system.strategy.multi_factor import MultiFactorStrategy
+from quant_system.strategy.reversal_hunter import ReversalHunterStrategy
 from quant_system.utils.logger import get_logger
 from quant_system.utils.market_scope import filter_research_stocks
 from quant_system.utils.time_utils import now_str
@@ -28,6 +30,7 @@ logger = get_logger(__name__)
 STRATEGIES = {
     "ma_cross": MACrossStrategy,
     "multi_factor": MultiFactorStrategy,
+    "reversal_hunter": ReversalHunterStrategy,
 }
 
 
@@ -69,7 +72,7 @@ def run_backtest_job(
     if codes:
         stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
     else:
-        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="回测")
+        stocks = filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="回测")
 
     if not stocks:
         logger.error("未配置自选股")

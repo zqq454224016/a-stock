@@ -1,2 +1,0 @@
-# 兼容入口，与 quant_system/requirements.txt 保持一致
--r ../quant_system/requirements.txt

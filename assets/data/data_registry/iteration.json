@@ -1,0 +1,65 @@
+{
+  "registry_version": "1.0.0",
+  "module": "iteration",
+  "label": "自动策略迭代",
+  "path": "iteration/status.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/iteration/status.json",
+  "exists": true,
+  "size": 4657,
+  "file_mtime": "2026-07-24 01:55:18",
+  "updated_at": "2026-07-24 01:55:18",
+  "record_count": 1,
+  "field_summary": {
+    "top_level_fields": [
+      "cleanup_candidates",
+      "data",
+      "failed_gates",
+      "gates",
+      "limitations",
+      "mode",
+      "next_actions",
+      "phase",
+      "policy_version",
+      "promotion_allowed",
+      "safety",
+      "strategy_status",
+      "updated_at",
+      "validation"
+    ],
+    "list_fields": {
+      "gates": 8,
+      "failed_gates": 3,
+      "next_actions": 3,
+      "cleanup_candidates": 6,
+      "limitations": 3
+    },
+    "dict_fields": [
+      "data",
+      "safety",
+      "validation"
+    ]
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": [
+      "当前一年验证尚不能替代五年以上多市场状态样本外验证",
+      "当前平均方向收益尚未扣除全部交易费用、滑点与冲击成本",
+      "晋级门槛修改必须提升 policy_version，不能覆盖旧状态"
+    ]
+  },
+  "dependencies": [
+    "strategy",
+    "strategy_backtest"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "iteration/status.json",
+    "expected_command": "iteration",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-24 01:55:19"
+}

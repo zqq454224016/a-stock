@@ -7,11 +7,13 @@ from typing import Any
 from quant_system.agent.context import StockContext
 from quant_system.config.crawler_config import CrawlerConfig
 from quant_system.config.db_config import DBConfig
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.selector.builder import build_upside_candidate
 from quant_system.storage.json_store import JsonStore
 from quant_system.tasks.impact_job import run_impact_job
 from quant_system.tasks.predict_job import run_predict_job
+from quant_system.tasks.strategy_job import validation_calibration
 from quant_system.utils.logger import get_logger
 from quant_system.utils.market_scope import filter_research_stocks
 from quant_system.utils.time_utils import now_str
@@ -42,7 +44,7 @@ def run_selector_job(
     store = JsonStore(DBConfig())
     stocks = (
         [{"code": normalize_code(c), "name": ""} for c in codes]
-        if codes else filter_research_stocks(load_watchlist(cfg), cfg, reason="上涨候选")
+        if codes else filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="上涨候选")
     )
     if not stocks:
         logger.error("未配置自选股")
@@ -61,7 +63,7 @@ def run_selector_job(
             run_impact_job(codes=[code])
             impact = ctx.impact
         review = _read_optional(store, store.review_dir() / f"{code}.json")
-        replay = _read_optional(store, store.replay_dir() / f"{code}.json")
+        replay = validation_calibration(_read_optional(store, store.config.json_data_dir / "strategy_backtest" / f"{code}.json"))
 
         candidate = build_upside_candidate(
             code=code,

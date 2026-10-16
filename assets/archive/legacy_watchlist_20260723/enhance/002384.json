@@ -1,0 +1,136 @@
+{
+  "code": "002384",
+  "name": "东山精密",
+  "trade_date": "2026-07-22",
+  "updated_at": "2026-07-23 00:06:20",
+  "version": "1.0.0",
+  "fundamentals": {
+    "source": "eastmoney_value",
+    "trade_date": "2026-07-22",
+    "close": 217.5,
+    "market_cap_yi": 3983.75,
+    "float_cap_yi": 3015.25,
+    "pe_ttm": 195.27237878,
+    "pe_static": 287.41375622,
+    "pb": 17.59784078,
+    "ps": 8.9201156,
+    "peg": 6.320871222668
+  },
+  "corporate": {
+    "dividends": [
+      {
+        "announce_date": "2026-04-22",
+        "ex_date": "NaT",
+        "record_date": "NaT",
+        "cash_div": 0.0,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "不分配"
+      },
+      {
+        "announce_date": "2025-05-20",
+        "ex_date": "2025-05-27",
+        "record_date": "2025-05-26",
+        "cash_div": 0.7,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2024-05-22",
+        "ex_date": "2024-05-30",
+        "record_date": "2024-05-29",
+        "cash_div": 2.5,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2023-06-27",
+        "ex_date": "2023-07-04",
+        "record_date": "2023-07-03",
+        "cash_div": 1.1,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      },
+      {
+        "announce_date": "2022-06-17",
+        "ex_date": "2022-06-27",
+        "record_date": "2022-06-24",
+        "cash_div": 2.00358,
+        "bonus_ratio": 0.0,
+        "transfer_ratio": 0.0,
+        "status": "实施"
+      }
+    ],
+    "lockups": [
+      {
+        "unlock_date": "2028-06-28",
+        "unlock_shares": 125693822.0,
+        "unlock_value_yi": 273.38,
+        "pct_total": 0.068624866301,
+        "pct_float": 0.090667137299,
+        "holder_type": "定向增发机构配售股份"
+      },
+      {
+        "unlock_date": "2021-02-08",
+        "unlock_shares": 103294850.0,
+        "unlock_value_yi": 20.7,
+        "pct_total": 0.060411032113,
+        "pct_float": 0.074298124284,
+        "holder_type": "定向增发机构配售股份"
+      },
+      {
+        "unlock_date": "2018-05-28",
+        "unlock_shares": 223658048.00000003,
+        "unlock_value_yi": 56.7,
+        "pct_total": 0.208821622929,
+        "pct_float": 0.288471800374,
+        "holder_type": "定向增发机构配售股份"
+      }
+    ],
+    "earnings_forecast": null
+  },
+  "fund_flow": {
+    "northbound": {},
+    "margin": null
+  },
+  "index_context": {
+    "trade_date": "2026-07-22",
+    "benchmarks": [
+      {
+        "name": "上证指数",
+        "code": "000001",
+        "close": 3867.03,
+        "change_pct": 0.07
+      },
+      {
+        "name": "科创50参考",
+        "code": "000688",
+        "close": 1860.08,
+        "change_pct": -2.26
+      }
+    ],
+    "market_fund_flow": {
+      "north_net": 0.0,
+      "main_net": -690.83,
+      "retail_net": 0.0
+    },
+    "stock_return_20d": -15.41
+  },
+  "cross_source": null,
+  "quality_ref": {
+    "status": "ok",
+    "quality_score": 95.0
+  },
+  "limitations": [
+    "partial_source_failure",
+    "northbound_missing"
+  ],
+  "sources_failed": [
+    "earnings_forecast",
+    "margin",
+    "northbound"
+  ]
+}

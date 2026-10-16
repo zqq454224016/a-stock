@@ -1,0 +1,35 @@
+{
+  "code": "605018",
+  "trade_date": "2026-07-23",
+  "factor_version": "1.2.0",
+  "technical_version": "1.0.0",
+  "sentiment_version": null,
+  "enhance_version": "1.0.0",
+  "data_version": "daily_kline_605018_20260723",
+  "factors": {
+    "ma20_bias": -14.34,
+    "rsi14": 14.07,
+    "macd": -0.9095,
+    "macd_signal": -0.686,
+    "macd_hist": -0.2234,
+    "atr14": 0.7843,
+    "momentum_20": -16.24,
+    "volume_ratio_20": 0.34,
+    "above_ma20": false,
+    "ma_cross": "none",
+    "technical_score": 23.0,
+    "sentiment_score": null,
+    "fundamental_score": null,
+    "fund_flow_score": null,
+    "multi_factor_score": 23.0,
+    "has_sentiment": false,
+    "has_fundamental": false,
+    "has_fund_flow": false,
+    "factor_weights": {
+      "technical": 1.0
+    },
+    "fundamental_detail": {},
+    "fund_flow_detail": {}
+  },
+  "updated_at": "2026-07-24 01:54:44"
+}

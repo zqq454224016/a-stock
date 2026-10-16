@@ -10,7 +10,8 @@ from quant_system.config.prediction_config import DEFAULT_HORIZON
 from quant_system.data_source.akshare_api import AkShareAPI
 from quant_system.factors.technical import compute_technical_factors
 from quant_system.pipeline.kline_loader import load_kline_df, load_stock_context
-from quant_system.pipeline.normalizer import load_watchlist, normalize_code
+from quant_system.pipeline.normalizer import normalize_code
+from quant_system.tasks.universe_job import load_tickflow_universe
 from quant_system.pipeline.quality_gate import load_quality_map
 from quant_system.prediction.verified import build_verified_prediction
 from quant_system.storage.json_store import JsonStore
@@ -54,7 +55,7 @@ def run_predict_job(
     if codes:
         stocks = [{"code": normalize_code(c), "name": ""} for c in codes]
     else:
-        stocks = filter_research_stocks(load_watchlist(cfg), cfg, reason="走势预测")
+        stocks = filter_research_stocks(load_tickflow_universe(cfg), cfg, reason="走势预测")
 
     if not stocks:
         logger.error("未配置自选股")

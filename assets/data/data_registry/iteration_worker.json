@@ -1,0 +1,46 @@
+{
+  "registry_version": "1.0.0",
+  "module": "iteration_worker",
+  "label": "后台迭代工作器",
+  "path": "iteration/worker_status.json",
+  "absolute_path": "/Users/zhangqiqi/stock/a-stock/assets/data/iteration/worker_status.json",
+  "exists": true,
+  "size": 1066,
+  "file_mtime": "2026-07-24 01:46:22",
+  "updated_at": "2026-07-24 01:46:22",
+  "record_count": 1,
+  "field_summary": {
+    "top_level_fields": [
+      "actions",
+      "ai_scope",
+      "execution_mode",
+      "interval_sec",
+      "next_run_after",
+      "pid",
+      "status",
+      "updated_at"
+    ],
+    "list_fields": {
+      "actions": 3
+    },
+    "dict_fields": []
+  },
+  "data_quality": {
+    "exists": true,
+    "degraded": false,
+    "quality_status": "",
+    "quality_score": null,
+    "limitations": []
+  },
+  "dependencies": [
+    "iteration"
+  ],
+  "generated_by": {},
+  "source": {
+    "declared_output": "iteration/worker_status.json",
+    "expected_command": "iteration_worker",
+    "payload_trade_date": "",
+    "payload_version": ""
+  },
+  "registered_at": "2026-07-24 01:55:19"
+}
