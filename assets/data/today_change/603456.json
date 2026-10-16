@@ -1,0 +1,22 @@
+{
+  "code": "603456",
+  "name": "九洲药业",
+  "trade_date": "2026-10-16",
+  "close": 16.2,
+  "change_pct": -1.16,
+  "bucket": "down",
+  "gap_pct": 1.04,
+  "intraday_pct": -2.17,
+  "amplitude_pct": 7.26,
+  "volume_ratio_5d": 1.06,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.25,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

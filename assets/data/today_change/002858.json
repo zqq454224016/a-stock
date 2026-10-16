@@ -1,0 +1,21 @@
+{
+  "code": "002858",
+  "name": "力盛体育",
+  "trade_date": "2026-10-16",
+  "close": 11.13,
+  "change_pct": 0.09,
+  "bucket": "up",
+  "gap_pct": 1.44,
+  "intraday_pct": -1.33,
+  "amplitude_pct": 4.05,
+  "volume_ratio_5d": 1.0,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.0,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

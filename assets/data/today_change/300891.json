@@ -1,0 +1,21 @@
+{
+  "code": "300891",
+  "name": "惠云钛业",
+  "trade_date": "2026-07-23",
+  "close": 6.14,
+  "change_pct": 4.24,
+  "bucket": "up",
+  "gap_pct": -0.68,
+  "intraday_pct": 4.96,
+  "amplitude_pct": 5.26,
+  "volume_ratio_5d": 0.79,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 4.15,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

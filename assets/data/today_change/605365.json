@@ -1,0 +1,21 @@
+{
+  "code": "605365",
+  "name": "立达信",
+  "trade_date": "2026-10-16",
+  "close": 13.85,
+  "change_pct": 1.09,
+  "bucket": "up",
+  "gap_pct": 1.31,
+  "intraday_pct": -0.22,
+  "amplitude_pct": 3.14,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.0,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

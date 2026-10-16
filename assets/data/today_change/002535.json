@@ -1,0 +1,22 @@
+{
+  "code": "002535",
+  "name": "林州重机",
+  "trade_date": "2026-10-16",
+  "close": 2.54,
+  "change_pct": 9.96,
+  "bucket": "limit_up",
+  "gap_pct": 1.3,
+  "intraday_pct": 8.55,
+  "amplitude_pct": 9.52,
+  "volume_ratio_5d": 1.1,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 9.87,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

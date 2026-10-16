@@ -1,0 +1,20 @@
+{
+  "code": "002075",
+  "name": "沙钢股份",
+  "trade_date": "2026-10-16",
+  "close": 3.43,
+  "change_pct": 1.18,
+  "bucket": "up",
+  "gap_pct": 0.59,
+  "intraday_pct": 0.59,
+  "amplitude_pct": 2.65,
+  "volume_ratio_5d": 0.98,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.09,
+  "drivers": [
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

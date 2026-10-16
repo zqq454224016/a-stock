@@ -1,0 +1,21 @@
+{
+  "code": "002471",
+  "name": "中超控股",
+  "trade_date": "2026-10-16",
+  "close": 4.82,
+  "change_pct": 1.69,
+  "bucket": "up",
+  "gap_pct": 1.27,
+  "intraday_pct": 0.42,
+  "amplitude_pct": 3.8,
+  "volume_ratio_5d": 1.09,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.6,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

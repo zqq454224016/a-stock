@@ -1,0 +1,22 @@
+{
+  "code": "603190",
+  "name": "亚通精工",
+  "trade_date": "2026-10-16",
+  "close": 15.36,
+  "change_pct": 3.09,
+  "bucket": "up",
+  "gap_pct": 1.28,
+  "intraday_pct": 1.79,
+  "amplitude_pct": 4.16,
+  "volume_ratio_5d": 1.17,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.0,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

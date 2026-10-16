@@ -1,0 +1,20 @@
+{
+  "code": "688590",
+  "name": "新致软件",
+  "trade_date": "2026-07-23",
+  "close": 11.4,
+  "change_pct": 0.44,
+  "bucket": "up",
+  "gap_pct": 0.35,
+  "intraday_pct": 0.09,
+  "amplitude_pct": 2.03,
+  "volume_ratio_5d": 0.57,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.35,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

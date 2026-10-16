@@ -1,0 +1,20 @@
+{
+  "code": "688682",
+  "name": "霍莱沃",
+  "trade_date": "2026-07-23",
+  "close": 28.63,
+  "change_pct": 1.06,
+  "bucket": "up",
+  "gap_pct": 0.0,
+  "intraday_pct": 1.06,
+  "amplitude_pct": 3.78,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.97,
+  "drivers": [
+    "开盘后资金继续推升"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

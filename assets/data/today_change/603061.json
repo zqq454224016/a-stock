@@ -1,0 +1,21 @@
+{
+  "code": "603061",
+  "name": "金海通",
+  "trade_date": "2026-10-16",
+  "close": 258.5,
+  "change_pct": 0.44,
+  "bucket": "up",
+  "gap_pct": 2.96,
+  "intraday_pct": -2.45,
+  "amplitude_pct": 5.66,
+  "volume_ratio_5d": 0.94,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.35,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

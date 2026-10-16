@@ -1,0 +1,22 @@
+{
+  "code": "001269",
+  "name": "欧晶科技",
+  "trade_date": "2026-10-16",
+  "close": 17.48,
+  "change_pct": 2.16,
+  "bucket": "up",
+  "gap_pct": 1.52,
+  "intraday_pct": 0.63,
+  "amplitude_pct": 4.32,
+  "volume_ratio_5d": 0.64,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.07,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

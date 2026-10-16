@@ -1,0 +1,23 @@
+{
+  "code": "002821",
+  "name": "凯莱英",
+  "trade_date": "2026-10-16",
+  "close": 149.1,
+  "change_pct": -6.17,
+  "bucket": "strong_down",
+  "gap_pct": 2.35,
+  "intraday_pct": -8.33,
+  "amplitude_pct": 12.3,
+  "volume_ratio_5d": 1.58,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -6.26,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "000560",
+  "name": "我爱我家",
+  "trade_date": "2026-10-16",
+  "close": 3.2,
+  "change_pct": 3.56,
+  "bucket": "up",
+  "gap_pct": 2.27,
+  "intraday_pct": 1.27,
+  "amplitude_pct": 9.71,
+  "volume_ratio_5d": 1.44,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.47,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

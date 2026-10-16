@@ -1,0 +1,21 @@
+{
+  "code": "920029",
+  "name": "开发科技",
+  "trade_date": "2026-07-23",
+  "close": 31.88,
+  "change_pct": 2.97,
+  "bucket": "up",
+  "gap_pct": 0.45,
+  "intraday_pct": 2.51,
+  "amplitude_pct": 5.81,
+  "volume_ratio_5d": 1.23,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.88,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

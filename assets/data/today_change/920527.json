@@ -1,0 +1,21 @@
+{
+  "code": "920527",
+  "name": "夜光明",
+  "trade_date": "2026-07-23",
+  "close": 13.29,
+  "change_pct": 3.75,
+  "bucket": "up",
+  "gap_pct": -0.08,
+  "intraday_pct": 3.83,
+  "amplitude_pct": 11.4,
+  "volume_ratio_5d": 1.17,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.66,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

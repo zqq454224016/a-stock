@@ -1,0 +1,22 @@
+{
+  "code": "000503",
+  "name": "国新健康",
+  "trade_date": "2026-10-16",
+  "close": 7.75,
+  "change_pct": 1.17,
+  "bucket": "up",
+  "gap_pct": 5.74,
+  "intraday_pct": -4.32,
+  "amplitude_pct": 9.66,
+  "volume_ratio_5d": 1.42,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.08,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "code": "001225",
+  "name": "和泰机电",
+  "trade_date": "2026-10-16",
+  "close": 34.65,
+  "change_pct": -10.0,
+  "bucket": "limit_down",
+  "gap_pct": -2.96,
+  "intraday_pct": -7.25,
+  "amplitude_pct": 7.04,
+  "volume_ratio_5d": 2.04,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -10.09,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

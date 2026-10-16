@@ -1,0 +1,23 @@
+{
+  "code": "000759",
+  "name": "中百集团",
+  "trade_date": "2026-10-16",
+  "close": 5.96,
+  "change_pct": -1.49,
+  "bucket": "down",
+  "gap_pct": 1.49,
+  "intraday_pct": -2.93,
+  "amplitude_pct": 6.78,
+  "volume_ratio_5d": 0.6,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.58,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

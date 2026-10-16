@@ -1,0 +1,21 @@
+{
+  "code": "002229",
+  "name": "鸿博股份",
+  "trade_date": "2026-10-16",
+  "close": 9.7,
+  "change_pct": 0.73,
+  "bucket": "up",
+  "gap_pct": 2.08,
+  "intraday_pct": -1.32,
+  "amplitude_pct": 3.22,
+  "volume_ratio_5d": 0.98,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.64,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

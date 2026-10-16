@@ -1,0 +1,21 @@
+{
+  "code": "688202",
+  "name": "美迪西",
+  "trade_date": "2026-07-23",
+  "close": 82.89,
+  "change_pct": -2.67,
+  "bucket": "down",
+  "gap_pct": -2.54,
+  "intraday_pct": -0.13,
+  "amplitude_pct": 7.52,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.76,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

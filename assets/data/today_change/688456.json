@@ -1,0 +1,21 @@
+{
+  "code": "688456",
+  "name": "有研粉材",
+  "trade_date": "2026-07-23",
+  "close": 76.39,
+  "change_pct": 0.37,
+  "bucket": "up",
+  "gap_pct": 2.42,
+  "intraday_pct": -2.0,
+  "amplitude_pct": 8.33,
+  "volume_ratio_5d": 0.9,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.28,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

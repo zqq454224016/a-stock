@@ -1,0 +1,20 @@
+{
+  "code": "605033",
+  "name": "美邦股份",
+  "trade_date": "2026-10-16",
+  "close": 18.86,
+  "change_pct": 1.07,
+  "bucket": "up",
+  "gap_pct": 1.5,
+  "intraday_pct": -0.42,
+  "amplitude_pct": 2.68,
+  "volume_ratio_5d": 0.88,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.98,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

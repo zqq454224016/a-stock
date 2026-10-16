@@ -1,0 +1,22 @@
+{
+  "code": "301592",
+  "name": "六九一二",
+  "trade_date": "2026-07-23",
+  "close": 96.4,
+  "change_pct": 6.27,
+  "bucket": "strong_up",
+  "gap_pct": 1.2,
+  "intraday_pct": 5.01,
+  "amplitude_pct": 8.32,
+  "volume_ratio_5d": 1.3,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 6.18,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

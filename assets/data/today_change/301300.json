@@ -1,0 +1,22 @@
+{
+  "code": "301300",
+  "name": "远翔新材",
+  "trade_date": "2026-07-23",
+  "close": 27.69,
+  "change_pct": 3.48,
+  "bucket": "up",
+  "gap_pct": 0.6,
+  "intraday_pct": 2.86,
+  "amplitude_pct": 4.07,
+  "volume_ratio_5d": 0.52,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.39,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

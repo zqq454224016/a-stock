@@ -1,0 +1,23 @@
+{
+  "code": "605378",
+  "name": "野马电池",
+  "trade_date": "2026-10-16",
+  "close": 14.5,
+  "change_pct": -6.75,
+  "bucket": "strong_down",
+  "gap_pct": -4.18,
+  "intraday_pct": -2.68,
+  "amplitude_pct": 4.76,
+  "volume_ratio_5d": 0.63,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -6.84,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

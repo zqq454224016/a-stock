@@ -1,0 +1,22 @@
+{
+  "code": "002119",
+  "name": "康强电子",
+  "trade_date": "2026-10-16",
+  "close": 20.99,
+  "change_pct": -3.67,
+  "bucket": "down",
+  "gap_pct": 2.29,
+  "intraday_pct": -5.83,
+  "amplitude_pct": 7.85,
+  "volume_ratio_5d": 0.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.76,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

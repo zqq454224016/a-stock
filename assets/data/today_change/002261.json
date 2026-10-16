@@ -1,0 +1,22 @@
+{
+  "code": "002261",
+  "name": "拓维信息",
+  "trade_date": "2026-10-16",
+  "close": 21.14,
+  "change_pct": -1.31,
+  "bucket": "down",
+  "gap_pct": 1.31,
+  "intraday_pct": -2.58,
+  "amplitude_pct": 4.11,
+  "volume_ratio_5d": 0.93,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.4,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

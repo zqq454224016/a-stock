@@ -1,0 +1,20 @@
+{
+  "code": "002340",
+  "name": "格林美",
+  "trade_date": "2026-10-16",
+  "close": 5.91,
+  "change_pct": 0.0,
+  "bucket": "flat",
+  "gap_pct": 0.51,
+  "intraday_pct": -0.51,
+  "amplitude_pct": 1.69,
+  "volume_ratio_5d": 0.62,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.09,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

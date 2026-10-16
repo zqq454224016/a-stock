@@ -1,0 +1,22 @@
+{
+  "code": "002741",
+  "name": "光华科技",
+  "trade_date": "2026-10-16",
+  "close": 19.03,
+  "change_pct": -3.35,
+  "bucket": "down",
+  "gap_pct": 1.17,
+  "intraday_pct": -4.47,
+  "amplitude_pct": 5.89,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.44,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "688678",
+  "name": "福立旺",
+  "trade_date": "2026-07-23",
+  "close": 16.93,
+  "change_pct": 0.3,
+  "bucket": "up",
+  "gap_pct": -1.54,
+  "intraday_pct": 1.87,
+  "amplitude_pct": 3.91,
+  "volume_ratio_5d": 0.38,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.21,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

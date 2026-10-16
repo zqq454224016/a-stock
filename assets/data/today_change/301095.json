@@ -1,0 +1,22 @@
+{
+  "code": "301095",
+  "name": "广立微",
+  "trade_date": "2026-07-23",
+  "close": 69.57,
+  "change_pct": -3.6,
+  "bucket": "down",
+  "gap_pct": 0.36,
+  "intraday_pct": -3.95,
+  "amplitude_pct": 5.99,
+  "volume_ratio_5d": 0.6,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.69,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

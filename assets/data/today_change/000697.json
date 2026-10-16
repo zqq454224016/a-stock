@@ -1,0 +1,21 @@
+{
+  "code": "000697",
+  "name": "炼石航空",
+  "trade_date": "2026-10-16",
+  "close": 9.11,
+  "change_pct": 2.59,
+  "bucket": "up",
+  "gap_pct": 0.45,
+  "intraday_pct": 2.13,
+  "amplitude_pct": 4.95,
+  "volume_ratio_5d": 0.99,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.5,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

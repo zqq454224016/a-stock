@@ -1,0 +1,21 @@
+{
+  "code": "603612",
+  "name": "索通发展",
+  "trade_date": "2026-10-16",
+  "close": 14.96,
+  "change_pct": -0.13,
+  "bucket": "down",
+  "gap_pct": 1.47,
+  "intraday_pct": -1.58,
+  "amplitude_pct": 3.27,
+  "volume_ratio_5d": 0.91,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.22,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

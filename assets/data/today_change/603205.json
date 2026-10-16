@@ -1,0 +1,20 @@
+{
+  "code": "603205",
+  "name": "健尔康",
+  "trade_date": "2026-10-16",
+  "close": 21.14,
+  "change_pct": 0.91,
+  "bucket": "up",
+  "gap_pct": 1.1,
+  "intraday_pct": -0.19,
+  "amplitude_pct": 3.39,
+  "volume_ratio_5d": 0.95,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.82,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

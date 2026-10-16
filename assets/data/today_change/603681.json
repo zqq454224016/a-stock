@@ -1,0 +1,21 @@
+{
+  "code": "603681",
+  "name": "永冠新材",
+  "trade_date": "2026-10-16",
+  "close": 16.81,
+  "change_pct": 1.27,
+  "bucket": "up",
+  "gap_pct": 2.05,
+  "intraday_pct": -0.77,
+  "amplitude_pct": 3.67,
+  "volume_ratio_5d": 0.94,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.18,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

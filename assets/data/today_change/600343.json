@@ -1,0 +1,22 @@
+{
+  "code": "600343",
+  "name": "航天动力",
+  "trade_date": "2026-10-16",
+  "close": 17.99,
+  "change_pct": 5.39,
+  "bucket": "strong_up",
+  "gap_pct": 1.64,
+  "intraday_pct": 3.69,
+  "amplitude_pct": 7.21,
+  "volume_ratio_5d": 1.42,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 5.3,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

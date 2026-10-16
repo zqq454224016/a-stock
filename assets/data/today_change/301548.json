@@ -1,0 +1,20 @@
+{
+  "code": "301548",
+  "name": "崇德科技",
+  "trade_date": "2026-07-23",
+  "close": 61.72,
+  "change_pct": 0.28,
+  "bucket": "up",
+  "gap_pct": 0.73,
+  "intraday_pct": -0.45,
+  "amplitude_pct": 3.64,
+  "volume_ratio_5d": 0.54,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.19,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

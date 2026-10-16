@@ -1,0 +1,22 @@
+{
+  "code": "002156",
+  "name": "通富微电",
+  "trade_date": "2026-10-16",
+  "close": 48.67,
+  "change_pct": -2.17,
+  "bucket": "down",
+  "gap_pct": 1.99,
+  "intraday_pct": -4.08,
+  "amplitude_pct": 6.25,
+  "volume_ratio_5d": 0.93,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.26,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

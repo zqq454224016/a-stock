@@ -1,0 +1,20 @@
+{
+  "code": "601566",
+  "name": "九牧王",
+  "trade_date": "2026-10-16",
+  "close": 9.44,
+  "change_pct": -0.94,
+  "bucket": "down",
+  "gap_pct": -0.31,
+  "intraday_pct": -0.63,
+  "amplitude_pct": 5.25,
+  "volume_ratio_5d": 0.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.03,
+  "drivers": [
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

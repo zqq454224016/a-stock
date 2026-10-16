@@ -1,0 +1,22 @@
+{
+  "code": "603203",
+  "name": "快克智能",
+  "trade_date": "2026-10-16",
+  "close": 34.32,
+  "change_pct": -0.98,
+  "bucket": "down",
+  "gap_pct": 4.73,
+  "intraday_pct": -5.45,
+  "amplitude_pct": 6.95,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.07,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

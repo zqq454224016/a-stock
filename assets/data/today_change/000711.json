@@ -1,0 +1,22 @@
+{
+  "code": "000711",
+  "name": "京蓝科技",
+  "trade_date": "2026-10-16",
+  "close": 3.9,
+  "change_pct": -1.27,
+  "bucket": "down",
+  "gap_pct": 3.29,
+  "intraday_pct": -4.41,
+  "amplitude_pct": 6.58,
+  "volume_ratio_5d": 1.03,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.36,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

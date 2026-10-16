@@ -1,0 +1,21 @@
+{
+  "code": "603505",
+  "name": "金石资源",
+  "trade_date": "2026-10-16",
+  "close": 12.44,
+  "change_pct": 0.32,
+  "bucket": "up",
+  "gap_pct": 1.29,
+  "intraday_pct": -0.96,
+  "amplitude_pct": 2.26,
+  "volume_ratio_5d": 0.54,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.23,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

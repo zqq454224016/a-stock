@@ -1,0 +1,22 @@
+{
+  "code": "000815",
+  "name": "美利云",
+  "trade_date": "2026-10-16",
+  "close": 13.99,
+  "change_pct": -1.48,
+  "bucket": "down",
+  "gap_pct": 1.69,
+  "intraday_pct": -3.12,
+  "amplitude_pct": 6.2,
+  "volume_ratio_5d": 0.97,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.57,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

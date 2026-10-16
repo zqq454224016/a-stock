@@ -1,0 +1,20 @@
+{
+  "code": "600863",
+  "name": "华能蒙电",
+  "trade_date": "2026-10-16",
+  "close": 5.14,
+  "change_pct": -0.19,
+  "bucket": "down",
+  "gap_pct": 0.78,
+  "intraday_pct": -0.96,
+  "amplitude_pct": 2.91,
+  "volume_ratio_5d": 0.48,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.28,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

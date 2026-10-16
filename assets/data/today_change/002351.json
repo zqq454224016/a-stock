@@ -1,0 +1,21 @@
+{
+  "code": "002351",
+  "name": "漫步者",
+  "trade_date": "2026-10-16",
+  "close": 9.82,
+  "change_pct": 1.55,
+  "bucket": "up",
+  "gap_pct": 1.34,
+  "intraday_pct": 0.2,
+  "amplitude_pct": 2.38,
+  "volume_ratio_5d": 1.49,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.46,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

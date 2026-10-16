@@ -1,0 +1,23 @@
+{
+  "code": "002933",
+  "name": "新兴装备",
+  "trade_date": "2026-10-16",
+  "close": 27.75,
+  "change_pct": 9.99,
+  "bucket": "limit_up",
+  "gap_pct": 1.39,
+  "intraday_pct": 8.48,
+  "amplitude_pct": 8.92,
+  "volume_ratio_5d": 1.95,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 9.9,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "code": "000692",
+  "name": "惠天热电",
+  "trade_date": "2026-10-16",
+  "close": 4.56,
+  "change_pct": -3.59,
+  "bucket": "down",
+  "gap_pct": -1.48,
+  "intraday_pct": -2.15,
+  "amplitude_pct": 5.07,
+  "volume_ratio_5d": 1.75,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.68,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

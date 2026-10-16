@@ -1,0 +1,22 @@
+{
+  "code": "300805",
+  "name": "电声股份",
+  "trade_date": "2026-07-23",
+  "close": 8.13,
+  "change_pct": -2.98,
+  "bucket": "down",
+  "gap_pct": -0.95,
+  "intraday_pct": -2.05,
+  "amplitude_pct": 6.92,
+  "volume_ratio_5d": 0.67,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.07,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

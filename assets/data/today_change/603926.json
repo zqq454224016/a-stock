@@ -1,0 +1,22 @@
+{
+  "code": "603926",
+  "name": "铁流股份",
+  "trade_date": "2026-10-16",
+  "close": 15.47,
+  "change_pct": 2.18,
+  "bucket": "up",
+  "gap_pct": 1.06,
+  "intraday_pct": 1.11,
+  "amplitude_pct": 3.83,
+  "volume_ratio_5d": 0.92,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.09,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "301183",
+  "name": "东田微",
+  "trade_date": "2026-07-23",
+  "close": 181.22,
+  "change_pct": -0.97,
+  "bucket": "down",
+  "gap_pct": 0.88,
+  "intraday_pct": -1.84,
+  "amplitude_pct": 6.73,
+  "volume_ratio_5d": 0.72,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.06,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

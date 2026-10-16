@@ -1,0 +1,22 @@
+{
+  "code": "920896",
+  "name": "旺成科技",
+  "trade_date": "2026-07-23",
+  "close": 11.5,
+  "change_pct": 3.05,
+  "bucket": "up",
+  "gap_pct": 1.52,
+  "intraday_pct": 1.5,
+  "amplitude_pct": 4.03,
+  "volume_ratio_5d": 0.83,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.96,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

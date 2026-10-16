@@ -1,0 +1,22 @@
+{
+  "code": "920035",
+  "name": "精创电气",
+  "trade_date": "2026-07-23",
+  "close": 23.26,
+  "change_pct": 3.79,
+  "bucket": "up",
+  "gap_pct": -0.85,
+  "intraday_pct": 4.68,
+  "amplitude_pct": 5.98,
+  "volume_ratio_5d": 0.64,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.7,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

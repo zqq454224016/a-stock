@@ -1,0 +1,21 @@
+{
+  "code": "601360",
+  "name": "三六零",
+  "trade_date": "2026-10-16",
+  "close": 8.38,
+  "change_pct": -2.44,
+  "bucket": "down",
+  "gap_pct": 0.93,
+  "intraday_pct": -3.34,
+  "amplitude_pct": 4.77,
+  "volume_ratio_5d": 1.1,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.53,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

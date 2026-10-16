@@ -1,0 +1,22 @@
+{
+  "code": "002189",
+  "name": "中光学",
+  "trade_date": "2026-10-16",
+  "close": 17.9,
+  "change_pct": 2.58,
+  "bucket": "up",
+  "gap_pct": 1.43,
+  "intraday_pct": 1.13,
+  "amplitude_pct": 4.24,
+  "volume_ratio_5d": 1.33,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.49,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

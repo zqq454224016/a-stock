@@ -1,0 +1,21 @@
+{
+  "code": "300499",
+  "name": "高澜股份",
+  "trade_date": "2026-07-23",
+  "close": 27.8,
+  "change_pct": -1.31,
+  "bucket": "down",
+  "gap_pct": 0.89,
+  "intraday_pct": -2.18,
+  "amplitude_pct": 7.21,
+  "volume_ratio_5d": 0.79,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.4,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

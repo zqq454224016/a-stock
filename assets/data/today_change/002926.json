@@ -1,0 +1,22 @@
+{
+  "code": "002926",
+  "name": "华西证券",
+  "trade_date": "2026-10-16",
+  "close": 8.1,
+  "change_pct": -1.94,
+  "bucket": "down",
+  "gap_pct": 0.12,
+  "intraday_pct": -2.06,
+  "amplitude_pct": 3.39,
+  "volume_ratio_5d": 1.5,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.03,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

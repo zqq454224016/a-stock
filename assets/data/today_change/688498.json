@@ -1,0 +1,21 @@
+{
+  "code": "688498",
+  "name": "源杰科技",
+  "trade_date": "2026-07-23",
+  "close": 1445.0,
+  "change_pct": 2.12,
+  "bucket": "up",
+  "gap_pct": 1.77,
+  "intraday_pct": 0.35,
+  "amplitude_pct": 7.77,
+  "volume_ratio_5d": 0.78,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.03,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

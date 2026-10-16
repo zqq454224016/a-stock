@@ -1,0 +1,23 @@
+{
+  "code": "600879",
+  "name": "航天电子",
+  "trade_date": "2026-10-16",
+  "close": 12.78,
+  "change_pct": 3.48,
+  "bucket": "up",
+  "gap_pct": 1.38,
+  "intraday_pct": 2.08,
+  "amplitude_pct": 5.67,
+  "volume_ratio_5d": 1.62,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.39,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

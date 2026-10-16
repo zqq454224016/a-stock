@@ -1,0 +1,22 @@
+{
+  "code": "300548",
+  "name": "长芯博创",
+  "trade_date": "2026-07-23",
+  "close": 169.07,
+  "change_pct": 0.05,
+  "bucket": "up",
+  "gap_pct": 1.65,
+  "intraday_pct": -1.57,
+  "amplitude_pct": 5.74,
+  "volume_ratio_5d": 0.63,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.04,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

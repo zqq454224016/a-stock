@@ -1,0 +1,22 @@
+{
+  "code": "600685",
+  "name": "中船防务",
+  "trade_date": "2026-10-16",
+  "close": 28.13,
+  "change_pct": 2.66,
+  "bucket": "up",
+  "gap_pct": 1.17,
+  "intraday_pct": 1.48,
+  "amplitude_pct": 3.47,
+  "volume_ratio_5d": 1.02,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.57,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

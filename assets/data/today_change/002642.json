@@ -1,0 +1,21 @@
+{
+  "code": "002642",
+  "name": "荣联科技",
+  "trade_date": "2026-10-16",
+  "close": 6.89,
+  "change_pct": -0.14,
+  "bucket": "down",
+  "gap_pct": 1.01,
+  "intraday_pct": -1.15,
+  "amplitude_pct": 3.77,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.23,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

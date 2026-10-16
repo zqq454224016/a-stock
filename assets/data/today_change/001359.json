@@ -1,0 +1,23 @@
+{
+  "code": "001359",
+  "name": "平安电工",
+  "trade_date": "2026-10-16",
+  "close": 73.04,
+  "change_pct": 3.66,
+  "bucket": "up",
+  "gap_pct": -2.09,
+  "intraday_pct": 5.87,
+  "amplitude_pct": 8.81,
+  "volume_ratio_5d": 1.51,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.57,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

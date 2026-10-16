@@ -1,0 +1,21 @@
+{
+  "code": "688087",
+  "name": "英科再生",
+  "trade_date": "2026-07-23",
+  "close": 38.17,
+  "change_pct": -2.0,
+  "bucket": "down",
+  "gap_pct": -1.77,
+  "intraday_pct": -0.24,
+  "amplitude_pct": 5.85,
+  "volume_ratio_5d": 0.85,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.09,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

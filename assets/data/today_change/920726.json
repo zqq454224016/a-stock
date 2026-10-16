@@ -1,0 +1,21 @@
+{
+  "code": "920726",
+  "name": "朱老六",
+  "trade_date": "2026-07-23",
+  "close": 15.05,
+  "change_pct": -3.34,
+  "bucket": "down",
+  "gap_pct": -0.45,
+  "intraday_pct": -2.9,
+  "amplitude_pct": 4.75,
+  "volume_ratio_5d": 0.72,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.43,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

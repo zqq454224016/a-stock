@@ -1,0 +1,22 @@
+{
+  "code": "002630",
+  "name": "*ST华西",
+  "trade_date": "2026-10-16",
+  "close": 2.0,
+  "change_pct": 7.53,
+  "bucket": "strong_up",
+  "gap_pct": -1.61,
+  "intraday_pct": 9.29,
+  "amplitude_pct": 11.83,
+  "volume_ratio_5d": 1.28,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 7.44,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

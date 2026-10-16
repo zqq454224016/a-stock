@@ -1,0 +1,21 @@
+{
+  "code": "300953",
+  "name": "震裕科技",
+  "trade_date": "2026-07-23",
+  "close": 94.7,
+  "change_pct": -0.94,
+  "bucket": "down",
+  "gap_pct": -0.66,
+  "intraday_pct": -0.28,
+  "amplitude_pct": 2.9,
+  "volume_ratio_5d": 0.66,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.03,
+  "drivers": [
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

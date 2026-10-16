@@ -1,0 +1,22 @@
+{
+  "code": "603909",
+  "name": "建发合诚",
+  "trade_date": "2026-10-16",
+  "close": 9.87,
+  "change_pct": 2.17,
+  "bucket": "up",
+  "gap_pct": 0.41,
+  "intraday_pct": 1.75,
+  "amplitude_pct": 5.49,
+  "volume_ratio_5d": 1.56,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.08,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

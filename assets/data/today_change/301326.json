@@ -1,0 +1,22 @@
+{
+  "code": "301326",
+  "name": "捷邦科技",
+  "trade_date": "2026-07-23",
+  "close": 88.12,
+  "change_pct": 1.22,
+  "bucket": "up",
+  "gap_pct": 1.85,
+  "intraday_pct": -0.62,
+  "amplitude_pct": 5.48,
+  "volume_ratio_5d": 0.64,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.13,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

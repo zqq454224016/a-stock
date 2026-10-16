@@ -1,0 +1,21 @@
+{
+  "code": "000571",
+  "name": "新大洲A",
+  "trade_date": "2026-10-16",
+  "close": 5.57,
+  "change_pct": -0.89,
+  "bucket": "down",
+  "gap_pct": 1.78,
+  "intraday_pct": -2.62,
+  "amplitude_pct": 5.52,
+  "volume_ratio_5d": 0.91,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.98,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

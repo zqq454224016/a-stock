@@ -1,0 +1,22 @@
+{
+  "code": "605006",
+  "name": "山东玻纤",
+  "trade_date": "2026-10-16",
+  "close": 12.6,
+  "change_pct": -1.18,
+  "bucket": "down",
+  "gap_pct": 2.04,
+  "intraday_pct": -3.15,
+  "amplitude_pct": 4.78,
+  "volume_ratio_5d": 0.82,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.27,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

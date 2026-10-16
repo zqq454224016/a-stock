@@ -1,0 +1,21 @@
+{
+  "code": "601595",
+  "name": "上海电影",
+  "trade_date": "2026-10-16",
+  "close": 27.65,
+  "change_pct": -3.32,
+  "bucket": "down",
+  "gap_pct": 0.21,
+  "intraday_pct": -3.52,
+  "amplitude_pct": 6.15,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.41,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

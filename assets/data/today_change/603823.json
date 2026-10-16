@@ -1,0 +1,22 @@
+{
+  "code": "603823",
+  "name": "百合花",
+  "trade_date": "2026-10-16",
+  "close": 36.77,
+  "change_pct": -0.86,
+  "bucket": "down",
+  "gap_pct": 2.7,
+  "intraday_pct": -3.47,
+  "amplitude_pct": 4.37,
+  "volume_ratio_5d": 0.68,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.95,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

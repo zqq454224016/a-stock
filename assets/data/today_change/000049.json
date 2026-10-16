@@ -1,0 +1,21 @@
+{
+  "code": "000049",
+  "name": "德赛电池",
+  "trade_date": "2026-10-16",
+  "close": 20.6,
+  "change_pct": -0.24,
+  "bucket": "down",
+  "gap_pct": 0.77,
+  "intraday_pct": -1.01,
+  "amplitude_pct": 3.0,
+  "volume_ratio_5d": 0.66,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.33,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

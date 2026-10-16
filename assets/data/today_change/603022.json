@@ -1,0 +1,21 @@
+{
+  "code": "603022",
+  "name": "新通联",
+  "trade_date": "2026-10-16",
+  "close": 8.54,
+  "change_pct": 1.67,
+  "bucket": "up",
+  "gap_pct": 0.6,
+  "intraday_pct": 1.07,
+  "amplitude_pct": 4.29,
+  "volume_ratio_5d": 1.08,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.58,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

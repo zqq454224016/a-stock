@@ -1,0 +1,21 @@
+{
+  "code": "300735",
+  "name": "光弘科技",
+  "trade_date": "2026-07-23",
+  "close": 19.12,
+  "change_pct": -1.8,
+  "bucket": "down",
+  "gap_pct": -0.98,
+  "intraday_pct": -0.83,
+  "amplitude_pct": 4.83,
+  "volume_ratio_5d": 0.65,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.89,
+  "drivers": [
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "002816",
+  "name": "*ST和科",
+  "trade_date": "2026-10-16",
+  "close": 17.05,
+  "change_pct": -2.46,
+  "bucket": "down",
+  "gap_pct": 1.2,
+  "intraday_pct": -3.62,
+  "amplitude_pct": 6.12,
+  "volume_ratio_5d": 1.1,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.55,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

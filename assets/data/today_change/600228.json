@@ -1,0 +1,22 @@
+{
+  "code": "600228",
+  "name": "返利科技",
+  "trade_date": "2026-10-16",
+  "close": 9.7,
+  "change_pct": -2.22,
+  "bucket": "down",
+  "gap_pct": 2.02,
+  "intraday_pct": -4.15,
+  "amplitude_pct": 5.14,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.31,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

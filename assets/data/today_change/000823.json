@@ -1,0 +1,23 @@
+{
+  "code": "000823",
+  "name": "超声电子",
+  "trade_date": "2026-10-16",
+  "close": 25.26,
+  "change_pct": -2.36,
+  "bucket": "down",
+  "gap_pct": 1.51,
+  "intraday_pct": -3.81,
+  "amplitude_pct": 8.16,
+  "volume_ratio_5d": 1.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.45,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

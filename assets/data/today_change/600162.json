@@ -1,0 +1,22 @@
+{
+  "code": "600162",
+  "name": "香江控股",
+  "trade_date": "2026-10-16",
+  "close": 3.59,
+  "change_pct": -1.1,
+  "bucket": "down",
+  "gap_pct": 1.65,
+  "intraday_pct": -2.71,
+  "amplitude_pct": 4.96,
+  "volume_ratio_5d": 0.95,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.19,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

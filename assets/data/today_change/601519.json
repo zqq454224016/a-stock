@@ -1,0 +1,21 @@
+{
+  "code": "601519",
+  "name": "大智慧",
+  "trade_date": "2026-10-16",
+  "close": 9.48,
+  "change_pct": -1.76,
+  "bucket": "down",
+  "gap_pct": -2.07,
+  "intraday_pct": 0.32,
+  "amplitude_pct": 4.04,
+  "volume_ratio_5d": 0.82,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.85,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

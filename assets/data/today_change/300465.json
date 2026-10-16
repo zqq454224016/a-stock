@@ -1,0 +1,21 @@
+{
+  "code": "300465",
+  "name": "高伟达",
+  "trade_date": "2026-07-23",
+  "close": 11.66,
+  "change_pct": 0.69,
+  "bucket": "up",
+  "gap_pct": -1.64,
+  "intraday_pct": 2.37,
+  "amplitude_pct": 5.09,
+  "volume_ratio_5d": 1.03,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.6,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "300522",
+  "name": "世名科技",
+  "trade_date": "2026-07-23",
+  "close": 11.7,
+  "change_pct": -1.93,
+  "bucket": "down",
+  "gap_pct": 1.68,
+  "intraday_pct": -3.54,
+  "amplitude_pct": 5.87,
+  "volume_ratio_5d": 0.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.02,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

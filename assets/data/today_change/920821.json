@@ -1,0 +1,23 @@
+{
+  "code": "920821",
+  "name": "则成电子",
+  "trade_date": "2026-07-23",
+  "close": 18.33,
+  "change_pct": -8.03,
+  "bucket": "strong_down",
+  "gap_pct": -2.66,
+  "intraday_pct": -5.52,
+  "amplitude_pct": 11.04,
+  "volume_ratio_5d": 0.69,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -8.12,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "601026",
+  "name": "道生天合",
+  "trade_date": "2026-10-16",
+  "close": 12.96,
+  "change_pct": 1.65,
+  "bucket": "up",
+  "gap_pct": 1.02,
+  "intraday_pct": 0.62,
+  "amplitude_pct": 3.53,
+  "volume_ratio_5d": 0.56,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.56,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

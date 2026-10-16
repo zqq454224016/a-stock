@@ -1,0 +1,21 @@
+{
+  "code": "300826",
+  "name": "测绘股份",
+  "trade_date": "2026-07-23",
+  "close": 11.37,
+  "change_pct": 1.7,
+  "bucket": "up",
+  "gap_pct": 0.09,
+  "intraday_pct": 1.61,
+  "amplitude_pct": 4.11,
+  "volume_ratio_5d": 0.81,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.61,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

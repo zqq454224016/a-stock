@@ -1,0 +1,21 @@
+{
+  "code": "300839",
+  "name": "博汇股份",
+  "trade_date": "2026-07-23",
+  "close": 10.49,
+  "change_pct": 5.01,
+  "bucket": "strong_up",
+  "gap_pct": 0.1,
+  "intraday_pct": 4.9,
+  "amplitude_pct": 5.71,
+  "volume_ratio_5d": 0.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 4.92,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "301226",
+  "name": "祥明智能",
+  "trade_date": "2026-07-23",
+  "close": 24.86,
+  "change_pct": 1.89,
+  "bucket": "up",
+  "gap_pct": -0.98,
+  "intraday_pct": 2.9,
+  "amplitude_pct": 3.69,
+  "volume_ratio_5d": 0.68,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.8,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

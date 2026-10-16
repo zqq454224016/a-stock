@@ -1,0 +1,22 @@
+{
+  "code": "000753",
+  "name": "漳州发展",
+  "trade_date": "2026-10-16",
+  "close": 4.94,
+  "change_pct": 3.35,
+  "bucket": "up",
+  "gap_pct": 1.67,
+  "intraday_pct": 1.65,
+  "amplitude_pct": 6.07,
+  "volume_ratio_5d": 1.12,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.26,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

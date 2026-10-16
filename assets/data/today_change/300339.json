@@ -1,0 +1,21 @@
+{
+  "code": "300339",
+  "name": "润和软件",
+  "trade_date": "2026-07-23",
+  "close": 35.4,
+  "change_pct": -2.02,
+  "bucket": "down",
+  "gap_pct": -1.16,
+  "intraday_pct": -0.87,
+  "amplitude_pct": 3.32,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.11,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

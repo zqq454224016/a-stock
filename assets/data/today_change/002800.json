@@ -1,0 +1,21 @@
+{
+  "code": "002800",
+  "name": "天顺股份",
+  "trade_date": "2026-10-16",
+  "close": 13.71,
+  "change_pct": 1.86,
+  "bucket": "up",
+  "gap_pct": 1.63,
+  "intraday_pct": 0.22,
+  "amplitude_pct": 4.01,
+  "volume_ratio_5d": 0.79,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.77,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

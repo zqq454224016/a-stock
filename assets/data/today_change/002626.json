@@ -1,0 +1,22 @@
+{
+  "code": "002626",
+  "name": "金达威",
+  "trade_date": "2026-10-16",
+  "close": 16.71,
+  "change_pct": 7.39,
+  "bucket": "strong_up",
+  "gap_pct": 0.64,
+  "intraday_pct": 6.7,
+  "amplitude_pct": 9.45,
+  "volume_ratio_5d": 8.17,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 7.3,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

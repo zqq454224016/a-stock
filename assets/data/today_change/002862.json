@@ -1,0 +1,23 @@
+{
+  "code": "002862",
+  "name": "实丰文化",
+  "trade_date": "2026-10-16",
+  "close": 15.05,
+  "change_pct": -1.7,
+  "bucket": "down",
+  "gap_pct": 1.05,
+  "intraday_pct": -2.71,
+  "amplitude_pct": 5.81,
+  "volume_ratio_5d": 0.69,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.79,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

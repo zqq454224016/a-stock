@@ -1,0 +1,22 @@
+{
+  "code": "002812",
+  "name": "恩捷股份",
+  "trade_date": "2026-10-16",
+  "close": 46.26,
+  "change_pct": -4.4,
+  "bucket": "down",
+  "gap_pct": 1.24,
+  "intraday_pct": -5.57,
+  "amplitude_pct": 7.52,
+  "volume_ratio_5d": 0.98,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -4.49,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "300835",
+  "name": "龙磁科技",
+  "trade_date": "2026-07-23",
+  "close": 142.0,
+  "change_pct": 4.52,
+  "bucket": "up",
+  "gap_pct": 1.6,
+  "intraday_pct": 2.87,
+  "amplitude_pct": 11.84,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 4.43,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

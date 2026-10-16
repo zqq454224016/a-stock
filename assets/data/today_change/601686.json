@@ -1,0 +1,20 @@
+{
+  "code": "601686",
+  "name": "友发集团",
+  "trade_date": "2026-10-16",
+  "close": 5.07,
+  "change_pct": 0.4,
+  "bucket": "up",
+  "gap_pct": 0.4,
+  "intraday_pct": 0.0,
+  "amplitude_pct": 1.19,
+  "volume_ratio_5d": 0.55,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.31,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "code": "002239",
+  "name": "奥特佳",
+  "trade_date": "2026-10-16",
+  "close": 2.41,
+  "change_pct": 1.69,
+  "bucket": "up",
+  "gap_pct": 0.84,
+  "intraday_pct": 0.84,
+  "amplitude_pct": 2.95,
+  "volume_ratio_5d": 1.02,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.6,
+  "drivers": [
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

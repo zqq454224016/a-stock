@@ -1,0 +1,21 @@
+{
+  "code": "000014",
+  "name": "沙河股份",
+  "trade_date": "2026-10-16",
+  "close": 10.58,
+  "change_pct": 0.38,
+  "bucket": "up",
+  "gap_pct": 2.47,
+  "intraday_pct": -2.04,
+  "amplitude_pct": 6.36,
+  "volume_ratio_5d": 0.93,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.29,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "002100",
+  "name": "天康生物",
+  "trade_date": "2026-10-16",
+  "close": 7.66,
+  "change_pct": 5.22,
+  "bucket": "strong_up",
+  "gap_pct": 0.55,
+  "intraday_pct": 4.64,
+  "amplitude_pct": 8.65,
+  "volume_ratio_5d": 1.93,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 5.13,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

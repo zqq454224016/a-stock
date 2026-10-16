@@ -1,0 +1,20 @@
+{
+  "code": "002442",
+  "name": "龙星科技",
+  "trade_date": "2026-10-16",
+  "close": 5.0,
+  "change_pct": 0.81,
+  "bucket": "up",
+  "gap_pct": 1.81,
+  "intraday_pct": -0.99,
+  "amplitude_pct": 3.23,
+  "volume_ratio_5d": 0.74,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.72,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

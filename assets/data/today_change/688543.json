@@ -1,0 +1,21 @@
+{
+  "code": "688543",
+  "name": "国科军工",
+  "trade_date": "2026-07-23",
+  "close": 36.39,
+  "change_pct": 5.3,
+  "bucket": "strong_up",
+  "gap_pct": -0.17,
+  "intraday_pct": 5.48,
+  "amplitude_pct": 6.11,
+  "volume_ratio_5d": 1.47,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 5.21,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

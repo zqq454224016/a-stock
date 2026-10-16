@@ -1,0 +1,20 @@
+{
+  "code": "601061",
+  "name": "中信金属",
+  "trade_date": "2026-10-16",
+  "close": 10.18,
+  "change_pct": 0.39,
+  "bucket": "up",
+  "gap_pct": 1.38,
+  "intraday_pct": -0.97,
+  "amplitude_pct": 3.16,
+  "volume_ratio_5d": 0.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.3,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

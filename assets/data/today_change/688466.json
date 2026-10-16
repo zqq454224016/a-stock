@@ -1,0 +1,21 @@
+{
+  "code": "688466",
+  "name": "金科环境",
+  "trade_date": "2026-07-23",
+  "close": 12.0,
+  "change_pct": 3.63,
+  "bucket": "up",
+  "gap_pct": 0.35,
+  "intraday_pct": 3.27,
+  "amplitude_pct": 4.84,
+  "volume_ratio_5d": 1.23,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.54,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

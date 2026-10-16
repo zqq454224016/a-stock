@@ -1,0 +1,22 @@
+{
+  "code": "300969",
+  "name": "恒帅股份",
+  "trade_date": "2026-07-23",
+  "close": 75.93,
+  "change_pct": -2.84,
+  "bucket": "down",
+  "gap_pct": -1.48,
+  "intraday_pct": -1.38,
+  "amplitude_pct": 5.55,
+  "volume_ratio_5d": 0.81,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.93,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

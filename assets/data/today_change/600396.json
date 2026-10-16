@@ -1,0 +1,21 @@
+{
+  "code": "600396",
+  "name": "华电辽能",
+  "trade_date": "2026-10-16",
+  "close": 11.19,
+  "change_pct": 1.45,
+  "bucket": "up",
+  "gap_pct": 1.99,
+  "intraday_pct": -0.53,
+  "amplitude_pct": 3.26,
+  "volume_ratio_5d": 1.01,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.36,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "002453",
+  "name": "华软科技",
+  "trade_date": "2026-10-16",
+  "close": 4.49,
+  "change_pct": -0.88,
+  "bucket": "down",
+  "gap_pct": 1.55,
+  "intraday_pct": -2.39,
+  "amplitude_pct": 3.97,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.97,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

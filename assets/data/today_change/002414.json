@@ -1,0 +1,21 @@
+{
+  "code": "002414",
+  "name": "高德红外",
+  "trade_date": "2026-10-16",
+  "close": 10.78,
+  "change_pct": 2.47,
+  "bucket": "up",
+  "gap_pct": 1.71,
+  "intraday_pct": 0.75,
+  "amplitude_pct": 3.23,
+  "volume_ratio_5d": 1.26,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.38,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

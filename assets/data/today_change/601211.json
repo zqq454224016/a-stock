@@ -1,0 +1,21 @@
+{
+  "code": "601211",
+  "name": "XD国泰海",
+  "trade_date": "2026-10-16",
+  "close": 16.65,
+  "change_pct": -1.77,
+  "bucket": "down",
+  "gap_pct": -1.71,
+  "intraday_pct": -0.06,
+  "amplitude_pct": 2.36,
+  "volume_ratio_5d": 1.21,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.86,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

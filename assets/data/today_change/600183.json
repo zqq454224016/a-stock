@@ -1,0 +1,21 @@
+{
+  "code": "600183",
+  "name": "生益科技",
+  "trade_date": "2026-10-16",
+  "close": 114.6,
+  "change_pct": -0.01,
+  "bucket": "down",
+  "gap_pct": 2.96,
+  "intraday_pct": -2.88,
+  "amplitude_pct": 5.33,
+  "volume_ratio_5d": 0.74,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.1,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

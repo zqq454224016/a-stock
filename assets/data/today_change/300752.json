@@ -1,0 +1,22 @@
+{
+  "code": "300752",
+  "name": "隆利科技",
+  "trade_date": "2026-07-23",
+  "close": 9.08,
+  "change_pct": 2.02,
+  "bucket": "up",
+  "gap_pct": -0.22,
+  "intraday_pct": 2.25,
+  "amplitude_pct": 3.82,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.93,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

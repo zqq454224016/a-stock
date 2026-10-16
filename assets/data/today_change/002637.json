@@ -1,0 +1,22 @@
+{
+  "code": "002637",
+  "name": "赞宇科技",
+  "trade_date": "2026-10-16",
+  "close": 9.55,
+  "change_pct": -0.31,
+  "bucket": "down",
+  "gap_pct": 1.77,
+  "intraday_pct": -2.05,
+  "amplitude_pct": 3.65,
+  "volume_ratio_5d": 0.58,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.4,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

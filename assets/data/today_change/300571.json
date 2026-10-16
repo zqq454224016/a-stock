@@ -1,0 +1,20 @@
+{
+  "code": "300571",
+  "name": "平治信息",
+  "trade_date": "2026-07-23",
+  "close": 31.58,
+  "change_pct": 0.99,
+  "bucket": "up",
+  "gap_pct": 1.22,
+  "intraday_pct": -0.22,
+  "amplitude_pct": 7.52,
+  "volume_ratio_5d": 1.11,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.9,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

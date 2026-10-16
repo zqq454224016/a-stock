@@ -1,0 +1,21 @@
+{
+  "code": "688363",
+  "name": "华熙生物",
+  "trade_date": "2026-07-23",
+  "close": 38.3,
+  "change_pct": -1.29,
+  "bucket": "down",
+  "gap_pct": -1.08,
+  "intraday_pct": -0.21,
+  "amplitude_pct": 1.91,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.38,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

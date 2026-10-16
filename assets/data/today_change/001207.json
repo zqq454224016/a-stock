@@ -1,0 +1,22 @@
+{
+  "code": "001207",
+  "name": "联科科技",
+  "trade_date": "2026-10-16",
+  "close": 17.01,
+  "change_pct": 0.95,
+  "bucket": "up",
+  "gap_pct": 2.02,
+  "intraday_pct": -1.05,
+  "amplitude_pct": 3.09,
+  "volume_ratio_5d": 0.62,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.86,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

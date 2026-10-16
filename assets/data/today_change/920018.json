@@ -1,0 +1,22 @@
+{
+  "code": "920018",
+  "name": "宏远股份",
+  "trade_date": "2026-07-23",
+  "close": 16.24,
+  "change_pct": 25.02,
+  "bucket": "limit_up",
+  "gap_pct": 0.85,
+  "intraday_pct": 23.97,
+  "amplitude_pct": 28.18,
+  "volume_ratio_5d": 4.65,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 24.93,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "603599",
+  "name": "广信股份",
+  "trade_date": "2026-10-16",
+  "close": 9.96,
+  "change_pct": 1.53,
+  "bucket": "up",
+  "gap_pct": 0.51,
+  "intraday_pct": 1.01,
+  "amplitude_pct": 2.45,
+  "volume_ratio_5d": 1.15,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.44,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

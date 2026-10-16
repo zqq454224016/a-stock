@@ -1,0 +1,22 @@
+{
+  "code": "688610",
+  "name": "埃科光电",
+  "trade_date": "2026-07-23",
+  "close": 146.81,
+  "change_pct": -4.75,
+  "bucket": "down",
+  "gap_pct": 1.48,
+  "intraday_pct": -6.14,
+  "amplitude_pct": 8.04,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -4.84,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

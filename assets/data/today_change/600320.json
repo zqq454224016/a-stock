@@ -1,0 +1,21 @@
+{
+  "code": "600320",
+  "name": "振华重工",
+  "trade_date": "2026-10-16",
+  "close": 4.12,
+  "change_pct": 1.98,
+  "bucket": "up",
+  "gap_pct": 0.25,
+  "intraday_pct": 1.73,
+  "amplitude_pct": 2.97,
+  "volume_ratio_5d": 0.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.89,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

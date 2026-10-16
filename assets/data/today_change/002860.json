@@ -1,0 +1,22 @@
+{
+  "code": "002860",
+  "name": "星帅尔",
+  "trade_date": "2026-10-16",
+  "close": 18.16,
+  "change_pct": -0.71,
+  "bucket": "down",
+  "gap_pct": 9.68,
+  "intraday_pct": -9.47,
+  "amplitude_pct": 12.19,
+  "volume_ratio_5d": 2.75,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.8,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量显著放大"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

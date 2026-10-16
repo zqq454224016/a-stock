@@ -1,0 +1,21 @@
+{
+  "code": "002636",
+  "name": "金安国纪",
+  "trade_date": "2026-10-16",
+  "close": 65.3,
+  "change_pct": -8.14,
+  "bucket": "strong_down",
+  "gap_pct": -0.14,
+  "intraday_pct": -8.02,
+  "amplitude_pct": 9.8,
+  "volume_ratio_5d": 1.09,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -8.23,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

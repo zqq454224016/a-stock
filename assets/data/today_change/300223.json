@@ -1,0 +1,22 @@
+{
+  "code": "300223",
+  "name": "北京君正",
+  "trade_date": "2026-07-23",
+  "close": 151.76,
+  "change_pct": -3.84,
+  "bucket": "down",
+  "gap_pct": 2.03,
+  "intraday_pct": -5.76,
+  "amplitude_pct": 8.73,
+  "volume_ratio_5d": 0.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.93,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

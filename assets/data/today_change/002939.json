@@ -1,0 +1,21 @@
+{
+  "code": "002939",
+  "name": "长城证券",
+  "trade_date": "2026-10-16",
+  "close": 7.56,
+  "change_pct": -1.05,
+  "bucket": "down",
+  "gap_pct": 0.13,
+  "intraday_pct": -1.18,
+  "amplitude_pct": 2.23,
+  "volume_ratio_5d": 1.08,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.14,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

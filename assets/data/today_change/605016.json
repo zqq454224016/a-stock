@@ -1,0 +1,22 @@
+{
+  "code": "605016",
+  "name": "百龙创园",
+  "trade_date": "2026-10-16",
+  "close": 19.3,
+  "change_pct": 0.63,
+  "bucket": "up",
+  "gap_pct": 1.67,
+  "intraday_pct": -1.03,
+  "amplitude_pct": 2.61,
+  "volume_ratio_5d": 0.69,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.54,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

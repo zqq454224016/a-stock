@@ -1,0 +1,23 @@
+{
+  "code": "605007",
+  "name": "五洲特纸",
+  "trade_date": "2026-10-16",
+  "close": 13.93,
+  "change_pct": -1.55,
+  "bucket": "down",
+  "gap_pct": 1.98,
+  "intraday_pct": -3.47,
+  "amplitude_pct": 4.45,
+  "volume_ratio_5d": 0.49,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.64,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

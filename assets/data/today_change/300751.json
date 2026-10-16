@@ -1,0 +1,22 @@
+{
+  "code": "300751",
+  "name": "迈为股份",
+  "trade_date": "2026-07-23",
+  "close": 182.0,
+  "change_pct": -3.05,
+  "bucket": "down",
+  "gap_pct": 0.67,
+  "intraday_pct": -3.7,
+  "amplitude_pct": 6.96,
+  "volume_ratio_5d": 0.63,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.14,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

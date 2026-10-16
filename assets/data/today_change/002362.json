@@ -1,0 +1,23 @@
+{
+  "code": "002362",
+  "name": "汉王科技",
+  "trade_date": "2026-10-16",
+  "close": 15.79,
+  "change_pct": 2.6,
+  "bucket": "up",
+  "gap_pct": 5.39,
+  "intraday_pct": -2.65,
+  "amplitude_pct": 8.12,
+  "volume_ratio_5d": 4.11,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.51,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

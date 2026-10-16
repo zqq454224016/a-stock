@@ -1,0 +1,21 @@
+{
+  "code": "002009",
+  "name": "天奇股份",
+  "trade_date": "2026-10-16",
+  "close": 14.65,
+  "change_pct": 2.23,
+  "bucket": "up",
+  "gap_pct": 1.54,
+  "intraday_pct": 0.69,
+  "amplitude_pct": 3.7,
+  "volume_ratio_5d": 1.04,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.14,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

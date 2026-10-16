@@ -1,0 +1,21 @@
+{
+  "code": "301606",
+  "name": "绿联科技",
+  "trade_date": "2026-07-23",
+  "close": 54.44,
+  "change_pct": -2.49,
+  "bucket": "down",
+  "gap_pct": 0.02,
+  "intraday_pct": -2.51,
+  "amplitude_pct": 4.59,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.58,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

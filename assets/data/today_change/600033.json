@@ -1,0 +1,21 @@
+{
+  "code": "600033",
+  "name": "福建高速",
+  "trade_date": "2026-10-16",
+  "close": 3.79,
+  "change_pct": 2.43,
+  "bucket": "up",
+  "gap_pct": 0.0,
+  "intraday_pct": 2.43,
+  "amplitude_pct": 3.51,
+  "volume_ratio_5d": 1.23,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.34,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

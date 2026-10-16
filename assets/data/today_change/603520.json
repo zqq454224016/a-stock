@@ -1,0 +1,20 @@
+{
+  "code": "603520",
+  "name": "司太立",
+  "trade_date": "2026-10-16",
+  "close": 8.05,
+  "change_pct": -0.62,
+  "bucket": "down",
+  "gap_pct": 0.74,
+  "intraday_pct": -1.35,
+  "amplitude_pct": 4.44,
+  "volume_ratio_5d": 1.31,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.71,
+  "drivers": [
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "920096",
+  "name": "嘉晨智能",
+  "trade_date": "2026-07-23",
+  "close": 34.18,
+  "change_pct": 3.11,
+  "bucket": "up",
+  "gap_pct": 2.05,
+  "intraday_pct": 1.03,
+  "amplitude_pct": 8.33,
+  "volume_ratio_5d": 0.9,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.02,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

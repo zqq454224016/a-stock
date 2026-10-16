@@ -1,0 +1,22 @@
+{
+  "code": "301225",
+  "name": "恒勃股份",
+  "trade_date": "2026-07-23",
+  "close": 53.72,
+  "change_pct": -1.59,
+  "bucket": "down",
+  "gap_pct": -1.08,
+  "intraday_pct": -0.52,
+  "amplitude_pct": 3.3,
+  "volume_ratio_5d": 0.59,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.68,
+  "drivers": [
+    "低开形成压力",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

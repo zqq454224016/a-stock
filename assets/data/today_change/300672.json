@@ -1,0 +1,23 @@
+{
+  "code": "300672",
+  "name": "国科微",
+  "trade_date": "2026-07-23",
+  "close": 150.14,
+  "change_pct": -2.92,
+  "bucket": "down",
+  "gap_pct": 1.19,
+  "intraday_pct": -4.06,
+  "amplitude_pct": 8.02,
+  "volume_ratio_5d": 0.67,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.01,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

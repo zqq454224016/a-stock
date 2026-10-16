@@ -1,0 +1,20 @@
+{
+  "code": "600783",
+  "name": "鲁信创投",
+  "trade_date": "2026-10-16",
+  "close": 13.35,
+  "change_pct": 0.68,
+  "bucket": "up",
+  "gap_pct": 1.43,
+  "intraday_pct": -0.74,
+  "amplitude_pct": 3.85,
+  "volume_ratio_5d": 1.02,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.59,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

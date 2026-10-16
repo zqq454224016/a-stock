@@ -1,0 +1,22 @@
+{
+  "code": "002791",
+  "name": "坚朗五金",
+  "trade_date": "2026-10-16",
+  "close": 16.0,
+  "change_pct": 9.29,
+  "bucket": "strong_up",
+  "gap_pct": 0.75,
+  "intraday_pct": 8.47,
+  "amplitude_pct": 9.36,
+  "volume_ratio_5d": 3.84,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 9.2,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

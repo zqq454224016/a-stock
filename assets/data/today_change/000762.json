@@ -1,0 +1,20 @@
+{
+  "code": "000762",
+  "name": "西藏矿业",
+  "trade_date": "2026-10-16",
+  "close": 19.2,
+  "change_pct": -0.31,
+  "bucket": "down",
+  "gap_pct": 0.99,
+  "intraday_pct": -1.29,
+  "amplitude_pct": 2.96,
+  "volume_ratio_5d": 0.79,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.4,
+  "drivers": [
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

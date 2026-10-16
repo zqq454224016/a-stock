@@ -1,0 +1,22 @@
+{
+  "code": "603936",
+  "name": "博敏电子",
+  "trade_date": "2026-10-16",
+  "close": 16.38,
+  "change_pct": -8.39,
+  "bucket": "strong_down",
+  "gap_pct": 1.79,
+  "intraday_pct": -10.0,
+  "amplitude_pct": 12.25,
+  "volume_ratio_5d": 1.29,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -8.48,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

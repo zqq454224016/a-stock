@@ -1,0 +1,20 @@
+{
+  "code": "002344",
+  "name": "海宁皮城",
+  "trade_date": "2026-10-16",
+  "close": 3.9,
+  "change_pct": 1.04,
+  "bucket": "up",
+  "gap_pct": 0.52,
+  "intraday_pct": 0.52,
+  "amplitude_pct": 2.85,
+  "volume_ratio_5d": 0.98,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.95,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

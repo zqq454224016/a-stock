@@ -1,0 +1,21 @@
+{
+  "code": "600315",
+  "name": "XD上海家",
+  "trade_date": "2026-10-16",
+  "close": 17.97,
+  "change_pct": -1.05,
+  "bucket": "down",
+  "gap_pct": 0.44,
+  "intraday_pct": -1.48,
+  "amplitude_pct": 4.46,
+  "volume_ratio_5d": 0.84,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.14,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

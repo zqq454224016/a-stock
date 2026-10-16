@@ -1,0 +1,21 @@
+{
+  "code": "001283",
+  "name": "豪鹏科技",
+  "trade_date": "2026-10-16",
+  "close": 48.28,
+  "change_pct": -3.48,
+  "bucket": "down",
+  "gap_pct": 0.96,
+  "intraday_pct": -4.4,
+  "amplitude_pct": 4.8,
+  "volume_ratio_5d": 0.93,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.57,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

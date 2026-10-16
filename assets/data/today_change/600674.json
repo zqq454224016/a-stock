@@ -1,0 +1,20 @@
+{
+  "code": "600674",
+  "name": "川投能源",
+  "trade_date": "2026-10-16",
+  "close": 17.4,
+  "change_pct": -0.46,
+  "bucket": "down",
+  "gap_pct": 0.0,
+  "intraday_pct": -0.46,
+  "amplitude_pct": 3.03,
+  "volume_ratio_5d": 1.15,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.55,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

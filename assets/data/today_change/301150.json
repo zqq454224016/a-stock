@@ -1,0 +1,21 @@
+{
+  "code": "301150",
+  "name": "中一科技",
+  "trade_date": "2026-07-23",
+  "close": 37.07,
+  "change_pct": 2.43,
+  "bucket": "up",
+  "gap_pct": 1.99,
+  "intraday_pct": 0.43,
+  "amplitude_pct": 7.35,
+  "volume_ratio_5d": 1.11,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.34,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

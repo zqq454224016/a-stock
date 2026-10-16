@@ -1,0 +1,21 @@
+{
+  "code": "600880",
+  "name": "博瑞传播",
+  "trade_date": "2026-10-16",
+  "close": 4.23,
+  "change_pct": -0.7,
+  "bucket": "down",
+  "gap_pct": 1.88,
+  "intraday_pct": -2.53,
+  "amplitude_pct": 7.51,
+  "volume_ratio_5d": 0.97,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.79,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

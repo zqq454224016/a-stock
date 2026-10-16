@@ -1,0 +1,21 @@
+{
+  "code": "600513",
+  "name": "联环药业",
+  "trade_date": "2026-10-16",
+  "close": 14.09,
+  "change_pct": -1.67,
+  "bucket": "down",
+  "gap_pct": 0.98,
+  "intraday_pct": -2.63,
+  "amplitude_pct": 9.42,
+  "volume_ratio_5d": 0.78,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.76,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

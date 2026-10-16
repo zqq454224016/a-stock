@@ -1,0 +1,21 @@
+{
+  "code": "300039",
+  "name": "上海凯宝",
+  "trade_date": "2026-07-23",
+  "close": 5.55,
+  "change_pct": -3.65,
+  "bucket": "down",
+  "gap_pct": -3.3,
+  "intraday_pct": -0.36,
+  "amplitude_pct": 7.47,
+  "volume_ratio_5d": 0.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.74,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

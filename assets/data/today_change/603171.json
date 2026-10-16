@@ -1,0 +1,21 @@
+{
+  "code": "603171",
+  "name": "税友股份",
+  "trade_date": "2026-10-16",
+  "close": 38.9,
+  "change_pct": -0.56,
+  "bucket": "down",
+  "gap_pct": 2.25,
+  "intraday_pct": -2.75,
+  "amplitude_pct": 6.31,
+  "volume_ratio_5d": 0.9,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.65,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

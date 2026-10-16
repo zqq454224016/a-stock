@@ -1,0 +1,21 @@
+{
+  "code": "301042",
+  "name": "安联锐视",
+  "trade_date": "2026-07-23",
+  "close": 26.58,
+  "change_pct": -1.34,
+  "bucket": "down",
+  "gap_pct": -0.07,
+  "intraday_pct": -1.26,
+  "amplitude_pct": 4.9,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.43,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

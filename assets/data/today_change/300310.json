@@ -1,0 +1,21 @@
+{
+  "code": "300310",
+  "name": "宜通世纪",
+  "trade_date": "2026-07-23",
+  "close": 4.15,
+  "change_pct": 2.98,
+  "bucket": "up",
+  "gap_pct": -0.74,
+  "intraday_pct": 3.75,
+  "amplitude_pct": 5.96,
+  "volume_ratio_5d": 0.99,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.89,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

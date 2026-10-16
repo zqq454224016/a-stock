@@ -1,0 +1,21 @@
+{
+  "code": "920028",
+  "name": "新恒泰",
+  "trade_date": "2026-07-23",
+  "close": 13.3,
+  "change_pct": 1.14,
+  "bucket": "up",
+  "gap_pct": -0.08,
+  "intraday_pct": 1.22,
+  "amplitude_pct": 4.18,
+  "volume_ratio_5d": 1.0,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.05,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

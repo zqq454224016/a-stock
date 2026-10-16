@@ -1,0 +1,20 @@
+{
+  "code": "603355",
+  "name": "莱克电气",
+  "trade_date": "2026-10-16",
+  "close": 31.85,
+  "change_pct": -1.09,
+  "bucket": "down",
+  "gap_pct": -0.4,
+  "intraday_pct": -0.69,
+  "amplitude_pct": 5.16,
+  "volume_ratio_5d": 0.94,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.18,
+  "drivers": [
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

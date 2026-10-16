@@ -1,0 +1,21 @@
+{
+  "code": "300824",
+  "name": "北鼎股份",
+  "trade_date": "2026-07-23",
+  "close": 7.23,
+  "change_pct": 2.55,
+  "bucket": "up",
+  "gap_pct": -0.71,
+  "intraday_pct": 3.29,
+  "amplitude_pct": 4.54,
+  "volume_ratio_5d": 1.02,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.46,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

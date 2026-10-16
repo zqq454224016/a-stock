@@ -1,0 +1,21 @@
+{
+  "code": "301041",
+  "name": "金百泽",
+  "trade_date": "2026-07-23",
+  "close": 21.2,
+  "change_pct": -1.99,
+  "bucket": "down",
+  "gap_pct": -1.53,
+  "intraday_pct": -0.47,
+  "amplitude_pct": 4.72,
+  "volume_ratio_5d": 0.83,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.08,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

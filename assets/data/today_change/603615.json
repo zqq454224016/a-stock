@@ -1,0 +1,21 @@
+{
+  "code": "603615",
+  "name": "茶花股份",
+  "trade_date": "2026-10-16",
+  "close": 16.57,
+  "change_pct": 0.24,
+  "bucket": "up",
+  "gap_pct": 2.0,
+  "intraday_pct": -1.72,
+  "amplitude_pct": 3.57,
+  "volume_ratio_5d": 0.74,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.15,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

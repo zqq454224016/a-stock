@@ -1,0 +1,22 @@
+{
+  "code": "301100",
+  "name": "风光股份",
+  "trade_date": "2026-07-23",
+  "close": 14.99,
+  "change_pct": -2.03,
+  "bucket": "down",
+  "gap_pct": -1.9,
+  "intraday_pct": -0.13,
+  "amplitude_pct": 3.27,
+  "volume_ratio_5d": 0.54,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.12,
+  "drivers": [
+    "低开形成压力",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

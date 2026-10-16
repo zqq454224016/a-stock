@@ -1,0 +1,22 @@
+{
+  "code": "688563",
+  "name": "航材股份",
+  "trade_date": "2026-07-23",
+  "close": 50.83,
+  "change_pct": 1.42,
+  "bucket": "up",
+  "gap_pct": 0.28,
+  "intraday_pct": 1.13,
+  "amplitude_pct": 2.19,
+  "volume_ratio_5d": 0.67,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.33,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

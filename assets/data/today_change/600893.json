@@ -1,0 +1,21 @@
+{
+  "code": "600893",
+  "name": "航发动力",
+  "trade_date": "2026-10-16",
+  "close": 39.5,
+  "change_pct": 3.46,
+  "bucket": "up",
+  "gap_pct": 0.92,
+  "intraday_pct": 2.52,
+  "amplitude_pct": 4.9,
+  "volume_ratio_5d": 1.31,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.37,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

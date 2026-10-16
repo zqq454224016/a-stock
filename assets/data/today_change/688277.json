@@ -1,0 +1,22 @@
+{
+  "code": "688277",
+  "name": "天智航-U",
+  "trade_date": "2026-07-15",
+  "close": 19.09,
+  "change_pct": 8.04,
+  "bucket": "strong_up",
+  "gap_pct": 0.68,
+  "intraday_pct": 7.31,
+  "amplitude_pct": 13.19,
+  "volume_ratio_5d": 1.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 7.95,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

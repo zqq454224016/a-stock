@@ -1,0 +1,21 @@
+{
+  "code": "300657",
+  "name": "弘信电子",
+  "trade_date": "2026-07-23",
+  "close": 33.22,
+  "change_pct": -1.37,
+  "bucket": "down",
+  "gap_pct": -0.21,
+  "intraday_pct": -1.16,
+  "amplitude_pct": 5.73,
+  "volume_ratio_5d": 0.87,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.46,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

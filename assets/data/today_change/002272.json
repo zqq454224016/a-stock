@@ -1,0 +1,21 @@
+{
+  "code": "002272",
+  "name": "川润股份",
+  "trade_date": "2026-10-16",
+  "close": 12.34,
+  "change_pct": -0.32,
+  "bucket": "down",
+  "gap_pct": 1.78,
+  "intraday_pct": -2.06,
+  "amplitude_pct": 3.63,
+  "volume_ratio_5d": 0.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.41,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

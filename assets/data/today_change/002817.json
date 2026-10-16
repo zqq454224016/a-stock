@@ -1,0 +1,20 @@
+{
+  "code": "002817",
+  "name": "黄山胶囊",
+  "trade_date": "2026-10-16",
+  "close": 6.44,
+  "change_pct": 0.63,
+  "bucket": "up",
+  "gap_pct": 1.09,
+  "intraday_pct": -0.46,
+  "amplitude_pct": 3.91,
+  "volume_ratio_5d": 1.06,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.54,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

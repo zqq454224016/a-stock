@@ -1,0 +1,22 @@
+{
+  "code": "600797",
+  "name": "浙大网新",
+  "trade_date": "2026-10-16",
+  "close": 6.27,
+  "change_pct": -1.57,
+  "bucket": "down",
+  "gap_pct": 1.26,
+  "intraday_pct": -2.79,
+  "amplitude_pct": 4.24,
+  "volume_ratio_5d": 1.06,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.66,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "code": "000012",
+  "name": "南 玻Ａ",
+  "trade_date": "2026-10-16",
+  "close": 3.52,
+  "change_pct": 0.28,
+  "bucket": "up",
+  "gap_pct": 0.57,
+  "intraday_pct": -0.28,
+  "amplitude_pct": 1.42,
+  "volume_ratio_5d": 0.73,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.19,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

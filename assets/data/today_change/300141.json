@@ -1,0 +1,22 @@
+{
+  "code": "300141",
+  "name": "和顺电气",
+  "trade_date": "2026-07-23",
+  "close": 9.84,
+  "change_pct": 20.0,
+  "bucket": "limit_up",
+  "gap_pct": 0.0,
+  "intraday_pct": 20.0,
+  "amplitude_pct": 20.49,
+  "volume_ratio_5d": 3.45,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 19.91,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

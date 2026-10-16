@@ -1,0 +1,21 @@
+{
+  "code": "002650",
+  "name": "ST加加",
+  "trade_date": "2026-10-16",
+  "close": 6.18,
+  "change_pct": 1.31,
+  "bucket": "up",
+  "gap_pct": -0.82,
+  "intraday_pct": 2.15,
+  "amplitude_pct": 3.93,
+  "volume_ratio_5d": 1.18,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.22,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

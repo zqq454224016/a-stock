@@ -1,0 +1,22 @@
+{
+  "code": "001332",
+  "name": "锡装股份",
+  "trade_date": "2026-10-16",
+  "close": 24.23,
+  "change_pct": 1.81,
+  "bucket": "up",
+  "gap_pct": 2.69,
+  "intraday_pct": -0.86,
+  "amplitude_pct": 3.24,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.72,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "000532",
+  "name": "华金资本",
+  "trade_date": "2026-10-16",
+  "close": 11.31,
+  "change_pct": -1.48,
+  "bucket": "down",
+  "gap_pct": 1.39,
+  "intraday_pct": -2.84,
+  "amplitude_pct": 4.62,
+  "volume_ratio_5d": 0.82,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.57,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

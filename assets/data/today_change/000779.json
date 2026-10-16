@@ -1,0 +1,21 @@
+{
+  "code": "000779",
+  "name": "甘咨询",
+  "trade_date": "2026-10-16",
+  "close": 7.98,
+  "change_pct": -0.25,
+  "bucket": "down",
+  "gap_pct": 2.0,
+  "intraday_pct": -2.21,
+  "amplitude_pct": 3.37,
+  "volume_ratio_5d": 1.02,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.34,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

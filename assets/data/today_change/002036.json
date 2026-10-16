@@ -1,0 +1,21 @@
+{
+  "code": "002036",
+  "name": "联创电子",
+  "trade_date": "2026-10-16",
+  "close": 5.51,
+  "change_pct": 2.04,
+  "bucket": "up",
+  "gap_pct": 0.93,
+  "intraday_pct": 1.1,
+  "amplitude_pct": 5.19,
+  "volume_ratio_5d": 1.27,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.95,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

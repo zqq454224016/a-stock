@@ -1,0 +1,20 @@
+{
+  "code": "002274",
+  "name": "华昌化工",
+  "trade_date": "2026-10-16",
+  "close": 5.48,
+  "change_pct": 0.92,
+  "bucket": "up",
+  "gap_pct": 1.47,
+  "intraday_pct": -0.54,
+  "amplitude_pct": 2.39,
+  "volume_ratio_5d": 0.83,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.83,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

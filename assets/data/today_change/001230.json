@@ -1,0 +1,23 @@
+{
+  "code": "001230",
+  "name": "劲旅环境",
+  "trade_date": "2026-10-16",
+  "close": 18.05,
+  "change_pct": -2.06,
+  "bucket": "down",
+  "gap_pct": 2.06,
+  "intraday_pct": -4.04,
+  "amplitude_pct": 5.48,
+  "volume_ratio_5d": 0.65,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.15,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

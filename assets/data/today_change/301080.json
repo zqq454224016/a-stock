@@ -1,0 +1,21 @@
+{
+  "code": "301080",
+  "name": "百普赛斯",
+  "trade_date": "2026-07-23",
+  "close": 52.6,
+  "change_pct": -1.22,
+  "bucket": "down",
+  "gap_pct": -0.6,
+  "intraday_pct": -0.62,
+  "amplitude_pct": 4.54,
+  "volume_ratio_5d": 0.61,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.31,
+  "drivers": [
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

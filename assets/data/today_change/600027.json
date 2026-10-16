@@ -1,0 +1,20 @@
+{
+  "code": "600027",
+  "name": "华电国际",
+  "trade_date": "2026-10-16",
+  "close": 5.18,
+  "change_pct": 0.78,
+  "bucket": "up",
+  "gap_pct": 0.58,
+  "intraday_pct": 0.19,
+  "amplitude_pct": 2.14,
+  "volume_ratio_5d": 0.77,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.69,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

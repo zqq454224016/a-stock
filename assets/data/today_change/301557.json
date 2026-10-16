@@ -1,0 +1,20 @@
+{
+  "code": "301557",
+  "name": "常友科技",
+  "trade_date": "2026-07-23",
+  "close": 74.61,
+  "change_pct": -0.6,
+  "bucket": "down",
+  "gap_pct": -0.39,
+  "intraday_pct": -0.21,
+  "amplitude_pct": 4.64,
+  "volume_ratio_5d": 0.46,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.69,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

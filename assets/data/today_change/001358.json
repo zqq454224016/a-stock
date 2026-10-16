@@ -1,0 +1,22 @@
+{
+  "code": "001358",
+  "name": "兴欣新材",
+  "trade_date": "2026-10-16",
+  "close": 24.92,
+  "change_pct": 10.02,
+  "bucket": "limit_up",
+  "gap_pct": 2.69,
+  "intraday_pct": 7.14,
+  "amplitude_pct": 7.33,
+  "volume_ratio_5d": 1.09,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 9.93,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "002174",
+  "name": "游族网络",
+  "trade_date": "2026-10-16",
+  "close": 12.05,
+  "change_pct": -3.21,
+  "bucket": "down",
+  "gap_pct": 1.77,
+  "intraday_pct": -4.89,
+  "amplitude_pct": 6.51,
+  "volume_ratio_5d": 0.99,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.3,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

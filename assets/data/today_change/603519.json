@@ -1,0 +1,22 @@
+{
+  "code": "603519",
+  "name": "立霸股份",
+  "trade_date": "2026-10-16",
+  "close": 15.97,
+  "change_pct": -0.68,
+  "bucket": "down",
+  "gap_pct": 1.24,
+  "intraday_pct": -1.9,
+  "amplitude_pct": 3.67,
+  "volume_ratio_5d": 0.61,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.77,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "code": "688351",
+  "name": "微电生理",
+  "trade_date": "2026-07-23",
+  "close": 19.18,
+  "change_pct": -1.79,
+  "bucket": "down",
+  "gap_pct": -0.92,
+  "intraday_pct": -0.88,
+  "amplitude_pct": 3.94,
+  "volume_ratio_5d": 0.72,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.88,
+  "drivers": [
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

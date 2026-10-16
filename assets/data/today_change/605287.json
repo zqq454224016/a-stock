@@ -1,0 +1,21 @@
+{
+  "code": "605287",
+  "name": "德才股份",
+  "trade_date": "2026-10-16",
+  "close": 44.15,
+  "change_pct": -3.12,
+  "bucket": "down",
+  "gap_pct": -2.46,
+  "intraday_pct": -0.67,
+  "amplitude_pct": 7.46,
+  "volume_ratio_5d": 0.82,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.21,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

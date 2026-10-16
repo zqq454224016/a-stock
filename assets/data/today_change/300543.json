@@ -1,0 +1,21 @@
+{
+  "code": "300543",
+  "name": "朗科智能",
+  "trade_date": "2026-07-23",
+  "close": 6.73,
+  "change_pct": 2.44,
+  "bucket": "up",
+  "gap_pct": -0.76,
+  "intraday_pct": 3.22,
+  "amplitude_pct": 3.81,
+  "volume_ratio_5d": 0.75,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.35,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

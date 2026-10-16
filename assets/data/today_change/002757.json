@@ -1,0 +1,22 @@
+{
+  "code": "002757",
+  "name": "南兴股份",
+  "trade_date": "2026-10-16",
+  "close": 16.05,
+  "change_pct": -1.05,
+  "bucket": "down",
+  "gap_pct": 1.79,
+  "intraday_pct": -2.79,
+  "amplitude_pct": 4.19,
+  "volume_ratio_5d": 0.78,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.14,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

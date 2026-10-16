@@ -1,0 +1,21 @@
+{
+  "code": "605268",
+  "name": "王力安防",
+  "trade_date": "2026-10-16",
+  "close": 9.82,
+  "change_pct": 1.66,
+  "bucket": "up",
+  "gap_pct": 0.1,
+  "intraday_pct": 1.55,
+  "amplitude_pct": 3.0,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.57,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

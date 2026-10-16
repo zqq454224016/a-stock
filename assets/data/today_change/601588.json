@@ -1,0 +1,21 @@
+{
+  "code": "601588",
+  "name": "北辰实业",
+  "trade_date": "2026-10-16",
+  "close": 1.69,
+  "change_pct": 1.2,
+  "bucket": "up",
+  "gap_pct": 0.0,
+  "intraday_pct": 1.2,
+  "amplitude_pct": 4.19,
+  "volume_ratio_5d": 1.07,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.11,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

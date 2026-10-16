@@ -1,0 +1,21 @@
+{
+  "code": "000969",
+  "name": "安泰科技",
+  "trade_date": "2026-10-16",
+  "close": 14.81,
+  "change_pct": 2.14,
+  "bucket": "up",
+  "gap_pct": 1.72,
+  "intraday_pct": 0.41,
+  "amplitude_pct": 3.72,
+  "volume_ratio_5d": 1.14,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.05,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

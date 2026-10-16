@@ -1,0 +1,21 @@
+{
+  "code": "300855",
+  "name": "图南股份",
+  "trade_date": "2026-07-23",
+  "close": 26.67,
+  "change_pct": 3.77,
+  "bucket": "up",
+  "gap_pct": -0.47,
+  "intraday_pct": 4.26,
+  "amplitude_pct": 5.37,
+  "volume_ratio_5d": 0.99,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.68,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

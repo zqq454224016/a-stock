@@ -1,0 +1,22 @@
+{
+  "code": "603269",
+  "name": "海鸥股份",
+  "trade_date": "2026-10-16",
+  "close": 18.97,
+  "change_pct": -2.72,
+  "bucket": "down",
+  "gap_pct": 2.0,
+  "intraday_pct": -4.63,
+  "amplitude_pct": 7.85,
+  "volume_ratio_5d": 0.92,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.81,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

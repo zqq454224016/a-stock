@@ -1,0 +1,23 @@
+{
+  "code": "920000",
+  "name": "安徽凤凰",
+  "trade_date": "2026-07-23",
+  "close": 13.2,
+  "change_pct": 13.89,
+  "bucket": "limit_up",
+  "gap_pct": 26.4,
+  "intraday_pct": -9.9,
+  "amplitude_pct": 14.67,
+  "volume_ratio_5d": 5.66,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 13.8,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

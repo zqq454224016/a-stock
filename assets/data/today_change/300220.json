@@ -1,0 +1,22 @@
+{
+  "code": "300220",
+  "name": "金运激光",
+  "trade_date": "2026-07-23",
+  "close": 9.4,
+  "change_pct": 4.91,
+  "bucket": "up",
+  "gap_pct": 1.56,
+  "intraday_pct": 3.3,
+  "amplitude_pct": 6.25,
+  "volume_ratio_5d": 1.1,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 4.82,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "002510",
+  "name": "天汽模",
+  "trade_date": "2026-10-16",
+  "close": 5.96,
+  "change_pct": 9.96,
+  "bucket": "limit_up",
+  "gap_pct": 0.55,
+  "intraday_pct": 9.36,
+  "amplitude_pct": 11.07,
+  "volume_ratio_5d": 4.58,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 9.87,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "code": "000626",
+  "name": "远大控股",
+  "trade_date": "2026-10-16",
+  "close": 8.24,
+  "change_pct": -9.95,
+  "bucket": "limit_down",
+  "gap_pct": -2.3,
+  "intraday_pct": -7.83,
+  "amplitude_pct": 9.51,
+  "volume_ratio_5d": 2.51,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -10.04,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

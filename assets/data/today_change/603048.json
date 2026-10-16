@@ -1,0 +1,22 @@
+{
+  "code": "603048",
+  "name": "浙江黎明",
+  "trade_date": "2026-10-16",
+  "close": 22.13,
+  "change_pct": -3.19,
+  "bucket": "down",
+  "gap_pct": 3.06,
+  "intraday_pct": -6.07,
+  "amplitude_pct": 7.74,
+  "volume_ratio_5d": 1.3,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.28,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

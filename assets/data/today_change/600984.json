@@ -1,0 +1,21 @@
+{
+  "code": "600984",
+  "name": "建设机械",
+  "trade_date": "2026-10-16",
+  "close": 3.41,
+  "change_pct": 1.49,
+  "bucket": "up",
+  "gap_pct": 1.79,
+  "intraday_pct": -0.29,
+  "amplitude_pct": 2.98,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.4,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

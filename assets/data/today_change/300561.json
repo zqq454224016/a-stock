@@ -1,0 +1,21 @@
+{
+  "code": "300561",
+  "name": "汇金科技",
+  "trade_date": "2026-07-23",
+  "close": 18.75,
+  "change_pct": 0.75,
+  "bucket": "up",
+  "gap_pct": -1.88,
+  "intraday_pct": 2.68,
+  "amplitude_pct": 10.26,
+  "volume_ratio_5d": 0.72,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.66,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

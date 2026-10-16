@@ -1,0 +1,20 @@
+{
+  "code": "300558",
+  "name": "贝达药业",
+  "trade_date": "2026-07-23",
+  "close": 60.75,
+  "change_pct": 0.07,
+  "bucket": "up",
+  "gap_pct": 0.53,
+  "intraday_pct": -0.46,
+  "amplitude_pct": 6.09,
+  "volume_ratio_5d": 0.71,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.02,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "002900",
+  "name": "哈三联",
+  "trade_date": "2026-10-16",
+  "close": 11.16,
+  "change_pct": -3.21,
+  "bucket": "down",
+  "gap_pct": 0.61,
+  "intraday_pct": -3.79,
+  "amplitude_pct": 11.01,
+  "volume_ratio_5d": 1.22,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.3,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

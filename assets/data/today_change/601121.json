@@ -1,0 +1,20 @@
+{
+  "code": "601121",
+  "name": "宝地矿业",
+  "trade_date": "2026-10-16",
+  "close": 6.53,
+  "change_pct": 0.62,
+  "bucket": "up",
+  "gap_pct": 1.08,
+  "intraday_pct": -0.46,
+  "amplitude_pct": 2.93,
+  "volume_ratio_5d": 0.73,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.53,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

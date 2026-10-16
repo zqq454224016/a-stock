@@ -1,0 +1,20 @@
+{
+  "code": "000417",
+  "name": "合百集团",
+  "trade_date": "2026-10-16",
+  "close": 5.35,
+  "change_pct": 0.19,
+  "bucket": "up",
+  "gap_pct": 1.12,
+  "intraday_pct": -0.93,
+  "amplitude_pct": 3.18,
+  "volume_ratio_5d": 0.72,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.1,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

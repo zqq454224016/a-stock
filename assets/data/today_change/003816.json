@@ -1,0 +1,20 @@
+{
+  "code": "003816",
+  "name": "中国广核",
+  "trade_date": "2026-10-16",
+  "close": 4.59,
+  "change_pct": 0.88,
+  "bucket": "up",
+  "gap_pct": -0.44,
+  "intraday_pct": 1.32,
+  "amplitude_pct": 2.86,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.79,
+  "drivers": [
+    "开盘后资金继续推升"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

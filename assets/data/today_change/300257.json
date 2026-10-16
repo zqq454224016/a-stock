@@ -1,0 +1,22 @@
+{
+  "code": "300257",
+  "name": "开山股份",
+  "trade_date": "2026-07-23",
+  "close": 19.88,
+  "change_pct": 3.54,
+  "bucket": "up",
+  "gap_pct": 1.04,
+  "intraday_pct": 2.47,
+  "amplitude_pct": 7.14,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 3.45,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

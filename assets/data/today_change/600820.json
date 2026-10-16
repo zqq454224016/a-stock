@@ -1,0 +1,20 @@
+{
+  "code": "600820",
+  "name": "隧道股份",
+  "trade_date": "2026-10-16",
+  "close": 5.31,
+  "change_pct": 0.57,
+  "bucket": "up",
+  "gap_pct": 0.38,
+  "intraday_pct": 0.19,
+  "amplitude_pct": 1.52,
+  "volume_ratio_5d": 0.76,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.48,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

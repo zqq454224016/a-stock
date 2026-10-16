@@ -1,0 +1,20 @@
+{
+  "code": "002628",
+  "name": "成都路桥",
+  "trade_date": "2026-10-16",
+  "close": 4.62,
+  "change_pct": 0.87,
+  "bucket": "up",
+  "gap_pct": 1.75,
+  "intraday_pct": -0.86,
+  "amplitude_pct": 3.28,
+  "volume_ratio_5d": 0.82,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.78,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "300353",
+  "name": "东土科技",
+  "trade_date": "2026-07-23",
+  "close": 18.03,
+  "change_pct": -1.04,
+  "bucket": "down",
+  "gap_pct": -0.99,
+  "intraday_pct": -0.06,
+  "amplitude_pct": 2.47,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.13,
+  "drivers": [
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

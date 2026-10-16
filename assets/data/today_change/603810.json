@@ -1,0 +1,22 @@
+{
+  "code": "603810",
+  "name": "丰山集团",
+  "trade_date": "2026-10-16",
+  "close": 11.85,
+  "change_pct": 1.28,
+  "bucket": "up",
+  "gap_pct": -0.34,
+  "intraday_pct": 1.63,
+  "amplitude_pct": 4.53,
+  "volume_ratio_5d": 0.64,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.19,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

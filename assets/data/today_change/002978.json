@@ -1,0 +1,20 @@
+{
+  "code": "002978",
+  "name": "安宁股份",
+  "trade_date": "2026-10-16",
+  "close": 24.08,
+  "change_pct": 0.54,
+  "bucket": "up",
+  "gap_pct": 1.0,
+  "intraday_pct": -0.45,
+  "amplitude_pct": 2.71,
+  "volume_ratio_5d": 0.92,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.45,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

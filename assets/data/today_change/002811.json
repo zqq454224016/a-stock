@@ -1,0 +1,21 @@
+{
+  "code": "002811",
+  "name": "郑中设计",
+  "trade_date": "2026-10-16",
+  "close": 20.87,
+  "change_pct": 5.94,
+  "bucket": "strong_up",
+  "gap_pct": 0.76,
+  "intraday_pct": 5.14,
+  "amplitude_pct": 7.87,
+  "volume_ratio_5d": 0.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 5.85,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

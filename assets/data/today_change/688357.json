@@ -1,0 +1,22 @@
+{
+  "code": "688357",
+  "name": "建龙微纳",
+  "trade_date": "2026-07-23",
+  "close": 23.75,
+  "change_pct": 2.33,
+  "bucket": "up",
+  "gap_pct": 1.9,
+  "intraday_pct": 0.42,
+  "amplitude_pct": 2.33,
+  "volume_ratio_5d": 0.46,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.24,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

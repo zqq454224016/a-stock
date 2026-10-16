@@ -1,0 +1,20 @@
+{
+  "code": "601065",
+  "name": "江盐集团",
+  "trade_date": "2026-10-16",
+  "close": 6.62,
+  "change_pct": 0.76,
+  "bucket": "up",
+  "gap_pct": 0.76,
+  "intraday_pct": 0.0,
+  "amplitude_pct": 2.13,
+  "volume_ratio_5d": 1.02,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.67,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

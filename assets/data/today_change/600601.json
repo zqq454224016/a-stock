@@ -1,0 +1,21 @@
+{
+  "code": "600601",
+  "name": "方正科技",
+  "trade_date": "2026-10-16",
+  "close": 11.52,
+  "change_pct": -0.26,
+  "bucket": "down",
+  "gap_pct": 1.82,
+  "intraday_pct": -2.04,
+  "amplitude_pct": 5.02,
+  "volume_ratio_5d": 0.79,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.35,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

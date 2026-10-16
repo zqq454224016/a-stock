@@ -1,0 +1,22 @@
+{
+  "code": "300706",
+  "name": "阿石创",
+  "trade_date": "2026-07-23",
+  "close": 48.88,
+  "change_pct": -1.63,
+  "bucket": "down",
+  "gap_pct": 0.76,
+  "intraday_pct": -2.38,
+  "amplitude_pct": 4.79,
+  "volume_ratio_5d": 0.64,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.72,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

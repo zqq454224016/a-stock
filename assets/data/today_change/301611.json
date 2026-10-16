@@ -1,0 +1,22 @@
+{
+  "code": "301611",
+  "name": "珂玛科技",
+  "trade_date": "2026-07-23",
+  "close": 95.15,
+  "change_pct": -5.7,
+  "bucket": "strong_down",
+  "gap_pct": 1.04,
+  "intraday_pct": -6.67,
+  "amplitude_pct": 8.66,
+  "volume_ratio_5d": 0.85,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -5.79,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

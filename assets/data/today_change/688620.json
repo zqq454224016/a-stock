@@ -1,0 +1,21 @@
+{
+  "code": "688620",
+  "name": "安凯微",
+  "trade_date": "2026-07-23",
+  "close": 15.11,
+  "change_pct": -1.88,
+  "bucket": "down",
+  "gap_pct": -1.62,
+  "intraday_pct": -0.26,
+  "amplitude_pct": 7.6,
+  "volume_ratio_5d": 0.85,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.97,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

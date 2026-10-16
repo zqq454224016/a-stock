@@ -1,0 +1,22 @@
+{
+  "code": "301190",
+  "name": "善水科技",
+  "trade_date": "2026-07-23",
+  "close": 18.7,
+  "change_pct": -2.86,
+  "bucket": "down",
+  "gap_pct": -5.82,
+  "intraday_pct": 3.14,
+  "amplitude_pct": 6.75,
+  "volume_ratio_5d": 1.26,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.95,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

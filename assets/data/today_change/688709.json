@@ -1,0 +1,22 @@
+{
+  "code": "688709",
+  "name": "成都华微",
+  "trade_date": "2026-07-23",
+  "close": 23.74,
+  "change_pct": -1.66,
+  "bucket": "down",
+  "gap_pct": 0.33,
+  "intraday_pct": -1.98,
+  "amplitude_pct": 5.39,
+  "volume_ratio_5d": 0.55,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.75,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

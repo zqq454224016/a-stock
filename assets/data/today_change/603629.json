@@ -1,0 +1,22 @@
+{
+  "code": "603629",
+  "name": "利通电子",
+  "trade_date": "2026-10-16",
+  "close": 83.51,
+  "change_pct": -1.65,
+  "bucket": "down",
+  "gap_pct": 2.7,
+  "intraday_pct": -4.23,
+  "amplitude_pct": 5.41,
+  "volume_ratio_5d": 0.84,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.74,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

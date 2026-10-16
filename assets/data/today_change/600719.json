@@ -1,0 +1,21 @@
+{
+  "code": "600719",
+  "name": "大连热电",
+  "trade_date": "2026-10-16",
+  "close": 7.48,
+  "change_pct": -1.84,
+  "bucket": "down",
+  "gap_pct": 0.39,
+  "intraday_pct": -2.22,
+  "amplitude_pct": 7.09,
+  "volume_ratio_5d": 0.87,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.93,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

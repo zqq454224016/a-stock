@@ -1,0 +1,21 @@
+{
+  "code": "000948",
+  "name": "南天信息",
+  "trade_date": "2026-10-16",
+  "close": 13.25,
+  "change_pct": -0.6,
+  "bucket": "down",
+  "gap_pct": 1.13,
+  "intraday_pct": -1.71,
+  "amplitude_pct": 3.6,
+  "volume_ratio_5d": 1.01,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.69,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

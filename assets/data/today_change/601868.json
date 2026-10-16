@@ -1,0 +1,20 @@
+{
+  "code": "601868",
+  "name": "中国能建",
+  "trade_date": "2026-10-16",
+  "close": 2.36,
+  "change_pct": 0.43,
+  "bucket": "up",
+  "gap_pct": 0.43,
+  "intraday_pct": 0.0,
+  "amplitude_pct": 1.28,
+  "volume_ratio_5d": 0.92,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.34,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "code": "600642",
+  "name": "申能股份",
+  "trade_date": "2026-10-16",
+  "close": 9.08,
+  "change_pct": -0.11,
+  "bucket": "down",
+  "gap_pct": 0.22,
+  "intraday_pct": -0.33,
+  "amplitude_pct": 1.98,
+  "volume_ratio_5d": 0.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.2,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

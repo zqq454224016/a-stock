@@ -1,0 +1,22 @@
+{
+  "code": "300885",
+  "name": "海昌新材",
+  "trade_date": "2026-07-23",
+  "close": 18.99,
+  "change_pct": 2.15,
+  "bucket": "up",
+  "gap_pct": 0.0,
+  "intraday_pct": 2.15,
+  "amplitude_pct": 4.52,
+  "volume_ratio_5d": 0.67,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.06,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

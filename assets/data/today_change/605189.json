@@ -1,0 +1,22 @@
+{
+  "code": "605189",
+  "name": "富春染织",
+  "trade_date": "2026-10-16",
+  "close": 16.31,
+  "change_pct": -8.63,
+  "bucket": "strong_down",
+  "gap_pct": 0.67,
+  "intraday_pct": -9.24,
+  "amplitude_pct": 10.48,
+  "volume_ratio_5d": 3.27,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -8.72,
+  "drivers": [
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

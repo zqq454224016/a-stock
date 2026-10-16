@@ -1,0 +1,20 @@
+{
+  "code": "600805",
+  "name": "悦达投资",
+  "trade_date": "2026-10-16",
+  "close": 4.54,
+  "change_pct": 1.11,
+  "bucket": "up",
+  "gap_pct": 0.89,
+  "intraday_pct": 0.22,
+  "amplitude_pct": 2.67,
+  "volume_ratio_5d": 0.92,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.02,
+  "drivers": [
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

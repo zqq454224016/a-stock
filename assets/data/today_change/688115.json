@@ -1,0 +1,22 @@
+{
+  "code": "688115",
+  "name": "思林杰",
+  "trade_date": "2026-07-23",
+  "close": 43.92,
+  "change_pct": 6.42,
+  "bucket": "strong_up",
+  "gap_pct": -2.91,
+  "intraday_pct": 9.61,
+  "amplitude_pct": 10.73,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 6.33,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "600764",
+  "name": "中国海防",
+  "trade_date": "2026-10-16",
+  "close": 19.6,
+  "change_pct": 5.6,
+  "bucket": "strong_up",
+  "gap_pct": 0.65,
+  "intraday_pct": 4.93,
+  "amplitude_pct": 6.73,
+  "volume_ratio_5d": 1.8,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 5.51,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量显著放大",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

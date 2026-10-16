@@ -1,0 +1,22 @@
+{
+  "code": "002762",
+  "name": "金发拉比",
+  "trade_date": "2026-10-16",
+  "close": 8.21,
+  "change_pct": -1.44,
+  "bucket": "down",
+  "gap_pct": 1.08,
+  "intraday_pct": -2.49,
+  "amplitude_pct": 5.28,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.53,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

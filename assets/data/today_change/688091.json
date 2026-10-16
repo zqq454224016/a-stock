@@ -1,0 +1,22 @@
+{
+  "code": "688091",
+  "name": "上海谊众",
+  "trade_date": "2026-07-23",
+  "close": 39.5,
+  "change_pct": -0.98,
+  "bucket": "down",
+  "gap_pct": -1.75,
+  "intraday_pct": 0.79,
+  "amplitude_pct": 3.89,
+  "volume_ratio_5d": 0.6,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.07,
+  "drivers": [
+    "低开形成压力",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

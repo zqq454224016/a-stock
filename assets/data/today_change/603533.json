@@ -1,0 +1,22 @@
+{
+  "code": "603533",
+  "name": "掌阅科技",
+  "trade_date": "2026-10-16",
+  "close": 27.63,
+  "change_pct": -4.76,
+  "bucket": "down",
+  "gap_pct": 2.03,
+  "intraday_pct": -6.66,
+  "amplitude_pct": 9.62,
+  "volume_ratio_5d": 1.17,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -4.85,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

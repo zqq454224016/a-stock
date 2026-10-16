@@ -1,0 +1,21 @@
+{
+  "code": "002425",
+  "name": "凯撒文化",
+  "trade_date": "2026-10-16",
+  "close": 3.33,
+  "change_pct": -2.06,
+  "bucket": "down",
+  "gap_pct": -1.18,
+  "intraday_pct": -0.89,
+  "amplitude_pct": 5.29,
+  "volume_ratio_5d": 0.9,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.15,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "code": "600249",
+  "name": "两面针",
+  "trade_date": "2026-10-16",
+  "close": 5.32,
+  "change_pct": -0.75,
+  "bucket": "down",
+  "gap_pct": 0.93,
+  "intraday_pct": -1.66,
+  "amplitude_pct": 4.1,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.84,
+  "drivers": [
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "code": "301112",
+  "name": "信邦智能",
+  "trade_date": "2026-07-23",
+  "close": 26.88,
+  "change_pct": -0.81,
+  "bucket": "down",
+  "gap_pct": -0.26,
+  "intraday_pct": -0.55,
+  "amplitude_pct": 4.58,
+  "volume_ratio_5d": 1.0,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.9,
+  "drivers": [
+    "涨跌主要处于市场正常波动范围"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

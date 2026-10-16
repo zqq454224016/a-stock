@@ -1,0 +1,22 @@
+{
+  "code": "000517",
+  "name": "荣安地产",
+  "trade_date": "2026-10-16",
+  "close": 1.97,
+  "change_pct": 2.6,
+  "bucket": "up",
+  "gap_pct": 1.04,
+  "intraday_pct": 1.55,
+  "amplitude_pct": 5.21,
+  "volume_ratio_5d": 0.89,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.51,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

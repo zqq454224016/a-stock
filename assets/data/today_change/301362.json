@@ -1,0 +1,21 @@
+{
+  "code": "301362",
+  "name": "民爆光电",
+  "trade_date": "2026-07-23",
+  "close": 116.66,
+  "change_pct": 0.66,
+  "bucket": "up",
+  "gap_pct": 1.79,
+  "intraday_pct": -1.12,
+  "amplitude_pct": 12.85,
+  "volume_ratio_5d": 1.05,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.57,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

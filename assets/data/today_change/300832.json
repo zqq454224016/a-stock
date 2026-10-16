@@ -1,0 +1,22 @@
+{
+  "code": "300832",
+  "name": "新产业",
+  "trade_date": "2026-07-23",
+  "close": 47.66,
+  "change_pct": -1.59,
+  "bucket": "down",
+  "gap_pct": -1.24,
+  "intraday_pct": -0.36,
+  "amplitude_pct": 3.14,
+  "volume_ratio_5d": 0.64,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.68,
+  "drivers": [
+    "低开形成压力",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

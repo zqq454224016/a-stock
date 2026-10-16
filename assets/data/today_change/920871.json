@@ -1,0 +1,20 @@
+{
+  "code": "920871",
+  "name": "派特尔",
+  "trade_date": "2026-07-23",
+  "close": 10.21,
+  "change_pct": 0.69,
+  "bucket": "up",
+  "gap_pct": 0.2,
+  "intraday_pct": 0.49,
+  "amplitude_pct": 4.83,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.6,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

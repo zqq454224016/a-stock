@@ -1,0 +1,22 @@
+{
+  "code": "003038",
+  "name": "鑫铂股份",
+  "trade_date": "2026-10-16",
+  "close": 10.23,
+  "change_pct": 2.81,
+  "bucket": "up",
+  "gap_pct": 1.61,
+  "intraday_pct": 1.19,
+  "amplitude_pct": 4.52,
+  "volume_ratio_5d": 1.13,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.72,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

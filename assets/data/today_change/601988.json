@@ -1,0 +1,21 @@
+{
+  "code": "601988",
+  "name": "中国银行",
+  "trade_date": "2026-10-16",
+  "close": 6.92,
+  "change_pct": -1.84,
+  "bucket": "down",
+  "gap_pct": -0.71,
+  "intraday_pct": -1.14,
+  "amplitude_pct": 2.7,
+  "volume_ratio_5d": 1.38,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.93,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

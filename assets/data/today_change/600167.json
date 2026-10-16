@@ -1,0 +1,20 @@
+{
+  "code": "600167",
+  "name": "联美控股",
+  "trade_date": "2026-10-16",
+  "close": 5.77,
+  "change_pct": 0.35,
+  "bucket": "up",
+  "gap_pct": 0.52,
+  "intraday_pct": -0.17,
+  "amplitude_pct": 3.65,
+  "volume_ratio_5d": 0.58,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.26,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

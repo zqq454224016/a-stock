@@ -1,0 +1,20 @@
+{
+  "code": "000899",
+  "name": "赣能股份",
+  "trade_date": "2026-10-16",
+  "close": 8.95,
+  "change_pct": 0.79,
+  "bucket": "up",
+  "gap_pct": 1.13,
+  "intraday_pct": -0.33,
+  "amplitude_pct": 2.25,
+  "volume_ratio_5d": 0.83,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.7,
+  "drivers": [
+    "高开贡献明显"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

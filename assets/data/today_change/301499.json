@@ -1,0 +1,21 @@
+{
+  "code": "301499",
+  "name": "维科精密",
+  "trade_date": "2026-07-23",
+  "close": 22.34,
+  "change_pct": 1.32,
+  "bucket": "up",
+  "gap_pct": 0.68,
+  "intraday_pct": 0.63,
+  "amplitude_pct": 3.85,
+  "volume_ratio_5d": 0.69,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.23,
+  "drivers": [
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

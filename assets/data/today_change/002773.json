@@ -1,0 +1,22 @@
+{
+  "code": "002773",
+  "name": "康弘药业",
+  "trade_date": "2026-10-16",
+  "close": 19.44,
+  "change_pct": -1.92,
+  "bucket": "down",
+  "gap_pct": 2.62,
+  "intraday_pct": -4.42,
+  "amplitude_pct": 5.25,
+  "volume_ratio_5d": 0.88,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.01,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

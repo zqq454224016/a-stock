@@ -1,0 +1,22 @@
+{
+  "code": "300992",
+  "name": "泰福泵业",
+  "trade_date": "2026-07-23",
+  "close": 20.48,
+  "change_pct": 2.35,
+  "bucket": "up",
+  "gap_pct": 2.45,
+  "intraday_pct": -0.1,
+  "amplitude_pct": 3.75,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.26,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

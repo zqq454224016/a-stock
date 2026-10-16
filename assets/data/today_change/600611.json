@@ -1,0 +1,21 @@
+{
+  "code": "600611",
+  "name": "大众交通",
+  "trade_date": "2026-10-16",
+  "close": 4.14,
+  "change_pct": 1.22,
+  "bucket": "up",
+  "gap_pct": 1.47,
+  "intraday_pct": -0.24,
+  "amplitude_pct": 2.69,
+  "volume_ratio_5d": 1.04,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.13,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

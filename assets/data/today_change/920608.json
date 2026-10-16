@@ -1,0 +1,21 @@
+{
+  "code": "920608",
+  "name": "丰安股份",
+  "trade_date": "2026-07-23",
+  "close": 12.88,
+  "change_pct": -1.53,
+  "bucket": "down",
+  "gap_pct": -1.53,
+  "intraday_pct": 0.0,
+  "amplitude_pct": 5.58,
+  "volume_ratio_5d": 0.73,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.62,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

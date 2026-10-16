@@ -1,0 +1,20 @@
+{
+  "code": "000531",
+  "name": "穗恒运Ａ",
+  "trade_date": "2026-10-16",
+  "close": 5.39,
+  "change_pct": 0.19,
+  "bucket": "up",
+  "gap_pct": 0.37,
+  "intraday_pct": -0.19,
+  "amplitude_pct": 1.3,
+  "volume_ratio_5d": 0.57,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.1,
+  "drivers": [
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

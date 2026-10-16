@@ -1,0 +1,22 @@
+{
+  "code": "002005",
+  "name": "德豪润达",
+  "trade_date": "2026-10-16",
+  "close": 2.44,
+  "change_pct": 2.52,
+  "bucket": "up",
+  "gap_pct": 1.68,
+  "intraday_pct": 0.83,
+  "amplitude_pct": 2.94,
+  "volume_ratio_5d": 0.67,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.43,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

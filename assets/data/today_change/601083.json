@@ -1,0 +1,20 @@
+{
+  "code": "601083",
+  "name": "锦江航运",
+  "trade_date": "2026-10-16",
+  "close": 13.68,
+  "change_pct": 1.63,
+  "bucket": "up",
+  "gap_pct": 0.74,
+  "intraday_pct": 0.88,
+  "amplitude_pct": 5.42,
+  "volume_ratio_5d": 1.11,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.54,
+  "drivers": [
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

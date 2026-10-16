@@ -1,0 +1,23 @@
+{
+  "code": "688025",
+  "name": "杰普特",
+  "trade_date": "2026-07-23",
+  "close": 332.57,
+  "change_pct": -3.22,
+  "bucket": "down",
+  "gap_pct": 1.31,
+  "intraday_pct": -4.48,
+  "amplitude_pct": 7.53,
+  "volume_ratio_5d": 0.58,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -3.31,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

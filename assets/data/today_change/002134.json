@@ -1,0 +1,23 @@
+{
+  "code": "002134",
+  "name": "天津普林",
+  "trade_date": "2026-10-16",
+  "close": 21.91,
+  "change_pct": -9.98,
+  "bucket": "limit_down",
+  "gap_pct": -1.4,
+  "intraday_pct": -8.71,
+  "amplitude_pct": 8.63,
+  "volume_ratio_5d": 2.14,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -10.07,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量显著放大",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

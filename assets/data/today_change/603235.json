@@ -1,0 +1,21 @@
+{
+  "code": "603235",
+  "name": "天新药业",
+  "trade_date": "2026-10-16",
+  "close": 25.46,
+  "change_pct": -0.04,
+  "bucket": "down",
+  "gap_pct": 1.1,
+  "intraday_pct": -1.13,
+  "amplitude_pct": 3.22,
+  "volume_ratio_5d": 1.08,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.13,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "300598",
+  "name": "诚迈科技",
+  "trade_date": "2026-07-23",
+  "close": 27.57,
+  "change_pct": -2.3,
+  "bucket": "down",
+  "gap_pct": -1.45,
+  "intraday_pct": -0.86,
+  "amplitude_pct": 2.59,
+  "volume_ratio_5d": 0.74,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.39,
+  "drivers": [
+    "低开形成压力",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

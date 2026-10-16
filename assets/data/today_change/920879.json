@@ -1,0 +1,22 @@
+{
+  "code": "920879",
+  "name": "基康技术",
+  "trade_date": "2026-07-23",
+  "close": 12.58,
+  "change_pct": 1.13,
+  "bucket": "up",
+  "gap_pct": 1.29,
+  "intraday_pct": -0.16,
+  "amplitude_pct": 3.7,
+  "volume_ratio_5d": 0.66,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.04,
+  "drivers": [
+    "高开贡献明显",
+    "成交量偏低",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "code": "000688",
+  "name": "国城矿业",
+  "trade_date": "2026-10-16",
+  "close": 22.74,
+  "change_pct": -0.92,
+  "bucket": "down",
+  "gap_pct": 1.09,
+  "intraday_pct": -1.98,
+  "amplitude_pct": 3.14,
+  "volume_ratio_5d": 0.66,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.01,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

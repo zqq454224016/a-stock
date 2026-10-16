@@ -1,0 +1,21 @@
+{
+  "code": "301060",
+  "name": "兰卫医学",
+  "trade_date": "2026-07-23",
+  "close": 8.45,
+  "change_pct": 1.08,
+  "bucket": "up",
+  "gap_pct": -0.84,
+  "intraday_pct": 1.93,
+  "amplitude_pct": 3.35,
+  "volume_ratio_5d": 0.6,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 0.99,
+  "drivers": [
+    "开盘后资金继续推升",
+    "成交量偏低"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

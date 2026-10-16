@@ -1,0 +1,21 @@
+{
+  "code": "601212",
+  "name": "白银有色",
+  "trade_date": "2026-10-16",
+  "close": 5.26,
+  "change_pct": 2.33,
+  "bucket": "up",
+  "gap_pct": 2.72,
+  "intraday_pct": -0.38,
+  "amplitude_pct": 3.7,
+  "volume_ratio_5d": 1.06,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.24,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "code": "600640",
+  "name": "国脉文化",
+  "trade_date": "2026-10-16",
+  "close": 12.16,
+  "change_pct": -1.94,
+  "bucket": "down",
+  "gap_pct": -0.32,
+  "intraday_pct": -1.62,
+  "amplitude_pct": 6.13,
+  "volume_ratio_5d": 0.92,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -2.03,
+  "drivers": [
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

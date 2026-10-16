@@ -1,0 +1,23 @@
+{
+  "code": "300745",
+  "name": "欣锐科技",
+  "trade_date": "2026-07-23",
+  "close": 28.98,
+  "change_pct": -1.29,
+  "bucket": "down",
+  "gap_pct": 1.77,
+  "intraday_pct": -3.01,
+  "amplitude_pct": 5.72,
+  "volume_ratio_5d": 0.67,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.38,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "002084",
+  "name": "海鸥住工",
+  "trade_date": "2026-10-16",
+  "close": 4.71,
+  "change_pct": -1.26,
+  "bucket": "down",
+  "gap_pct": 1.47,
+  "intraday_pct": -2.69,
+  "amplitude_pct": 5.03,
+  "volume_ratio_5d": 0.86,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -1.35,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

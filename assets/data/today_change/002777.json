@@ -1,0 +1,21 @@
+{
+  "code": "002777",
+  "name": "久远银海",
+  "trade_date": "2026-10-16",
+  "close": 12.59,
+  "change_pct": -0.71,
+  "bucket": "down",
+  "gap_pct": 1.74,
+  "intraday_pct": -2.4,
+  "amplitude_pct": 4.34,
+  "volume_ratio_5d": 0.96,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.8,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

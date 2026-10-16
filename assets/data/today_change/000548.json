@@ -1,0 +1,21 @@
+{
+  "code": "000548",
+  "name": "湖南投资",
+  "trade_date": "2026-10-16",
+  "close": 4.55,
+  "change_pct": 1.79,
+  "bucket": "up",
+  "gap_pct": 1.34,
+  "intraday_pct": 0.44,
+  "amplitude_pct": 2.91,
+  "volume_ratio_5d": 1.23,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 1.7,
+  "drivers": [
+    "高开贡献明显",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

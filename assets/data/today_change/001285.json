@@ -1,0 +1,22 @@
+{
+  "code": "001285",
+  "name": "瑞立科密",
+  "trade_date": "2026-10-16",
+  "close": 29.36,
+  "change_pct": -28.89,
+  "bucket": "limit_down",
+  "gap_pct": -30.49,
+  "intraday_pct": 2.3,
+  "amplitude_pct": 3.54,
+  "volume_ratio_5d": 1.4,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -28.98,
+  "drivers": [
+    "低开形成压力",
+    "开盘后资金继续推升",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

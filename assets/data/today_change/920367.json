@@ -1,0 +1,23 @@
+{
+  "code": "920367",
+  "name": "新赣江",
+  "trade_date": "2026-07-23",
+  "close": 29.21,
+  "change_pct": -4.98,
+  "bucket": "down",
+  "gap_pct": -1.92,
+  "intraday_pct": -3.12,
+  "amplitude_pct": 7.16,
+  "volume_ratio_5d": 0.63,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -5.07,
+  "drivers": [
+    "低开形成压力",
+    "开盘后持续走弱",
+    "成交量偏低",
+    "明显跑输市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

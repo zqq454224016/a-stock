@@ -1,0 +1,21 @@
+{
+  "code": "600712",
+  "name": "南宁百货",
+  "trade_date": "2026-10-16",
+  "close": 5.33,
+  "change_pct": -0.37,
+  "bucket": "down",
+  "gap_pct": 1.31,
+  "intraday_pct": -1.66,
+  "amplitude_pct": 4.3,
+  "volume_ratio_5d": 0.7,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": -0.46,
+  "drivers": [
+    "高开贡献明显",
+    "开盘后持续走弱"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}

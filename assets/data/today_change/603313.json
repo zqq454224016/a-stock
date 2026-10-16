@@ -1,0 +1,21 @@
+{
+  "code": "603313",
+  "name": "梦百合",
+  "trade_date": "2026-10-16",
+  "close": 6.3,
+  "change_pct": 2.61,
+  "bucket": "up",
+  "gap_pct": 0.65,
+  "intraday_pct": 1.94,
+  "amplitude_pct": 5.21,
+  "volume_ratio_5d": 1.0,
+  "benchmark_change_pct": 0.09,
+  "relative_strength_pct": 2.52,
+  "drivers": [
+    "开盘后资金继续推升",
+    "明显跑赢市场"
+  ],
+  "limitations": [
+    "仅为价格量能归因，不能证明真实因果"
+  ]
+}
