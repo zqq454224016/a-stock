@@ -7,6 +7,9 @@ class Calendar:
     def latest_trade_day(self):
         return "2026-07-03"
 
+    def latest_completed_trade_day(self, now=None):
+        return "2026-07-03"
+
     def trade_days_between(self, start, end):
         return ["2026-07-01", "2026-07-02", "2026-07-03"]
 

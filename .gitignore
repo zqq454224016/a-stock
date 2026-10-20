@@ -9,3 +9,4 @@ tmp/
 **/worker.log
 **/worker.stop
 **/manual_refresh.log
+assets/data/strategy_tracks/stock_trades.npy

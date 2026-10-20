@@ -20,12 +20,13 @@ from quant_system.strategy.robust_iteration import (
     summarize,
     trades,
 )
+from quant_system.strategy.long_term_quality import attach_point_in_time_quality
 from quant_system.tasks.strategy_job import _read_stock, _write
 from quant_system.utils.market_scope import is_research_stock_code
 from quant_system.utils.time_utils import now_str
 
 # v15.3：预登记稀疏组合可存活假设（低波/量能确认/快速退出），禁止同OOS调参。
-RESEARCH_VERSION = "15.5.0"
+RESEARCH_VERSION = "15.6.0"
 FORWARD_SHADOW_MIN_TRADING_DAYS = 60
 FORWARD_SHADOW_MODE = "historical_real_window"
 
@@ -105,7 +106,7 @@ def run_strategy_iteration(cfg: CrawlerConfig | None = None) -> dict[str, Any]:
                 continue
             used += 1
             history_frame = frame.tail(cfg.research_hist_days)
-            prepared_frame = features(history_frame)
+            prepared_frame = attach_point_in_time_quality(features(history_frame), cfg.data_dir, path.stem)
             execution_by_date: dict[str, dict[str, Any]] = {}
             execution_path = cfg.data_dir / "execution_history" / f"{path.stem}.json.gz"
             if execution_path.exists():
@@ -229,6 +230,13 @@ def run_strategy_iteration(cfg: CrawlerConfig | None = None) -> dict[str, Any]:
             "15.1信号级可过线但训练组合亏损：同日相关信号占满仓位，边在容量下消失",
             "15.2低波冠军训练组合强、OOS组合仍负：需稀疏入场与更快释放仓位的预登记假设",
         ],
+        "v15_6_preregistration": {
+            "date": "2026-10-20",
+            "change": "long_quality_trend_gate 接入点时财务（as-of 连接）",
+            "quality_gate": "long_term_quality_v2_public_summary：营收同比>0、净利同比>0、每股经营现金流>0、ROE>0",
+            "known_date": "数据源披露日与法定截止日（4/30、8/31、10/31、次年4/30）取较早者；超400日无新报告视为未知",
+            "eliminate_if": "滚动前推样本外均收益<=0 或组合级门禁未过",
+        },
         "v15_3_preregistration": {
             "date": "2026-10-16",
             "rule": "thresholds_frozen_before_rerun_no_same_oos_tuning",

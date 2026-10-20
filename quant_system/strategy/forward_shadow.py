@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 
 from quant_system.config.crawler_config import CrawlerConfig
+from quant_system.strategy.long_term_quality import attach_point_in_time_quality
 from quant_system.strategy.robust_iteration import (
     CANDIDATES,
     Candidate,
@@ -171,7 +172,7 @@ def _build_historical_signals(
             continue
         if frame.empty or "ST" in str(stock.get("name") or "").upper():
             continue
-        work = features(frame)
+        work = attach_point_in_time_quality(features(frame), stock_dir.parent, path.stem)
         date_column = "date" if "date" in work.columns else "trade_date"
         if date_column not in work.columns:
             continue
@@ -392,7 +393,7 @@ def _collect_window_trades(
             stock, frame = _read_stock(path)
             if frame.empty or "ST" in str(stock.get("name") or "").upper() or len(frame) < 120:
                 continue
-            prepared = features(frame)
+            prepared = attach_point_in_time_quality(features(frame), cfg.data_dir, path.stem)
             date_column = "date" if "date" in prepared.columns else "trade_date"
             if date_column not in prepared.columns:
                 continue

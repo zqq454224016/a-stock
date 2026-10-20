@@ -158,6 +158,7 @@ def run_recommendation_job(limit: int = 5) -> dict[str, Any]:
         daily_snapshots=_load_daily_snapshots(store, market.get("trade_date")),
         sector_mapping=sector_mapping,
         limit=limit,
+        track_evidence=_read(store, "strategy_tracks/latest.json"),
     )
     store.save_recommendations(payload)
     counts = {key: len(value["recommendations"]) for key, value in payload["periods"].items()}

@@ -140,6 +140,30 @@ def _overnight_summary(overnight: dict[str, Any]) -> dict[str, Any]:
     return _parallel_tournament_summary(overnight, label="overnight")
 
 
+def _tail_overnight_summary(tail: dict[str, Any]) -> dict[str, Any]:
+    specs = tail.get("specs") if isinstance(tail.get("specs"), dict) else {}
+    rows = []
+    for name, item in specs.items():
+        holdout = item.get("holdout") or {}
+        rows.append({
+            "name": name,
+            "status": item.get("status"),
+            "holdout_hit_rate": holdout.get("hit_rate"),
+            "holdout_avg_net_return_pct": holdout.get("avg_net_return_pct"),
+            "holdout_portfolio_return_pct": (holdout.get("portfolio") or {}).get("total_return_pct"),
+            "diagnostic_passed": bool((item.get("gate") or {}).get("diagnostic_passed")),
+        })
+    passed = [row["name"] for row in rows if row["diagnostic_passed"]]
+    return {
+        "label": "tail_in_next_day_out",
+        "updated_at": tail.get("updated_at"),
+        "selected_by_development": tail.get("selected_by_development"),
+        "diagnostic_passed": passed,
+        "none_passed": bool(rows) and not passed,
+        "strategies": rows,
+    }
+
+
 def _recommendation_summary(recommendation: dict[str, Any]) -> dict[str, Any]:
     periods = recommendation.get("periods") or {}
     short = periods.get("short") or {}
@@ -186,12 +210,16 @@ def _verdict_short(
     overnight: dict[str, Any],
     recommendation: dict[str, Any],
     aggressive: dict[str, Any] | None = None,
+    tail: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     profile = (leader.get("profile") or {}).get("oos") or {}
     aggressive = aggressive or {}
+    tail = tail or {}
     issues = []
     if overnight.get("all_negative"):
         issues.append("隔夜三流代理收益均为负，短线形态边未成立")
+    if tail.get("none_passed"):
+        issues.append("尾盘进次日出10个预登记组合均未过回测门禁")
     if aggressive.get("all_negative"):
         issues.append("激进板并行三流代理收益均为负，强势突破边未成立")
     if profile.get("capacity_starved") or profile.get("signal_positive_portfolio_negative"):
@@ -242,6 +270,7 @@ def build_horizon_analysis(
     strategy_iteration: dict[str, Any],
     overnight_iteration: dict[str, Any] | None = None,
     aggressive_board_iteration: dict[str, Any] | None = None,
+    tail_overnight_iteration: dict[str, Any] | None = None,
     recommendation: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     candidates = list(strategy_iteration.get("candidates") or [])
@@ -250,6 +279,7 @@ def build_horizon_analysis(
     aggressive = _parallel_tournament_summary(
         aggressive_board_iteration or {}, label="aggressive_board"
     )
+    tail = _tail_overnight_summary(tail_overnight_iteration or {})
     rec = _recommendation_summary(recommendation or {})
     quality = _long_quality_readiness(candidates)
 
@@ -265,8 +295,9 @@ def build_horizon_analysis(
         "candidates": [_candidate_row(row) for row in candidates_for_track(candidates, TRACK_SHORT)],
         "overnight": overnight,
         "aggressive_board": aggressive,
+        "tail_overnight": tail,
         "formal_recommendation": rec,
-        "analysis": _verdict_short(short_leader, overnight, rec, aggressive),
+        "analysis": _verdict_short(short_leader, overnight, rec, aggressive, tail),
     }
     long_payload = {
         "track": TRACK_LONG,

@@ -256,6 +256,7 @@ def run_strategy_adversarial_audit(cfg: CrawlerConfig | None = None) -> dict[str
         "short": "baseline_short",
         "swing": "baseline_long_only",
         "medium": "baseline_medium",
+        "long": "baseline_long",
     }
     horizon = str(latest.get("selected_horizon") or selected.get("horizon") or "swing")
     baseline = by_name.get(baseline_names.get(horizon, "baseline_long_only")) or {}

@@ -44,7 +44,12 @@ def _inputs(selector_status: str = "candidate") -> dict:
 def test_build_daily_and_aggressive_recommendation_periods() -> None:
     payload = build_recommendation_payload(**_inputs(), limit=5)
 
-    assert set(payload["periods"]) == {"short", "aggressive"}
+    assert set(payload["periods"]) == {"short", "aggressive", "tail_sector"}
+    # 尾盘板块T+1仅为观察周期，回测未过门禁，不得产生正式推荐
+    assert all(
+        not row.get("formal_recommendation")
+        for row in payload["periods"]["tail_sector"].get("recommendations") or []
+    )
     assert payload["periods"]["short"]["label"] == "每日筛选推荐"
     assert payload["periods"]["aggressive"]["label"] == "激进板筛选推荐"
     assert not payload["periods"]["short"]["recommendations"]

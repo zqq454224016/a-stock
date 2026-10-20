@@ -5,6 +5,8 @@ from __future__ import annotations
 from typing import Any
 
 from quant_system.recommendation.miss_audit import build_miss_audit
+from quant_system.strategy.regime_router import apply_evidence as apply_route_evidence
+from quant_system.strategy.regime_router import route as route_market_regime
 from quant_system.utils.market_scope import is_research_stock_code
 from quant_system.utils.time_utils import now_str
 
@@ -13,6 +15,7 @@ AGGRESSIVE_LANES = ("momentum_breakout", "trend_pullback", "sector_leader")
 PERIODS = {
     "short": {"label": "每日筛选推荐", "horizon": "下一交易日", "threshold": 100.0},
     "aggressive": {"label": "激进板筛选推荐", "horizon": "1-5个交易日", "threshold": 100.0},
+    "tail_sector": {"label": "尾盘板块T+1观察", "horizon": "今日尾盘→下一交易日", "threshold": 100.0},
 }
 
 # 正式推荐刻意不追当日大涨；研究晋级信号是先验 T+1，不对齐“已涨完”的票。
@@ -465,6 +468,44 @@ def _aggressive_filter(
     }
 
 
+def _tail_sector_filter(
+    *, context: dict[str, Any], stock: dict[str, Any], enhance: dict[str, Any],
+    snapshot: dict[str, Any], sector: dict[str, Any],
+) -> dict[str, Any]:
+    """尾盘板块 T+1 代理筛选：只使用已落盘的日线/快照，严禁伪造实时确认。"""
+    quote = stock.get("quote") or {}
+    ma = (stock.get("analysis") or {}).get("ma") or {}
+    values = {
+        "change_pct": snapshot.get("change_pct", quote.get("change_pct")),
+        "close": snapshot.get("close", quote.get("close")),
+        "ma5": ma.get("ma5"), "ma20": ma.get("ma20"),
+        "relative_strength_pct": snapshot.get("relative_strength_pct"),
+        "sector_change_pct": sector.get("change_pct"),
+    }
+    blockers: list[str] = []
+    try:
+        change = float(values["change_pct"])
+        close = float(values["close"])
+        ma5 = float(values["ma5"])
+        ma20 = float(values["ma20"])
+        sector_change = float(values["sector_change_pct"])
+    except (TypeError, ValueError):
+        blockers.append("尾盘板块筛选缺少价格、均线或板块数据")
+        change = close = ma5 = ma20 = sector_change = 0.0
+    if not (sector_change > 0): blockers.append("所属板块当日未上涨")
+    if not (0.5 <= change <= 8.0): blockers.append("个股涨幅不在尾盘温和强势区间")
+    if not (close > ma20 and ma5 >= ma20): blockers.append("趋势未站稳MA20")
+    if values.get("relative_strength_pct") is not None and float(values["relative_strength_pct"]) < 0:
+        blockers.append("相对板块/大盘强度不足")
+    return {
+        "profile": "tail_sector", "profile_label": "尾盘板块T+1",
+        "passed": not blockers, "numerical_passed": not blockers,
+        "values": values, "blockers": blockers,
+        "risk_control": {"position": "模拟小仓位", "stop_loss_pct": -3.0, "max_holding_days": 1,
+                          "exit_rule": "下一交易日早盘分批卖出，非实时自动下单"},
+    }
+
+
 def _score(
     period: str,
     *,
@@ -581,7 +622,7 @@ def _evidence(
 ) -> list[str]:
     fv = factors.get("factors") or {}
     returns = (stock.get("analysis") or {}).get("returns") or {}
-    days = {"short": "d5", "aggressive": "d5", "medium": "d20", "long": "d60"}[period]
+    days = {"short": "d5", "aggressive": "d5", "tail_sector": "d5", "medium": "d20", "long": "d60"}[period]
     result = [
         f"候选评分 {_f(selector.get('upside_score')):.1f}",
         f"多因子评分 {_f(fv.get('multi_factor_score', fv.get('technical_score', 50))):.1f}",
@@ -622,6 +663,7 @@ def build_recommendation_payload(
     daily_snapshots: dict[str, dict[str, Any]] | None = None,
     sector_mapping: dict[str, dict[str, Any]] | None = None,
     limit: int = 5,
+    track_evidence: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     market_for_analysis = dict(market)
     derived_distribution = _full_market_distribution(stocks)
@@ -652,11 +694,6 @@ def build_recommendation_payload(
             impact = impacts.get(code) or {}
             enhance = enhances.get(code) or {}
             replay = replays.get(code) or {}
-            filter_builder = _aggressive_filter if period == "aggressive" else _daily_filter
-            daily_filter = filter_builder(
-                context=context, stock=stock, enhance=enhance,
-                snapshot=daily_snapshots.get(code) or {},
-            )
             sector = dict(sector_mapping.get(code) or {})
             matched_industry = next(
                 (
@@ -667,6 +704,21 @@ def build_recommendation_payload(
             )
             sector["matched_industry"] = matched_industry
             sector["change_pct"] = sector_changes.get(matched_industry)
+            if period == "aggressive":
+                daily_filter = _aggressive_filter(
+                    context=context, stock=stock, enhance=enhance,
+                    snapshot=daily_snapshots.get(code) or {},
+                )
+            elif period == "tail_sector":
+                daily_filter = _tail_sector_filter(
+                    context=context, stock=stock, enhance=enhance,
+                    snapshot=daily_snapshots.get(code) or {}, sector=sector,
+                )
+            else:
+                daily_filter = _daily_filter(
+                    context=context, stock=stock, enhance=enhance,
+                    snapshot=daily_snapshots.get(code) or {},
+                )
             # 每日推荐完全由用户定义的市场自适应筛选决定；旧评分只作为排序参考，
             # 不再参与是否推荐的判定。
             legacy_score = _score(
@@ -678,6 +730,7 @@ def build_recommendation_payload(
             blockers = list(daily_filter["blockers"])
             threshold = spec["threshold"]
             status = "recommended" if daily_filter["passed"] else "excluded"
+            formal_recommendation = period not in {"aggressive", "tail_sector"}
             evaluated.append({
                 "code": code,
                 "name": stock.get("name") or selector.get("name") or code,
@@ -686,6 +739,7 @@ def build_recommendation_payload(
                 "score": score,
                 "legacy_score": legacy_score,
                 "status": status,
+                "formal_recommendation": formal_recommendation,
                 "evidence": _evidence(period, selector, factor, stock, impact, replay, context, sector),
                 "sector_context": sector,
                 "risks": list(dict.fromkeys((selector.get("risks") or []) + blockers)),
@@ -760,6 +814,7 @@ def build_recommendation_payload(
     for lane, rows in aggressive_parallel.items():
         rows.sort(key=lambda item: (-float(item.get("lane_score") or 0), item.get("code", "")))
         aggressive_parallel[lane] = rows[:limit]
+    aggressive_board = period_results.get("aggressive", {}).get("observation") or []
     # 数据字段缺失时也保留一个可人工复核的回退候选，避免单条激进流无输出。
     for lane, rows in aggressive_parallel.items():
         if not rows and aggressive_board:
@@ -767,13 +822,14 @@ def build_recommendation_payload(
             fallback.update({"strategy_lane": lane, "lane_fallback": True, "formal_recommendation": False})
             aggressive_parallel[lane] = [fallback]
     miss_audit = build_miss_audit(period_results, context)
-    aggressive_board = period_results.get("aggressive", {}).get("observation") or []
+    strategy_router = apply_route_evidence(route_market_regime(context), track_evidence, context)
     return {
         "recommendation_version": RECOMMENDATION_VERSION,
         "updated_at": now_str(),
         "selection_policy": "market_adaptive_daily_and_aggressive_filters_anti_chase",
         "anti_chase_policy": ANTI_CHASE_POLICY,
         "market_context": context,
+        "strategy_router": strategy_router,
         "periods": period_results,
         "aggressive_parallel": {
             "lanes": aggressive_parallel,

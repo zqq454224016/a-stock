@@ -41,11 +41,13 @@ def run_horizon_strategy_analysis(cfg: CrawlerConfig | None = None) -> dict[str,
 
     overnight = _read(cfg.data_dir / "overnight_iterations/latest.json")
     aggressive = _read(cfg.data_dir / "aggressive_board_iterations/latest.json")
+    tail = _read(cfg.data_dir / "tail_overnight/latest.json")
     recommendation = _read(cfg.data_dir / "recommendations/summary.json")
     payload = build_horizon_analysis(
         strategy_iteration=strategy,
         overnight_iteration=overnight,
         aggressive_board_iteration=aggressive,
+        tail_overnight_iteration=tail,
         recommendation=recommendation,
     )
     _write(root / "latest.json", payload)

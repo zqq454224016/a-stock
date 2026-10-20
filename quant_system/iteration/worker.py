@@ -45,6 +45,11 @@ from quant_system.tasks.public_supplement_job import run_public_supplement_job
 from quant_system.tasks.polarized_strategy_job import run_polarized_strategy
 from quant_system.tasks.overnight_iteration_job import run_overnight_iteration
 from quant_system.tasks.aggressive_board_iteration_job import run_aggressive_board_iteration
+from quant_system.tasks.tail_overnight_iteration_job import run_tail_overnight_iteration
+from quant_system.tasks.tail_overnight_recommendation_job import run_tail_overnight_recommendation
+from quant_system.tasks.strategy_track_evidence_job import run_strategy_track_evidence
+from quant_system.tasks.strategy_adversarial_audit_job import run_strategy_adversarial_audit
+from quant_system.tasks.long_walkforward_job import run_long_walkforward
 from quant_system.tasks.horizon_strategy_analysis_job import run_horizon_strategy_analysis
 from quant_system.utils.time_utils import now_str
 from quant_system.notifications.feishu import notify_iteration_progress
@@ -325,6 +330,18 @@ def run_iteration_round(
     aggressive_latest = cfg.data_dir / "aggressive_board_iterations/latest.json"
     if _newer_than(aggressive_latest, [stock_index, market_regime, execution_status]):
         execute("aggressive_board_parallel_tournament", lambda: run_aggressive_board_iteration(cfg))
+    tail_latest = cfg.data_dir / "tail_overnight/latest.json"
+    if _newer_than(tail_latest, [stock_index, market_regime]):
+        execute("tail_overnight_tournament", lambda: run_tail_overnight_iteration(cfg))
+    tracks_latest = cfg.data_dir / "strategy_tracks/latest.json"
+    if _newer_than(tracks_latest, [stock_index, market_regime]):
+        execute("strategy_track_evidence", lambda: run_strategy_track_evidence(cfg))
+    walkforward_latest = cfg.data_dir / "strategy_tracks/long_walkforward.json"
+    if _newer_than(walkforward_latest, [tracks_latest]):
+        execute("long_walkforward", lambda: run_long_walkforward(cfg))
+    audit_latest = cfg.data_dir / "strategy_iterations/adversarial_audit.json"
+    if _newer_than(audit_latest, [robust_iteration, cfg.data_dir / "recommendations/summary.json"]):
+        execute("strategy_adversarial_audit", lambda: run_strategy_adversarial_audit(cfg))
     horizon_latest = cfg.data_dir / "horizon_analysis/latest.json"
     if _newer_than(
         horizon_latest,
@@ -332,6 +349,7 @@ def run_iteration_round(
             robust_iteration,
             overnight_latest,
             aggressive_latest,
+            tail_latest,
             cfg.data_dir / "recommendations/summary.json",
         ],
     ):
@@ -371,6 +389,33 @@ def run_iteration_round(
     return payload
 
 
+TAIL_WINDOW = ("14:45", "14:57")
+
+
+def _maybe_run_tail_window(cfg: CrawlerConfig, now: datetime) -> dict[str, Any] | None:
+    """交易日尾盘窗口内跑一次「尾盘进次日出」；当日账本已写则跳过。"""
+    clock = now.strftime("%H:%M")
+    if not (TAIL_WINDOW[0] <= clock <= TAIL_WINDOW[1]):
+        return None
+    trade_date = now.strftime("%Y-%m-%d")
+    try:
+        if not get_calendar().is_trade_day(trade_date):
+            return None
+    except Exception:
+        return None
+    if (cfg.data_dir / "tail_overnight/shadow" / f"{trade_date}.json").exists():
+        return None
+    status_path = cfg.data_dir / "iteration/tail_window_status.json"
+    try:
+        result = run_tail_overnight_recommendation(cfg, now)
+        status = {"updated_at": now_str(), "trade_date": trade_date, "status": "success",
+                  "timing": result.get("timing"), "shadow_recorded": bool(result.get("shadow_recorded"))}
+    except Exception as exc:
+        status = {"updated_at": now_str(), "trade_date": trade_date, "status": "failed", "error": str(exc)[-300:]}
+    _write(status_path, status)
+    return status
+
+
 def run_worker_forever() -> None:
     cfg = CrawlerConfig()
     worker_cfg = WorkerConfig()
@@ -387,6 +432,7 @@ def run_worker_forever() -> None:
             # 自动迭代只在收盘后启动，避免盘中半成品行情触发策略和消耗额度。
             now = datetime.now()
             if now.hour < 15:
+                _maybe_run_tail_window(cfg, now)
                 wait = max(30, int((datetime.combine(now.date(), datetime.min.time()).timestamp() + 15 * 3600) - now.timestamp()))
                 _write(root / "worker_status.json", {"updated_at": now_str(), "status": "waiting_after_close", "pid": os.getpid(), "next_run_after": datetime.fromtimestamp(now.timestamp() + wait).strftime("%Y-%m-%d %H:%M:%S"), "interval_sec": worker_cfg.interval_sec, "ai_scope": "data_acquisition_methods_only"})
                 time.sleep(min(wait, 300))

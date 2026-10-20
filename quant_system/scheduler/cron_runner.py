@@ -15,7 +15,13 @@ from quant_system.utils.trade_calendar import get_calendar
 
 logger = get_logger(__name__)
 
-TRADE_DAY_JOBS = frozenset({"daily_market", "daily_stock"})
+TRADE_DAY_JOBS = frozenset({"daily_market", "daily_stock", "tail_overnight_recommendation"})
+
+
+def _tail_overnight_recommendation() -> None:
+    from quant_system.tasks.tail_overnight_recommendation_job import run_tail_overnight_recommendation
+
+    run_tail_overnight_recommendation()
 
 
 JOB_MAP = {
@@ -23,6 +29,7 @@ JOB_MAP = {
     "daily_stock": lambda: run_daily_stock(),
     "data_inspect": lambda: run_data_inspect(auto_fix=True),
     "factor_compute": lambda: run_factor_compute(),
+    "tail_overnight_recommendation": _tail_overnight_recommendation,
 }
 
 
@@ -58,6 +65,7 @@ def start_scheduler() -> None:
         "daily_market": cfg.daily_market,
         "daily_stock": cfg.daily_stock,
         "data_inspect": cfg.data_inspect,
+        "tail_overnight_recommendation": cfg.tail_overnight_recommendation,
     }
 
     for name, cron_expr in cron_jobs.items():
