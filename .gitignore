@@ -9,4 +9,6 @@ tmp/
 **/worker.log
 **/worker.stop
 **/manual_refresh.log
-assets/data/strategy_tracks/stock_trades.npy
+
+# 行情、历史、财务、回测与迭代产物均由任务在本地生成，不进入仓库
+assets/data/

@@ -1,7 +1,0 @@
-{
-  "status": "failed",
-  "source": "eastmoney_public_via_akshare",
-  "period": "2026-06-30",
-  "error": "HTTPSConnectionPool(host='datacenter-web.eastmoney.com', port=443): Max retries exceeded with url: /api/data/v1/get?sortColumns=UPDATE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=500&pageNumber=1&reportName=RPT_LICO_FN_CPD&columns=ALL&filter=%28REPORTDATE%3D%272026-06-30%27%29 (Caused by NameResolutionError(\"HTTPSConnection(host='datacenter-web.eastmoney.com', port=443): Failed to resolve 'datacenter-web.eastmoney.com' ([Errno 8] nodename nor servname provided, or not known)\"))",
-  "updated_at": "2026-10-16 17:15:56"
-}
